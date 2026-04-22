@@ -1,0 +1,307 @@
+{
+  "story_id": "vex_shadowstep",
+  "title": "Vex Shadowstep",
+  "author": "Legend of The Shadow",
+  "description": "A thief's journey through the Guild, betrayal, and the path to becoming a legend—or a king of shadows.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "scenes": [
+        {
+          "scene_id": "VEX_CH1_DOCKS",
+          "title": "The Rain-Soaked Docks",
+          "type": "choice",
+          "text": "Rain hammers the cobblestones as you sprint through the Lower Docks, boots splashing through puddles. Three Guild enforcers are twenty paces behind, their shouts cutting through the thunder. You've stolen the Obsidian Ledger—the names of every Guild member, every secret deal, every dirty coin. The Harbor Master's office burns behind you, casting flickering shadows across the alley walls.\n\nYou spot a narrow gap between two warehouses. The docks end in two directions: the public quay where City Watch patrols, or the private pier where fishing boats bob at anchor. Your heart pounds as you weigh your options, the ledger heavy in your coat.",
+          "choices": [
+            {
+              "text": "Sprint for the fishing boat pier",
+              "next_scene": "VEX_CH1_BOAT",
+              "consequence": "Desperate dash to the boats"
+            },
+            {
+              "text": "Duck into the Underharbor tunnels",
+              "next_scene": "VEX_CH1_TUNNELS",
+              "consequence": "Risk the dark tunnels beneath the docks"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH1_BOAT",
+          "title": "The Fishing Boat Escape",
+          "type": "narrative",
+          "text": "You vault over a crate, knocking lanterns swinging as you race toward the pier. An old fisherman sits smoking on his boat, eyes widening as you sprint toward him. \n\n\"Move,\" you demand, pressing a gold coin into his palm. \"Now.\"\n\nThe old man doesn't hesitate—he's seen enough trouble in his years to know when not to ask questions. He cuts the rope as you throw yourself aboard, and the boat lurches away from the dock just as the enforcers reach the edge, their blades catching the firelight from the burning office.\n\nYou breathe hard in the darkness below deck, the Obsidian Ledger pressed against your chest. The boat rocks gently as you sail across the harbor, away from the Guild's reach—for now. But the ledger must be delivered to someone who can use it. Someone in the Dustwall District, where the Guild's reach is weaker. Someone you trust.",
+          "choices": [
+            {
+              "text": "Head to the Underharbor tunnels to lay low",
+              "next_scene": "VEX_CH1_TUNNELS",
+              "consequence": "Disappear into the darkness beneath the city"
+            },
+            {
+              "text": "Make for Dustwall immediately",
+              "next_scene": "VEX_CH1_SISTER",
+              "consequence": "Find Lyra in the slums"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH1_TUNNELS",
+          "title": "The Underharbor Tunnels",
+          "type": "narrative",
+          "text": "You squeeze through a rusted grate and descend into the Underharbor—the network of tunnels that run beneath the city like veins. Smugglers have used these passages for centuries, and you know their layout better than most. The air is thick, carrying the stench of brackish water and old stone.\n\nIn the distance, torchlight flickers. You press against the wall, watching a group of smugglers pass—three men carrying crates marked with the Guild's serpent seal. They're heading toward the surface, probably moving product. You could follow them, learn their route. Or you could stay hidden and make your own way.\n\nWater drips somewhere in the darkness. You have the ledger, but you need allies. The smugglers might know people who could help—or they might turn you in for the bounty the Guild has surely placed on your head.",
+          "choices": [
+            {
+              "text": "Follow the smugglers",
+              "next_scene": "VEX_CH1_AMBUSH",
+              "consequence": "Track the Guild's supply line"
+            },
+            {
+              "text": "Double back and head to Dustwall",
+              "next_scene": "VEX_CH1_SISTER",
+              "consequence": "Find your sister Lyra"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH1_AMBUSH",
+          "title": "The Ambush",
+          "type": "combat",
+          "text": "You trail the smugglers through winding tunnels, staying just out of sight. They lead you to a small cavern lit by torches—a waystation. Two guards stand watch while the others disappear into a side chamber.\n\nYou could slip past them, but they'd spot you eventually. Instead, you wait. When one guard walks alone toward a privy, you strike. A quick garrote, a silent end. The second guard never sees you coming. Your blade finds his throat before he can cry out.\n\nIn the side chamber, you find their leader—Corvus, a mid-level Guild lieutenant. He's terrified when he sees you, the thief who stole the Obsidian Ledger. \n\n\"Please,\" he whimpers. \"I have information. The Guild knows you're heading to Dustwall. They're waiting. But there's more—I know where the Shadowmaster hides. Kill me or let me go, either way, you're walking into a trap.\"",
+          "choices": [
+            {
+              "text": "Kill Corvus and take his information",
+              "next_scene": "VEX_CH1_SISTER",
+              "consequence": "Gain dark knowledge, lose humanity"
+            },
+            {
+              "text": "Let Corvus live—make him a double agent",
+              "next_scene": "VEX_CH1_SISTER",
+              "consequence": "Gain an ally in the Guild"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH1_SISTER",
+          "title": "Finding Lyra",
+          "type": "narrative",
+          "text": "The Dustwall District rises before you—a tangle of leaning tenements and winding streets where the sun rarely reaches. This is where you grew up, where you learned to pick pockets and disappear. It's also where your sister Lyra has been hiding.\n\nYou find her in a cramped apartment above a tanner's shop, her hands stained with dye work. Lyra looks older than you remember, harder. When she sees you, her eyes widen—then narrow.\n\n\"You're dead,\" she says flatly. \"The Guild has been celebrating.\"\n\n\"Not yet.\" You show her the Obsidian Ledger. \"But I will be, unless we use this.\"\n\nLyra studies you for a long moment. \"You've always been stupid brave. But this... this is suicide.\"\n\n\"Maybe. Or maybe it's the only way to burn the Guild down for good. Will you help me?\"\n\nShe doesn't answer immediately. Instead, she goes to her window and looks out at the grimy street below. \"There's a woman. Miravel the Collector. She deals in secrets. If anyone can make use of this ledger, it's her. But she's dangerous, Vex. More dangerous than the Guild.\"",
+          "choices": [
+            {
+              "text": "Go meet Miravel the Collector",
+              "next_scene": "VEX_CH3_COLLECTOR",
+              "consequence": "Seek the black market dealer"
+            },
+            {
+              "text": "Confront the Guild first",
+              "next_scene": "VEX_CH2_CONFRONT",
+              "consequence": "Face your pursuers directly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "scenes": [
+        {
+          "scene_id": "VEX_CH2_CONFRONT",
+          "title": "The Confrontation",
+          "type": "choice",
+          "text": "The Guild finds you before you can reach Miravel. A dozen enforcers surround the alley, their blades drawn. At their head stands Vance, the Guild's Hunter—their finest killer. His smile is cold as he regards you.\n\n\"Vex Shadowstep,\" he says. \"You've caused quite a lot of trouble.\"\n\n\"I've caused exactly enough.\" You keep your hand near your dagger, watching for an opening.\n\n\"Give us the ledger, and the Shadowmaster will consider mercy. Fight, and we'll take it from your corpse. Either way, you're not leaving this alley.\"\n\nThe tension is palpable. You could try to fight your way out—difficult with twelve armed opponents. You could negotiate—maybe buy time. Or you could surrender and look for an opportunity to escape later.",
+          "choices": [
+            {
+              "text": "Fight your way out",
+              "next_scene": "VEX_CH2_FIGHT",
+              "consequence": "Battle against impossible odds"
+            },
+            {
+              "text": "Negotiate with the Guild",
+              "next_scene": "VEX_CH2_NEGOTIATE",
+              "consequence": "Try to make a deal"
+            },
+            {
+              "text": "Surrender",
+              "next_scene": "VEX_CH2_SURRENDER",
+              "consequence": "Play the long game"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH2_FIGHT",
+          "title": "The Bloodied Escape",
+          "type": "combat",
+          "text": "You move before they expect it—a spinning kick that catches the first enforcer in the throat, your dagger flashing out to gut the second. Vance shouts commands, but you're already moving, a shadow among shadows.\n\nThree more fall before they can react. You take a blade to the shoulder but ignore the pain, driving your elbow into a man's nose and twisting his arm until his sword clatters to the cobblestones. The alley runs red.\n\nWhen Vance finally falls—your blade in his chest—he gasps his last words: \"You've only delayed the inevitable. The Shadowmaster will... hunt you... forever.\"\n\nYou're wounded, bleeding, but alive. The Guild's forces are broken. For now. But you know they've only begun to hunt you. You need allies, and you need them fast.",
+          "choices": [
+            {
+              "text": "Seek out the Collector Miravel",
+              "next_scene": "VEX_CH3_COLLECTOR",
+              "consequence": "Find the black market dealer"
+            },
+            {
+              "text": "Use Corvus as your inside man",
+              "next_scene": "VEX_CH3_TREASON",
+              "consequence": "Double-cross everyone"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH2_NEGOTIATE",
+          "title": "The Deal with Darkness",
+          "type": "narrative",
+          "text": "\"Wait,\" you call out, raising your empty hands. \"I want to speak with the Shadowmaster directly.\"\n\nVance smirks. \"You don't get to speak with the master. You get to die.\"\n\n\"Then take the ledger.\" You toss it to him. \"It's a copy. The real one is somewhere only I know. Bring me to the Shadowmaster, and I'll give you everything.\"\n\nSomething in your voice makes Vance pause. He's not stupid—he knows you're up to something. But the ledger is too valuable to pass up. \n\n\"Fine. But any tricks, and your sister dies before your eyes.\"\n\nThey take you to the Guild headquarters—a fortress隐藏在阴影中. The Shadowmaster awaits in a chamber of black marble, his face hidden behind a mask of polished obsidian. When he speaks, his voice is silk and venom.\n\n\"Vex Shadowstep. You've proven... interesting.\"",
+          "choices": [
+            {
+              "text": "Accept a position in the Guild hierarchy",
+              "next_scene": "VEX_CH3_TREASON",
+              "consequence": "Become a turncoat"
+            },
+            {
+              "text": "Attack the Shadowmaster",
+              "next_scene": "VEX_CH4_TEMPLE",
+              "consequence": "Face your destiny"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH2_SURRENDER",
+          "title": "The Captive's Gambit",
+          "type": "narrative",
+          "text": "You drop your weapons, hands raised. \"I yield.\"\n\nThe enforcers hesitate—they expected a fight. Vance approaches cautiously, binding your wrists with cord. \"Smart. The master will decide your fate.\"\n\nThey drag you through the city's underbelly to the Guild's stronghold. You're thrown into a cell, but it's comfortable—a message that the Shadowmaster wants you alive. Days pass. You're fed, given water. Then, finally, they come for you.\n\nThe Shadowmaster waits in his throne room. He's older than you expected, silver-haired but still dangerous. His eyes study you like you're an interesting puzzle.\n\n\"You stole my ledger,\" he says. \"But you didn't sell it. Why?\"\n\n\"Because the Guild needs to burn.\"\n\nHe laughs—a dry, hollow sound. \"Or perhaps... you simply want to lead it instead.\"",
+          "choices": [
+            {
+              "text": "Play along and infiltrate the Guild",
+              "next_scene": "VEX_CH3_TREASON",
+              "consequence": "Become the ultimate double agent"
+            },
+            {
+              "text": "Refuse and fight",
+              "next_scene": "VEX_CH4_TEMPLE",
+              "consequence": "Face the final confrontation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "scenes": [
+        {
+          "scene_id": "VEX_CH3_COLLECTOR",
+          "title": "Miravel the Collector",
+          "type": "narrative",
+          "text": "Miravel's shop is hidden behind a bookbinder's storefront in the Merchant Quarter. The old woman who runs it leads you through a maze of corridors into a vaulted chamber where treasures from a hundred criminal enterprises gleam in lamplight.\n\nMiravel herself is younger than you expected—perhaps thirty, with dark hair and sharper eyes than a hawk. She doesn't look up from the ledger she's examining when you enter.\n\n\"Vex Shadowstep. I wondered when you'd come.\"\n\n\"You know me?\"\n\n\"I know everyone.\" She finally meets your gaze. \"This ledger—it's genuine. The names, the accounts, the secrets. With this, I could bring the Guild to its knees. Or I could sell it back to them for triple.\"\n\n\"You're not going to do either.\"\n\nHer smile is thin. \"No? Then tell me—what's your offer?\"",
+          "choices": [
+            {
+              "text": "Make a deal with Miravel",
+              "next_scene": "VEX_CH3_TREASON",
+              "consequence": "Form an uneasy alliance"
+            },
+            {
+              "text": "Take the ledger back and go solo",
+              "next_scene": "VEX_CH4_TEMPLE",
+              "consequence": "Confront the Guild alone"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH3_TREASON",
+          "title": "The Double Cross",
+          "type": "choice",
+          "text": "The plan comes together in whispers. You've made deals with everyone—the Guild, Miravel, even Corvus the double agent. But you have your own plans, your own agenda. The ledger is the weapon, and everyone is pointing it at everyone else.\n\nIn the Guild headquarters, you meet with the Shadowmaster one final time. He believes you've come to swear loyalty. In a way, you have.\n\n\"I've decided,\" you tell him. \"The Guild is the future. I'm here to join it—properly this time.\"\n\nHe smiles and extends his hand. \"Welcome home, Vex Shadowstep.\"\n\nYou take his hand—and drive a poisoned dagger into his chest.\n\nThe chaos begins. Miravel's forces attack from outside. Corvus reveals himself to the Guild. And you stand in the middle, the ledger in one hand and the Shadowmaster's dying breath in the other. Every alliance broken. Every enemy fighting each other.\n\nNow it's time to finish this.",
+          "choices": [
+            {
+              "text": "Seize power as the new Shadowmaster",
+              "next_scene": "VEX_ENDING_SHADOWKING",
+              "consequence": "Rule the shadows"
+            },
+            {
+              "text": "Destroy the Guild completely",
+              "next_scene": "VEX_ENDING_LEGEND",
+              "consequence": "Become a hero"
+            },
+            {
+              "text": "Escape into the night",
+              "next_scene": "VEX_ENDING_WANDERER",
+              "consequence": "Live free"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "scenes": [
+        {
+          "scene_id": "VEX_CH4_TEMPLE",
+          "title": "The Temple of Shadows",
+          "type": "narrative",
+          "text": "The Guild's true headquarters lies beneath the Temple of Shadows—an ancient complex built long before the city rose above it. You've fought your way through layers of defenses, through assassins and traps and loyalists who would die for the Guild.\n\nNow you stand in the central chamber. The Shadowmaster waits on his throne, flanked by his personal guard. But he raises a hand, and they stand down.\n\n\"Vex,\" he says, almost warmly. \"You've come further than anyone expected. But this ends here.\"\n\n\"It ends when the Guild is gone.\"\n\n\"The Guild is eternal. We are the shadows that move beneath the light. You cannot destroy us—you can only join us.\"\n\nHis blade materializes in his hand, a curved thing that drinks the torchlight. \"But I'll give you a choice. Face me in single combat. Win, and you walk free. Lose, and your soul joins the shadows forever.\"\n\nThe challenge hangs in the air.",
+          "choices": [
+            {
+              "text": "Accept the duel",
+              "next_scene": "VEX_CH4_DUEL",
+              "consequence": "Face the Shadowmaster in combat"
+            },
+            {
+              "text": "Refuse and fight everyone at once",
+              "next_scene": "VEX_CH2_FIGHT",
+              "consequence": "Battle to the death"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH4_DUEL",
+          "title": "The Duel with the Shadowmaster",
+          "type": "combat",
+          "text": "The Shadowmaster moves like smoke—fast, impossibly fast. His blade whirls in patterns you've never seen, attacks from angles that shouldn't be possible. You parry, dodge, counter, but you're losing ground.\n\nA strike opens a gash along your ribs. Another catches your shoulder. Blood drips onto the ancient stone, and you realize you're fighting a losing battle.\n\nBut you've always been cleverer than your opponents. As the Shadowmaster presses his attack, you let yourself fall—not backward, but to the side, toward the ceremonial dais. Your hand closes on a torch.\n\nFlame catches his cloak. He staggers, and you capitalize—driving your blade up through his chin, into his brain.\n\nThe Shadowmaster falls. His guards freeze, unable to believe what they've seen. You stand over the body, bleeding but victorious.\n\nThe Guild is yours to command—or destroy.",
+          "choices": [
+            {
+              "text": "Claim the Guild's throne",
+              "next_scene": "VEX_ENDING_SHADOWKING",
+              "consequence": "Become the Shadow King"
+            },
+            {
+              "text": "Burn the Guild to the ground",
+              "next_scene": "VEX_ENDING_LEGEND",
+              "consequence": "Become a legend"
+            },
+            {
+              "text": "Walk away from it all",
+              "next_scene": "VEX_ENDING_WANDERER",
+              "consequence": "Find peace"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endings": [
+    {
+      "ending_id": "VEX_ENDING_SHADOWKING",
+      "title": "The Shadow King",
+      "type": "dark",
+      "text": "You sit upon the Shadowmaster's throne as the last of the resistance is crushed. The Guild survives—stronger now, unified under your rule. You are the Shadow King, ruler of the city's underworld, master of shadows.\n\nIt wasn't the heroic path. You made deals with darkness and became it. But the Guild no longer preys on the innocent—at least, not like before. You've imposed order on chaos, and the city breathes easier.\n\nIn your pocket, you carry the Obsidian Ledger. Your name is at the top now, written in ink that can never be erased. Some call you a monster. Others, a necessary evil. You call yourself... successful.\n\nThe shadows serve you now. And they will serve you forever.",
+      "epilogue": "Vex Shadowstep rules the Guild for thirty years, becoming a legend of fear and respect. When he finally disappears into the shadows one night, no one knows if he's dead or simply become one with the darkness itself."
+    },
+    {
+      "ending_id": "VEX_ENDING_LEGEND",
+      "title": "The Legend",
+      "type": "heroic",
+      "text": "The Guild burns. Every stronghold, every vault, every secret meeting place—you've burned them all. The Obsidian Ledger is read aloud in the city square, and the names of the guilty are delivered to the courts. For the first time in a century, the Guild is broken.\n\nYou stand in the ashes of the Temple of Shadows, surrounded by cheering crowds who've come to see the end of an era. They call you hero. They sing songs of your bravery. Children will grow up in a city free from the Guild's terror, and they'll never know the nightmares you faced to give them that freedom.\n\nYour sister Lyra finds you in the aftermath. \"You did it,\" she whispers.\n\n\"We did it,\" you correct her.\n\nBut you know the truth. The shadows will always call to you. The question is whether you'll listen.",
+      "epilogue": "Vex Shadowstep disappears after destroying the Guild, becoming a myth whispered in taverns and told to children. Some say he became a wandering protector; others say the shadows claimed him anyway. Either way, the Guild never rises again."
+    },
+    {
+      "ending_id": "VEX_ENDING_WANDERER",
+      "title": "The Wanderer",
+      "type": "neutral",
+      "text": "You leave the city behind. The Guild is weakened, perhaps broken—Miravel and Corvus will finish what you started. You've done your part. Now it's time to disappear.\n\nOn the road out of the city, you meet a merchant caravan heading north. You join them as a guard, your sword arm earning your keep. No one knows your name here. No one knows what you've done.\n\nAt night, you stare at the stars and wonder if you made the right choice. The Guild still exists, somewhere in the shadows. But so do you—free, alive, unbound.\n\nPerhaps that's enough. Perhaps it has to be.\n\nThe road stretches ahead, and you walk it one step at a time, leaving the past behind.",
+      "epilogue": "Vex Shadowstep becomes a wandering legend, appearing in stories across the land. Sometimes he's a thief, sometimes a hero, sometimes a monster. The truth is simpler: he was a person who made choices, lived with them, and kept walking. The shadows never caught him—and neither did the light."
+    }
+  ],
+  "metadata": {
+    "total_scenes": 15,
+    "total_endings": 3,
+    "word_count_estimate": 3500,
+    "story_type": "branching_narrative",
+    "theme": "redemption, power, identity"
+  }
+}

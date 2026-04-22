@@ -1,0 +1,808 @@
+,
+  "VEX_CH1_JOB_OR_RUN": {
+    "id": "VEX_CH1_JOB_OR_RUN",
+    "character": "VEX",
+    "description": "Lyra pulls you inside, bolting the door behind her. The Guild has watchtowers on every major street—they're looking for you specifically, fifty gold for your capture, dead or alive. She moves to a hidden floorboard and retrieves a purse with enough coins for passage out of the city. A ship leaves at dawn for Thornhaven, where you could disappear and start fresh.\n\nYou shake your head. The Guild will just find someone else to hurt—perhaps Lyra herself, or anyone you ever cared about. She calls you stubborn, foolish even, but finally admits she knows a place where you can hide for a few days. After that, she says, you part ways.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the hiding spot",
+        "leads_to": "VEX_CH1_REST",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Refuse—you have work to do",
+        "leads_to": "VEX_CH1_WAIT",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Ask about Miravel first",
+        "leads_to": "VEX_CH1_REST",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_REST": {
+    "id": "VEX_CH1_REST",
+    "character": "VEX",
+    "description": "Lyra leads you through winding passages beneath Dustwall—old smuggler tunnels even the Guild doesn't know. The hidden room is small but secure, with space enough for a bed and a small fire. She tells you to stay, to not leave for any reason. She'll bring food and news.\n\nThree days pass in darkness. You sleep badly, dreams haunted by the faces of enforcers you killed. The Obsidian Ledger sits heavy in your pack—you've memorized every name by now, the corruption running deep from harbor masters to city councilors.\n\nOn the third night, Lyra returns with blood on her clothes. They know you're here, she whispers urgently. Vance is gathering men at this very moment. You have to move now.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Escape through the tunnels",
+        "leads_to": "VEX_CH1_ESCAPE",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Hold position and fight",
+        "leads_to": "VEX_CH1_HIDE",
+        "effects": { "strength": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Surrender—spare Lyra",
+        "leads_to": "VEX_CH1_TRUTH",
+        "effects": { "humanity": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_WAIT": {
+    "id": "VEX_CH1_WAIT",
+    "character": "VEX",
+    "description": "You refuse Lyra's shelter, saying you'll find your own way. She calls you stubborn, always stubborn, but hands you a hooded cloak and a knife. At least take these, she says—I can't stop you from being stupid, but I can help you stay alive.\n\nYou spend the night wandering Dustwall's back alleys, sleeping in fragments, always moving. At dawn, you see City Watch posting wanted signs—your face rendered in crude ink. The bounty has doubled.\n\nNear the eastern gate, you spot a Guild scout pretending to be a vendor, watching every traveler, searching for you.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find another route out",
+        "leads_to": "VEX_CH1_GATES",
+        "effects": { "stealth": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Bribe the scout",
+        "leads_to": "VEX_CH1_BRIBE",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Create a distraction and slip past",
+        "leads_to": "VEX_CH1_ESCAPE",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_ESCAPE": {
+    "id": "VEX_CH1_ESCAPE",
+    "character": "VEX",
+    "description": "Your boots echo on ancient stone as you run through the tunnels. Behind you, torchlight flickers—the enforcers have found the entrance faster than expected. Lyra's voice shouts from somewhere, warning you.\n\nThe passage forks: one branch leads toward the harbor, the other toward the old city gates. You could double back to the surface and try to lose them in crowded market streets, or press onward through the tunnels toward the docks.\n\nTorch voices grow louder. Seconds to decide.\n\nThe harbor route offers escape by boat—the tunnels emerge beneath the waterline. The gate route leads into the merchant quarter, where crowds might provide cover.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Head for the harbor",
+        "leads_to": "VEX_CH1_BOAT",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Make for the gates",
+        "leads_to": "VEX_CH1_GATES",
+        "effects": { "stealth": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Double back—face them",
+        "leads_to": "VEX_CH1_HIDE",
+        "effects": { "strength": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_HIDE": {
+    "id": "VEX_CH1_HIDE",
+    "character": "VEX",
+    "description": "You press yourself into a shadowed alcove, barely breathing. Three enforcers sprint past, their torchlight passing inches from your face. You smell cheap ale on their breath, see tension in their shoulders—they're scared of you, word has spread about the ambush.\n\nOnce they're past, you slip in the opposite direction. Every shadow is a potential hiding spot now, every dark corner a refuge. The city you once knew as home has become a maze to navigate.\n\nIn an abandoned tanner's yard, you find temporary shelter. The smell of death hangs in the air—old hides, long forgotten. But it's isolated, hidden, safe for now. You have time to think.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Rest and plan your next move",
+        "leads_to": "VEX_CH1_TRUTH",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Seek Lyra—she might help",
+        "leads_to": "VEX_CH1_REST",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Make for the eastern alleyways",
+        "leads_to": "VEX_CH1_ALLEYWAY",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_TRUTH": {
+    "id": "VEX_CH1_TRUTH",
+    "character": "VEX",
+    "description": "In the darkness, you finally have time to think clearly. The Obsidian Ledger isn't just evidence—it's a weapon. Every name represents power, secrets, leverage. The Guild built their empire on these secrets, and you've stolen the means to destroy it.\n\nBut destroying the Guild won't bring back the years you've lost, won't undo the fear in your sister's eyes. What do you actually want—vengeance, justice, survival?\n\nLyra's words return: Not everyone who works in shadows serves the darkness. Perhaps she's right. Maybe this ledger could be used differently—not to destroy, but to transform, to put better people in power.\n\nMorning light creeps through the cracks. You need to move, but now you know what you're fighting for.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find Miravel—the real deal",
+        "leads_to": "VEX_CH1_INTEL",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Take the fight to the Guild directly",
+        "leads_to": "VEX_CH2_CONFRONT",
+        "effects": { "strength": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use the ledger for leverage",
+        "leads_to": "VEX_CH1_BRIBE",
+        "effects": { "charisma": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_GATES": {
+    "id": "VEX_CH1_GATES",
+    "character": "VEX",
+    "description": "The Eastern Gate looms before you—two massive towers of black stone flanking a single arched passage. Merchant carts queue for inspection, guards checking cargo and papers with bored efficiency. Beyond the gate lies the open road, freedom.\n\nYou study the guard rotation for an hour. Change of shift comes every thirty minutes, but the inspection line never stops. For a coin or two, a beggar could create a distraction—a false fight, a spilled cart. In the confusion, you could slip through.\n\nBut there's another way: the tradesman's entrance. Less visible, easier to bypass with the right paperwork—you could forge a merchant's seal, the Guild has plenty in the ledger.\n\nAlternatively, you could wait for nightfall and try to scale the walls. Dangerous, but you've done harder things.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Bribe your way through",
+        "leads_to": "VEX_CH1_BRIBE",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Forge merchant papers",
+        "leads_to": "VEX_CH1_INTEL",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Wait for nightfall",
+        "leads_to": "VEX_CH1_ALLEYWAY",
+        "effects": { "stealth": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_BRIBE": {
+    "id": "VEX_CH1_BRIBE",
+    "character": "VEX",
+    "description": "You approach the guard captain with easy confidence, a silver coin changing hands, disappearing into a glove. Haven't seen you before, he mutters—new merchant? You tell him new route, different markets. He studies your papers, perfect forgeries from the ledger.\n\nClean enough, but I'll need more for the road guard, he says. You produce a second coin, watching his eyes. The road guard gets a silver, you tell him. You get a gold. I have friends in high places.\n\nHe understands. Your papers are stamped, your passage approved. As you walk through the gate, you hear him murmuring to his men about important friends. Let them wonder, let them fear. But your journey has only begun—beyond the gate lie different dangers, territories beyond the city's jurisdiction.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Head to Thornhaven",
+        "leads_to": "VEX_CH1_INTEL",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Double back—the Guild isn't finished",
+        "leads_to": "VEX_CH2_CONFRONT",
+        "effects": { "strength": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find a contact in the trade roads",
+        "leads_to": "VEX_CH1_ALLEYWAY",
+        "effects": { "charisma": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_ALLEYWAY": {
+    "id": "VEX_CH1_ALLEYWAY",
+    "character": "VEX",
+    "description": "The back alleys of the Merchant Quarter twist like a maze—exactly where information moves faster than anywhere else. You know a fence named Thresh who operates from a wine shop, dealing in stolen goods and better gossip.\n\nYou find him behind the counter, counting coins. His eyes flicker when he sees you—then widen as he recognizes your face from the wanted posters. You're mad, he hisses, pulling you into the back. Vance has a hundred men looking for you.\n\nThat's why you need his help—a disguise, some connections. You have something valuable to sell. He laughs bitterly. Sell? To who? Everyone knows you've burned every bridge. The only buyer would be the Guild themselves—they want you dead.\n\nHelp me vanish, you say. You've done it before. He hesitates, then nods slowly. There's a ship, leaves at midnight. But it'll cost you everything.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take the ship passage",
+        "leads_to": "VEX_CH1_INTEL",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stay and fight",
+        "leads_to": "VEX_CH2_CONFRONT",
+        "effects": { "strength": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Ask about alternatives",
+        "leads_to": "VEX_CH1_INTEL",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_INTEL": {
+    "id": "VEX_CH1_INTEL",
+    "character": "VEX",
+    "description": "You spend three days gathering information from Thresh's contacts. The Guild is indeed hunting you—their standard networks are activated, plus hidden watchers in the merchant guilds and City Watch. But that's not the worst news.\n\nThe Shadowmaster himself is interested, Thresh reports. Not just for the ledger—he wants you working for him. Word is, he's impressed by your audacity. The death of Vance and the others—he considers that proof of loyalty.\n\nWorking for the man who destroyed my family? Everyone works for someone, Thresh says. Might as well work for someone powerful.\n\nYou consider: it would be tempting to get close to the leader and destroy him from within. But once you step into the lion's den, you'll never step out clean. Alternatively, you could take the information and find someone else—Miravel the Collector has contacts, power, her own agenda.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Infiltrate the Guild",
+        "leads_to": "VEX_CH2_INFILTRATE",
+        "effects": { "stealth": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Seek Miravel's help",
+        "leads_to": "VEX_CH2_GUIDE",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Go it alone—the final confrontation",
+        "leads_to": "VEX_CH2_ATTACK",
+        "effects": { "strength": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_INFILTRATE": {
+    "id": "VEX_CH2_INFILTRATE",
+    "character": "VEX",
+    "description": "You return to the Guild, pretending to submit. Vance is dead, and you bring the Obsidian Ledger as a peace offering. The Shadowmaster accepts your surrender—impressed by your audacity, he says. You are given a chance to prove your loyalty.\n\nYour first mission: infiltrate a merchant house that's been skimming Guild profits. You succeed, bringing back evidence that satisfies the master. He promotes you, gives you access to inner circles.\n\nWeeks pass. You gather intelligence, build relationships, earn trust. The Guild begins to see you as one of their own. But you're playing a longer game—one that will end with their complete destruction.\n\nThe time approaches to make your move. When it happens, it will be catastrophic.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Wait for the right moment",
+        "leads_to": "VEX_CH2_PLAN",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Act now—betray the Guild",
+        "leads_to": "VEX_CH2_BETRAY",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Gather more evidence first",
+        "leads_to": "VEX_CH2_ESCAPE_GUILD",
+        "effects": { "stealth": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_GUIDE": {
+    "id": "VEX_CH2_GUIDE",
+    "character": "VEX",
+    "description": "You find Miravel in her hidden shop behind the bookbinder's storefront. She studies you with those hawk-sharp eyes, listening to your offer.\n\nThe Obsidian Ledger—now that's valuable, she says. But what makes you think I want to bring down the Guild? Maybe I prefer them in power. They make good customers.\n\nYou explain: the Guild killed your family, took everything. You're not leaving until they're destroyed or you are. Miravel smiles thinly. I like your spirit. But you can't do this alone. Here's what I can offer: resources, contacts, a way into the Guild's inner circle. In exchange, I want a cut—and loyalty.\n\nYou accept. The deal is struck. Now the real work begins.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Use Miravel's contacts",
+        "leads_to": "VEX_CH2_INFILTRATE",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Launch a direct assault",
+        "leads_to": "VEX_CH2_ATTACK",
+        "effects": { "strength": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Plan systematically",
+        "leads_to": "VEX_CH2_PLAN",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_ATTACK": {
+    "id": "VEX_CH2_ATTACK",
+    "character": "VEX",
+    "description": "You go alone to the Guild headquarters—a fortress hidden in plain sight. With the ledger memorized and your blades sharp, you're ready for whatever waits inside.\n\nThe first guard falls silently. Then the second. You move through corridors of shadow and blood, leaving bodies in your wake. You're here for one thing: the Shadowmaster.\n\nHe awaits in his throne room, surrounded by his personal guard. You've killed a dozen men getting here. You'll kill more if you have to.\n\nThe Shadowmaster rises from his throne. So, Vex Shadowstep. You've finally come to die. Or perhaps—you mean to kill me instead? The challenge hangs in the air, thick as blood.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept his challenge",
+        "leads_to": "VEX_CH4_TEMPLE",
+        "effects": { "strength": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Fight all at once",
+        "leads_to": "VEX_CH2_FIGHT",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Negotiate from strength",
+        "leads_to": "VEX_CH2_NEGOTIATE",
+        "effects": { "charisma": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_PLAN": {
+    "id": "VEX_CH2_PLAN",
+    "character": "VEX",
+    "description": "You gather everyone who can help: Miravel and her contacts, Corvus still playing double agent, even Thresh from the wine shop. The plan forms slowly, piece by piece.\n\nThe Obsidian Ledger contains enough evidence to bring down not just the Guild, but every councilor and merchant they've bribed. You'll expose everything to the City Watch—give them names, dates, locations.\n\nCorvus will provide internal access to Guild strongholds. Miravel will distribute the evidence to the courts. You'll lead the final assault on the Temple of Shadows.\n\nEveryone knows their role. The date is set. In three days, the Guild burns—or the Guild wins forever.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed with the plan",
+        "leads_to": "VEX_CH2_ATTACK",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Wait for better timing",
+        "leads_to": "VEX_CH2_BETRAY",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Change the plan entirely",
+        "leads_to": "VEX_CH2_DEAL",
+        "effects": { "charisma": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_BETRAY": {
+    "id": "VEX_CH2_BETRAY",
+    "character": "VEX",
+    "description": "You wait too long. The Guild discovers your plans, your alliances, everything. They come for you in the night—twenty hard men, all armed, all ready to kill.\n\nThe battle is fierce. You cut through them one by one, but more keep coming. Miravel falls fighting beside you. Corvus is captured, tortured, killed. Thresh dies covering your escape.\n\nYou're wounded, bleeding, running out of options. The Guild won't stop—the whole city is now a hunting ground. You have two choices: die fighting, or make a deal you might regret.\n\nThe shadow of the Shadowmaster falls over you, and you make your choice.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Make one last stand",
+        "leads_to": "VEX_CH2_SURRENDER",
+        "effects": { "strength": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Negotiate for survival",
+        "leads_to": "VEX_CH2_DEAL",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Flee the city",
+        "leads_to": "VEX_CH2_ESCAPE_GUILD",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_DEAL": {
+    "id": "VEX_CH2_DEAL",
+    "character": "VEX",
+    "description": "You approach the Shadowmaster with terms. You will surrender the Obsidian Ledger—and become his second-in-command. In exchange, your sister goes free, and you walk away clean.\n\nHe considers your offer. The ledger is valuable—but a loyal warrior might be more valuable still. He accepts. Lyra is released. You begin your new life as one of the Guild's leaders.\n\nYears later, you become powerful, feared, respected. The Guild changes under your influence—becomes less brutal, more businesslike. You've made peace with the devil.\n\nOr perhaps you've simply become the devil yourself.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept your new role",
+        "leads_to": "VEX_ENDING_SHADOWKING",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Wait—find opportunity",
+        "leads_to": "VEX_CH2_BETRAY",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Refuse—burn it all down",
+        "leads_to": "VEX_CH2_ATTACK",
+        "effects": { "strength": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_ESCAPE_GUILD": {
+    "id": "VEX_CH2_ESCAPE_GUILD",
+    "character": "VEX",
+    "description": "You escape the city through a network of hidden passages, leaving everything behind. The Guild hunts you for months, but you disappear into the frontier territories—lands beyond their reach.\n\nIn a small village, you start fresh: a new name, a new life, work as a laborer in the fields. The Obsidian Ledger is a memory now, a story you tell no one. You're simply Vex, the quiet worker who keeps to himself.\n\nYears pass. You hear rumors that the Guild still searches for you, that the Shadowmaster has never forgotten. But the frontier is far, and the world is large. You've escaped.\n\nOr perhaps you've simply chosen survival over revenge. Either way, you're alive.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Stay hidden—build a new life",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": { "humanity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return someday for revenge",
+        "leads_to": "VEX_CH2_PLAN",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Send word—let them know you're alive",
+        "leads_to": "VEX_CH2_ATTACK",
+        "effects": { "strength": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_COLLECTOR": {
+    "id": "VEX_CH3_COLLECTOR",
+    "character": "VEX",
+    "description": "Miravel's shop lies hidden behind a bookbinder's storefront in the Merchant Quarter. The old woman leads you through corridors into a vaulted chamber where treasures from a hundred criminal enterprises gleam in lamplight.\n\nMiravel herself is younger than expected—perhaps thirty, with dark hair and eyes sharper than a hawk. She doesn't look up from examining the ledger when you enter. Vex Shadowstep, she says. I wondered when you'd come.\n\nYou know me? I know everyone, she replies. This ledger—it's genuine. The names, accounts, secrets. With this, I could bring the Guild to its knees. Or I could sell it back to them for triple.\n\nYou're not going to do either, you say. Her smile is thin. No? Then tell me—what's your offer?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Make a deal with Miravel",
+        "leads_to": "VEX_CH3_TREASON",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Take the ledger back and go solo",
+        "leads_to": "VEX_CH4_TEMPLE",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Ask for her help unconditionally",
+        "leads_to": "VEX_CH3_DEFEND",
+        "effects": { "charisma": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_TREASON": {
+    "id": "VEX_CH3_TREASON",
+    "character": "VEX",
+    "description": "The plan comes together in whispers—deals with everyone, the Guild, Miravel, even Corvus the double agent. But you have your own plans, your own agenda. The ledger is the weapon, and everyone is pointing it at everyone else.\n\nIn the Guild headquarters, you meet with the Shadowmaster one final time. He believes you've come to swear loyalty. In a way, you have. I've decided, you tell him. The Guild is the future—I'm here to join it properly this time.\n\nHe smiles and extends his hand. Welcome home, Vex Shadowstep.\n\nYou take his hand—and drive a poisoned dagger into his chest. The chaos begins. Miravel's forces attack from outside. Corvus reveals himself. You stand in the middle, ledger in one hand, the Shadowmaster's dying breath in the other. Every alliance broken, every enemy fighting each other.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Seize power as the new Shadowmaster",
+        "leads_to": "VEX_ENDING_SHADOWKING",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy the Guild completely",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Escape into the night",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_DEFEND": {
+    "id": "VEX_CH3_DEFEND",
+    "character": "VEX",
+    "description": "Miravel agrees to help—but the price is steep. She wants the ledger to use as she sees fit, not to destroy the Guild, but to control it. You realize too late: you've made a deal with another devil.\n\nAs weeks pass, you become her enforcer, doing her bidding in the shadows. The Guild weakens under her manipulation, but so does everything else. You've traded one master for another.\n\nYour sister Lyra finds you one night, says you look like a stranger. You are a stranger—to everyone, even yourself. The ledger is gone, your revenge incomplete. But at least you're alive.\n\nIs that enough? Sometimes, late at night, you wonder.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept your new role",
+        "leads_to": "VEX_ENDING_SHADOWKING",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Break away from Miravel",
+        "leads_to": "VEX_CH3_FLEE",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Turn on her—take control",
+        "leads_to": "VEX_CH3_TREASON",
+        "effects": { "strength": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_FLEE": {
+    "id": "VEX_CH3_FLEE",
+    "character": "VEX",
+    "description": "You run from Miravel's control—but she's not the only one hunting you. The Guild still wants you dead, and now you've made a powerful enemy. You flee across the frontier territories, always looking over your shoulder.\n\nIn a distant town, you hear what happened: Miravel used the ledger to tear the Guild apart, becoming the new shadow power in the city. You've destroyed one evil only to create another.\n\nYour sister Lyra finds you after months of searching. You've changed, she says. The look in your eyes—the same look you had when you came to her that first night, wild with the ledger.\n\nMaybe some shadows can't be escaped. Maybe you were always running.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Keep running—always",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return and face your demons",
+        "leads_to": "VEX_CH4_TEMPLE",
+        "effects": { "strength": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Start over—leave it all behind",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": { "humanity": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_ESCAPE_PAST": {
+    "id": "VEX_CH3_ESCAPE_PAST",
+    "character": "VEX",
+    "description": "In the chaos after the Shadowmaster's death, you find an unlocked door and take your chance. The Guild is in disarray, Miravel's forces overrunning their defenses—but you don't wait to see who wins.\n\nYou run through tunnels you've memorized, emerging on the other side of the city near the eastern gate. The guards are gone, called away to fight. You slip through like smoke, like shadow, like the ghost you've always been.\n\nBehind you, the city burns. Miravel or the Guild—whoever wins, they're too busy to chase you. You have the ledger's secrets, your life, nothing else.\n\nThe road stretches ahead, and you walk it.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Keep moving—never look back",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return someday for closure",
+        "leads_to": "VEX_CH2_PLAN",
+        "effects": { "intelligence": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find a new cause",
+        "leads_to": "VEX_CH3_INTEL_GATHER",
+        "effects": { "charisma": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_DOUBLE_CROSS": {
+    "id": "VEX_CH3_DOUBLE_CROSS",
+    "character": "VEX",
+    "description": "The night of the assault, you change plans one final time. Miravel thinks you're her ally in destroying the Guild. Corvus believes you're working for the Guild. The Shadowmaster thinks you've defected to him.\n\nEveryone is wrong. You're playing your own game—the Obsidian Ledger contains copies, hidden in a dozen places. When the Guild falls, you'll release everything, burn every bridge, salt every earth. Let them all destroy each other.\n\nFrom your hidden vantage, you watch the chaos. Miravel's forces collide with Guild loyalists in the Temple. The Shadowmaster falls. Miravel falls. Your sister Lyra escapes with the real ledger, heading for the City Watch.\n\nEverything burns. Everything falls. And you walk away, clean, free, untouchable.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Walk away—leave them to burn",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Claim the throne—lead the ashes",
+        "leads_to": "VEX_ENDING_SHADOWKING",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Help the city recover",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": { "humanity": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_INTEL_GATHER": {
+    "id": "VEX_CH3_INTEL_GATHER",
+    "character": "VEX",
+    "description": "After escaping the city, you spend months building networks outside Guild control. You've learned: the Guild is one organization, but crime is an ecosystem. Other powers rise in their shadow.\n\nYou gather information from frontier towns, from merchants who've escaped Guild predation, from guards who've seen too much. Slowly, you build a picture of the true structure: the Guild is old, but it's not the only game in town.\n\nWhen you have enough, you return—but not to fight. Instead, you bring evidence to the City Council, to the Merchant Princes, to anyone who'll listen. Let them tear the Guild apart for you.\n\nIt takes years, but eventually, the Guild falls—not to your blade, but to the weight of its own crimes.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Return as a hero",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stay in the shadows",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": { "stealth": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Become a new power",
+        "leads_to": "VEX_ENDING_SHADOWKING",
+        "effects": { "strength": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH4_TEMPLE": {
+    "id": "VEX_CH4_TEMPLE",
+    "character": "VEX",
+    "description": "The Guild's true headquarters lies beneath the Temple of Shadows—an ancient complex built long before the city rose above it. You've fought through layers of defenses, through assassins and traps and loyalists who would die for the Guild.\n\nNow you stand in the central chamber. The Shadowmaster waits on his throne, flanked by his personal guard. But he raises a hand, and they stand down. Vex, he says almost warmly. You've come further than anyone expected. But this ends here.\n\nIt ends when the Guild is gone.\n\nThe Guild is eternal. We are the shadows that move beneath the light. You cannot destroy us—you can only join us. His blade materializes in his hand, a curved thing that drinks the torchlight. But I'll give you a choice. Face me in single combat. Win, and you walk free. Lose, and your soul joins the shadows forever.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the duel",
+        "leads_to": "VEX_CH4_DUEL",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Refuse and fight everyone at once",
+        "leads_to": "VEX_CH2_FIGHT",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Make one final offer",
+        "leads_to": "VEX_CH4_FINAL_CHOICE",
+        "effects": { "charisma": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH4_DUEL": {
+    "id": "VEX_CH4_DUEL",
+    "character": "VEX",
+    "description": "The Shadowmaster moves like smoke—fast, impossibly fast. His blade whirls in patterns you've never seen, attacks from angles that shouldn't be possible. You parry, dodge, counter, but you're losing ground.\n\nA strike opens a gash along your ribs. Another catches your shoulder. Blood drips onto ancient stone, and you realize you're fighting a losing battle.\n\nBut you've always been cleverer than your opponents. As the Shadowmaster presses his attack, you let yourself fall—not backward, but to the side, toward the ceremonial dais. Your hand closes on a torch.\n\nFlame catches his cloak. He staggers, and you capitalize—driving your blade up through his chin, into his brain.\n\nThe Shadowmaster falls. His guards freeze, unable to believe what they've seen. You stand over the body, bleeding but victorious. The Guild is yours to command—or destroy.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Claim the Guild's throne",
+        "leads_to": "VEX_ENDING_SHADOWKING",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Burn the Guild to the ground",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Walk away from it all",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH4_FINAL_CHOICE": {
+    "id": "VEX_CH4_FINAL_CHOICE",
+    "character": "VEX",
+    "description": "Before he can react, you speak. I've studied your Guild for years. I know your secrets—all of them. The obsidian throne, the blood oath, the ritual beneath the Temple. I know how to destroy you, or I know how to replace you.\n\nThe Shadowmaster freezes. You continue: give me half your power, make me your equal—not your servant—and I'll bring order. Fight me, and I'll bring chaos. Either way, the old Guild dies today.\n\nHe studies you for a long moment. Then laughs—a dry, hollow sound. You have guts, Vex Shadowstep. I always knew it. Very well—my second-in-command. The new Guild begins today.\n\nYou've won. But at what cost? You've become the very thing you fought.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept—build a better Guild",
+        "leads_to": "VEX_ENDING_SHADOWKING",
+        "effects": { "charisma": 1 },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Strike now while he's vulnerable",
+        "leads_to": "VEX_CH4_DUEL",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Walk away—it's poison",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": { "dexterity": 1 },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_ENDING_SHADOWKING": {
+    "id": "VEX_ENDING_SHADOWKING",
+    "character": "VEX",
+    "description": "You sit upon the Shadowmaster's throne as the last of the resistance is crushed. The Guild survives—stronger now, unified under your rule. You are the Shadow King, ruler of the city's underworld, master of shadows.\n\nIt wasn't the heroic path. You made deals with darkness and became it. But the Guild no longer preys on the innocent—at least, not like before. You've imposed order on chaos, and the city breathes easier.\n\nIn your pocket, you carry the Obsidian Ledger. Your name is at the top now, written in ink that can never be erased. Some call you a monster. Others, a necessary evil. You call yourself... successful.\n\nThe shadows serve you now. And they will serve you forever.",
+    "choices": [],
+    "type": "story",
+    "ending": "SHADOWKING"
+  },
+  "VEX_ENDING_LEGEND": {
+    "id": "VEX_ENDING_LEGEND",
+    "character": "VEX",
+    "description": "The Guild burns. Every stronghold, every vault, every secret meeting place—you've burned them all. The Obsidian Ledger is read aloud in the city square, and the names of the guilty are delivered to the courts. For the first time in a century, the Guild is broken.\n\nYou stand in the ashes of the Temple of Shadows, surrounded by cheering crowds who've come to see the end of an era. They call you hero. They sing songs of your bravery. Children will grow up in a city free from the Guild's terror, and they'll never know the nightmares you faced to give them that freedom.\n\nYour sister Lyra finds you in the aftermath. You did it, she whispers. We did it, you correct her.\n\nBut you know the truth. The shadows will always call to you. The question is whether you'll listen.",
+    "choices": [],
+    "type": "story",
+    "ending": "LEGEND"
+  },
+  "VEX_ENDING_WANDERER": {
+    "id": "VEX_ENDING_WANDERER",
+    "character": "VEX",
+    "description": "You leave the city behind. The Guild is weakened, perhaps broken—Miravel and Corvus will finish what you started. You've done your part. Now it's time to disappear.\n\nOn the road out of the city, you meet a merchant caravan heading north. You join them as a guard, your sword arm earning your keep. No one knows your name here. No one knows what you've done.\n\nAt night, you stare at the stars and wonder if you made the right choice. The Guild still exists, somewhere in the shadows. But so do you—free, alive, unbound.\n\nPerhaps that's enough. Perhaps it has to be.\n\nThe road stretches ahead, and you walk it one step at a time, leaving the past behind.",
+    "choices": [],
+    "type": "story",
+    "ending": "WANDERER"
+  }
