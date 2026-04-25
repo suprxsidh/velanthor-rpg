@@ -9,6 +9,8 @@ import os
 import sys
 import random
 from pathlib import Path
+from src.moves import get_moves_for_class, Move
+from src.bestiary import Enemy, get_enemy_by_name
 
 # ANSI color codes
 CYAN = "\033[1;36m"
@@ -143,8 +145,134 @@ class GameEngine:
         
         return True, None
     
-    def combat_encounter(self, enemy_name, enemy_hp, enemy_damage):
-        """Turn-based combat encounter."""
+    def combat_encounter(self, enemy, char_class):
+        """
+        Turn-based combat encounter with move system.
+        
+        Args:
+            enemy: Enemy object from bestiary
+            char_class: Character class string ("void_mage", "knight", "shadow", "merchant")
+        """
+        enemy_name = enemy.name
+        enemy_hp = enemy.hp
+        enemy_damage = enemy.damage
+        
+        # Get moves for character class
+        class_moves = get_moves_for_class(char_class)
+        
+        print(f"\n{RED}⚔ COMBAT: {enemy_name} ⚔{RESET}")
+        print(f"Enemy HP: {enemy_hp} | Damage: {enemy_damage}")
+        print(f"{CYAN}Weak against:{RESET} {enemy.weak_against if enemy.weak_against else 'None'}")
+        print(f"{YELLOW}Strong against:{RESET} {enemy.strong_against if enemy.strong_against else 'None'}")
+        
+        while self.health > 0 and enemy_hp > 0:
+            self.show_stats()
+            print(f"\n{BOLD}YOUR MOVES:{RESET}")
+            
+            # Display class moves with mana costs
+            move_num = 1
+            for move_key, move in class_moves.items():
+                mana_text = f"{CYAN}{move.mana_cost} mana{RESET}" if move.mana_cost > 0 else "Free"
+                dmg_text = f"{RED}{move.damage} dmg{RESET}" if move.damage > 0 else "-"
+                print(f"  {YELLOW}[{move_num}]{RESET} {move.name:20} | {mana_text:12} | {dmg_text:8} | DC {move.accuracy_dc}")
+                move_num += 1
+            
+            # Basic options
+            print(f"\n  {YELLOW}[A]{RESET} Basic Attack (STR + combat)")
+            print(f"  {YELLOW}[B]{RESET} Defend (-30% dmg taken)")
+            print(f"  {YELLOW}[C]{RESET} Flee")
+            
+            choice = input("\nAction: ").strip().upper()
+            
+            player_damage = 0
+            player_hit = False
+            
+            # Process player action
+            if choice.isdigit():
+                # Move selection
+                move_index = int(choice) - 1
+                move_keys = list(class_moves.keys())
+                
+                if 0 <= move_index < len(move_keys):
+                    selected_move = class_moves[move_keys[move_index]]
+                    
+                    # Check mana
+                    if self.mana >= selected_move.mana_cost:
+                        self.mana -= selected_move.mana_cost
+                        
+                        # Roll accuracy
+                        stat_value = self.stats.get(selected_move.stat_used, 0)
+                        roll = random.randint(1, 20) + stat_value
+                        player_hit = roll >= selected_move.accuracy_dc
+                        
+                        if player_hit:
+                            player_damage = selected_move.damage
+                            # Critical hit on natural 20
+                            if roll == 20:
+                                player_damage *= 2
+                                print(f"{GREEN}⚡ CRITICAL HIT!{RESET}")
+                            enemy_hp -= player_damage
+                            print(f"{GREEN}✓ {selected_move.name} hits for {player_damage} damage!{RESET} (rolled {roll})")
+                        else:
+                            print(f"{RED}✗ {selected_move.name} misses!{RESET} (rolled {roll})")
+                    else:
+                        print(f"{RED}Not enough mana! Need {selected_move.mana_cost}, have {self.mana}{RESET}")
+                else:
+                    print(f"{RED}Invalid move number.{RESET}")
+            
+            elif choice == "A":
+                # Basic Attack
+                hit, roll = self.roll_dice("strength", 8)
+                if hit:
+                    base_damage = random.randint(5, 10)
+                    player_damage = base_damage + self.stats.get("combat", 0)
+                    enemy_hp -= player_damage
+                    print(f"{GREEN}✓ Basic Attack hits for {player_damage} damage!{RESET}")
+                else:
+                    print(f"{RED}✗ Basic Attack misses!{RESET}")
+            
+            elif choice == "B":
+                # Defend - reduce next damage
+                reduced_damage = int(enemy_damage * 0.7)
+                self.health -= reduced_damage
+                print(f"{CYAN}✓ You defend! Damage reduced from {enemy_damage} to {reduced_damage}.{RESET}")
+            
+            elif choice == "C":
+                # Flee
+                hit, roll = self.roll_dice("dexterity", 12)
+                if hit:
+                    print(f"{GREEN}✓ Escaped from combat!{RESET}")
+                    return True
+                else:
+                    print(f"{RED}✗ Failed to escape!{RESET}")
+                    self.health -= enemy_damage
+                    print(f"{enemy_name} hits for {enemy_damage} damage while you flee.")
+            
+            else:
+                print(f"{RED}Invalid action. Choose a move number, A, B, or C.{RESET}")
+            
+            # Enemy turn (if still alive)
+            if enemy_hp > 0:
+                # Enemy attacks
+                enemy_roll = random.randint(1, 20) + enemy.str
+                if enemy_roll >= 8:
+                    enemy_dmg = enemy_damage + random.randint(-2, 2)
+                    enemy_dmg = max(1, enemy_dmg)
+                    self.health -= enemy_dmg
+                    print(f"{RED}{enemy_name} attacks for {enemy_dmg} damage!{RESET}")
+                else:
+                    print(f"{GREEN}{enemy_name} attacks but misses.{RESET}")
+        
+        # Combat ended
+        if self.health <= 0:
+            print(f"\n{RED}💀 You have fallen in combat.{RESET}")
+            return False
+        
+        print(f"\n{GREEN}⚔ VICTORY! {enemy_name} defeated!{RESET}")
+        return True
+    
+    def combat_encounter_simple(self, enemy_name, enemy_hp, enemy_damage):
+        """Legacy simple combat encounter (backward compatibility)."""
         print(f"\n{RED}⚔ COMBAT: {enemy_name} ⚔{RESET}")
         print(f"Enemy HP: {enemy_hp}")
         

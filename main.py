@@ -7,12 +7,206 @@ A dark fantasy choice-based terminal RPG.
 import sys
 import os
 import json
+import random
 
 # Add src to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
 from src.engine import GameEngine, CYAN, YELLOW, GREEN, RED, RESET, BOLD
 from scripts.intro import display_intro, get_characters, show_character_selection
+from src.bestiary import get_enemy_by_name
+
+# Character class mapping (from intro.py choice letters)
+CHAR_CLASS_MAP = {
+    'A': 'void_mage',  # Kira
+    'B': 'knight',    # Theron
+    'C': 'shadow',    # Vex
+    'D': 'merchant',  # Elara
+}
+
+# Full character data for game creation (not in intro.py)
+CHARACTER_DATA = {
+    'A': {
+        'name': 'Kira Nightwind',
+        'class': 'void_mage',
+        'stats': {'strength': 4, 'dexterity': 6, 'intelligence': 8, 'charisma': 5, 'void_magic': 7, 'combat': 3, 'stealth': 4, 'influence': 2},
+        'inventory': ["void spellbook", "mother's locket"],
+        'start_scene': 'KIRA_CH1_THORNWICK',
+        'mana': 40
+    },
+    'B': {
+        'name': 'Theron Ashford',
+        'class': 'knight',
+        'stats': {'strength': 8, 'dexterity': 6, 'intelligence': 5, 'charisma': 6, 'void_magic': 0, 'combat': 9, 'stealth': 3, 'influence': 4},
+        'inventory': ['rusty sword', 'old shield'],
+        'start_scene': 'THERON_CH1_TAVERN',
+        'mana': 30
+    },
+    'C': {
+        'name': 'Vex Shadowstep',
+        'class': 'shadow',
+        'stats': {'strength': 5, 'dexterity': 9, 'intelligence': 7, 'charisma': 6, 'void_magic': 0, 'combat': 4, 'stealth': 10, 'influence': 5},
+        'inventory': ['lockpicking tools', 'crown piece'],
+        'start_scene': 'VEX_CH1_DOCKS',
+        'mana': 25
+    },
+    'D': {
+        'name': 'Elara Vance',
+        'class': 'merchant',
+        'stats': {'strength': 4, 'dexterity': 5, 'intelligence': 9, 'charisma': 8, 'void_magic': 0, 'combat': 2, 'stealth': 4, 'influence': 8},
+        'inventory': ['trading ledger', 'letter of credit'],
+        'start_scene': 'ELARA_CH1_ESTATE',
+        'mana': 35
+    },
+}
+
+# Battle scene to enemy mapping
+BATTLE_ENEMY_MAP = {
+    'KIRA_CH1_BANDITS': 'Bandit',
+    'KIRA_CH1_WATCH_TRIAL': 'Watch Mercenary',
+    'KIRA_CH1_CIRCLE_TRIAL': 'Circle Initiate',
+    'KIRA_CH1_WASTELAND_BATTLE': 'Void Creature',
+    'KIRA_CH1_BANDIT_AMBUSH': 'Cult Enforcer',
+    'KIRA_CH1_GUARD_POST': 'Border Guard',
+    'KIRA_CH1_SHADOW_WATCH': 'Hollow Knight',
+    'KIRA_CH1_WASTELAND_STAND': 'Void Creature',
+    'KIRA_CH2_BATTLE': 'Hollow Knight',
+    'KIRA_CH2_PALACE_SURPRISE': 'Royal Guard',
+    'KIRA_CH2_CATACOMB_GUARDIAN': 'Ancient Guardian',
+    'KIRA_CH2_GUILD_INFILTRATE': 'Guild Enforcer',
+    'KIRA_CH2_MAGE_TOWER': 'Corrupted Mage',
+    'KIRA_CH2_STREET_FIGHT': 'Cult Priest',
+    'KIRA_CH2_SHADOW_SQUAD': 'Hollow Knight',
+    'KIRA_CH2_PALACE_ESCAPE': 'Royal Guard',
+    'KIRA_CH3_TEMPLE_GUARDS': 'Hollow Knight',
+    'KIRA_CH3_PRIESTS': 'Cult Priest',
+    'KIRA_CH3_VESPERA_FIGHT': 'Vespera',
+    'KIRA_CH3_FINAL_GUARDIAN': 'The Hollow King',
+    'KIRA_CH3_BEAST': 'Void Beast',
+    'KIRA_CH3_ALTAR_GUARDIANS': 'Void Golem',
+    'KIRA_CH3_TEMPLE_ENTRANCE': 'Cultist Sentinel',
+    'KIRA_CH2_PALACE_ENTER': 'Royal Guard',
+    'THERON_CH1_AMBUSH': 'bandit',
+    'THERON_CH1_JOURNEY': 'bandit',
+    'THERON_CH2_COMPANION': 'watch_mercenary',
+    'THERON_CH2_BATTLE': 'cultist',
+    'THERON_CH3_BATTLE': 'hollow_knight',
+    # New Theron Chapter 1 Battle Scenes
+    'THERON_CH1_TAVERN_BRAWL': 'cultist',
+    'THERON_CH1_STREET_AMBUSH': 'cultist',
+    'THERON_CH1_WATCH_PATROL': 'watch_mercenary',
+    'THERON_CH1_CULT_HUNTERS': 'cult_leader',
+    'THERON_CH1_BORDER_SKIRMISH': 'watch_mercenary',
+    'THERON_CH1_TAVERN_FIGHT': 'cultist',
+    'THERON_CH1_NIGHT_ASSAULT': 'street_thug',
+    'THERON_CH1_CULT_ENCOUNTER': 'cultist',
+    # New Theron Chapter 2 Battle Scenes
+    'THERON_CH2_TEMPLE_ASSAULT': 'cultist',
+    'THERON_CH2_PRIEST_FIGHT': 'cult_leader',
+    'THERON_CH2_ESCORT_MISSION': 'cultist',
+    'THERON_CH2_GUARD_POST': 'watch_mercenary',
+    'THERON_CH2_AMBUSH_COUNTER': 'cultist',
+    'THERON_CH2_PRISON_BREAK': 'hollow_guard',
+    'THERON_CH2_RITUAL_INTERRUPT': 'cultist',
+    'THERON_CH2_CULT_VANGUARD': 'hollow_knight',
+    # New Theron Chapter 3 Battle Scenes
+    'THERON_CH3_TEMPLE_ENTRY': 'void_rat',
+    'THERON_CH3_WARRIORS': 'hollow_knight',
+    'THERON_CH3_VESPERA_DUEL': 'vespera',
+    'THERON_CH3_FINAL_STAND': 'the_hollow_king',
+    'THERON_CH3_BEAST_BATTLE': 'the_hollow_king',
+    'VEX_CH1_DOCKS': 'guild_enforcer',
+    'VEX_CH1_AMBUSH': 'Guild Enforcer',
+    'VEX_CH2_SURRENDER': 'Guard',
+    'VEX_CH2_FIGHT': 'Guild Enforcer',
+    'VEX_CH1_DOCKS_CHASE': 'guild_enforcer',
+    'VEX_CH1_GANG_ENCOUNTER': 'street_thug',
+    'VEX_CH1_GUARD_PATROL': 'city_watch',
+    'VEX_CH1_SMUGGLER_BATTLE': 'smuggler',
+    'VEX_CH1_PICKPOCKET_GONE_WRONG': 'guild_enforcer',
+    'VEX_CH1_ROOFTOP_ESCAPE': 'guild_enforcer',
+    'VEX_CH1_STREET_AMBUSH': 'guild_enforcer',
+    'VEX_CH1_WATCH_CHASE': 'city_watch',
+    'VEX_CH1_FINAL_ESCAPE': 'guild_enforcer',
+    'VEX_CH2_GUILD_HALL': 'guild_enforcer',
+    'VEX_CH2_ASSASSIN_MISSION': 'guild_lieutenant',
+    'VEX_CH2_RIVAL_THIEF': 'rival_thief',
+    'VEX_CH2_WATCH_INFILTRATE': 'city_watch',
+    'VEX_CH2_CULT_ROUTE': 'cultist',
+    'VEX_CH2_SECRET_PASSAGE': 'guild_guard',
+    'VEX_CH2_GUILD_ASSAULT': 'guild_enforcer',
+    'VEX_CH3_TREASURE_HOUSE': 'shadowmaster',
+    'VEX_CH3_GUILD_WAR': 'guild_enforcer',
+    'VEX_CH3_BETRAYAL': 'corvus',
+    'VEX_CH3_FINAL_THIEF': 'royal_guard',
+    'VEX_CH3_SHADOW_FIGHT': 'vance_hunter',
+    'ELARA_CH1_STRIKE': 'Watch Mercenary',
+    'ELARA_CH2_MEETING': 'Cultist',
+    'ELARA_CH2_ATTACK': 'Watch Mercenary',
+    # New Elara Chapter 1 Battle Scenes
+    'ELARA_CH1_ESTATE_ASSAULT': 'Hollow Knight',
+    'ELARA_CH1_GUARD_FIGHT': 'Watch Mercenary',
+    'ELARA_CH1_CULT_INFILTRATE': 'Cultist',
+    'ELARA_CH1_MERCHANT_WAR': 'Street Thug',
+    'ELARA_CH1_ASSASSIN_ENCOUNTER': 'Cult Enforcer',
+    # New Elara Chapter 2 Battle Scenes
+    'ELARA_CH2_NETWORK_BATTLE': 'Cultist',
+    'ELARA_CH2_CIRCLE_ASSAULT': 'Hollow Knight',
+    'ELARA_CH2_CULT_SURPRISE': 'Cult Enforcer',
+    'ELARA_CH2_VAULT_HEIST': 'Void Golem',
+    'ELARA_CH2_BETRAYAL': 'Cultist',
+    'ELARA_CH2_CULT_VAULT': 'Hollow Knight',
+    # New Elara Chapter 3 Battle Scenes
+    'ELARA_CH3_VAULT_BATTLE': 'Hollow Knight',
+    'ELARA_CH3_FINAL_ASSULT': 'Cultist',
+    'ELARA_CH3_VESPERA_CONFRONT': 'Vespera',
+    'ELARA_CH3_CROWN_FIGHT': 'Vespera',
+    'ELARA_CH3_VICTORY_BATTLE': 'Vespera',
+}
+
+# Stealth-based bypass: scenes where high stealth can skip combat
+STEALTH_BYPASS_SCENES = {
+    'VEX_CH1_AMBUSH': {'dc': 12, 'stat': 'stealth', 'skip_scene': 'VEX_CH1_SISTER'},
+    'VEX_CH2_FIGHT': {'dc': 14, 'stat': 'stealth', 'skip_scene': None},
+}
+
+# Influence-based alternatives for merchant class
+INFLUENCE_ALTERNATIVES = {
+    'ELARA_CH2_ATTACK': {
+        'bribe': {'gold_cost': 20, 'skip_scene': 'ELARA_CH3_VAULT'},
+        'intimidate': {'dc': 12, 'stat': 'charisma', 'skip_scene': 'ELARA_CH3_VAULT'},
+    }
+}
+
+
+def get_character_class(engine):
+    """Get character's combat class based on player name."""
+    if not engine.player:
+        return 'knight'
+    name_lower = engine.player.lower()
+    if 'kira' in name_lower:
+        return 'void_mage'
+    elif 'theron' in name_lower:
+        return 'knight'
+    elif 'vex' in name_lower:
+        return 'shadow'
+    elif 'elara' in name_lower:
+        return 'merchant'
+    return 'knight'
+
+
+def is_battle_scene(scene_id):
+    """Check if scene ID indicates a battle/ambush/fight scene."""
+    if not scene_id:
+        return False
+    scene_upper = scene_id.upper()
+    # Check keywords OR if scene is in BATTLE_ENEMY_MAP
+    return 'BATTLE' in scene_upper or 'AMBUSH' in scene_upper or '_FIGHT' in scene_upper or scene_id in BATTLE_ENEMY_MAP
+
+
+def get_enemy_for_scene(scene_id):
+    """Get enemy for a battle scene."""
+    return BATTLE_ENEMY_MAP.get(scene_id)
 
 
 def load_story_scenes():
@@ -28,65 +222,15 @@ def load_story_scenes():
 def create_character(choice, engine):
     """Set up player based on character choice."""
     
-    characters = {
-        'A': {
-            'name': 'Kira Nightwind',
-            'tagline': 'The void calls to you. Will you answer?',
-            'class': 'Void Mage',
-            'stats': {
-                'strength': 4, 'dexterity': 6, 'intelligence': 8,
-                'charisma': 5, 'void_magic': 7, 'combat': 3,
-                'stealth': 4, 'influence': 2
-            },
-            'inventory': ['void spellbook', 'mother\'s locket'],
-            'start_scene': 'KIRA_CH1_THORNWICK'
-        },
-        'B': {
-            'name': 'Theron Ashford',
-            'tagline': 'You were the greatest knight. Then you ran.',
-            'class': 'Knight',
-            'stats': {
-                'strength': 8, 'dexterity': 6, 'intelligence': 5,
-                'charisma': 6, 'void_magic': 0, 'combat': 9,
-                'stealth': 3, 'influence': 4
-            },
-            'inventory': ['rusty sword', 'old shield'],
-            'start_scene': 'THERON_CH1_TAVERN'
-        },
-        'C': {
-            'name': 'Vex Shadowstep',
-            'tagline': 'Trust is a commodity. You are the product.',
-            'class': 'Shadow',
-            'stats': {
-                'strength': 5, 'dexterity': 9, 'intelligence': 7,
-                'charisma': 6, 'void_magic': 0, 'combat': 4,
-                'stealth': 10, 'influence': 5
-            },
-            'inventory': ['lockpicking tools', 'crown piece'],
-            'start_scene': 'VEX_CH1_DOCKS'
-        },
-        'D': {
-            'name': 'Elara Vance',
-            'tagline': 'Your parents are dead. The truth awaits.',
-            'class': 'Merchant',
-            'stats': {
-                'strength': 4, 'dexterity': 5, 'intelligence': 9,
-                'charisma': 8, 'void_magic': 0, 'combat': 2,
-                'stealth': 4, 'influence': 8
-            },
-            'inventory': ['trading ledger', 'letter of credit'],
-            'start_scene': 'ELARA_CH1_ESTATE'
-        }
-    }
-    
-    if choice not in characters:
+    if choice not in CHARACTER_DATA:
         return None
     
-    char = characters[choice]
+    char = CHARACTER_DATA[choice]
     engine.player = char['name']
     engine.stats = char['stats'].copy()
     engine.inventory = char['inventory'].copy()
     engine.current_scene = char['start_scene']
+    engine.mana = char.get('mana', 30)
     
     return engine
 
@@ -266,6 +410,81 @@ def main():
             break
         
         scene_data = scenes[scene_id]
+        
+        # Check for battle scenes - trigger combat before description
+        if is_battle_scene(scene_id):
+            char_class = get_character_class(engine)
+            
+            # Check for stealth bypass (Vex with high stealth)
+            if scene_id in STEALTH_BYPASS_SCENES and char_class == 'shadow':
+                bypass_info = STEALTH_BYPASS_SCENES[scene_id]
+                stealth_val = engine.stats.get(bypass_info['stat'], 0)
+                stealth_roll = random.randint(1, 20) + stealth_val
+                
+                print(f"\n{CYAN}═══ STEALTH OPPORTUNITY ═══{RESET}")
+                print(f"Your stealth prowess might allow you to bypass this encounter...")
+                print(f"{YELLOW}[S]{RESET} Attempt stealth bypass (DC {bypass_info['dc']}, Roll: {stealth_roll})")
+                print(f"{YELLOW}[F]{RESET} Engage in combat instead")
+                
+                bypass_choice = input("\nChoice: ").strip().upper()
+                
+                if bypass_choice == 'S' and stealth_roll >= bypass_info['dc']:
+                    print(f"{GREEN}✓ You slip past undetected!{RESET}")
+                    # Grant stealth stat bonus for bypassing
+                    engine.stats['stealth'] = engine.stats.get('stealth', 0) + 1
+                    if bypass_info['skip_scene']:
+                        engine.current_scene = bypass_info['skip_scene']
+                        continue
+                else:
+                    if bypass_choice == 'S':
+                        print(f"{YELLOW}Stealth failed. Engaging combat...{RESET}")
+                    else:
+                        print(f"{YELLOW}You choose to fight.{RESET}")
+            
+            # Check for influence alternatives (Elara - merchant class)
+            if scene_id in INFLUENCE_ALTERNATIVES and char_class == 'merchant':
+                alt = INFLUENCE_ALTERNATIVES[scene_id]
+                print(f"\n{CYAN}═══ ALTERNATIVE OPTIONS ═══{RESET}")
+                print(f"{YELLOW}[C]{RESET} Combat")
+                print(f"{YELLOW}[B]{RESET} Bribe (Cost: {alt['bribe']['gold_cost']} gold)")
+                print(f"{YELLOW}[I]{RESET} Intimidate (DC {alt['intimidate']['dc']})")
+                
+                alt_choice = input("\nChoice: ").strip().upper()
+                
+                if alt_choice == 'B':
+                    if engine.gold >= alt['bribe']['gold_cost']:
+                        engine.gold -= alt['bribe']['gold_cost']
+                        print(f"{GREEN}✓ You bribe your way through! (-{alt['bribe']['gold_cost']} gold){RESET}")
+                        engine.stats['influence'] = engine.stats.get('influence', 0) + 1
+                        engine.current_scene = alt['bribe']['skip_scene']
+                        continue
+                    else:
+                        print(f"{RED}Not enough gold! ({engine.gold}/{alt['bribe']['gold_cost']}){RESET}")
+                        print("Falling back to combat...")
+                elif alt_choice == 'I':
+                    cha_roll = random.randint(1, 20) + engine.stats.get('charisma', 0)
+                    if cha_roll >= alt['intimidate']['dc']:
+                        print(f"{GREEN}✓ Your presence strikes fear! You intimidate them into submission.{RESET}")
+                        engine.stats['charisma'] = engine.stats.get('charisma', 0) + 1
+                        engine.current_scene = alt['intimidate']['skip_scene']
+                        continue
+                    else:
+                        print(f"{RED}✗ Intimidation failed!{RESET}")
+                        print("Falling back to combat...")
+                else:
+                    print(f"{YELLOW}Choosing combat.{RESET}")
+            
+            enemy_name = get_enemy_for_scene(scene_id)
+            if enemy_name:
+                enemy = get_enemy_by_name(enemy_name)
+                if enemy:
+                    print(f"\n{RED}⚔ COMBAT ENCOUNTER: {enemy.name} ⚔{RESET}")
+                    victory = engine.combat_encounter(enemy, char_class)
+                    if not victory:
+                        print(f"\n{RED}You have fallen in battle...{RESET}")
+                        engine.current_scene = None
+                        break
+                    print(f"\n{GREEN}VICTORY! You defeated {enemy.name}!{RESET}")
         
         # Display scene
         result = display_scene(scene_data, engine)
