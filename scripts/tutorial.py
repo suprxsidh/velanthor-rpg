@@ -64,32 +64,41 @@ class Tutorial:
         
         print("\n" + "─" * 40)
         print("  📊 CHARACTER STATS")
-        print("─" * 40)
+        print("─"  * 40)
         print("""
-  Your character has five stats:
+  Your character has EIGHT stats:
 
   ⚔️  STRENGTH (STR)
       Physical power. Used for combat damage,
       athletic checks, and lifting heavy objects.
-
-  🏃  DEXTERITY (DEX)
+      
+  🏃 DEXTERITY (DEX)  
       Agility and reflexes. Used for stealth,
-      lockpicking, dodging, and precision attacks.
-
+      lockpicking, dodging, and escaping.
+      
   🧠  INTELLIGENCE (INT)
       Knowledge and logic. Used for puzzle solving,
       remembering lore, and magical aptitude.
-
+      
   💬  CHARISMA (CHA)
       Persuasion and leadership. Used for dialogue,
       NPC reactions, and inspiring allies.
+      
+  ⚡  [CLASS SKILL]
+      Unique skill based on your character:
+      - VOID_MAGIC (Kira) - Void powers
+      - COMBAT (Theron) - Sword fighting
+      - STEALTH (Vex) - Shadow moves
+      - INFLUENCE (Elara) - Business/money
 
-  📖  [CLASS SKILL]
-      A unique skill based on your character:
-      - Void Magic (Kira)
-      - Combat (Theron)
-      - Stealth (Vex)
-      - Influence (Elara)
+  📈  HP / MANA / GOLD
+      • HP (Health): Your life in battle (100 base)
+      • Mana: Spell energy (25-40 based on class)
+      • Gold: Money for bribes/items
+
+  STATS IMPACT COMBAT:
+      Higher stat = Better move accuracy!
+      Class skill increases unique move damage.
         """)
         print("─" * 40)
         input("\n  [ Press any key to continue ]")
@@ -124,29 +133,70 @@ class Tutorial:
         input("\n  [ Press any key to continue ]")
     
     def show_combat(self):
-        """Explain combat basics."""
+        """Explain Pokemon-style combat."""
         if "combat" in self.shown_topics:
             return
         
         self.shown_topics.add("combat")
         
         print("\n" + "─" * 40)
-        print("  ⚔️  COMBAT BASICS")
+        print("  ⚔️  POKEMON-STYLE COMBAT")
         print("─" * 40)
         print("""
-  When you encounter enemies, combat begins.
+  When you encounter enemies marked with ⚔️ or battle 
+  scenes, combat begins!
 
-  Your turn options:
-    [A] Attack - Deal damage based on STR/DEX
-    [B] Defend - Reduce incoming damage
-    [C] Use Skill - Spend mana/stamina for abilities
-    [D] Flee - Attempt to escape (DEX check)
+  YOUR TURN:
+    Choose a move (1-6) or use basic options (A-C):
+    
+    Moves use your CLASS SKILL - each character 
+    has unique abilities:
+    
+    ╔════════════════════════════════════════╗
+    ║  KIRA (Void Mage)  - Uses VOID_MAGIC    ║
+    ║    • Void Burst (15 dmg, 8 mana)         ║
+    ║    • Shadow Bolt (10 dmg, 5 mana)        ║
+    ║    • Void Shield (defense)              ║
+    ║    • Soul Drain (drain life)            ║
+    ║    • Dark Pact (power)                ║
+    ║    • Void Walk (escape)               ║
+    ╠════════════════════════════════════════════════╣
+    ║  THERON (Knight) - Uses COMBAT          ║
+    ║    • Shield Bash (8 dmg, 3 mana)          ║
+    ║    • Cleaving Strike (14 dmg, 6 mana)     ║
+    ║    • Defensive Stance (defense)         ║
+    ║    • Reckless Blow (high dmg)          ║
+    ║    • Blade Storm (area)               ║
+    ║    • Iron Will (buff)                 ║
+    ╠════════════════════════════════════════════════╣
+    ║  VEX (Shadow) - Uses STEALTH           ║
+    ║    • Backstab (12 dmg, 4 mana)          ║
+    ║    • Poison Blade (DoT, 5 mana)         ║
+    ║    • Smoke Bomb (evade)              ║
+    ║    • Fan of Knives (multi)           ║
+    ║    • Shadow Step ( repositions)       ║
+    ║    • Assassinate (finisher)           ║
+    ╠════════════════════════════════════════════════╣
+    ║  ELARA (Merchant) - Uses INFLUENCE    ║
+    ║    • Coin Toss (5 dmg, 2 mana)         ║
+    ║    • Sweet Talk (charm)               ║
+    ║    • Intimidate (fear)                ║
+    ║    • Call in Favor (summon)           ║
+    ║    • Gold Syndrome (pay to win)        ║
+    ║    • Business Ending (ultimate)        ║
+    ╚══════════════════════════════════════════╝
 
-  Combat is turn-based. Pay attention to your
-  health (HP) and resources (Mana/Stamina).
-  
-  Some skills require specific stats or items.
-  Build your character wisely!
+  HOW COMBAT WORKS:
+    1. Choose move (1-6) or basic (A-C)
+    2. Roll: d20 + YOUR STAT vs ENEMY DC
+    3. Hit = Deal damage shown
+    4. Enemy attacks back
+    5. Repeat until one falls!
+
+  STATS MATTER:
+    • Higher stat = better accuracy
+    • Mana limits moves per battle
+    • Watch enemy weaknesses!
         """)
         print("─" * 40)
         input("\n  [ Press any key to continue ]")

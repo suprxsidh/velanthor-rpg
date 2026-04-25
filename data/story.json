@@ -30,6 +30,15 @@
           "intelligence": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Stand and fight—let them come!",
+        "leads_to": "KIRA_CH1_WASTELAND_BATTLE",
+        "effects": {
+          "void_magic": 2
+        },
+        "requires": null
       }
     ]
   },
@@ -1942,7 +1951,7 @@
     "choices": [
       {
         "letter": "A",
-        "text": "Ignore her\u2014another creditor or bounty hunter",
+        "text": "Ignore her—another creditor or bounty hunter",
         "leads_to": "THERON_CH1_IGNORE",
         "effects": {
           "humanity": -1
@@ -1951,7 +1960,7 @@
       },
       {
         "letter": "B",
-        "text": "Challenge her\u2014what does she want?",
+        "text": "Challenge her—what does she want?",
         "leads_to": "THERON_CH1_DEMAND",
         "effects": {
           "strength": 1
@@ -1960,10 +1969,19 @@
       },
       {
         "letter": "C",
-        "text": "Politely decline\u2014whatever she's selling",
+        "text": "Politely decline—whatever she's selling",
         "leads_to": "THERON_CH1_DECLINE",
         "effects": {
           "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Fight—show her you're still a knight!",
+        "leads_to": "THERON_CH1_TAVERN_BRAWL",
+        "effects": {
+          "combat": 2
         },
         "requires": null
       }
@@ -3799,6 +3817,15 @@
         "leads_to": "VEX_CH1_TUNNELS",
         "effects": {
           "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Turn and fight—face your pursuers!",
+        "leads_to": "VEX_CH1_DOCKS_CHASE",
+        "effects": {
+          "stealth": 2
         },
         "requires": null
       }
@@ -5714,6 +5741,15 @@
         "leads_to": "ELARA_CH1_ALLIES",
         "effects": {
           "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Assault the estate—attack the guards!",
+        "leads_to": "ELARA_CH1_ESTATE_ASSAULT",
+        "effects": {
+          "influence": 2
         },
         "requires": null
       }
