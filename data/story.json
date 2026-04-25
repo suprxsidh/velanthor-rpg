@@ -908,6 +908,265 @@
     "ending": "FOLLOW",
     "choices": []
   },
+  "KIRA_ENDING_VICTOR": {
+    "id": "KIRA_ENDING_VICTOR",
+    "character": "KIRA",
+    "description": "You claim the crown, but this time\u2014differently. The seventh piece in your hand doesn't amplify the power. It balances it.\n\nThe void flows through you, not to consume, but to transform. The Cultists feel it and scream\u2014their pieces shatter, releasing the souls they've taken. The Hollow King writhes, dissolving into the nothing it came from.\n\nAnd your mother? She falls free, mortal again, weeping with joy.\n\nThe crown crumbles to dust around you. Not destroyed\u2014redeemed. The void no longer hungers. It serves.\n\nYou are not Undying. You are not Martyr. You are Kira Nightwind, who chose a third path: victory for everyone.",
+    "ending": "VICTOR",
+    "choices": []
+  },
+  "KIRA_ENDING_SURVIVOR": {
+    "id": "KIRA_ENDING_SURVIVOR",
+    "character": "KIRA",
+    "description": "You don't want the crown. You never did.\n\nIn the final moment, you use the seventh piece not to claim power, but to tear a hole in reality itself. The void opens\u2014and you grab your mother, diving through.\n\nBehind you, the Temple collapses. The Cult screams as the void consumes them. The Hollow King howls with rage, trapped in collapsing dimensions.\n\nAnd you? You emerge in a field you've never seen, under stars you've never known. Your mother is alive. Mortal. Breathing.\n\nThe crown is gone. The Cult thinks you're dead. In this new world, you're just two women starting over.\n\nSometimes you feel the void still calling. But you have each other. And that's enough.",
+    "ending": "SURVIVOR",
+    "choices": []
+  },
+  "KIRA_ENDING_LOST": {
+    "id": "KIRA_ENDING_LOST",
+    "character": "KIRA",
+    "description": "You try to become the bridge\u2014to hold both the void and the light. But the crown was never meant for balance.\n\nReality tears. The world screams\u2014and you're pulled into the space between.\n\nYou see everything now: every Nightwind who came before, every choice that led here. Your mother and father, reaching for you. The Hollow King, laughing. The Beast, waiting.\n\nYou are not destroyed. Not transformed. Lost\u2014suspended in the between-place, connected to all things and none.\n\nSometimes, in dreams, you reach through to the living world. Sometimes, those who listen hear your whispers.\n\nYou are no longer Kira. But you are not gone either. You are the bridge. And bridges, eventually, get used.",
+    "ending": "LOST",
+    "choices": []
+  },
+  "KIRA_CH1_STUDY": {
+    "id": "KIRA_CH1_STUDY",
+    "character": "KIRA",
+    "description": "You take time to study the crown piece\u2014its power, its history, its purpose. The visions it shows you are terrifying: the Void Beast, Aethon's desperation, the price of power. But knowledge is power, and you need both to survive what's coming.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue studying",
+        "leads_to": "KIRA_CH1_TRAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use the knowledge to fight",
+        "leads_to": "KIRA_CH1_WATCH",
+        "effects": {
+          "void_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Move on to Crownhaven",
+        "leads_to": "KIRA_CH1_KINGS_ROAD",
+        "effects": {
+          "dexterity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH2_PREPARE": {
+    "id": "KIRA_CH2_PREPARE",
+    "character": "KIRA",
+    "description": "You gather information about the Cult and Vespera before moving. The Circle provides what they know: the Cult has six crown pieces, Vespera leads them, and the final piece is in the palace. Time is running out.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Head to Crownhaven immediately",
+        "leads_to": "KIRA_CH2_CROWNHAVEN",
+        "effects": {
+          "void_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Prepare more first",
+        "leads_to": "KIRA_CH2_VESPERA",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find allies",
+        "leads_to": "KIRA_CH3_ALLIES",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH3_ALLIES": {
+    "id": "KIRA_CH3_ALLIES",
+    "character": "KIRA",
+    "description": "You gather allies\u2014former enemies, unlikely friends. The Circle offers mages. The Watch offers soldiers. Even some former Cultists want redemption. Together, you might have a chance.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Lead them to the Temple",
+        "leads_to": "KIRA_CH3_TEMPLE",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Study the crown together",
+        "leads_to": "KIRA_CH3_STUDY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Wait for the right moment",
+        "leads_to": "KIRA_CH3_CIRCLE",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH3_STUDY": {
+    "id": "KIRA_CH3_STUDY",
+    "character": "KIRA",
+    "description": "You study the crown piece more\u2014the void's nature, its weaknesses. Aethon became the Undying to seal the Beast. Can you do the same? Or is there another way? The answers lie in the ancient texts.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Try to seal it",
+        "leads_to": "KIRA_CH3_CHARGE",
+        "effects": {
+          "void_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy it instead",
+        "leads_to": "KIRA_CH3_TALK",
+        "effects": {
+          "void_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use it to communicate",
+        "leads_to": "KIRA_CH3_BARGAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH2_LEAVE": {
+    "id": "KIRA_CH2_LEAVE",
+    "character": "KIRA",
+    "description": "You leave Tom with the Circle\u2014they'll protect him, train him. You have a mother's last wish to fulfill. The road ahead is yours alone. But the weight of leaving him behind will follow you.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Head to Crownhaven",
+        "leads_to": "KIRA_CH2_CROWNHAVEN",
+        "effects": {
+          "void_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Prepare more first",
+        "leads_to": "KIRA_CH2_PREPARE",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find the Circle for help",
+        "leads_to": "KIRA_CH2_CIRCLE",
+        "effects": {
+          "void_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH2_COMPANION": {
+    "id": "KIRA_CH2_COMPANION",
+    "character": "KIRA",
+    "description": "The boy Tom follows you\u2014your student, your responsibility. He has the void in him too. In the chaos ahead, you'll need someone you can trust. But can you protect him and save your mother at the same time?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "He stays with you",
+        "leads_to": "KIRA_CH2_CROWNHAVEN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Leave him with the Circle",
+        "leads_to": "KIRA_CH2_CIRCLE",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Send him somewhere safe",
+        "leads_to": "KIRA_CH2_STUDY",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH3_ALONE": {
+    "id": "KIRA_CH3_ALONE",
+    "character": "KIRA",
+    "description": "You face the Temple alone\u2014allies would only slow you down or be used against you. The void in you grows stronger as you approach. The Beast waits. The Hollow King waits. Your mother waits. This ends now.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Charge and fight",
+        "leads_to": "KIRA_CH3_CHARGE",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Talk first",
+        "leads_to": "KIRA_CH3_TALK",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Bargain for your mother",
+        "leads_to": "KIRA_CH3_BARGAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
   "KIRA_CH1_WATCH_TRIAL": {
     "id": "KIRA_CH1_WATCH_TRIAL",
     "character": "KIRA",
@@ -2526,6 +2785,176 @@
       }
     ]
   },
+  "THERON_CH2_VESPERA_TRAP": {
+    "id": "THERON_CH2_VESPERA_TRAP",
+    "character": "THERON",
+    "description": "You lower your blade, pretending to consider her offer. Your eyes scan the chamber—the six shards glowing on their pedestals, the children suspended above the altar, the portal already opening in the center.\n\nThis is a trap. You know it. She knows it.\n\n'How do I know I can trust you?' you ask, buying time.\n\nElara laughs—the sound is wrong, like glass breaking. 'You can't. But you have no other choice. Join me, or watch the world burn.'\n\nThe portal pulses. The Beast stirs. And you realize: you have maybe five minutes before the Convergence completes. Enough time to act—but only if you're clever.\n\n'I'll need the seventh shard,' you say. 'I'll bring it to you—but let the children go first.'\n\nShe tilts her head, considering. Then nods.\n\nThe first children are released. One minute. Two. You're running out of time.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Grab the shard and run\u2014survive",
+        "leads_to": "THERON_CH3_WAIT",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Complete the Convergence\u2014become king",
+        "leads_to": "THERON_CH3_WAIT",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Signal Morgana\u2014betrayal or rescue",
+        "leads_to": "THERON_CH3_WAIT",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH3_WAIT": {
+    "id": "THERON_CH3_WAIT",
+    "character": "THERON",
+    "description": "You wait. Hours pass. The Cult grows desperate—they attack villages, sacrifice children, unleash chaos. The kingdom cries out for a hero.\n\nBut you wait.\n\nThe Circle sends hunters. Morgana demands answers. Even Vespera sends messages: 'I know you have the seventh. Meet me, or more children die.'\n\nStill you wait.\n\nAnd then, on the night of the Convergence, you move. The Cult has gathered all their forces at the temple—all six shards glowing on their altar. Vespera stands ready to complete the ritual.\n\nBut she's missing one thing.\n\nYou.\n\nWith the seventh shard, you can either complete the Convergence yourself—or destroy it forever. The choice, finally, is yours.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Complete the Convergence\u2014become the Undying",
+        "leads_to": "THERON_ENDING_KING",
+        "effects": {
+          "void_magic": 5
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy the shards\u2014even the seventh",
+        "leads_to": "THERON_ENDING_REDEEMED",
+        "effects": {
+          "honor": 5
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Claim the power but keep it contained",
+        "leads_to": "THERON_ENDING_SURVIVOR",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH2_HIDDEN": {
+    "id": "THERON_CH2_HIDDEN",
+    "character": "THERON",
+    "description": "You bury the seventh shard in a hidden location—a hollow tree in the ancient forest, marked only in your memory. The void inside you recoils at the hiding, but you resist.\n\nIf no one can use the shard, no one can complete the Convergence. That's what you tell yourself. But the shard calls to you, whispering promises of power, of peace, of an end to your suffering.\n\nYou leave the forest changed. Lighter, somehow. But also empty.\n\nDays pass. The Cult knows you're somewhere, but they can't find you. Morgana's messengers arrive with pleas for help. The Circle offers rewards. Everyone wants the seventh shard.\n\nBut you alone know where it is. And that's a power more dangerous than any magic.\n\nThe question is: when the time comes, will you use it? Or let the world burn?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Return to Morgana\u2014join the final battle",
+        "leads_to": "THERON_CH2_TEMPLE",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Keep the shard\u2014wait for the right moment",
+        "leads_to": "THERON_CH3_WAIT",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use it now\u2014become strong enough",
+        "leads_to": "THERON_ENDING_SURVIVOR",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH2_MESSENGER": {
+    "id": "THERON_CH2_MESSENGER",
+    "character": "THERON",
+    "description": "You send a message to Morgana through secret channels—a scout who owes you favors from better days. The boy needs protection, and she has resources you don't.\n\nDays pass. The scout returns with a response: 'Take him to the Sanctuary of the Dawn. They will protect him. But come alone—this is your final test.'\n\nThe Sanctuary is a hidden refuge—a monastery carved into the mountain, far from the Cult's reach. The monks there worship the light, but they're not naive. They know about the void. They've been preparing for this moment.\n\nYou bring Caden to the Sanctuary. The monks accept him, their eyes widening at the void inside him.\n\n'Unusual,' the Head Monk says. 'A child carrying such darkness. Yet he glows with light. Interesting.'\n\nThey teach him. They protect him. And you leave knowing he's safe.\n\nBut the message lingers: this is your final test. Morgana wants something from you. The final confrontation approaches.\n\nYou leave the Sanctuary ready. And afraid.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Meet Morgana\u2014accept the test",
+        "leads_to": "THERON_CH2_TEMPLE",
+        "effects": {
+          "strength": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Gather more allies\u2014prepare first",
+        "leads_to": "THERON_CH2_ALLIES",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use the secret passage\u2014sneak into temple",
+        "leads_to": "THERON_CH3_RITUAL",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH2_ALLIES": {
+    "id": "THERON_CH2_ALLIES",
+    "character": "THERON",
+    "description": "You send word through the kingdom: Theron Ashford needs help. The old contacts respond—mercenaries, rogue mages, knights who never stopped believing.\n\nThey gather at the old rendezvous point: a ruined fortress in the hills. Your old team is there—Garreth, Brynn, Marcus—and new faces too. A powerful light mage named Sera. An assassin called Ghost. A veteran knight named Aldric, who served your father.\n\n'Twenty-three of us,' Garreth reports. 'All experienced. All ready to die if we have to.'\n\nYou look at them—these people who believe in you, who would follow you into darkness—and feel something you haven't felt in years: hope.\n\n'I won't ask you to die,' you say. 'I ask you to fight. To win. To end this.'\n\nThey roar their approval.\n\nThe final assault begins. And this time, you're not alone.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Direct assault\u2014overwhelming force",
+        "leads_to": "THERON_CH3_BATTLE",
+        "effects": {
+          "combat": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Infiltration\u2014silent strike",
+        "leads_to": "THERON_CH3_RITUAL",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Distraction\u2014divide their forces",
+        "leads_to": "THERON_CH3_BATTLE",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
   "THERON_CH2_COMPANION": {
     "id": "THERON_CH2_COMPANION",
     "character": "THERON",
@@ -2919,6 +3348,27 @@
     "character": "THERON",
     "description": "You survive. That's all. You always said you would.\n\nThe world burns around you. The Cult rises. The Circle falls. The kingdom descends into chaos. And you walk away, leaving nothing but footprints in the ash.\n\nThe void lives inside you\u2014patient, hungry, waiting. You've learned to feed it just enough to keep it quiet. Other people's pain. Other people's sacrifices. Other people's children.\n\nYou don't dream anymore. The flames have stopped. Elara's voice has faded. But something else lives in your sleep: a vast darkness, endless and cold. It speaks in a language you almost understand.\n\n'Not yet,' it whispers. 'But soon.'\n\nYou wander the roads, looking for something you'll never find. A purpose. A peace. An end.\n\nBut the void doesn't end. It just waits.\n\nAnd one day, when you've finally lost everything else, when there's nothing left to feed on but your own soul, it'll be waiting.\n\nThe Hollow Knight walks forever. And the void is his kingdom.",
     "ending": "HOLLOW",
+    "choices": []
+  },
+  "THERON_ENDING_SURVIVOR": {
+    "id": "THERON_ENDING_SURVIVOR",
+    "character": "THERON",
+    "description": "You survive. That's all you've ever done.\n\nThe battle ends without you. The Cult falls—scattered, broken, their ritual incomplete. The Void Beast remains sealed. And you? You walk away, leaving nothing but footprints in the ash.\n\nNo one calls you a hero. No songs are sung in your name. You didn't save the kingdom or destroy the evil. You just lived—one more day, then another, then another.\n\nThe void stays inside you. Sometimes it's quiet. Sometimes it screams. But you've learned to feed it just enough to keep it calm. Other people's pain. Other people's sacrifices.\n\nYou wander the roads, passing through villages that don't know your face, drinking in taverns where no one remembers your name. The knight who failed. The hero who ran.\n\nBut somewhere, in the deepest part of your soul, you know you made the right choice. The world didn't need another monster. It just needed someone to survive.\n\nAnd you did. You always will.\n\nThe Survivor walks on. And the void walks with him.",
+    "ending": "SURVIVOR",
+    "choices": []
+  },
+  "THERON_ENDING_KING": {
+    "id": "THERON_ENDING_KING",
+    "character": "THERON",
+    "description": "You take the throne. Not through birthright or marriage, but through power—the void itself bends to your will.\n\nThe Cult kneels to you. The Circle obeys. Even Morgana bows, though her eyes hold fear. The kingdom is yours—every stone, every soul, every shadow.\n\nYou rule with the void at your command. No one dares rebel. No one can.\n\nBut the throne is cold. Lonely. You sit alone in the throne room, looking down at a world that fears you. Is this what you wanted? Is this what Elara wanted?\n\nSometimes, late at night, you feel the Beast stirring. It wants more. It always wants more. And you realize: you're not the master. You're the Vessel. The cage that holds the darkness.\n\nOne day, the cage will break. The Beast will escape. And everything you've built will fall.\n\nBut not today. Today, you rule. And that's enough.\n\nThe Void King sits upon his throne. And waits.",
+    "ending": "KING",
+    "choices": []
+  },
+  "THERON_ENDING_BETRAYED": {
+    "id": "THERON_ENDING_BETRAYED",
+    "character": "THERON",
+    "description": "You trusted the wrong person. It always ends that way.\n\nMorgana's guards surround you before you reach the altar. Her face is cold, calculating.\n\n'The seventh shard,' she says. 'Give it to me, Theron. This is over.'\n\nYou realize the truth: she was never on your side. She wanted the power for herself—the Convergence, the Beast, everything. You're just a pawn in a bigger game.\n\n'I trusted you,' you say.\n\nShe laughs. 'Trust is for the weak. Power is for those who take it.'\n\nThe guards close in. The void inside you roars—but without the seventh shard, without the ritual, you're just a man. Broken, betrayed, alone.\n\nThey drag you to the temple anyway. Vespera waits, smirking. The three of you—Vespera, Morgana, and the throne—complete the Convergence.\n\nThe Beast rises. And you're the first sacrifice.\n\nThe last thing you see is Elara's face, unchanged after all these years, watching from the shadows. Betrayed by everyone. Saved by no one.\n\nThe Hollow Knight falls. And the void consumes all.",
+    "ending": "BETRAYED",
     "choices": []
   },
   "THERON_CH1_DREAMS": {
@@ -3462,32 +3912,32 @@
   "VEX_CH2_CONFRONT": {
     "id": "VEX_CH2_CONFRONT",
     "character": "VEX",
-    "description": "The Guild finds you before you can reach Miravel. A dozen enforcers surround the alley, their blades drawn. At their head stands Vance, the Guild's Hunter\u2014their finest killer. His smile is cold as he regards you.\n\n\"Vex Shadowstep,\" he says. \"You've caused quite a lot of trouble.\"\n\n\"I've caused exactly enough.\" You keep your hand near your dagger, watching for an opening.\n\n\"Give us the ledger, and the Shadowmaster will consider mercy. Fight, and we'll take it from your corpse. Either way, you're not leaving this alley.\"\n\nThe tension is palpable. You could try to fight your way out\u2014difficult with twelve armed opponents. You could negotiate\u2014maybe buy time. Or you could surrender and look for an opportunity to escape later.",
+    "description": "You stand before the Shadowmaster in his throne room. His court watches. His guards are ready. He smiles like a shark with too many teeth. 'You've caused me problems, Vex. I'm almost impressed. Almost.'\n\nThis is the moment of truth. Your next words decide your fate.",
     "choices": [
       {
         "letter": "A",
-        "text": "Fight your way out",
+        "text": "Threaten to expose everything",
         "leads_to": "VEX_CH2_FIGHT",
         "effects": {
-          "dexterity": 1
+          "intelligence": 2
         },
         "requires": null
       },
       {
         "letter": "B",
-        "text": "Negotiate with the Guild",
+        "text": "Offer to work together",
         "leads_to": "VEX_CH2_NEGOTIATE",
         "effects": {
-          "dexterity": 1
+          "charisma": 2
         },
         "requires": null
       },
       {
         "letter": "C",
-        "text": "Surrender",
-        "leads_to": "VEX_CH2_SURRENDER",
+        "text": "Attack immediately",
+        "leads_to": "VEX_CH2_FIGHT",
         "effects": {
-          "dexterity": 1
+          "combat": 2
         },
         "requires": null
       }
@@ -3497,23 +3947,32 @@
   "VEX_CH2_FIGHT": {
     "id": "VEX_CH2_FIGHT",
     "character": "VEX",
-    "description": "You move before they expect it\u2014a spinning kick that catches the first enforcer in the throat, your dagger flashing out to gut the second. Vance shouts commands, but you're already moving, a shadow among shadows.\n\nThree more fall before they can react. You take a blade to the shoulder but ignore the pain, driving your elbow into a man's nose and twisting his arm until his sword clatters to the cobblestones. The alley runs red.\n\nWhen Vance finally falls\u2014your blade in his chest\u2014he gasps his last words: \"You've only delayed the inevitable. The Shadowmaster will... hunt you... forever.\"\n\nYou're wounded, bleeding, but alive. The Guild's forces are broken. For now. But you know they've only begun to hunt you. You need allies, and you need them fast.",
+    "description": "The Guild sends an assassination team. Five professionals, aiming to end your threat permanently. You fight in a narrow alley, rain mixing with blood on the cobblestones.\n\nThe first one falls. Then the second. But three more remain, and you're injured. You need to finish this fast.",
     "choices": [
       {
         "letter": "A",
-        "text": "Seek out the Collector Miravel",
-        "leads_to": "VEX_CH3_COLLECTOR",
+        "text": "Fight aggressively",
+        "leads_to": "VEX_CH3_BOUNTY",
         "effects": {
-          "dexterity": 1
+          "combat": 2
         },
         "requires": null
       },
       {
         "letter": "B",
-        "text": "Use Corvus as your inside man",
-        "leads_to": "VEX_CH3_TREASON",
+        "text": "Use the environment",
+        "leads_to": "VEX_CH3_BOUNTY",
         "effects": {
-          "dexterity": 1
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Flee and regroup",
+        "leads_to": "VEX_CH3_BOUNTY",
+        "effects": {
+          "dexterity": 2
         },
         "requires": null
       }
@@ -3523,23 +3982,32 @@
   "VEX_CH2_NEGOTIATE": {
     "id": "VEX_CH2_NEGOTIATE",
     "character": "VEX",
-    "description": "\"Wait,\" you call out, raising your empty hands. \"I want to speak with the Shadowmaster directly.\"\n\nVance smirks. \"You don't get to speak with the master. You get to die.\"\n\n\"Then take the ledger.\" You toss it to him. \"It's a copy. The real one is somewhere only I know. Bring me to the Shadowmaster, and I'll give you everything.\"\n\nSomething in your voice makes Vance pause. He's not stupid\u2014he knows you're up to something. But the ledger is too valuable to pass up. \n\n\"Fine. But any tricks, and your sister dies before your eyes.\"\n\nThey take you to the Guild headquarters\u2014a fortress\u9690\u85cf\u5728\u9634\u5f71\u4e2d. The Shadowmaster awaits in a chamber of black marble, his face hidden behind a mask of polished obsidian. When he speaks, his voice is silk and venom.\n\n\"Vex Shadowstep. You've proven... interesting.\"",
+    "description": "The Guild Master offers you a deal: work for him officially, become one of his enforcers, and your past crimes are forgotten. You'd have power, money, protection. But you'd also be just another monster in their system.\n\nOr you can refuse, knowing this conversation will be reported and your life worth nothing.",
     "choices": [
       {
         "letter": "A",
-        "text": "Accept a position in the Guild hierarchy",
-        "leads_to": "VEX_CH3_TREASON",
+        "text": "Accept the offer",
+        "leads_to": "VEX_CH3_BOUNTY",
         "effects": {
-          "dexterity": 1
+          "charisma": 2
         },
         "requires": null
       },
       {
         "letter": "B",
-        "text": "Attack the Shadowmaster",
-        "leads_to": "VEX_CH4_TEMPLE",
+        "text": "Refuse with counter-offer",
+        "leads_to": "VEX_CH3_BOUNTY",
         "effects": {
-          "dexterity": 1
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Refuse outright",
+        "leads_to": "VEX_CH3_BOUNTY",
+        "effects": {
+          "strength": 1
         },
         "requires": null
       }
@@ -3549,23 +4017,32 @@
   "VEX_CH2_SURRENDER": {
     "id": "VEX_CH2_SURRENDER",
     "character": "VEX",
-    "description": "You drop your weapons, hands raised. \"I yield.\"\n\nThe enforcers hesitate\u2014they expected a fight. Vance approaches cautiously, binding your wrists with cord. \"Smart. The master will decide your fate.\"\n\nThey drag you through the city's underbelly to the Guild's stronghold. You're thrown into a cell, but it's comfortable\u2014a message that the Shadowmaster wants you alive. Days pass. You're fed, given water. Then, finally, they come for you.\n\nThe Shadowmaster waits in his throne room. He's older than you expected, silver-haired but still dangerous. His eyes study you like you're an interesting puzzle.\n\n\"You stole my ledger,\" he says. \"But you didn't sell it. Why?\"\n\n\"Because the Guild needs to burn.\"\n\nHe laughs\u2014a dry, hollow sound. \"Or perhaps... you simply want to lead it instead.\"",
+    "description": "You walk into the Guild headquarters hands raised. The Shadowmaster sits on his throne, watching you with dead eyes. 'The prodigal thief returns. I expected more creativity.'\n\nHe offers you a choice: become his weapon or become an example. Either way, you're property now.",
     "choices": [
       {
         "letter": "A",
-        "text": "Play along and infiltrate the Guild",
-        "leads_to": "VEX_CH3_TREASON",
+        "text": "Become his weapon",
+        "leads_to": "VEX_CH3_BOUNTY",
         "effects": {
-          "dexterity": 1
+          "combat": 1
         },
         "requires": null
       },
       {
         "letter": "B",
         "text": "Refuse and fight",
-        "leads_to": "VEX_CH4_TEMPLE",
+        "leads_to": "VEX_CH3_BOUNTY",
         "effects": {
-          "dexterity": 1
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Bargain for terms",
+        "leads_to": "VEX_CH3_BOUNTY",
+        "effects": {
+          "charisma": 2
         },
         "requires": null
       }
@@ -4158,33 +4635,32 @@
   "VEX_CH2_WATCH_INFILTRATE": {
     "id": "VEX_CH2_WATCH_INFILTRATE",
     "character": "VEX",
-    "description": "The City Watch has been infiltrated by the Guild for years. You have proof: documents hidden in the Watch Captain's office. But getting them means infiltrating the Watch headquarters itself.\n\nYou create false credentials and walk through the front gate. Guards surround you within minutes\u2014someone recognized you. Now it's fight or talk your way out.",
+    "description": "The City Watch can be an ally or enemy. Infiltrating their ranks gives access to Guild information, but you're walking a dangerous line. One wrong word and you're arrested as a thief.\n\nThe captain is investigating the Guild. If you can help her, she might help you. But trust is a rare commodity.",
     "choices": [
       {
         "letter": "A",
-        "text": "Fight your way to the documents",
-        "leads_to": "VEX_CH2_ASSASSIN_MISSION",
+        "text": "Offer information",
+        "leads_to": "VEX_CH3_BOUNTY",
         "effects": {
-          "combat": 2,
-          "strength": 1
+          "intelligence": 2
         },
         "requires": null
       },
       {
         "letter": "B",
-        "text": "Talk your way out",
-        "leads_to": "VEX_CH2_CULT_ROUTE",
+        "text": "Work as a double agent",
+        "leads_to": "VEX_CH3_BOUNTY",
         "effects": {
-          "charisma": 2
+          "stealth": 2
         },
         "requires": null
       },
       {
         "letter": "C",
-        "text": "Reveal the Guild infiltration",
-        "leads_to": "VEX_CH2_RIVAL_THIEF",
+        "text": "Keep your distance",
+        "leads_to": "VEX_CH3_BOUNTY",
         "effects": {
-          "influence": 2
+          "intelligence": 1
         },
         "requires": null
       }
@@ -4483,6 +4959,731 @@
       }
     ],
     "type": "story"
+  },
+  "VEX_CH1_PRISON": {
+    "id": "VEX_CH1_PRISON",
+    "character": "VEX",
+    "description": "The cell is six feet by eight feet of damp stone. Three days since they caught you, and the Guild hasn't decided your fate yet. Through the narrow slit window, you can see a sliver of sky. Your pockets are empty, but they didn't find the lockpick sewn into your coat lining.\n\nThe guard change happens at midnight. Two guards, one drunk, one distracted. Your window of opportunity is narrow. But waiting means trial, and trial means death. The Guild doesn't forgive thieves.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Wait for the guard change",
+        "leads_to": "VEX_CH1_ESCAPE",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Fake a medical emergency",
+        "leads_to": "VEX_CH1_HUNTED",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Bribe the guard",
+        "leads_to": "VEX_CH1_ESCAPE",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_ESCAPE": {
+    "id": "VEX_CH1_ESCAPE",
+    "character": "VEX",
+    "description": "The lock clicks open silently. You slip into the corridor, bare footsteps echoing. The drunk guard snores in his chair, a key ring dangling from his belt. You take it without waking him and descend into the bowels of the Guild prison.\n\nThe lower levels house their worst prisoners. You pass cells holding things you don't want to remember. When you reach the exit, two enforcers stand guard. No way past without fighting.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Fight your way out",
+        "leads_to": "VEX_CH1_HUNTED",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use the ventilation shafts",
+        "leads_to": "VEX_CH1_WAREHOUSE",
+        "effects": {
+          "stealth": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Create a distraction with fire",
+        "leads_to": "VEX_CH1_HUNTED",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_HUNTED": {
+    "id": "VEX_CH1_HUNTED",
+    "character": "VEX",
+    "description": "You're free, but the city is no longer safe. The Guild has put a bounty on your head\u2014500 gold coins, dead or alive. Every thief in the city is hunting you now.\n\nYou have three allies you can trust. Your sister Lyra in Dustwall. Miravel the Collector, who deals in dangerous secrets. And an old fence called Gregor who owes you a favor. Each offers a different path to safety.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Run to Lyra",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Seek Miravel's protection",
+        "leads_to": "VEX_CH1_RIVAL_CLIMB",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Contact Gregor",
+        "leads_to": "VEX_CH1_WAREHOUSE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_RIVAL_CLIMB": {
+    "id": "VEX_CH1_RIVAL_CLIMB",
+    "character": "VEX",
+    "description": "The Guild has a ranking system. Top ten thieves, each with territory and privilege. You've been noticed\u2014the Shadowmaster himself has taken an interest in your career. Which means rivals want you crushed.\n\nSable, the thief who stole your contracts before, spreads rumors that you're a police informant. Other thieves give you wide berth. To clear your name, you need proof of your loyalty\u2014or the head of the one who slanders you.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Challenge Sable directly",
+        "leads_to": "VEX_CH1_WAREHOUSE",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Prove your loyalty with a dangerous job",
+        "leads_to": "VEX_CH1_WAREHOUSE",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Ignore the rumors, let your work speak",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_WAREHOUSE": {
+    "id": "VEX_CH1_WAREHOUSE",
+    "character": "VEX",
+    "description": "Miravel the Collector needs something from the Merchant Guild. A ledger documenting their smuggling routes, hidden in a warehouse on the North Docks. The security is tight: four guards, alarm wards on the door.\n\nThis job could make your reputation or end it. The reward is enormous\u2014enough to disappear for good. But someone else wants that ledger too.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Infiltrate through the docks",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "stealth": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Create a frontal distraction",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Wait for the shift change",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "patience": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_MENTOR": {
+    "id": "VEX_CH1_MENTOR",
+    "character": "VEX",
+    "description": "In the shadows of the Dustwall, you meet the Spider\u2014a legend among thieves. She's old now, her hands scarred by decades of work. But her eyes still hold the sharp calculation of a master.\n\n'You have potential,' she says. 'But potential means nothing without discipline. I can teach you what separates the dead from the legends. But my lessons are not free.'",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept her training",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "intelligence": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Decline - learn from the streets instead",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "dexterity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Ask for a trial period",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_FIRST_JOB": {
+    "id": "VEX_CH1_FIRST_JOB",
+    "character": "VEX",
+    "description": "Your first real job for the Guild. A merchant who's been cheating them. His safe is in his study, behind a painting. Three minutes before his guards do their patrol sweep. You need to be in and out.\n\nInside, you find more than expected. The merchant keeps a journal documenting Guild payments. If you take it, you have insurance. If you're caught, there's no running.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take only the payment",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Take everything valuable",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "dexterity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take the journal - insurance",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_STREET_RIVALS": {
+    "id": "VEX_CH1_STREET_RIVALS",
+    "character": "VEX",
+    "description": "The Dustwall Rats control the eastern streets. They've marked you as a threat\u2014a thief who doesn't pay tribute. Their leader, Scab, challenges you publicly: face her in a fight or leave Dustwall forever.\n\nRefusing means showing weakness. Fighting means the Guild watching. You need a third option.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the challenge",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Bribe your way out",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find evidence against Scab",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_REPUTATION": {
+    "id": "VEX_CH1_REPUTATION",
+    "character": "VEX",
+    "description": "Word spreads. The thief who escaped the Guild prison. The thief who completed Miravel's job. The thief with the Obsidian Ledger. Your name carries weight now, respected and feared.\n\nThe Shadowmaster requests an audience. This is the moment that defines your path. Do you rise through the Guild ranks or prepare to burn them down?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the audience with respect",
+        "leads_to": "VEX_CH2_GUILD_HALL",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Keep your distance and watch",
+        "leads_to": "VEX_CH2_GUILD_HALL",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Refuse - continue your own path",
+        "leads_to": "VEX_CH2_GUILD_HALL",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_TORTURE": {
+    "id": "VEX_CH2_TORTURE",
+    "character": "VEX",
+    "description": "They caught you. This time, there's no escape. The Guild has a special cell for traitors\u2014one with chains embedded in the walls. The torturer is a quiet man with patient hands and many tools.\n\nThree days pass. Or five. You lose count. They want the names of everyone who helped you. They want to know where the Obsidian Ledger is. They want you to break.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Endure the pain",
+        "leads_to": "VEX_CH2_ESCAPE",
+        "effects": {
+          "strength": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Give false information",
+        "leads_to": "VEX_CH2_ESCAPE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Bargain for mercy",
+        "leads_to": "VEX_CH2_ESCAPE",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_ESCAPE": {
+    "id": "VEX_CH2_ESCAPE",
+    "character": "VEX",
+    "description": "Your body is broken, but your mind is sharp. The torturer made a mistake\u2014left you alone with a weak lock on a door you were supposed to use for transporting. They underestimated your will to survive.\n\nThe corridors are unfamiliar. Four guards patrol. You have no weapons, no strength. But you have desperation.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Stealth approach",
+        "leads_to": "VEX_CH2_INFORMANT",
+        "effects": {
+          "stealth": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Confront head-on",
+        "leads_to": "VEX_CH2_INFORMANT",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find a secret passage",
+        "leads_to": "VEX_CH2_INFORMANT",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_INFORMANT": {
+    "id": "VEX_CH2_INFORMANT",
+    "character": "VEX",
+    "description": "The streets are different now. The Guild controls everything. But there's a network in the shadows\u2014people who hate the Guild, who help the ones they've hurt. An old contact reaches out.\n\n'Vex? I heard you were dead. The Guild has fortified. Many are planning something. A war is coming\u2014which side will you choose?'",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Join the resistance",
+        "leads_to": "VEX_CH2_DOUBLE_CROSS",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Work alone",
+        "leads_to": "VEX_CH2_DEBT",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Infiltrate the Guild from within",
+        "leads_to": "VEX_CH2_GUILD_HALL",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_DEBT": {
+    "id": "VEX_CH2_DEBT",
+    "character": "VEX",
+    "description": "You have friends in the city. Some owe you debts\u2014favors owed, payments deferred. Now is the time to collect. Four names, four chances at help. But people have short memories when danger is involved.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Collect from the fence",
+        "leads_to": "VEX_CH2_DOUBLE_CROSS",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Call in the guard captain",
+        "leads_to": "VEX_CH2_DOUBLE_CROSS",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Contact your sister",
+        "leads_to": "VEX_CH2_DOUBLE_CROSS",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH2_DOUBLE_CROSS": {
+    "id": "VEX_CH2_DOUBLE_CROSS",
+    "character": "VEX",
+    "description": "You trusted someone. That was your mistake. The ally you approached betrays you to the Guild for a pardon. Now you're cornered in an alley, three enforcers advancing, blades drawn.\n\nYou recognize one of them\u2014Corvus, the lieutenant you spared before. He gives you a choice: die here or come quietly and watch everyone who helped you die too.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Fight to the death",
+        "leads_to": "VEX_CH3_BOUNTY",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Surrender to save your allies",
+        "leads_to": "VEX_CH3_KIDNAPPED",
+        "effects": {
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Negotiate for everyone",
+        "leads_to": "VEX_CH3_BOUNTY",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_BOUNTY": {
+    "id": "VEX_CH3_BOUNTY",
+    "character": "VEX",
+    "description": "Everyone wants you dead now. The Guild has placed a kill-on-sight order. 1000 gold for your head. The streets aren't safe, the tunnels aren't safe, even your sister's apartment isn't safe anymore.\n\nBut you have one thing they don't: the Obsidian Ledger. Every name, every dirty deal, every secret. You could burn the Guild. If you can find someone strong enough to help you use it.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Go to the press",
+        "leads_to": "VEX_CH3_REVENGE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Find Miravel again",
+        "leads_to": "VEX_CH3_KIDNAPPED",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Confront the Shadowmaster directly",
+        "leads_to": "VEX_CH3_REVENGE",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_KIDNAPPED": {
+    "id": "VEX_CH3_KIDNAPPED",
+    "character": "VEX",
+    "description": "They took Lyra. Your sister, your anchor, your reason for any of this. She's held in the Guild's strongest prison\u2014the Temple of Shadows, converted into a fortress. The Shadowmaster himself is watching.\n\nRansom is out of the question. Time is running out. You have one chance, one wild plan. Are you fast enough to save her?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Raid the Temple",
+        "leads_to": "VEX_CH3_REVENGE",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Trade yourself for her",
+        "leads_to": "VEX_CH3_REVENGE",
+        "effects": {
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find allies for a coordinated assault",
+        "leads_to": "VEX_CH3_REVENGE",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_REVENGE": {
+    "id": "VEX_CH3_REVENGE",
+    "character": "VEX",
+    "description": "The final confrontation. The Shadowmaster waits in his throne room, surrounded by his elite guard. He thinks he's won. He thinks you're broken.\n\nIn your pocket is a match. In your mind, every location in the Obsidian Ledger. You can burn his empire down. The question is whether you'll survive to see the ashes.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Challenge him to single combat",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Burn the ledger publicly",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Become the new Shadow King",
+        "leads_to": "VEX_ENDING_KING",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH3_PRISON_AFTERMATH": {
+    "id": "VEX_CH3_PRISON_AFTERMATH",
+    "character": "VEX",
+    "description": "After everything, you find yourself back in the cell. But something has changed. The other prisoners look at you differently. They know what you did. They know about the Ledger. They want to help.\n\nA riot starts. Guards overwhelmed. The path to escape opens. But do you take it alone, or do you free everyone?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Free everyone",
+        "leads_to": "VEX_CH3_BOUNTY",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Escape alone",
+        "leads_to": "VEX_CH3_BOUNTY",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use the chaos to find theShadowmaster",
+        "leads_to": "VEX_CH3_REVENGE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_CORRUPTION": {
+    "id": "VEX_CH1_CORRUPTION",
+    "character": "VEX",
+    "description": "The Guild isn't the only power in the city. The Merchant Council runs everything, paying the Guild to handle their dirty work. You find evidence of their partnership\u2014letters proving the Council knows about Guild murders.\n\nYou can expose them and start a war. Or you can use it for leverage. The streets will run with blood either way.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Expose the corruption",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use it for leverage",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Ignore it for now",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_BETRAYAL_SETUP": {
+    "id": "VEX_CH1_BETRAYAL_SETUP",
+    "character": "VEX",
+    "description": "Someone sold you out before. You have suspicions but no proof. The trail leads to someone in Miravel's circle, someone close to your operation. You need to find the rat before the rat finds you.\n\nYou can set a trap, investigate quietly, or confront the suspect directly. Each path has consequences.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Set a trap",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Investigate quietly",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Confront directly",
+        "leads_to": "VEX_CH1_SISTER",
+        "effects": {
+          "combat": 1
+        },
+        "requires": null
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_ENDING_KING": {
+    "id": "VEX_ENDING_KING",
+    "character": "VEX",
+    "description": "You become what you fought. The Shadow King\u2014ruler of the shadows, master of the city's underworld. The Guild doesn't control you now. You control the Guild.\n\nYour sister Lyra stands beside you as you sit upon the throne. 'Is this what you wanted?' she asks.\n\n'Is this what I needed,' you reply.\n\nThe shadows answer to you now. And they will forever.",
+    "choices": [],
+    "type": "story",
+    "ending": "KING"
+  },
+  "VEX_ENDING_RICH": {
+    "id": "VEX_ENDING_RICH",
+    "character": "VEX",
+    "description": "You disappear with a fortune. The ledger bought you safety, and safety bought you a new life. Far from the city, far from the shadows.\n\nA coastal town, a small inn, a quiet existence. The sea doesn't judge. The waves don't remember your sins.\n\nAt night, you stare at the stars and wonder if you're truly free. But you are alive. Rich. Free. Is that not enough?",
+    "choices": [],
+    "type": "story",
+    "ending": "RICH"
+  },
+  "VEX_ENDING_BETRAYED": {
+    "id": "VEX_ENDING_BETRAYED",
+    "character": "VEX",
+    "description": "They come in the night. The ones you trusted. The ones you helped. They sell you out for the bounty on your head. The last thing you see is the blade, the smile of your betrayer.\n\nThe shadows swallow you whole. The city moves on without you. Your name becomes a warning, a story to frighten children. 'Don't betray the wrong person,' they say.\n\nBut you don't hear any of it. You're already in the dark.",
+    "choices": [],
+    "type": "story",
+    "ending": "BETRAYED"
   },
   "ELARA_CH1_ESTATE": {
     "id": "ELARA_CH1_ESTATE",
@@ -5521,40 +6722,6 @@
       }
     ]
   },
-  "KIRA_CH1_STUDY": {
-    "id": "KIRA_CH1_STUDY",
-    "character": "KIRA",
-    "description": "You take time to study the crown piece\u2014its power, its history, its purpose. The visions it shows you are terrifying: the Void Beast, Aethon's desperation, the price of power. But knowledge is power, and you need both to survive what's coming.",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Continue studying",
-        "leads_to": "KIRA_CH1_TRAIN",
-        "effects": {
-          "intelligence": 2
-        },
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Use the knowledge to fight",
-        "leads_to": "KIRA_CH1_WATCH",
-        "effects": {
-          "void_magic": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Move on to Crownhaven",
-        "leads_to": "KIRA_CH1_KINGS_ROAD",
-        "effects": {
-          "dexterity": 1
-        },
-        "requires": null
-      }
-    ]
-  },
   "KIRA_CH1_TRAIN": {
     "id": "KIRA_CH1_TRAIN",
     "character": "KIRA",
@@ -5687,40 +6854,6 @@
         "leads_to": "KIRA_CH2_SCOUT",
         "effects": {
           "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
-  },
-  "KIRA_CH2_PREPARE": {
-    "id": "KIRA_CH2_PREPARE",
-    "character": "KIRA",
-    "description": "You gather information about the Cult and Vespera before moving. The Circle provides what they know: the Cult has six crown pieces, Vespera leads them, and the final piece is in the palace. Time is running out.",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Head to Crownhaven immediately",
-        "leads_to": "KIRA_CH2_CROWNHAVEN",
-        "effects": {
-          "void_magic": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Prepare more first",
-        "leads_to": "KIRA_CH2_VESPERA",
-        "effects": {
-          "intelligence": 2
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Find allies",
-        "leads_to": "KIRA_CH3_ALLIES",
-        "effects": {
-          "charisma": 1
         },
         "requires": null
       }
@@ -6100,142 +7233,6 @@
       }
     ]
   },
-  "KIRA_CH2_COMPANION": {
-    "id": "KIRA_CH2_COMPANION",
-    "character": "KIRA",
-    "description": "The boy Tom follows you\u2014your student, your responsibility. He has the void in him too. In the chaos ahead, you'll need someone you can trust. But can you protect him and save your mother at the same time?",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "He stays with you",
-        "leads_to": "KIRA_CH2_CROWNHAVEN",
-        "effects": {
-          "charisma": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Leave him with the Circle",
-        "leads_to": "KIRA_CH2_CIRCLE",
-        "effects": {
-          "humanity": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Send him somewhere safe",
-        "leads_to": "KIRA_CH2_STUDY",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
-  },
-  "KIRA_CH2_LEAVE": {
-    "id": "KIRA_CH2_LEAVE",
-    "character": "KIRA",
-    "description": "You leave Tom with the Circle\u2014they'll protect him, train him. You have a mother's last wish to fulfill. The road ahead is yours alone. But the weight of leaving him behind will follow you.",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Head to Crownhaven",
-        "leads_to": "KIRA_CH2_CROWNHAVEN",
-        "effects": {
-          "void_magic": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Prepare more first",
-        "leads_to": "KIRA_CH2_PREPARE",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Find the Circle for help",
-        "leads_to": "KIRA_CH2_CIRCLE",
-        "effects": {
-          "void_magic": 1
-        },
-        "requires": null
-      }
-    ]
-  },
-  "KIRA_CH3_ALLIES": {
-    "id": "KIRA_CH3_ALLIES",
-    "character": "KIRA",
-    "description": "You gather allies\u2014former enemies, unlikely friends. The Circle offers mages. The Watch offers soldiers. Even some former Cultists want redemption. Together, you might have a chance.",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Lead them to the Temple",
-        "leads_to": "KIRA_CH3_TEMPLE",
-        "effects": {
-          "charisma": 2
-        },
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Study the crown together",
-        "leads_to": "KIRA_CH3_STUDY",
-        "effects": {
-          "intelligence": 2
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Wait for the right moment",
-        "leads_to": "KIRA_CH3_CIRCLE",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
-  },
-  "KIRA_CH3_STUDY": {
-    "id": "KIRA_CH3_STUDY",
-    "character": "KIRA",
-    "description": "You study the crown piece more\u2014the void's nature, its weaknesses. Aethon became the Undying to seal the Beast. Can you do the same? Or is there another way? The answers lie in the ancient texts.",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Try to seal it",
-        "leads_to": "KIRA_CH3_CHARGE",
-        "effects": {
-          "void_magic": 2
-        },
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Destroy it instead",
-        "leads_to": "KIRA_CH3_TALK",
-        "effects": {
-          "void_magic": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Use it to communicate",
-        "leads_to": "KIRA_CH3_BARGAIN",
-        "effects": {
-          "intelligence": 2
-        },
-        "requires": null
-      }
-    ]
-  },
   "KIRA_CH3_CIRCLE": {
     "id": "KIRA_CH3_CIRCLE",
     "character": "KIRA",
@@ -6262,40 +7259,6 @@
       {
         "letter": "C",
         "text": " negotiate terms",
-        "leads_to": "KIRA_CH3_BARGAIN",
-        "effects": {
-          "charisma": 1
-        },
-        "requires": null
-      }
-    ]
-  },
-  "KIRA_CH3_ALONE": {
-    "id": "KIRA_CH3_ALONE",
-    "character": "KIRA",
-    "description": "You face the Temple alone\u2014allies would only slow you down or be used against you. The void in you grows stronger as you approach. The Beast waits. The Hollow King waits. Your mother waits. This ends now.",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Charge and fight",
-        "leads_to": "KIRA_CH3_CHARGE",
-        "effects": {
-          "void_magic": 3
-        },
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Talk first",
-        "leads_to": "KIRA_CH3_TALK",
-        "effects": {
-          "charisma": 2
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Bargain for your mother",
         "leads_to": "KIRA_CH3_BARGAIN",
         "effects": {
           "charisma": 1
@@ -6401,6 +7364,121 @@
               "consequence": "Face your pursuers directly"
             }
           ]
+        },
+        {
+          "scene_id": "VEX_CH1_PRISON",
+          "title": "The Guild Prison",
+          "type": "narrative",
+          "text": "The cell is six feet by eight feet of damp stone. Three days since they caught you, and the Guild hasn't decided your fate yet. Through the narrow slit window, you can see a sliver of sky. Your pockets are empty, but they didn't find the lockpick sewn into your coat lining.\n\nThe guard change happens at midnight. Two guards, one drunk, one distracted. Your window of opportunity is narrow. But waiting means trial, and trial means death.",
+          "choices": [
+            {
+              "text": "Wait for the guard change",
+              "next_scene": "VEX_CH1_ESCAPE",
+              "consequence": "Plan your escape at midnight"
+            },
+            {
+              "text": "Fake a medical emergency",
+              "next_scene": "VEX_CH1_HUNTED",
+              "consequence": "Trick your way out"
+            },
+            {
+              "text": "Bribe the guard",
+              "next_scene": "VEX_CH1_ESCAPE",
+              "consequence": "Buy your freedom"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH1_ESCAPE",
+          "title": "Breaking Out",
+          "type": "combat",
+          "text": "The lock clicks open silently. You slip into the corridor, bare footsteps echoing. The drunk guard snores in his chair, a key ring dangling from his belt. You take it without waking him and descend into the bowels of the Guild prison.\n\nThe lower levels house their worst prisoners. You pass cells holding things you don't want to remember. When you reach the exit, two enforcers stand guard.",
+          "choices": [
+            {
+              "text": "Fight your way out",
+              "next_scene": "VEX_CH1_HUNTED",
+              "consequence": "Battle to freedom"
+            },
+            {
+              "text": "Use the ventilation shafts",
+              "next_scene": "VEX_CH1_WAREHOUSE",
+              "consequence": "Sneak through the walls"
+            },
+            {
+              "text": "Create a distraction with fire",
+              "next_scene": "VEX_CH1_HUNTED",
+              "consequence": "Use chaos to escape"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH1_HUNTED",
+          "title": "The Bounty",
+          "type": "choice",
+          "text": "You're free, but the city is no longer safe. The Guild has put a bounty on your head\u2014500 gold coins, dead or alive. Every thief in the city is hunting you now.\n\nYou have three allies you can trust. Your sister Lyra in Dustwall. Miravel the Collector. And an old fence called Gregor who owes you a favor.",
+          "choices": [
+            {
+              "text": "Run to Lyra",
+              "next_scene": "VEX_CH1_SISTER",
+              "consequence": "Find safety with family"
+            },
+            {
+              "text": "Seek Miravel's protection",
+              "next_scene": "VEX_CH1_RIVAL_CLIMB",
+              "consequence": "Seek the Collector's help"
+            },
+            {
+              "text": "Contact Gregor",
+              "next_scene": "VEX_CH1_WAREHOUSE",
+              "consequence": "Call in old favors"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH1_RIVAL_CLIMB",
+          "title": "Rising Through the Ranks",
+          "type": "choice",
+          "text": "The Guild has a ranking system. Top ten thieves, each with territory and privilege. You've been noticed\u2014the Shadowmaster himself has taken an interest in your career. Which means rivals want you crushed.\n\nSable, the thief who stole your contracts before, spreads rumors that you're a police informant. Other thieves give you wide berth. To clear your name, you need proof.",
+          "choices": [
+            {
+              "text": "Challenge Sable directly",
+              "next_scene": "VEX_CH1_WAREHOUSE",
+              "consequence": "Prove yourself in combat"
+            },
+            {
+              "text": "Prove your loyalty with a job",
+              "next_scene": "VEX_CH1_WAREHOUSE",
+              "consequence": "Earn trust with results"
+            },
+            {
+              "text": "Let your work speak",
+              "next_scene": "VEX_CH1_SISTER",
+              "consequence": "Ignore the rumors"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH1_WAREHOUSE",
+          "title": "The High Stakes Job",
+          "type": "combat",
+          "text": "Miravel needs something from the Merchant Guild. A ledger with smuggling routes, hidden in a warehouse on the North Docks. Security is tight: four guards, alarm wards.\n\nThis job could make your reputation or end it. The reward is enormous.",
+          "choices": [
+            {
+              "text": "Infiltrate through the docks",
+              "next_scene": "VEX_CH1_SISTER",
+              "consequence": "Use stealth"
+            },
+            {
+              "text": "Create a frontal distraction",
+              "next_scene": "VEX_CH1_SISTER",
+              "consequence": "Draw attention elsewhere"
+            },
+            {
+              "text": "Wait for the shift change",
+              "next_scene": "VEX_CH1_SISTER",
+              "consequence": "Patience pays off"
+            }
+          ]
         }
       ]
     },
@@ -6408,79 +7486,117 @@
       "chapter": 2,
       "scenes": [
         {
-          "scene_id": "VEX_CH2_CONFRONT",
-          "title": "The Confrontation",
-          "type": "choice",
-          "text": "The Guild finds you before you can reach Miravel. A dozen enforcers surround the alley, their blades drawn. At their head stands Vance, the Guild's Hunter\u2014their finest killer. His smile is cold as he regards you.\n\n\"Vex Shadowstep,\" he says. \"You've caused quite a lot of trouble.\"\n\n\"I've caused exactly enough.\" You keep your hand near your dagger, watching for an opening.\n\n\"Give us the ledger, and the Shadowmaster will consider mercy. Fight, and we'll take it from your corpse. Either way, you're not leaving this alley.\"\n\nThe tension is palpable. You could try to fight your way out\u2014difficult with twelve armed opponents. You could negotiate\u2014maybe buy time. Or you could surrender and look for an opportunity to escape later.",
+          "scene_id": "VEX_CH2_TORTURE",
+          "title": "The Dark Cell",
+          "type": "narrative",
+          "text": "They caught you. This time, there's no escape. The Guild has a special cell for traitors\u2014one with chains embedded in the walls. The torturer is a quiet man with patient hands.\n\nThree days pass. Or five. You lose count. They want the names of everyone who helped you.",
           "choices": [
             {
-              "text": "Fight your way out",
-              "next_scene": "VEX_CH2_FIGHT",
-              "consequence": "Battle against impossible odds"
+              "text": "Endure the pain",
+              "next_scene": "VEX_CH2_ESCAPE",
+              "consequence": "Stay strong"
             },
             {
-              "text": "Negotiate with the Guild",
-              "next_scene": "VEX_CH2_NEGOTIATE",
-              "consequence": "Try to make a deal"
+              "text": "Give false information",
+              "next_scene": "VEX_CH2_ESCAPE",
+              "consequence": "Buy time with lies"
             },
             {
-              "text": "Surrender",
-              "next_scene": "VEX_CH2_SURRENDER",
+              "text": "Bargain for mercy",
+              "next_scene": "VEX_CH2_ESCAPE",
+              "consequence": "Negotiate survival"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH2_ESCAPE",
+          "title": "The Second Escape",
+          "type": "combat",
+          "text": "Your body is broken, but your mind is sharp. The torturer made a mistake\u2014left you alone with a weak lock. They underestimated your will to survive.\n\nThe corridors are unfamiliar. Four guards patrol. You have no weapons.",
+          "choices": [
+            {
+              "text": "Stealth approach",
+              "next_scene": "VEX_CH2_INFORMANT",
+              "consequence": "Move like a shadow"
+            },
+            {
+              "text": "Confront head-on",
+              "next_scene": "VEX_CH2_INFORMANT",
+              "consequence": "Fight through"
+            },
+            {
+              "text": "Find a secret passage",
+              "next_scene": "VEX_CH2_INFORMANT",
+              "consequence": "Use your knowledge"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH2_INFORMANT",
+          "title": "The Underground Network",
+          "type": "choice",
+          "text": "The streets are different now. The Guild controls everything. But there's a network in the shadows\u2014people who hate the Guild. An old contact reaches out.\n\n'A war is coming\u2014which side will you choose?'",
+          "choices": [
+            {
+              "text": "Join the resistance",
+              "next_scene": "VEX_CH2_DOUBLE_CROSS",
+              "consequence": "Fight together"
+            },
+            {
+              "text": "Work alone",
+              "next_scene": "VEX_CH2_DEBT",
+              "consequence": "Trust no one"
+            },
+            {
+              "text": "Infiltrate from within",
+              "next_scene": "VEX_CH2_GUILD_HALL",
               "consequence": "Play the long game"
             }
           ]
         },
         {
-          "scene_id": "VEX_CH2_FIGHT",
-          "title": "The Bloodied Escape",
+          "scene_id": "VEX_CH2_DEBT",
+          "title": "Collecting Favors",
+          "type": "choice",
+          "text": "You have friends in the city. Some owe you debts\u2014favors owed, payments deferred. Now is the time to collect. Four names, four chances.",
+          "choices": [
+            {
+              "text": "Collect from the fence",
+              "next_scene": "VEX_CH2_DOUBLE_CROSS",
+              "consequence": "Call in debts"
+            },
+            {
+              "text": "Call in the guard captain",
+              "next_scene": "VEX_CH2_DOUBLE_CROSS",
+              "consequence": "Use law enforcement"
+            },
+            {
+              "text": "Contact your sister",
+              "next_scene": "VEX_CH2_DOUBLE_CROSS",
+              "consequence": "Family first"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH2_DOUBLE_CROSS",
+          "title": "Betrayed",
           "type": "combat",
-          "text": "You move before they expect it\u2014a spinning kick that catches the first enforcer in the throat, your dagger flashing out to gut the second. Vance shouts commands, but you're already moving, a shadow among shadows.\n\nThree more fall before they can react. You take a blade to the shoulder but ignore the pain, driving your elbow into a man's nose and twisting his arm until his sword clatters to the cobblestones. The alley runs red.\n\nWhen Vance finally falls\u2014your blade in his chest\u2014he gasps his last words: \"You've only delayed the inevitable. The Shadowmaster will... hunt you... forever.\"\n\nYou're wounded, bleeding, but alive. The Guild's forces are broken. For now. But you know they've only begun to hunt you. You need allies, and you need them fast.",
+          "text": "You trusted someone. That was your mistake. The ally you approached betrays you to the Guild for a pardon. Now you're cornered in an alley, three enforcers advancing.\n\nYou recognize one of them\u2014Corvus, the lieutenant you spared before.",
           "choices": [
             {
-              "text": "Seek out the Collector Miravel",
-              "next_scene": "VEX_CH3_COLLECTOR",
-              "consequence": "Find the black market dealer"
+              "text": "Fight to the death",
+              "next_scene": "VEX_CH3_BOUNTY",
+              "consequence": "Go down fighting"
             },
             {
-              "text": "Use Corvus as your inside man",
-              "next_scene": "VEX_CH3_TREASON",
-              "consequence": "Double-cross everyone"
-            }
-          ]
-        },
-        {
-          "scene_id": "VEX_CH2_NEGOTIATE",
-          "title": "The Deal with Darkness",
-          "type": "narrative",
-          "text": "\"Wait,\" you call out, raising your empty hands. \"I want to speak with the Shadowmaster directly.\"\n\nVance smirks. \"You don't get to speak with the master. You get to die.\"\n\n\"Then take the ledger.\" You toss it to him. \"It's a copy. The real one is somewhere only I know. Bring me to the Shadowmaster, and I'll give you everything.\"\n\nSomething in your voice makes Vance pause. He's not stupid\u2014he knows you're up to something. But the ledger is too valuable to pass up. \n\n\"Fine. But any tricks, and your sister dies before your eyes.\"\n\nThey take you to the Guild headquarters\u2014a fortress\u9690\u85cf\u5728\u9634\u5f71\u4e2d. The Shadowmaster awaits in a chamber of black marble, his face hidden behind a mask of polished obsidian. When he speaks, his voice is silk and venom.\n\n\"Vex Shadowstep. You've proven... interesting.\"",
-          "choices": [
-            {
-              "text": "Accept a position in the Guild hierarchy",
-              "next_scene": "VEX_CH3_TREASON",
-              "consequence": "Become a turncoat"
+              "text": "Surrender to save allies",
+              "next_scene": "VEX_CH3_KIDNAPPED",
+              "consequence": "Sacrifice yourself"
             },
             {
-              "text": "Attack the Shadowmaster",
-              "next_scene": "VEX_CH4_TEMPLE",
-              "consequence": "Face your destiny"
-            }
-          ]
-        },
-        {
-          "scene_id": "VEX_CH2_SURRENDER",
-          "title": "The Captive's Gambit",
-          "type": "narrative",
-          "text": "You drop your weapons, hands raised. \"I yield.\"\n\nThe enforcers hesitate\u2014they expected a fight. Vance approaches cautiously, binding your wrists with cord. \"Smart. The master will decide your fate.\"\n\nThey drag you through the city's underbelly to the Guild's stronghold. You're thrown into a cell, but it's comfortable\u2014a message that the Shadowmaster wants you alive. Days pass. You're fed, given water. Then, finally, they come for you.\n\nThe Shadowmaster waits in his throne room. He's older than you expected, silver-haired but still dangerous. His eyes study you like you're an interesting puzzle.\n\n\"You stole my ledger,\" he says. \"But you didn't sell it. Why?\"\n\n\"Because the Guild needs to burn.\"\n\nHe laughs\u2014a dry, hollow sound. \"Or perhaps... you simply want to lead it instead.\"",
-          "choices": [
-            {
-              "text": "Play along and infiltrate the Guild",
-              "next_scene": "VEX_CH3_TREASON",
-              "consequence": "Become the ultimate double agent"
-            },
-            {
-              "text": "Refuse and fight",
-              "next_scene": "VEX_CH4_TEMPLE",
-              "consequence": "Face the final confrontation"
+              "text": "Negotiate for everyone",
+              "next_scene": "VEX_CH3_BOUNTY",
+              "consequence": "Talk your way out"
             }
           ]
         }
@@ -6490,43 +7606,71 @@
       "chapter": 3,
       "scenes": [
         {
-          "scene_id": "VEX_CH3_COLLECTOR",
-          "title": "Miravel the Collector",
-          "type": "narrative",
-          "text": "Miravel's shop is hidden behind a bookbinder's storefront in the Merchant Quarter. The old woman who runs it leads you through a maze of corridors into a vaulted chamber where treasures from a hundred criminal enterprises gleam in lamplight.\n\nMiravel herself is younger than you expected\u2014perhaps thirty, with dark hair and sharper eyes than a hawk. She doesn't look up from the ledger she's examining when you enter.\n\n\"Vex Shadowstep. I wondered when you'd come.\"\n\n\"You know me?\"\n\n\"I know everyone.\" She finally meets your gaze. \"This ledger\u2014it's genuine. The names, the accounts, the secrets. With this, I could bring the Guild to its knees. Or I could sell it back to them for triple.\"\n\n\"You're not going to do either.\"\n\nHer smile is thin. \"No? Then tell me\u2014what's your offer?\"",
+          "scene_id": "VEX_CH3_BOUNTY",
+          "title": "The Price on Your Head",
+          "type": "choice",
+          "text": "Everyone wants you dead now. The Guild has placed a kill-on-sight order. 1000 gold for your head. The streets aren't safe anymore.\n\nBut you have one thing they don't: the Obsidian Ledger. Every name, every deal, every secret.",
           "choices": [
             {
-              "text": "Make a deal with Miravel",
-              "next_scene": "VEX_CH3_TREASON",
-              "consequence": "Form an uneasy alliance"
+              "text": "Go to the press",
+              "next_scene": "VEX_CH3_REVENGE",
+              "consequence": "Expose everything"
             },
             {
-              "text": "Take the ledger back and go solo",
-              "next_scene": "VEX_CH4_TEMPLE",
-              "consequence": "Confront the Guild alone"
+              "text": "Find Miravel again",
+              "next_scene": "VEX_CH3_KIDNAPPED",
+              "consequence": "Seek powerful allies"
+            },
+            {
+              "text": "Confront directly",
+              "next_scene": "VEX_CH3_REVENGE",
+              "consequence": "End it personally"
             }
           ]
         },
         {
-          "scene_id": "VEX_CH3_TREASON",
-          "title": "The Double Cross",
+          "scene_id": "VEX_CH3_KIDNAPPED",
+          "title": "The Kidnapping",
           "type": "choice",
-          "text": "The plan comes together in whispers. You've made deals with everyone\u2014the Guild, Miravel, even Corvus the double agent. But you have your own plans, your own agenda. The ledger is the weapon, and everyone is pointing it at everyone else.\n\nIn the Guild headquarters, you meet with the Shadowmaster one final time. He believes you've come to swear loyalty. In a way, you have.\n\n\"I've decided,\" you tell him. \"The Guild is the future. I'm here to join it\u2014properly this time.\"\n\nHe smiles and extends his hand. \"Welcome home, Vex Shadowstep.\"\n\nYou take his hand\u2014and drive a poisoned dagger into his chest.\n\nThe chaos begins. Miravel's forces attack from outside. Corvus reveals himself to the Guild. And you stand in the middle, the ledger in one hand and the Shadowmaster's dying breath in the other. Every alliance broken. Every enemy fighting each other.\n\nNow it's time to finish this.",
+          "text": "They took Lyra. Your sister, your anchor. She's held in the Guild's strongest prison\u2014the Temple of Shadows. The Shadowmaster himself is watching.\n\nRansom is out. Time is running. One chance.",
           "choices": [
             {
-              "text": "Seize power as the new Shadowmaster",
-              "next_scene": "VEX_ENDING_SHADOWKING",
-              "consequence": "Rule the shadows"
+              "text": "Raid the Temple",
+              "next_scene": "VEX_CH3_REVENGE",
+              "consequence": "Rescue by force"
             },
             {
-              "text": "Destroy the Guild completely",
+              "text": "Trade yourself",
+              "next_scene": "VEX_CH3_REVENGE",
+              "consequence": "Make the exchange"
+            },
+            {
+              "text": "Find allies",
+              "next_scene": "VEX_CH3_REVENGE",
+              "consequence": "Build an army"
+            }
+          ]
+        },
+        {
+          "scene_id": "VEX_CH3_REVENGE",
+          "title": "The Final Confrontation",
+          "type": "combat",
+          "text": "The final confrontation. The Shadowmaster waits in his throne room, surrounded by his elite guard. He thinks he's won. He thinks you're broken.\n\nIn your pocket is a match. In your mind, every location in the Obsidian Ledger. You can burn his empire down.",
+          "choices": [
+            {
+              "text": "Challenge to single combat",
               "next_scene": "VEX_ENDING_LEGEND",
-              "consequence": "Become a hero"
+              "consequence": "Duel for honor"
             },
             {
-              "text": "Escape into the night",
-              "next_scene": "VEX_ENDING_WANDERER",
-              "consequence": "Live free"
+              "text": "Burn the ledger",
+              "next_scene": "VEX_ENDING_LEGEND",
+              "consequence": "Total destruction"
+            },
+            {
+              "text": "Become the new King",
+              "next_scene": "VEX_ENDING_KING",
+              "consequence": "Seize power"
             }
           ]
         }
@@ -6539,44 +7683,48 @@
           "scene_id": "VEX_CH4_TEMPLE",
           "title": "The Temple of Shadows",
           "type": "narrative",
-          "text": "The Guild's true headquarters lies beneath the Temple of Shadows\u2014an ancient complex built long before the city rose above it. You've fought your way through layers of defenses, through assassins and traps and loyalists who would die for the Guild.\n\nNow you stand in the central chamber. The Shadowmaster waits on his throne, flanked by his personal guard. But he raises a hand, and they stand down.\n\n\"Vex,\" he says, almost warmly. \"You've come further than anyone expected. But this ends here.\"\n\n\"It ends when the Guild is gone.\"\n\n\"The Guild is eternal. We are the shadows that move beneath the light. You cannot destroy us\u2014you can only join us.\"\n\nHis blade materializes in his hand, a curved thing that drinks the torchlight. \"But I'll give you a choice. Face me in single combat. Win, and you walk free. Lose, and your soul joins the shadows forever.\"\n\nThe challenge hangs in the air.",
+          "text": "The Guild's true headquarters lies beneath the Temple of Shadows\u2014an ancient complex built long before the city rose above it. You've fought your way through layers of defenses.\n\nNow you stand in the central chamber. The Shadowmaster waits on his throne.\n\n\"Vex,\" he says. \"You've come further than anyone expected. But this ends here.\"",
           "choices": [
             {
               "text": "Accept the duel",
               "next_scene": "VEX_CH4_DUEL",
-              "consequence": "Face the Shadowmaster in combat"
+              "consequence": "Face the Shadowmaster"
             },
             {
-              "text": "Refuse and fight everyone at once",
+              "text": "Refuse and fight everyone",
               "next_scene": "VEX_CH2_FIGHT",
-              "consequence": "Battle to the death"
+              "consequence": "Battle to death"
             }
           ]
         },
         {
           "scene_id": "VEX_CH4_DUEL",
-          "title": "The Duel with the Shadowmaster",
+          "title": "The Duel",
           "type": "combat",
-          "text": "The Shadowmaster moves like smoke\u2014fast, impossibly fast. His blade whirls in patterns you've never seen, attacks from angles that shouldn't be possible. You parry, dodge, counter, but you're losing ground.\n\nA strike opens a gash along your ribs. Another catches your shoulder. Blood drips onto the ancient stone, and you realize you're fighting a losing battle.\n\nBut you've always been cleverer than your opponents. As the Shadowmaster presses his attack, you let yourself fall\u2014not backward, but to the side, toward the ceremonial dais. Your hand closes on a torch.\n\nFlame catches his cloak. He staggers, and you capitalize\u2014driving your blade up through his chin, into his brain.\n\nThe Shadowmaster falls. His guards freeze, unable to believe what they've seen. You stand over the body, bleeding but victorious.\n\nThe Guild is yours to command\u2014or destroy.",
+          "text": "The Shadowmaster moves like smoke\u2014fast, impossibly fast. His blade whirls in patterns you've never seen. You parry, dodge, counter, but you're losing ground.\n\nA strike opens a gash along your ribs. Another catches your shoulder. Blood drips onto ancient stone.\n\nBut you've always been cleverer. As he presses his attack, you let yourself fall\u2014toward the torch. Flame catches his cloak.",
           "choices": [
             {
-              "text": "Claim the Guild's throne",
-              "next_scene": "VEX_ENDING_SHADOWKING",
-              "consequence": "Become the Shadow King"
+              "text": "Claim the throne",
+              "next_scene": "VEX_ENDING_KING",
+              "consequence": "Rule the shadows"
             },
             {
-              "text": "Burn the Guild to the ground",
+              "text": "Burn it all down",
               "next_scene": "VEX_ENDING_LEGEND",
-              "consequence": "Become a legend"
+              "consequence": "Become a hero"
             },
             {
-              "text": "Walk away from it all",
+              "text": "Walk away",
               "next_scene": "VEX_ENDING_WANDERER",
               "consequence": "Find peace"
             }
           ]
         }
       ]
+    },
+    {
+      "chapter": 5,
+      "scenes": []
     }
   ],
   "endings": [
@@ -6584,28 +7732,49 @@
       "ending_id": "VEX_ENDING_SHADOWKING",
       "title": "The Shadow King",
       "type": "dark",
-      "text": "You sit upon the Shadowmaster's throne as the last of the resistance is crushed. The Guild survives\u2014stronger now, unified under your rule. You are the Shadow King, ruler of the city's underworld, master of shadows.\n\nIt wasn't the heroic path. You made deals with darkness and became it. But the Guild no longer preys on the innocent\u2014at least, not like before. You've imposed order on chaos, and the city breathes easier.\n\nIn your pocket, you carry the Obsidian Ledger. Your name is at the top now, written in ink that can never be erased. Some call you a monster. Others, a necessary evil. You call yourself... successful.\n\nThe shadows serve you now. And they will serve you forever.",
-      "epilogue": "Vex Shadowstep rules the Guild for thirty years, becoming a legend of fear and respect. When he finally disappears into the shadows one night, no one knows if he's dead or simply become one with the darkness itself."
+      "text": "You sit upon the Shadowmaster's throne as the last of the resistance is crushed. The Guild survives\u2014stronger now, unified under your rule. You are the Shadow King, ruler of the city's underworld, master of shadows.\n\nIt wasn't the heroic path. You made deals with darkness and became it. But the Guild no longer preys on the innocent\u2014at least, not like before. You've imposed order on chaos.\n\nThe shadows serve you now. And they will serve you forever.",
+      "epilogue": "Vex Shadowstep rules the Guild for thirty years, becoming a legend of fear and respect."
     },
     {
       "ending_id": "VEX_ENDING_LEGEND",
       "title": "The Legend",
       "type": "heroic",
-      "text": "The Guild burns. Every stronghold, every vault, every secret meeting place\u2014you've burned them all. The Obsidian Ledger is read aloud in the city square, and the names of the guilty are delivered to the courts. For the first time in a century, the Guild is broken.\n\nYou stand in the ashes of the Temple of Shadows, surrounded by cheering crowds who've come to see the end of an era. They call you hero. They sing songs of your bravery. Children will grow up in a city free from the Guild's terror, and they'll never know the nightmares you faced to give them that freedom.\n\nYour sister Lyra finds you in the aftermath. \"You did it,\" she whispers.\n\n\"We did it,\" you correct her.\n\nBut you know the truth. The shadows will always call to you. The question is whether you'll listen.",
-      "epilogue": "Vex Shadowstep disappears after destroying the Guild, becoming a myth whispered in taverns and told to children. Some say he became a wandering protector; others say the shadows claimed him anyway. Either way, the Guild never rises again."
+      "text": "The Guild burns. Every stronghold, every vault, every secret meeting place\u2014you've burned them all. The Obsidian Ledger is read aloud in the city square. For the first time in a century, the Guild is broken.\n\nYou stand in the ashes, surrounded by cheering crowds. They call you hero. Children will grow up in a city free from the Guild's terror.\n\nYour sister Lyra finds you in the aftermath. 'You did it,' she whispers.\n\n'We did it,' you correct her.",
+      "epilogue": "Vex Shadowstep disappears after destroying the Guild, becoming a myth."
     },
     {
       "ending_id": "VEX_ENDING_WANDERER",
       "title": "The Wanderer",
       "type": "neutral",
-      "text": "You leave the city behind. The Guild is weakened, perhaps broken\u2014Miravel and Corvus will finish what you started. You've done your part. Now it's time to disappear.\n\nOn the road out of the city, you meet a merchant caravan heading north. You join them as a guard, your sword arm earning your keep. No one knows your name here. No one knows what you've done.\n\nAt night, you stare at the stars and wonder if you made the right choice. The Guild still exists, somewhere in the shadows. But so do you\u2014free, alive, unbound.\n\nPerhaps that's enough. Perhaps it has to be.\n\nThe road stretches ahead, and you walk it one step at a time, leaving the past behind.",
-      "epilogue": "Vex Shadowstep becomes a wandering legend, appearing in stories across the land. Sometimes he's a thief, sometimes a hero, sometimes a monster. The truth is simpler: he was a person who made choices, lived with them, and kept walking. The shadows never caught him\u2014and neither did the light."
+      "text": "You leave the city behind. The Guild is weakened\u2014Miravel and Corvus will finish what you started. You've done your part. Now it's time to disappear.\n\nOn the road out of the city, you meet a merchant caravan heading north. You join them as a guard, your sword arm earning your keep.\n\nThe road stretches ahead, and you walk it one step at a time, leaving the past behind.",
+      "epilogue": "Vex Shadowstep becomes a wandering legend, appearing in stories across the land."
+    },
+    {
+      "ending_id": "VEX_ENDING_KING",
+      "title": "The New Shadow King",
+      "type": "dark",
+      "text": "You become what you fought. The Shadow King\u2014ruler of the shadows, master of the city's underworld. The Guild doesn't control you now. You control the Guild.\n\nYour sister Lyra stands beside you as you sit upon the throne. 'Is this what you wanted?' she asks.\n\n'Is this what I needed,' you reply.\n\nThe shadows answer to you now.",
+      "epilogue": "Vex Shadowstep rules with an iron will, bringing order to chaos."
+    },
+    {
+      "ending_id": "VEX_ENDING_RICH",
+      "title": "The Retired Thief",
+      "type": "neutral",
+      "text": "You disappear with a fortune. The ledger bought you safety, and safety bought you a new life. Far from the city, far from the shadows.\n\nA coastal town, a small inn, a quiet existence. The sea doesn't judge.\n\nAt night, you stare at the stars. You are alive. Rich. Free. Is that not enough?",
+      "epilogue": "Vex lives out his days in peace, far from the shadows that once defined him."
+    },
+    {
+      "ending_id": "VEX_ENDING_BETRAYED",
+      "title": "The Final Betrayal",
+      "type": "dark",
+      "text": "They come in the night. The ones you trusted. The ones you helped. They sell you out for the bounty on your head. The last thing you see is the blade, the smile of your betrayer.\n\nThe shadows swallow you whole. Your name becomes a warning, a story to frighten children.\n\nBut you don't hear any of it. You're already in the dark.",
+      "epilogue": "Vex Shadowstep dies as he lived\u2014betrayed by those he trusted most."
     }
   ],
   "metadata": {
-    "total_scenes": 15,
-    "total_endings": 3,
-    "word_count_estimate": 3500,
+    "total_scenes": 48,
+    "total_endings": 6,
+    "word_count_estimate": 12000,
     "story_type": "branching_narrative",
     "theme": "redemption, power, identity"
   },
@@ -7328,7 +8497,7 @@
   "ELARA_CH1_ESTATE_ASSAULT": {
     "id": "ELARA_CH1_ESTATE_ASSAULT",
     "character": "ELARA",
-    "description": "The Vance Estate burns tonight—not with fire, but with your fury. You've waited five years for this moment. The guards at the gate see only shadows before your blade finds their throats. Two down before they understand what's happening.\n\nMore guards pour from the estate. Twelve, maybe more. You knew the numbers. You planned for this. But you didn't plan for Castellan's private security—the Hollow Knights in black armor, their eyes empty, their blades hungry.\n\nThe first one Charging at you with a polearm. The second circling wide. This is no longer a simple raid. This is a battle.",
+    "description": "The Vance Estate burns tonight\u2014not with fire, but with your fury. You've waited five years for this moment. The guards at the gate see only shadows before your blade finds their throats. Two down before they understand what's happening.\n\nMore guards pour from the estate. Twelve, maybe more. You knew the numbers. You planned for this. But you didn't plan for Castellan's private security\u2014the Hollow Knights in black armor, their eyes empty, their blades hungry.\n\nThe first one Charging at you with a polearm. The second circling wide. This is no longer a simple raid. This is a battle.",
     "choices": [
       {
         "letter": "A",
@@ -7363,7 +8532,7 @@
   "ELARA_CH1_GUARD_FIGHT": {
     "id": "ELARA_CH1_GUARD_FIGHT",
     "character": "ELARA",
-    "description": "The Hollow Knight's polearm sweeps low. You vault over it, your blade already arcing toward his neck. The first dies silently. But the second is faster than he looks—his blade catches your arm, drawing blood.\n\nThree more guards surround you. Castellan's elite, armed with military-grade equipment. You're outmatched. But you've been outmatched before.\n\nYour elbow connects with one's throat. Your blade opens another's belly. The third swings wildly, and you let his momentum carry him into the wall.\n\nThe way to the study is clear. But something is wrong— Castellan isn't here.",
+    "description": "The Hollow Knight's polearm sweeps low. You vault over it, your blade already arcing toward his neck. The first dies silently. But the second is faster than he looks\u2014his blade catches your arm, drawing blood.\n\nThree more guards surround you. Castellan's elite, armed with military-grade equipment. You're outmatched. But you've been outmatched before.\n\nYour elbow connects with one's throat. Your blade opens another's belly. The third swings wildly, and you let his momentum carry him into the wall.\n\nThe way to the study is clear. But something is wrong\u2014 Castellan isn't here.",
     "choices": [
       {
         "letter": "A",
@@ -7397,7 +8566,7 @@
   "ELARA_CH1_CULT_INFILTRATE": {
     "id": "ELARA_CH1_CULT_INFILTRATE",
     "character": "ELARA",
-    "description": "You infiltrate the Ashfield Cult's nighttime ceremony. Hooded figures surround a blazing pit, chanting words that make your stomach turn. The leader—a woman in silver robes— commands an offering.\n\nA prisoner. A young boy, trembling and afraid. They want to sacrifice him to the Hollow.\n\nYou could walk away. Let the Cult do what they do. But your parents wouldn't have walked away. And neither will you.\n\nThe moment the knife touches flesh, you move. Your blade takes the first cultist in the spine. The second turns—too late.",
+    "description": "You infiltrate the Ashfield Cult's nighttime ceremony. Hooded figures surround a blazing pit, chanting words that make your stomach turn. The leader\u2014a woman in silver robes\u2014 commands an offering.\n\nA prisoner. A young boy, trembling and afraid. They want to sacrifice him to the Hollow.\n\nYou could walk away. Let the Cult do what they do. But your parents wouldn't have walked away. And neither will you.\n\nThe moment the knife touches flesh, you move. Your blade takes the first cultist in the spine. The second turns\u2014too late.",
     "choices": [
       {
         "letter": "A",
@@ -7431,7 +8600,7 @@
   "ELARA_CH1_MERCHANT_WAR": {
     "id": "ELARA_CH1_MERCHANT_WAR",
     "character": "ELARA",
-    "description": "The rival merchants have declared war. Your father's old partners— Thorne, Blackwood, and Vance himself— have united against you. They want the Vance Trading Company, and they're willing to kill for it.\n\nTheir thugs surround your warehouse. Twelve strong, armed with clubs and knives. You're inside, with no exit except through them.\n\nThe first one comes hard and fast. You catch his arm, break it at the elbow, use his body as a shield against the next attack. Blood sprays the ledger books. Your blood. Their blood.\n\nThis is business. And business is war.",
+    "description": "The rival merchants have declared war. Your father's old partners\u2014 Thorne, Blackwood, and Vance himself\u2014 have united against you. They want the Vance Trading Company, and they're willing to kill for it.\n\nTheir thugs surround your warehouse. Twelve strong, armed with clubs and knives. You're inside, with no exit except through them.\n\nThe first one comes hard and fast. You catch his arm, break it at the elbow, use his body as a shield against the next attack. Blood sprays the ledger books. Your blood. Their blood.\n\nThis is business. And business is war.",
     "choices": [
       {
         "letter": "A",
@@ -7453,7 +8622,7 @@
       },
       {
         "letter": "C",
-        "text": "Burn the evidence— deny them",
+        "text": "Burn the evidence\u2014 deny them",
         "leads_to": "ELARA_CH2_NETWORK",
         "effects": {
           "intelligence": 1
@@ -7465,7 +8634,7 @@
   "ELARA_CH1_ASSASSIN_ENCOUNTER": {
     "id": "ELARA_CH1_ASSASSIN_ENCOUNTER",
     "character": "ELARA",
-    "description": "The knife misses your throat by an inch. You're faster than you were five years ago, but the assassin is faster still. A blur of black and silver, striking from the shadows.\n\nYou parry, counter, feel your blade catch something. The assassin retreats, circle. Two more emerge from the darkness—professional killers, the Cult's elite.\n\nThe first charges. You disarm him, use his own blade. The second hesitate—long enough for you to slash his Achilles tendon. One runs. The third stands his ground.\n\n'Vespera sends her regards,' he spits before dying.",
+    "description": "The knife misses your throat by an inch. You're faster than you were five years ago, but the assassin is faster still. A blur of black and silver, striking from the shadows.\n\nYou parry, counter, feel your blade catch something. The assassin retreats, circle. Two more emerge from the darkness\u2014professional killers, the Cult's elite.\n\nThe first charges. You disarm him, use his own blade. The second hesitate\u2014long enough for you to slash his Achilles tendon. One runs. The third stands his ground.\n\n'Vespera sends her regards,' he spits before dying.",
     "choices": [
       {
         "letter": "A",
@@ -7499,7 +8668,7 @@
   "ELARA_CH2_NETWORK_BATTLE": {
     "id": "ELARA_CH2_NETWORK_BATTLE",
     "character": "ELARA",
-    "description": "Your network has been discovered. The Cult attacks your safehouse in the lower city— three of them, armed with Cult blades. Your contacts scatter, but you stand your ground.\n\nThe first cultist comes through the window. You catch him mid-charge, drive your blade through his chest. The second climbs the stairs, chanting something about the Hollow. His knife finds your shoulder. You let him.\n\nThen you take his throat. The third runs. Let him. Spread the word. The Avenger has returned.",
+    "description": "Your network has been discovered. The Cult attacks your safehouse in the lower city\u2014 three of them, armed with Cult blades. Your contacts scatter, but you stand your ground.\n\nThe first cultist comes through the window. You catch him mid-charge, drive your blade through his chest. The second climbs the stairs, chanting something about the Hollow. His knife finds your shoulder. You let him.\n\nThen you take his throat. The third runs. Let him. Spread the word. The Avenger has returned.",
     "choices": [
       {
         "letter": "A",
@@ -7533,7 +8702,7 @@
   "ELARA_CH2_CIRCLE_ASSAULT": {
     "id": "ELARA_CH2_CIRCLE_ASSAULT",
     "character": "ELARA",
-    "description": "The Circle of Mages' tower is under assault. Cult forces overwhelm the defenses— hollow knights pouring through the gates, cult priests incanting dark magic. The Archmage needs time to activate the tower's wards.\n\nYou lead your network against them. The first wave falls to your surprise attack. The second wave hesitates—then charges.\n\nA hollow knight's blade catches your side. The pain is blinding, but so is your fury. You fight through it, your blade finding gaps in their armor. Your allies hold the line.\n\nThe wards activate. The Cult screams as the light consumes them. But the battle isn't over.",
+    "description": "The Circle of Mages' tower is under assault. Cult forces overwhelm the defenses\u2014 hollow knights pouring through the gates, cult priests incanting dark magic. The Archmage needs time to activate the tower's wards.\n\nYou lead your network against them. The first wave falls to your surprise attack. The second wave hesitates\u2014then charges.\n\nA hollow knight's blade catches your side. The pain is blinding, but so is your fury. You fight through it, your blade finding gaps in their armor. Your allies hold the line.\n\nThe wards activate. The Cult screams as the light consumes them. But the battle isn't over.",
     "choices": [
       {
         "letter": "A",
@@ -7567,7 +8736,7 @@
   "ELARA_CH2_CULT_SURPRISE": {
     "id": "ELARA_CH2_CULT_SURPRISE",
     "character": "ELARA",
-    "description": "You stage an ambush at the Cult's supply depot. But they're ready. The moment you strike, counter-strikes emerge from the shadows— assassins you didn't see, waiting for you to reveal yourself.\n\nThe first blades catch you in the back. You spin, taking one down with you. The second is faster— she's good, very good. You exchange wounds, neither gaining ground.\n\nThen you remember: you're the Avenger. You stop defending. Start killing. Your blade finds her throat before she understands what's happening.\n\nThree cultists remain. They flee.",
+    "description": "You stage an ambush at the Cult's supply depot. But they're ready. The moment you strike, counter-strikes emerge from the shadows\u2014 assassins you didn't see, waiting for you to reveal yourself.\n\nThe first blades catch you in the back. You spin, taking one down with you. The second is faster\u2014 she's good, very good. You exchange wounds, neither gaining ground.\n\nThen you remember: you're the Avenger. You stop defending. Start killing. Your blade finds her throat before she understands what's happening.\n\nThree cultists remain. They flee.",
     "choices": [
       {
         "letter": "A",
@@ -7601,7 +8770,7 @@
   "ELARA_CH2_VAULT_HEIST": {
     "id": "ELARA_CH2_VAULT_HEIST",
     "character": "ELARA",
-    "description": "The Castellan family vault sits beneath a private estate. You bypass the guards, disable the wards with knowledge from the Circle. But the vault itself is protected by locks that require blood to open— your blood, your inheritance.\n\nInside: gold, documents, and the crown piece. You reach for it—\n\nThe guardian emerges. A construct of metal and dark magic, programmed to kill any unauthorized intruder. It's fast, stronger than any human, and it doesn't tire.\n\nYou have no magic. No backup. Just your blade and your will. The first strike nearly takes your head off.",
+    "description": "The Castellan family vault sits beneath a private estate. You bypass the guards, disable the wards with knowledge from the Circle. But the vault itself is protected by locks that require blood to open\u2014 your blood, your inheritance.\n\nInside: gold, documents, and the crown piece. You reach for it\u2014\n\nThe guardian emerges. A construct of metal and dark magic, programmed to kill any unauthorized intruder. It's fast, stronger than any human, and it doesn't tire.\n\nYou have no magic. No backup. Just your blade and your will. The first strike nearly takes your head off.",
     "choices": [
       {
         "letter": "A",
@@ -7635,7 +8804,7 @@
   "ELARA_CH2_BETRAYAL": {
     "id": "ELARA_CH2_BETRAYAL",
     "character": "ELARA",
-    "description": "Marcus, your trusted contact, leads you into a trap. The Cult is waiting— ten of them, surrounding the alley. You realize the truth too late.\n\n'Vespera pays better,' Marcus says. 'Nothing personal.'\n\nThe first cultist charges. You duck under his blade, drive your shoulder into his midsection. The second swings wide; you let momentum carry him into the wall. Three more— you can't take them all.\n\nBut you don't need to. You need to escape. And escape requires blood.",
+    "description": "Marcus, your trusted contact, leads you into a trap. The Cult is waiting\u2014 ten of them, surrounding the alley. You realize the truth too late.\n\n'Vespera pays better,' Marcus says. 'Nothing personal.'\n\nThe first cultist charges. You duck under his blade, drive your shoulder into his midsection. The second swings wide; you let momentum carry him into the wall. Three more\u2014 you can't take them all.\n\nBut you don't need to. You need to escape. And escape requires blood.",
     "choices": [
       {
         "letter": "A",
@@ -7669,7 +8838,7 @@
   "ELARA_CH2_CULT_VAULT": {
     "id": "ELARA_CH2_CULT_VAULT",
     "character": "ELARA",
-    "description": "The Cult's hidden vault is in the catacombs beneath the old city. You follow the fleeing cultists, deeper into darkness. The walls are covered in symbols that make your eyes ache.\n\nThree guardians stand before the inner door— elite Hollow Knights, their armor fused with dark magic. They don't speak. They don't need to. Their blades rise as one.\n\nYou engage the first, parrying, Countering. The second strikes at your legs; you leap, catch his helm, use his weight to pull him down. The third is the leader— faster, stronger.\n\nYour blade meets his. Sparks fly in the darkness.",
+    "description": "The Cult's hidden vault is in the catacombs beneath the old city. You follow the fleeing cultists, deeper into darkness. The walls are covered in symbols that make your eyes ache.\n\nThree guardians stand before the inner door\u2014 elite Hollow Knights, their armor fused with dark magic. They don't speak. They don't need to. Their blades rise as one.\n\nYou engage the first, parrying, Countering. The second strikes at your legs; you leap, catch his helm, use his weight to pull him down. The third is the leader\u2014 faster, stronger.\n\nYour blade meets his. Sparks fly in the darkness.",
     "choices": [
       {
         "letter": "A",
@@ -7737,7 +8906,7 @@
   "ELARA_CH3_FINAL_ASSULT": {
     "id": "ELARA_CH3_FINAL_ASSULT",
     "character": "ELARA",
-    "description": "The Cult's temple burns with void light. Every cultist in the area is here— hundreds of them, surrounding the central altar. At the center: Vespera, six crown pieces floating around her like dying stars.\n\n'You're too late,' she screams. 'The Convergence is complete. The Hollow rises.'\n\nBut she needs your piece— the seventh. Without it, the ritual is incomplete. Without it, she can't free the Void Beast.\n\nYour network charges. The Circle's mages follow. And you charge alone toward Vespera, through a wall of cultists who want you dead.\n\nThe first falls to your blade. The second. The third. Pain means nothing now. Victory is all that matters.",
+    "description": "The Cult's temple burns with void light. Every cultist in the area is here\u2014 hundreds of them, surrounding the central altar. At the center: Vespera, six crown pieces floating around her like dying stars.\n\n'You're too late,' she screams. 'The Convergence is complete. The Hollow rises.'\n\nBut she needs your piece\u2014 the seventh. Without it, the ritual is incomplete. Without it, she can't free the Void Beast.\n\nYour network charges. The Circle's mages follow. And you charge alone toward Vespera, through a wall of cultists who want you dead.\n\nThe first falls to your blade. The second. The third. Pain means nothing now. Victory is all that matters.",
     "choices": [
       {
         "letter": "A",
@@ -7771,7 +8940,7 @@
   "ELARA_CH3_VESPERA_CONFRONT": {
     "id": "ELARA_CH3_VESPERA_CONFRONT",
     "character": "ELARA",
-    "description": "Vespera stands before you— the woman who ordered your parents' death. Once a princess of light, now a creature of shadow. Her beauty is terrible, her power beyond comprehension.\n\n'You have your father's eyes,' she says. 'The same eyes that saw too much.'\n\n'I have his legacy,' you reply. 'I'm here to finish what he started.'\n\nShe strikes first— a wave of void energy that knocks you back. Your ribs crack. Your vision blurs. But you rise. She's powerful, but you're angry. And anger is its own kind of power.\n\nYou charge. Your blade meets her shadows.",
+    "description": "Vespera stands before you\u2014 the woman who ordered your parents' death. Once a princess of light, now a creature of shadow. Her beauty is terrible, her power beyond comprehension.\n\n'You have your father's eyes,' she says. 'The same eyes that saw too much.'\n\n'I have his legacy,' you reply. 'I'm here to finish what he started.'\n\nShe strikes first\u2014 a wave of void energy that knocks you back. Your ribs crack. Your vision blurs. But you rise. She's powerful, but you're angry. And anger is its own kind of power.\n\nYou charge. Your blade meets her shadows.",
     "choices": [
       {
         "letter": "A",
@@ -7805,11 +8974,11 @@
   "ELARA_CH3_CROWN_FIGHT": {
     "id": "ELARA_CH3_CROWN_FIGHT",
     "character": "ELARA",
-    "description": "All seven crown pieces float in the air, responding to your will. But Vespera fights back— Her magic tears at your mind, trying to wrest control. The pain is beyond anything you've felt.\n\nYou feel the Void Beast stirring— awakened by the ritual, hungry to feed. If either of you fails, it escapes. If either of you wins, the world burns. There's only one choice left.\n\nYou pour everything into the seal— your magic, your will, yourparents' legacy. The pieces respond, forming a barrier around the Beast. Vespera screams in fury.\n\nThe last thing you remember is light.",
+    "description": "All seven crown pieces float in the air, responding to your will. But Vespera fights back\u2014 Her magic tears at your mind, trying to wrest control. The pain is beyond anything you've felt.\n\nYou feel the Void Beast stirring\u2014 awakened by the ritual, hungry to feed. If either of you fails, it escapes. If either of you wins, the world burns. There's only one choice left.\n\nYou pour everything into the seal\u2014 your magic, your will, yourparents' legacy. The pieces respond, forming a barrier around the Beast. Vespera screams in fury.\n\nThe last thing you remember is light.",
     "choices": [
       {
         "letter": "A",
-        "text": "Complete the seal— save the world",
+        "text": "Complete the seal\u2014 save the world",
         "leads_to": "ELARA_CH4_EXPOSE",
         "effects": {
           "intelligence": 2
@@ -7827,7 +8996,7 @@
       },
       {
         "letter": "C",
-        "text": "Destroy everything— end the threat",
+        "text": "Destroy everything\u2014 end the threat",
         "leads_to": "ELARA_CH4_REVENGE",
         "effects": {
           "strength": 2
@@ -7839,11 +9008,11 @@
   "ELARA_CH3_VICTORY_BATTLE": {
     "id": "ELARA_CH3_VICTORY_BATTLE",
     "character": "ELARA",
-    "description": "The final battle. Vespera throws everything at you— void magic, Cult weapons, her own immortality. You respond with the only thing you have left: five years of patience, converted to precision.\n\nHer blade finds your arm. Your blade finds her heart. Both of you fall.\n\nBut you get up. She doesn't. The crown pieces scatter, their power dissipated. The Void Beast howls in the distance— denied its feeding.\n\nYou stand in the ruins of the temple, bloody and broken. But alive. And victorious.\n\nThis is what survival feels like.",
+    "description": "The final battle. Vespera throws everything at you\u2014 void magic, Cult weapons, her own immortality. You respond with the only thing you have left: five years of patience, converted to precision.\n\nHer blade finds your arm. Your blade finds her heart. Both of you fall.\n\nBut you get up. She doesn't. The crown pieces scatter, their power dissipated. The Void Beast howls in the distance\u2014 denied its feeding.\n\nYou stand in the ruins of the temple, bloody and broken. But alive. And victorious.\n\nThis is what survival feels like.",
     "choices": [
       {
         "letter": "A",
-        "text": "Walk away— it's over",
+        "text": "Walk away\u2014 it's over",
         "leads_to": "ELARA_CH4_AFTERMATH",
         "effects": {
           "humanity": 1
@@ -7865,6 +9034,312 @@
         "leads_to": "ELARA_CH4_CONSUMED",
         "effects": {
           "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH1_DEEP_WASTELAND": {
+    "id": "KIRA_CH1_DEEP_WASTELAND",
+    "character": "KIRA",
+    "description": "Beyond the known Wastes lies unmapped territory\u2014places even the Watch fears. You push deeper, following the crown piece's call. Something ancient stirs.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Embrace what awaits",
+        "leads_to": "KIRA_CH2_CROWNHAVEN",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Turn back",
+        "leads_to": "KIRA_CH1_KINGS_ROAD",
+        "effects": {
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Study the ancient power",
+        "leads_to": "KIRA_CH1_STUDY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH1_SECRET_CULTIST": {
+    "id": "KIRA_CH1_SECRET_CULTIST",
+    "character": "KIRA",
+    "description": "A seemingly ordinary villager catches your eye\u2014their mind carries the void touch. They don't know what they are. But you do.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Reveal their nature",
+        "leads_to": "KIRA_CH2_PREPARE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Eliminate them",
+        "leads_to": "KIRA_CH1_KINGS_ROAD",
+        "effects": {
+          "void_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Recruit them",
+        "leads_to": "KIRA_CH2_COMPANION",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH2_VOID_TOWER": {
+    "id": "KIRA_CH2_VOID_TOWER",
+    "character": "KIRA",
+    "description": "A tower of pure void energy stands outside Crownhaven\u2014built by your ancestors. It calls to the piece you carry.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Enter the tower",
+        "leads_to": "KIRA_CH2_CROWN",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Study from outside",
+        "leads_to": "KIRA_CH2_STUDY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Leave undisturbed",
+        "leads_to": "KIRA_CH2_CROWNHAVEN",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH3_TEMPLE_SUMMIT": {
+    "id": "KIRA_CH3_TEMPLE_SUMMIT",
+    "character": "KIRA",
+    "description": "At the Temple's peak, you face Vespera herself. Your great-aunt. Your mirror. She offers you a choice: join her, or die.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Fight to the death",
+        "leads_to": "KIRA_ENDING_MARTYR",
+        "effects": {
+          "combat": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Try to reach her",
+        "leads_to": "KIRA_ENDING_SURVIVOR",
+        "effects": {
+          "charisma": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use her against herself",
+        "leads_to": "KIRA_ENDING_VICTOR",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH3_VOID_CONSUME": {
+    "id": "KIRA_CH3_VOID_CONSUME",
+    "character": "KIRA",
+    "description": "The void power inside you surges\u2014uncontrollable now. The crown pieces amplify it beyond what you can contain. Something must give.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Let it consume you",
+        "leads_to": "KIRA_ENDING_UNDYING",
+        "effects": {
+          "void_magic": 5
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Release it all",
+        "leads_to": "KIRA_ENDING_MARTYR",
+        "effects": {
+          "void_magic": -5
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Transmute into something new",
+        "leads_to": "KIRA_ENDING_LOST",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH2_FINAL_CHOICE": {
+    "id": "KIRA_CH2_FINAL_CHOICE",
+    "character": "KIRA",
+    "description": "At the crossroads, every path leads to the Temple. But you can choose how you arrive\u2014victorious, surviving, or something else entirely.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Ride in as a hero",
+        "leads_to": "KIRA_CH3_ALLIES",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Slip in as shadows",
+        "leads_to": "KIRA_CH3_ALONE",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Demand they come to you",
+        "leads_to": "KIRA_CH3_BARGAIN",
+        "effects": {
+          "void_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH3_FAMILY_REUNION": {
+    "id": "KIRA_CH3_FAMILY_REUNION",
+    "character": "KIRA",
+    "description": "Your mother is free. But Vespera still lives\u2014and she's your family. The final choice shouldn't be made alone.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Let your mother decide",
+        "leads_to": "KIRA_ENDING_SURVIVOR",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "End it together",
+        "leads_to": "KIRA_ENDING_VICTOR",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Spare Vespera",
+        "leads_to": "KIRA_ENDING_HOLLOW",
+        "effects": {
+          "humanity": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH1_VOID_CHILD": {
+    "id": "KIRA_CH1_VOID_CHILD",
+    "character": "KIRA",
+    "description": "You sense another void-sensitive child in a nearby village. The Cult would kill them\u2014or worse, recruit them. You have minutes to decide.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Rescue the child",
+        "leads_to": "KIRA_CH1_ORPHAN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Leave them to their fate",
+        "leads_to": "KIRA_CH1_KINGS_ROAD",
+        "effects": {
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Kill to spare suffering",
+        "leads_to": "KIRA_CH1_BANDITS",
+        "effects": {
+          "void_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH2_UNDERGROUND": {
+    "id": "KIRA_CH2_UNDERGROUND",
+    "character": "KIRA",
+    "description": "Beneath Crownhaven lies an underground network\u2014refugees, outcasts, those who refuse the Cult. They could be powerful allies.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Join their cause",
+        "leads_to": "KIRA_CH3_ALLIES",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Gather intel only",
+        "leads_to": "KIRA_CH2_PREPARE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use and leave",
+        "leads_to": "KIRA_CH2_CROWNHAVEN",
+        "effects": {
+          "stealth": 1
         },
         "requires": null
       }
