@@ -250,6 +250,7 @@ class GameEngine:
             
             else:
                 print(f"{RED}Invalid action. Choose a move number, A, B, or C.{RESET}")
+                continue  # Invalid action doesn't cost a turn!
             
             # Enemy turn (if still alive)
             if enemy_hp > 0:
@@ -267,6 +268,26 @@ class GameEngine:
         if self.health <= 0:
             print(f"\n{RED}💀 You have fallen in combat.{RESET}")
             return False
+        
+        # Post-battle regeneration (percentage of max)
+        hp_restore = max(5, int(100 * 0.15))  # Restore 15% of max HP (base 100)
+        
+        # Determine max mana based on class (default based on stat)
+        max_mana = 50  # Default max mana
+        if self.stats.get('void_magic', 0) > 5:
+            max_mana = 50  # Kira - high mana
+        elif self.stats.get('combat', 0) > 5:
+            max_mana = 40  # Theron - moderate
+        elif self.stats.get('stealth', 0) > 5:
+            max_mana = 35  # Vex
+        else:
+            max_mana = 45  # Elara - good mana
+            
+        mana_restore = max(5, int(max_mana * 0.20))  # Restore 20% of max Mana
+        
+        self.health = min(100, self.health + hp_restore)
+        self.mana = min(max_mana, self.mana + mana_restore)
+        print(f"\n{CYAN}Rest & Recover:{RESET} +{hp_restore} HP, +{mana_restore} Mana")
         
         print(f"\n{GREEN}⚔ VICTORY! {enemy_name} defeated!{RESET}")
         return True
