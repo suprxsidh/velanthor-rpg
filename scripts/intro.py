@@ -34,7 +34,7 @@ The Silent Church claims it will bring peace.
 And the Ashen Wastes grow larger each year.
 
 You are a wanderer in a dying world. A knight who lost honor. A mage who hides her nature.
-A thief carrying impossible cargo. A merchant seeking vengeance.
+A thief carrying impossible cargo. A merchant seeking vengeance. A druid who guards the border.
 
 The choice is yours.
 
@@ -104,6 +104,12 @@ def get_characters():
             'tagline': 'Your parents are dead. The truth awaits.',
             'class': 'Merchant',
             'start': 'Theris'
+        },
+        'E': {
+            'name': 'Asha Ironheart',
+            'tagline': 'The border is lost. Will you become its guardian?',
+            'class': 'Warden',
+            'start': 'Frosthold'
         }
     }
 

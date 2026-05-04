@@ -215,6 +215,107 @@ TIER_5 = {
 }
 
 
+# Warden-themed enemies (Ashen Wastes / Northreach)
+WARDEN_ENEMIES = {
+    "ashen_wolf": Enemy(
+        name="Ashen Wolf",
+        hp=25,
+        damage=8,
+        str=4,
+        dex=5,
+        int=2,
+        cha=2,
+        weak_against="nature_magic",
+        strong_against="strength",
+        description="A corrupted wolf tainted by void energy from the Wastes."
+    ),
+    "corrupted_treant": Enemy(
+        name="Corrupted Treant",
+        hp=45,
+        damage=12,
+        str=7,
+        dex=2,
+        int=3,
+        cha=3,
+        weak_against="fire",
+        strong_against="void_magic",
+        description="A once-noble tree spirit twisted by void corruption."
+    ),
+    "void_serpent": Enemy(
+        name="Void Serpent",
+        hp=35,
+        damage=14,
+        str=4,
+        dex=6,
+        int=4,
+        cha=3,
+        weak_against="nature_magic",
+        strong_against="dexterity",
+        description="A serpent born from the darkness between worlds."
+    ),
+    "northreach_bear": Enemy(
+        name="Northreach Bear",
+        hp=50,
+        damage=15,
+        str=8,
+        dex=4,
+        int=2,
+        cha=3,
+        weak_against="dexterity",
+        strong_against="strength",
+        description="A massive bear from the northern forests, fierce and territorial."
+    ),
+    "wastes_scorpion": Enemy(
+        name="Wastes Scorpion",
+        hp=20,
+        damage=10,
+        str=3,
+        dex=5,
+        int=1,
+        cha=1,
+        weak_against="fire",
+        strong_against="void_magic",
+        description="A giant scorpion from the Ashen Wastes with a venomous stinger."
+    ),
+    "hollow_sentinel": Enemy(
+        name="Hollow Sentinel",
+        hp=55,
+        damage=16,
+        str=7,
+        dex=4,
+        int=4,
+        cha=4,
+        weak_against="nature_magic",
+        strong_against="strength",
+        description="A corrupted guardian from the old world, serving the Hollow."
+    ),
+    "spirit_fox": Enemy(
+        name="Spirit Fox",
+        hp=30,
+        damage=9,
+        str=3,
+        dex=7,
+        int=4,
+        cha=5,
+        weak_against="void_magic",
+        strong_against="stealth",
+        description="A mystical fox spirit, guide to those who walk the wild."
+    ),
+    "guardian_north": Enemy(
+        name="Guardian of the North",
+        hp=65,
+        damage=18,
+        str=8,
+        dex=5,
+        int=6,
+        cha=6,
+        weak_against="nature_magic",
+        strong_against="charisma",
+        description="An ancient druid who has watched the border for centuries."
+    ),
+}
+
+
 # Enemy Tiers dictionary
 ENEMY_TIERS = {
     "tier_1": TIER_1,
@@ -229,6 +330,7 @@ ENEMY_TIERS = {
 ALL_ENEMIES = {}
 for tier in ENEMY_TIERS.values():
     ALL_ENEMIES.update(tier)
+ALL_ENEMIES.update(WARDEN_ENEMIES)
 
 
 def get_enemy_by_name(name: str) -> Optional[Enemy]:

@@ -33,7 +33,7 @@
       },
       {
         "letter": "D",
-        "text": "Stand and fight—let them come!",
+        "text": "Stand and fight\u2014let them come!",
         "leads_to": "KIRA_CH1_WASTELAND_BATTLE",
         "effects": {
           "void_magic": 2
@@ -593,7 +593,7 @@
   "KIRA_CH2_BATTLE": {
     "id": "KIRA_CH2_BATTLE",
     "character": "KIRA",
-    "description": "The Hollow Knight is faster than any human. Its sword moves like thought\u2014strike, parry, counter.\n\nBut you're faster.\n\nThe void answers your call. Shadows tear from the walls, wrapping around the Knight's limbs. You pour everything into the magic\u2014eight years of hiding, eight years of fear, eight years of rage.\n\nThe Knight screams\u2014a sound like tearing metal\u2014and dissolves into darkness.\n\nYou stand alone in the chamber, breathing hard. The crown piece pulses with\u6b22\u8fce.\n\nYour mother left you a message, etched in void light: 'Forgive me. Find the truth. And when you're ready\u2014destroy it all.'",
+    "description": "The Hollow Knight is faster than any human. Its sword moves like thought\u2014strike, parry, counter.\n\nBut you're faster.\n\nThe void answers your call. Shadows tear from the walls, wrapping around the Knight's limbs. You pour everything into the magic\u2014eight years of hiding, eight years of fear, eight years of rage.\n\nThe Knight screams\u2014a sound like tearing metal\u2014and dissolves into darkness.\n\nYou stand alone in the chamber, breathing hard. The crown piece pulses with a faint warmth.\n\nYour mother left you a message, etched in void light: 'Forgive me. Find the truth. And when you're ready\u2014destroy it all.'",
     "choices": [
       {
         "letter": "A",
@@ -1951,7 +1951,7 @@
     "choices": [
       {
         "letter": "A",
-        "text": "Ignore her—another creditor or bounty hunter",
+        "text": "Ignore her\u2014another creditor or bounty hunter",
         "leads_to": "THERON_CH1_IGNORE",
         "effects": {
           "humanity": -1
@@ -1960,7 +1960,7 @@
       },
       {
         "letter": "B",
-        "text": "Challenge her—what does she want?",
+        "text": "Challenge her\u2014what does she want?",
         "leads_to": "THERON_CH1_DEMAND",
         "effects": {
           "strength": 1
@@ -1969,7 +1969,7 @@
       },
       {
         "letter": "C",
-        "text": "Politely decline—whatever she's selling",
+        "text": "Politely decline\u2014whatever she's selling",
         "leads_to": "THERON_CH1_DECLINE",
         "effects": {
           "charisma": 1
@@ -1978,7 +1978,7 @@
       },
       {
         "letter": "D",
-        "text": "Fight—show her you're still a knight!",
+        "text": "Fight\u2014show her you're still a knight!",
         "leads_to": "THERON_CH1_TAVERN_BRAWL",
         "effects": {
           "combat": 2
@@ -2806,7 +2806,7 @@
   "THERON_CH2_VESPERA_TRAP": {
     "id": "THERON_CH2_VESPERA_TRAP",
     "character": "THERON",
-    "description": "You lower your blade, pretending to consider her offer. Your eyes scan the chamber—the six shards glowing on their pedestals, the children suspended above the altar, the portal already opening in the center.\n\nThis is a trap. You know it. She knows it.\n\n'How do I know I can trust you?' you ask, buying time.\n\nElara laughs—the sound is wrong, like glass breaking. 'You can't. But you have no other choice. Join me, or watch the world burn.'\n\nThe portal pulses. The Beast stirs. And you realize: you have maybe five minutes before the Convergence completes. Enough time to act—but only if you're clever.\n\n'I'll need the seventh shard,' you say. 'I'll bring it to you—but let the children go first.'\n\nShe tilts her head, considering. Then nods.\n\nThe first children are released. One minute. Two. You're running out of time.",
+    "description": "You lower your blade, pretending to consider her offer. Your eyes scan the chamber\u2014the six shards glowing on their pedestals, the children suspended above the altar, the portal already opening in the center.\n\nThis is a trap. You know it. She knows it.\n\n'How do I know I can trust you?' you ask, buying time.\n\nElara laughs\u2014the sound is wrong, like glass breaking. 'You can't. But you have no other choice. Join me, or watch the world burn.'\n\nThe portal pulses. The Beast stirs. And you realize: you have maybe five minutes before the Convergence completes. Enough time to act\u2014but only if you're clever.\n\n'I'll need the seventh shard,' you say. 'I'll bring it to you\u2014but let the children go first.'\n\nShe tilts her head, considering. Then nods.\n\nThe first children are released. One minute. Two. You're running out of time.",
     "choices": [
       {
         "letter": "A",
@@ -2840,7 +2840,7 @@
   "THERON_CH3_WAIT": {
     "id": "THERON_CH3_WAIT",
     "character": "THERON",
-    "description": "You wait. Hours pass. The Cult grows desperate—they attack villages, sacrifice children, unleash chaos. The kingdom cries out for a hero.\n\nBut you wait.\n\nThe Circle sends hunters. Morgana demands answers. Even Vespera sends messages: 'I know you have the seventh. Meet me, or more children die.'\n\nStill you wait.\n\nAnd then, on the night of the Convergence, you move. The Cult has gathered all their forces at the temple—all six shards glowing on their altar. Vespera stands ready to complete the ritual.\n\nBut she's missing one thing.\n\nYou.\n\nWith the seventh shard, you can either complete the Convergence yourself—or destroy it forever. The choice, finally, is yours.",
+    "description": "You wait. Hours pass. The Cult grows desperate\u2014they attack villages, sacrifice children, unleash chaos. The kingdom cries out for a hero.\n\nBut you wait.\n\nThe Circle sends hunters. Morgana demands answers. Even Vespera sends messages: 'I know you have the seventh. Meet me, or more children die.'\n\nStill you wait.\n\nAnd then, on the night of the Convergence, you move. The Cult has gathered all their forces at the temple\u2014all six shards glowing on their altar. Vespera stands ready to complete the ritual.\n\nBut she's missing one thing.\n\nYou.\n\nWith the seventh shard, you can either complete the Convergence yourself\u2014or destroy it forever. The choice, finally, is yours.",
     "choices": [
       {
         "letter": "A",
@@ -2874,7 +2874,7 @@
   "THERON_CH2_HIDDEN": {
     "id": "THERON_CH2_HIDDEN",
     "character": "THERON",
-    "description": "You bury the seventh shard in a hidden location—a hollow tree in the ancient forest, marked only in your memory. The void inside you recoils at the hiding, but you resist.\n\nIf no one can use the shard, no one can complete the Convergence. That's what you tell yourself. But the shard calls to you, whispering promises of power, of peace, of an end to your suffering.\n\nYou leave the forest changed. Lighter, somehow. But also empty.\n\nDays pass. The Cult knows you're somewhere, but they can't find you. Morgana's messengers arrive with pleas for help. The Circle offers rewards. Everyone wants the seventh shard.\n\nBut you alone know where it is. And that's a power more dangerous than any magic.\n\nThe question is: when the time comes, will you use it? Or let the world burn?",
+    "description": "You bury the seventh shard in a hidden location\u2014a hollow tree in the ancient forest, marked only in your memory. The void inside you recoils at the hiding, but you resist.\n\nIf no one can use the shard, no one can complete the Convergence. That's what you tell yourself. But the shard calls to you, whispering promises of power, of peace, of an end to your suffering.\n\nYou leave the forest changed. Lighter, somehow. But also empty.\n\nDays pass. The Cult knows you're somewhere, but they can't find you. Morgana's messengers arrive with pleas for help. The Circle offers rewards. Everyone wants the seventh shard.\n\nBut you alone know where it is. And that's a power more dangerous than any magic.\n\nThe question is: when the time comes, will you use it? Or let the world burn?",
     "choices": [
       {
         "letter": "A",
@@ -2908,32 +2908,32 @@
   "THERON_CH2_MESSENGER": {
     "id": "THERON_CH2_MESSENGER",
     "character": "THERON",
-    "description": "You send a message to Morgana through secret channels—a scout who owes you favors from better days. The boy needs protection, and she has resources you don't.\n\nDays pass. The scout returns with a response: 'Take him to the Sanctuary of the Dawn. They will protect him. But come alone—this is your final test.'\n\nThe Sanctuary is a hidden refuge—a monastery carved into the mountain, far from the Cult's reach. The monks there worship the light, but they're not naive. They know about the void. They've been preparing for this moment.\n\nYou bring Caden to the Sanctuary. The monks accept him, their eyes widening at the void inside him.\n\n'Unusual,' the Head Monk says. 'A child carrying such darkness. Yet he glows with light. Interesting.'\n\nThey teach him. They protect him. And you leave knowing he's safe.\n\nBut the message lingers: this is your final test. Morgana wants something from you. The final confrontation approaches.\n\nYou leave the Sanctuary ready. And afraid.",
+    "description": "You find a crossroads rider heading toward Crownhaven. For ten gold, he agrees to carry your message to Lady Morgana Vance.\n\nThe boy watches you, worried. 'Will she come? Will she save my sister?'\n\nYou don't answer. You don't know. Morgana has her own agenda, and the boy is just another piece on a board he doesn't understand.\n\nDays pass. The boy grows impatient. Then, on the third night, a rider appears at the edge of the village\u2014not Morgana, but a messenger bearing her seal.\n\n'She's coming,' the messenger says. 'But she's not alone. The queen has sent the Guard. This isn't a rescue mission anymore. It's a war.'",
     "choices": [
       {
         "letter": "A",
-        "text": "Meet Morgana\u2014accept the test",
-        "leads_to": "THERON_CH2_TEMPLE",
+        "text": "Prepare for war\u2014train the boy to fight",
+        "leads_to": "THERON_CH2_TRAIN",
         "effects": {
-          "strength": 2
+          "combat": 1
         },
         "requires": null
       },
       {
         "letter": "B",
-        "text": "Gather more allies\u2014prepare first",
-        "leads_to": "THERON_CH2_ALLIES",
+        "text": "Go to meet Morgana\u2014coordinate the attack",
+        "leads_to": "THERON_CH2_REPORT",
         "effects": {
-          "charisma": 2
+          "charisma": 1
         },
         "requires": null
       },
       {
         "letter": "C",
-        "text": "Use the secret passage\u2014sneak into temple",
-        "leads_to": "THERON_CH3_RITUAL",
+        "text": "Keep the boy hidden\u2014war is no place for children",
+        "leads_to": "THERON_CH2_WAIT",
         "effects": {
-          "stealth": 2
+          "humanity": 1
         },
         "requires": null
       }
@@ -2942,7 +2942,7 @@
   "THERON_CH2_ALLIES": {
     "id": "THERON_CH2_ALLIES",
     "character": "THERON",
-    "description": "You send word through the kingdom: Theron Ashford needs help. The old contacts respond—mercenaries, rogue mages, knights who never stopped believing.\n\nThey gather at the old rendezvous point: a ruined fortress in the hills. Your old team is there—Garreth, Brynn, Marcus—and new faces too. A powerful light mage named Sera. An assassin called Ghost. A veteran knight named Aldric, who served your father.\n\n'Twenty-three of us,' Garreth reports. 'All experienced. All ready to die if we have to.'\n\nYou look at them—these people who believe in you, who would follow you into darkness—and feel something you haven't felt in years: hope.\n\n'I won't ask you to die,' you say. 'I ask you to fight. To win. To end this.'\n\nThey roar their approval.\n\nThe final assault begins. And this time, you're not alone.",
+    "description": "You send word through the kingdom: Theron Ashford needs help. The old contacts respond\u2014mercenaries, rogue mages, knights who never stopped believing.\n\nThey gather at the old rendezvous point: a ruined fortress in the hills. Your old team is there\u2014Garreth, Brynn, Marcus\u2014and new faces too. A powerful light mage named Sera. An assassin called Ghost. A veteran knight named Aldric, who served your father.\n\n'Twenty-three of us,' Garreth reports. 'All experienced. All ready to die if we have to.'\n\nYou look at them\u2014these people who believe in you, who would follow you into darkness\u2014and feel something you haven't felt in years: hope.\n\n'I won't ask you to die,' you say. 'I ask you to fight. To win. To end this.'\n\nThey roar their approval.\n\nThe final assault begins. And this time, you're not alone.",
     "choices": [
       {
         "letter": "A",
@@ -3371,21 +3371,21 @@
   "THERON_ENDING_SURVIVOR": {
     "id": "THERON_ENDING_SURVIVOR",
     "character": "THERON",
-    "description": "You survive. That's all you've ever done.\n\nThe battle ends without you. The Cult falls—scattered, broken, their ritual incomplete. The Void Beast remains sealed. And you? You walk away, leaving nothing but footprints in the ash.\n\nNo one calls you a hero. No songs are sung in your name. You didn't save the kingdom or destroy the evil. You just lived—one more day, then another, then another.\n\nThe void stays inside you. Sometimes it's quiet. Sometimes it screams. But you've learned to feed it just enough to keep it calm. Other people's pain. Other people's sacrifices.\n\nYou wander the roads, passing through villages that don't know your face, drinking in taverns where no one remembers your name. The knight who failed. The hero who ran.\n\nBut somewhere, in the deepest part of your soul, you know you made the right choice. The world didn't need another monster. It just needed someone to survive.\n\nAnd you did. You always will.\n\nThe Survivor walks on. And the void walks with him.",
+    "description": "You survive. That's all you've ever done.\n\nThe battle ends without you. The Cult falls\u2014scattered, broken, their ritual incomplete. The Void Beast remains sealed. And you? You walk away, leaving nothing but footprints in the ash.\n\nNo one calls you a hero. No songs are sung in your name. You didn't save the kingdom or destroy the evil. You just lived\u2014one more day, then another, then another.\n\nThe void stays inside you. Sometimes it's quiet. Sometimes it screams. But you've learned to feed it just enough to keep it calm. Other people's pain. Other people's sacrifices.\n\nYou wander the roads, passing through villages that don't know your face, drinking in taverns where no one remembers your name. The knight who failed. The hero who ran.\n\nBut somewhere, in the deepest part of your soul, you know you made the right choice. The world didn't need another monster. It just needed someone to survive.\n\nAnd you did. You always will.\n\nThe Survivor walks on. And the void walks with him.",
     "ending": "SURVIVOR",
     "choices": []
   },
   "THERON_ENDING_KING": {
     "id": "THERON_ENDING_KING",
     "character": "THERON",
-    "description": "You take the throne. Not through birthright or marriage, but through power—the void itself bends to your will.\n\nThe Cult kneels to you. The Circle obeys. Even Morgana bows, though her eyes hold fear. The kingdom is yours—every stone, every soul, every shadow.\n\nYou rule with the void at your command. No one dares rebel. No one can.\n\nBut the throne is cold. Lonely. You sit alone in the throne room, looking down at a world that fears you. Is this what you wanted? Is this what Elara wanted?\n\nSometimes, late at night, you feel the Beast stirring. It wants more. It always wants more. And you realize: you're not the master. You're the Vessel. The cage that holds the darkness.\n\nOne day, the cage will break. The Beast will escape. And everything you've built will fall.\n\nBut not today. Today, you rule. And that's enough.\n\nThe Void King sits upon his throne. And waits.",
+    "description": "You take the throne. Not through birthright or marriage, but through power\u2014the void itself bends to your will.\n\nThe Cult kneels to you. The Circle obeys. Even Morgana bows, though her eyes hold fear. The kingdom is yours\u2014every stone, every soul, every shadow.\n\nYou rule with the void at your command. No one dares rebel. No one can.\n\nBut the throne is cold. Lonely. You sit alone in the throne room, looking down at a world that fears you. Is this what you wanted? Is this what Elara wanted?\n\nSometimes, late at night, you feel the Beast stirring. It wants more. It always wants more. And you realize: you're not the master. You're the Vessel. The cage that holds the darkness.\n\nOne day, the cage will break. The Beast will escape. And everything you've built will fall.\n\nBut not today. Today, you rule. And that's enough.\n\nThe Void King sits upon his throne. And waits.",
     "ending": "KING",
     "choices": []
   },
   "THERON_ENDING_BETRAYED": {
     "id": "THERON_ENDING_BETRAYED",
     "character": "THERON",
-    "description": "You trusted the wrong person. It always ends that way.\n\nMorgana's guards surround you before you reach the altar. Her face is cold, calculating.\n\n'The seventh shard,' she says. 'Give it to me, Theron. This is over.'\n\nYou realize the truth: she was never on your side. She wanted the power for herself—the Convergence, the Beast, everything. You're just a pawn in a bigger game.\n\n'I trusted you,' you say.\n\nShe laughs. 'Trust is for the weak. Power is for those who take it.'\n\nThe guards close in. The void inside you roars—but without the seventh shard, without the ritual, you're just a man. Broken, betrayed, alone.\n\nThey drag you to the temple anyway. Vespera waits, smirking. The three of you—Vespera, Morgana, and the throne—complete the Convergence.\n\nThe Beast rises. And you're the first sacrifice.\n\nThe last thing you see is Elara's face, unchanged after all these years, watching from the shadows. Betrayed by everyone. Saved by no one.\n\nThe Hollow Knight falls. And the void consumes all.",
+    "description": "You trusted the wrong person. It always ends that way.\n\nMorgana's guards surround you before you reach the altar. Her face is cold, calculating.\n\n'The seventh shard,' she says. 'Give it to me, Theron. This is over.'\n\nYou realize the truth: she was never on your side. She wanted the power for herself\u2014the Convergence, the Beast, everything. You're just a pawn in a bigger game.\n\n'I trusted you,' you say.\n\nShe laughs. 'Trust is for the weak. Power is for those who take it.'\n\nThe guards close in. The void inside you roars\u2014but without the seventh shard, without the ritual, you're just a man. Broken, betrayed, alone.\n\nThey drag you to the temple anyway. Vespera waits, smirking. The three of you\u2014Vespera, Morgana, and the throne\u2014complete the Convergence.\n\nThe Beast rises. And you're the first sacrifice.\n\nThe last thing you see is Elara's face, unchanged after all these years, watching from the shadows. Betrayed by everyone. Saved by no one.\n\nThe Hollow Knight falls. And the void consumes all.",
     "ending": "BETRAYED",
     "choices": []
   },
@@ -3554,40 +3554,6 @@
         "leads_to": "THERON_CH2_PRISON",
         "effects": {
           "honor": 1
-        },
-        "requires": null
-      }
-    ]
-  },
-  "THERON_CH2_MESSENGER": {
-    "id": "THERON_CH2_MESSENGER",
-    "character": "THERON",
-    "description": "You find a crossroads rider heading toward Crownhaven. For ten gold, he agrees to carry your message to Lady Morgana Vance.\n\nThe boy watches you, worried. 'Will she come? Will she save my sister?'\n\nYou don't answer. You don't know. Morgana has her own agenda, and the boy is just another piece on a board he doesn't understand.\n\nDays pass. The boy grows impatient. Then, on the third night, a rider appears at the edge of the village\u2014not Morgana, but a messenger bearing her seal.\n\n'She's coming,' the messenger says. 'But she's not alone. The queen has sent the Guard. This isn't a rescue mission anymore. It's a war.'",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Prepare for war\u2014train the boy to fight",
-        "leads_to": "THERON_CH2_TRAIN",
-        "effects": {
-          "combat": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Go to meet Morgana\u2014coordinate the attack",
-        "leads_to": "THERON_CH2_REPORT",
-        "effects": {
-          "charisma": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Keep the boy hidden\u2014war is no place for children",
-        "leads_to": "THERON_CH2_WAIT",
-        "effects": {
-          "humanity": 1
         },
         "requires": null
       }
@@ -3822,7 +3788,7 @@
       },
       {
         "letter": "C",
-        "text": "Turn and fight—face your pursuers!",
+        "text": "Turn and fight\u2014face your pursuers!",
         "leads_to": "VEX_CH1_DOCKS_CHASE",
         "effects": {
           "stealth": 2
@@ -5746,7 +5712,7 @@
       },
       {
         "letter": "D",
-        "text": "Assault the estate—attack the guards!",
+        "text": "Assault the estate\u2014attack the guards!",
         "leads_to": "ELARA_CH1_ESTATE_ASSAULT",
         "effects": {
           "influence": 2
@@ -9377,6 +9343,1870 @@
         "effects": {
           "stealth": 1
         },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_VILLAGE": {
+    "id": "ASHA_CH1_VILLAGE",
+    "character": "ASHA",
+    "description": "The sky burns orange as your village of Thornhaven dies. Smoke billows from the sacred grove where you once tended the Elder Tree. Void-corrupted figures move through the streets\u2014shadows wearing flesh, their eyes empty as the Ashen Wastes themselves.\n\nYour home of thirty years crumbles around you. The border you've guarded is broken. And somewhere in the chaos, you feel the corruption spreading like a disease through the land.\n\nRun. Now. There's nothing left to save.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Run\u2014before the corruption takes you",
+        "leads_to": "ASHA_CH1_ESCAPE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_ESCAPE": {
+    "id": "ASHA_CH1_ESCAPE",
+    "character": "ASHA",
+    "description": "The main road is blocked by burning carts. Creatures from the Waste prowl the shadows between buildings. You have three paths out of Thornhaven\u2014each dangerous in its own way.\n\nYour druid staff feels heavy in your hands. The ancient talisman around your neck pulses with warmth, sensing the corruption. Nature magic swells within you, but there's no time to fight\u2014not yet.\n\nChoose your escape route carefully. The border between civilization and the Ashen Wastes has always been your charge. Now you must survive it.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Dash through the forest path\u2014your old patrol route",
+        "leads_to": "ASHA_CH1_WOLF_ATTACK",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Brave the main road\u2014faster, but more exposed",
+        "leads_to": "ASHA_CH1_CULT_PURSUIT",
+        "effects": {
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Push into the Ashen Wastes\u2014fewer enemies, worse terrain",
+        "leads_to": "ASHA_CH1_CORRUPTED_TREANT",
+        "effects": {
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_WOLF_ATTACK": {
+    "id": "ASHA_CH1_WOLF_ATTACK",
+    "character": "ASHA",
+    "description": "The forest path offers cover, but something stalks you between the burning trees. An Ashen Wolf emerges from the smoke\u2014its fur matted with void corruption, its eyes burning with unnatural hunger.\n\nThis was once a guardian of these woods, corrupted by the same darkness that consumed your village. The creature snarls, saliva dripping from jaws that once protected travelers.\n\nIt leaps. Your nature magic responds, green energy coiling around your druid staff. You can feel the wolf's pain beneath the corruption\u2014still in there, somewhere. Do you try to save it, or destroy it?",
+    "type": "combat",
+    "leads_to": "ASHA_CH1_PATH_CHOICE",
+    "enemy": "Ashen Wolf",
+    "enemy_stats": {
+      "health": 25,
+      "attack": 8,
+      "defense": 5
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Strike with full force\u2014end the corrupted creature",
+        "leads_to": "ASHA_CH1_PATH_CHOICE",
+        "effects": {
+          "nature_magic": 1,
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use nature magic to purge the corruption",
+        "leads_to": "ASHA_CH1_PATH_CHOICE",
+        "effects": {
+          "nature_magic": 2,
+          "charisma": 1
+        },
+        "requires": "nature_magic 5"
+      },
+      {
+        "letter": "C",
+        "text": "Evade and find another path",
+        "leads_to": "ASHA_CH1_PATH_CHOICE",
+        "effects": {
+          "dexterity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_CULT_PURSUIT": {
+    "id": "ASHA_CH1_CULT_PURSUIT",
+    "character": "ASHA",
+    "description": "The main road is a nightmare of fire and screaming. You dodge burning wagons, vault over fallen bodies, and push through the chaos. Then you see them\u2014three Cultists in black robes, hunting survivors.\n\nOne spots you. 'The Warden!' he shouts. 'Kill the druid! She's of no use to the Master!'\n\nThey don't want to capture you\u2014they want you dead. These aren't random thugs. They're organized, trained, and they know who you are.\n\nThe first raises a blade dark with void energy. Time to show them why the border wardens are feared.",
+    "type": "combat",
+    "leads_to": "ASHA_CH1_PATH_CHOICE",
+    "enemy": "Cultist",
+    "enemy_stats": {
+      "health": 20,
+      "attack": 10,
+      "defense": 4
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Unleash nature's fury\u2014thorns and vines",
+        "leads_to": "ASHA_CH1_PATH_CHOICE",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Target their leader first\u2014cut the head off",
+        "leads_to": "ASHA_CH1_PATH_CHOICE",
+        "effects": {
+          "combat": 1,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Create a barrier and slip past",
+        "leads_to": "ASHA_CH1_PATH_CHOICE",
+        "effects": {
+          "survival": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_CORRUPTED_TREANT": {
+    "id": "ASHA_CH1_CORRUPTED_TREANT",
+    "character": "ASHA",
+    "description": "The Ashen Wastes are worse than you imagined. The ground crunches with ash, and the air tastes of sulfur and despair. Then you see it\u2014a Corrupted Treant, once a guardian of the border woods, now twisted into something monstrous.\n\nVoid corruption has hollowed out its trunk, replacing bark with black ichor. Its branches reach for you like grasping claws. This ancient being, older than your village, has been broken.\n\nYou feel the pain within it\u2014a soul still trapped, screaming for help. The corruption isn't complete. Perhaps nothing is beyond saving.",
+    "type": "combat",
+    "leads_to": "ASHA_CH1_PATH_CHOICE",
+    "enemy": "Corrupted Treant",
+    "enemy_stats": {
+      "health": 35,
+      "attack": 12,
+      "defense": 8
+    },
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Purge the corruption with all your power",
+        "leads_to": "ASHA_CH1_PATH_CHOICE",
+        "effects": {
+          "nature_magic": 3
+        },
+        "requires": "nature_magic 6"
+      },
+      {
+        "letter": "B",
+        "text": "Destroy it\u2014put the trapped soul out of its misery",
+        "leads_to": "ASHA_CH1_PATH_CHOICE",
+        "effects": {
+          "nature_magic": 1,
+          "survival": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Negotiate with what remains of its mind",
+        "leads_to": "ASHA_CH1_PATH_CHOICE",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": "nature_magic 5"
+      }
+    ]
+  },
+  "ASHA_CH1_PATH_CHOICE": {
+    "id": "ASHA_CH1_PATH_CHOICE",
+    "character": "ASHA",
+    "description": "You've escaped the destruction, but the question remains: where do you go from here? The Cult didn't attack randomly\u2014they targeted your village, the border, the guardians who stood between civilization and the Ashen Wastes.\n\nThree paths forward present themselves. Each leads to different allies, different knowledge, different ways to fight what's coming. The border is broken. But perhaps it can be restored\u2014if you find the right help.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Head to Northreach\u2014the nearest city, home of the Watch",
+        "leads_to": "ASHA_CH1_NORTHREACH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Pursue the Cult directly\u2014find out why they attacked",
+        "leads_to": "ASHA_CH1_CULT_TRAIL",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Seek the Circle of Mages\u2014they may know something",
+        "leads_to": "ASHA_CH1_MAGE_TOWER",
+        "effects": {
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_NORTHREACH": {
+    "id": "ASHA_CH1_NORTHREACH",
+    "character": "ASHA",
+    "description": "Northreach rises against the grey sky\u2014a fortress city where the kingdom meets the wilds. The Watch patrols here, keeping the border between civilization and the unknown. You've traded with them for years, but never sought their help.\n\nThe gates are closed to refugees. Word of the Thornhaven attack has reached here, and panic is spreading. The Watch captain, a scarred woman named Voss, eyes you with suspicion.\n\n'Druid,' she says. 'You're the one from the border. Tell me: what really happened to your village?'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Tell her everything\u2014the void, the Cult, your fears",
+        "leads_to": "ASHA_CH1_NORTHREACH_INN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Ask for help first\u2014information later",
+        "leads_to": "ASHA_CH1_NORTHREACH_GUARD",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Sneak in through the old tunnels\u2014avoid the Watch",
+        "leads_to": "ASHA_CH1_NORTHREACH_INN",
+        "effects": {
+          "dexterity": 1,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_NORTHREACH_INN": {
+    "id": "ASHA_CH1_NORTHREACH_INN",
+    "character": "ASHA",
+    "description": "The Wandering Root Inn is a sanctuary for those who live between worlds\u2014traders, scouts, wardens, and those with nowhere else to go. The barkeep, an old half-orc named Grimjaw, serves drinks and rumors with equal generosity.\n\nYou learn that the Cult has been active for months\u2014not just here, but across the kingdom. Something called the 'Void Convergence' is coming. And your village wasn't the first to burn.\n\n'Word is,' Grimjaw mutters, 'they're planning something big. Something at the border. And the Watch is too blind to see it.'\n\nHe slides you a crumpled note. 'If you're looking for answers, there's a woman in the old ruins\u2014calls herself the Wild Speaker. Knows things about the old magic. The border magic.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find the Wild Speaker\u2014she might know how to stop this",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Join the Watch\u2014fight the Cult as part of something larger",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "charisma": 1,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to the border\u2014see what's left of Thornhaven",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "survival": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_NORTHREACH_GUARD": {
+    "id": "ASHA_CH1_NORTHREACH_GUARD",
+    "character": "ASHA",
+    "description": "Captain Voss studies you for a long moment, then nods to her lieutenant. 'The druid speaks true,' she says. 'Get her some food, a bed. We'll need her.'\n\nShe shows you maps\u2014watch reports from across the border. The Cult has been moving for months, gathering at sites of old power. Your village was a target because of the Elder Tree\u2014a nexus point for nature magic.\n\n'They're preparing something,' Voss says. 'Something at the old temple in the Ashen Wastes. We don't have the numbers to stop them. But we do have a druid who knows the border better than anyone.'\n\nShe offers you a position with the Watch\u2014not as a refugee, but as a scout. The border needs guardians.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept\u2014become a Watch scout",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "combat": 1,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Ask about the old temple\u2014find the threat's source",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Request supplies and leave\u2014time is short",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "survival": 1,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_CULT_TRAIL": {
+    "id": "ASHA_CH1_CULT_TRAIL",
+    "character": "ASHA",
+    "description": "You follow the Cult's retreat, tracking them through the Ashen Wastes. The corruption here is thick\u2014you can taste it on the air, feel it in your bones. But your nature magic holds firm, a green light in the darkness.\n\nYou find their camp at dusk. Black-robed figures gather around a map, marking locations. You hear fragments: 'The border druids are neutralized,' 'The convergence approaches,' 'The Warden must not reach the temple.'\n\nThey know you're coming. Your village wasn't just attacked\u2014it was a message. They want you to chase them, to follow them deeper into the Wastes. But why?",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Attack the camp\u2014capture a Cultist for interrogation",
+        "leads_to": "ASHA_CH1_CULT_INTERROGATION",
+        "effects": {
+          "combat": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Infiltrate silently\u2014overhear their plans",
+        "leads_to": "ASHA_CH1_CULT_INTERROGATION",
+        "effects": {
+          "dexterity": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Retreat\u2014find another way to learn their plans",
+        "leads_to": "ASHA_CH1_CULT_INTERROGATION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_CULT_INTERROGATION": {
+    "id": "ASHA_CH1_CULT_INTERROGATION",
+    "character": "ASHA",
+    "description": "The captured Cultist is young\u2014barely more than a teenager. His eyes are hollow, but there's fear beneath the void corruption. You feel the weight of his choices, the chains the Cult wraps around their followers.\n\n'Please,' he whispers. 'They took my sister. Said if I didn't serve, they'd...'\n\nYou could force information from him with nature magic, but something holds you back. The same corruption you fight has its hooks in him. Perhaps he can be saved\u2014or at least pointed toward redemption.\n\n'I'll help you find your sister,' you offer. 'But I need to know: what's the Void Convergence? Where is the temple?'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Promise to rescue his sister\u2014in exchange for his help",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use nature magic to purge the corruption from him",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": "nature_magic 6"
+      },
+      {
+        "letter": "C",
+        "text": "Let him go\u2014he'll lead you to the temple anyway",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "survival": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_MAGE_TOWER": {
+    "id": "ASHA_CH1_MAGE_TOWER",
+    "character": "ASHA",
+    "description": "The Circle of Mages maintains a tower at the edge of the Ashen Wastes\u2014a place where the veil between worlds grows thin. The architecture twists impossibly, stone bending in ways that hurt your eyes. This is not nature's domain.\n\nYet you feel a kinship with this place. Nature magic and void magic are opposites, but they're also mirrors\u2014both draw from the same fundamental force of creation and destruction.\n\nAn Archmage meets you at the entrance. She has silver hair and eyes that see through time itself. 'Asha Ironheart,' she says. 'We felt your village die. The border weakens. And you're the only one who might save it.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept their help\u2014they know things about the Cult",
+        "leads_to": "ASHA_CH1_MAGE_OFFER",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Ask about the Void Convergence first",
+        "leads_to": "ASHA_CH1_MAGE_OFFER",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Refuse\u2014their magic is too dangerous",
+        "leads_to": "ASHA_CH1_MAGE_OFFER",
+        "effects": {
+          "nature_magic": 1,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_MAGE_OFFER": {
+    "id": "ASHA_CH1_MAGE_OFFER",
+    "character": "ASHA",
+    "description": "The Archmage tells you what she knows. The Cult serves the Hollow King\u2014a void entity trapped beneath the Ashen Wastes since the Sundering. Every century, it tries to break free. The Void Convergence is its next attempt.\n\n'Your village sat on a nexus of nature power,' she explains. 'The Elder Tree was a anchor. Without it, the border grows weak. The Hollow King's influence spreads.'\n\nShe offers you a choice: the Circle will train you in ways to fight the void, but you'll owe them your service. Or you can leave with what knowledge they've given you, free to pursue your own path.\n\n'Choose quickly, Warden. The Convergence comes in weeks. And the border won't hold without help.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept their training\u2014become stronger against the void",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "nature_magic": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Take the knowledge and leave\u2014your own way",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "intelligence": 2,
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Ask them to restore the Elder Tree\u2014save the border",
+        "leads_to": "ASHA_CH1_CH2_TRANSITION",
+        "effects": {
+          "charisma": 2,
+          "nature_magic": 2
+        },
+        "requires": "nature_magic 6"
+      }
+    ]
+  },
+  "ASHA_CH1_CH2_TRANSITION": {
+    "id": "ASHA_CH1_CH2_TRANSITION",
+    "character": "ASHA",
+    "description": "The first chapter of your story ends not with victory, but with purpose. The border is broken, your village is ash, and the Hollow King's convergence approaches. But you are not alone\u2014and you are not defeated.\n\nYou have learned the threat: the Cult, the Hollow King, the Void Convergence. You have found allies or gathered knowledge. And you carry within you the nature magic that stood as the border's last guardian.\n\nThe road ahead is dark. But somewhere, in the depths of the Ashen Wastes, the old temple waits. And at the heart of it all, the Hollow King stirs.\n\nThe second chapter begins where the border ends\u2014where nature meets void, and one druid must stand against the darkness.\n\n[END OF CHAPTER 1]",
+    "type": "ending",
+    "leads_to": null,
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue to Chapter 2\u2014The Void Temple awaits",
+        "leads_to": "ASHA_CH2_VOID_TEMPLE",
+        "effects": {},
+        "requires": null,
+        "message": "Chapter 1 Complete! Chapter 2 coming soon..."
+      },
+      {
+        "letter": "B",
+        "text": "Start over as a different character",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_VOID_TEMPLE": {
+    "id": "ASHA_CH2_VOID_TEMPLE",
+    "character": "ASHA",
+    "description": "The Ashen Wastes stretch before you like a wound on the world. The ground crunches with gray ash, and the sky hangs low and oppressive. Somewhere in this nightmare, the old temple waits\u2014the Void Temple where the Hollow King seeks to complete his convergence.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Push directly toward the temple\u2014the element of surprise",
+        "leads_to": "ASHA_CH2_WASTES_BORDER",
+        "effects": {
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Scout the perimeter first\u2014know your enemy",
+        "leads_to": "ASHA_CH2_SCOUT",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Search for signs of Cult activity\u2014they must have outposts",
+        "leads_to": "ASHA_CH2_CULT_CELL",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_WASTES_BORDER": {
+    "id": "ASHA_CH2_WASTES_BORDER",
+    "character": "ASHA",
+    "description": "The edge of the Ashen Wastes is worse than you remember. The corruption has spread\u2014trees that once marked the border now stand as blackened skeletons. Something moves in the shadows between the dead trees.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Follow the path to the structures\u2014investigate quietly",
+        "leads_to": "ASHA_CH2_INFILTRATE",
+        "effects": {
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Cut through the corrupted forest\u2014faster, but riskier",
+        "leads_to": "ASHA_CH2_AMBUSH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use nature magic to cleanse a path through the corruption",
+        "leads_to": "ASHA_CH2_WASTES_BORDER_CLEANSE",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": "nature_magic 6"
+      }
+    ]
+  },
+  "ASHA_CH2_WASTES_BORDER_CLEANSE": {
+    "id": "ASHA_CH2_WASTES_BORDER_CLEANSE",
+    "character": "ASHA",
+    "description": "You channel your nature magic into the corrupted earth. The ash beneath your feet begins to glow\u2014a soft green light that spreads outward. Where it touches, the corruption recedes. Tiny green shoots push through the ash.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Press forward while the path holds\u2014time is critical",
+        "leads_to": "ASHA_CH2_DISCOVER_VOID_CONVERGENCE",
+        "effects": {
+          "nature_magic": 1,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Rest and recover before pushing deeper",
+        "leads_to": "ASHA_CH2_SCOUT",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Mark this location\u2014could be useful for future efforts",
+        "leads_to": "ASHA_CH2_CULT_CELL",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_SCOUT": {
+    "id": "ASHA_CH2_SCOUT",
+    "character": "ASHA",
+    "description": "You find a ridge overlooking a Cult encampment. Figures in black robes move between tents. Watch mercenaries stand guard at key positions. And in the center, a structure that can only be the Void Temple's outer sanctum.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Infiltrate the camp through the eastern approach",
+        "leads_to": "ASHA_CH2_INFILTRATE",
+        "effects": {
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Observe longer\u2014learn their patterns and numbers",
+        "leads_to": "ASHA_CH2_DISCOVER_VOID_CONVERGENCE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Set an ambush for isolated patrols\u2014gather information",
+        "leads_to": "ASHA_CH2_AMBUSH",
+        "effects": {
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_CULT_CELL": {
+    "id": "ASHA_CH2_CULT_CELL",
+    "character": "ASHA",
+    "description": "You find the Cult's outer defenses: a small outpost built into the ruins of an old watchtower. Three Cultists stand guard, discussing something in low voices. The word 'convergence' reaches your ears.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Attack\u2014take them out before they can alert others",
+        "leads_to": "ASHA_CH2_AMBUSH",
+        "effects": {
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use stealth to bypass\u2014continue toward the temple",
+        "leads_to": "ASHA_CH2_INFILTRATE",
+        "effects": {
+          "dexterity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Capture one for interrogation\u2014learn about the convergence",
+        "leads_to": "ASHA_CH2_INTERROGATION",
+        "effects": {
+          "intelligence": 1,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_INTERROGATION": {
+    "id": "ASHA_CH2_INTERROGATION",
+    "character": "ASHA",
+    "description": "'The Hollow King needs to gather enough power to manifest fully,' she says. 'The convergence is almost complete\u2014weeks, maybe days.' She offers: the location of a secret entrance to the temple, the number of guards, the time of their shift changes.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Use the secret entrance\u2014take them by surprise",
+        "leads_to": "ASHA_CH2_INFILTRATE",
+        "effects": {
+          "dexterity": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Kill her to prevent warning\u2014mercy would be dangerous",
+        "leads_to": "ASHA_CH2_VOID_SERPENT",
+        "effects": {
+          "nature_magic": 1,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Let her go with a warning\u2014retribution finds the guilty",
+        "leads_to": "ASHA_CH2_VOID_SERPENT",
+        "effects": {
+          "charisma": 2,
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_INFILTRATE": {
+    "id": "ASHA_CH2_INFILTRATE",
+    "character": "ASHA",
+    "description": "The Cult camp is larger than you estimated\u2014tents spreading across the ash. You slip between the tents, your footsteps silent. You overhear Cultists discussing the 'convergence.' You find a map showing the expanding Wastes.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Hide and observe\u2014what's approaching?",
+        "leads_to": "ASHA_CH2_VOID_SERPENT",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Move deeper into the camp\u2014the temple awaits",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+        "effects": {
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Create a nature barrier\u2014block whatever comes",
+        "leads_to": "ASHA_CH2_VOID_SERPENT",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_AMBUSH": {
+    "id": "ASHA_CH2_AMBUSH",
+    "character": "ASHA",
+    "description": "Three Hollow Guards emerge from the ash, their armor black and featureless, their eyes empty pools of void darkness. 'Warden,' the lead Guard speaks. 'The Master wishes to speak with you. You will come willingly, or we will bring you.'",
+    "type": "combat",
+    "leads_to": "ASHA_CH2_DISCOVER_VOID_CONVERGENCE",
+    "enemy": "Hollow Guard",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Strike with nature magic\u2014thorns and vines",
+        "leads_to": "ASHA_CH2_DISCOVER_VOID_CONVERGENCE",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Focus on one target\u2014end them quickly",
+        "leads_to": "ASHA_CH2_DISCOVER_VOID_CONVERGENCE",
+        "effects": {
+          "combat": 1,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use the environment\u2014turn ash against them",
+        "leads_to": "ASHA_CH2_DISCOVER_VOID_CONVERGENCE",
+        "effects": {
+          "intelligence": 1,
+          "dexterity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_DISCOVER_VOID_CONVERGENCE": {
+    "id": "ASHA_CH2_DISCOVER_VOID_CONVERGENCE",
+    "character": "ASHA",
+    "description": "The Void Convergence is real, and it's closer than anyone knows. The Hollow King needs to gather enough void energy to manifest fully. Once that happens, the Ashen Wastes will expand exponentially\u2014consuming the north in months.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Push directly for the temple\u2014stop the ritual",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+        "effects": {
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Seek the Watch\u2014they need to know about this",
+        "leads_to": "ASHA_CH2_MEET_WATCH",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find a way to disrupt the convergence magic",
+        "leads_to": "ASHA_CH2_VOID_SERPENT",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_VOID_SERPENT": {
+    "id": "ASHA_CH2_VOID_SERPENT",
+    "character": "ASHA",
+    "description": "The ground shakes as the Void Serpent emerges from the ash. Its body is a nightmare of swirling darkness, scales that seem to absorb light. 'Warden. The border is dead. Join the convergence, or be consumed by it.'",
+    "type": "combat",
+    "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+    "enemy": "Void Serpent",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Unleash your strongest nature magic\u2014overwhelming force",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+        "effects": {
+          "nature_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Find its weak point\u2014strategy over power",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+        "effects": {
+          "intelligence": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use your talisman\u2014it's led you this far",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+        "effects": {
+          "nature_magic": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_MEET_WATCH": {
+    "id": "ASHA_CH2_MEET_WATCH",
+    "character": "ASHA",
+    "description": "A company of Watch mercenaries at the edge of the Wastes. Commander Voss looks at you with knowing eyes. 'We can't stop them alone. But together\u2014we might have a chance. The Watch will support your attack on the temple.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the command\u2014the Watch fights with you",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+        "effects": {
+          "charisma": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Request more time\u2014to prepare properly",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT_PREPARE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Go alone\u2014the Watch guards the perimeter instead",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+        "effects": {
+          "nature_magic": 2,
+          "strength": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_TEMPLE_ASSAULT_PREPARE": {
+    "id": "ASHA_CH2_TEMPLE_ASSAULT_PREPARE",
+    "character": "ASHA",
+    "description": "You take time to prepare\u2014rest, reconnaissance, coordination. The key weakness: the temple's western wall, where ancient stone has crumbled. It's defended, but not as heavily.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Launch the assault at dawn\u2014hit them when they're weakest",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+        "effects": {
+          "combat": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Strike at night\u2014in the darkness, nature magic shines",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+        "effects": {
+          "nature_magic": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use a distraction\u2014draw forces away, then strike",
+        "leads_to": "ASHA_CH2_TEMPLE_ASSAULT",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_TEMPLE_ASSAULT": {
+    "id": "ASHA_CH2_TEMPLE_ASSAULT",
+    "character": "ASHA",
+    "description": "The Void Temple rises from the ash like a jagged wound. Inside, the corruption is overwhelming. At the center, a massive form takes shape: the Hollow Sentinel, guardian of the temple, soldier of the Hollow King.",
+    "type": "combat",
+    "leads_to": "ASHA_CH2_VICTORY",
+    "enemy": "Hollow Sentinel",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Strike with everything\u2014end this now",
+        "leads_to": "ASHA_CH2_VICTORY",
+        "effects": {
+          "nature_magic": 3,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Target the void symbols\u2014disrupt the ritual directly",
+        "leads_to": "ASHA_CH2_VICTORY",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Channel nature magic through your talisman\u2014your greatest power",
+        "leads_to": "ASHA_CH2_VICTORY",
+        "effects": {
+          "nature_magic": 4
+        },
+        "requires": "nature_magic 6"
+      }
+    ]
+  },
+  "ASHA_CH2_VICTORY": {
+    "id": "ASHA_CH2_VICTORY",
+    "character": "ASHA",
+    "description": "The Hollow Sentinel falls, its form dissolving into nothing. The temple shudders, the symbols on the floor flickering and dying. The convergence is disrupted\u2014not destroyed, but delayed. You've won this battle.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Return to Northreach\u2014warn them, prepare for what's coming",
+        "leads_to": "ASHA_CH2_NORTHREACH_WARNING",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Hunt other Cult cells\u2014continue the fight",
+        "leads_to": "ASHA_CH2_NORTHREACH_WARNING",
+        "effects": {
+          "combat": 2,
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Study the temple\u2014learn more about the convergence",
+        "leads_to": "ASHA_CH2_NORTHREACH_WARNING",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_NORTHREACH_WARNING": {
+    "id": "ASHA_CH2_NORTHREACH_WARNING",
+    "character": "ASHA",
+    "description": "The Jarl agrees to hear you in his hall. 'We will prepare. The Watch will be reinforced. And you, Warden Asha Ironheart\u2014you will lead the defense when the time comes.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the mantle\u2014become Guardian of the North",
+        "leads_to": "ASHA_CH2_CH3_TRANSITION",
+        "effects": {
+          "charisma": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to the Wastes\u2014the fight isn't over",
+        "leads_to": "ASHA_CH2_CH3_TRANSITION",
+        "effects": {
+          "combat": 2,
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Seek the Circle of Mages\u2014more knowledge is needed",
+        "leads_to": "ASHA_CH2_CH3_TRANSITION",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_CH3_TRANSITION": {
+    "id": "ASHA_CH2_CH3_TRANSITION",
+    "character": "ASHA",
+    "description": "The second chapter ends with the weight of responsibility settling on your shoulders. The Hollow King still exists. The Wastes still spread. But now, you're not alone. The third chapter begins where all things end.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue to Chapter 3\u2014The Final Stand",
+        "leads_to": "ASHA_CH3_FINAL_APPROACH",
+        "effects": {},
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Start over as a different character",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_FINAL_APPROACH": {
+    "id": "ASHA_CH3_FINAL_APPROACH",
+    "character": "ASHA",
+    "description": "The final battle approaches. The Hollow King stirs in the void, his convergence delayed but not destroyed. You stand at the edge of the Ashen Wastes, ready to face the darkness that has haunted your homeland.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "March directly to the Cult's final stronghold",
+        "leads_to": "ASHA_CH3_CULT_VANGUARD",
+        "effects": {
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Gather allies\u2014face this with an army at your back",
+        "leads_to": "ASHA_CH3_GATHER_ALLIES",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Seek one last vision from the ancient spirits",
+        "leads_to": "ASHA_CH3_SPIRIT_VISION",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_GATHER_ALLIES": {
+    "id": "ASHA_CH3_GATHER_ALLIES",
+    "character": "ASHA",
+    "description": "You rally the forces of the north. The Watch, the Northreach warriors, even some Circle mages answer your call. Together, you march toward the Cult's final temple\u2014a force united against the void.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Launch a coordinated assault\u2014everyone fights",
+        "leads_to": "ASHA_CH3_CULT_VANGUARD",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Send a vanguard to disrupt their defenses",
+        "leads_to": "ASHA_CH3_CULT_VANGUARD",
+        "effects": {
+          "intelligence": 1,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Position archers and mages at range\u2014bombard first",
+        "leads_to": "ASHA_CH3_CULT_VANGUARD",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_SPIRIT_VISION": {
+    "id": "ASHA_CH3_SPIRIT_VISION",
+    "character": "ASHA",
+    "description": "You enter a deep meditation, seeking guidance from the ancient spirits of the wild. They show you visions: the Hollow King as a being of pure hunger, the crown pieces scattered across the world, and a choice that must be made.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Embrace the spirits' power\u2014become one with nature",
+        "leads_to": "ASHA_CH3_SPIRIT_MERGE",
+        "effects": {
+          "nature_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Seek the crown piece\u2014the only thing that can stop him",
+        "leads_to": "ASHA_CH3_VESPERA_CONFRONT",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to your allies\u2014share what you've learned",
+        "leads_to": "ASHA_CH3_GATHER_ALLIES",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_SPIRIT_MERGE": {
+    "id": "ASHA_CH3_SPIRIT_MERGE",
+    "character": "ASHA",
+    "description": "The spirits offer you a choice: merge with them, becoming a being of pure nature magic\u2014impossible to destroy, but no longer human. In exchange, you can seal the Hollow King forever.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the merge\u2014become the Spirit of the Wild",
+        "leads_to": "ASHA_ENDING_SPIRIT",
+        "effects": {
+          "nature_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reject the merge\u2014find another way",
+        "leads_to": "ASHA_CH3_CULT_VANGUARD",
+        "effects": {
+          "strength": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_CULT_VANGUARD": {
+    "id": "ASHA_CH3_CULT_VANGUARD",
+    "character": "ASHA",
+    "description": "The Cult's final temple looms before you\u2014a structure of black stone that defies geometry. Cult Leaders stand at the entrance, their dark magic pooling around them. This is the end.",
+    "type": "combat",
+    "leads_to": "ASHA_CH3_TEMPLE_INTERIOR",
+    "enemy": "Cult Leader",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Strike at the leaders\u2014cut the head off the snake",
+        "leads_to": "ASHA_CH3_TEMPLE_INTERIOR",
+        "effects": {
+          "nature_magic": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Order your allies to charge\u2014overwhelm with numbers",
+        "leads_to": "ASHA_CH3_TEMPLE_INTERIOR",
+        "effects": {
+          "charisma": 1,
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use your talisman\u2014it has never failed you",
+        "leads_to": "ASHA_CH3_TEMPLE_INTERIOR",
+        "effects": {
+          "nature_magic": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_TEMPLE_INTERIOR": {
+    "id": "ASHA_CH3_TEMPLE_INTERIOR",
+    "character": "ASHA",
+    "description": "Inside, the temple is a nightmare of void energy. The walls drip with darkness, and the air itself seems to crush you. At the center, a throne of black crystal holds a figure\u2014a woman with silver hair: Vespera.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Challenge Vespera directly\u2014she's the key to everything",
+        "leads_to": "ASHA_CH3_VESPERA_CONFRONT",
+        "effects": {
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Search for the crown piece\u2014it's here somewhere",
+        "leads_to": "ASHA_CH3_SEARCH_CROWN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare your strongest spell\u2014this ends now",
+        "leads_to": "ASHA_CH3_VESPERA_CONFRONT",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_SEARCH_CROWN": {
+    "id": "ASHA_CH3_SEARCH_CROWN",
+    "character": "ASHA",
+    "description": "You find the crown piece in a chamber beneath the temple\u2014a fragment of Aethon's ancient crown, pulsing with void energy. It calls to you, promising power beyond imagination.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take the crown\u2014use its power against the Hollow King",
+        "leads_to": "ASHA_ENDING_CROWN",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy the crown\u2014end its threat forever",
+        "leads_to": "ASHA_CH3_VESPERA_CONFRONT",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Hide it\u2014someone else might need it",
+        "leads_to": "ASHA_CH3_VESPERA_CONFRONT",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_VESPERA_CONFRONT": {
+    "id": "ASHA_CH3_VESPERA_CONFRONT",
+    "character": "ASHA",
+    "description": "'Warden,' Vespera smiles, her eyes empty pools of void. 'You've come so far. But you cannot stop what is already happening. The Hollow King rises. And you\u2014' she gestures, '\u2014will be his vessel or his fuel.'",
+    "type": "combat",
+    "leads_to": "ASHA_CH3_HOLLOW_KING",
+    "enemy": "Vespera",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Fight with everything you have\u2014this ends here",
+        "leads_to": "ASHA_CH3_HOLLOW_KING",
+        "effects": {
+          "nature_magic": 3,
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Try to reach her\u2014the woman beneath the corruption",
+        "leads_to": "ASHA_CH3_HOLLOW_KING",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Call upon the spirits\u2014one last time",
+        "leads_to": "ASHA_CH3_HOLLOW_KING",
+        "effects": {
+          "nature_magic": 4
+        },
+        "requires": "nature_magic 7"
+      }
+    ]
+  },
+  "ASHA_CH3_HOLLOW_KING": {
+    "id": "ASHA_CH3_HOLLOW_KING",
+    "character": "ASHA",
+    "description": "Vespera falls, and in her place rises something far worse. The Hollow King manifests\u2014a being of pure void, hunger given form. 'Warden,' his voice shakes the very temple. 'You cannot kill what is already dead. You can only join.'",
+    "type": "combat",
+    "leads_to": "ASHA_CH3_FINAL_CHOICE",
+    "enemy": "The Hollow King",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Stand your ground\u2014fight to the last",
+        "leads_to": "ASHA_CH3_FINAL_CHOICE",
+        "effects": {
+          "combat": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use the crown piece\u2014the only power that can match him",
+        "leads_to": "ASHA_CH3_FINAL_CHOICE",
+        "effects": {
+          "nature_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Become one with the spirits\u2014make the ultimate sacrifice",
+        "leads_to": "ASHA_ENDING_SPIRIT",
+        "effects": {
+          "nature_magic": 4
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_FINAL_CHOICE": {
+    "id": "ASHA_CH3_FINAL_CHOICE",
+    "character": "ASHA",
+    "description": "The Hollow King looms before you, his power overwhelming. You have but one choice remaining\u2014one that will define the fate of the north forever. The ancient talisman around your neck burns with final warmth.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Become the Guardian\u2014seal yourself at the border forever",
+        "leads_to": "ASHA_CH4_GUARDIAN_TRIAL",
+        "effects": {
+          "nature_magic": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy yourself and the Hollow King together",
+        "leads_to": "ASHA_ENDING_SACRIFICE",
+        "effects": {
+          "nature_magic": 4
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Run\u2014the fight isn't over, just postponed",
+        "leads_to": "ASHA_ENDING_WANDERER",
+        "effects": {
+          "survival": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_GUARDIAN": {
+    "id": "ASHA_ENDING_GUARDIAN",
+    "character": "ASHA",
+    "description": "You channel every ounce of your nature magic into the border itself. The ground splits open, roots erupting from the earth in tangled walls. You become one with the land\u2014a living barrier between the world and the void. The Hollow King screams in fury, unable to cross the boundary you've become. Generations will speak of the Guardian of the North, the druid who gave everything to hold back the darkness.",
+    "type": "ending",
+    "ending": "Guardian of the North",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Play again",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_SPIRIT": {
+    "id": "ASHA_ENDING_SPIRIT",
+    "character": "ASHA",
+    "description": "You surrender to the spirits, becoming something beyond human. Your body dissolves into leaves and wind, merging with the ancient power of the wild. In this form, you confront the Hollow King\u2014not as a mortal, but as his equal. The battle shakes the world, but in the end, your nature magic overwhelms his void. The Hollow King is sealed, and you become the new Spirit of the Wild\u2014guardian of all nature, eternal and free.",
+    "type": "ending",
+    "ending": "Spirit of the Wild",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Play again",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_SACRIFICE": {
+    "id": "ASHA_ENDING_SACRIFICE",
+    "character": "ASHA",
+    "description": "You detonate your life force in a massive release of nature magic. The explosion tears through the temple, through the Hollow King, through everything. When the dust settles, nothing remains but a crater where the temple stood. The Hollow King is destroyed\u2014but so are you, and so is a large portion of the Ashen Wastes. The north mourns its hero, and the border slowly begins to heal.",
+    "type": "ending",
+    "ending": "The Sacrifice",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Play again",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_WANDERER": {
+    "id": "ASHA_ENDING_WANDERER",
+    "character": "ASHA",
+    "description": "You flee into the Ashen Wastes, the Hollow King hunting you through the void-touched landscape. For years you run, never stopping, never resting. Some say you died out there, consumed by the very corruption you fought. Others claim you still wander, a ghost fighting a war that can never be won. The border falls, but you survive\u2014marked by the void, forever running.",
+    "type": "ending",
+    "ending": "Lost to the Wastes",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Play again",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_CROWN": {
+    "id": "ASHA_ENDING_CROWN",
+    "character": "ASHA",
+    "description": "You take up the crown piece, merging its power with your nature magic. The combination is unprecedented\u2014void and nature, destruction and growth. You confront the Hollow King not as a Warden, but as his equal. Together, you tear the world in two: the mortal realm and the void, separated forever. You become ruler of both, a queen of shadow and light. The north has a new sovereign.",
+    "type": "ending",
+    "ending": "The Hollow Queen",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Play again",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_UNITER": {
+    "id": "ASHA_ENDING_UNITER",
+    "character": "ASHA",
+    "description": "You cannot defeat the Hollow King alone\u2014but you don't have to. Rallying every faction in the north, you forge an alliance: Watch, Northreach warriors, Circle mages, even some former Cultists. Together, you assault the temple not to destroy the Hollow King, but to drive him back. The battle is long and bloody, but in the end, the alliance holds. You become the Uniter\u2014the leader who brought the north together.",
+    "type": "ending",
+    "ending": "The Uniter",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Play again",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH4_GUARDIAN_TRIAL": {
+    "id": "ASHA_CH4_GUARDIAN_TRIAL",
+    "character": "ASHA",
+    "description": "The Jarl's hall is packed\u2014warriors, mages, merchants, all gathered to witness your trials. To become Guardian of the North, you must prove yourself worthy: strength in combat, wisdom in counsel, and spirit in the sacred grove.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Complete the trial of combat\u2014defeat the champion",
+        "leads_to": "ASHA_CH4_COMBAT_TRIAL",
+        "effects": {
+          "combat": 2,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Complete the trial of wisdom\u2014answer the ancient riddles",
+        "leads_to": "ASHA_CH4_WISDOM_TRIAL",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Complete the trial of spirit\u2014commune with the old gods",
+        "leads_to": "ASHA_CH4_SPIRIT_TRIAL",
+        "effects": {
+          "nature_magic": 2,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH4_COMBAT_TRIAL": {
+    "id": "ASHA_CH4_COMBAT_TRIAL",
+    "character": "ASHA",
+    "description": "The arena roars as the Northreach Champion steps forward\u2014a wall of muscle and steel. 'Warden,' he grunts, drawing his axe. 'Let's see if you can back up your reputation.'",
+    "type": "combat",
+    "leads_to": "ASHA_CH4_GUARDIAN_CROWNING",
+    "enemy": "Guardian of the North",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Match his ferocity\u2014strike with everything you have",
+        "leads_to": "ASHA_CH4_GUARDIAN_CROWNING",
+        "effects": {
+          "combat": 2,
+          "strength": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use technique over power\u2014outmaneuver him",
+        "leads_to": "ASHA_CH4_GUARDIAN_CROWNING",
+        "effects": {
+          "dexterity": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Call on nature magic\u2014let the wild guide your blows",
+        "leads_to": "ASHA_CH4_GUARDIAN_CROWNING",
+        "effects": {
+          "nature_magic": 3
+        },
+        "requires": "nature_magic 6"
+      }
+    ]
+  },
+  "ASHA_CH4_WISDOM_TRIAL": {
+    "id": "ASHA_CH4_WISDOM_TRIAL",
+    "character": "ASHA",
+    "description": "The ancient riddles are spoken\u2014questions of the old world, of the Sundering, of the crown. Each answer must be precise, for the scholars of Northreach judge not just your knowledge, but your understanding.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Answer with the wisdom of the druids\u2014nature over power",
+        "leads_to": "ASHA_CH4_GUARDIAN_CROWNING",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Answer with the pragmatism of a warrior\u2014what wins wars",
+        "leads_to": "ASHA_CH4_GUARDIAN_CROWNING",
+        "effects": {
+          "charisma": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Answer with the uncertainty of truth\u2014it cannot be known",
+        "leads_to": "ASHA_CH4_GUARDIAN_CROWNING",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH4_SPIRIT_TRIAL": {
+    "id": "ASHA_CH4_SPIRIT_TRIAL",
+    "character": "ASHA",
+    "description": "The sacred grove accepts you. The spirits of the wild gather\u2014not as threats, but as judges. They ask no questions; they simply watch. Your spirit must be pure, your intent true, your commitment absolute.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Offer your life in service\u2014the spirits accept your oath",
+        "leads_to": "ASHA_CH4_GUARDIAN_CROWNING",
+        "effects": {
+          "nature_magic": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Offer your strength\u2014the power to protect what matters",
+        "leads_to": "ASHA_CH4_GUARDIAN_CROWNING",
+        "effects": {
+          "strength": 2,
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Offer your mind\u2014the wisdom to know when to fight",
+        "leads_to": "ASHA_CH4_GUARDIAN_CROWNING",
+        "effects": {
+          "intelligence": 2,
+          "survival": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH4_GUARDIAN_CROWNING": {
+    "id": "ASHA_CH4_GUARDIAN_CROWNING",
+    "character": "ASHA",
+    "description": "The crowd falls silent as the Jarl speaks. 'Asha Ironheart, Warden of the Wild, Defender of the Border\u2014you have proven yourself. By right of combat, wisdom, and spirit, I name you Guardian of the North. May the old gods watch over you.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the mantle\u2014vow to protect the north forever",
+        "leads_to": "ASHA_CH4_FINAL_STAND",
+        "effects": {
+          "charisma": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Speak to the crowd\u2014rally them for the coming battle",
+        "leads_to": "ASHA_CH4_FINAL_STAND",
+        "effects": {
+          "charisma": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Honor the fallen\u2014speak the names of those lost",
+        "leads_to": "ASHA_CH4_FINAL_STAND",
+        "effects": {
+          "intelligence": 1,
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH4_FINAL_STAND": {
+    "id": "ASHA_CH4_FINAL_STAND",
+    "character": "ASHA",
+    "description": "The Hollow King does not wait. His final assault comes\u2014an army of void creatures, Cultists, and corrupted soldiers. But you are no longer alone. The entire north stands behind you. This is the final battle.",
+    "type": "combat",
+    "leads_to": "ASHA_CH4_ENDING_SELECTION",
+    "enemy": "The Hollow King",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Lead the charge\u2014be the first into battle",
+        "leads_to": "ASHA_CH4_ENDING_SELECTION",
+        "effects": {
+          "combat": 3,
+          "strength": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Command from the rear\u2014direct your forces strategically",
+        "leads_to": "ASHA_CH4_ENDING_SELECTION",
+        "effects": {
+          "intelligence": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Stand alone at the front\u2014hold the line yourself",
+        "leads_to": "ASHA_CH4_ENDING_SELECTION",
+        "effects": {
+          "nature_magic": 3,
+          "survival": 2
+        },
+        "requires": "nature_magic 7"
+      }
+    ]
+  },
+  "ASHA_CH4_ENDING_SELECTION": {
+    "id": "ASHA_CH4_ENDING_SELECTION",
+    "character": "ASHA",
+    "description": "The Hollow King falls, his form dissolving into nothing. The void army crumbles. The Ashen Wastes stop their expansion. The north is saved. But what comes next? What will you do with your victory?",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Become the eternal Guardian\u2014never leave the border",
+        "leads_to": "ASHA_ENDING_TRUE_GUARDIAN",
+        "effects": {
+          "nature_magic": 2,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Build a new order\u2014train the next generation of Wardens",
+        "leads_to": "ASHA_ENDING_ORDER",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to the wild\u2014become one with nature",
+        "leads_to": "ASHA_ENDING_TRUE_SPIRIT",
+        "effects": {
+          "nature_magic": 4
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Seek the other crown pieces\u2014finish what was started",
+        "leads_to": "ASHA_ENDING_CROWN_HUNTER",
+        "effects": {
+          "intelligence": 2,
+          "survival": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_TRUE_GUARDIAN": {
+    "id": "ASHA_ENDING_TRUE_GUARDIAN",
+    "character": "ASHA",
+    "description": "You take your place at the border and never leave. Year after year, you stand watch over the north\u2014the Guardian of the North, the druid who gave up everything to protect the realm. Your presence alone holds back the void. Children are born and grow old in the safety you provide. When you finally pass, the spirits themselves carry your soul to the green beyond. The Guardian line continues through your students, your legacy eternal.",
+    "type": "ending",
+    "ending": "The True Guardian",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Play again",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_ORDER": {
+    "id": "ASHA_ENDING_ORDER",
+    "character": "ASHA",
+    "description": "You found the Order of the Green Watch\u2014a new generation of Wardens trained to protect the border. Your students spread across the north, building watchtowers and sanctuaries. The order thrives for centuries, an institution built on your sacrifice. You are remembered not just as a hero, but as the founder of something greater than yourself.",
+    "type": "ending",
+    "ending": "The Order Founder",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Play again",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_TRUE_SPIRIT": {
+    "id": "ASHA_ENDING_TRUE_SPIRIT",
+    "character": "ASHA",
+    "description": "You walk into the ancient forest and do not walk out. Your body dissolves into leaves and wind, becoming one with the wild itself. The spirits of nature accept you as their champion. You are no longer just Asha\u2014you are the Spirit of the North, the living heart of the forest. Those who walk the wild speak of feeling your presence, your power, your eternal watch.",
+    "type": "ending",
+    "ending": "Nature Incarnate",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Play again",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_CROWN_HUNTER": {
+    "id": "ASHA_ENDING_CROWN_HUNTER",
+    "character": "ASHA",
+    "description": "The Hollow King is defeated, but the crown pieces remain scattered across the world. You take up the hunt, traveling to every kingdom in search of the remaining fragments. Your journey is neverending\u2014there will always be another piece, another threat, another battle. But you are ready. The Guardian of the North becomes the Hunter of Crowns.",
+    "type": "ending",
+    "ending": "The Crown Hunter",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Play again",
+        "leads_to": "KIRA_CH1_THORNWICK",
+        "effects": {},
         "requires": null
       }
     ]

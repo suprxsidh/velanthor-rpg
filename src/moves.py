@@ -229,6 +229,59 @@ MERCHANT_MOVES = {
 }
 
 
+# Warden Moves - Nature Magic based druid/guardian combat
+WARDEN_MOVES = {
+    "root_entangle": Move(
+        name="Root Entangle",
+        mana_cost=5,
+        damage=8,
+        accuracy_dc=10,
+        stat_used="dexterity",
+        description="Summon roots to immobilize your enemy."
+    ),
+    "beast_call": Move(
+        name="Beast Call",
+        mana_cost=8,
+        damage=10,
+        accuracy_dc=12,
+        stat_used="nature_magic",
+        description="Call a wolf spirit to fight alongside you."
+    ),
+    "healing_grove": Move(
+        name="Healing Grove",
+        mana_cost=6,
+        damage=0,
+        accuracy_dc=8,
+        stat_used="nature_magic",
+        description="Channel nature's power to restore 15 HP."
+    ),
+    "thorn_shield": Move(
+        name="Thorn Shield",
+        mana_cost=4,
+        damage=0,
+        accuracy_dc=8,
+        stat_used="nature_magic",
+        description="Create a shield of thorns that reflects damage."
+    ),
+    "natures_wrath": Move(
+        name="Nature's Wrath",
+        mana_cost=12,
+        damage=18,
+        accuracy_dc=14,
+        stat_used="intelligence",
+        description="Unleash the fury of the wild upon your enemy."
+    ),
+    "iron_bark": Move(
+        name="Iron Bark",
+        mana_cost=7,
+        damage=0,
+        accuracy_dc=10,
+        stat_used="survival",
+        description="Harden your skin like oak bark, reducing incoming damage."
+    ),
+}
+
+
 def get_moves_for_class(char_class: str) -> dict:
     """Get the moves dictionary for a character class."""
     class_moves = {
@@ -236,6 +289,7 @@ def get_moves_for_class(char_class: str) -> dict:
         "knight": KNIGHT_MOVES,
         "shadow": SHADOW_MOVES,
         "merchant": MERCHANT_MOVES,
+        "warden": WARDEN_MOVES,
     }
     return class_moves.get(char_class.lower(), {})
 

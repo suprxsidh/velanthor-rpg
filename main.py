@@ -22,6 +22,7 @@ CHAR_CLASS_MAP = {
     'B': 'knight',    # Theron
     'C': 'shadow',    # Vex
     'D': 'merchant',  # Elara
+    'E': 'warden',    # Asha
 }
 
 # Full character data for game creation (not in intro.py)
@@ -57,6 +58,14 @@ CHARACTER_DATA = {
         'inventory': ['trading ledger', 'letter of credit'],
         'start_scene': 'ELARA_CH1_ESTATE',
         'mana': 35
+    },
+    'E': {
+        'name': 'Asha Ironheart',
+        'class': 'warden',
+        'stats': {'strength': 7, 'dexterity': 6, 'intelligence': 5, 'charisma': 5, 'void_magic': 0, 'combat': 5, 'stealth': 3, 'influence': 2, 'nature_magic': 7, 'survival': 8},
+        'inventory': ['druid staff', 'ancient talisman'],
+        'start_scene': 'ASHA_CH1_VILLAGE',
+        'mana': 40
     },
 }
 
@@ -162,6 +171,26 @@ BATTLE_ENEMY_MAP = {
     'ELARA_CH3_VESPERA_CONFRONT': 'Vespera',
     'ELARA_CH3_CROWN_FIGHT': 'Vespera',
     'ELARA_CH3_VICTORY_BATTLE': 'Vespera',
+    # Asha (Warden) Chapter 1 Battle Scenes
+    'ASHA_CH1_WOLF_ATTACK': 'Ashen Wolf',
+    'ASHA_CH1_CULT_PURSUIT': 'Cultist',
+    'ASHA_CH1_CORRUPTED_TREANT': 'Corrupted Treant',
+    'ASHA_CH1_WASTES_BORDER': 'Wastes Scorpion',
+    'ASHA_CH1_ESCAPE': 'Hollow Guard',
+    # Asha Chapter 2 Battle Scenes
+    'ASHA_CH2_INFILTRATE': 'Cultist',
+    'ASHA_CH2_SCOUT': 'Watch Mercenary',
+    'ASHA_CH2_AMBUSH': 'Hollow Guard',
+    'ASHA_CH2_VOID_SERPENT': 'Void Serpent',
+    'ASHA_CH2_TEMPLE_ASSAULT': 'Hollow Sentinel',
+    # Asha Chapter 3 Battle Scenes
+    'ASHA_CH3_FINAL_APPROACH': 'Hollow Knight',
+    'ASHA_CH3_CULT_VANGUARD': 'Cult Leader',
+    'ASHA_CH3_VESPERA_CONFRONT': 'Vespera',
+    'ASHA_CH3_HOLLOW_KING': 'The Hollow King',
+    # Asha Chapter 4 Battle Scenes
+    'ASHA_CH4_GUARDIAN_TRIAL': 'Guardian of the North',
+    'ASHA_CH4_FINAL_STAND': 'The Hollow King',
 }
 
 # Stealth-based bypass: scenes where high stealth can skip combat
@@ -192,6 +221,8 @@ def get_character_class(engine):
         return 'shadow'
     elif 'elara' in name_lower:
         return 'merchant'
+    elif 'asha' in name_lower:
+        return 'warden'
     return 'knight'
 
 
@@ -536,6 +567,20 @@ def main():
             continue
         elif choice_input == 'INVENTORY':
             engine.show_inventory()
+            continue
+        elif choice_input == 'EQUIP':
+            engine.show_equipment()
+            continue
+        elif choice_input == 'ITEMS':
+            engine.show_items()
+            continue
+        elif choice_input.startswith('EQUIP '):
+            item_name = choice_input[5:].strip().lower().replace(' ', '_')
+            engine.equip_item(item_name)
+            continue
+        elif choice_input.startswith('USE '):
+            item_name = choice_input[4:].strip().lower().replace(' ', '_')
+            engine.use_item(item_name)
             continue
         elif choice_input == 'HELP':
             show_tutorial()
