@@ -9905,35 +9905,7 @@
     "description": "The first chapter of your story ends not with victory, but with purpose. The border is broken, your village is ash, and the Hollow King's convergence approaches. But you are not alone\u2014and you are not defeated.\n\nYou have learned the threat: the Cult, the Hollow King, the Void Convergence. You have found allies or gathered knowledge. And you carry within you the nature magic that stood as the border's last guardian.\n\nThe road ahead is dark. But somewhere, in the depths of the Ashen Wastes, the old temple waits. And at the heart of it all, the Hollow King stirs.\n\nThe second chapter begins where the border ends\u2014where nature meets void, and one druid must stand against the darkness.\n\n[END OF CHAPTER 1]",
     "type": "ending",
     "leads_to": null,
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Enter the new chapter",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Reflect on your journey",
-        "leads_to": "ASHA_CH1_REFLECT",
-        "effects": {
-          "humanity": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Prepare for what's ahead",
-        "leads_to": "ASHA_CH1_PREPARE",
-        "effects": {
-          "survival": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_CH2_VOID_TEMPLE": {
     "id": "ASHA_CH2_VOID_TEMPLE",
@@ -10890,33 +10862,7 @@
     "description": "You channel every ounce of your nature magic into the border itself. The ground splits open, roots erupting from the earth in tangled walls. You become one with the land\u2014a living barrier between the world and the void. The Hollow King screams in fury, unable to cross the boundary you've become. Generations will speak of the Guardian of the North, the druid who gave everything to hold back the darkness.",
     "type": "ending",
     "ending": "Guardian of the North",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Play again",
-        "leads_to": "KIRA_CH1_THORNWICK",
-        "effects": {},
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Trust your training",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "stealth": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Follow instinct",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_ENDING_SPIRIT": {
     "id": "ASHA_ENDING_SPIRIT",
@@ -10924,33 +10870,7 @@
     "description": "You surrender to the spirits, becoming something beyond human. Your body dissolves into leaves and wind, merging with the ancient power of the wild. In this form, you confront the Hollow King\u2014not as a mortal, but as his equal. The battle shakes the world, but in the end, your nature magic overwhelms his void. The Hollow King is sealed, and you become the new Spirit of the Wild\u2014guardian of all nature, eternal and free.",
     "type": "ending",
     "ending": "Spirit of the Wild",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Play again",
-        "leads_to": "KIRA_CH1_THORNWICK",
-        "effects": {},
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Trust your training",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "stealth": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Follow instinct",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_ENDING_SACRIFICE": {
     "id": "ASHA_ENDING_SACRIFICE",
@@ -10958,33 +10878,7 @@
     "description": "You detonate your life force in a massive release of nature magic. The explosion tears through the temple, through the Hollow King, through everything. When the dust settles, nothing remains but a crater where the temple stood. The Hollow King is destroyed\u2014but so are you, and so is a large portion of the Ashen Wastes. The north mourns its hero, and the border slowly begins to heal.",
     "type": "ending",
     "ending": "The Sacrifice",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Play again",
-        "leads_to": "KIRA_CH1_THORNWICK",
-        "effects": {},
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Trust your training",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "stealth": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Follow instinct",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_ENDING_WANDERER": {
     "id": "ASHA_ENDING_WANDERER",
@@ -10992,33 +10886,7 @@
     "description": "You flee into the Ashen Wastes, the Hollow King hunting you through the void-touched landscape. For years you run, never stopping, never resting. Some say you died out there, consumed by the very corruption you fought. Others claim you still wander, a ghost fighting a war that can never be won. The border falls, but you survive\u2014marked by the void, forever running.",
     "type": "ending",
     "ending": "Lost to the Wastes",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Play again",
-        "leads_to": "KIRA_CH1_THORNWICK",
-        "effects": {},
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Trust your training",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "stealth": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Follow instinct",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_ENDING_CROWN": {
     "id": "ASHA_ENDING_CROWN",
@@ -11026,33 +10894,7 @@
     "description": "You take up the crown piece, merging its power with your nature magic. The combination is unprecedented\u2014void and nature, destruction and growth. You confront the Hollow King not as a Warden, but as his equal. Together, you tear the world in two: the mortal realm and the void, separated forever. You become ruler of both, a queen of shadow and light. The north has a new sovereign.",
     "type": "ending",
     "ending": "The Hollow Queen",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Play again",
-        "leads_to": "KIRA_CH1_THORNWICK",
-        "effects": {},
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Trust your training",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "stealth": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Follow instinct",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_ENDING_UNITER": {
     "id": "ASHA_ENDING_UNITER",
@@ -11060,33 +10902,7 @@
     "description": "You cannot defeat the Hollow King alone\u2014but you don't have to. Rallying every faction in the north, you forge an alliance: Watch, Northreach warriors, Circle mages, even some former Cultists. Together, you assault the temple not to destroy the Hollow King, but to drive him back. The battle is long and bloody, but in the end, the alliance holds. You become the Uniter\u2014the leader who brought the north together.",
     "type": "ending",
     "ending": "The Uniter",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Play again",
-        "leads_to": "KIRA_CH1_THORNWICK",
-        "effects": {},
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Trust your training",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "stealth": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Follow instinct",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_CH4_GUARDIAN_TRIAL": {
     "id": "ASHA_CH4_GUARDIAN_TRIAL",
@@ -11322,47 +11138,7 @@
     "character": "ASHA",
     "description": "The Hollow King falls, his form dissolving into nothing. The void army crumbles. The Ashen Wastes stop their expansion. The north is saved. But what comes next? What will you do with your victory?",
     "type": "story",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Become the eternal Guardian\u2014never leave the border",
-        "leads_to": "ASHA_ENDING_TRUE_GUARDIAN",
-        "effects": {
-          "nature_magic": 2,
-          "charisma": 2
-        },
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Build a new order\u2014train the next generation of Wardens",
-        "leads_to": "ASHA_ENDING_ORDER",
-        "effects": {
-          "intelligence": 2,
-          "charisma": 3
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Return to the wild\u2014become one with nature",
-        "leads_to": "ASHA_ENDING_TRUE_SPIRIT",
-        "effects": {
-          "nature_magic": 4
-        },
-        "requires": null
-      },
-      {
-        "letter": "D",
-        "text": "Seek the other crown pieces\u2014finish what was started",
-        "leads_to": "ASHA_ENDING_CROWN_HUNTER",
-        "effects": {
-          "intelligence": 2,
-          "survival": 2
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_ENDING_TRUE_GUARDIAN": {
     "id": "ASHA_ENDING_TRUE_GUARDIAN",
@@ -11370,33 +11146,7 @@
     "description": "You take your place at the border and never leave. Year after year, you stand watch over the north\u2014the Guardian of the North, the druid who gave up everything to protect the realm. Your presence alone holds back the void. Children are born and grow old in the safety you provide. When you finally pass, the spirits themselves carry your soul to the green beyond. The Guardian line continues through your students, your legacy eternal.",
     "type": "ending",
     "ending": "The True Guardian",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Play again",
-        "leads_to": "KIRA_CH1_THORNWICK",
-        "effects": {},
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Trust your training",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "stealth": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Follow instinct",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_ENDING_ORDER": {
     "id": "ASHA_ENDING_ORDER",
@@ -11404,33 +11154,7 @@
     "description": "You found the Order of the Green Watch\u2014a new generation of Wardens trained to protect the border. Your students spread across the north, building watchtowers and sanctuaries. The order thrives for centuries, an institution built on your sacrifice. You are remembered not just as a hero, but as the founder of something greater than yourself.",
     "type": "ending",
     "ending": "The Order Founder",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Play again",
-        "leads_to": "KIRA_CH1_THORNWICK",
-        "effects": {},
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Trust your training",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "stealth": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Follow instinct",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_ENDING_TRUE_SPIRIT": {
     "id": "ASHA_ENDING_TRUE_SPIRIT",
@@ -11438,33 +11162,7 @@
     "description": "You walk into the ancient forest and do not walk out. Your body dissolves into leaves and wind, becoming one with the wild itself. The spirits of nature accept you as their champion. You are no longer just Asha\u2014you are the Spirit of the North, the living heart of the forest. Those who walk the wild speak of feeling your presence, your power, your eternal watch.",
     "type": "ending",
     "ending": "Nature Incarnate",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Play again",
-        "leads_to": "KIRA_CH1_THORNWICK",
-        "effects": {},
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Trust your training",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "stealth": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Follow instinct",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "ASHA_ENDING_CROWN_HUNTER": {
     "id": "ASHA_ENDING_CROWN_HUNTER",
@@ -11472,33 +11170,7 @@
     "description": "The Hollow King is defeated, but the crown pieces remain scattered across the world. You take up the hunt, traveling to every kingdom in search of the remaining fragments. Your journey is neverending\u2014there will always be another piece, another threat, another battle. But you are ready. The Guardian of the North becomes the Hunter of Crowns.",
     "type": "ending",
     "ending": "The Crown Hunter",
-    "choices": [
-      {
-        "letter": "A",
-        "text": "Play again",
-        "leads_to": "KIRA_CH1_THORNWICK",
-        "effects": {},
-        "requires": null
-      },
-      {
-        "letter": "B",
-        "text": "Trust your training",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "stealth": 1
-        },
-        "requires": null
-      },
-      {
-        "letter": "C",
-        "text": "Follow instinct",
-        "leads_to": "ASHA_CH1_MAIN",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
-      }
-    ]
+    "choices": []
   },
   "KIRA_CH4_VOID_TEMPLE": {
     "id": "KIRA_CH4_VOID_TEMPLE",
@@ -22034,28 +21706,28 @@
     "choices": [
       {
         "letter": "A",
-        "text": "Continue forward",
-        "leads_to": "VEX_ENDING",
+        "text": "Accept your fate as the Shadow King",
+        "leads_to": "VEX_ENDING_SHADOWKING",
         "effects": {
-          "intelligence": 1
+          "stealth": 3
         },
         "requires": null
       },
       {
         "letter": "B",
-        "text": "Search for answers",
-        "leads_to": "VEX_CH5_SEARCH",
+        "text": "Become a legend of the shadows",
+        "leads_to": "VEX_ENDING_LEGEND",
         "effects": {
-          "intelligence": 2
+          "combat": 2
         },
         "requires": null
       },
       {
         "letter": "C",
-        "text": "Rest and prepare",
-        "leads_to": "VEX_CH5_REST",
+        "text": "Walk away into the darkness",
+        "leads_to": "VEX_ENDING_WANDERER",
         "effects": {
-          "survival": 1
+          "charisma": 2
         },
         "requires": null
       }
@@ -22384,28 +22056,28 @@
     "choices": [
       {
         "letter": "A",
-        "text": "Continue forward",
-        "leads_to": "ASHA_ENDING",
+        "text": "Become the Guardian of Balance",
+        "leads_to": "ASHA_ENDING_BALANCE",
         "effects": {
-          "intelligence": 1
+          "nature_magic": 3
         },
         "requires": null
       },
       {
         "letter": "B",
-        "text": "Search for answers",
-        "leads_to": "ASHA_CH5_SEARCH",
+        "text": "Become the True Guardian",
+        "leads_to": "ASHA_ENDING_TRUE_GUARDIAN",
         "effects": {
-          "intelligence": 2
+          "combat": 2
         },
         "requires": null
       },
       {
         "letter": "C",
-        "text": "Rest and prepare",
-        "leads_to": "ASHA_CH5_REST",
+        "text": "Become Nature Incarnate",
+        "leads_to": "ASHA_ENDING_TRUE_SPIRIT",
         "effects": {
-          "survival": 1
+          "nature_magic": 4
         },
         "requires": null
       }
@@ -24485,7 +24157,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_ENDING",
+        "leads_to": "VEX_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -24520,7 +24192,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_ENDING",
+        "leads_to": "VEX_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -24555,7 +24227,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_ENDING",
+        "leads_to": "VEX_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -24590,7 +24262,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_ENDING",
+        "leads_to": "VEX_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -25185,7 +24857,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_ENDING",
+        "leads_to": "ELARA_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -25220,7 +24892,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_ENDING",
+        "leads_to": "ELARA_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -25255,7 +24927,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_ENDING",
+        "leads_to": "ELARA_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -25290,7 +24962,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_ENDING",
+        "leads_to": "ELARA_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -25885,7 +25557,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_ENDING",
+        "leads_to": "ASHA_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -25920,7 +25592,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_ENDING",
+        "leads_to": "ASHA_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -25955,7 +25627,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_ENDING",
+        "leads_to": "ASHA_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -25990,7 +25662,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_ENDING",
+        "leads_to": "ASHA_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -26011,6 +25683,1826 @@
         "leads_to": "ASHA_CH4_END",
         "effects": {
           "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_ALT": {
+    "id": "VEX_CH1_ALT",
+    "character": "VEX",
+    "type": "story",
+    "description": "You consider an alternative approach in Chapter 1.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue forward",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to previous",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take a different path",
+        "leads_to": "VEX_CH1_SEARCH",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_END": {
+    "id": "VEX_CH1_END",
+    "character": "VEX",
+    "type": "transition",
+    "description": "Chapter 1 ends. What comes next?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on your journey",
+        "leads_to": "VEX_CH1_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "VEX_CH1_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH2_ALT": {
+    "id": "VEX_CH2_ALT",
+    "character": "VEX",
+    "type": "story",
+    "description": "You consider an alternative approach in Chapter 2.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue forward",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to previous",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take a different path",
+        "leads_to": "VEX_CH2_SEARCH",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH2_END": {
+    "id": "VEX_CH2_END",
+    "character": "VEX",
+    "type": "transition",
+    "description": "Chapter 2 ends. What comes next?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "VEX_CH3_TRANSITION",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on your journey",
+        "leads_to": "VEX_CH2_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "VEX_CH2_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_ALT": {
+    "id": "VEX_CH3_ALT",
+    "character": "VEX",
+    "type": "story",
+    "description": "You consider an alternative approach in Chapter 3.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue forward",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to previous",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take a different path",
+        "leads_to": "VEX_CH3_SEARCH",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_END": {
+    "id": "VEX_CH3_END",
+    "character": "VEX",
+    "type": "transition",
+    "description": "Chapter 3 ends. What comes next?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "VEX_CH4_TRANSITION",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on your journey",
+        "leads_to": "VEX_CH3_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "VEX_CH3_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH4_ALT": {
+    "id": "VEX_CH4_ALT",
+    "character": "VEX",
+    "type": "story",
+    "description": "You consider an alternative approach in Chapter 4.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue forward",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to previous",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take a different path",
+        "leads_to": "VEX_CH4_SEARCH",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH4_END": {
+    "id": "VEX_CH4_END",
+    "character": "VEX",
+    "type": "transition",
+    "description": "Chapter 4 ends. What comes next?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on your journey",
+        "leads_to": "VEX_CH4_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "VEX_CH4_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_ALT": {
+    "id": "VEX_CH5_ALT",
+    "character": "VEX",
+    "type": "story",
+    "description": "You consider an alternative approach in Chapter 5.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue forward",
+        "leads_to": "VEX_CH5_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to previous",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take a different path",
+        "leads_to": "VEX_CH5_SEARCH",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_ALT": {
+    "id": "ASHA_CH1_ALT",
+    "character": "ASHA",
+    "type": "story",
+    "description": "You consider an alternative approach in Chapter 1.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue forward",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to previous",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take a different path",
+        "leads_to": "ASHA_CH1_SEARCH",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_END": {
+    "id": "ASHA_CH1_END",
+    "character": "ASHA",
+    "type": "transition",
+    "description": "Chapter 1 ends. What comes next?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "ASHA_CH2_TRANSITION",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on your journey",
+        "leads_to": "ASHA_CH1_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "ASHA_CH1_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_ALT": {
+    "id": "ASHA_CH2_ALT",
+    "character": "ASHA",
+    "type": "story",
+    "description": "You consider an alternative approach in Chapter 2.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue forward",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to previous",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take a different path",
+        "leads_to": "ASHA_CH2_SEARCH",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_END": {
+    "id": "ASHA_CH2_END",
+    "character": "ASHA",
+    "type": "transition",
+    "description": "Chapter 2 ends. What comes next?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "ASHA_CH3_TRANSITION",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on your journey",
+        "leads_to": "ASHA_CH2_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "ASHA_CH2_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_ALT": {
+    "id": "ASHA_CH3_ALT",
+    "character": "ASHA",
+    "type": "story",
+    "description": "You consider an alternative approach in Chapter 3.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue forward",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to previous",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take a different path",
+        "leads_to": "ASHA_CH3_SEARCH",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_END": {
+    "id": "ASHA_CH3_END",
+    "character": "ASHA",
+    "type": "transition",
+    "description": "Chapter 3 ends. What comes next?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "ASHA_CH4_TRANSITION",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on your journey",
+        "leads_to": "ASHA_CH3_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "ASHA_CH3_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH4_ALT": {
+    "id": "ASHA_CH4_ALT",
+    "character": "ASHA",
+    "type": "story",
+    "description": "You consider an alternative approach in Chapter 4.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue forward",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to previous",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take a different path",
+        "leads_to": "ASHA_CH4_SEARCH",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH4_END": {
+    "id": "ASHA_CH4_END",
+    "character": "ASHA",
+    "type": "transition",
+    "description": "Chapter 4 ends. What comes next?",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "ASHA_CH5_TRANSITION",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on your journey",
+        "leads_to": "ASHA_CH4_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "ASHA_CH4_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH5_ALT": {
+    "id": "ASHA_CH5_ALT",
+    "character": "ASHA",
+    "type": "story",
+    "description": "You consider an alternative approach in Chapter 5.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue forward",
+        "leads_to": "ASHA_CH5_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Return to previous",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take a different path",
+        "leads_to": "ASHA_CH5_SEARCH",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_ENDING": {
+    "id": "VEX_ENDING",
+    "character": "VEX",
+    "type": "story",
+    "description": "Your journey reaches its conclusion.",
+    "choices": []
+  },
+  "ASHA_ENDING": {
+    "id": "ASHA_ENDING",
+    "character": "ASHA",
+    "type": "story",
+    "description": "Your journey reaches its conclusion.",
+    "choices": []
+  },
+  "KIRA_CH1_ALT": {
+    "id": "KIRA_CH1_ALT",
+    "character": "KIRA",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 1.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "KIRA_CH1_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "KIRA_CH1_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "KIRA_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH1_END": {
+    "id": "KIRA_CH1_END",
+    "character": "KIRA",
+    "type": "transition",
+    "description": "Chapter 1 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "KIRA_CH2_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "KIRA_CH1_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "KIRA_CH1_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH2_ALT": {
+    "id": "KIRA_CH2_ALT",
+    "character": "KIRA",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 2.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "KIRA_CH2_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "KIRA_CH2_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "KIRA_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH2_END": {
+    "id": "KIRA_CH2_END",
+    "character": "KIRA",
+    "type": "transition",
+    "description": "Chapter 2 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "KIRA_CH3_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "KIRA_CH2_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "KIRA_CH2_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH3_ALT": {
+    "id": "KIRA_CH3_ALT",
+    "character": "KIRA",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 3.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "KIRA_CH3_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "KIRA_CH3_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "KIRA_CH2_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH3_END": {
+    "id": "KIRA_CH3_END",
+    "character": "KIRA",
+    "type": "transition",
+    "description": "Chapter 3 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "KIRA_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "KIRA_CH3_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "KIRA_CH3_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_ALT": {
+    "id": "KIRA_CH4_ALT",
+    "character": "KIRA",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 4.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "KIRA_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "KIRA_CH4_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "KIRA_CH3_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_END": {
+    "id": "KIRA_CH4_END",
+    "character": "KIRA",
+    "type": "transition",
+    "description": "Chapter 4 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "KIRA_CH5_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "KIRA_CH4_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "KIRA_CH4_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_ALT": {
+    "id": "KIRA_CH5_ALT",
+    "character": "KIRA",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 5.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "KIRA_CH5_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "KIRA_CH5_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "KIRA_CH4_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_END": {
+    "id": "KIRA_CH5_END",
+    "character": "KIRA",
+    "type": "transition",
+    "description": "Chapter 5 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "KIRA_ENDING",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "KIRA_CH5_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "KIRA_CH5_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_CITY": {
+    "id": "KIRA_CH4_CITY",
+    "character": "KIRA",
+    "type": "story",
+    "description": "The city of Crownhaven awaits. So much has changed.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Enter the city",
+        "leads_to": "KIRA_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Observe from outside",
+        "leads_to": "KIRA_CH4_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Approach cautiously",
+        "leads_to": "KIRA_CH4_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_HIDE": {
+    "id": "KIRA_CH4_HIDE",
+    "character": "KIRA",
+    "type": "story",
+    "description": "You find a place to hide the crown piece.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Hide it well",
+        "leads_to": "KIRA_CH5_MAIN",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Keep it with you",
+        "leads_to": "KIRA_CH5_MAIN",
+        "effects": {
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Give it to someone trustworthy",
+        "leads_to": "KIRA_CH5_MAIN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_ENDING": {
+    "id": "KIRA_ENDING",
+    "character": "KIRA",
+    "type": "ending",
+    "description": "Your journey concludes here.",
+    "choices": []
+  },
+  "THERON_CH1_ALT": {
+    "id": "THERON_CH1_ALT",
+    "character": "THERON",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 1.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "THERON_CH1_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "THERON_CH1_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "THERON_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH1_END": {
+    "id": "THERON_CH1_END",
+    "character": "THERON",
+    "type": "transition",
+    "description": "Chapter 1 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "THERON_CH2_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "THERON_CH1_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "THERON_CH1_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH2_ALT": {
+    "id": "THERON_CH2_ALT",
+    "character": "THERON",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 2.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "THERON_CH2_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "THERON_CH2_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "THERON_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH2_END": {
+    "id": "THERON_CH2_END",
+    "character": "THERON",
+    "type": "transition",
+    "description": "Chapter 2 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "THERON_CH3_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "THERON_CH2_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "THERON_CH2_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH3_ALT": {
+    "id": "THERON_CH3_ALT",
+    "character": "THERON",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 3.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "THERON_CH3_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "THERON_CH3_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "THERON_CH2_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH3_END": {
+    "id": "THERON_CH3_END",
+    "character": "THERON",
+    "type": "transition",
+    "description": "Chapter 3 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "THERON_CH3_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "THERON_CH3_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_ALT": {
+    "id": "THERON_CH4_ALT",
+    "character": "THERON",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 4.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "THERON_CH3_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_END": {
+    "id": "THERON_CH4_END",
+    "character": "THERON",
+    "type": "transition",
+    "description": "Chapter 4 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "THERON_CH5_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "THERON_CH4_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "THERON_CH4_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_ALT": {
+    "id": "THERON_CH5_ALT",
+    "character": "THERON",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 5.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "THERON_CH5_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "THERON_CH5_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_END": {
+    "id": "THERON_CH5_END",
+    "character": "THERON",
+    "type": "transition",
+    "description": "Chapter 5 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "THERON_ENDING",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "THERON_CH5_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "THERON_CH5_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_ENDING": {
+    "id": "THERON_ENDING",
+    "character": "THERON",
+    "type": "ending",
+    "description": "Your journey concludes here.",
+    "choices": []
+  },
+  "ELARA_CH1_ALT": {
+    "id": "ELARA_CH1_ALT",
+    "character": "ELARA",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 1.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_END": {
+    "id": "ELARA_CH1_END",
+    "character": "ELARA",
+    "type": "transition",
+    "description": "Chapter 1 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "ELARA_CH1_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "ELARA_CH1_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_ALT": {
+    "id": "ELARA_CH2_ALT",
+    "character": "ELARA",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 2.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_END": {
+    "id": "ELARA_CH2_END",
+    "character": "ELARA",
+    "type": "transition",
+    "description": "Chapter 2 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "ELARA_CH2_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "ELARA_CH2_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_ALT": {
+    "id": "ELARA_CH3_ALT",
+    "character": "ELARA",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 3.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_END": {
+    "id": "ELARA_CH3_END",
+    "character": "ELARA",
+    "type": "transition",
+    "description": "Chapter 3 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "ELARA_CH3_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "ELARA_CH3_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH4_ALT": {
+    "id": "ELARA_CH4_ALT",
+    "character": "ELARA",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 4.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH4_END": {
+    "id": "ELARA_CH4_END",
+    "character": "ELARA",
+    "type": "transition",
+    "description": "Chapter 4 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "ELARA_CH5_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "ELARA_CH4_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "ELARA_CH4_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH5_ALT": {
+    "id": "ELARA_CH5_ALT",
+    "character": "ELARA",
+    "type": "story",
+    "description": "An alternative path presents itself in Chapter 5.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take this alternative",
+        "leads_to": "ELARA_CH5_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stick to the main path",
+        "leads_to": "ELARA_CH5_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return to previous",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH5_END": {
+    "id": "ELARA_CH5_END",
+    "character": "ELARA",
+    "type": "transition",
+    "description": "Chapter 5 reaches its conclusion.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Proceed to next chapter",
+        "leads_to": "ELARA_ENDING",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reflect on what happened",
+        "leads_to": "ELARA_CH5_REFLECT",
+        "effects": {
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Prepare for what's ahead",
+        "leads_to": "ELARA_CH5_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_ENDING": {
+    "id": "ELARA_ENDING",
+    "character": "ELARA",
+    "type": "ending",
+    "description": "Your journey concludes here.",
+    "choices": []
+  },
+  "KIRA_CH2_GUILD_HALL": {
+    "id": "KIRA_CH2_GUILD_HALL",
+    "character": "KIRA",
+    "type": "story",
+    "description": "You visit the local mage guild for information.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Ask about the Circle",
+        "leads_to": "KIRA_CH2_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Seek a magical item",
+        "leads_to": "KIRA_CH2_MAIN",
+        "effects": {
+          "void_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Leave quietly",
+        "leads_to": "KIRA_CH2_MAIN",
+        "effects": {
+          "stealth": 1
         },
         "requires": null
       }
