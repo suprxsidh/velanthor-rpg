@@ -71,6 +71,7 @@ STATUS_EFFECTS = {
     "stun": {"damage": 0, "turns": 1, "stat_penalty": "all"},
     "terror": {"damage": 0, "turns": 2, "stat_penalty": "all"},
     "drain": {"damage": 3, "turns": 2, "stat_penalty": "strength"},
+    "shield": {"damage": 0, "turns": 3, "stat_penalty": "", "temp_hp": 5},  # +5 temporary HP
 }
 
 
@@ -82,7 +83,10 @@ VOID_MAGE_MOVES = {
         damage=15,
         accuracy_dc=12,
         stat_used="intelligence",
-        description="Unleash a blast of void energy that tears through the target."
+        description="Unleash a blast of void energy that tears through the target.",
+        element="void",
+        status_effect="mark",
+        status_turns=2
     ),
     "shadow_bolt": Move(
         name="Shadow Bolt",
@@ -90,7 +94,8 @@ VOID_MAGE_MOVES = {
         damage=10,
         accuracy_dc=10,
         stat_used="intelligence",
-        description="Hurl a bolt of corrupted shadow at your enemy."
+        description="Hurl a bolt of corrupted shadow at your enemy.",
+        element="void"
     ),
     "void_shield": Move(
         name="Void Shield",
@@ -98,7 +103,9 @@ VOID_MAGE_MOVES = {
         damage=0,
         accuracy_dc=8,
         stat_used="intelligence",
-        description="Summon void energy to form a protective barrier."
+        description="Summon void energy to form a protective barrier.",
+        status_effect="shield",
+        status_turns=3
     ),
     "soul_drain": Move(
         name="Soul Drain",
@@ -106,7 +113,10 @@ VOID_MAGE_MOVES = {
         damage=12,
         accuracy_dc=14,
         stat_used="intelligence",
-        description="Tear the soul from your enemy, dealing damage and healing yourself."
+        description="Tear the soul from your enemy, dealing damage and healing yourself.",
+        element="void",
+        status_effect="drain",
+        status_turns=2
     ),
     "dark_pact": Move(
         name="Dark Pact",
@@ -114,7 +124,10 @@ VOID_MAGE_MOVES = {
         damage=20,
         accuracy_dc=16,
         stat_used="void_magic",
-        description="Channel forbidden void magic at great personal cost."
+        description="Channel forbidden void magic at great personal cost.",
+        element="void",
+        status_effect="terror",
+        status_turns=2
     ),
     "void_walk": Move(
         name="Void Walk",
@@ -135,7 +148,9 @@ KNIGHT_MOVES = {
         damage=8,
         accuracy_dc=10,
         stat_used="strength",
-        description="Strike with your shield to stun and damage."
+        description="Strike with your shield to stun and damage.",
+        status_effect="stun",
+        status_turns=1
     ),
     "cleaving_strike": Move(
         name="Cleaving Strike",
@@ -143,7 +158,9 @@ KNIGHT_MOVES = {
         damage=14,
         accuracy_dc=12,
         stat_used="strength",
-        description="A powerful overhead swing that hits hard."
+        description="A powerful overhead swing that hits hard.",
+        status_effect="bleed",
+        status_turns=3
     ),
     "defensive_stance": Move(
         name="Defensive Stance",
@@ -151,7 +168,9 @@ KNIGHT_MOVES = {
         damage=0,
         accuracy_dc=8,
         stat_used="combat",
-        description="Enter a defensive stance to reduce incoming damage."
+        description="Enter a defensive stance to reduce incoming damage.",
+        status_effect="shield",
+        status_turns=3
     ),
     "reckless_blow": Move(
         name="Reckless Blow",
@@ -167,7 +186,9 @@ KNIGHT_MOVES = {
         damage=16,
         accuracy_dc=14,
         stat_used="combat",
-        description="Spin and cut through multiple enemies."
+        description="Spin and cut through multiple enemies.",
+        status_effect="bleed",
+        status_turns=2
     ),
     "iron_will": Move(
         name="Iron Will",
@@ -188,7 +209,9 @@ SHADOW_MOVES = {
         damage=12,
         accuracy_dc=12,
         stat_used="dexterity",
-        description="Strike from the shadows for critical damage."
+        description="Strike from the shadows for critical damage.",
+        status_effect="bleed",
+        status_turns=2
     ),
     "poison_blade": Move(
         name="Poison Blade",
@@ -196,7 +219,9 @@ SHADOW_MOVES = {
         damage=8,
         accuracy_dc=10,
         stat_used="stealth",
-        description="Coat your blade in deadly poison."
+        description="Coat your blade in deadly poison.",
+        status_effect="poison",
+        status_turns=3
     ),
     "smoke_bomb": Move(
         name="Smoke Bomb",
@@ -212,7 +237,9 @@ SHADOW_MOVES = {
         damage=10,
         accuracy_dc=12,
         stat_used="dexterity",
-        description="Throw multiple daggers in rapid succession."
+        description="Throw multiple daggers in rapid succession.",
+        status_effect="bleed",
+        status_turns=2
     ),
     "shadow_step": Move(
         name="Shadow Step",
@@ -228,7 +255,9 @@ SHADOW_MOVES = {
         damage=25,
         accuracy_dc=16,
         stat_used="dexterity",
-        description="A lethal killing blow from stealth."
+        description="A lethal killing blow from stealth.",
+        status_effect="mark",
+        status_turns=2
     ),
 }
 
@@ -249,7 +278,9 @@ MERCHANT_MOVES = {
         damage=0,
         accuracy_dc=10,
         stat_used="charisma",
-        description="Charm and confuse your enemy with words."
+        description="Charm and confuse your enemy with words.",
+        status_effect="mark",
+        status_turns=2
     ),
     "intimidate": Move(
         name="Intimidate",
@@ -257,7 +288,9 @@ MERCHANT_MOVES = {
         damage=0,
         accuracy_dc=12,
         stat_used="charisma",
-        description="Scare your enemy into hesitation."
+        description="Scare your enemy into hesitation.",
+        status_effect="terror",
+        status_turns=2
     ),
     "favor_call": Move(
         name="Call in Favor",
@@ -294,7 +327,9 @@ WARDEN_MOVES = {
         damage=8,
         accuracy_dc=10,
         stat_used="dexterity",
-        description="Summon roots to immobilize your enemy."
+        description="Summon roots to immobilize your enemy.",
+        status_effect="freeze",
+        status_turns=2
     ),
     "beast_call": Move(
         name="Beast Call",
@@ -318,7 +353,9 @@ WARDEN_MOVES = {
         damage=0,
         accuracy_dc=8,
         stat_used="nature_magic",
-        description="Create a shield of thorns that reflects damage."
+        description="Create a shield of thorns that reflects damage.",
+        status_effect="shield",
+        status_turns=3
     ),
     "natures_wrath": Move(
         name="Nature's Wrath",
@@ -326,7 +363,8 @@ WARDEN_MOVES = {
         damage=18,
         accuracy_dc=14,
         stat_used="intelligence",
-        description="Unleash the fury of the wild upon your enemy."
+        description="Unleash the fury of the wild upon your enemy.",
+        element="nature"
     ),
     "iron_bark": Move(
         name="Iron Bark",
