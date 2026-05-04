@@ -1,5 +1,5 @@
 {
-  "hash": "9e2f27fe742d88e08178f54b8a425ca8",
+  "hash": "58473d8aa155e5ff4c7d54e87e879f0c",
   "characters": [
     "KIRA",
     "THERON",
@@ -215,8 +215,8 @@
       "chapter": 2,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 10,
+      "valid_choice_count": 10
     },
     "KIRA_CH2_ESCAPE": {
       "id": "KIRA_CH2_ESCAPE",
@@ -448,106 +448,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "KIRA_CH2_PALACE_SURPRISE": {
-      "id": "KIRA_CH2_PALACE_SURPRISE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH2_CATACOMB_GUARDIAN": {
-      "id": "KIRA_CH2_CATACOMB_GUARDIAN",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH2_GUILD_INFILTRATE": {
-      "id": "KIRA_CH2_GUILD_INFILTRATE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH2_MAGE_TOWER": {
-      "id": "KIRA_CH2_MAGE_TOWER",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH2_STREET_FIGHT": {
-      "id": "KIRA_CH2_STREET_FIGHT",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_TEMPLE_GUARDS": {
-      "id": "KIRA_CH3_TEMPLE_GUARDS",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_PRIESTS": {
-      "id": "KIRA_CH3_PRIESTS",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_VESPERA_FIGHT": {
-      "id": "KIRA_CH3_VESPERA_FIGHT",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_FINAL_GUARDIAN": {
-      "id": "KIRA_CH3_FINAL_GUARDIAN",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_BEAST": {
-      "id": "KIRA_CH3_BEAST",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "KIRA_CH1_SHADOW_WATCH": {
       "id": "KIRA_CH1_SHADOW_WATCH",
       "character": "KIRA",
@@ -558,51 +458,11 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "KIRA_CH2_SHADOW_SQUAD": {
-      "id": "KIRA_CH2_SHADOW_SQUAD",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_ALTAR_GUARDIANS": {
-      "id": "KIRA_CH3_ALTAR_GUARDIANS",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "KIRA_CH1_WASTELAND_STAND": {
       "id": "KIRA_CH1_WASTELAND_STAND",
       "character": "KIRA",
       "type": "story",
       "chapter": 1,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH2_PALACE_ESCAPE": {
-      "id": "KIRA_CH2_PALACE_ESCAPE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_TEMPLE_ENTRANCE": {
-      "id": "KIRA_CH3_TEMPLE_ENTRANCE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
       "is_leaf": false,
       "is_ending": false,
       "choice_count": 3,
@@ -878,28 +738,8 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "THERON_CH2_HIDDEN": {
-      "id": "THERON_CH2_HIDDEN",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "THERON_CH2_MESSENGER": {
       "id": "THERON_CH2_MESSENGER",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH2_ALLIES": {
-      "id": "THERON_CH2_ALLIES",
       "character": "THERON",
       "type": "story",
       "chapter": 2,
@@ -1115,8 +955,8 @@
       "chapter": 2,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 10,
+      "valid_choice_count": 10
     },
     "THERON_CH2_MESSAGE": {
       "id": "THERON_CH2_MESSAGE",
@@ -1260,16 +1100,6 @@
     },
     "VEX_CH2_NEGOTIATE": {
       "id": "VEX_CH2_NEGOTIATE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_SURRENDER": {
-      "id": "VEX_CH2_SURRENDER",
       "character": "VEX",
       "type": "story",
       "chapter": 2,
@@ -1438,126 +1268,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "VEX_CH2_GUILD_HALL": {
-      "id": "VEX_CH2_GUILD_HALL",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_ASSASSIN_MISSION": {
-      "id": "VEX_CH2_ASSASSIN_MISSION",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_RIVAL_THIEF": {
-      "id": "VEX_CH2_RIVAL_THIEF",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_WATCH_INFILTRATE": {
-      "id": "VEX_CH2_WATCH_INFILTRATE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_CULT_ROUTE": {
-      "id": "VEX_CH2_CULT_ROUTE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_SECRET_PASSAGE": {
-      "id": "VEX_CH2_SECRET_PASSAGE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_GUILD_ASSAULT": {
-      "id": "VEX_CH2_GUILD_ASSAULT",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_TREASURE_HOUSE": {
-      "id": "VEX_CH3_TREASURE_HOUSE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_GUILD_WAR": {
-      "id": "VEX_CH3_GUILD_WAR",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_BETRAYAL": {
-      "id": "VEX_CH3_BETRAYAL",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_FINAL_THIEF": {
-      "id": "VEX_CH3_FINAL_THIEF",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_SHADOW_FIGHT": {
-      "id": "VEX_CH3_SHADOW_FIGHT",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "VEX_CH1_PRISON": {
       "id": "VEX_CH1_PRISON",
       "character": "VEX",
@@ -1648,56 +1358,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "VEX_CH2_TORTURE": {
-      "id": "VEX_CH2_TORTURE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_ESCAPE": {
-      "id": "VEX_CH2_ESCAPE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_INFORMANT": {
-      "id": "VEX_CH2_INFORMANT",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_DEBT": {
-      "id": "VEX_CH2_DEBT",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_DOUBLE_CROSS": {
-      "id": "VEX_CH2_DOUBLE_CROSS",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "VEX_CH3_BOUNTY": {
       "id": "VEX_CH3_BOUNTY",
       "character": "VEX",
@@ -1720,16 +1380,6 @@
     },
     "VEX_CH3_REVENGE": {
       "id": "VEX_CH3_REVENGE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_PRISON_AFTERMATH": {
-      "id": "VEX_CH3_PRISON_AFTERMATH",
       "character": "VEX",
       "type": "story",
       "chapter": 3,
@@ -1815,8 +1465,8 @@
       "chapter": 1,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 4,
+      "valid_choice_count": 4
     },
     "ELARA_CH1_VAULT": {
       "id": "ELARA_CH1_VAULT",
@@ -2005,8 +1655,8 @@
       "chapter": 4,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 5,
+      "valid_choice_count": 5
     },
     "ELARA_CH4_CONFRONTATION": {
       "id": "ELARA_CH4_CONFRONTATION",
@@ -2025,8 +1675,8 @@
       "chapter": 4,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 5,
+      "valid_choice_count": 5
     },
     "ELARA_CH4_CONSUMED": {
       "id": "ELARA_CH4_CONSUMED",
@@ -2065,8 +1715,8 @@
       "chapter": 4,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 4,
+      "valid_choice_count": 4
     },
     "ELARA_ENDING_JUDGE": {
       "id": "ELARA_ENDING_JUDGE",
@@ -2127,6 +1777,216 @@
       "is_ending": true,
       "choice_count": 0,
       "valid_choice_count": 0
+    },
+    "ELARA_ENDING_SACRIFICE": {
+      "id": "ELARA_ENDING_SACRIFICE",
+      "character": "ELARA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "ELARA_ENDING_REDEMPTION": {
+      "id": "ELARA_ENDING_REDEMPTION",
+      "character": "ELARA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "ELARA_ENDING_FREEDOM": {
+      "id": "ELARA_ENDING_FREEDOM",
+      "character": "ELARA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "ELARA_ENDING_LEGACY": {
+      "id": "ELARA_ENDING_LEGACY",
+      "character": "ELARA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "ELARA_CH4_WILDERNESS": {
+      "id": "ELARA_CH4_WILDERNESS",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_WILD_TRAINING": {
+      "id": "ELARA_CH4_WILD_TRAINING",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_SANCTUARY": {
+      "id": "ELARA_CH4_SANCTUARY",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_SECRET_VAULT": {
+      "id": "ELARA_CH4_SECRET_VAULT",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_RESEARCH": {
+      "id": "ELARA_CH4_RESEARCH",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_POWER": {
+      "id": "ELARA_CH4_POWER",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_DESTROY_ALL": {
+      "id": "ELARA_CH4_DESTROY_ALL",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_FACE_TRUTH": {
+      "id": "ELARA_CH4_FACE_TRUTH",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_INVESTIGATE": {
+      "id": "ELARA_CH4_INVESTIGATE",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_CONFRONT_CIRCLE": {
+      "id": "ELARA_CH4_CONFRONT_CIRCLE",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_DENIAL": {
+      "id": "ELARA_CH4_DENIAL",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH5_DISCOVERY": {
+      "id": "ELARA_CH5_DISCOVERY",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH5_FINALCHOICE": {
+      "id": "ELARA_CH5_FINALCHOICE",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH5_TEACH": {
+      "id": "ELARA_CH5_TEACH",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_LEGACY_BUILDING": {
+      "id": "ELARA_CH4_LEGACY_BUILDING",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH4_NEW_ALLIANCE": {
+      "id": "ELARA_CH4_NEW_ALLIANCE",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ELARA_CH5_ALT": {
+      "id": "ELARA_CH5_ALT",
+      "character": "ELARA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
     },
     "KIRA_CH1_WATCH_MEMBER": {
       "id": "KIRA_CH1_WATCH_MEMBER",
@@ -2388,136 +2248,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "THERON_CH2_TEMPLE_ASSAULT": {
-      "id": "THERON_CH2_TEMPLE_ASSAULT",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH2_PRIEST_FIGHT": {
-      "id": "THERON_CH2_PRIEST_FIGHT",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH2_ESCORT_MISSION": {
-      "id": "THERON_CH2_ESCORT_MISSION",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH2_GUARD_POST": {
-      "id": "THERON_CH2_GUARD_POST",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH2_AMBUSH_COUNTER": {
-      "id": "THERON_CH2_AMBUSH_COUNTER",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH2_PRISON_BREAK": {
-      "id": "THERON_CH2_PRISON_BREAK",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH2_RITUAL_INTERRUPT": {
-      "id": "THERON_CH2_RITUAL_INTERRUPT",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH2_CULT_VANGUARD": {
-      "id": "THERON_CH2_CULT_VANGUARD",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH3_TEMPLE_ENTRY": {
-      "id": "THERON_CH3_TEMPLE_ENTRY",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH3_WARRIORS": {
-      "id": "THERON_CH3_WARRIORS",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH3_VESPERA_DUEL": {
-      "id": "THERON_CH3_VESPERA_DUEL",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH3_FINAL_STAND": {
-      "id": "THERON_CH3_FINAL_STAND",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH3_BEAST_BATTLE": {
-      "id": "THERON_CH3_BEAST_BATTLE",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "ELARA_CH1_ESTATE_ASSAULT": {
       "id": "ELARA_CH1_ESTATE_ASSAULT",
       "character": "ELARA",
@@ -2568,116 +2298,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "ELARA_CH2_NETWORK_BATTLE": {
-      "id": "ELARA_CH2_NETWORK_BATTLE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_CIRCLE_ASSAULT": {
-      "id": "ELARA_CH2_CIRCLE_ASSAULT",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_CULT_SURPRISE": {
-      "id": "ELARA_CH2_CULT_SURPRISE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_VAULT_HEIST": {
-      "id": "ELARA_CH2_VAULT_HEIST",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_BETRAYAL": {
-      "id": "ELARA_CH2_BETRAYAL",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_CULT_VAULT": {
-      "id": "ELARA_CH2_CULT_VAULT",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_VAULT_BATTLE": {
-      "id": "ELARA_CH3_VAULT_BATTLE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_FINAL_ASSULT": {
-      "id": "ELARA_CH3_FINAL_ASSULT",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_VESPERA_CONFRONT": {
-      "id": "ELARA_CH3_VESPERA_CONFRONT",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_CROWN_FIGHT": {
-      "id": "ELARA_CH3_CROWN_FIGHT",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_VICTORY_BATTLE": {
-      "id": "ELARA_CH3_VICTORY_BATTLE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "KIRA_CH1_DEEP_WASTELAND": {
       "id": "KIRA_CH1_DEEP_WASTELAND",
       "character": "KIRA",
@@ -2698,71 +2318,11 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "KIRA_CH2_VOID_TOWER": {
-      "id": "KIRA_CH2_VOID_TOWER",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_TEMPLE_SUMMIT": {
-      "id": "KIRA_CH3_TEMPLE_SUMMIT",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_VOID_CONSUME": {
-      "id": "KIRA_CH3_VOID_CONSUME",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH2_FINAL_CHOICE": {
-      "id": "KIRA_CH2_FINAL_CHOICE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_FAMILY_REUNION": {
-      "id": "KIRA_CH3_FAMILY_REUNION",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "KIRA_CH1_VOID_CHILD": {
       "id": "KIRA_CH1_VOID_CHILD",
       "character": "KIRA",
       "type": "story",
       "chapter": 1,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH2_UNDERGROUND": {
-      "id": "KIRA_CH2_UNDERGROUND",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
       "is_leaf": false,
       "is_ending": false,
       "choice_count": 3,
@@ -2903,268 +2463,8 @@
       "character": "ASHA",
       "type": "ending",
       "chapter": 1,
-      "is_leaf": true,
+      "is_leaf": false,
       "is_ending": true,
-      "choice_count": 0,
-      "valid_choice_count": 0
-    },
-    "ASHA_CH2_VOID_TEMPLE": {
-      "id": "ASHA_CH2_VOID_TEMPLE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_WASTES_BORDER": {
-      "id": "ASHA_CH2_WASTES_BORDER",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_WASTES_BORDER_CLEANSE": {
-      "id": "ASHA_CH2_WASTES_BORDER_CLEANSE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_SCOUT": {
-      "id": "ASHA_CH2_SCOUT",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_CULT_CELL": {
-      "id": "ASHA_CH2_CULT_CELL",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_INTERROGATION": {
-      "id": "ASHA_CH2_INTERROGATION",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_INFILTRATE": {
-      "id": "ASHA_CH2_INFILTRATE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_AMBUSH": {
-      "id": "ASHA_CH2_AMBUSH",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_DISCOVER_VOID_CONVERGENCE": {
-      "id": "ASHA_CH2_DISCOVER_VOID_CONVERGENCE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_VOID_SERPENT": {
-      "id": "ASHA_CH2_VOID_SERPENT",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_MEET_WATCH": {
-      "id": "ASHA_CH2_MEET_WATCH",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_TEMPLE_ASSAULT_PREPARE": {
-      "id": "ASHA_CH2_TEMPLE_ASSAULT_PREPARE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_TEMPLE_ASSAULT": {
-      "id": "ASHA_CH2_TEMPLE_ASSAULT",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_VICTORY": {
-      "id": "ASHA_CH2_VICTORY",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_NORTHREACH_WARNING": {
-      "id": "ASHA_CH2_NORTHREACH_WARNING",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_CH3_TRANSITION": {
-      "id": "ASHA_CH2_CH3_TRANSITION",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_FINAL_APPROACH": {
-      "id": "ASHA_CH3_FINAL_APPROACH",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_GATHER_ALLIES": {
-      "id": "ASHA_CH3_GATHER_ALLIES",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_SPIRIT_VISION": {
-      "id": "ASHA_CH3_SPIRIT_VISION",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_SPIRIT_MERGE": {
-      "id": "ASHA_CH3_SPIRIT_MERGE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_CULT_VANGUARD": {
-      "id": "ASHA_CH3_CULT_VANGUARD",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_TEMPLE_INTERIOR": {
-      "id": "ASHA_CH3_TEMPLE_INTERIOR",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_SEARCH_CROWN": {
-      "id": "ASHA_CH3_SEARCH_CROWN",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_VESPERA_CONFRONT": {
-      "id": "ASHA_CH3_VESPERA_CONFRONT",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_HOLLOW_KING": {
-      "id": "ASHA_CH3_HOLLOW_KING",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_FINAL_CHOICE": {
-      "id": "ASHA_CH3_FINAL_CHOICE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
       "choice_count": 3,
       "valid_choice_count": 3
     },
@@ -3228,66 +2528,6 @@
       "choice_count": 0,
       "valid_choice_count": 0
     },
-    "ASHA_CH4_GUARDIAN_TRIAL": {
-      "id": "ASHA_CH4_GUARDIAN_TRIAL",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH4_COMBAT_TRIAL": {
-      "id": "ASHA_CH4_COMBAT_TRIAL",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH4_WISDOM_TRIAL": {
-      "id": "ASHA_CH4_WISDOM_TRIAL",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH4_SPIRIT_TRIAL": {
-      "id": "ASHA_CH4_SPIRIT_TRIAL",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH4_GUARDIAN_CROWNING": {
-      "id": "ASHA_CH4_GUARDIAN_CROWNING",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH4_FINAL_STAND": {
-      "id": "ASHA_CH4_FINAL_STAND",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "ASHA_CH4_ENDING_SELECTION": {
       "id": "ASHA_CH4_ENDING_SELECTION",
       "character": "ASHA",
@@ -3338,296 +2578,6 @@
       "choice_count": 0,
       "valid_choice_count": 0
     },
-    "KIRA_CH4_VOID_TEMPLE": {
-      "id": "KIRA_CH4_VOID_TEMPLE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_ASSAULT": {
-      "id": "KIRA_CH4_ASSAULT",
-      "character": "KIRA",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_INFILTRATE": {
-      "id": "KIRA_CH4_INFILTRATE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_CONFRONT": {
-      "id": "KIRA_CH4_CONFRONT",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_GUARDIANS": {
-      "id": "KIRA_CH4_GUARDIANS",
-      "character": "KIRA",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_CROWN_CHAMBER": {
-      "id": "KIRA_CH4_CROWN_CHAMBER",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_UNITE": {
-      "id": "KIRA_CH4_UNITE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_DESTROY": {
-      "id": "KIRA_CH4_DESTROY",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_BARGAIN": {
-      "id": "KIRA_CH4_BARGAIN",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_OFFER": {
-      "id": "KIRA_CH4_OFFER",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_REDEMPTION": {
-      "id": "KIRA_CH4_REDEMPTION",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_MOTHER_VISION": {
-      "id": "KIRA_CH4_MOTHER_VISION",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_RESCUE": {
-      "id": "KIRA_CH4_RESCUE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_AMBUSH": {
-      "id": "KIRA_CH4_AMBUSH",
-      "character": "KIRA",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_VICTORY": {
-      "id": "KIRA_CH4_VICTORY",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_TACTICAL": {
-      "id": "KIRA_CH4_TACTICAL",
-      "character": "KIRA",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_BYPASS": {
-      "id": "KIRA_CH4_BYPASS",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_TRUTH": {
-      "id": "KIRA_CH4_TRUTH",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_JOURNEY": {
-      "id": "KIRA_CH5_JOURNEY",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_UNITY": {
-      "id": "KIRA_CH5_UNITY",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_PASSAGE": {
-      "id": "KIRA_CH5_PASSAGE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_SACRIFICE": {
-      "id": "KIRA_CH5_SACRIFICE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_TRUTH": {
-      "id": "KIRA_CH5_TRUTH",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_HEALING": {
-      "id": "KIRA_CH5_HEALING",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_STUDY": {
-      "id": "KIRA_CH5_STUDY",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_ALLIES": {
-      "id": "KIRA_CH5_ALLIES",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_CONFRONTATION": {
-      "id": "KIRA_CH5_CONFRONTATION",
-      "character": "KIRA",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_FINAL_CHOICE": {
-      "id": "KIRA_CH5_FINAL_CHOICE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 4,
-      "valid_choice_count": 4
-    },
-    "KIRA_CH5_REDEMPTION": {
-      "id": "KIRA_CH5_REDEMPTION",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "KIRA_ENDING_TRUTH": {
       "id": "KIRA_ENDING_TRUTH",
       "character": "KIRA",
@@ -3667,316 +2617,6 @@
       "is_ending": true,
       "choice_count": 0,
       "valid_choice_count": 0
-    },
-    "THERON_CH4_SUMMIT_ASSAULT": {
-      "id": "THERON_CH4_SUMMIT_ASSAULT",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_DEFEND_QUEEN": {
-      "id": "THERON_CH4_DEFEND_QUEEN",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_PURSUE": {
-      "id": "THERON_CH4_PURSUE",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_RALLY": {
-      "id": "THERON_CH4_RALLY",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_ASSAULT": {
-      "id": "THERON_CH4_ASSAULT",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_COMMANDER": {
-      "id": "THERON_CH4_COMMANDER",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_TUNNEL_FIGHT": {
-      "id": "THERON_CH4_TUNNEL_FIGHT",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_DEEP_TUNNEL": {
-      "id": "THERON_CH4_DEEP_TUNNEL",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_DEFEND": {
-      "id": "THERON_CH4_DEFEND",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_VICTORY": {
-      "id": "THERON_CH4_VICTORY",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_HOLD": {
-      "id": "THERON_CH4_HOLD",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_FLANK": {
-      "id": "THERON_CH4_FLANK",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_SECURE": {
-      "id": "THERON_CH4_SECURE",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_QUEEN_QUESTION": {
-      "id": "THERON_CH4_QUEEN_QUESTION",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_INVESTIGATE": {
-      "id": "THERON_CH4_INVESTIGATE",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_HEAL_QUEEN": {
-      "id": "THERON_CH4_HEAL_QUEEN",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_TAKE_COMMAND": {
-      "id": "THERON_CH4_TAKE_COMMAND",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_MAP_EXIT": {
-      "id": "THERON_CH4_MAP_EXIT",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_ESCAPE": {
-      "id": "THERON_CH4_ESCAPE",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_JOURNEY": {
-      "id": "THERON_CH5_JOURNEY",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_DUEL": {
-      "id": "THERON_CH5_DUEL",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_VICTORY": {
-      "id": "THERON_CH5_VICTORY",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_TACTICAL": {
-      "id": "THERON_CH5_TACTICAL",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_CROWN": {
-      "id": "THERON_CH5_CROWN",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_TRUTH": {
-      "id": "THERON_CH5_TRUTH",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_MERCY": {
-      "id": "THERON_CH5_MERCY",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_STRATEGY": {
-      "id": "THERON_CH5_STRATEGY",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_HEAL": {
-      "id": "THERON_CH5_HEAL",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_QUEEN": {
-      "id": "THERON_CH5_QUEEN",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_SACRIFICE": {
-      "id": "THERON_CH5_SACRIFICE",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH5_CONFRONT": {
-      "id": "THERON_CH5_CONFRONT",
-      "character": "THERON",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
     },
     "THERON_ENDING_LEGEND": {
       "id": "THERON_ENDING_LEGEND",
@@ -4018,126 +2658,6 @@
       "choice_count": 0,
       "valid_choice_count": 0
     },
-    "VEX_CH5_GUILD_HALL": {
-      "id": "VEX_CH5_GUILD_HALL",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_ASSAULT": {
-      "id": "VEX_CH5_ASSAULT",
-      "character": "VEX",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_INFILTRATE": {
-      "id": "VEX_CH5_INFILTRATE",
-      "character": "VEX",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_EYE": {
-      "id": "VEX_CH5_EYE",
-      "character": "VEX",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_TAKE": {
-      "id": "VEX_CH5_TAKE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_DEMAND": {
-      "id": "VEX_CH5_DEMAND",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_PROOF": {
-      "id": "VEX_CH5_PROOF",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_VAULT": {
-      "id": "VEX_CH5_VAULT",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_BURN": {
-      "id": "VEX_CH5_BURN",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_ALLIES": {
-      "id": "VEX_CH5_ALLIES",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_EAR": {
-      "id": "VEX_CH5_EAR",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH5_TRIAL": {
-      "id": "VEX_CH5_TRIAL",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "VEX_ENDING_REFORM": {
       "id": "VEX_ENDING_REFORM",
       "character": "VEX",
@@ -4148,96 +2668,6 @@
       "choice_count": 0,
       "valid_choice_count": 0
     },
-    "ELARA_CH5_NETWORK": {
-      "id": "ELARA_CH5_NETWORK",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH5_EXPOSE": {
-      "id": "ELARA_CH5_EXPOSE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH5_HUNT": {
-      "id": "ELARA_CH5_HUNT",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH5_CONFRONT": {
-      "id": "ELARA_CH5_CONFRONT",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH5_SELL": {
-      "id": "ELARA_CH5_SELL",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH5_TRAP": {
-      "id": "ELARA_CH5_TRAP",
-      "character": "ELARA",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH5_ARMY": {
-      "id": "ELARA_CH5_ARMY",
-      "character": "ELARA",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH5_TORTURE": {
-      "id": "ELARA_CH5_TORTURE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH5_ADAPT": {
-      "id": "ELARA_CH5_ADAPT",
-      "character": "ELARA",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "ELARA_ENDING_RICH": {
       "id": "ELARA_ENDING_RICH",
       "character": "ELARA",
@@ -4247,76 +2677,6 @@
       "is_ending": true,
       "choice_count": 0,
       "valid_choice_count": 0
-    },
-    "ASHA_CH5_GUARDIAN_CHALLENGE": {
-      "id": "ASHA_CH5_GUARDIAN_CHALLENGE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH5_WASTES": {
-      "id": "ASHA_CH5_WASTES",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH5_DEFEND": {
-      "id": "ASHA_CH5_DEFEND",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH5_SPIRITS": {
-      "id": "ASHA_CH5_SPIRITS",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH5_DEEP": {
-      "id": "ASHA_CH5_DEEP",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH5_NATURE": {
-      "id": "ASHA_CH5_NATURE",
-      "character": "ASHA",
-      "type": "combat",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH5_SOURCE": {
-      "id": "ASHA_CH5_SOURCE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
     },
     "ASHA_ENDING_BALANCE": {
       "id": "ASHA_ENDING_BALANCE",
@@ -4378,186 +2738,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "THERON_CH4_MINOR_2": {
-      "id": "THERON_CH4_MINOR_2",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_SHRINE": {
-      "id": "THERON_CH4_SHRINE",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_MINOR_3": {
-      "id": "THERON_CH4_MINOR_3",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "THERON_CH4_CHILD": {
-      "id": "THERON_CH4_CHILD",
-      "character": "THERON",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_INTERLUDE": {
-      "id": "VEX_CH3_INTERLUDE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_INFO": {
-      "id": "VEX_CH3_INFO",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_FORCE": {
-      "id": "VEX_CH3_FORCE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_NOBLE": {
-      "id": "VEX_CH3_NOBLE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_STAKE": {
-      "id": "VEX_CH3_STAKE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_BRIBE": {
-      "id": "VEX_CH3_BRIBE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_ASSAULT": {
-      "id": "VEX_CH3_ASSAULT",
-      "character": "VEX",
-      "type": "combat",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_SUCCESS": {
-      "id": "VEX_CH3_SUCCESS",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_ESCAPE": {
-      "id": "VEX_CH3_ESCAPE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_BETTER": {
-      "id": "VEX_CH3_BETTER",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_WAIT": {
-      "id": "VEX_CH3_WAIT",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_EXTRA_1": {
-      "id": "VEX_CH3_EXTRA_1",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_EXTRA_2": {
-      "id": "VEX_CH3_EXTRA_2",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH3_EXTRA_3": {
-      "id": "VEX_CH3_EXTRA_3",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "ELARA_CH3_INTERLUDE": {
       "id": "ELARA_CH3_INTERLUDE",
       "character": "ELARA",
@@ -4613,246 +2793,6 @@
       "character": "ELARA",
       "type": "story",
       "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_EXTRA_1": {
-      "id": "ELARA_CH3_EXTRA_1",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_EXTRA_2": {
-      "id": "ELARA_CH3_EXTRA_2",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_EXTRA_3": {
-      "id": "ELARA_CH3_EXTRA_3",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_EXTRA_4": {
-      "id": "ELARA_CH3_EXTRA_4",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_EXTRA_5": {
-      "id": "ELARA_CH3_EXTRA_5",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH3_EXTRA_6": {
-      "id": "ELARA_CH3_EXTRA_6",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_INTERLUDE": {
-      "id": "ASHA_CH3_INTERLUDE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_ANCIENT": {
-      "id": "ASHA_CH3_ANCIENT",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_DEFENSE": {
-      "id": "ASHA_CH3_DEFENSE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_EXTRA_1": {
-      "id": "ASHA_CH3_EXTRA_1",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_EXTRA_2": {
-      "id": "ASHA_CH3_EXTRA_2",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_EXTRA_3": {
-      "id": "ASHA_CH3_EXTRA_3",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_EXTRA_4": {
-      "id": "ASHA_CH3_EXTRA_4",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_EXTRA_5": {
-      "id": "ASHA_CH3_EXTRA_5",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_EXTRA_6": {
-      "id": "ASHA_CH3_EXTRA_6",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH3_EXTRA_7": {
-      "id": "ASHA_CH3_EXTRA_7",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_INTERLUDE": {
-      "id": "VEX_CH2_INTERLUDE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_APPRENTICE": {
-      "id": "VEX_CH2_APPRENTICE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_BAIT": {
-      "id": "VEX_CH2_BAIT",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_EXTRA_1": {
-      "id": "VEX_CH2_EXTRA_1",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_EXTRA_2": {
-      "id": "VEX_CH2_EXTRA_2",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_EXTRA_3": {
-      "id": "VEX_CH2_EXTRA_3",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_EXTRA_4": {
-      "id": "VEX_CH2_EXTRA_4",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH2_EXTRA_5": {
-      "id": "VEX_CH2_EXTRA_5",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 2,
       "is_leaf": false,
       "is_ending": false,
       "choice_count": 3,
@@ -4958,96 +2898,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "ELARA_CH2_INTERLUDE": {
-      "id": "ELARA_CH2_INTERLUDE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_JOB": {
-      "id": "ELARA_CH2_JOB",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_CHECK": {
-      "id": "ELARA_CH2_CHECK",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_READ": {
-      "id": "ELARA_CH2_READ",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_EXTRA_1": {
-      "id": "ELARA_CH2_EXTRA_1",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_EXTRA_2": {
-      "id": "ELARA_CH2_EXTRA_2",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_EXTRA_3": {
-      "id": "ELARA_CH2_EXTRA_3",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_EXTRA_4": {
-      "id": "ELARA_CH2_EXTRA_4",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH2_EXTRA_5": {
-      "id": "ELARA_CH2_EXTRA_5",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "ELARA_CH1_EXTRA_1": {
       "id": "ELARA_CH1_EXTRA_1",
       "character": "ELARA",
@@ -5148,86 +2998,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "ASHA_CH2_INTERLUDE": {
-      "id": "ASHA_CH2_INTERLUDE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_PREP": {
-      "id": "ASHA_CH2_PREP",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_OMEN": {
-      "id": "ASHA_CH2_OMEN",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_EXTRA_1": {
-      "id": "ASHA_CH2_EXTRA_1",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_EXTRA_2": {
-      "id": "ASHA_CH2_EXTRA_2",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_EXTRA_3": {
-      "id": "ASHA_CH2_EXTRA_3",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_EXTRA_4": {
-      "id": "ASHA_CH2_EXTRA_4",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH2_EXTRA_5": {
-      "id": "ASHA_CH2_EXTRA_5",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "ASHA_CH1_EXTRA_1": {
       "id": "ASHA_CH1_EXTRA_1",
       "character": "ASHA",
@@ -5323,716 +3093,6 @@
       "character": "ASHA",
       "type": "story",
       "chapter": 1,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_ORIGIN": {
-      "id": "VEX_CH0_ORIGIN",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_STREETS": {
-      "id": "VEX_CH0_STREETS",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_MENTOR": {
-      "id": "VEX_CH0_MENTOR",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_FIRST_JOB": {
-      "id": "VEX_CH0_FIRST_JOB",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_HONOR": {
-      "id": "VEX_CH0_HONOR",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_RIVAL": {
-      "id": "VEX_CH0_RIVAL",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_TRAP": {
-      "id": "VEX_CH0_TRAP",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_REVENGE": {
-      "id": "VEX_CH0_REVENGE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_FAME": {
-      "id": "VEX_CH0_FAME",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_SECRET": {
-      "id": "VEX_CH0_SECRET",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_LOSS": {
-      "id": "VEX_CH0_LOSS",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_ALLIES": {
-      "id": "VEX_CH0_ALLIES",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_SKILLS": {
-      "id": "VEX_CH0_SKILLS",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_TRUST": {
-      "id": "VEX_CH0_TRUST",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "VEX_CH0_CHOICE": {
-      "id": "VEX_CH0_CHOICE",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_FOUNDATION": {
-      "id": "ELARA_CH0_FOUNDATION",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_FIRST_SECRET": {
-      "id": "ELARA_CH0_FIRST_SECRET",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_TALENT": {
-      "id": "ELARA_CH0_TALENT",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_ENEMY": {
-      "id": "ELARA_CH0_ENEMY",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_MENTOR2": {
-      "id": "ELARA_CH0_MENTOR2",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_FIRST_NETWORK": {
-      "id": "ELARA_CH0_FIRST_NETWORK",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_RIVAL2": {
-      "id": "ELARA_CH0_RIVAL2",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_WEALTH": {
-      "id": "ELARA_CH0_WEALTH",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_TRUST2": {
-      "id": "ELARA_CH0_TRUST2",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_DANGER": {
-      "id": "ELARA_CH0_DANGER",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_BEGINNING": {
-      "id": "ASHA_CH0_BEGINNING",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_NATURE_CALL": {
-      "id": "ASHA_CH0_NATURE_CALL",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_GUARDIAN_OLD": {
-      "id": "ASHA_CH0_GUARDIAN_OLD",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_VOID_FIRST": {
-      "id": "ASHA_CH0_VOID_FIRST",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_CLAN_BORN": {
-      "id": "ASHA_CH0_CLAN_BORN",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_SPIRITS_TALK": {
-      "id": "ASHA_CH0_SPIRITS_TALK",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_BORDER_WALK": {
-      "id": "ASHA_CH0_BORDER_WALK",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_VISION": {
-      "id": "ASHA_CH0_VISION",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_FIRST_BEAST": {
-      "id": "ASHA_CH0_FIRST_BEAST",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_TRIAL": {
-      "id": "ASHA_CH0_TRIAL",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_TEAM": {
-      "id": "ASHA_CH0_TEAM",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_SECRET_WAY": {
-      "id": "ASHA_CH0_SECRET_WAY",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_GIFT": {
-      "id": "ASHA_CH0_GIFT",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_MEMORY": {
-      "id": "ELARA_CH0_MEMORY",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_LEAK": {
-      "id": "ELARA_CH0_LEAK",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_PARTNER": {
-      "id": "ELARA_CH0_PARTNER",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_LARGE_CLIENT": {
-      "id": "ELARA_CH0_LARGE_CLIENT",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_SECRET_MAP": {
-      "id": "ELARA_CH0_SECRET_MAP",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_NETWORK_SECRET": {
-      "id": "ELARA_CH0_NETWORK_SECRET",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_ALLIANCE": {
-      "id": "ELARA_CH0_ALLIANCE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_LEGEND": {
-      "id": "ELARA_CH0_LEGEND",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_PRICE": {
-      "id": "ELARA_CH0_PRICE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_EXPERTISE": {
-      "id": "ELARA_CH0_EXPERTISE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_FAME2": {
-      "id": "ELARA_CH0_FAME2",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_DANGEROUS_SECRET": {
-      "id": "ELARA_CH0_DANGEROUS_SECRET",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_POWER": {
-      "id": "ELARA_CH0_POWER",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_VENDETTA": {
-      "id": "ELARA_CH0_VENDETTA",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_LEARNING": {
-      "id": "ELARA_CH0_LEARNING",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_BETRAYAL": {
-      "id": "ELARA_CH0_BETRAYAL",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_ORGANIZATION": {
-      "id": "ELARA_CH0_ORGANIZATION",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_INFLUENCE": {
-      "id": "ELARA_CH0_INFLUENCE",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH0_FINAL_SECRET": {
-      "id": "ELARA_CH0_FINAL_SECRET",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_LESSON": {
-      "id": "ASHA_CH0_LESSON",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_DEEP_FOREST": {
-      "id": "ASHA_CH0_DEEP_FOREST",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_FIRST_SPIRIT": {
-      "id": "ASHA_CH0_FIRST_SPIRIT",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_ANGER": {
-      "id": "ASHA_CH0_ANGER",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_WISDOM": {
-      "id": "ASHA_CH0_WISDOM",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_FIGHT": {
-      "id": "ASHA_CH0_FIGHT",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_LAND": {
-      "id": "ASHA_CH0_LAND",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_SECRET_GUARDIAN": {
-      "id": "ASHA_CH0_SECRET_GUARDIAN",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_PATROL": {
-      "id": "ASHA_CH0_PATROL",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_PREDICTION": {
-      "id": "ASHA_CH0_PREDICTION",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_BATTLE": {
-      "id": "ASHA_CH0_BATTLE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_HEAL": {
-      "id": "ASHA_CH0_HEAL",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_STORY": {
-      "id": "ASHA_CH0_STORY",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH0_FUTURE": {
-      "id": "ASHA_CH0_FUTURE",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 0,
       "is_leaf": false,
       "is_ending": false,
       "choice_count": 3,
@@ -6185,8 +3245,8 @@
       "chapter": 4,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 4,
+      "valid_choice_count": 4
     },
     "ELARA_CH5_TRANSITION": {
       "id": "ELARA_CH5_TRANSITION",
@@ -6305,8 +3365,8 @@
       "chapter": 2,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 6,
+      "valid_choice_count": 6
     },
     "VEX_CH3_MAIN": {
       "id": "VEX_CH3_MAIN",
@@ -6415,8 +3475,8 @@
       "chapter": 3,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 8,
+      "valid_choice_count": 8
     },
     "ASHA_CH4_MAIN": {
       "id": "ASHA_CH4_MAIN",
@@ -6435,8 +3495,8 @@
       "chapter": 5,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 4,
+      "valid_choice_count": 4
     },
     "KIRA_CH1_MAIN": {
       "id": "KIRA_CH1_MAIN",
@@ -6538,26 +3598,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "KIRA_CH2_SEARCH": {
-      "id": "KIRA_CH2_SEARCH",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH2_REST": {
-      "id": "KIRA_CH2_REST",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 2,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "KIRA_CH3_REFLECT": {
       "id": "KIRA_CH3_REFLECT",
       "character": "KIRA",
@@ -6570,26 +3610,6 @@
     },
     "KIRA_CH3_PREPARE": {
       "id": "KIRA_CH3_PREPARE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_SEARCH": {
-      "id": "KIRA_CH3_SEARCH",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 3,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH3_REST": {
-      "id": "KIRA_CH3_REST",
       "character": "KIRA",
       "type": "story",
       "chapter": 3,
@@ -6618,26 +3638,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "KIRA_CH4_SEARCH": {
-      "id": "KIRA_CH4_SEARCH",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH4_REST": {
-      "id": "KIRA_CH4_REST",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 4,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "KIRA_CH5_REFLECT": {
       "id": "KIRA_CH5_REFLECT",
       "character": "KIRA",
@@ -6650,26 +3650,6 @@
     },
     "KIRA_CH5_PREPARE": {
       "id": "KIRA_CH5_PREPARE",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_SEARCH": {
-      "id": "KIRA_CH5_SEARCH",
-      "character": "KIRA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_REST": {
-      "id": "KIRA_CH5_REST",
       "character": "KIRA",
       "type": "story",
       "chapter": 5,
@@ -7058,16 +4038,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "VEX_CH5_REST": {
-      "id": "VEX_CH5_REST",
-      "character": "VEX",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "ELARA_CH1_REFLECT": {
       "id": "ELARA_CH1_REFLECT",
       "character": "ELARA",
@@ -7415,8 +4385,8 @@
       "chapter": 4,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 5,
+      "valid_choice_count": 5
     },
     "ASHA_CH4_REST": {
       "id": "ASHA_CH4_REST",
@@ -7425,8 +4395,8 @@
       "chapter": 4,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 5,
+      "valid_choice_count": 5
     },
     "ASHA_CH5_REFLECT": {
       "id": "ASHA_CH5_REFLECT",
@@ -7450,16 +4420,6 @@
     },
     "ASHA_CH5_SEARCH": {
       "id": "ASHA_CH5_SEARCH",
-      "character": "ASHA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ASHA_CH5_REST": {
-      "id": "ASHA_CH5_REST",
       "character": "ASHA",
       "type": "story",
       "chapter": 5,
@@ -7625,8 +4585,8 @@
       "chapter": 4,
       "is_leaf": false,
       "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
+      "choice_count": 4,
+      "valid_choice_count": 4
     },
     "ASHA_CH4_END": {
       "id": "ASHA_CH4_END",
@@ -7653,10 +4613,10 @@
       "character": "VEX",
       "type": "story",
       "chapter": 1,
-      "is_leaf": true,
+      "is_leaf": false,
       "is_ending": false,
-      "choice_count": 0,
-      "valid_choice_count": 0
+      "choice_count": 3,
+      "valid_choice_count": 3
     },
     "ASHA_ENDING": {
       "id": "ASHA_ENDING",
@@ -7752,16 +4712,6 @@
       "id": "KIRA_CH5_ALT",
       "character": "KIRA",
       "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "KIRA_CH5_END": {
-      "id": "KIRA_CH5_END",
-      "character": "KIRA",
-      "type": "transition",
       "chapter": 5,
       "is_leaf": false,
       "is_ending": false,
@@ -7888,16 +4838,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "THERON_CH5_END": {
-      "id": "THERON_CH5_END",
-      "character": "THERON",
-      "type": "transition",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "THERON_ENDING": {
       "id": "THERON_ENDING",
       "character": "THERON",
@@ -7988,26 +4928,6 @@
       "choice_count": 3,
       "valid_choice_count": 3
     },
-    "ELARA_CH5_ALT": {
-      "id": "ELARA_CH5_ALT",
-      "character": "ELARA",
-      "type": "story",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
-    "ELARA_CH5_END": {
-      "id": "ELARA_CH5_END",
-      "character": "ELARA",
-      "type": "transition",
-      "chapter": 5,
-      "is_leaf": false,
-      "is_ending": false,
-      "choice_count": 3,
-      "valid_choice_count": 3
-    },
     "ELARA_ENDING": {
       "id": "ELARA_ENDING",
       "character": "ELARA",
@@ -8027,6 +4947,2106 @@
       "is_ending": false,
       "choice_count": 3,
       "valid_choice_count": 3
+    },
+    "VEX_CH2_SURRENDER": {
+      "id": "VEX_CH2_SURRENDER",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 2,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH2_GUILD_HALL": {
+      "id": "VEX_CH2_GUILD_HALL",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 2,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH2_MAGE_TOWER": {
+      "id": "KIRA_CH2_MAGE_TOWER",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 2,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_DESTROY": {
+      "id": "KIRA_CH4_DESTROY",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_TEMPLE_ASSAULT": {
+      "id": "THERON_CH4_TEMPLE_ASSAULT",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_VESPERA_COMBAT": {
+      "id": "THERON_CH4_VESPERA_COMBAT",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_VESPERA_DIALOGUE": {
+      "id": "THERON_CH4_VESPERA_DIALOGUE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_TEMPLE_FIRE": {
+      "id": "THERON_CH4_TEMPLE_FIRE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_RESISTANCE": {
+      "id": "THERON_CH4_RESISTANCE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_WATCHTOWER": {
+      "id": "THERON_CH4_WATCHTOWER",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_VOID_ASCENSION": {
+      "id": "THERON_CH4_VOID_ASCENSION",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_VESPERA_DEFEAT": {
+      "id": "THERON_CH4_VESPERA_DEFEAT",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_EVIDENCE_FLEE": {
+      "id": "THERON_CH4_EVIDENCE_FLEE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_VESPERA_ALLIANCE": {
+      "id": "THERON_CH4_VESPERA_ALLIANCE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_INVESTIGATE": {
+      "id": "THERON_CH4_INVESTIGATE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_TUNNEL_CHASE": {
+      "id": "THERON_CH4_TUNNEL_CHASE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_RESCUE": {
+      "id": "THERON_CH4_RESCUE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_AFTERMATH": {
+      "id": "THERON_CH4_AFTERMATH",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_STRATEGIC_PLAN": {
+      "id": "THERON_CH4_STRATEGIC_PLAN",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_SOLO_APPROACH": {
+      "id": "THERON_CH4_SOLO_APPROACH",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_EXPOSE_QUEEN": {
+      "id": "THERON_CH4_EXPOSE_QUEEN",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_GUARD_ASSAULT": {
+      "id": "THERON_CH4_GUARD_ASSAULT",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_SLOW_SCOUT": {
+      "id": "THERON_CH4_SLOW_SCOUT",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_BALANCE": {
+      "id": "THERON_CH4_BALANCE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_VOID_SACRIFICE": {
+      "id": "THERON_CH4_VOID_SACRIFICE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_SEAL_TOMB": {
+      "id": "THERON_CH4_SEAL_TOMB",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH4_ANCIENT_TALK": {
+      "id": "THERON_CH4_ANCIENT_TALK",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_PALACE_ASSAULT": {
+      "id": "THERON_CH5_PALACE_ASSAULT",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_UNIFIED_ASSAULT": {
+      "id": "THERON_CH5_UNIFIED_ASSAULT",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_CROWN_HUNT": {
+      "id": "THERON_CH5_CROWN_HUNT",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_RESISTANCE_VICTORY": {
+      "id": "THERON_CH5_RESISTANCE_VICTORY",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_TOMB": {
+      "id": "THERON_CH5_TOMB",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_CONFRONT_QUEEN": {
+      "id": "THERON_CH5_CONFRONT_QUEEN",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_CAPITAL": {
+      "id": "THERON_CH5_CAPITAL",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_STUDY_EVIDENCE": {
+      "id": "THERON_CH5_STUDY_EVIDENCE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_UNLIKELY_ALLIANCE": {
+      "id": "THERON_CH5_UNLIKELY_ALLIANCE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_PUBLIC_TRIAL": {
+      "id": "THERON_CH5_PUBLIC_TRIAL",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_ASSASSINATE": {
+      "id": "THERON_CH5_ASSASSINATE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_VESPERA_HUNT": {
+      "id": "THERON_CH5_VESPERA_HUNT",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_TRAP": {
+      "id": "THERON_CH5_TRAP",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_CH5_ALLIANCE": {
+      "id": "THERON_CH5_ALLIANCE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "THERON_ENDING_PROTECTOR": {
+      "id": "THERON_ENDING_PROTECTOR",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "THERON_ENDING_MENTOR": {
+      "id": "THERON_ENDING_MENTOR",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "THERON_ENDING_GUARDIAN": {
+      "id": "THERON_ENDING_GUARDIAN",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "THERON_ENDING_BRIDGE": {
+      "id": "THERON_ENDING_BRIDGE",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "THERON_ENDING_UNDYING": {
+      "id": "THERON_ENDING_UNDYING",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "THERON_ENDING_MARTYR": {
+      "id": "THERON_ENDING_MARTYR",
+      "character": "THERON",
+      "type": "story",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "VEX_ENDING_FREEDOM": {
+      "id": "VEX_ENDING_FREEDOM",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "VEX_ENDING_AVENGER": {
+      "id": "VEX_ENDING_AVENGER",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "VEX_ENDING_FAMILY": {
+      "id": "VEX_ENDING_FAMILY",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "VEX_ENDING_TRUTH": {
+      "id": "VEX_ENDING_TRUTH",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "VEX_CH4_AVENGER_PATH": {
+      "id": "VEX_CH4_AVENGER_PATH",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_FAMILY_PATH": {
+      "id": "VEX_CH4_FAMILY_PATH",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_TRUTH_PATH": {
+      "id": "VEX_CH4_TRUTH_PATH",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_ESCAPE": {
+      "id": "VEX_CH5_ESCAPE",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_REVENGE_FINAL": {
+      "id": "VEX_CH5_REVENGE_FINAL",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_FAMILY_REUNION": {
+      "id": "VEX_CH5_FAMILY_REUNION",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_TRUTH_FINAL": {
+      "id": "VEX_CH5_TRUTH_FINAL",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_FREEDOM_PATH": {
+      "id": "VEX_CH4_FREEDOM_PATH",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_THREAT": {
+      "id": "VEX_CH5_THREAT",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_FINALE": {
+      "id": "VEX_CH5_FINALE",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_UNDERGROUND": {
+      "id": "VEX_CH4_UNDERGROUND",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_SECRET_CHAMBER": {
+      "id": "VEX_CH4_SECRET_CHAMBER",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_DISCOVERY": {
+      "id": "VEX_CH4_DISCOVERY",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_INVESTIGATE": {
+      "id": "VEX_CH4_INVESTIGATE",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_VAULT": {
+      "id": "VEX_CH4_VAULT",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_REVELATION": {
+      "id": "VEX_CH4_REVELATION",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_NEGOTIATE": {
+      "id": "VEX_CH4_NEGOTIATE",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_COMBAT": {
+      "id": "VEX_CH4_COMBAT",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_SCHEMES": {
+      "id": "VEX_CH4_SCHEMES",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_COUNTER": {
+      "id": "VEX_CH4_COUNTER",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_FLEE": {
+      "id": "VEX_CH4_FLEE",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_BETRAYAL": {
+      "id": "VEX_CH4_BETRAYAL",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_HUNT": {
+      "id": "VEX_CH4_HUNT",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_LOYALTY": {
+      "id": "VEX_CH4_LOYALTY",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_FINAL_OFFER": {
+      "id": "VEX_CH4_FINAL_OFFER",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_RISK": {
+      "id": "VEX_CH4_RISK",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_REFORM": {
+      "id": "VEX_CH4_REFORM",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_MENTOR": {
+      "id": "VEX_CH4_MENTOR",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH4_FINALE": {
+      "id": "VEX_CH4_FINALE",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_CONSOLIDATE": {
+      "id": "VEX_CH5_CONSOLIDATE",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_WAR": {
+      "id": "VEX_CH5_WAR",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_PEACE": {
+      "id": "VEX_CH5_PEACE",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_INVESTIGATE": {
+      "id": "VEX_CH5_INVESTIGATE",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_NETWORK": {
+      "id": "VEX_CH5_NETWORK",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_EXPANSION": {
+      "id": "VEX_CH5_EXPANSION",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_SISTER": {
+      "id": "VEX_CH5_SISTER",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_HUNT": {
+      "id": "VEX_CH5_HUNT",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_REVELATION": {
+      "id": "VEX_CH5_REVELATION",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_RISK": {
+      "id": "VEX_CH5_RISK",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_PEACE_TREATY": {
+      "id": "VEX_CH5_PEACE_TREATY",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_BETRAYAL_END": {
+      "id": "VEX_CH5_BETRAYAL_END",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_LEGACY": {
+      "id": "VEX_CH5_LEGACY",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_RETURN": {
+      "id": "VEX_CH5_RETURN",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "VEX_CH5_MEMORIAL": {
+      "id": "VEX_CH5_MEMORIAL",
+      "character": "VEX",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_DEEP_WOODS": {
+      "id": "ASHA_CH4_DEEP_WOODS",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 4,
+      "valid_choice_count": 4
+    },
+    "ASHA_CH4_SPIRIT_TRIAL": {
+      "id": "ASHA_CH4_SPIRIT_TRIAL",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SPEAK_SPIRITS": {
+      "id": "ASHA_CH4_SPEAK_SPIRITS",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_TIME_RIDDLE": {
+      "id": "ASHA_CH4_TIME_RIDDLE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_COMPASSION_TRIAL": {
+      "id": "ASHA_CH4_COMPASSION_TRIAL",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_COURAGE_TEST": {
+      "id": "ASHA_CH4_COURAGE_TEST",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 4,
+      "valid_choice_count": 4
+    },
+    "ASHA_CH4_WISDOM_REWARD": {
+      "id": "ASHA_CH4_WISDOM_REWARD",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_HUMBLE_PATH": {
+      "id": "ASHA_CH4_HUMBLE_PATH",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_ANIMAL_COMPANION": {
+      "id": "ASHA_CH4_ANIMAL_COMPANION",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SHADOW_BATTLE": {
+      "id": "ASHA_CH4_SHADOW_BATTLE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_DARK_ACCEPTANCE": {
+      "id": "ASHA_CH4_DARK_ACCEPTANCE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_FEAR_TALK": {
+      "id": "ASHA_CH4_FEAR_TALK",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_NATURE_ARTIFACT": {
+      "id": "ASHA_CH4_NATURE_ARTIFACT",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SPIRIT_GUIDANCE": {
+      "id": "ASHA_CH4_SPIRIT_GUIDANCE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_BORDER_STRENGTHEN": {
+      "id": "ASHA_CH4_BORDER_STRENGTHEN",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_HIDDEN_WAY": {
+      "id": "ASHA_CH4_HIDDEN_WAY",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SPIRITS_TEACH": {
+      "id": "ASHA_CH4_SPIRITS_TEACH",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_COMPANION_PATH": {
+      "id": "ASHA_CH4_COMPANION_PATH",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_VICTORY_SHADOW": {
+      "id": "ASHA_CH4_VICTORY_SHADOW",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_INTEGRATION": {
+      "id": "ASHA_CH4_INTEGRATION",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_TRANSFORMATION": {
+      "id": "ASHA_CH4_TRANSFORMATION",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_BALANCE_PATH": {
+      "id": "ASHA_CH4_BALANCE_PATH",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_PURIFY": {
+      "id": "ASHA_CH4_PURIFY",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_FACE_FEAR": {
+      "id": "ASHA_CH4_FACE_FEAR",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_PREPARED": {
+      "id": "ASHA_CH4_PREPARED",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_FOREST_ARMY": {
+      "id": "ASHA_CH4_FOREST_ARMY",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SEED_SAVE": {
+      "id": "ASHA_CH4_SEED_SAVE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_STRENGTH_PATH": {
+      "id": "ASHA_CH4_STRENGTH_PATH",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_CUNNING_PATH": {
+      "id": "ASHA_CH4_CUNNING_PATH",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SACRIFICE_PATH": {
+      "id": "ASHA_CH4_SACRIFICE_PATH",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_TREE_NETWORK": {
+      "id": "ASHA_CH4_TREE_NETWORK",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_ANCIENT_KNOWLEDGE": {
+      "id": "ASHA_CH4_ANCIENT_KNOWLEDGE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_ANCIENT_ARTIFACTS": {
+      "id": "ASHA_CH4_ANCIENT_ARTIFACTS",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_CYCLE_MASTER": {
+      "id": "ASHA_CH4_CYCLE_MASTER",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SPRING_MASTER": {
+      "id": "ASHA_CH4_SPRING_MASTER",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SEASON_WALKER": {
+      "id": "ASHA_CH4_SEASON_WALKER",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SCOUT": {
+      "id": "ASHA_CH4_SCOUT",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_PURIFY_SUCCESS": {
+      "id": "ASHA_CH4_PURIFY_SUCCESS",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_FEARLESS": {
+      "id": "ASHA_CH4_FEARLESS",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_HUMAN_STRUGGLE": {
+      "id": "ASHA_CH4_HUMAN_STRUGGLE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_TRICK_ATTEMPT": {
+      "id": "ASHA_CH4_TRICK_ATTEMPT",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_REVERSE_CORRUPTION": {
+      "id": "ASHA_CH4_REVERSE_CORRUPTION",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_FINAL_APPROACH": {
+      "id": "ASHA_CH5_FINAL_APPROACH",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_ASSAULT": {
+      "id": "ASHA_CH5_ASSAULT",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 4,
+      "valid_choice_count": 4
+    },
+    "ASHA_CH5_STEALTH": {
+      "id": "ASHA_CH5_STEALTH",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 4,
+      "valid_choice_count": 4
+    },
+    "ASHA_CH5_CHALLENGE": {
+      "id": "ASHA_CH5_CHALLENGE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 4,
+      "valid_choice_count": 4
+    },
+    "ASHA_CH5_BARRIER": {
+      "id": "ASHA_CH5_BARRIER",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_SPIRIT_HELP": {
+      "id": "ASHA_CH5_SPIRIT_HELP",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_SABOTAGE": {
+      "id": "ASHA_CH5_SABOTAGE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_RESCUE": {
+      "id": "ASHA_CH5_RESCUE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_DUEL": {
+      "id": "ASHA_CH5_DUEL",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_REASON": {
+      "id": "ASHA_CH5_REASON",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_CRUSH": {
+      "id": "ASHA_CH5_CRUSH",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_WEAKNESS": {
+      "id": "ASHA_CH5_WEAKNESS",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_REDEMPTION": {
+      "id": "ASHA_CH5_REDEMPTION",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_ALLIANCE": {
+      "id": "ASHA_CH5_ALLIANCE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_DESTRUCTION": {
+      "id": "ASHA_CH5_DESTRUCTION",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_ENDING_NATURE_CHAMPION": {
+      "id": "ASHA_ENDING_NATURE_CHAMPION",
+      "character": "ASHA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "ASHA_ENDING_SILENT_GUARDIAN": {
+      "id": "ASHA_ENDING_SILENT_GUARDIAN",
+      "character": "ASHA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "ASHA_ENDING_NEW_BORDER": {
+      "id": "ASHA_ENDING_NEW_BORDER",
+      "character": "ASHA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "ASHA_ENDING_LAST_WARDEN": {
+      "id": "ASHA_ENDING_LAST_WARDEN",
+      "character": "ASHA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "ASHA_CH4_REST_PHASE": {
+      "id": "ASHA_CH4_REST_PHASE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_PRE_BATTLE": {
+      "id": "ASHA_CH5_PRE_BATTLE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_WAR_COMPANION": {
+      "id": "ASHA_CH4_WAR_COMPANION",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_LEGEND_MEMORIES": {
+      "id": "ASHA_CH4_LEGEND_MEMORIES",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_WOUNDS_HEAL": {
+      "id": "ASHA_CH4_WOUNDS_HEAL",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SECRET_PASSAGE": {
+      "id": "ASHA_CH4_SECRET_PASSAGE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_ANCIENT_WEAPON": {
+      "id": "ASHA_CH4_ANCIENT_WEAPON",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_FRIEND_IN_NEED": {
+      "id": "ASHA_CH4_FRIEND_IN_NEED",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_VOID_EDGE": {
+      "id": "ASHA_CH4_VOID_EDGE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_STARGAZER": {
+      "id": "ASHA_CH4_STARGAZER",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_MEMORY_LANE": {
+      "id": "ASHA_CH4_MEMORY_LANE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_TRADITION": {
+      "id": "ASHA_CH4_TRADITION",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_HOLLOW_SCOUT": {
+      "id": "ASHA_CH4_HOLLOW_SCOUT",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_TIME_STOP": {
+      "id": "ASHA_CH4_TIME_STOP",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SUMMON_HELP": {
+      "id": "ASHA_CH4_SUMMON_HELP",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_MOUNTAIN_CLIMB": {
+      "id": "ASHA_CH4_MOUNTAIN_CLIMB",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_RIVER_CROSSING": {
+      "id": "ASHA_CH4_RIVER_CROSSING",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_NIGHT_CAMP": {
+      "id": "ASHA_CH4_NIGHT_CAMP",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SKY_BATTLE": {
+      "id": "ASHA_CH4_SKY_BATTLE",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH4_SIEGE_PREP": {
+      "id": "ASHA_CH4_SIEGE_PREP",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_FINAL_MOMENT": {
+      "id": "ASHA_CH5_FINAL_MOMENT",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "ASHA_CH5_TEAM_FINAL": {
+      "id": "ASHA_CH5_TEAM_FINAL",
+      "character": "ASHA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_REALITY_CHECK": {
+      "id": "KIRA_CH4_REALITY_CHECK",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_POWER": {
+      "id": "KIRA_CH4_POWER",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_BALANCE": {
+      "id": "KIRA_CH4_BALANCE",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_SUPPRESS": {
+      "id": "KIRA_CH4_SUPPRESS",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_GATHER": {
+      "id": "KIRA_CH4_GATHER",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_TEST": {
+      "id": "KIRA_CH4_TEST",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_TECHNIQUES": {
+      "id": "KIRA_CH4_TECHNIQUES",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_CIRCLE": {
+      "id": "KIRA_CH4_CIRCLE",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_DESTROY_SOURCE": {
+      "id": "KIRA_CH4_DESTROY_SOURCE",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_MEDITATE": {
+      "id": "KIRA_CH4_MEDITATE",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_TRAIN": {
+      "id": "KIRA_CH4_TRAIN",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH4_WISDOM": {
+      "id": "KIRA_CH4_WISDOM",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 4,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH5_CONFRONT": {
+      "id": "KIRA_CH5_CONFRONT",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH5_CROWN": {
+      "id": "KIRA_CH5_CROWN",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH5_STORE": {
+      "id": "KIRA_CH5_STORE",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH5_ALLIES": {
+      "id": "KIRA_CH5_ALLIES",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH5_BATTLE": {
+      "id": "KIRA_CH5_BATTLE",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH5_LIMIT": {
+      "id": "KIRA_CH5_LIMIT",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_CH5_CHALLENGE": {
+      "id": "KIRA_CH5_CHALLENGE",
+      "character": "KIRA",
+      "type": "story",
+      "chapter": 5,
+      "is_leaf": false,
+      "is_ending": false,
+      "choice_count": 3,
+      "valid_choice_count": 3
+    },
+    "KIRA_ENDING_GUARDIAN": {
+      "id": "KIRA_ENDING_GUARDIAN",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_PROTECTOR": {
+      "id": "KIRA_ENDING_PROTECTOR",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_ORDER": {
+      "id": "KIRA_ENDING_ORDER",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_DEFENDER": {
+      "id": "KIRA_ENDING_DEFENDER",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_MENTOR": {
+      "id": "KIRA_ENDING_MENTOR",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_BALANCE": {
+      "id": "KIRA_ENDING_BALANCE",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_HEALER": {
+      "id": "KIRA_ENDING_HEALER",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_BRIDGE": {
+      "id": "KIRA_ENDING_BRIDGE",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_WARRIOR": {
+      "id": "KIRA_ENDING_WARRIOR",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_HERO": {
+      "id": "KIRA_ENDING_HERO",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_PURIFIER": {
+      "id": "KIRA_ENDING_PURIFIER",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_GODLIKE": {
+      "id": "KIRA_ENDING_GODLIKE",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
+    },
+    "KIRA_ENDING_MASTER": {
+      "id": "KIRA_ENDING_MASTER",
+      "character": "KIRA",
+      "type": "ending",
+      "chapter": 1,
+      "is_leaf": true,
+      "is_ending": true,
+      "choice_count": 0,
+      "valid_choice_count": 0
     }
   }
 }
