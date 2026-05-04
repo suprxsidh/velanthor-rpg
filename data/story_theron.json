@@ -379,5 +379,664 @@
     "description": "You survive. That's all. You always said you would.\n\nThe world burns around you. The Cult rises. The Circle falls. The kingdom descends into chaos. And you walk away, leaving nothing but footprints in the ash.\n\nThe void lives inside you—patient, hungry, waiting. You've learned to feed it just enough to keep it quiet. Other people's pain. Other people's sacrifices. Other people's children.\n\nYou don't dream anymore. The flames have stopped. Elara's voice has faded. But something else lives in your sleep: a vast darkness, endless and cold. It speaks in a language you almost understand.\n\n'Not yet,' it whispers. 'But soon.'\n\nYou wander the roads, looking for something you'll never find. A purpose. A peace. An end.\n\nBut the void doesn't end. It just waits.\n\nAnd one day, when you've finally lost everything else, when there's nothing left to feed on but your own soul, it'll be waiting.\n\nThe Hollow Knight walks forever. And the void is his kingdom.",
     "ending": "HOLLOW",
     "choices": []
+  },
+  "THERON_CH1_DREAMS": {
+    "id": "THERON_CH1_DREAMS",
+    "character": "THERON",
+    "description": "You tell Morgana about the dreams—flames, Princess Elara, the screaming. Her face goes pale.\n\n'The void is reaching for you,' she says. 'It's been inside you since the fire. The question is: are you strong enough to control it, or will it control you?'\n\nShe hands you a small obsidian pendant. 'Wear this. It will help you distinguish real visions from the void's whispers. But beware—the void will know you're fighting it.'\n\nYou take the pendant. Already, you feel different—lighter, clearer. The flames in your dreams shift, showing new images: a child with silver hair, a temple burning, a crown of shadows.\n\n'Vespera,' you murmur. 'She's the key.'\n\nMorgana nods. 'Now you understand. Find her. End this. Before the void ends you.'",
+    "choices": [
+      {"letter": "A", "text": "Accept the mission—with new resolve", "leads_to": "THERON_CH1_MISSION", "effects": {"intelligence": 2}, "requires": null},
+      {"letter": "B", "text": "Ask for more training—master the void", "leads_to": "THERON_CH2_TRAINING", "effects": {"void_magic": 2}, "requires": null},
+      {"letter": "C", "text": "Investigate more first—what is Vespera?", "leads_to": "THERON_CH1_RESEARCH", "effects": {"intelligence": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH1_TEMPLE": {
+    "id": "THERON_CH1_TEMPLE",
+    "character": "THERON",
+    "description": "The Temple of the Ash looms against the night sky—a black scar against the stars. You approach alone, the midnight meeting invitation burning in your pocket.\n\nThe doors stand open. Inside, candles flicker to life as you enter, illuminating ancient runes carved into every surface. The void worshippers knew their business—this place has been evil for centuries.\n\nMorgana waits at the altar. But she's not alone. Shadowy figures surround her, their faces hidden.\n\n'You came,' she says. 'Good. The Cult knows you're here. Their forces are gathering outside. You have a choice: fight with us, or become one of them.'\n\nThe shadows part, revealing armed Cultists blocking the exits. Your hand finds your sword. But numbers aren't on your side.\n\n'I'll need more than a sword,' you say.\n\nMorgana smiles. 'That's why I brought friends.'\n\nTorchlight flares from the rooftop. Your allies—Garreth, Brynn, Marcus—descend with weapons drawn. The battle begins.",
+    "choices": [
+      {"letter": "A", "text": "Fight alongside Morgana—trusted ally", "leads_to": "THERON_CH1_ASSAULT", "effects": {"combat": 2}, "requires": null},
+      {"letter": "B", "text": "Use the void—show no mercy", "leads_to": "THERON_CH1_ASSAULT", "effects": {"void_magic": 2}, "requires": null},
+      {"letter": "C", "text": "Flee through the shadows—live to fight", "leads_to": "THERON_CH1_ESCAPE", "effects": {"stealth": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH1_ASSAULT": {
+    "id": "THERON_CH1_ASSAULT",
+    "character": "THERON",
+    "description": "You charge with your allies, the void lending strength to your blade. Garreth fights beside you, his captain's training showing in every strike. Brynn moves like water, striking from unexpected angles. Marcus heals as he fights, light magic keeping your team standing.\n\nThe Cultists fall, one by one. But more keep coming. They're fanatical, sacrificing themselves to buy time for their masters.\n\n'Clear a path!' you shout. 'To the altar!'\n\nYour team responds, punching through the defensive line. You reach the inner chamber—the heart of the temple. And there, suspended in darkness, you see them: the children, dozens of them, floating above a glowing portal.\n\nThe Void Beast stirs. You can feel it, pulling at your consciousness.\n\n'Not today,' you growl.\n\nYou charge toward the altar.",
+    "choices": [
+      {"letter": "A", "text": "Destroy the portal—sacrifice the children", "leads_to": "THERON_CH2_BATTLE", "effects": {"strength": 2}, "requires": null},
+      {"letter": "B", "text": "Save the children—get them out first", "leads_to": "THERON_CH2_RITUAL", "effects": {"charisma": 2}, "requires": null},
+      {"letter": "C", "text": "Find Vespera—confront the source", "leads_to": "THERON_CH2_VESPERA", "effects": {"combat": 1}, "requires": null}
+    ]
+  },
+  "THERON_CH2_REPORT": {
+    "id": "THERON_CH2_REPORT",
+    "character": "THERON",
+    "description": "You return to Crownhaven, wounded but alive. The city has changed while you were gone—soldiers everywhere, the queen's guards on high alert.\n\nMorgana meets you in her study. Her face is grim.\n\n'Vespera has accelerated the Convergence,' she says. 'Three days. That's all we have.'\n\nYou present what you've learned: the seven shards, the Void Beast, the true identity of Vespera. Morgana listens in silence.\n\n'Princess Elara,' she finally says. 'I always suspected. The fire, the missing body... she was never found.'\n\nShe looks at you with something like pity. 'You loved her, didn't you? Even then.'\n\nYou don't answer. You don't have to.\n\n'We need to act,' she says. 'Together. Are you with us?'\n\nThe weight of the question settles on your shoulders. One choice. One moment. Everything changes.",
+    "choices": [
+      {"letter": "A", "text": "Join her—full assault on the temple", "leads_to": "THERON_CH2_TEMPLE", "effects": {"combat": 2}, "requires": null},
+      {"letter": "B", "text": "Request more time—gather forces", "leads_to": "THERON_CH2_ALLIES", "effects": {"charisma": 2}, "requires": null},
+      {"letter": "C", "text": "Go alone—speed over numbers", "leads_to": "THERON_CH2_TEMPLE", "effects": {"stealth": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH2_HIDE": {
+    "id": "THERON_CH2_HIDE",
+    "character": "THERON",
+    "description": "You bury the seventh shard in a hidden location—a hollow tree in the ancient forest, marked only in your memory. The void inside you recoils at the hiding, but you resist.\n\nIf no one can use the shard, no one can complete the Convergence. That's what you tell yourself. But the shardcalls to you, whispering promises of power, of peace, of an end to your suffering.\n\nYou leave the forest changed. Lighter, somehow. But alsoempty.\n\nDays pass. The Cult knows you're somewhere, but they can't find you. Morgana's messengers arrive with pleas for help. The Circle offers rewards. Everyone wants the seventh shard.\n\nBut you alone know where it is. And that's a power more dangerous than any magic.\n\nThe question is: when the time comes, will you use it? Or let the world burn?",
+    "choices": [
+      {"letter": "A", "text": "Return to Morgana—join the final battle", "leads_to": "THERON_CH2_TEMPLE", "effects": {"charisma": 1}, "requires": null},
+      {"letter": "B", "text": "Keep the shard—wait for the right moment", "leads_to": "THERON_CH2_WAIT", "effects": {"stealth": 2}, "requires": null},
+      {"letter": "C", "text": "Use it now—become strong enough", "leads_to": "THERON_ENDING_SURVIVOR", "effects": {"void_magic": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH2_WAIT": {
+    "id": "THERON_CH2_WAIT",
+    "character": "THERON",
+    "description": "You wait. Days turn to weeks. The Cult grows desperate—they attack villages, sacrifice children, unleash chaos. The kingdom cries out for a hero.\n\nBut you wait.\n\nThe Circle sends hunters. Morgana demands answers. Even Vespera sends messages: 'I know you have the seventh. Meet me, or more children die.'\n\nStill you wait.\n\nAnd then, on the night of the Convergence, you move. The Cult has gathered all their forces at the temple—all six shards glowing on their altar. Vespera stands ready to complete the ritual.\n\nBut she's missing one thing.\n\nYou.\n\nWith the seventh shard, you can either complete the Convergence yourself—or destroy it forever. The choice, finally, is yours.",
+    "choices": [
+      {"letter": "A", "text": "Complete the Convergence—become the Undying", "leads_to": "THERON_ENDING_KING", "effects": {"void_magic": 5}, "requires": null},
+      {"letter": "B", "text": "Destroy the shards—even the seventh", "leads_to": "THERON_ENDING_REDEEMED", "effects": {"honor": 5}, "requires": null},
+      {"letter": "C", "text": "Claim the power—but keep it contained", "leads_to": "THERON_ENDING_SURVIVOR", "effects": {"void_magic": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH2_TRAIN": {
+    "id": "THERON_CH2_TRAIN",
+    "character": "THERON",
+    "description": "You decide to train the boy—Caden. If you're going to fight the Cult, you need allies. And he has something special: the void in him, just like you.\n\nDays pass in the wilderness, far from prying eyes. You teach him what you know: sword fighting, survival, how to listen to the void without drowning in it.\n\nHe's a quick learner. Too quick, perhaps. The void responds to him strongly, too strongly.\n\n'Uncle Theron,' he asks one night. 'What happens if I lose control?'\n\nYou look at him—his young eyes reflecting starlight—and see what you could become. What you almost became.\n\n'You fight,' you say. 'Every day. Every moment. You never stop fighting.'\n\nHe nods, serious beyond his years. 'Can we save my sister? Can we save everyone?'\n\nYou don't answer. You don't know.\n\nBut you'll try. That's all you can do.",
+    "choices": [
+      {"letter": "A", "text": "Move to the temple—with Caden at your side", "leads_to": "THERON_CH2_TEMPLE", "effects": {"combat": 2}, "requires": null},
+      {"letter": "B", "text": "Contact the Circle—seek their help", "leads_to": "THERON_CH2_CIRCLE", "effects": {"void_magic": 2}, "requires": null},
+      {"letter": "C", "text": "Wait—let Caden rest first", "leads_to": "THERON_CH2_WAIT", "effects": {"humanity": 1}, "requires": null}
+    ]
+  },
+  "THERON_CH2_BATTLE": {
+    "id": "THERON_CH2_BATTLE",
+    "character": "THERON",
+    "description": "The portal pulses with dark energy. Children scream. Cultists chant. And Vespera stands at the center of it all, arms raised, face ecstatic.\n\nYou charge through the chaos, cutting down anyone who stands between you and the altar. The void lends strength to your arm—each strike powerful, precise. But there are too many of them.\n\nAn arrow pierced your shoulder. Then a blade finds your side. You fall—but you won't stop.\n\n'Vespera!' you shout. 'It ends now!'\n\nShe turns. Her eyes—no longer human—fix on you.\n\n'Brother,' she whispers. 'You've come to join us.'\n\nThe portal widens. Something vast and terrible begins to emerge. The Void Beast.\n\nAnd you realize: you can't stop this. Not with force. Not with skill. Only with sacrifice.",
+    "choices": [
+      {"letter": "A", "text": "Sacrifice yourself—seal the Beast", "leads_to": "THERON_ENDING_REDEEMED", "effects": {"honor": 5}, "requires": null},
+      {"letter": "B", "text": "Join her—control the Beast", "leads_to": "THERON_ENDING_BETRAYED", "effects": {"void_magic": 4}, "requires": null},
+      {"letter": "C", "text": "Flee—save who you can", "leads_to": "THERON_ENDING_SURVIVOR", "effects": {"humanity": 1}, "requires": null}
+    ]
+  },
+  "THERON_CH2_RITUAL": {
+    "id": "THERON_CH2_RITUAL",
+    "character": "THERON",
+    "description": "You watch from the shadows as Vespera begins the ritual. The six shards rise from their pedestals, orbiting her like dark moons. Children float above the altar, their eyes closed, their souls being drawn toward the portal.\n\n'Join us,' the Beast whispers. Not to Vespera—to you. 'You are the seventh. You always were.'\n\nThe voidinside you responds. It wants to join—to become part of something greater. But there's another option. A terrible option.\n\nYou could claim all seven shards. Become the Vessel yourself. Control the Beast.\n\nOr destroy everything—including yourself.\n\nThe choice burns in your hand. The seventh shard, hidden until now, glows with sudden power.\n\nVespera screams. 'The seventh! How—'\n\nYou step forward.",
+    "choices": [
+      {"letter": "A", "text": "Claim the power—become Undying", "leads_to": "THERON_ENDING_KING", "effects": {"void_magic": 5}, "requires": null},
+      {"letter": "B", "text": "Destroy the shards—end the threat", "leads_to": "THERON_ENDING_REDEEMED", "effects": {"honor": 5}, "requires": null},
+      {"letter": "C", "text": "Free the children—run", "leads_to": "THERON_ENDING_SURVIVOR", "effects": {"humanity": 2}, "requires": null}
+    ]
+  },
+  "THERON_ENDING_SURVIVOR": {
+    "id": "THERON_ENDING_SURVIVOR",
+    "character": "THERON",
+    "description": "You survive. That's all you've ever done.\n\nThe battle ends without you. The Cult falls—scattered, broken, their ritual incomplete. The Void Beast remains sealed. And you? You walk away, leaving nothing but footprints in the ash.\n\nNo one calls you a hero. No songs are sung in your name. You didn't save the kingdom or destroy the evil. You just lived—one more day, then another, then another.\n\nThe void stays inside you. Sometimes it's quiet. Sometimes it screams. But you've learned to feed it just enough to keep it calm. Other people's pain. Other people's sacrifices.\n\nYou wander the roads, passing through villages that don't know your face, drinking in taverns where no one remembers your name. The knight who failed. The hero who ran.\n\nBut somewhere, in the deepest part of your soul, you know you made the right choice. The world didn't need another monster. It just needed someone to survive.\n\nAnd you did. You always will.\n\nThe Survivor walks on. And the void walks with him.",
+    "ending": "SURVIVOR",
+    "choices": []
+  },
+  "THERON_ENDING_KING": {
+    "id": "THERON_ENDING_KING",
+    "character": "THERON",
+    "description": "You take the throne. Not through birthright or marriage, but through power—the void itself bends to your will.\n\nThe Cult kneels to you. The Circle obeys. Even Morgana bows, though her eyes hold fear. The kingdom is yours—every stone, every soul, every shadow.\n\nYou rule with the void at your command. No one dares rebel. No one can.\n\nBut the throne is cold.Lonely. You sit alone in the throne room, looking down at a world that fears you. Is this what you wanted? Is this what Elara wanted?\n\nSometimes, late at night, you feel the Beast stirring. It wants more. It always wants more. And you realize: you're not the master. You're the Vessel. The cage that holds the darkness.\n\nOne day, the cage will break. The Beast will escape. And everything you've built will fall.\n\nBut not today. Today, you rule. And that's enough.\n\nThe Void King sits upon his throne. And waits.",
+    "ending": "KING",
+    "choices": []
+  },
+  "THERON_ENDING_BETRAYED": {
+    "id": "THERON_ENDING_BETRAYED",
+    "character": "THERON",
+    "description": "You trusted the wrong person. It always ends that way.\n\nMorgana's guards surround you before you reach the altar. Her face is cold, calculating.\n\n'The seventh shard,' she says. 'Give it to me, Theron. This is over.'\n\nYou realize the truth: she was never on your side. She wanted the power for herself—the Convergence, the Beast, everything. You're just a pawn in a bigger game.\n\n'I trusted you,' you say.\n\nShe laughs. 'Trust is for the weak. Power is for those who take it.'\n\nThe guards close in. The void inside you roars—but without the seventh shard, without the ritual, you're just a man. Broken, betrayed, alone.\n\nThey drag you to the temple anyway. Vespera waits, smirking. The three of you—Vespera, Morgana, and the throne—complete the Convergence.\n\nThe Beast rises. And you're the first sacrifice.\n\nThe last thing you see is Elara's face, unchanged after all these years, watching from the shadows. Betrayed by everyone. Saved by no one.\n\nThe Hollow Knight falls. And the void consumes all.",
+    "ending": "BETRAYED",
+    "choices": []
+  },
+  "THERON_CH2_MESSENGER": {
+    "id": "THERON_CH2_MESSENGER",
+    "character": "THERON",
+    "description": "You send a message to Morgana through secret channels—a scout who owes you favors from better days. The boy needs protection, and she has resources you don't.\n\nDays pass. The scout returns with a response: 'Take him to the Sanctuary of the Dawn. They will protect him. But come alone—this is your final test.'\n\nThe Sanctuary is a hidden refuge—a monastery carved into the mountain, far from the Cult's reach. The monks there worship the light, but they're not naive. They know about the void. They've been preparing for this moment.\n\nYou bring Caden to the Sanctuary. The monks accept him, their eyes widening at the void inside him.\n\n'Unusual,' the Head Monk says. 'A child carrying such darkness. Yet he glows with light. Interesting.'\n\nThey teach him. They protect him. And you leave knowing he's safe.\n\nBut the message lingers: this is your final test. Morgana wants something from you. The final confrontation approaches.\n\nYou leave the Sanctuary ready. And afraid.",
+    "choices": [
+      {"letter": "A", "text": "Meet Morgana—accept the test", "leads_to": "THERON_CH2_TEMPLE", "effects": {"strength": 2}, "requires": null},
+      {"letter": "B", "text": "Gather more allies—prepare first", "leads_to": "THERON_CH2_ALLIES", "effects": {"charisma": 2}, "requires": null},
+      {"letter": "C", "text": "Use the secret passage—sneak into temple", "leads_to": "THERON_CH2_RITUAL", "effects": {"stealth": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH2_ALLIES": {
+    "id": "THERON_CH2_ALLIES",
+    "character": "THERON",
+    "description": "You send word through the kingdom: Theron Ashford needs help. The old contacts respond—mercenaries, rogue mages, knights who never stopped believing.\n\nThey gather at the old rendezvous point: a ruined fortress in the hills. Your old team is there—Garreth, Brynn, Marcus—and new faces too. A powerful light mage named Sera. An assassin called Ghost. A veteran knight named Aldric, who served your father.\n\n'Twenty-three of us,' Garreth reports. 'All experienced. All ready to die if we have to.'\n\nYou look at them—these people who believe in you, who would follow you into darkness—and feel something you haven't felt in years: hope.\n\n'I won't ask you to die,' you say. 'I ask you to fight. To win. To end this.'\n\nThey roar their approval.\n\nThe final assault begins. And this time, you're not alone.",
+    "choices": [
+      {"letter": "A", "text": "Direct assault—overwhelming force", "leads_to": "THERON_CH2_BATTLE", "effects": {"combat": 3}, "requires": null},
+      {"letter": "B", "text": "Infiltration—silent strike", "leads_to": "THERON_CH2_RITUAL", "effects": {"stealth": 2}, "requires": null},
+      {"letter": "C", "text": "Distraction—divide their forces", "leads_to": "THERON_CH2_BATTLE", "effects": {"charisma": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH2_PRISON": {
+    "id": "THERON_CH2_PRISON",
+    "character": "THERON",
+    "description": "You play along. They move you to better accommodations—a cell with actual furniture, meals that aren't poisoned. They're waiting for something. The ritual, perhaps.\n\nThe other prisoners are there: nobles, knights, even a few mages. Vespera's guests for the Convergence.\n\n'They're going to sacrifice us,' a young nobleman says. 'All of us. To power the portal.'\n\nYou nod. You already know.\n\nBut they've made a mistake: they put you in with other prisoners. And you know how to escape. More importantly, you know how to inspire others to escape.\n\n'Listen,' you whisper. 'There's a plan. When the ritual begins, we move. Fast. Together.'\n\nThey listen. They believe.\n\nThe night of the Convergence approaches. And your plan is ready.\n\nThe question is: can you escape, or will you need to sacrifice yourself to save the others?",
+    "choices": [
+      {"letter": "A", "text": "Escape during the ritual—save everyone", "leads_to": "THERON_ENDING_REDEEMED", "effects": {"honor": 3}, "requires": null},
+      {"letter": "B", "text": "Use the void—become their weapon", "leads_to": "THERON_ENDING_KING", "effects": {"void_magic": 3}, "requires": null},
+      {"letter": "C", "text": "Sacrifice yourself—stop the ritual", "leads_to": "THERON_ENDING_REDEEMED", "effects": {"honor": 5}, "requires": null}
+    ]
+  },
+  "THERON_CH2_MESSAGE": {
+    "id": "THERON_CH2_MESSAGE",
+    "character": "THERON",
+    "description": "You reach into the void—the darkness inside you that you've tried to ignore for so long. It responds immediately, eager to be used.\n\nMorgana's voice comes through the darkness, clear as a bell: 'Theron? Is that you?'\n\n'Listen,' you say. 'The Cult has me. The ritual is three days away. Get to the temple. Bring everyone.'\n\n'I can't—the guards—' she starts, then pauses. 'Wait. You escaped? How?'\n\n'The void,' you say. 'It wants me to use it. And I think it's time.'\n\nA long silence. Then: 'Three days. We'll be there. And Theron? Thank you.'\n\nThe connection fades. But something has changed: you understand now that the void isn't your enemy. It's a tool. A weapon.\n\nAnd you're ready to use it.\n\nThe final battle approaches. And you're going to win.",
+    "choices": [
+      {"letter": "A", "text": "Wait for backup—strategic advantage", "leads_to": "THERON_CH2_BATTLE", "effects": {"combat": 2}, "requires": null},
+      {"letter": "B", "text": "Strike now—surprise attack", "leads_to": "THERON_CH2_RITUAL", "effects": {"stealth": 2}, "requires": null},
+      {"letter": "C", "text": "Use the void more—to become stronger", "leads_to": "THERON_ENDING_KING", "effects": {"void_magic": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH4_SUMMIT": {
+    "id": "THERON_CH4_SUMMIT",
+    "character": "THERON",
+    "description": "Six months after the Cult's defeat, the kingdom gathers for the Treaty of Crownhaven—the most significant diplomatic gathering in a generation. Allied kingdoms, distant empires, and mountain clans all send representatives to discuss peace. But Theron senses something wrong in the shadows.\n\nYou've spent months rebuilding. The kingdom recovered from the Cult's chaos, but new threats emerge. Reports speak of the Hollow King—a figure who commands the remaining Cultists, seeking revenge for Vespera's fall. They're gathering at the border, waiting for the Treaty's confusion to strike.\n\nMorgana meets you in the war room. Her face is grim.\n\n'They mean to assassinate the foreign delegates,' she whispers. 'To plunge the kingdom into war while we're weakest. We need someone we can trust—and there's no one I trust more than you.'\n\nShe hands you command of the Queen's Guard. But the choice is yours: how do you defend a kingdom that's still learning to trust again?",
+    "choices": [
+      {"letter": "A", "text": "Lead the defense personally—show strength", "leads_to": "THERON_CH4_DEFEND", "effects": {"combat": 2}, "requires": null},
+      {"letter": "B", "text": "Infiltrate the enemy—uncover their plan", "leads_to": "THERON_CH4_INFILTRATE", "effects": {"stealth": 2}, "requires": null},
+      {"letter": "C", "text": "Rally the armies—unite the kingdoms", "leads_to": "THERON_CH4_RALLY", "effects": {"charisma": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_DEFEND": {
+    "id": "THERON_CH4_DEFEND",
+    "character": "THERON",
+    "description": "You take command of the Queen's Guard, standing visible at the summit. Your gray cloak bears the kingdom's sigil once more—a symbol you thought you'd never wear again. But looks deceive, and you've learned that presentation matters.\n\nThe delegates arrive under heavy guard. King Aldric of the Mountain Clans. Empress Vanya of the Eastern Empire. Even the distant Frost Giants send ambassadors. Each brings their own weapons, their own agendas.\n\n'Ashford,' Empress Vanya says as she passes. 'I heard you died.'\n\n'Almost,' you reply. 'There's a difference.'\n\nThe first day passes without incident. But on the second night, the attack comes—not from outside, but from within. Cultists disguised as servants emerge from the shadows, blades gleaming.\n\nYou're ready for them.",
+    "choices": [
+      {"letter": "A", "text": "Cut them down—show no mercy", "leads_to": "THERON_CH4_BATTLE_1", "effects": {"combat": 3}, "requires": null},
+      {"letter": "B", "text": "Protect the delegates—escort them to safety", "leads_to": "THERON_CH4_ESCORT", "effects": {"charisma": 2}, "requires": null},
+      {"letter": "C", "text": "Capture their leader—learn the plan", "leads_to": "THERON_CH4_CAPTURE", "effects": {"intelligence": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_INFILTRATE": {
+    "id": "THERON_CH4_INFILTRATE",
+    "character": "THERON",
+    "description": "You abandon the Queen's Guard uniform for peasant's rags. A hood, a bent back, a convincing limp. You slip into the lower city where the Cultists hide.\n\nThey gather in an abandoned warehouse near the harbor. You listen through cracks in the walls.\n\n'The Hollow King demands blood,' a voice hisses. 'The summit must fail. When the delegates die, the kingdoms will war. And from that chaos, we rise.'\n\nYou learn their plan: simultaneous assassination attempts during the treaty signing. Poison in the wine. Hidden blades. A fire started by 'accident.'\n\nBut something catches your attention—the Hollow King. A new leader, rising from Vespera's ashes. And they're meeting tonight at the old temple. You could end this now—or learn more.\n\nThe choice burns in your mind.",
+    "choices": [
+      {"letter": "A", "text": "Attack the meeting—eliminate the leadership", "leads_to": "THERON_CH4_ASSASSINATE", "effects": {"combat": 3}, "requires": null},
+      {"letter": "B", "text": "Continue infiltrating—gather more intelligence", "leads_to": "THERON_CH4_DISCOVER", "effects": {"intelligence": 3}, "requires": null},
+      {"letter": "C", "text": "Return to Morgana—share what you learned", "leads_to": "THERON_CH4_WARNING", "effects": {"charisma": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_RALLY": {
+    "id": "THERON_CH4_RALLY",
+    "character": "THERON",
+    "description": "You approach the foreign delegates with a different strategy. Rather than guarding them, you unite them. Each kingdom brings warriors—why not combine their forces?\n\n'You have grievances,' you tell King Aldric. 'The Empire covets your mountains. But the Cult threatens all of us. Until we stand together, we fall separately.'\n\nThe mountain king grunts. 'Easy words, knight. Your kingdom burned our villages twice.'\n\n'Vespera burned them,' you reply. 'The same Cult that killed my princess. The same darkness that would consume your throne. I've walked in that shadow—I know its face. Let me show you how to fight it.'\n\nWord spreads. The delegates gather, not for a treaty, but for an alliance. Empress Vanya speaks first: 'The knight speaks true. My ancestors' bones lie in Cult sacrifice pits. If we cannot forgive, we can at least synchronize our blades.'\n\nBy nightfall, you've forged something new: the United Coalition against the Hollow King.",
+    "choices": [
+      {"letter": "A", "text": "Command the combined forces—lead the assault", "leads_to": "THERON_CH4_COALITION", "effects": {"combat": 3}, "requires": null},
+      {"letter": "B", "text": "Plan the defense—strategize together", "leads_to": "THERON_CH4_STRATEGY", "effects": {"intelligence": 2}, "requires": null},
+      {"letter": "C", "text": "Seek the Hollow King directly—end this", "leads_to": "THERON_CH4_CHALLENGE", "effects": {"strength": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_BATTLE_1": {
+    "id": "THERON_CH4_BATTLE_1",
+    "character": "THERON",
+    "description": "The Cultists strike without warning. Blades flash in the torchlight. Delegates scream. But you've trained for this—not as a knight, but as a survivor.\n\nYour blade takes the first attacker through the throat. The second falls to your counter. The third never sees your strike.\n\n'Get the delegates out!' you shout to the Queen's Guard. 'Now!'\n\nMore Cultists pour through the doors. Twenty. Then thirty. They're not attacking randomly—they're targeting specific delegates. Someone inside told them who to kill.\n\nAn arrow whizzes past your ear. Then another. You track the archer to a balcony above. A woman in black, her face hidden by a hood. The Hollow Knight's assassin.\n\nYou could chase her—or finish the ground battle. Both choices carry weight.",
+    "choices": [
+      {"letter": "A", "text": "Chase the assassin—prevent more deaths", "leads_to": "THERON_CH4_PURSUIT", "effects": {"stealth": 3}, "requires": null},
+      {"letter": "B", "text": "Hold the line—protect everyone", "leads_to": "THERON_CH4_DEFENSE", "effects": {"combat": 3}, "requires": null},
+      {"letter": "C", "text": "Find the traitor—someone betrayed you", "leads_to": "THERON_CH4_TRAITOR", "effects": {"intelligence": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_ESCORT": {
+    "id": "THERON_CH4_ESCORT",
+    "character": "THERON",
+    "description": "You grab Empress Vanya and King Aldric, dragging them toward the side exit. TheCultists part around you—but more come.\n\n'Your Majesty,' you growl, 'we need to move. Now.'\n\nThe empress is pale but composed. 'I left my guards inside—this is betrayal.'\n\n'No,' you say. 'It's war. And we're losing.'\n\nYou navigate the palace's secret passages—tunnels built during the old king's time for exactly this situation. Behind you, sounds of battle grow distant.\n\nBut the passages have another purpose. You emerge in the treasury vault—and find it empty. Someone already took the royal gold.\n\n'They knew,' you breathe. 'They knew the passages. Someone in the palace—'\n\nA blade presses against your neck.\n\n'Three guesses who,' a voice whispers.",
+    "choices": [
+      {"letter": "A", "text": "Fight back—force your way free", "leads_to": "THERON_CH4_ESCAPE", "effects": {"strength": 3}, "requires": null},
+      {"letter": "B", "text": "Negotiate—offer something in exchange", "leads_to": "THERON_CH4_DEAL", "effects": {"charisma": 2}, "requires": null},
+      {"letter": "C", "text": "Use the void—show your true power", "leads_to": "THERON_CH4_POWER", "effects": {"void_magic": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH4_CAPTURE": {
+    "id": "THERON_CH4_CAPTURE",
+    "character": "THERON",
+    "description": "You disable rather than kill—your blade strikes pressure points, dropping Cultists like ragdolls. One remains: the leader, a man with hollow eyes and a familiar scar.\n\n'Delegate Mercer,' you realize. 'You were at the fire.'\n\nHe laughs—hollow, empty. 'I was. When your precious princess burned. I pulled her from the flames—and she pulled me into the void.'\n\nHis eyes gleam with darkness. 'The Hollow King offered me purpose. A new family. And now you'll die for interrupting—'\n\nYou strike before he finishes. The blade finds his shoulder—but he transforms, becoming shadow itself.\n\n'Verspera was weak,' his voice echoes. 'I will succeed where she failed. The kingdoms will burn. And you'll watch.'\n\nHe dissolves into smoke, escaping. But not before you catch something: a symbol on his hand. The mark of the Undying.",
+    "choices": [
+      {"letter": "A", "text": "Follow—even into the darkness", "leads_to": "THERON_CH4_CHASE", "effects": {"stealth": 2}, "requires": null},
+      {"letter": "B", "text": "Return to the summit—protect delegates", "leads_to": "THERON_CH4_DEFEND", "effects": {"combat": 2}, "requires": null},
+      {"letter": "C", "text": "Research the Undying—what are they?", "leads_to": "THERON_CH4_RESEARCH", "effects": {"intelligence": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH4_ASSASSINATE": {
+    "id": "THERON_CH4_ASSASSINATE",
+    "character": "THERON",
+    "description": "The old temple burns with shadow-fire—the same flames that once consume your memories. You slip through the smoke, becoming one with darkness.\n\nThe Hollow King addresses his followers: twelve Cultists remaining, all that survived the previous defeat. Their voices speak of revenge, of blood, of a new Convergence.\n\n'We failed because Vespera hesitated,' the Hollow King says. 'She felt sentiment. We will not make her mistake.'\n\nYou count the guards. Eight between you and the throne. The leader stands alone—a figure in black armor, their face hidden by a helm. They carry no weapon, but darkness radiates from them.\n\n'Come out, Theron,' the Hollow King says. 'I know you're here. I've been waiting.'\n\nYour cover blown, you adopt—but you have one advantage: surprise.",
+    "choices": [
+      {"letter": "A", "text": "Strike now—end him before he activates", "leads_to": "THERON_CH4_STRIKE", "effects": {"combat": 4}, "requires": null},
+      {"letter": "B", "text": "Challenge him—learn his identity", "leads_to": "THERON_CH4_REVEAL", "effects": {"intelligence": 2}, "requires": null},
+      {"letter": "C", "text": "Offer surrender—get close, then strike", "leads_to": "THERON_CH4_TRICK", "effects": {"charisma": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_DISCOVER": {
+    "id": "THERON_CH4_DISCOVER",
+    "character": "THERON",
+    "description": "You spend three days infiltrating the Cult's remaining cells. Each one reveals more about the Hollow King—and more about your own past.\n\nThey worship a new entity: not the Void Beast, but something older. A god that existed before the Sundering, sealed away but never destroyed. The Hollow King plans to free it—and use its power to reshape reality.\n\n'Vespera was a priestess,' one Cultist confesses under your blade. 'The Hollow King was something else. A knight who found the original seal. Who touched the god's prison.'\n\nYou realize the truth: your path and the Hollow King's have crossed before. He was there at the fire. He was there when Princess Elara died. And now he's here to finish what Vespera started.\n\nBut you've learned more than weakness. You've learned his weakness: the original seal, hidden in the old cathedral's basement. Destroy it, and the Hollow King dies with it.",
+    "choices": [
+      {"letter": "A", "text": "Destroy the seal—end him forever", "leads_to": "THERON_CH4_SEAL", "effects": {"strength": 3}, "requires": null},
+      {"letter": "B", "text": "Use the seal—claim his power", "leads_to": "THERON_CH4_CLAIM", "effects": {"void_magic": 4}, "requires": null},
+      {"letter": "C", "text": "Bring evidence to Morgana—let the kingdom decide", "leads_to": "THERON_CH4_EVIDENCE", "effects": {"charisma": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_WARNING": {
+    "id": "THERON_CH4_WARNING",
+    "character": "THERON",
+    "description": "You return to Morgana with everything you've learned. Every Cultist location. Every assassin. Every detail of the assassination plot.\n\nShe listens in silence. Then she embraces you—a rare gesture from the cold advisor.\n\n'You've changed, Theron. The man who walked into that warehouse wasn't the same as the one who left.'\n\nYou don't answer. She's right—but you don't know if the change is good.\n\n'We have three days to prepare,' she says. 'And I have one request.'\n\nShe hands you a vial—ancient, glowing faintly with light. 'Poison. For the Hollow King. One drop on his skin, and he'll dissolve.'\n\nBut is murder justice? Or is it just another shadow in your growing darkness?",
+    "choices": [
+      {"letter": "A", "text": "Take the poison—use any means necessary", "leads_to": "THERON_CH4_POISON", "effects": {"stealth": 3}, "requires": null},
+      {"letter": "B", "text": "Refuse—fight honorably", "leads_to": "THERON_CH4_HONOR", "effects": {"honor": 2}, "requires": null},
+      {"letter": "C", "text": "Study the poison—understand your enemy", "leads_to": "THERON_CH4_ANALYZE", "effects": {"intelligence": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_PURSUIT": {
+    "id": "THERON_CH4_PURSUIT",
+    "character": "THERON",
+    "description": "You chase the assassin through the palace rooftops. She moves like smoke—fast, but you're faster. Your blade catches her cloak, tearing it away.\n\nShe turns—and reveals a face you know. Young. Almost familiar.\n\n'Uncle Theron,' she breathes. 'You don't remember me. But I remember you.'\n\nCaden. The boy from the village—when he wasn't a boy anymore. Grown, transformed, twisted by the void inside him.\n\n'Lily,' you realize. 'The little sister. What did they do to you?'\n\nShe laughs—a hollow sound. 'They made me strong. They made me purpose. They made me something other than another child the Cult sacrifice.'\n\nHer blades extend—void-touched weapons that drink light. 'And now I kill for them. Because this is what I am.'\n\nYou could strike—or you could talk. The choice determines everything.",
+    "choices": [
+      {"letter": "A", "text": "Talk her down—remind her of who she was", "leads_to": "THERON_CH4_REDEMPTION", "effects": {"charisma": 3}, "requires": null},
+      {"letter": "B", "text": "Fight—show her true strength", "leads_to": "THERON_CH4_DUEL", "effects": {"combat": 4}, "requires": null},
+      {"letter": "C", "text": "Flee—return when stronger", "leads_to": "THERON_CH4_WOUNDED", "effects": {"stealth": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_DEFENSE": {
+    "id": "THERON_CH4_DEFENSE",
+    "character": "THERON",
+    "description": "You stand in the doorway, blocking the Cultists like a living wall. None pass—not without paying in blood.\n\nThe Queen's Guard rallies around you. Garreth, still loyal after everything. Brynn, still deadly. And new faces—knights who believe in what the kingdom could be.\n\n'For the kingdom!' you shout. And they follow.\n\nThe battle lasts an hour. When it's over, thirty Cultists lie dead. The delegates are safe. And you've earned something you thought lost: the respect of honored knights.\n\nBut the war isn't over. The Hollow King still lives. And now he knows you're here.\n\nMorgana finds you afterward, wounded but standing.\n\n'The delegates want to speak with you,' she says. 'They want to make you their champion. The warrior who defended the summit.'\n\nYou look at your hands—covered in blood, yours and theirs. Is this what you want? Or is it just another cage?",
+    "choices": [
+      {"letter": "A", "text": "Accept—the kingdom needs a champion", "leads_to": "THERON_CH5_CHAMPION", "effects": {"charisma": 3}, "requires": null},
+      {"letter": "B", "text": "Decline—continue hunting the Hollow King", "leads_to": "THERON_CH5_HUNT", "effects": {"stealth": 2}, "requires": null},
+      {"letter": "C", "text": "Rest—there will be time for war later", "leads_to": "THERON_CH5_REST", "effects": {"humanity": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_TRAITOR": {
+    "id": "THERON_CH4_TRAITOR",
+    "character": "THERON",
+    "description": "You search the chaos for the betrayer. Someone warned the Cult—someone inside the palace. The only person who knew the defense plan was—\n\nMorgana lies on the floor, a blade in her chest. Dying.\n\n'The captain,' she gasps. 'Captain Vaughn. He was paid—too much gold—'\n\nYou catch her hand. 'Save your strength—'\n\n'Vespera's brother,' she continues. 'He survived the fire. He blamed you. He's going to kill the Queen—'\n\nShe dies in your arms. And you realize: everything has changed. The man you failed to save that night—he's back for revenge.\n\nQueens Seraphina is in danger. And you've only minutes to save her.",
+    "choices": [
+      {"letter": "A", "text": "Race to the Queen—save her at any cost", "leads_to": "THERON_CH4_RESCUE", "effects": {"combat": 4}, "requires": null},
+      {"letter": "B", "text": "Find Captain Vaughn—end the betrayal", "leads_to": "THERON_CH4_JUSTICE", "effects": {"strength": 3}, "requires": null},
+      {"letter": "C", "text": "Protect the delegates—prevent wider war", "leads_to": "THERON_CH4_PROTECT", "effects": {"charisma": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_COALITION": {
+    "id": "THERON_CH4_COALITION",
+    "character": "THERON",
+    "description": "The United Coalition stands ready—three kingdoms united under your command. It's the largest force assembled since the old king's time.\n\n'Three armies,' King Aldric says. 'Yours, mine, and the Empire's. All answer to one knight. This is unprecedented.'\n\n'Precedents are made to be broken,' you reply.\n\nThe assault begins at dawn. You lead the charge through the Cult's border fortifications—three hundred soldiers behind you, all united in purpose. The Cultists fall like wheat before the scythe.\n\nBut the Hollow King doesn't fight. He retreats—always retreats—drawing you deeper into his territory. And you realize: this is a trap.\n\n'Ancient wards,' Empress Vanya warns. 'We're inside something terrible.'\n\nThe ground shakes. From the earth rise shadows—not Cultists, but something older. The seals breaking. The god awakening.\n\nAnd you know: only you can stop it. Your void against its void. Your darkness against its darkness.",
+    "choices": [
+      {"letter": "A", "text": "Sacrifice yourself—seal the god again", "leads_to": "THERON_ENDING_LEGEND", "effects": {"honor": 5}, "requires": null},
+      {"letter": "B", "text": "Claim the god's power—become its vessel", "leads_to": "THERON_ENDING_COMMANDER", "effects": {"void_magic": 5}, "requires": null},
+      {"letter": "C", "text": "Flee—save who you can", "leads_to": "THERON_ENDING_LEAVE", "effects": {"humanity": -2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_STRATEGY": {
+    "id": "THERON_CH4_STRATEGY",
+    "character": "THERON",
+    "description": "You gather the kingdom's finest minds—not for war, but for wisdom. Mages, strategists, even the Circle of Mages offers aid.\n\n'The Hollow King seeks the original seal,' Archmage Seraphina says. 'The prison of the god that existed before creation. If he breaks it, everything ends.'\n\n'But if we strengthen it,' you counter, 'we could trap him. End the threat permanently.'\n\nThe plan takes shape: a reverse Convergence. Instead of freeing the god, bind the Hollow King to the seal. Make him part of the prison.\n\n'But someone must enter the seal,' the Archmage warns. 'Someone with the void inside them. Someone strong enough to contain both the god and the Hollow King.'\n\nThey look at you. They always look at you.\n\n'How long?' you ask.\n\n'Until the next sunrise. The window is small, Theron. One chance.'\n\nYou have one week to prepare. One week to say goodbye. One week to decide if you're willing to become the prison.",
+    "choices": [
+      {"letter": "A", "text": "Accept—become the eternal prison", "leads_to": "THERON_CH5_PRISON", "effects": {"honor": 4}, "requires": null},
+      {"letter": "B", "text": "Find another way—there has to be one", "leads_to": "THERON_CH5_WAY", "effects": {"intelligence": 3}, "requires": null},
+      {"letter": "C", "text": "Refuse—let someone else decide", "leads_to": "THERON_CH5_REFUSE", "effects": {"humanity": -2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_CHALLENGE": {
+    "id": "THERON_CH4_CHALLENGE",
+    "character": "THERON",
+    "description": "You ride alone to the Hollow King's camp. Twelve miles through enemy territory, no backup, no retreat. Just you and the darkness you've learned to command.\n\nThey let you pass—word spreads of the knight who walks through shadow. You enter the Hollow King's tent unannounced.\n\nHe sits alone, writing. His face—hidden until now—shocks you to your core.\n\n'Delegate Marcus,' you breathe. 'The Queen's Advisor. You were at the fire.'\n\nHe smiles. It's wrong—too familiar. 'I was. I pulled your princess from the flames. And I pulled something else from them: the god that sleeps beneath reality.'\n\nHe stands. 'You're stronger than Vespera ever was. That's why I let you in. Join me, Theron. Together, we can reshape the kingdom. No more lies. No more pretending. Just truth—and darkness.'\n\nHis hand extends. One choice. Everything changes.",
+    "choices": [
+      {"letter": "A", "text": "Accept—become his partner", "leads_to": "THERON_CH5_ALLIANCE", "effects": {"void_magic": 4}, "requires": null},
+      {"letter": "B", "text": "Refuse—and kill him here", "leads_to": "THERON_CH5_DUEL", "effects": {"combat": 4}, "requires": null},
+      {"letter": "C", "text": "Pretend to accept—learn more", "leads_to": "THERON_CH5_TRAITOR", "effects": {"intelligence": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH5_FINAL": {
+    "id": "THERON_CH5_FINAL",
+    "character": "THERON",
+    "description": "The final confrontation comes at Crownhaven's gates. The Hollow King stands with his army—three hundred strong, all that remains of the Cult's power. And before them, you stand alone.\n\nMorgana's voice carries from the walls: 'Theron! The Queen's Guard is behind you!'\n\nBut you don't look back. You've waited for this moment since the fire. Since the princess died. Since you became hollow.\n\n'This ends now,' you call. 'Whatever you are—whatever you claim—I end it.'\n\n\nThe Hollow King laughs. 'You can't kill what's already dead. I'm not the Hollow King, Theron. I'm what you could have become. What you almost became, in that fire. The emptiness that wants to consume everything.'\n\n\nHe draws a blade—void-touched, glowing with ancient darkness. 'And I'm stronger.'\n\nThe battle begins.",
+    "choices": [
+      {"letter": "A", "text": "Fight with everything—win or die", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 5}, "requires": null},
+      {"letter": "B", "text": "Use the void—match his power", "leads_to": "THERON_ENDING_COMMANDER", "effects": {"void_magic": 5}, "requires": null},
+      {"letter": "C", "text": "Talk—find another way", "leads_to": "THERON_CH5_TALK", "effects": {"charisma": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH5_TALK": {
+    "id": "THERON_CH5_TALK",
+    "character": "THERON",
+    "description": "You lower your blade. Not surrender—strategy.\n\n'You were there,' you say. 'At the fire. You pulled her out—you said so. Why?'\n\nThe Hollow King hesitates. 'Because she was already dead. Because the god demands sacrifice.'\n\n'But you survived,' you push. 'Why? What made you different?'\n\nHis armor wavers—shows cracks. Inside, you see something unexpected: fear.\n\n'I felt the void,' he whispers. 'It spoke to me. Showed me what the kingdom really is—built on bones, on lies, on the broken bodies of everyone too weak to fight back.'\n\nHis voice breaks. 'I was weak, Theron. And it fed on my weakness. Now I'm something else—a cage for a god that's dying to escape.'\n\nYou approach slowly. 'There is another way. Let me help you. Together—'\n\nHe looks at you with hollow eyes. 'Can you forgive what I've become?'\n\nThe question hangs in the air. Everything depends on your answer.",
+    "choices": [
+      {"letter": "A", "text": "Forgive—begin the healing", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 4}, "requires": null},
+      {"letter": "B", "text": "Kill him—end the threat", "leads_to": "THERON_ENDING_LEGEND", "effects": {"strength": 4}, "requires": null},
+      {"letter": "C", "text": "Seal him—eternal prison", "leads_to": "THERON_ENDING_LEGEND", "effects": {"honor": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH5_CHAMPION": {
+    "id": "THERON_CH5_CHAMPION",
+    "character": "THERON",
+    "description": "The delegates name you Champion of the United Kingdoms—an honor no knight has held in centuries. But the ceremony is interrupted.\n\n'Hollow King approaches,' a scout cries. 'Ten thousand strong. Bearing down on the capital.'\n\nTen thousand. The entire kingdom's army combined couldn't match that. But you have something they don't: legitimacy, earned in blood and shadow.\n\n'You have three choices,' Empress Vanya says. 'Stand and fight, and we all die. Flee, and the kingdom falls. Or—'\n\n'Or?'\n\n'Or you face him alone. Champion to champion. Knight to Hollow Knight. Winner takes everything.'\n\nThe offer hangs in the air. One duel to end the war. One battle to define the kingdom's future.\n\n'Is honor worth dying for?' she asks.\n\nYou look at your blade. 'Honor is all I have left.'",
+    "choices": [
+      {"letter": "A", "text": "Accept the duel—face the Hollow King", "leads_to": "THERON_CH5_DUEL", "effects": {"combat": 5}, "requires": null},
+      {"letter": "B", "text": "Refuse—fight together as one", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 4}, "requires": null},
+      {"letter": "C", "text": "Flee with the royal family—preserve the bloodline", "leads_to": "THERON_ENDING_LEAVE", "effects": {"humanity": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH5_DUEL": {
+    "id": "THERON_CH5_DUEL",
+    "character": "THERON",
+    "description": "You step forward, alone, onto the field of honor. The Hollow King approaches from the opposite side—ten thousand soldiers watching in silence.\n\nHe removes his helm. Below: the face of Delegate Marcus, twisted by void-touched darkness. But his eyes—his eyes are human.\n\n'You saved me,' he says. 'At the fire. You pulled me out when the building collapsed. I was thirteen. You were nineteen. And you've never remembered.'\n\nThe memory floods back. The boy in the smoke. The brother you couldn't save.\n\n'Elara,' he continues. 'I loved her. And she loved you. And when she died, something in me died too. Now I am hollow—just like you.'\n\nHe raises his blade. 'So let's end this. One last battle. Winner takes the hollow.'\n\nThe combat begins. And it's the hardest fight of your life.",
+    "choices": [
+      {"letter": "A", "text": "Kill him—end the hollow forever", "leads_to": "THERON_ENDING_DEATH", "effects": {"honor": 4}, "requires": null},
+      {"letter": "B", "text": "Spare him—heal the holler together", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 4}, "requires": null},
+      {"letter": "C", "text": "Join him—become the new pair", "leads_to": "THERON_ENDING_LEAVE", "effects": {"void_magic": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH5_REST": {
+    "id": "THERON_CH5_REST",
+    "character": "THERON",
+    "description": "You retreat to the hills above Crownhaven, away from the war, away from the weight. For three days, you do nothing but sleep, eat, and remember.\n\nBut the war doesn't wait. On the fourth morning, the Hollow King's army appears at the gates. And you realize: you've run long enough.\n\nMorgana finds you at dawn. 'The kingdom needs you. One more time. Then you can rest.'\n\nYou look at your hands—the hands of a knight, a survivor, a failed hero who somehow became something more. The void inside you responds to her words. It wants to fight.\n\n'One more battle,' you murmur. 'And then peace.'\n\nShe nods. 'One more battle.'\n\nYou descend from the hills, blade in hand, and face the army. The sun rises behind you—lighting your path to the final showdown.",
+    "choices": [
+      {"letter": "A", "text": "Attack—everything ends now", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 5}, "requires": null},
+      {"letter": "B", "text": "Negotiate—end this without more blood", "leads_to": "THERON_CH5_TALK", "effects": {"charisma": 3}, "requires": null},
+      {"letter": "C", "text": "Wait—let them attack first", "leads_to": "THERON_ENDING_STAY", "effects": {"strength": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH5_HUNT": {
+    "id": "THERON_CH5_HUNT",
+    "character": "THERON",
+    "description": "You abandon the title the delegates offered and return to what you know best: hunting alone in the darkness. The Hollow King retreats north, toward the old borders. And you follow.\n\nThe chase takes weeks. Through the Frozen Wastes, across the Shattered Coast, into territories no kingdom controls. And everywhere you go, you learn more about the enemy—and about yourself.\n\nThe Hollow King isn't just a Cultist. He's a brother—lost in the same fire that took Elara. And he's been waiting for you all this time.\n\nFinally, at the edge of the world, he stops. He turns.\n\n'Finish it,' he says. 'One knight to another. Winner takes the kingdom.'\n\nYou draw your blade. The wind howls. And you realize: everything—every battle, every victory, every failure—has led to this moment.",
+    "choices": [
+      {"letter": "A", "text": "Strike—not for the kingdom, but for yourself", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 5}, "requires": null},
+      {"letter": "B", "text": "Talk—heal the wound that started all this", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 4}, "requires": null},
+      {"letter": "C", "text": "Walk away—let him have his empty throne", "leads_to": "THERON_ENDING_LEAVE", "effects": {"humanity": 2}, "requires": null}
+    ]
+  },
+  "THERON_ENDING_LEGEND": {
+    "id": "THERON_ENDING_LEGEND",
+    "character": "THERON",
+    "description": "You sacrifice yourself to save the kingdom. Not because you have to—but because you finally choose to.\n\nThe Hollow King's blade pierces your chest. But instead of dying, you laugh. Because you expected this. Because this is exactly what you planned.\n\nThe void inside you erupts—not outward, but inward. Into the seal beneath reality. Into the god sleeping there.\n\n'No!' the Hollow King screams. 'What are you doing—'\n\n'Finishing what we started,' you gasp. 'All those years ago. In the fire. In the darkness. This is what we were meant to become: the barrier between the void and everything else.'\n\nYou collapse—but you're not dying. You're becoming something else. Part of the seal. Eternal guardian. The knight who walks in shadow.\n\n\nYou save the kingdom. You save everyone. And in exchange, you give up the life you might have had.\n\n\nThey write songs about you. They build statues in your image. They call you the Legend of the Ash—the knight who chose to become eternalrather than let the darkness win.\n\nAnd somewhere, in the space between worlds, you watch. You protect. And you wait—for the day the void tries to escape again.",
+    "ending": "LEGEND",
+    "choices": []
+  },
+  "THERON_ENDING_STAY": {
+    "id": "THERON_ENDING_STAY",
+    "character": "THERON",
+    "description": "You choose to stay—not in the shadows, but in the light. The kingdom offers you a throne, but you decline. Instead, you take a smaller crown: Commander of the Watch, guardian of the capital's streets.\n\nThe Hollow King—Marcus—becomes your partner. Two broken knights, healing together. The kingdom doesn't trust him, but you do. And in time, they learn to trust him too.\n\nYou marry, years later—a knight named Sera who fought beside you at the summit. Your children grow up knowing darkness and light, shadow and sun. And you teach them what you learned: that the void isn't your enemy. It's a tool. And like all tools, it can be used for good or ill.\n\nThe kingdom flourishes under your watch. Not because you're perfect—but because you tried. Every day, you tried.\n\nYears pass. Then decades. And eventually, you die—not in battle, but in bed, surrounded by grandchildren who know your story.\n\nThey bury you beside Princess Elara—the sister you never forgot. And on your stone, they carve three words:\n\n'He finally chose.'",
+    "ending": "STAY",
+    "choices": []
+  },
+  "THERON_ENDING_LEAVE": {
+    "id": "THERON_ENDING_LEAVE",
+    "character": "THERON",
+    "description": "You walk away from the kingdom. From the crown, from the duty, from everything you fought to protect. The delegates call you a coward. The histories call you a traitor. But you know the truth: you just couldn't do it anymore.\n\nThe roads stretch endlessly before you—each step taking you farther from the life you knew. You wander for years, through kingdoms and empires, across mountains and seas. No one recognizes the gray cloak. No one knows the knight who helped save the summit.\n\nYou become something else: a wandering protector. Not a knight, not a champion—just a traveler who helps where help is needed. A village here, a town there. Small kindnesses instead of grand battles.\n\nThe void stays with you, but it's quieter now. Perhaps it's tired too. Perhaps it just wants to rest.\n\nAnd one day, in a small village at the edge of nowhere, you meet her. A healer named Maya who doesn't ask about your past. Who doesn't care about your failures. Who just sees you.\n\nYou stay. Not because you have to—but because you finally want to.\n\nThe knight's life ends. But Theron's life begins.",
+    "ending": "LEAVE",
+    "choices": []
+  },
+  "THERON_ENDING_DEATH": {
+    "id": "THERON_ENDING_DEATH",
+    "character": "THERON",
+    "description": "You die at Crownhaven's gates, but not before taking the Hollow King with you. The blade through your chest finds his heart. The void inside you burns away his darkness. And in the final moment, you see him clearly—not a monster, but a brother. A child you failed to save.\n\n'Forgive me,' you whisper. And you mean it.\n\nThe kingdom mourns you. Not as a legend or a champion, but as a man who tried. The Queen's Guard carries your body to the old cathedral, where Princess Elara once dreamed of being married. They lay you beside her—not because you earned it, but because you died trying.\n\nThe kingdom calls you the Hero of the Ash—a title you never wanted, never sought. They build a statue in your image, gray cloak and bent blade, standing guard over the capital. Children learn your name in school. Soldiers swear oaths in your memory.\n\nBut you don't see any of it. You're beyond their praise, beyond their blame. In the void, you find somethingunexpected: peace. The first peace you've known since the fire.\n\nAnd you wait. Because perhaps, one day, you'll be needed again. And if you are—if the darkness ever rises again—you'll be ready.\n\nThe knight dies. But the legend doesn't end.",
+    "ending": "DEATH",
+    "choices": []
+  },
+  "THERON_CH4_ESCAPE": {
+    "id": "THERON_CH4_ESCAPE",
+    "character": "THERON",
+    "description": "You twist free, driving your elbow into your attacker's throat. The blade at your neck falls away—but more come.\n\nThree more Cultists emerge from the shadows. Their eyes glow with void light. They're not here to capture—they're here to kill.\n\n'For the Hollow King,' one chants. And they charge.\n\nYou fight dirty—elbows, knees, anything that works. The void lends strength to your limbs. Blood paints the vault walls.\n\nWhen it's over, you stand alone among the bodies. The delegates are gone—fled through another exit. But you've learned something: the conspiracy goes deeper than you thought. Someone in the royal family itself serves the Hollow King.\n\nYou need to find out who.",
+    "choices": [
+      {"letter": "A", "text": "Search the vault—find evidence", "leads_to": "THERON_CH4_EVIDENCE", "effects": {"intelligence": 2}, "requires": null},
+      {"letter": "B", "text": "Chase the Cultists—they know the truth", "leads_to": "THERON_CH4_CHASE", "effects": {"stealth": 3}, "requires": null},
+      {"letter": "C", "text": "Return to the summit—protect the Queen", "leads_to": "THERON_CH4_RESCUE", "effects": {"combat": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH4_DEAL": {
+    "id": "THERON_CH4_DEAL",
+    "character": "THERON",
+    "description": "You raise your hands slowly. 'Wait. I know who you serve—I've met the Hollow King. We have common history.'\n\nThe blade pauses. 'You knew him? Before?'\n\n'Before the void,' you say. 'We both served the kingdom. We both lost everything in that fire. The difference is—I chose to keep fighting. He chose to become the darkness.'\n\nYour words strike something. The Cultist hesitates.\n\n'Join me,' you continue. 'Help me end this. Not for the kingdom—for ourselves. For the children we couldn't save that night.'\n\nLong silence. Then the blade lowers.\n\n'I'll help you find him,' the Cultist says. 'But if you betray me no betrayal. Just justice.''",
+    "choices": [
+      {"letter": "A", "text": "Use the ally—find the Hollow King", "leads_to": "THERON_CH4_CHASE", "effects": {"charisma": 3}, "requires": null},
+      {"letter": "B", "text": "Return to the summit—end the attack first", "leads_to": "THERON_CH4_DEFEND", "effects": {"combat": 2}, "requires": null},
+      {"letter": "C", "text": "Question the ally—who are they really?", "leads_to": "THERON_CH4_QUESTION", "effects": {"intelligence": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_POWER": {
+    "id": "THERON_CH4_POWER",
+    "character": "THERON",
+    "description": "You reach into the void inside you—the darkness that's waited so long to be used. It responds immediately, flooding through your veins like ice water.\n\nYour hands extend shadows that become solid—blades of darkness that punch through your attackers before they can react. The Cultists fall, pierced by their own weapon turned against them.\n\nThe Cultist at your neck screams as darkness consumes him. His body dissolves into shadow—and vanishes.\n\nYou stand in the vault, breathing hard. The void inside you recedes—not gone, but sated. For now.\n\nBut you realize something: using the void like this, you've shown the kingdom your true power. They'll fear you now. They'll call you monster. They'll call you threat.\n\nIs that what you want? Is that who you are?",
+    "choices": [
+      {"letter": "A", "text": "Embrace the void—become what they fear", "leads_to": "THERON_ENDING_COMMANDER", "effects": {"void_magic": 4}, "requires": null},
+      {"letter": "B", "text": "Hide the power—use only when needed", "leads_to": "THERON_CH4_DEFEND", "effects": {"stealth": 2}, "requires": null},
+      {"letter": "C", "text": "Confess to Morgana—she deserves truth", "leads_to": "THERON_CH4_CONFESS", "effects": {"charisma": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_CHASE": {
+    "id": "THERON_CH4_CHASE",
+    "character": "THERON",
+    "description": "You pursue the Hollow King through shadows that respond to your will. Each step takes you miles—through darkness, through time, through reality itself.\n\nHe's fast. But you're faster. Your blade catches his cloak, tearing it away.\n\nHe turns—and reveals a face you know. Young. Familiar.\n\n'Delegate Marcus,' you breathe. 'You survived.'\n\n'I survived,' he says. 'And I became something else. Something stronger. The Hollow King isn't a title—it's a destination. And I've arrived.'\n\n\nHe draws void-touched blades. 'You can't kill me, Theron. I'm what you could have been. What you almost became in that fire. The difference is—I accepted the darkness. You only fight it.'\n\nYour blades meet. The power shakes the ground. And you realize: he's right. He's what you almost became. And he's stronger because he stopped fighting.",
+    "choices": [
+      {"letter": "A", "text": "Accept the darkness—match his power", "leads_to": "THERON_CH5_DUEL", "effects": {"void_magic": 4}, "requires": null},
+      {"letter": "B", "text": "Strike harder—end him with strength", "leads_to": "THERON_CH5_DUEL", "effects": {"combat": 4}, "requires": null},
+      {"letter": "C", "text": "Talk—he needs to understand", "leads_to": "THERON_CH5_TALK", "effects": {"charisma": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_RESEARCH": {
+    "id": "THERON_CH4_RESEARCH",
+    "character": "THERON",
+    "description": "You spend days in the old library, searching for information about the Undying. The books speak of them in whispers—beings who found the original seal, who touched the god at the heart of reality.\n\n'They were knights,' one tome says. 'Before knighthood meant honor. They sealed the god—and became its prison. As long as they live, the god cannot rise.'\n\nYour blood runs cold. The Undying aren't Cultists—they're your ancestors. The same blood that runs in your veins.\n\nAnd that means: you're a potential Undying. If you find the seal and touch it, you could become what they were. A living prison. An eternal guardian.\n\nIs that what you want? Or is it just another form of death?",
+    "choices": [
+      {"letter": "A", "text": "Find the seal—accept your destiny", "leads_to": "THERON_CH5_PRISON", "effects": {"intelligence": 3}, "requires": null},
+      {"letter": "B", "text": "Reject it—there has to be another way", "leads_to": "THERON_CH5_WAY", "effects": {"strength": 2}, "requires": null},
+      {"letter": "C", "text": "Tell Morgana—share the burden", "leads_to": "THERON_CH4_CONFESS", "effects": {"charisma": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_SEAL": {
+    "id": "THERON_CH4_SEAL",
+    "character": "THERON",
+    "description": "The old cathedral's basement is cold—and darker than you remember. But you find it: the original seal, a circle of black stone inscribed with runes older than the kingdom.\n\nYou touch it. The void inside you responds—and the seal flares with light.\n\n'No!' The Hollow King appears from the shadows. 'Don't—it's a trap! The seal doesn't just bind the god—it binds whoever breaks it. You'll die!'\n\n'I know,' you say. 'That's the point.'\n\nYou focus your will. The seal begins to glow brighter—but instead of breaking, it transforms. It integrates—you integrate.\n\nThe void flows into you—or you become it. The difference blurs.\n\nAnd the Hollow King falls to his knees, screaming, as the seal takes him too.",
+    "choices": [
+      {"letter": "A", "text": "Accept the seal—become eternal prison", "leads_to": "THERON_ENDING_LEGEND", "effects": {"honor": 5}, "requires": null},
+      {"letter": "B", "text": "Release him—heal instead of trap", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 4}, "requires": null},
+      {"letter": "C", "text": "Destroy them both—end the threat forever", "leads_to": "THERON_ENDING_DEATH", "effects": {"honor": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH4_CLAIM": {
+    "id": "THERON_CH4_CLAIM",
+    "character": "THERON",
+    "description": "You touch the seal. Power floods through you—not the god's power, but something older. Something that was always waiting for someone strong enough to claim it.\n\nThe Hollow King freezes. 'No—that power is mine—'\n\n'It was never yours,' you say. 'You just touched it. But to really claim it—to become what the Undying were—you need to bind yourself. Permanently.'\n\nThe seal responds to your will. You're not breaking it—you're rewriting it. Instead of binding a god, you're binding yourself. The new Undying. The eternal guardian.\n\nYour body dissolves into shadow—but not into nothing. Into everything. You become part of the kingdom itself. Part of the very ground they walk on.\n\nThe Hollow King cowers. 'What have you become?'\n\n'Everything,' you say. 'Everything and nothing. Light and shadow. The guardian the kingdom deserves.'\n\nYou have power beyond imagination now. The question is: what will you do with it?",
+    "choices": [
+      {"letter": "A", "text": "Rule—the kingdom needs a strong hand", "leads_to": "THERON_ENDING_COMMANDER", "effects": {"void_magic": 5}, "requires": null},
+      {"letter": "B", "text": "Protect—from the shadows forever", "leads_to": "THERON_ENDING_LEGEND", "effects": {"honor": 4}, "requires": null},
+      {"letter": "C", "text": "Release—let the kingdom choose its future", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH4_ANALYZE": {
+    "id": "THERON_CH4_ANALYZE",
+    "character": "THERON",
+    "description": "You study the poison carefully. It's old—and not from this kingdom. The crafting techniques are ancient, from before the Sundering.\n\n'Light extract,' you realize slowly. 'Combined with shadow-essence. It dissolves void-touched beings by reversing their nature. But—'\n\nBut there's more. You recognize the handwriting on the vial. Morgana's handwriting—but Morgana is dead. Replaced, perhaps, from the beginning.\n\nSomeone else has been playing this game. Someone who wanted the Hollow King dead but didn't care who died with him.\n\nYou look at the poison. Then at the door. The Hollow King is out there—but so is the bigger threat.",
+    "choices": [
+      {"letter": "A", "text": "Use the poison—but on the true enemy", "leads_to": "THERON_CH4_REVENGE", "effects": {"stealth": 3}, "requires": null},
+      {"letter": "B", "text": "Throw it away—fight honorably", "leads_to": "THERON_CH4_HONOR", "effects": {"honor": 3}, "requires": null},
+      {"letter": "C", "text": "Keep it—just in case", "leads_to": "THERON_CH4_STRIKE", "effects": {"intelligence": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_HONOR": {
+    "id": "THERON_CH4_HONOR",
+    "character": "THERON",
+    "description": "You return the poison to Morgana. 'I won't use this. If he dies, I want it to be in fair battle—knight to knight.'\n\nShe stares at you. 'Fair? After everything, you talk about fair? He killed hundreds—thousands!'\n\n'Not with poison,' you say. 'And I won't become him.'\n\nHer face hardens. But then—something softens. 'You're either very noble or very foolish. I can never tell with you.'\n\nShe puts away the poison. 'Very well. The Hollow King awaits. And you'll face him your way. Just—don't die. The kingdom needs you.'\n\n'I thought the kingdom needed the Queen's Guard.'\n\n'The kingdom needs Theron Ashford. The man who walks in darkness but refuses to become it.'\n\nYou leave her with those words. And somewhere, they feel like prophecy.",
+    "choices": [
+      {"letter": "A", "text": "Face him—knight to knight", "leads_to": "THERON_CH5_DUEL", "effects": {"combat": 4}, "requires": null},
+      {"letter": "B", "text": "Make one last stand—at the gates", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 4}, "requires": null},
+      {"letter": "C", "text": "Wait for his assault—prepare properly", "leads_to": "THERON_ENDING_STAY", "effects": {"intelligence": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_REDEMPTION": {
+    "id": "THERON_CH4_REDEMPTION",
+    "character": "THERON",
+    "description": "You lower your blade. 'Lily. Caden's sister. You're alive.'\n\nShe hesitates—blades flickering. 'Don't say my name. Don't remember me. I'm not that girl anymore.'\n\n'But you are,' you say softly. 'The void doesn't change who you are—it just amplifies what's already there. And I know what's in your heart.'\n\nHer hands shake. 'You don't know anything—'\n\n'I know you were taken,' you continue. 'Against your will. And I've spent twenty years running from my own darkness. The difference between us is—I finally stopped running.'\n\nYou extend your hand. 'Let me help you. Not as a Cultist—not as a weapon. As Caden's sister. As the girl who deserved better.'\n\nLong silence. Then her blades dissolve.\n\n'I can't,' she whispers. 'If I betray them—they'll kill Caden. They'll kill everyone I love.'\n\n'No,' you promise. 'They'll have to go through me.'\n\nShe takes your hand.",
+    "choices": [
+      {"letter": "A", "text": "Return together—face the Hollow King", "leads_to": "THERON_CH5_CHAMPION", "effects": {"charisma": 4}, "requires": null},
+      {"letter": "B", "text": "Save Caden first—he's the priority", "leads_to": "THERON_CH5_RESCUE", "effects": {"combat": 3}, "requires": null},
+      {"letter": "C", "text": "Infiltrate together—destroy from within", "leads_to": "THERON_CH5_ALLIANCE", "effects": {"stealth": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH4_WOUNDED": {
+    "id": "THERON_CH4_WOUNDED",
+    "character": "THERON",
+    "description": "You flee into the shadows, wounded but alive. The assassin escapes—but you've learned something valuable: she's connected to Caden. To the boy you tried to save.\n\nIn an abandoned cellar, you tend your wounds. The void helps—its darkness knitting your flesh back together.\n\nBut the cost is high. Each healing draws you deeper into the shadow. Each use makes you less human.\n\nYou realize: you can't keep doing this. Eventually, there'll be nothing left of Theron. Just the void wearing his face.\n\nUnless you end it now. Unless you make your final choice.\n\nThe Hollow King awaits. And so does your destiny.",
+    "choices": [
+      {"letter": "A", "text": "Face him one final time", "leads_to": "THERON_CH5_FINAL", "effects": {"combat": 4}, "requires": null},
+      {"letter": "B", "text": "Find Caden—he deserves truth", "leads_to": "THERON_CH5_RESCUE", "effects": {"charisma": 2}, "requires": null},
+      {"letter": "C", "text": "Accept the void—become Undying", "leads_to": "THERON_ENDING_COMMANDER", "effects": {"void_magic": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH4_RESCUE": {
+    "id": "THERON_CH4_RESCUE",
+    "character": "THERON",
+    "description": "You race through palace passages, knowing exactly where the Queen hides. The traitor—Captain Vaughn—won't reach her.\n\nBut he does. He's waiting in her chambers, blade drawn, face twisted.\n\n'Ashford,' he breathes. 'I should have known. Always the hero, always—'\n\nYou don't let him finish. Your blade takes him through before he can react.\n\nThe Queen—young, frightened, but brave—looks at you from behind her desk.\n\n'Thank you,' she whispers. 'I know what happened—what you did. My mother told me. The fire, the princess, all of it.'\n\nShe stands. 'I'm making you my Champion. Not just for this—but for everything.'\n\nShe's offering you everything: power, legitimacy, redemption. But can you accept?",
+    "choices": [
+      {"letter": "A", "text": "Accept—become her Champion", "leads_to": "THERON_CH5_CHAMPION", "effects": {"charisma": 4}, "requires": null},
+      {"letter": "B", "text": "Decline—continue as you are", "leads_to": "THERON_ENDING_STAY", "effects": {"honor": 3}, "requires": null},
+      {"letter": "C", "text": "Request time—to think", "leads_to": "THERON_CH5_REST", "effects": {"intelligence": 1}, "requires": null}
+    ]
+  },
+  "THERON_CH4_JUSTICE": {
+    "id": "THERON_CH4_JUSTICE",
+    "character": "THERON",
+    "description": "You follow the trail of betrayal to Captain Vaughn's quarters. He waits for you, sword drawn, face calm.\n\n'You killed her,' he says. 'Morgana. I saw the body.'\n\n'He killed her,' you correct. 'The Hollow King. I'm here to stop what comes next.'\n\nVaughn laughs. 'You don't get it. Morgana was the Hollow King's. Always was. The Cult doesn't just infiltrate—they become the very thing they destroy. That's how it works.'\n\nHe raises his blade. 'And now—no one can stop him. The kingdom falls tonight. And you die with it.'\n\nYou realize the truth: he's not a Cultist. He's something worse: a man who's given up on everything. Someone who wants to watch the world burn.\n\nAnd you know exactly how he feels.",
+    "choices": [
+      {"letter": "A", "text": "Kill him—quick and quiet", "leads_to": "THERON_CH4_RESCUE", "effects": {"combat": 3}, "requires": null},
+      {"letter": "B", "text": "Talk him down—understand first", "leads_to": "THERON_CH4_TALK_DOWN", "effects": {"charisma": 2}, "requires": null},
+      {"letter": "C", "text": "Capture him—let the kingdom judge", "leads_to": "THERON_CH4_TRIAL", "effects": {"intelligence": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH4_PROTECT": {
+    "id": "THERON_CH4_PROTECT",
+    "character": "THERON",
+    "description": "You abandon the Queen—for now—and focus on the delegates. If they die, the kingdom falls into war. If they live, there's still hope.\n\nEscorting them through secret passages, you navigate the chaos. The Cultists are everywhere—but you know this palace better than they do.\n\n'Why are you helping us?' King Aldric asks. 'After everything—'\n\n'Because someone has to,' you say. 'And I'm still here.'\n\nThe delegates reach safety—the harbor, where ships wait to take them away. The kingdom will survive.\n\nBut in the distance, you see flames rising from the palace. The Hollow King succeeded, at least partially. And now he comes for you.\n\nYou have one choice: run with the delegates, or face what's coming.",
+    "choices": [
+      {"letter": "A", "text": "Stay—face the Hollow King", "leads_to": "THERON_CH5_FINAL", "effects": {"combat": 4}, "requires": null},
+      {"letter": "B", "text": "Flee—live to fight again", "leads_to": "THERON_ENDING_LEAVE", "effects": {"humanity": 2}, "requires": null},
+      {"letter": "C", "text": "Fight together—united", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH5_PRISON": {
+    "id": "THERON_CH5_PRISON",
+    "character": "THERON",
+    "description": "You enter the seal willingly—not to break it, but to become it. The god inside stirs, sensing your presence.\n\n'Another knight,' it whispers. 'Another cage. Are you stronger than the last?'\n\n'I don't know,' you admit. 'But I'll try harder.'\n\nThe seal closes around you—and it's not death. It's something else: eternalloneliness, but also eternal purpose. You become the guardian you've always been meant to be.\n\nAbove, the kingdom survives. The Hollow King falls. The god stays sealed.\n\nAnd you watch—you always watch—for the day when the darkness tries again.\n\n\nBut that day—if it comes—you'll be ready.",
+    "choices": [
+      {"letter": "A", "text": "Accept—you are the prison now", "leads_to": "THERON_ENDING_LEGEND", "effects": {"honor": 5}, "requires": null},
+      {"letter": "B", "text": "Wait—eternity is long", "leads_to": "THERON_ENDING_LEAVE", "effects": {"humanity": 2}, "requires": null},
+      {"letter": "C", "text": "Find release—in the void you are one", "leads_to": "THERON_ENDING_COMMANDER", "effects": {"void_magic": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH5_WAY": {
+    "id": "THERON_CH5_WAY",
+    "character": "THERON",
+    "description": "You refuse to accept the Archmage's plan. There has to be another way—something that doesn't require sacrifice.\n\nYou research for days, barely sleeping. And you find it: an old technique from the Sundering. The original Undying didn't become prisons—they became seals. There's a difference.\n\nA seal can be broken. A prison cannot. And the secret is: you don't become the seal—you become its guardian. You hold it, but you're not bound to it.\n\n'You can do this,' the Archmage realizes. 'You're not becoming the prison—you're becoming its key.'\n\nThe Hollow King attacks. But this time, you're ready. Not as a sacrifice, but as something new: a knight who controls his own destiny.",
+    "choices": [
+      {"letter": "A", "text": "Face him—as yourself", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 5}, "requires": null},
+      {"letter": "B", "text": "Talk—end this without blood", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 4}, "requires": null},
+      {"letter": "C", "text": "Seal him—but let yourself survive", "leads_to": "THERON_ENDING_LEGEND", "effects": {"honor": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH5_REFUSE": {
+    "id": "THERON_CH5_REFUSE",
+    "character": "THERON",
+    "description": "You refuse to become the prison. Not because you're afraid—but because you won't accept a choice made under pressure.\n\n'Find someone else,' you tell the Archmage. 'If this is the only way, then wait. Let the Hollow King break the seal. Let the god rise. And then—let us stop it properly.'\n\nShe stares. 'You don't understand—what you're suggesting could destroy everything.'\n\n'Or it could be the only way to beat him. He wants to free the god. Let him. And then kill him while he tries. While he's vulnerable.'\n\nThe plan is dangerous. Insanely so. But it's also the only plan that doesn't require your permanent sacrifice.\n\nThe Hollow King attacks. And you meet him—not as a prisoner, but as a knight with nothing to lose.",
+    "choices": [
+      {"letter": "A", "text": "Kill him when vulnerable", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 4}, "requires": null},
+      {"letter": "B", "text": "Talk him down at the last moment", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 4}, "requires": null},
+      {"letter": "C", "text": "Seize the power for yourself", "leads_to": "THERON_ENDING_COMMANDER", "effects": {"void_magic": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH5_ALLIANCE": {
+    "id": "THERON_CH5_ALLIANCE",
+    "character": "THERON",
+    "description": "You accept the Hollow King's hand. He smiles—it's almost human.\n\n'You chose wisely,' he says. 'Together, we can reshape everything. No more lies. No more pretending. Just—truth.'\n\nHis power flows into you. Your power flows into him. The void combines—the two halves become one.\n\nAnd you see it: everything. The truth about the kingdom. About Elara. About the fire. It wasn't random chaos—it was ritual sacrifice. The queen's council killed the king, and they've been covering it up ever since.\n\nThe Hollow King—Marcus—shows you the proof. All of it, hidden in the void's memory.\n\n'We can expose them,' he says. 'Or we can rule. The choice is ours.'\n\nYou have power beyond imagination now. The kingdom waits for your decision.",
+    "choices": [
+      {"letter": "A", "text": "Expose the truth—let the kingdom decide", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 5}, "requires": null},
+      {"letter": "B", "text": "Rule together—the kingdom needs strength", "leads_to": "THERON_ENDING_COMMANDER", "effects": {"void_magic": 5}, "requires": null},
+      {"letter": "C", "text": "Destroy everything—start fresh", "leads_to": "THERON_ENDING_LEAVE", "effects": {"strength": 4}, "requires": null}
+    ]
+  },
+"THERON_CH5_TRAITOR": {
+    "id": "THERON_CH5_TRAITOR",
+    "character": "THERON",
+    "description": "You pretend to accept the Hollow King's alliance. He believes you—his loneliness makes him desperate.\n\nOver weeks, you learn everything: his plans, his weaknesses, the location of his final assault. But you also learn the truth about him: he's not evil, just broken. The void consumed what was left of his humanity.\n\nYou could destroy him now—while he trusts you. The choice sits in your hands.\n\nOn the night of the final assault, you make your move. But not the move he expects.\n\nInstead of killing him—instead of betraying—you reach instead. You touch the void inside him—the same void that's inside you.\n\nLet it go, you whisper. Let it all go.\n\nHe hesitates. And in that moment—not betrayal, but redemption.",
+    "choices": [
+      {"letter": "A", "text": "Heal him—you both deserve it", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 5}, "requires": null},
+      {"letter": "B", "text": "Kill him—too dangerous to live", "leads_to": "THERON_ENDING_DEATH", "effects": {"strength": 4}, "requires": null},
+      {"letter": "C", "text": "Seal him—eternal prison together", "leads_to": "THERON_ENDING_LEGEND", "effects": {"honor": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH5_RESCUE": {
+    "id": "THERON_CH5_RESCUE",
+    "character": "THERON",
+    "description": "You find Caden in the Cult compound—a converted monastery, crowded with children and guards. He's older now, harder, but still the boy you remember.\n\nUncle Theron! he cries. I knew you'd come!\n\nBut rescuing children attracts attention. Cultists swarm your position. And for the first time, you fight not just for the kingdom, but for family.\n\nYou cut through them—each strike for every child who's suffered. Each kill to free another soul.\n\nWhen it's over, you have seventeen children behind you—and one choice. The Hollow King knows you're here. He's coming.\n\nRun, you tell them. I'll hold them off.\n\nNo, Caden says. We fight. Together.\n\nYou look at him—still young, but stronger now. Just like you.",
+    "choices": [
+      {"letter": "A", "text": "Fight together—as family", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 5}, "requires": null},
+      {"letter": "B", "text": "Send them ahead—you survive alone", "leads_to": "THERON_CH5_FINAL", "effects": {"combat": 3}, "requires": null},
+      {"letter": "C", "text": "Use the void—all of you", "leads_to": "THERON_ENDING_COMMANDER", "effects": {"void_magic": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH5_SACRIFICE": {
+    "id": "THERON_CH5_SACRIFICE",
+    "character": "THERON",
+    "description": "The Hollow King's army reaches the capital walls. Ten thousand strong against your handful. The kingdom watches from behind you.\n\nYou could fight—die here, in the dirt, like a common soldier. Or you could do what you've always done: run.\n\nBut there's a third option. One the void whispers about, always. Sacrifice. Not yourself—your power.\n\nYou step forward, alone, into the space between armies. This end is what you were made for.\n\nFrom your chest emerges light—pure, blinding light that the void inside you has spent twenty years containing. It doesn't destroy. It seals. It transforms.\n\nThe Hollow King screams as the light takes him. As the darkness you've carried together is finally released.\n\nWhen it's over, you stand alone—empty, but alive. And the kingdom is safe.",
+    "choices": [
+      {"letter": "A", "text": "Accept the emptiness—live with it", "leads_to": "THERON_ENDING_LEAVE", "effects": {"humanity": 3}, "requires": null},
+      {"letter": "B", "text": "Be honored—become their legend", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 4}, "requires": null},
+      {"letter": "C", "text": "Fade away—no one needs to know", "leads_to": "THERON_ENDING_LEAVE", "effects": {"humanity": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH5_UNITY": {
+    "id": "THERON_CH5_UNITY",
+    "character": "THERON",
+    "description": "You stand on the walls as the Hollow King's army approaches. Beside you: the delegates, the Queen, even former enemies who've chosen to fight.\n\nThis is it. The final stand. Not just for the kingdom, but for everything you believe in.\n\nThe Hollow King rides forward, alone. He removes his helm—Marcus's face, twisted by void but still human.\n\nJoin me, he calls. One last time. Brothers together. Let remake this kingdom.\n\nThe kingdom watches. waiting. The choice is yours.\n\nBut it's not really a choice, is it? You've always known what you are.",
+    "choices": [
+      {"letter": "A", "text": "Accept—become his brother again", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 4}, "requires": null},
+      {"letter": "B", "text": "Refuse—end this battle", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 5}, "requires": null},
+      {"letter": "C", "text": "Offer mercy—accept surrender", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 3}, "requires": null}
+    ]
+  },
+  "THERON_CH5_VICTORY": {
+    "id": "THERON_CH5_VICTORY",
+    "character": "THERON",
+    "description": "No more strategies. No more waiting. The Hollow King is here, at the capital gates, and you're done running.\n\nYou walk through the Queen's Guard—a path opening for you, the knight in faded armor. They don't stop you. They can't.\n\nTen thousand soldiers watch as you meet the Hollow King in the empty space between armies.\n\nThis ends now, you say.\n\nHe draws his blade. It responds to darkness.\n\nYour blade is just steel. But your heart—your heart is something else.\n\nYou fight not as a knight, not as a warrior, but as a brother seeking redemption. And in that fight, you find something unexpected: his weakness. His humanity.\n\nOne strike end it all. But you pause.",
+    "choices": [
+      {"letter": "A", "text": "Strike—victory at last", "leads_to": "THERON_ENDING_LEGEND", "effects": {"combat": 5}, "requires": null},
+      {"letter": "B", "text": "Spare—show him mercy", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 5}, "requires": null},
+      {"letter": "C", "text": "Join—become something else", "leads_to": "THERON_ENDING_COMMANDER", "effects": {"void_magic": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH5_BETRAYAL": {
+    "id": "THERON_CH5_BETRAYAL",
+    "character": "THERON",
+    "description": "Everything is ready. The Hollow King has walked into your trap. The seal is prepared. The kingdom waits.\n\nBut as you prepare to activate the seal, something stops you. Doubt.\n\nIf you become the seal—if you become the prison—all of this disappears. The kingdom, the Queen, the future. Everything you've fought for.\n\nUnless you don't. Unless you find another way—harder, riskier, but possible.\n\nYou look at the Hollow King. He looks back. And you see the question in his eyes: what are you willing to become?\n\nThe answer isn't sacrifice. It's trust.",
+    "choices": [
+      {"letter": "A", "text": "Trust him—heal together", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 5}, "requires": null},
+      {"letter": "B", "text": "Activate anyway—prevent risk", "leads_to": "THERON_ENDING_LEGEND", "effects": {"honor": 4}, "requires": null},
+      {"letter": "C", "text": "Escape—let someone else decide", "leads_to": "THERON_ENDING_LEAVE", "effects": {"humanity": 2}, "requires": null}
+    ]
+  },
+  "THERON_CH5_TRUST": {
+    "id": "THERON_CH5_TRUST",
+    "character": "THERON",
+    "description": "The Hollow King kneels before you, defeated but not destroyed. The armies wait for your judgment.\n\nSome want blood. Others want justice. But you want something else: redemption.\n\nI spare you, you say. Not because you deserve it—because no one deserves to be consumed by the void.\n\nHe looks up, confused. You'll regret this.\n\nPerhaps. But regret is what makes us human.\n\nThe kingdom gasps as you extend your hand to the Hollow King. The delegates whisper. The Queen watches.\n\nBut you see the truth: mercy is stronger than vengeance. And sometimes, the hardest victory is the one you don't fight.",
+    "choices": [
+      {"letter": "A", "text": "Rule together—new future", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 5}, "requires": null},
+      {"letter": "B", "text": "Exile him—heal elsewhere", "leads_to": "THERON_ENDING_LEAVE", "effects": {"charisma": 3}, "requires": null},
+      {"letter": "C", "text": "Make him a guardian—eternal duty", "leads_to": "THERON_ENDING_LEGEND", "effects": {"honor": 4}, "requires": null}
+    ]
+  },
+  "THERON_CH5_JUDGMENT": {
+    "id": "THERON_CH5_JUDGMENT",
+    "character": "THERON",
+    "description": "The final battle ends differently than you expected. Not with blades, but with words.\n\nThe Hollow King—Marcus—stands before you, weapon dropped. Twenty years of darkness, and he's finally tired.\n\nKill me, he says. It's what I deserve.\n\nNo, you reply. It's what the void wants. But we don't always get what we deserve.\n\nThe kingdom watches as you make your choice. Not for revenge, but for future.\n\nYou extend your hand. Not to attack—to offer.\n\nJoin me, you say. Not as the Hollow King, but as my brother. Help me protect what we couldn't save.\n\nHe hesitates. Then takes your hand.",
+    "choices": [
+      {"letter": "A", "text": "Accept—no more fighting", "leads_to": "THERON_ENDING_STAY", "effects": {"charisma": 5}, "requires": null},
+      {"letter": "B", "text": "Forgive—everyone deserves it", "leads_to": "THERON_ENDING_STAY", "effects": {"honor": 5}, "requires": null},
+      {"letter": "C", "text": "Seal—eternal duty together", "leads_to": "THERON_ENDING_LEGEND", "effects": {"void_magic": 4}, "requires": null}
+    ]
   }
 }

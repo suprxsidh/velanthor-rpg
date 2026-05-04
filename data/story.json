@@ -1134,6 +1134,15 @@
           "intelligence": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue the journey",
+        "leads_to": "KIRA_CH4_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -1534,6 +1543,15 @@
         "leads_to": "THERON_CH1_TAVERN_BRAWL",
         "effects": {
           "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Go to Chapter 2",
+        "leads_to": "THERON_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -2080,6 +2098,15 @@
           "intelligence": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue journey",
+        "leads_to": "THERON_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -2182,6 +2209,15 @@
           "stealth": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue journey",
+        "leads_to": "THERON_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -2282,6 +2318,15 @@
         "leads_to": "THERON_CH2_SHARD",
         "effects": {
           "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH2_VESPERA_TRAP",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -3341,6 +3386,15 @@
           "stealth": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue journey",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ],
     "type": "story"
@@ -3374,6 +3428,15 @@
         "leads_to": "VEX_CH1_MAIN",
         "effects": {
           "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to next chapter",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -3411,6 +3474,15 @@
           "intelligence": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to next chapter",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ],
     "type": "story"
@@ -3446,6 +3518,15 @@
           "intelligence": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to next chapter",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ],
     "type": "story"
@@ -3479,6 +3560,15 @@
         "leads_to": "VEX_CH1_MAIN",
         "effects": {
           "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to next chapter",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -3656,6 +3746,15 @@
           "dexterity": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 4",
+        "leads_to": "VEX_CH4_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ],
     "type": "story"
@@ -3691,6 +3790,15 @@
           "intelligence": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 5",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ],
     "type": "story"
@@ -3724,6 +3832,15 @@
         "leads_to": "VEX_ENDING_WANDERER",
         "effects": {
           "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 5",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -3785,6 +3902,15 @@
         "effects": {
           "intelligence": 1,
           "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to next chapter",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -3896,6 +4022,15 @@
         "effects": {
           "charisma": 1,
           "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to next chapter",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -4254,6 +4389,15 @@
           "patience": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue journey",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ],
     "type": "story"
@@ -4430,6 +4574,15 @@
           "combat": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 4",
+        "leads_to": "VEX_CH4_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ],
     "type": "story"
@@ -4465,6 +4618,15 @@
           "charisma": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 4",
+        "leads_to": "VEX_CH4_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ],
     "type": "story"
@@ -4498,6 +4660,15 @@
         "leads_to": "VEX_ENDING_KING",
         "effects": {
           "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 4",
+        "leads_to": "VEX_CH4_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -6870,6 +7041,15 @@
           "charisma": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to next chapter",
+        "leads_to": "KIRA_CH4_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -9064,6 +9244,15 @@
           "intelligence": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to next chapter",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -9098,6 +9287,15 @@
         "leads_to": "VEX_CH1_MAIN",
         "effects": {
           "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to next chapter",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -10847,6 +11045,69 @@
           "survival": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH1_CULT_ENCOUNTER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH1_STREET_AMBUSH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH1_BORDER_SKIRMISH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH1_WATCH_PATROL",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH1_NIGHT_ASSAULT",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH1_TAVERN_FIGHT",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH1_CULT_HUNTERS",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -10917,6 +11178,24 @@
           "survival": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Journey to Chapter 4",
+        "leads_to": "THERON_CH4_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH3_WAIT",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -10953,6 +11232,96 @@
         "effects": {
           "stealth": 2,
           "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternate path",
+        "leads_to": "THERON_CH4_MINOR_1",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternate path",
+        "leads_to": "THERON_CH4_WOLVES",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore alternate path",
+        "leads_to": "THERON_CH4_CONTROLLER",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Explore alternate path",
+        "leads_to": "THERON_CH4_TRANSITION",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Explore alternate path",
+        "leads_to": "THERON_CH4_REFLECT",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Explore new path",
+        "leads_to": "THERON_CH4_MINOR_1",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Explore new path",
+        "leads_to": "THERON_CH4_WOLVES",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Explore new path",
+        "leads_to": "THERON_CH4_CONTROLLER",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "L",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH4_REST",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "M",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH4_SEARCH",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -10993,6 +11362,24 @@
           "void_magic": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH5_SEARCH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternative path",
+        "leads_to": "THERON_CH5_REST",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11024,6 +11411,96 @@
         "letter": "C",
         "text": "Rest and prepare",
         "leads_to": "VEX_CH1_REST",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to REPUTATION",
+        "leads_to": "VEX_CH1_REPUTATION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Continue to 3",
+        "leads_to": "VEX_CH1_EXTRA_3",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Continue to AMBUSH",
+        "leads_to": "VEX_CH1_STREET_AMBUSH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Continue to CLIMB",
+        "leads_to": "VEX_CH1_RIVAL_CLIMB",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Continue to CORRUPTION",
+        "leads_to": "VEX_CH1_CORRUPTION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Continue to ESCAPE",
+        "leads_to": "VEX_CH1_ESCAPE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Continue to 5",
+        "leads_to": "VEX_CH1_EXTRA_5",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Continue to SETUP",
+        "leads_to": "VEX_CH1_BETRAYAL_SETUP",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "L",
+        "text": "Continue to PRISON",
+        "leads_to": "VEX_CH1_PRISON",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "M",
+        "text": "Continue to WAREHOUSE",
+        "leads_to": "VEX_CH1_WAREHOUSE",
         "effects": {
           "survival": 1
         },
@@ -11090,6 +11567,24 @@
           "charisma": 1
         },
         "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Continue to SURRENDER",
+        "leads_to": "VEX_CH2_SURRENDER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Continue to HALL",
+        "leads_to": "VEX_CH2_GUILD_HALL",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11121,6 +11616,96 @@
         "letter": "C",
         "text": "Rest and prepare",
         "leads_to": "VEX_CH3_REST",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to HUNT",
+        "leads_to": "VEX_CH4_HUNT",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Continue to NEGOTIATE",
+        "leads_to": "VEX_CH4_NEGOTIATE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Continue to RISK",
+        "leads_to": "VEX_CH4_RISK",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Continue to CHAMBER",
+        "leads_to": "VEX_CH4_SECRET_CHAMBER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Continue to SCHEMES",
+        "leads_to": "VEX_CH4_SCHEMES",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Continue to DISCOVERY",
+        "leads_to": "VEX_CH4_DISCOVERY",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Continue to FINALE",
+        "leads_to": "VEX_CH4_FINALE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Continue to REVELATION",
+        "leads_to": "VEX_CH4_REVELATION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "L",
+        "text": "Continue to INVESTIGATE",
+        "leads_to": "VEX_CH4_INVESTIGATE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "M",
+        "text": "Continue to UNDERGROUND",
+        "leads_to": "VEX_CH4_UNDERGROUND",
         "effects": {
           "survival": 1
         },
@@ -11160,6 +11745,150 @@
           "survival": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to PEACE",
+        "leads_to": "VEX_CH5_PEACE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Continue to RISK",
+        "leads_to": "VEX_CH5_RISK",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Continue to SEARCH",
+        "leads_to": "VEX_CH5_SEARCH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Continue to INVESTIGATE",
+        "leads_to": "VEX_CH5_INVESTIGATE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Continue to LEGACY",
+        "leads_to": "VEX_CH5_LEGACY",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Continue to HUNT",
+        "leads_to": "VEX_CH5_HUNT",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Continue to SISTER",
+        "leads_to": "VEX_CH5_SISTER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Continue to NETWORK",
+        "leads_to": "VEX_CH5_NETWORK",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "L",
+        "text": "Continue to REVELATION",
+        "leads_to": "VEX_CH5_REVELATION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "M",
+        "text": "Continue to TREATY",
+        "leads_to": "VEX_CH5_PEACE_TREATY",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "N",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH4_REFORM",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "O",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH4_COMBAT",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "P",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH4_FLEE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "Q",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH4_COUNTER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "R",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH4_MENTOR",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "S",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH4_BETRAYAL",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11195,6 +11924,60 @@
           "charisma": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore the VEX path",
+        "leads_to": "VEX_CH4_LOYALTY",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore the VEX path",
+        "leads_to": "VEX_CH1_EXTRA_2",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore the VEX path",
+        "leads_to": "VEX_CH4_FINAL_OFFER",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Take alternate route",
+        "leads_to": "VEX_CH1_EXTRA_1",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Take alternate route",
+        "leads_to": "VEX_CH1_SMUGGLER_BATTLE",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Take alternate route",
+        "leads_to": "VEX_CH4_VAULT",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11226,6 +12009,78 @@
         "letter": "C",
         "text": "Rest and prepare",
         "leads_to": "ELARA_CH1_REST",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "ELARA_CH1_EXTRA_2",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternative path",
+        "leads_to": "ELARA_CH1_EXTRA_4",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore alternative path",
+        "leads_to": "ELARA_CH1_EXTRA_8",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Explore alternative path",
+        "leads_to": "ELARA_CH1_EXTRA_9",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Explore alternative path",
+        "leads_to": "ELARA_CH1_CULT_INFILTRATE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Explore alternative path",
+        "leads_to": "ELARA_CH1_EXTRA_7",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Explore alternative path",
+        "leads_to": "ELARA_CH1_EXTRA_5",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Explore alternative path",
+        "leads_to": "ELARA_CH1_EXTRA_1",
         "effects": {
           "survival": 1
         },
@@ -11335,6 +12190,15 @@
           "survival": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "ELARA_CH4_NEW_ALLIANCE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11370,6 +12234,60 @@
           "survival": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore the ELARA path",
+        "leads_to": "ELARA_CH1_EXTRA_6",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore the ELARA path",
+        "leads_to": "ELARA_CH3_INTERLUDE",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore the ELARA path",
+        "leads_to": "ELARA_CH1_EXTRA_3",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Take alternate route",
+        "leads_to": "ELARA_CH1_EXTRA_10",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Take alternate route",
+        "leads_to": "ELARA_CH1_ASSASSIN_ENCOUNTER",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Take alternate route",
+        "leads_to": "ELARA_CH1_MERCHANT_WAR",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11401,6 +12319,69 @@
         "letter": "C",
         "text": "Rest and prepare",
         "leads_to": "ASHA_CH1_REST",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH1_EXTRA_9",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH1_EXTRA_1",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH1_EXTRA_5",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH1_EXTRA_3",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH1_EXTRA_4",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH1_EXTRA_8",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH1_EXTRA_6",
         "effects": {
           "survival": 1
         },
@@ -11520,6 +12501,51 @@
           "charisma": 1
         },
         "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Explore side path",
+        "leads_to": "ASHA_ENDING_GUARDIAN",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Explore side path",
+        "leads_to": "ASHA_ENDING_ORDER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Explore side path",
+        "leads_to": "ASHA_ENDING_CROWN_HUNTER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "L",
+        "text": "Explore side path",
+        "leads_to": "ASHA_ENDING_UNITER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "M",
+        "text": "Explore side path",
+        "leads_to": "ASHA_ENDING",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11551,6 +12577,114 @@
         "letter": "C",
         "text": "Rest and prepare",
         "leads_to": "ASHA_CH4_REST",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_NIGHT_CAMP",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_FRIEND_IN_NEED",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_STARGAZER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_TIME_STOP",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_SUMMON_HELP",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_MOUNTAIN_CLIMB",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_MEMORY_LANE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_HOLLOW_SCOUT",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "L",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_SKY_BATTLE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "M",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_SIEGE_PREP",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "N",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_VOID_EDGE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "O",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH4_TRADITION",
         "effects": {
           "survival": 1
         },
@@ -11599,6 +12733,78 @@
           "nature_magic": 5
         },
         "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore the ASHA path",
+        "leads_to": "ASHA_CH4_RIVER_CROSSING",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore the ASHA path",
+        "leads_to": "ASHA_CH5_FINAL_MOMENT",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Explore the ASHA path",
+        "leads_to": "ASHA_CH1_EXTRA_10",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Take alternate route",
+        "leads_to": "ASHA_CH1_EXTRA_7",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Take alternate route",
+        "leads_to": "ASHA_CH1_EXTRA_2",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Take alternate route",
+        "leads_to": "ASHA_CH5_PRE_BATTLE",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH5_SEARCH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "L",
+        "text": "Explore alternative path",
+        "leads_to": "ASHA_CH5_TEAM_FINAL",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11632,6 +12838,96 @@
         "leads_to": "KIRA_CH1_REST",
         "effects": {
           "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH1_SHADOW_WATCH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH1_BANDIT_AMBUSH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH1_CIRCLE_TRIAL",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH1_DEEP_WASTELAND",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH1_VOID_CHILD",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH1_SEARCH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH1_SECRET_CULTIST",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH1_GUARD_POST",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "L",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH1_WASTELAND_STAND",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "M",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH1_WATCH_TRIAL",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -11704,6 +13000,15 @@
           "charisma": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Journey to Chapter 4",
+        "leads_to": "KIRA_CH4_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11737,6 +13042,78 @@
         "leads_to": "KIRA_CH4_GATHER",
         "effects": {
           "survival": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternate path",
+        "leads_to": "KIRA_CH4_SIDE_QUEST",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternate path",
+        "leads_to": "KIRA_CH4_BANDITS",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore alternate path",
+        "leads_to": "KIRA_CH4_TRANSITION",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Explore alternate path",
+        "leads_to": "KIRA_CH4_REFLECT",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Explore alternate path",
+        "leads_to": "KIRA_CH4_PREPARE",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Explore new path",
+        "leads_to": "KIRA_CH4_SIDE_QUEST",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Explore new path",
+        "leads_to": "KIRA_CH4_BANDITS",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Explore new path",
+        "leads_to": "KIRA_CH4_TRANSITION",
+        "effects": {
+          "intelligence": 1
         },
         "requires": null
       }
@@ -12929,6 +14306,132 @@
           "charisma": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_ROOFTOP_ESCAPE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_PICKPOCKET_GONE_WRONG",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_EXTRA_6",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_EXTRA_7",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_STREET_RIVALS",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_WATCH_CHASE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "J",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_FINAL_ESCAPE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "K",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_EXTRA_4",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "L",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_FIRST_JOB",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "M",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_EXTRA_8",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "N",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_GUARD_PATROL",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "O",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_EXTRA_10",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "P",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_EXTRA_9",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "Q",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH1_MENTOR",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -13067,6 +14570,15 @@
         "leads_to": "VEX_CH1_END",
         "effects": {
           "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore side path",
+        "leads_to": "VEX_ENDING",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -13384,6 +14896,15 @@
           "charisma": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 5",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -13487,6 +15008,51 @@
         "leads_to": "VEX_CH5_TRUTH_FINAL",
         "effects": {
           "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH5_CONSOLIDATE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH5_EXPANSION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH5_RETURN",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH5_BETRAYAL_END",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "H",
+        "text": "Explore alternative path",
+        "leads_to": "VEX_CH5_MEMORIAL",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -14925,6 +16491,15 @@
           "stealth": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Continue to next chapter",
+        "leads_to": "VEX_CH2_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -15065,6 +16640,15 @@
           "stealth": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 4",
+        "leads_to": "VEX_CH4_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -15133,6 +16717,15 @@
         "leads_to": "VEX_CH4_FREEDOM_PATH",
         "effects": {
           "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 5",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -18261,6 +19854,15 @@
           "charisma": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 5",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -18293,6 +19895,15 @@
         "leads_to": "VEX_ENDING_WANDERER",
         "effects": {
           "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 5",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -18497,6 +20108,15 @@
         "leads_to": "VEX_ENDING_FREEDOM",
         "effects": {
           "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 5",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -18739,6 +20359,15 @@
         "leads_to": "VEX_ENDING_WANDERER",
         "effects": {
           "humanity": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 5",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -19056,6 +20685,15 @@
           "humanity": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 5",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ],
     "type": "story"
@@ -19089,6 +20727,15 @@
         "leads_to": "VEX_ENDING_WANDERER",
         "effects": {
           "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Proceed to Chapter 5",
+        "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -22878,6 +24525,24 @@
         "leads_to": "KIRA_CH5_STORE",
         "effects": {
           "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH4_DESTROY",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Explore alternative path",
+        "leads_to": "KIRA_CH4_HIDE",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
