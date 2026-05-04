@@ -727,7 +727,7 @@
       {
         "letter": "D",
         "text": "Take the path to FREE",
-        "leads_to": "KIRA_ENDING_FREE",
+        "leads_to": "KIRA_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -736,7 +736,7 @@
       {
         "letter": "E",
         "text": "Take the path to EMPIRE",
-        "leads_to": "KIRA_ENDING_EMPIRE",
+        "leads_to": "KIRA_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -745,7 +745,7 @@
       {
         "letter": "F",
         "text": "Take the path to TRUTH",
-        "leads_to": "KIRA_ENDING_TRUTH",
+        "leads_to": "KIRA_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -754,7 +754,7 @@
       {
         "letter": "G",
         "text": "Take the path to SACRIFICE",
-        "leads_to": "KIRA_ENDING_SACRIFICE",
+        "leads_to": "KIRA_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -763,7 +763,7 @@
       {
         "letter": "H",
         "text": "Take the path to VICTOR",
-        "leads_to": "KIRA_ENDING_VICTOR",
+        "leads_to": "KIRA_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -772,7 +772,7 @@
       {
         "letter": "I",
         "text": "Take the path to SURVIVOR",
-        "leads_to": "KIRA_ENDING_SURVIVOR",
+        "leads_to": "KIRA_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -781,7 +781,7 @@
       {
         "letter": "J",
         "text": "Take the path to LOST",
-        "leads_to": "KIRA_ENDING_LOST",
+        "leads_to": "KIRA_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -865,7 +865,7 @@
       {
         "letter": "A",
         "text": "Claim the crown\u2014become a god",
-        "leads_to": "KIRA_ENDING_UNDYING",
+        "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "void_magic": 5
         },
@@ -874,7 +874,7 @@
       {
         "letter": "B",
         "text": "Destroy the crown\u2014end everything",
-        "leads_to": "KIRA_ENDING_MARTYR",
+        "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "humanity": -5
         },
@@ -883,7 +883,7 @@
       {
         "letter": "C",
         "text": "Free your mother instead\u2014let the crown be",
-        "leads_to": "KIRA_ENDING_HOLLOW",
+        "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "humanity": 3
         },
@@ -899,7 +899,7 @@
       {
         "letter": "A",
         "text": "Destroy the crown\u2014and yourself with it",
-        "leads_to": "KIRA_ENDING_MARTYR",
+        "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "humanity": -3
         },
@@ -908,7 +908,7 @@
       {
         "letter": "B",
         "text": "Claim the crown\u2014save your mother",
-        "leads_to": "KIRA_ENDING_UNDYING",
+        "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "void_magic": 5
         },
@@ -917,7 +917,7 @@
       {
         "letter": "C",
         "text": "Free your mother and run",
-        "leads_to": "KIRA_ENDING_HOLLOW",
+        "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "humanity": 2
         },
@@ -933,7 +933,7 @@
       {
         "letter": "A",
         "text": "Embrace the darkness",
-        "leads_to": "KIRA_ENDING_HOLLOW",
+        "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "humanity": -5
         },
@@ -942,7 +942,7 @@
       {
         "letter": "B",
         "text": "Fight from within",
-        "leads_to": "KIRA_ENDING_UNDYING",
+        "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "void_magic": 3
         },
@@ -951,7 +951,7 @@
       {
         "letter": "C",
         "text": "Take your mother with you",
-        "leads_to": "KIRA_ENDING_MARTYR",
+        "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "humanity": -3
         },
@@ -2442,7 +2442,7 @@
       {
         "letter": "A",
         "text": "Complete the Convergence\u2014become the Undying",
-        "leads_to": "THERON_ENDING_KING",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "void_magic": 5
         },
@@ -2451,7 +2451,7 @@
       {
         "letter": "B",
         "text": "Destroy the shards\u2014even the seventh",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "honor": 5
         },
@@ -2460,7 +2460,7 @@
       {
         "letter": "C",
         "text": "Claim the power but keep it contained",
-        "leads_to": "THERON_ENDING_SURVIVOR",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "void_magic": 3
         },
@@ -2612,7 +2612,7 @@
       {
         "letter": "A",
         "text": "Destroy the shards\u2014sacrifice yourself",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "honor": 5
         },
@@ -2621,7 +2621,7 @@
       {
         "letter": "B",
         "text": "Claim the power\u2014become the new master",
-        "leads_to": "THERON_ENDING_COMMANDER",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "void_magic": 5
         },
@@ -2630,7 +2630,7 @@
       {
         "letter": "C",
         "text": "Flee\u2014survive to fight another day",
-        "leads_to": "THERON_ENDING_HOLLOW",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "humanity": -3
         },
@@ -2646,7 +2646,7 @@
       {
         "letter": "A",
         "text": "Help her destroy the shards\u2014end the line",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "honor": 4
         },
@@ -2655,7 +2655,7 @@
       {
         "letter": "B",
         "text": "Become her partner\u2014guide her darkness",
-        "leads_to": "THERON_ENDING_COMMANDER",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -2664,7 +2664,7 @@
       {
         "letter": "C",
         "text": "Kill her anyway\u2014she's too far gone",
-        "leads_to": "THERON_ENDING_HOLLOW",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "strength": 2
         },
@@ -2680,7 +2680,7 @@
       {
         "letter": "A",
         "text": "Embrace the darkness\u2014become the Undying",
-        "leads_to": "THERON_ENDING_COMMANDER",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "void_magic": 5
         },
@@ -2689,7 +2689,7 @@
       {
         "letter": "B",
         "text": "Destroy the shards from within",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "honor": 3
         },
@@ -2698,7 +2698,7 @@
       {
         "letter": "C",
         "text": "Release the Beast\u2014end everything",
-        "leads_to": "THERON_ENDING_HOLLOW",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "humanity": -5
         },
@@ -2714,7 +2714,7 @@
       {
         "letter": "A",
         "text": "Interrupt the ritual\u2014sacrifice yourself",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "honor": 5
         },
@@ -2723,7 +2723,7 @@
       {
         "letter": "B",
         "text": "Claim the portal\u2014become the Beast's voice",
-        "leads_to": "THERON_ENDING_COMMANDER",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "void_magic": 4
         },
@@ -2732,7 +2732,7 @@
       {
         "letter": "C",
         "text": "Flee\u2014the world isn't worth saving",
-        "leads_to": "THERON_ENDING_HOLLOW",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "humanity": -2
         },
@@ -2748,7 +2748,7 @@
       {
         "letter": "A",
         "text": "Accept the seal\u2014you are the prison now",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "honor": 5
         },
@@ -2757,7 +2757,7 @@
       {
         "letter": "B",
         "text": "Wait\u2014eternity is a long time",
-        "leads_to": "THERON_ENDING_HOLLOW",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "humanity": 2
         },
@@ -2766,7 +2766,7 @@
       {
         "letter": "C",
         "text": "Find release\u2014in the void you are one",
-        "leads_to": "THERON_ENDING_COMMANDER",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "void_magic": 3
         },
@@ -2782,7 +2782,7 @@
       {
         "letter": "A",
         "text": "Accept your fate\u2014no regrets",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "honor": 4
         },
@@ -2791,7 +2791,7 @@
       {
         "letter": "B",
         "text": "Walk away\u2014find peace somewhere",
-        "leads_to": "THERON_ENDING_HOLLOW",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "humanity": 1
         },
@@ -2800,7 +2800,7 @@
       {
         "letter": "C",
         "text": "Find new purpose\u2014the knight continues",
-        "leads_to": "THERON_ENDING_COMMANDER",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -2816,7 +2816,7 @@
       {
         "letter": "A",
         "text": "Claim the throne\u2014restore order",
-        "leads_to": "THERON_ENDING_COMMANDER",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "charisma": 4
         },
@@ -2825,7 +2825,7 @@
       {
         "letter": "B",
         "text": "Expose everyone\u2014let the kingdom decide",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "honor": 3
         },
@@ -2834,7 +2834,7 @@
       {
         "letter": "C",
         "text": "Walk away\u2014let it burn",
-        "leads_to": "THERON_ENDING_HOLLOW",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "humanity": -2
         },
@@ -2850,7 +2850,7 @@
       {
         "letter": "A",
         "text": "Move forward\u2014a new beginning",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "honor": 2
         },
@@ -2859,7 +2859,7 @@
       {
         "letter": "B",
         "text": "Find purpose\u2014become a protector",
-        "leads_to": "THERON_ENDING_COMMANDER",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -2868,7 +2868,7 @@
       {
         "letter": "C",
         "text": "Fade away\u2014the void is patient",
-        "leads_to": "THERON_ENDING_HOLLOW",
+        "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "humanity": 1
         },
@@ -3055,7 +3055,7 @@
       {
         "letter": "D",
         "text": "Take the path to STAY",
-        "leads_to": "THERON_ENDING_STAY",
+        "leads_to": "THERON_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -3064,7 +3064,7 @@
       {
         "letter": "E",
         "text": "Take the path to LEGEND",
-        "leads_to": "THERON_ENDING_LEGEND",
+        "leads_to": "THERON_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -3073,7 +3073,7 @@
       {
         "letter": "F",
         "text": "Take the path to DEATH",
-        "leads_to": "THERON_ENDING_DEATH",
+        "leads_to": "THERON_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -3082,7 +3082,7 @@
       {
         "letter": "G",
         "text": "Take the path to LEAVE",
-        "leads_to": "THERON_ENDING_LEAVE",
+        "leads_to": "THERON_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -3091,7 +3091,7 @@
       {
         "letter": "H",
         "text": "Take the path to SURVIVOR",
-        "leads_to": "THERON_ENDING_SURVIVOR",
+        "leads_to": "THERON_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -3100,7 +3100,7 @@
       {
         "letter": "I",
         "text": "Take the path to KING",
-        "leads_to": "THERON_ENDING_KING",
+        "leads_to": "THERON_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -3109,7 +3109,7 @@
       {
         "letter": "J",
         "text": "Take the path to BETRAYED",
-        "leads_to": "THERON_ENDING_BETRAYED",
+        "leads_to": "THERON_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -3723,7 +3723,7 @@
       {
         "letter": "A",
         "text": "Seize power as the new Shadowmaster",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH4_TRANSITION",
         "effects": {
           "dexterity": 1
         },
@@ -3732,7 +3732,7 @@
       {
         "letter": "B",
         "text": "Destroy the Guild completely",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH4_TRANSITION",
         "effects": {
           "dexterity": 1
         },
@@ -3741,7 +3741,7 @@
       {
         "letter": "C",
         "text": "Escape into the night",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH4_TRANSITION",
         "effects": {
           "dexterity": 1
         },
@@ -3811,7 +3811,7 @@
       {
         "letter": "A",
         "text": "Claim the Guild's throne",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 1
         },
@@ -3820,7 +3820,7 @@
       {
         "letter": "B",
         "text": "Burn the Guild to the ground",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 1
         },
@@ -3829,7 +3829,7 @@
       {
         "letter": "C",
         "text": "Walk away from it all",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 1
         },
@@ -4639,7 +4639,7 @@
       {
         "letter": "A",
         "text": "Challenge him to single combat",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH4_TRANSITION",
         "effects": {
           "combat": 2
         },
@@ -4648,7 +4648,7 @@
       {
         "letter": "B",
         "text": "Burn the ledger publicly",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH4_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -4657,7 +4657,7 @@
       {
         "letter": "C",
         "text": "Become the new Shadow King",
-        "leads_to": "VEX_ENDING_KING",
+        "leads_to": "VEX_CH4_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -4881,7 +4881,7 @@
       {
         "letter": "D",
         "text": "Take the path to RICH",
-        "leads_to": "ELARA_ENDING_RICH",
+        "leads_to": "ELARA_CH2_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -5476,7 +5476,7 @@
       {
         "letter": "A",
         "text": "Challenge him to combat",
-        "leads_to": "ELARA_ENDING_AVENGER",
+        "leads_to": "ELARA_CH4_TRANSITION",
         "effects": {
           "combat": 2
         },
@@ -5485,7 +5485,7 @@
       {
         "letter": "B",
         "text": "Reveal the truth to everyone",
-        "leads_to": "ELARA_ENDING_JUDGE",
+        "leads_to": "ELARA_CH4_TRANSITION",
         "effects": {
           "charisma": 3
         },
@@ -5494,7 +5494,7 @@
       {
         "letter": "C",
         "text": "Make a deal for the crown",
-        "leads_to": "ELARA_ENDING_EMPRESS",
+        "leads_to": "ELARA_CH4_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -5510,7 +5510,7 @@
       {
         "letter": "A",
         "text": "Accept peace\u2014live quietly",
-        "leads_to": "ELARA_ENDING_JUSTICE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "humanity": 2
         },
@@ -5519,7 +5519,7 @@
       {
         "letter": "B",
         "text": "Write your story\u2014leave a trace",
-        "leads_to": "ELARA_ENDING_JUDGE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -5528,7 +5528,7 @@
       {
         "letter": "C",
         "text": "Never forget\u2014remain ready",
-        "leads_to": "ELARA_ENDING_AVENGER",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "combat": 1
         },
@@ -5596,7 +5596,7 @@
       {
         "letter": "A",
         "text": "Become the judge\u2014ensure justice",
-        "leads_to": "ELARA_ENDING_JUDGE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -5614,7 +5614,7 @@
       {
         "letter": "C",
         "text": "Walk away\u2014it's over",
-        "leads_to": "ELARA_ENDING_JUSTICE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "humanity": 2
         },
@@ -5648,7 +5648,7 @@
       {
         "letter": "A",
         "text": "Embrace what you've become\u2014claim the throne",
-        "leads_to": "ELARA_ENDING_EMPRESS",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "void_magic": 3
         },
@@ -5666,7 +5666,7 @@
       {
         "letter": "C",
         "text": "Destroy the crown\u2014end the cycle",
-        "leads_to": "ELARA_ENDING_JUDGE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "humanity": -3
         },
@@ -5675,7 +5675,7 @@
       {
         "letter": "D",
         "text": "Surrender to the hunger\u2014become the Consumed",
-        "leads_to": "ELARA_ENDING_CONSUMED",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "humanity": -5
         },
@@ -5691,7 +5691,7 @@
       {
         "letter": "A",
         "text": "Accept the balance\u2014become the Negotiator",
-        "leads_to": "ELARA_ENDING_NEGOTIATE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -5700,7 +5700,7 @@
       {
         "letter": "B",
         "text": "Accept the Circle's terms",
-        "leads_to": "ELARA_ENDING_JUSTICE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "intelligence": 1
         },
@@ -5714,6 +5714,15 @@
           "humanity": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Rich ending",
+        "leads_to": "ELARA_ENDING_RICH",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -5725,7 +5734,7 @@
       {
         "letter": "A",
         "text": "Accept your title\u2014become the Avenger",
-        "leads_to": "ELARA_ENDING_AVENGER",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "combat": 2
         },
@@ -5734,7 +5743,7 @@
       {
         "letter": "B",
         "text": "Continue the hunt\u2014more enemies exist",
-        "leads_to": "ELARA_ENDING_AVENGER",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "combat": 1
         },
@@ -5759,7 +5768,7 @@
       {
         "letter": "A",
         "text": "Start fresh\u2014become someone new",
-        "leads_to": "ELARA_ENDING_JUSTICE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "humanity": 2
         },
@@ -5768,7 +5777,7 @@
       {
         "letter": "B",
         "text": "Stay connected\u2014help from afar",
-        "leads_to": "ELARA_ENDING_JUDGE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -5777,7 +5786,7 @@
       {
         "letter": "C",
         "text": "Never forget\u2014remain the guardian",
-        "leads_to": "ELARA_ENDING_AVENGER",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "combat": 1
         },
@@ -5914,7 +5923,7 @@
       {
         "letter": "A",
         "text": "Embrace the wild entirely",
-        "leads_to": "ELARA_ENDING_FREEDOM",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "survival": 3
         },
@@ -5932,7 +5941,7 @@
       {
         "letter": "C",
         "text": "Document your learnings",
-        "leads_to": "ELARA_ENDING_LEGACY",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -5967,7 +5976,7 @@
       {
         "letter": "C",
         "text": "Make it a refuge school",
-        "leads_to": "ELARA_ENDING_LEGACY",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -6028,7 +6037,7 @@
       {
         "letter": "B",
         "text": "Share the knowledge",
-        "leads_to": "ELARA_ENDING_LEGACY",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -6037,7 +6046,7 @@
       {
         "letter": "C",
         "text": "Find a successor",
-        "leads_to": "ELARA_ENDING_REDEMPTION",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -6054,7 +6063,7 @@
       {
         "letter": "A",
         "text": "Embrace the power completely",
-        "leads_to": "ELARA_ENDING_EMPRESS",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "combat": 3
         },
@@ -6089,7 +6098,7 @@
       {
         "letter": "A",
         "text": "Walk away\u2014completely free",
-        "leads_to": "ELARA_ENDING_FREEDOM",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "humanity": 3
         },
@@ -6107,7 +6116,7 @@
       {
         "letter": "C",
         "text": "Document what was lost",
-        "leads_to": "ELARA_ENDING_LEGACY",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -6168,7 +6177,7 @@
       {
         "letter": "B",
         "text": "Expose them publicly",
-        "leads_to": "ELARA_ENDING_JUDGE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 3
         },
@@ -6194,7 +6203,7 @@
       {
         "letter": "A",
         "text": "Sacrifice yourself to seal the Circle",
-        "leads_to": "ELARA_ENDING_SACRIFICE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "humanity": 3
         },
@@ -6212,7 +6221,7 @@
       {
         "letter": "C",
         "text": "Rebuild the Circle\u2014differently",
-        "leads_to": "ELARA_ENDING_LEGACY",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 3
         },
@@ -6387,7 +6396,7 @@
       {
         "letter": "C",
         "text": "Establish a new order",
-        "leads_to": "ELARA_ENDING_LEGACY",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -6413,7 +6422,7 @@
       {
         "letter": "B",
         "text": "Advise only\u2014not lead",
-        "leads_to": "ELARA_ENDING_JUDGE",
+        "leads_to": "ELARA_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -6460,6 +6469,15 @@
         "leads_to": "ELARA_CH4_MAIN",
         "effects": {
           "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Avenger ending",
+        "leads_to": "ELARA_ENDING_AVENGER",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -11380,6 +11398,15 @@
           "survival": 1
         },
         "requires": null
+      },
+      {
+        "letter": "F",
+        "text": "Achieve Betrayed ending",
+        "leads_to": "THERON_ENDING_BETRAYED",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11544,7 +11571,7 @@
       {
         "letter": "D",
         "text": "Take the path to RICH",
-        "leads_to": "VEX_ENDING_RICH",
+        "leads_to": "VEX_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -11553,7 +11580,7 @@
       {
         "letter": "E",
         "text": "Take the path to BETRAYED",
-        "leads_to": "VEX_ENDING_BETRAYED",
+        "leads_to": "VEX_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -11562,7 +11589,7 @@
       {
         "letter": "F",
         "text": "Take the path to REFORM",
-        "leads_to": "VEX_ENDING_REFORM",
+        "leads_to": "VEX_CH3_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -12460,7 +12487,7 @@
       {
         "letter": "D",
         "text": "Take the path to SPIRIT",
-        "leads_to": "ASHA_ENDING_SPIRIT",
+        "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -12469,7 +12496,7 @@
       {
         "letter": "E",
         "text": "Take the path to SACRIFICE",
-        "leads_to": "ASHA_ENDING_SACRIFICE",
+        "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -12478,7 +12505,7 @@
       {
         "letter": "F",
         "text": "Take the path to WANDERER",
-        "leads_to": "ASHA_ENDING_WANDERER",
+        "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -12487,7 +12514,7 @@
       {
         "letter": "G",
         "text": "Take the path to CROWN",
-        "leads_to": "ASHA_ENDING_CROWN",
+        "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -12496,7 +12523,7 @@
       {
         "letter": "H",
         "text": "Take the path to CH4_ENDING_SELECTION",
-        "leads_to": "ASHA_CH4_ENDING_SELECTION",
+        "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -12505,7 +12532,7 @@
       {
         "letter": "I",
         "text": "Explore side path",
-        "leads_to": "ASHA_ENDING_GUARDIAN",
+        "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "survival": 1
         },
@@ -12514,7 +12541,7 @@
       {
         "letter": "J",
         "text": "Explore side path",
-        "leads_to": "ASHA_ENDING_ORDER",
+        "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "survival": 1
         },
@@ -12523,7 +12550,7 @@
       {
         "letter": "K",
         "text": "Explore side path",
-        "leads_to": "ASHA_ENDING_CROWN_HUNTER",
+        "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "survival": 1
         },
@@ -12532,7 +12559,7 @@
       {
         "letter": "L",
         "text": "Explore side path",
-        "leads_to": "ASHA_ENDING_UNITER",
+        "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "survival": 1
         },
@@ -12541,7 +12568,7 @@
       {
         "letter": "M",
         "text": "Explore side path",
-        "leads_to": "ASHA_ENDING",
+        "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "survival": 1
         },
@@ -13429,6 +13456,15 @@
         "leads_to": "KIRA_CH3_END",
         "effects": {
           "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Lost ending",
+        "leads_to": "KIRA_ENDING_LOST",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -14576,7 +14612,7 @@
       {
         "letter": "D",
         "text": "Explore side path",
-        "leads_to": "VEX_ENDING",
+        "leads_to": "VEX_CH3_TRANSITION",
         "effects": {
           "survival": 1
         },
@@ -14847,7 +14883,7 @@
       {
         "letter": "B",
         "text": "Take a different path",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 1
         },
@@ -14856,7 +14892,7 @@
       {
         "letter": "C",
         "text": "Return to previous",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -15051,6 +15087,15 @@
         "letter": "H",
         "text": "Explore alternative path",
         "leads_to": "VEX_CH5_MEMORIAL",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "I",
+        "text": "Achieve King ending",
+        "leads_to": "VEX_ENDING_KING",
         "effects": {
           "survival": 1
         },
@@ -15650,6 +15695,15 @@
           "charisma": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Judge ending",
+        "leads_to": "ELARA_ENDING_JUDGE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -15683,6 +15737,15 @@
         "leads_to": "ELARA_CH4_END",
         "effects": {
           "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Empress ending",
+        "leads_to": "ELARA_ENDING_EMPRESS",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -15720,6 +15783,15 @@
           "charisma": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Consumed ending",
+        "leads_to": "ELARA_ENDING_CONSUMED",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -15753,6 +15825,15 @@
         "leads_to": "ELARA_CH4_END",
         "effects": {
           "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Negotiate ending",
+        "leads_to": "ELARA_ENDING_NEGOTIATE",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -16421,6 +16502,15 @@
           "combat": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Sacrifice ending",
+        "leads_to": "ASHA_ENDING_SACRIFICE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -16759,6 +16849,15 @@
         "letter": "C",
         "text": "Prepare for what's ahead",
         "leads_to": "VEX_CH4_PREPARE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Ending ending",
+        "leads_to": "VEX_ENDING",
         "effects": {
           "survival": 1
         },
@@ -17409,6 +17508,15 @@
           "stealth": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Balance ending",
+        "leads_to": "KIRA_ENDING_BALANCE",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -17477,6 +17585,15 @@
         "leads_to": "KIRA_CH4_MAIN",
         "effects": {
           "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Martyr ending",
+        "leads_to": "KIRA_ENDING_MARTYR",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -17869,6 +17986,15 @@
         "leads_to": "THERON_CH4_MAIN",
         "effects": {
           "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Protector ending",
+        "leads_to": "THERON_ENDING_PROTECTOR",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -18340,6 +18466,15 @@
           "charisma": 1
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Purifier ending",
+        "leads_to": "KIRA_ENDING_PURIFIER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -18580,7 +18715,7 @@
       {
         "letter": "A",
         "text": "Rule with the void - become the Hollow King",
-        "leads_to": "THERON_ENDING_HOLLOW",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "void_magic": 5,
           "humanity": -5
@@ -18770,7 +18905,7 @@
       {
         "letter": "A",
         "text": "Open the door - claim the power",
-        "leads_to": "THERON_ENDING_HOLLOW",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "void_magic": 5,
           "humanity": -5
@@ -18808,7 +18943,7 @@
       {
         "letter": "A",
         "text": "Protect her at any cost",
-        "leads_to": "THERON_ENDING_PROTECTOR",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "charisma": 3,
           "honor": 2
@@ -18818,7 +18953,7 @@
       {
         "letter": "B",
         "text": "Take her to safety - leave the fight",
-        "leads_to": "THERON_ENDING_SURVIVOR",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "charisma": 2,
           "humanity": 2
@@ -18980,7 +19115,7 @@
       {
         "letter": "C",
         "text": "Force abdication - install new ruler",
-        "leads_to": "THERON_ENDING_KING",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "charisma": 3,
           "strength": 2
@@ -19018,7 +19153,7 @@
       {
         "letter": "C",
         "text": "Disappear - become legend",
-        "leads_to": "THERON_ENDING_LEGEND",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "stealth": 3,
           "charisma": 1
@@ -19074,7 +19209,7 @@
       {
         "letter": "A",
         "text": "Support the kingdom",
-        "leads_to": "THERON_ENDING_COMMANDER",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "charisma": 3,
           "combat": 2
@@ -19094,7 +19229,7 @@
       {
         "letter": "C",
         "text": "Remain neutral - protect the innocent",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "charisma": 2,
           "humanity": 2
@@ -19112,7 +19247,7 @@
       {
         "letter": "A",
         "text": "Walk away - live in peace",
-        "leads_to": "THERON_ENDING_SURVIVOR",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "humanity": 3,
           "charisma": 1
@@ -19122,7 +19257,7 @@
       {
         "letter": "B",
         "text": "Guide others - share wisdom",
-        "leads_to": "THERON_ENDING_MENTOR",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "charisma": 3,
           "intelligence": 2
@@ -19132,10 +19267,19 @@
       {
         "letter": "C",
         "text": "Return to the kingdom - serve again",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "charisma": 2,
           "honor": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Hollow ending",
+        "leads_to": "THERON_ENDING_HOLLOW",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -19150,7 +19294,7 @@
       {
         "letter": "A",
         "text": "Return as hero",
-        "leads_to": "THERON_ENDING_REDEEMED",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "charisma": 3,
           "honor": 3
@@ -19160,7 +19304,7 @@
       {
         "letter": "B",
         "text": "Disappear - no thanks needed",
-        "leads_to": "THERON_ENDING_LEGEND",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "stealth": 2,
           "humanity": 2
@@ -19170,7 +19314,7 @@
       {
         "letter": "C",
         "text": "Guard the seal forever",
-        "leads_to": "THERON_ENDING_GUARDIAN",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "intelligence": 2,
           "void_magic": 1
@@ -19188,7 +19332,7 @@
       {
         "letter": "A",
         "text": "Free him - with conditions",
-        "leads_to": "THERON_ENDING_UNDYING",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "void_magic": 5,
           "charisma": 2
@@ -19208,7 +19352,7 @@
       {
         "letter": "C",
         "text": "Learn his wisdom - share his burden",
-        "leads_to": "THERON_ENDING_GUARDIAN",
+        "leads_to": "THERON_CH5_TRANSITION",
         "effects": {
           "intelligence": 3,
           "void_magic": 2
@@ -19831,7 +19975,7 @@
       {
         "letter": "A",
         "text": "End him completely",
-        "leads_to": "VEX_ENDING_AVENGER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "combat": 2
         },
@@ -19840,7 +19984,7 @@
       {
         "letter": "B",
         "text": "Make him watch",
-        "leads_to": "VEX_ENDING_AVENGER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "humanity": -1
         },
@@ -19849,7 +19993,7 @@
       {
         "letter": "C",
         "text": "Show mercy",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -19874,7 +20018,7 @@
       {
         "letter": "A",
         "text": "Take her hand",
-        "leads_to": "VEX_ENDING_FAMILY",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -19892,7 +20036,7 @@
       {
         "letter": "C",
         "text": "I'm sorry",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "humanity": 1
         },
@@ -19917,7 +20061,7 @@
       {
         "letter": "A",
         "text": "Embrace the truth",
-        "leads_to": "VEX_ENDING_TRUTH",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -19926,7 +20070,7 @@
       {
         "letter": "B",
         "text": "Reject it",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "humanity": -1
         },
@@ -19935,7 +20079,7 @@
       {
         "letter": "C",
         "text": "Share it",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20087,7 +20231,7 @@
       {
         "letter": "A",
         "text": "Take the northern road",
-        "leads_to": "VEX_ENDING_FREEDOM",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 2
         },
@@ -20096,7 +20240,7 @@
       {
         "letter": "B",
         "text": "Take the coastal route",
-        "leads_to": "VEX_ENDING_FREEDOM",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 2
         },
@@ -20105,7 +20249,7 @@
       {
         "letter": "C",
         "text": "Just walk",
-        "leads_to": "VEX_ENDING_FREEDOM",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "humanity": 1
         },
@@ -20233,7 +20377,7 @@
       {
         "letter": "A",
         "text": "Take the charter",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -20251,7 +20395,7 @@
       {
         "letter": "C",
         "text": "Leave evidence",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -20268,7 +20412,7 @@
       {
         "letter": "A",
         "text": "Hunt the vault",
-        "leads_to": "VEX_ENDING_RICH",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 2
         },
@@ -20277,7 +20421,7 @@
       {
         "letter": "B",
         "text": "Expose publicly",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20286,7 +20430,7 @@
       {
         "letter": "C",
         "text": "Use leverage",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -20312,7 +20456,7 @@
       {
         "letter": "B",
         "text": "Learn plan",
-        "leads_to": "VEX_ENDING_RICH",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -20321,7 +20465,7 @@
       {
         "letter": "C",
         "text": "Turn weapons",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 1
         },
@@ -20338,7 +20482,7 @@
       {
         "letter": "A",
         "text": "Take records",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -20347,7 +20491,7 @@
       {
         "letter": "B",
         "text": "Use as weapon",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20356,7 +20500,7 @@
       {
         "letter": "C",
         "text": "Destroy them",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "humanity": -1
         },
@@ -20366,6 +20510,15 @@
         "letter": "D",
         "text": "Proceed to Chapter 5",
         "leads_to": "VEX_CH5_TRANSITION",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Achieve Betrayed ending",
+        "leads_to": "VEX_ENDING_BETRAYED",
         "effects": {
           "survival": 1
         },
@@ -20382,7 +20535,7 @@
       {
         "letter": "A",
         "text": "Guide chaos",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20391,7 +20544,7 @@
       {
         "letter": "B",
         "text": "Disappear",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "stealth": 1
         },
@@ -20400,7 +20553,7 @@
       {
         "letter": "C",
         "text": "New order",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -20417,7 +20570,7 @@
       {
         "letter": "A",
         "text": "Accept",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -20435,7 +20588,7 @@
       {
         "letter": "C",
         "text": "Demand reform",
-        "leads_to": "VEX_ENDING_REFORM",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20452,7 +20605,7 @@
       {
         "letter": "A",
         "text": "Grab and flee",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 2
         },
@@ -20470,7 +20623,7 @@
       {
         "letter": "C",
         "text": "Stand and fight",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "combat": 1
         },
@@ -20487,7 +20640,7 @@
       {
         "letter": "A",
         "text": "Expose",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20496,7 +20649,7 @@
       {
         "letter": "B",
         "text": "Personal gain",
-        "leads_to": "VEX_ENDING_RICH",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -20505,7 +20658,7 @@
       {
         "letter": "C",
         "text": "Blackmail",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -20522,7 +20675,7 @@
       {
         "letter": "A",
         "text": "Seize power",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -20531,7 +20684,7 @@
       {
         "letter": "B",
         "text": "Destroy",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "combat": 1
         },
@@ -20540,7 +20693,7 @@
       {
         "letter": "C",
         "text": "Reform",
-        "leads_to": "VEX_ENDING_REFORM",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20557,7 +20710,7 @@
       {
         "letter": "A",
         "text": "Accept",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 1
         },
@@ -20575,7 +20728,7 @@
       {
         "letter": "C",
         "text": "Take wealth",
-        "leads_to": "VEX_ENDING_RICH",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 1
         },
@@ -20592,7 +20745,7 @@
       {
         "letter": "A",
         "text": "Hunt betrayer",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "combat": 1
         },
@@ -20610,7 +20763,7 @@
       {
         "letter": "C",
         "text": "Public stand",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20627,7 +20780,7 @@
       {
         "letter": "A",
         "text": "Take deal",
-        "leads_to": "VEX_ENDING_RICH",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 1
         },
@@ -20636,7 +20789,7 @@
       {
         "letter": "B",
         "text": "Fight",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "combat": 2
         },
@@ -20645,7 +20798,7 @@
       {
         "letter": "C",
         "text": "Own deal",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20662,7 +20815,7 @@
       {
         "letter": "A",
         "text": "Lead victory",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20671,7 +20824,7 @@
       {
         "letter": "B",
         "text": "Lead peace",
-        "leads_to": "VEX_ENDING_REFORM",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -20680,7 +20833,7 @@
       {
         "letter": "C",
         "text": "Release",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "humanity": 1
         },
@@ -20706,7 +20859,7 @@
       {
         "letter": "A",
         "text": "Accept",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20715,7 +20868,7 @@
       {
         "letter": "B",
         "text": "Reject destroy",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "combat": 2
         },
@@ -20724,7 +20877,7 @@
       {
         "letter": "C",
         "text": "Reject walk",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 1
         },
@@ -20750,7 +20903,7 @@
       {
         "letter": "A",
         "text": "Take risk",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 1
         },
@@ -20759,7 +20912,7 @@
       {
         "letter": "B",
         "text": "Play safe",
-        "leads_to": "VEX_ENDING_RICH",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -20768,7 +20921,7 @@
       {
         "letter": "C",
         "text": "Split difference",
-        "leads_to": "VEX_ENDING_REFORM",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -20785,7 +20938,7 @@
       {
         "letter": "A",
         "text": "Lead",
-        "leads_to": "VEX_ENDING_SHADOWKING",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20794,7 +20947,7 @@
       {
         "letter": "B",
         "text": "Walk away",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "dexterity": 1
         },
@@ -20803,7 +20956,7 @@
       {
         "letter": "C",
         "text": "Stay advisor",
-        "leads_to": "VEX_ENDING_REFORM",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 1
         },
@@ -20820,7 +20973,7 @@
       {
         "letter": "A",
         "text": "Train well",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20829,7 +20982,7 @@
       {
         "letter": "B",
         "text": "Send away",
-        "leads_to": "VEX_ENDING_WANDERER",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "humanity": 1
         },
@@ -20838,7 +20991,7 @@
       {
         "letter": "C",
         "text": "Make equal",
-        "leads_to": "VEX_ENDING_REFORM",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 1
         },
@@ -20855,7 +21008,7 @@
       {
         "letter": "A",
         "text": "Destroy",
-        "leads_to": "VEX_ENDING_LEGEND",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "combat": 2
         },
@@ -20864,7 +21017,7 @@
       {
         "letter": "B",
         "text": "Claim reform",
-        "leads_to": "VEX_ENDING_REFORM",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -20873,7 +21026,7 @@
       {
         "letter": "C",
         "text": "Escape prize",
-        "leads_to": "VEX_ENDING_RICH",
+        "leads_to": "VEX_CH5_TRANSITION",
         "effects": {
           "intelligence": 1
         },
@@ -21631,6 +21784,15 @@
         "leads_to": "ASHA_CH4_ANCIENT_WEAPON",
         "effects": {
           "combat": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "E",
+        "text": "Proceed to ending selection",
+        "leads_to": "ASHA_CH4_ENDING_SELECTION",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -22893,6 +23055,15 @@
           "survival": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Wanderer ending",
+        "leads_to": "ASHA_ENDING_WANDERER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -22926,6 +23097,15 @@
         "leads_to": "ASHA_CH5_CHALLENGE",
         "effects": {
           "charisma": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Crown ending",
+        "leads_to": "ASHA_ENDING_CROWN",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -23165,6 +23345,15 @@
           "survival": 3
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Ending ending",
+        "leads_to": "ASHA_ENDING",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -23198,6 +23387,15 @@
         "leads_to": "ASHA_CH5_ALT",
         "effects": {
           "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Spirit ending",
+        "leads_to": "ASHA_ENDING_SPIRIT",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -23235,6 +23433,15 @@
           "intelligence": 3
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Uniter ending",
+        "leads_to": "ASHA_ENDING_UNITER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -23268,6 +23475,15 @@
         "leads_to": "ASHA_CH5_MAIN",
         "effects": {
           "combat": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Order ending",
+        "leads_to": "ASHA_ENDING_ORDER",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -23408,6 +23624,15 @@
         "leads_to": "ASHA_CH5_ALT",
         "effects": {
           "charisma": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Guardian ending",
+        "leads_to": "ASHA_ENDING_GUARDIAN",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -24212,6 +24437,15 @@
           "nature_magic": 5
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Hunter ending",
+        "leads_to": "ASHA_ENDING_CROWN_HUNTER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -24317,6 +24551,15 @@
           "combat": 2
         },
         "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Healer ending",
+        "leads_to": "KIRA_ENDING_HEALER",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -24385,6 +24628,15 @@
         "leads_to": "KIRA_CH4_DESTROY_SOURCE",
         "effects": {
           "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Achieve Bridge ending",
+        "leads_to": "KIRA_ENDING_BRIDGE",
+        "effects": {
+          "survival": 1
         },
         "requires": null
       }
@@ -24566,7 +24818,7 @@
       {
         "letter": "B",
         "text": "Destroy artifacts",
-        "leads_to": "KIRA_ENDING_PURIFIER",
+        "leads_to": "KIRA_CH5_TRANSITION",
         "effects": {
           "combat": 3
         },
@@ -24575,7 +24827,7 @@
       {
         "letter": "C",
         "text": "Seal void",
-        "leads_to": "KIRA_ENDING_SACRIFICE",
+        "leads_to": "KIRA_CH5_TRANSITION",
         "effects": {
           "void_magic": 3
         },
@@ -24592,7 +24844,7 @@
       {
         "letter": "A",
         "text": "Perfect harmony",
-        "leads_to": "KIRA_ENDING_BALANCE",
+        "leads_to": "KIRA_CH5_TRANSITION",
         "effects": {
           "intelligence": 3
         },
@@ -24601,7 +24853,7 @@
       {
         "letter": "B",
         "text": "Heal world",
-        "leads_to": "KIRA_ENDING_HEALER",
+        "leads_to": "KIRA_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
@@ -24610,7 +24862,7 @@
       {
         "letter": "C",
         "text": "Bridge worlds",
-        "leads_to": "KIRA_ENDING_BRIDGE",
+        "leads_to": "KIRA_CH5_TRANSITION",
         "effects": {
           "void_magic": 2
         },
@@ -24636,7 +24888,7 @@
       {
         "letter": "B",
         "text": "Defense",
-        "leads_to": "KIRA_ENDING_DEFENDER",
+        "leads_to": "KIRA_CH5_TRANSITION",
         "effects": {
           "intelligence": 2
         },
@@ -24645,7 +24897,7 @@
       {
         "letter": "C",
         "text": "Void spells",
-        "leads_to": "KIRA_ENDING_WARRIOR",
+        "leads_to": "KIRA_CH5_TRANSITION",
         "effects": {
           "void_magic": 3
         },
@@ -24662,7 +24914,7 @@
       {
         "letter": "A",
         "text": "End conflict",
-        "leads_to": "KIRA_ENDING_TRUTH",
+        "leads_to": "KIRA_CH5_TRANSITION",
         "effects": {
           "intelligence": 3
         },
@@ -24671,7 +24923,7 @@
       {
         "letter": "B",
         "text": "Share wisdom",
-        "leads_to": "KIRA_ENDING_MENTOR",
+        "leads_to": "KIRA_CH5_TRANSITION",
         "effects": {
           "charisma": 2
         },
