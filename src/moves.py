@@ -15,6 +15,63 @@ class Move:
     accuracy_dc: int
     stat_used: str
     description: str
+    element: str = ""  # fire, ice, lightning, void, nature
+    status_effect: str = ""  # burn, freeze, bleed, mark, poison
+    status_turns: int = 0
+
+
+# Combo Chain - defines valid move combinations
+@dataclass
+class ComboChain:
+    """Represents a combo between two moves."""
+    first_move: str
+    second_move: str
+    bonus_damage: int = 0
+    bonus_effect: str = ""
+    description: str = ""
+
+
+# Combo chains per character class
+COMBO_CHAINS = {
+    "void_mage": [
+        ComboChain("void_burst", "shadow_bolt", 5, "mark", "Void cascade - leaves enemy marked"),
+        ComboChain("shadow_bolt", "soul_drain", 8, "drain", "Shadow absorption - drains health"),
+        ComboChain("void_burst", "dark_pact", 12, "wound", "Dark evolution -加深伤口"),
+    ],
+    "knight": [
+        ComboChain("shield_bash", "cleaving_strike", 6, "stun", "Shield break - leaves vulnerable"),
+        ComboChain("cleaving_strike", "blade_storm", 10, "bleed", "Storm blade - causes bleeding"),
+        ComboChain("defensive_stance", "reckless_blow", 8, "focus", "Defensive fury -精准打击"),
+    ],
+    "shadow": [
+        ComboChain("backstab", "poison_blade", 7, "poison", "Deadly combination -毒液渗透"),
+        ComboChain("fan_of_knives", "assassinate", 15, "mark", "Shadow execution -标记目标"),
+        ComboChain("smoke_bomb", "backstab", 5, "crit", "Stealth strike -背刺加成"),
+    ],
+    "merchant": [
+        ComboChain("coin_toss", "intimidate", 4, "terror", "Psychological warfare -恐惧"),
+        ComboChain("intimidate", "business_ending", 10, "shatter", "Business destruction -心理崩溃"),
+        ComboChain("sweet_talk", "favor_call", 5, "charm", "Social manipulation -获得加成"),
+    ],
+    "warden": [
+        ComboChain("root_entangle", "beast_call", 8, "immobilize", "Nature's trap -困住敌人"),
+        ComboChain("beast_call", "natures_wrath", 12, "wound", "Beast fury -野性攻击"),
+        ComboChain("healing_grove", "thorn_shield", 5, "regen", "Nature's blessing -自然回复"),
+    ],
+}
+
+
+# Status Effects definitions
+STATUS_EFFECTS = {
+    "poison": {"damage": 2, "turns": 3, "stat_penalty": ""},
+    "burn": {"damage": 3, "turns": 3, "stat_penalty": "defense"},
+    "freeze": {"damage": 0, "turns": 2, "stat_penalty": "dexterity"},
+    "bleed": {"damage": 2, "turns": 4, "stat_penalty": ""},
+    "mark": {"damage": 0, "turns": 2, "stat_penalty": ""},  # next attack +50%
+    "stun": {"damage": 0, "turns": 1, "stat_penalty": "all"},
+    "terror": {"damage": 0, "turns": 2, "stat_penalty": "all"},
+    "drain": {"damage": 3, "turns": 2, "stat_penalty": "strength"},
+}
 
 
 # Void Mage Moves - Intelligence-based void magic
@@ -300,4 +357,45 @@ def get_move_by_name(char_class: str, move_name: str) -> Move:
     for move in moves.values():
         if move.name.lower() == move_name.lower():
             return move
+
+
+def get_combo_bonus(char_class: str, previous_move: str, current_move: str) -> tuple:
+    """
+    Check if two moves form a valid combo.
+    Returns (bonus_damage, bonus_effect, description)
+    """
+    combos = COMBO_CHAINS.get(char_class.lower(), [])
+    for combo in combos:
+        if combo.first_move == previous_move and combo.second_move == current_move:
+            return (combo.bonus_damage, combo.bonus_effect, combo.description)
+    return (0, "", "")
+
+
+def get_available_combos(char_class: str, previous_move: str) -> list:
+    """Get list of moves that can combo from the previous move."""
+    combos = COMBO_CHAINS.get(char_class.lower(), [])
+    available = []
+    for combo in combos:
+        if combo.first_move == previous_move:
+            # Get the move object for display
+            moves = get_moves_for_class(char_class)
+            if combo.second_move in moves:
+                move = moves[combo.second_move]
+                available.append({
+                    "move_key": combo.second_move,
+                    "move_name": move.name,
+                    "bonus_damage": combo.bonus_damage,
+                    "bonus_effect": combo.bonus_effect,
+                    "description": combo.description
+                })
+    return available
+
+
+def apply_elemental_weakness(base_damage: int, attack_element: str, enemy_weak: str, enemy_strong: str) -> int:
+    """Apply elemental weakness/strength modifiers to damage."""
+    if attack_element.lower() == enemy_weak.lower():
+        return int(base_damage * 1.5)
+    elif attack_element.lower() == enemy_strong.lower():
+        return int(base_damage * 0.5)
+    return base_damage
     return None

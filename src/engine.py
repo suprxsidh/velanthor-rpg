@@ -11,7 +11,7 @@ import random
 from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Optional, Dict, List
-from src.moves import get_moves_for_class, Move
+from src.moves import get_moves_for_class, Move, STATUS_EFFECTS
 from src.bestiary import Enemy, get_enemy_by_name
 
 # ANSI color codes
@@ -605,12 +605,15 @@ class GameEngine:
     
     def combat_encounter(self, enemy, char_class):
         """
-        Turn-based combat encounter with move system, status effects, and equipment bonuses.
+        Turn-based combat encounter with move system, status effects, equipment bonuses, and combo system.
         
         Args:
             enemy: Enemy object from bestiary
             char_class: Character class string ("void_mage", "knight", "shadow", "merchant", "warden")
         """
+        # Import combo functions
+        from src.moves import get_combo_bonus, get_available_combos, apply_elemental_weakness
+        
         # Clear any leftover status effects from previous combat
         self.status_effects = []
         
@@ -623,6 +626,9 @@ class GameEngine:
         
         # Get moves for character class
         class_moves = get_moves_for_class(char_class)
+        
+        # Track previous move for combos
+        previous_move_key = None
         
         print(f"\n{RED}╔{'═'*56}╗{RESET}")
         print(f"{RED}║ {'⚔ COMBAT ENCOUNTER: ' + enemy_name.upper():^44} ║{RESET}")
@@ -676,7 +682,8 @@ class GameEngine:
                     move_keys = list(class_moves.keys())
                     
                     if 0 <= move_index < len(move_keys):
-                        selected_move = class_moves[move_keys[move_index]]
+                        selected_move_key = move_keys[move_index]
+                        selected_move = class_moves[selected_move_key]
                         
                         # Check mana
                         if self.mana >= selected_move.mana_cost:
@@ -689,9 +696,33 @@ class GameEngine:
                             
                             if player_hit:
                                 player_damage = selected_move.damage
+                                combo_bonus = 0
+                                combo_effect = ""
+                                
+                                # Check for combo from previous move
+                                if previous_move_key:
+                                    combo_dmg, combo_eff, combo_desc = get_combo_bonus(char_class, previous_move_key, selected_move_key)
+                                    if combo_dmg > 0:
+                                        combo_bonus = combo_dmg
+                                        combo_effect = combo_eff
+                                        player_damage += combo_bonus
+                                        print(f"\n{GREEN}🔥 COMBO! {combo_desc}{RESET}")
+                                        print(f"   (+{combo_bonus} bonus damage)")
+                                
                                 # Apply equipment bonus to damage
                                 if selected_move.stat_used in effective_stats:
                                     player_damage += effective_stats[selected_move.stat_used] // 2
+                                
+                                # Apply elemental weakness/strength
+                                if selected_move.element:
+                                    player_damage = apply_elemental_weakness(
+                                        player_damage, 
+                                        selected_move.element,
+                                        enemy.weak_against,
+                                        enemy.strong_against
+                                    )
+                                    if player_damage > selected_move.damage + combo_bonus:
+                                        print(f"   {MAGENTA}✨ Elemental weakness exploited!{RESET}")
                                 
                                 # Critical hit on natural 20
                                 if roll == 20:
@@ -699,8 +730,20 @@ class GameEngine:
                                     print(f"\n{GREEN}⚡ CRITICAL HIT!{RESET}")
                                 
                                 # Check for status effect from move
-                                if "poison" in selected_move.name.lower():
-                                    self.add_status_effect("poison", 2, 3, "-2 HP per turn")
+                                if selected_move.status_effect:
+                                    self.add_status_effect(
+                                        selected_move.status_effect,
+                                        STATUS_EFFECTS.get(selected_move.status_effect, {}).get("damage", 0),
+                                        selected_move.status_turns,
+                                        f"+{selected_move.status_effect}"
+                                    )
+                                    print(f"   {CYAN}✦ Applied {selected_move.status_effect}{RESET}")
+                                
+                                # Apply combo effect
+                                if combo_effect == "drain":
+                                    heal = combo_bonus
+                                    self.health = min(100, self.health + heal)
+                                    print(f"   {GREEN}♥ Drained {heal} HP{RESET}")
                                 
                                 enemy_hp -= player_damage
                                 print(f"\n{GREEN}✓ {selected_move.name} hits for {RED}{player_damage}{GREEN} damage!{RESET}")
@@ -708,6 +751,17 @@ class GameEngine:
                             else:
                                 print(f"\n{RED}✗ {selected_move.name} misses!{RESET}")
                                 print(f"   (Rolled {roll}, needed {selected_move.accuracy_dc})")
+                            
+                            # Update previous move for next turn's combo
+                            previous_move_key = selected_move_key
+                            
+                            # Show available combos for next turn
+                            if previous_move_key:
+                                available = get_available_combos(char_class, previous_move_key)
+                                if available:
+                                    print(f"\n   {YELLOW}▸ Combo available:{RESET}")
+                                    for c in available:
+                                        print(f"     [{move_keys.index(c['move_key'])+1}] {c['move_name']} (+{c['bonus_damage']} dmg)")
                         else:
                             print(f"\n{RED}Not enough mana! Need {selected_move.mana_cost}, have {self.mana}{RESET}")
                     else:
