@@ -4183,10 +4183,10 @@
   "VEX_ENDING_WANDERER": {
     "id": "VEX_ENDING_WANDERER",
     "character": "VEX",
-    "description": "You leave the city behind. The Guild is weakened, perhaps broken\u2014Miravel and Corvus will finish what you started. You've done your part. Now it's time to disappear.\n\nOn the road out of the city, you meet a merchant caravan heading north. You join them as a guard, your sword arm earning your keep. No one knows your name here. No one knows what you've done.\n\nAt night, you stare at the stars and wonder if you made the right choice. The Guild still exists, somewhere in the shadows. But so do you\u2014free, alive, unbound.\n\nPerhaps that's enough. Perhaps it has to be.\n\nThe road stretches ahead, and you walk it one step at a time, leaving the past behind.",
-    "choices": [],
-    "type": "story",
-    "ending": "WANDERER"
+    "description": "You walk away from the Guild, the crown, everything. The world is large, and there's still so much to steal\u2014only now, you steal only for yourself.",
+    "type": "ending",
+    "ending": "Wanderer",
+    "choices": []
   },
   "VEX_CH1_DOCKS_CHASE": {
     "id": "VEX_CH1_DOCKS_CHASE",
@@ -6679,15 +6679,17 @@
   "ELARA_ENDING_NEGOTIATE": {
     "id": "ELARA_ENDING_NEGOTIATE",
     "character": "ELARA",
-    "description": "You learn to bargain with the void. Each use, each compromise\u2014the crown takes a piece of you, but leaves enough to remain. This is your victory: imperfect, partial, mortal. The crown whispers of what you could be. You whisper back: Not yet. Maybe never. Until then, you endure.",
-    "ending": "NEGOTIATE",
+    "description": "You broker a deal with the Hollow King\u2014his freedom for the crown. It's not justice, but it's survival. And you're very good at surviving.",
+    "type": "ending",
+    "ending": "Negotiate",
     "choices": []
   },
   "ELARA_ENDING_JUSTICE": {
     "id": "ELARA_ENDING_JUSTICE",
     "character": "ELARA",
-    "description": "Years pass. The courts work, the nobles behave (mostly), and the kingdom heals. You sit on the throne less, but you rule more\u2014through law, through example, through the fear of your name.",
-    "ending": "JUSTICE",
+    "description": "The kingdom celebrates as the Hollow King falls. You rebuild your parents' company, honoring their memory. Justice is served.",
+    "type": "ending",
+    "ending": "Justice",
     "choices": []
   },
   "KIRA_CH1_WATCH_MEMBER": {
@@ -11207,6 +11209,7267 @@
         "text": "Play again",
         "leads_to": "KIRA_CH1_THORNWICK",
         "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_VOID_TEMPLE": {
+    "id": "KIRA_CH4_VOID_TEMPLE",
+    "character": "KIRA",
+    "description": "The Void Temple rises before you like a wound in reality. Seven crown pieces call to the fragment within you. Whatever happens here will determine the fate of everything.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Storm through the entrance",
+        "leads_to": "KIRA_CH4_ASSAULT",
+        "effects": {
+          "void_magic": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use shadows to slip past undetected",
+        "leads_to": "KIRA_CH4_INFILTRATE",
+        "effects": {
+          "stealth": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Call out to Vespera",
+        "leads_to": "KIRA_CH4_CONFRONT",
+        "effects": {
+          "charisma": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_ASSAULT": {
+    "id": "KIRA_CH4_ASSAULT",
+    "character": "KIRA",
+    "description": "You unleash the void without restraint. Shadows explode from your form, tearing through the Hollow Knights. The void surges through you, intoxicating and dangerous.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Push deeper",
+        "leads_to": "KIRA_CH4_GUARDIANS",
+        "effects": {
+          "void_magic": 2,
+          "humanity": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Find the crown chamber first",
+        "leads_to": "KIRA_CH4_CROWN_CHAMBER",
+        "effects": {
+          "stealth": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use the chaos to communicate with your mother",
+        "leads_to": "KIRA_CH4_MOTHER_VISION",
+        "effects": {
+          "intelligence": 2,
+          "void_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_INFILTRATE": {
+    "id": "KIRA_CH4_INFILTRATE",
+    "character": "KIRA",
+    "description": "You become shadow, wrapping around your form until you're indistinguishable from darkness. Deep within, you discover six crown pieces gathered. And your mother, suspended above a ritual circle\u2014alive but barely.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Wait for the right moment",
+        "leads_to": "KIRA_CH4_AMBUSH",
+        "effects": {
+          "stealth": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reveal yourself",
+        "leads_to": "KIRA_CH4_CONFRONT",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use the distraction to free your mother",
+        "leads_to": "KIRA_CH4_RESCUE",
+        "effects": {
+          "dexterity": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_CONFRONT": {
+    "id": "KIRA_CH4_CONFRONT",
+    "character": "KIRA",
+    "description": "'Vespera.' Your voice echoes through the chamber. She turns\u2014you see your own face reflected in hers. She's your family. 'Join me, Kira. Together we can unlock the crown's true power\u2014end death itself.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept her offer",
+        "leads_to": "KIRA_CH4_OFFER",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Refuse and attack",
+        "leads_to": "KIRA_CH4_GUARDIANS",
+        "effects": {
+          "void_magic": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Try to reach her",
+        "leads_to": "KIRA_CH4_REDEMPTION",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_GUARDIANS": {
+    "id": "KIRA_CH4_GUARDIANS",
+    "character": "KIRA",
+    "description": "Seven Hollow Knights advance\u2014former warriors bound to the Hollow King's service. They're faster than any living opponent. But you've spent your life hiding from what you are. No more.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Unleash everything",
+        "leads_to": "KIRA_CH4_VICTORY",
+        "effects": {
+          "void_magic": 3,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Fight defensively",
+        "leads_to": "KIRA_CH4_TACTICAL",
+        "effects": {
+          "intelligence": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use your mother's voice",
+        "leads_to": "KIRA_CH4_BYPASS",
+        "effects": {
+          "charisma": 1,
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_CROWN_CHAMBER": {
+    "id": "KIRA_CH4_CROWN_CHAMBER",
+    "character": "KIRA",
+    "description": "The Chamber of Convergence reveals seven pedestals, six holding crown pieces. Above them, the Hollow King manifests\u2014a shape made of darkness wearing Aethon's form. 'At last, the final piece arrives.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Place the piece\u2014unite the crown",
+        "leads_to": "KIRA_CH4_UNITE",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy the crown",
+        "leads_to": "KIRA_CH4_DESTROY",
+        "effects": {
+          "humanity": 2,
+          "void_magic": -2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Bargain for your mother's freedom",
+        "leads_to": "KIRA_CH4_BARGAIN",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_UNITE": {
+    "id": "KIRA_CH4_UNITE",
+    "character": "KIRA",
+    "description": "You place the seventh piece. Power floods through you\u2014not corrupting, but transformative. You see everything: the Hollow King's true nature, the Void Beast's prison, the choices that led to this moment.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Become the new Undying",
+        "leads_to": "KIRA_CH5_JOURNEY",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Grant the power to another",
+        "leads_to": "KIRA_CH5_PASSAGE",
+        "effects": {
+          "humanity": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Destroy everything",
+        "leads_to": "KIRA_CH5_SACRIFICE",
+        "effects": {
+          "void_magic": 4,
+          "humanity": -3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_DESTROY": {
+    "id": "KIRA_CH4_DESTROY",
+    "character": "KIRA",
+    "description": "You reach for the void within\u2014not to command, but to unmake. The Hollow King screams as the crown pieces crack, light leaking from their fractured forms. Your mother falls from suspension, catching herself.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Embrace your mother",
+        "leads_to": "KIRA_ENDING_TRUTH",
+        "effects": {
+          "humanity": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The Hollow King still lives",
+        "leads_to": "KIRA_CH5_JOURNEY",
+        "effects": {
+          "void_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use the opening to interrogate",
+        "leads_to": "KIRA_CH5_TRUTH",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_BARGAIN": {
+    "id": "KIRA_CH4_BARGAIN",
+    "character": "KIRA",
+    "description": "'Let my mother go, and I'll give you the seventh piece willingly.' The Hollow King considers\u2014taking the piece by force would leave the crown unstable. 'Very well. But know this\u2014she's become partial to the darkness.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept what your mother has become",
+        "leads_to": "KIRA_CH5_UNITY",
+        "effects": {
+          "void_magic": 2,
+          "humanity": -2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Your real mother is dead",
+        "leads_to": "KIRA_CH5_TRUTH",
+        "effects": {
+          "void_magic": 2,
+          "humanity": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Try to save who she was",
+        "leads_to": "KIRA_CH5_REDEMPTION",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_OFFER": {
+    "id": "KIRA_CH4_OFFER",
+    "character": "KIRA",
+    "description": "Vespera explains: the crown holds the key to transcending mortality. With both Nightwind blood united, you can control the Beast. Become something eternal. It's terrifyingly compelling.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Join her\u2014a new empire rises",
+        "leads_to": "KIRA_ENDING_EMPIRE",
+        "effects": {
+          "void_magic": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Kill her\u2014end the madness",
+        "leads_to": "KIRA_CH4_GUARDIANS",
+        "effects": {
+          "void_magic": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use her plan\u2014then betray her",
+        "leads_to": "KIRA_CH4_CROWN_CHAMBER",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_REDEMPTION": {
+    "id": "KIRA_CH4_REDEMPTION",
+    "character": "KIRA",
+    "description": "You reach out with memory\u2014not magic. 'Remember the field of silver bells. The songs our grandmothers sang.' Vespera falters. Something shifts behind her eyes\u2014something human. 'I remember,' she whispers.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Offer mercy",
+        "leads_to": "KIRA_CH5_UNITY",
+        "effects": {
+          "charisma": 3,
+          "humanity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Strike while her guard is down",
+        "leads_to": "KIRA_CH4_VICTORY",
+        "effects": {
+          "void_magic": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Bind her\u2014she'll help or die",
+        "leads_to": "KIRA_CH5_ALLIES",
+        "effects": {
+          "charisma": 2,
+          "void_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_MOTHER_VISION": {
+    "id": "KIRA_CH4_MOTHER_VISION",
+    "character": "KIRA",
+    "description": "Through the void connection, images flood: your mother during the attack, her years in the void losing herself piece by piece. Her final act\u2014hiding the crown piece within you before the Cult could take it.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Save her\u2014no matter the cost",
+        "leads_to": "KIRA_CH4_RESCUE",
+        "effects": {
+          "void_magic": 2,
+          "humanity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Find the truth",
+        "leads_to": "KIRA_CH4_TRUTH",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use what you learned",
+        "leads_to": "KIRA_CH4_GUARDIANS",
+        "effects": {
+          "void_magic": 2,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_RESCUE": {
+    "id": "KIRA_CH4_RESCUE",
+    "character": "KIRA",
+    "description": "You fight through to your mother\u2014she's so light in your arms. Eight years has reduced her to shadow and bone. Behind you, the Temple begins to collapse.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Escape together",
+        "leads_to": "KIRA_ENDING_TRUTH",
+        "effects": {
+          "humanity": 3,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The Hollow King still lives",
+        "leads_to": "KIRA_CH5_JOURNEY",
+        "effects": {
+          "void_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "There's something she needs to tell you",
+        "leads_to": "KIRA_CH5_TRUTH",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_AMBUSH": {
+    "id": "KIRA_CH4_AMBUSH",
+    "character": "KIRA",
+    "description": "You wait in shadow as Vespera performs the ritual. The moment she places the final piece\u2014you strike. Shadows explode, tearing the crown pieces from their pedestals.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Fight",
+        "leads_to": "KIRA_CH4_VICTORY",
+        "effects": {
+          "void_magic": 3,
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Bargain",
+        "leads_to": "KIRA_CH4_BARGAIN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use the crown pieces as weapons",
+        "leads_to": "KIRA_CH5_SACRIFICE",
+        "effects": {
+          "void_magic": 4,
+          "humanity": -2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_VICTORY": {
+    "id": "KIRA_CH4_VICTORY",
+    "character": "KIRA",
+    "description": "The final Hollow Knight falls. The Temple burns with shadows. Vespera is dead. Your mother is free. But the Hollow King remains, waiting in the darkness.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Pursue the Hollow King",
+        "leads_to": "KIRA_CH5_JOURNEY",
+        "effects": {
+          "void_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Heal your mother first",
+        "leads_to": "KIRA_CH5_HEALING",
+        "effects": {
+          "humanity": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Study what remains",
+        "leads_to": "KIRA_CH5_STUDY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_TACTICAL": {
+    "id": "KIRA_CH4_TACTICAL",
+    "character": "KIRA",
+    "description": "You don't waste energy on showy attacks\u2014each movement serves a purpose. The Hollow Knights are powerful but predictable. One by one, they fall to your patience.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Confront Vespera",
+        "leads_to": "KIRA_CH4_CROWN_CHAMBER",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Take the crown pieces",
+        "leads_to": "KIRA_CH5_SACRIFICE",
+        "effects": {
+          "void_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Free your mother",
+        "leads_to": "KIRA_CH4_RESCUE",
+        "effects": {
+          "charisma": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_BYPASS": {
+    "id": "KIRA_CH4_BYPASS",
+    "character": "KIRA",
+    "description": "You call out to your mother\u2014not with words, but with the void connection. She responds, buying you the distraction you need. The crown pieces lie scattered, incomplete and unstable.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take all seven\u2014become Undying",
+        "leads_to": "KIRA_ENDING_EMPIRE",
+        "effects": {
+          "void_magic": 4
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Leave the crown\u2014keep what you have",
+        "leads_to": "KIRA_ENDING_FREE",
+        "effects": {
+          "humanity": 2,
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Destroy them all",
+        "leads_to": "KIRA_CH5_SACRIFICE",
+        "effects": {
+          "void_magic": 3,
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_TRUTH": {
+    "id": "KIRA_CH4_TRUTH",
+    "character": "KIRA",
+    "description": "Your mother's message reveals everything: each Nightwind who united the crown went mad. Aethon wasn't a hero\u2014he was the first to fail. 'You're the only one who can break the cycle.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Reject the legacy",
+        "leads_to": "KIRA_ENDING_TRUTH",
+        "effects": {
+          "humanity": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Learn from their mistakes",
+        "leads_to": "KIRA_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2,
+          "void_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Destroy everything",
+        "leads_to": "KIRA_ENDING_SACRIFICE",
+        "effects": {
+          "void_magic": 3,
+          "humanity": -2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_JOURNEY": {
+    "id": "KIRA_CH5_JOURNEY",
+    "character": "KIRA",
+    "description": "The journey into the heart of the void takes you beyond reality. At the center, Aethon Nightwind waits\u2014looking at you with eyes that have seen eternity. 'Finish it,' he begs. 'Whatever choice you make\u2014let it end.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Unite with him",
+        "leads_to": "KIRA_CH5_UNITY",
+        "effects": {
+          "void_magic": 3,
+          "humanity": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy him",
+        "leads_to": "KIRA_CH5_CONFRONTATION",
+        "effects": {
+          "void_magic": 4,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Free him\u2014he deserves rest",
+        "leads_to": "KIRA_CH5_FINAL_CHOICE",
+        "effects": {
+          "humanity": 2,
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_UNITY": {
+    "id": "KIRA_CH5_UNITY",
+    "character": "KIRA",
+    "description": "You merge with Aethon's consciousness\u2014two Nightwinds, separated by centuries, becoming one. 'You're what I wanted to become,' he realizes. The crown forms around you both.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Become the new Undying",
+        "leads_to": "KIRA_ENDING_EMPIRE",
+        "effects": {
+          "void_magic": 5
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Pass the mantle",
+        "leads_to": "KIRA_ENDING_FREE",
+        "effects": {
+          "humanity": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Destroy everything",
+        "leads_to": "KIRA_ENDING_SACRIFICE",
+        "effects": {
+          "void_magic": 5,
+          "humanity": -3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_PASSAGE": {
+    "id": "KIRA_CH5_PASSAGE",
+    "character": "KIRA",
+    "description": "You remove the crown piece\u2014the fragment that's been part of you since birth. It feels like losing a limb but also like setting down a weight. It chooses someone else\u2014a young mage feeling the void touch for the first time.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find the new wielder",
+        "leads_to": "KIRA_ENDING_TRUTH",
+        "effects": {
+          "charisma": 2,
+          "humanity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Leave them to decide",
+        "leads_to": "KIRA_ENDING_FREE",
+        "effects": {
+          "humanity": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Something's wrong",
+        "leads_to": "KIRA_CH5_CONFRONTATION",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_SACRIFICE": {
+    "id": "KIRA_CH5_SACRIFICE",
+    "character": "KIRA",
+    "description": "You gather all seven crown pieces. They pulse with terrible power. This is what Martyr means: destruction, but also creation. The question is: what will your letting go create?",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "End everything",
+        "leads_to": "KIRA_ENDING_SACRIFICE",
+        "effects": {
+          "void_magic": 5,
+          "humanity": -3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Turn the power into the Beast",
+        "leads_to": "KIRA_ENDING_EMPIRE",
+        "effects": {
+          "void_magic": 4,
+          "humanity": -2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Free the Beast\u2014but transform it first",
+        "leads_to": "KIRA_CH5_FINAL_CHOICE",
+        "effects": {
+          "void_magic": 3,
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_TRUTH": {
+    "id": "KIRA_CH5_TRUTH",
+    "character": "KIRA",
+    "description": "Your mother tells you everything: the Nightwind line wasn't chosen to guard the crown\u2014they were chosen because they're the only ones who could carry it without going mad immediately.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Forgive them",
+        "leads_to": "KIRA_ENDING_TRUTH",
+        "effects": {
+          "humanity": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Honor their sacrifice",
+        "leads_to": "KIRA_CH5_JOURNEY",
+        "effects": {
+          "void_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Refuse the legacy",
+        "leads_to": "KIRA_ENDING_FREE",
+        "effects": {
+          "humanity": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_HEALING": {
+    "id": "KIRA_CH5_HEALING",
+    "character": "KIRA",
+    "description": "You take your mother to safety\u2014together, you begin the slow process of healing. Weeks pass, then months. The Hollow King remains, but he's weakened.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Rest\u2014you've earned it",
+        "leads_to": "KIRA_ENDING_TRUTH",
+        "effects": {
+          "humanity": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Finish the fight",
+        "leads_to": "KIRA_CH5_JOURNEY",
+        "effects": {
+          "void_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Start over",
+        "leads_to": "KIRA_ENDING_FREE",
+        "effects": {
+          "humanity": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_STUDY": {
+    "id": "KIRA_CH5_STUDY",
+    "character": "KIRA",
+    "description": "You study what remains of the crown ritual. The truth crystallizes: the Hollow King isn't a monster to be destroyed\u2014he's a warning. The crown reveals what you already carry.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Become the new guardian",
+        "leads_to": "KIRA_ENDING_EMPIRE",
+        "effects": {
+          "void_magic": 3,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Break the cycle",
+        "leads_to": "KIRA_ENDING_FREE",
+        "effects": {
+          "humanity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Face the Hollow King",
+        "leads_to": "KIRA_CH5_JOURNEY",
+        "effects": {
+          "void_magic": 2,
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_ALLIES": {
+    "id": "KIRA_CH5_ALLIES",
+    "character": "KIRA",
+    "description": "Vespera is bound to your service\u2014she's your family, the only other person who understands what you carry. Together, you prepare for what comes next.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "March on the void",
+        "leads_to": "KIRA_CH5_CONFRONTATION",
+        "effects": {
+          "combat": 2,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Find another way",
+        "leads_to": "KIRA_CH5_FINAL_CHOICE",
+        "effects": {
+          "intelligence": 2,
+          "void_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Destroy together",
+        "leads_to": "KIRA_ENDING_SACRIFICE",
+        "effects": {
+          "void_magic": 4,
+          "humanity": -2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_CONFRONTATION": {
+    "id": "KIRA_CH5_CONFRONTATION",
+    "character": "KIRA",
+    "description": "The Hollow King stands before you\u2014Aethon Nightwind, brilliant and terrible. 'You are a choice,' you interrupt. 'You chose to become this. I choose to end it.'",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Destroy him",
+        "leads_to": "KIRA_ENDING_SACRIFICE",
+        "effects": {
+          "void_magic": 4,
+          "humanity": -2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Free him",
+        "leads_to": "KIRA_ENDING_TRUTH",
+        "effects": {
+          "humanity": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take his power",
+        "leads_to": "KIRA_ENDING_EMPIRE",
+        "effects": {
+          "void_magic": 5
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_FINAL_CHOICE": {
+    "id": "KIRA_CH5_FINAL_CHOICE",
+    "character": "KIRA",
+    "description": "The final moment arrives. You could destroy everything, become Undying, break the cycle, or transform the Beast into something new. Your ancestors failed this choice. Will you?",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Destroy the cycle",
+        "leads_to": "KIRA_ENDING_SACRIFICE",
+        "effects": {
+          "void_magic": 4,
+          "humanity": -2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Become Undying",
+        "leads_to": "KIRA_ENDING_EMPIRE",
+        "effects": {
+          "void_magic": 5
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Let someone else choose",
+        "leads_to": "KIRA_ENDING_FREE",
+        "effects": {
+          "humanity": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Walk away",
+        "leads_to": "KIRA_ENDING_TRUTH",
+        "effects": {
+          "humanity": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH5_REDEMPTION": {
+    "id": "KIRA_CH5_REDEMPTION",
+    "character": "KIRA",
+    "description": "Your mother is broken\u2014but not destroyed. The journey takes years: slow healing, slow change. The woman who returns isn't the one who left. But she's still your mother.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Let the past die",
+        "leads_to": "KIRA_ENDING_TRUTH",
+        "effects": {
+          "humanity": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "You'll face the King again",
+        "leads_to": "KIRA_CH5_JOURNEY",
+        "effects": {
+          "void_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find others who can help",
+        "leads_to": "KIRA_CH5_ALLIES",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_ENDING_TRUTH": {
+    "id": "KIRA_ENDING_TRUTH",
+    "character": "KIRA",
+    "description": "You walk away from the crown\u2014not in defeat, but in clarity. Your mother walks beside you, mortal again, finally free. You've broken the cycle.",
+    "type": "ending",
+    "ending": "TRUTH",
+    "choices": []
+  },
+  "KIRA_ENDING_SACRIFICE": {
+    "id": "KIRA_ENDING_SACRIFICE",
+    "character": "KIRA",
+    "description": "You destroy the crown\u2014and yourself with it. In your final moment, you feel everything: the souls trapped within, flowing free. The world doesn't know what you've done. But you feel peace.",
+    "type": "ending",
+    "ending": "SACRIFICE",
+    "choices": []
+  },
+  "KIRA_ENDING_EMPIRE": {
+    "id": "KIRA_ENDING_EMPIRE",
+    "character": "KIRA",
+    "description": "You become Undying\u2014the new jailer of the Void Beast. Power flows through you, eternal and terrible. The world calls you goddess. But late at night, you remember what it felt like to be mortal.",
+    "type": "ending",
+    "ending": "EMPIRE",
+    "choices": []
+  },
+  "KIRA_ENDING_FREE": {
+    "id": "KIRA_ENDING_FREE",
+    "character": "KIRA",
+    "description": "You break the cycle\u2014not through destruction, but through release. The crown fragments scatter. The Hollow King dissolves. You walk away, mortal again, carrying nothing but your memories.",
+    "type": "ending",
+    "ending": "FREE",
+    "choices": []
+  },
+  "THERON_CH4_SUMMIT_ASSAULT": {
+    "id": "THERON_CH4_SUMMIT_ASSAULT",
+    "character": "THERON",
+    "description": "The Treaty Summit explodes into chaos as Cult operatives emerge from the crowd. The Queen falls\u2014hit by a poisoned blade. You alone stand between the assassins and the royal family.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Defend the Queen with your life",
+        "leads_to": "THERON_CH4_DEFEND_QUEEN",
+        "effects": {
+          "combat": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Pursue the assassins\u2014who sent them?",
+        "leads_to": "THERON_CH4_PURSUE",
+        "effects": {
+          "dexterity": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Rally the guards\u2014organize the defense",
+        "leads_to": "THERON_CH4_RALLY",
+        "effects": {
+          "charisma": 2,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_DEFEND_QUEEN": {
+    "id": "THERON_CH4_DEFEND_QUEEN",
+    "character": "THERON",
+    "description": "You throw yourself between the Queen and the blade. The poison seeps into your veins, but the Queen lives. The assassins retreat, leaving a single word: 'Hollow.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "The Hollow King is behind this\u2014find proof",
+        "leads_to": "THERON_CH4_INVESTIGATE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The Queen needs healing\u2014I failed once, not again",
+        "leads_to": "THERON_CH4_HEAL_QUEEN",
+        "effects": {
+          "charisma": 2,
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Take command\u2014there's a battle to fight",
+        "leads_to": "THERON_CH4_TAKE_COMMAND",
+        "effects": {
+          "combat": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_PURSUE": {
+    "id": "THERON_CH4_PURSUE",
+    "character": "THERON",
+    "description": "You chase the assassins through the burning streets of Crownhaven. They lead you to a hidden tunnel system beneath the city\u2014straight to the Cult's secret headquarters.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Follow them into the darkness",
+        "leads_to": "THERON_CH4_TUNNEL_FIGHT",
+        "effects": {
+          "combat": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Map the exit\u2014cut off their escape",
+        "leads_to": "THERON_CH4_MAP_EXIT",
+        "effects": {
+          "intelligence": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Return with reinforcements",
+        "leads_to": "THERON_CH4_RALLY",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_RALLY": {
+    "id": "THERON_CH4_RALLY",
+    "character": "THERON",
+    "description": "You stand on the palace steps, voice ringing across the courtyard. 'The kingdom is under attack! Every soldier, every guard\u2014follow me!' Three hundred soldiers answer. Against the Cult's army, it's not enough. But it's a start.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Lead the charge\u2014direct assault",
+        "leads_to": "THERON_CH4_ASSAULT",
+        "effects": {
+          "combat": 3,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Strategic defense\u2014hold the line",
+        "leads_to": "THERON_CH4_DEFEND",
+        "effects": {
+          "combat": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Flank maneuver\u2014hit their supply lines",
+        "leads_to": "THERON_CH4_FLANK",
+        "effects": {
+          "dexterity": 2,
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_ASSAULT": {
+    "id": "THERON_CH4_ASSAULT",
+    "character": "THERON",
+    "description": "You lead the charge into the Cult's ranks. Your blade finds target after target\u2014they've waited years for this battle, but you've been fighting your whole life.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Push to the enemy commander",
+        "leads_to": "THERON_CH4_COMMANDER",
+        "effects": {
+          "combat": 2,
+          "strength": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Hold position\u2014protect the soldiers",
+        "leads_to": "THERON_CH4_DEFEND",
+        "effects": {
+          "combat": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The Hollow King is here\u2014I feel him",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_COMMANDER": {
+    "id": "THERON_CH4_COMMANDER",
+    "character": "THERON",
+    "description": "The Cult commander falls\u2014a former knight, corrupted beyond recognition. With their leader dead, the Cult forces scatter. But the Hollow King remains\u2014you can feel his presence growing.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Pursue the Hollow King\u2014he's escaping",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Secure the city\u2014many still need saving",
+        "leads_to": "THERON_CH4_SECURE",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The Queen\u2014she might have answers",
+        "leads_to": "THERON_CH4_QUEEN_QUESTION",
+        "effects": {
+          "charisma": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_TUNNEL_FIGHT": {
+    "id": "THERON_CH4_TUNNEL_FIGHT",
+    "character": "THERON",
+    "description": "The tunnels echo with the sounds of combat. Cultists emerge from every shadow\u2014dozens of them. But you've spent years fighting worse in the Ashen Wastes.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Cut through\u2014nothing stops a knight",
+        "leads_to": "THERON_CH4_DEEP_TUNNEL",
+        "effects": {
+          "combat": 3,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use the tunnel layout\u2014outmaneuver them",
+        "leads_to": "THERON_CH4_FLANK",
+        "effects": {
+          "dexterity": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "There's something deeper\u2014follow the void energy",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_DEEP_TUNNEL": {
+    "id": "THERON_CH4_DEEP_TUNNEL",
+    "character": "THERON",
+    "description": "You fight through to the heart of the tunnel system\u2014an ancient chamber from before the Sundering. The Hollow King waits, manifested in physical form for the first time in centuries.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Challenge him\u2014end this now",
+        "leads_to": "THERON_CH5_CONFRONT",
+        "effects": {
+          "combat": 3,
+          "strength": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "This is beyond combat\u2014seek another way",
+        "leads_to": "THERON_CH5_TRUTH",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The tunnels are collapsing\u2014everyone escape!",
+        "leads_to": "THERON_CH4_ESCAPE",
+        "effects": {
+          "dexterity": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_DEFEND": {
+    "id": "THERON_CH4_DEFEND",
+    "character": "THERON",
+    "description": "You hold the line while the soldiers rally around you. Wave after wave of Cultists crash against your shield. For every one you fell, two more took their place. But no one passed.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Counterattack\u2014drive them back",
+        "leads_to": "THERON_CH4_VICTORY",
+        "effects": {
+          "combat": 2,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Hold until reinforcements\u2014your soldiers need you",
+        "leads_to": "THERON_CH4_HOLD",
+        "effects": {
+          "charisma": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The Hollow King\u2014he's here personally",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_VICTORY": {
+    "id": "THERON_CH4_VICTORY",
+    "character": "THERON",
+    "description": "The Cult breaks and flees. The city is saved. Soldiers cheer your name\u2014the knight who ran, now standing firm. But the Hollow King remains, and the war isn't over.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Pursue the enemy\u2014finish this",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The wounded need care\u2014you've seen enough death",
+        "leads_to": "THERON_CH5_HEAL",
+        "effects": {
+          "humanity": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The Queen\u2014she must be told everything",
+        "leads_to": "THERON_CH5_QUEEN",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_HOLD": {
+    "id": "THERON_CH4_HOLD",
+    "character": "THERON",
+    "description": "You hold until theWatch arrives. The city is secured, but at great cost. The Hollow King's forces retreat, but he's still out there\u2014waiting.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "He's going to the palace\u2014intercept him",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "dexterity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The survivors need a leader\u2014you've failed too many times",
+        "leads_to": "THERON_ENDING_STAY",
+        "effects": {
+          "charisma": 2,
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find the root cause\u2014the crown piece he carries",
+        "leads_to": "THERON_CH5_TRUTH",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_FLANK": {
+    "id": "THERON_CH4_FLANK",
+    "character": "THERON",
+    "description": "You circle around the Cult's position, hitting their supplies and command structure. Without support, their assault crumbles.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Press the advantage\u2014total victory",
+        "leads_to": "THERON_CH4_VICTORY",
+        "effects": {
+          "combat": 2,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Find the Hollow King\u2014he can't have gone far",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Secure the hostages first",
+        "leads_to": "THERON_CH4_SECURE",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_SECURE": {
+    "id": "THERON_CH4_SECURE",
+    "character": "THERON",
+    "description": "You secure the city, freeing hostages and gathering intelligence. The Cult planned this for months\u2014but they didn't plan for you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Use the intel to find the Hollow King",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The Queen needs protection\u2014she's still in danger",
+        "leads_to": "THERON_CH5_QUEEN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Your soldiers need rest\u2014you've earned it",
+        "leads_to": "THERON_CH5_HEAL",
+        "effects": {
+          "humanity": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_QUEEN_QUESTION": {
+    "id": "THERON_CH4_QUEEN_QUESTION",
+    "character": "THERON",
+    "description": "The Queen looks at you with old eyes. 'The Hollow King was once Marcus Valdris\u2014the first emperor's son. I thought him dead in the Sundering. But he found the crown.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Then I must end him\u2014Marcus or not",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "combat": 2,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "There must be another way\u2014he was your family",
+        "leads_to": "THERON_CH5_TRUTH",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Then the crown must be destroyed\u2014end this forever",
+        "leads_to": "THERON_CH5_SACRIFICE",
+        "effects": {
+          "void_magic": 2,
+          "humanity": -1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_INVESTIGATE": {
+    "id": "THERON_CH4_INVESTIGATE",
+    "character": "THERON",
+    "description": "You find evidence linking the attack to a broader Cult conspiracy\u2014they've infiltrated every kingdom. But one name keeps appearing: the Hollow King.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Follow the trail\u2014find the Hollow King",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Expose the conspiracy\u2014let the world know",
+        "leads_to": "THERON_CH5_TRUTH",
+        "effects": {
+          "charisma": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "There's no time\u2014stop the attack first",
+        "leads_to": "THERON_CH4_RALLY",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_HEAL_QUEEN": {
+    "id": "THERON_CH4_HEAL_QUEEN",
+    "character": "THERON",
+    "description": "You stay with the Queen through the night, fighting the poison with every ounce of will you possess. By morning, she breathes on her own. 'You stayed,' she whispers. 'You didn't run.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Never again\u2014I swore an oath",
+        "leads_to": "THERON_CH5_QUEEN",
+        "effects": {
+          "charisma": 2,
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The Hollow King\u2014he's behind this",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Rest now\u2014I have a battle to win",
+        "leads_to": "THERON_CH4_TAKE_COMMAND",
+        "effects": {
+          "combat": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_TAKE_COMMAND": {
+    "id": "THERON_CH4_TAKE_COMMAND",
+    "character": "THERON",
+    "description": "You take command of the defense. The soldiers follow without question\u2014whatever their thoughts about your past, today you earned their respect.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Lead from the front\u2014inspire them",
+        "leads_to": "THERON_CH4_ASSAULT",
+        "effects": {
+          "combat": 2,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Strategic positioning\u2014win with tactics",
+        "leads_to": "THERON_CH4_DEFEND",
+        "effects": {
+          "intelligence": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find the Hollow King\u2014end this at the source",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2,
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_MAP_EXIT": {
+    "id": "THERON_CH4_MAP_EXIT",
+    "character": "THERON",
+    "description": "You map the exits, cutting off the Cult's escape routes. Without escape, they fight harder\u2014but they also panic.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Seal them in\u2014let the Watch handle it",
+        "leads_to": "THERON_CH4_VICTORY",
+        "effects": {
+          "intelligence": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Push through to the central chamber",
+        "leads_to": "THERON_CH4_DEEP_TUNNEL",
+        "effects": {
+          "combat": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Follow the energy\u2014something powerful waits",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_ESCAPE": {
+    "id": "THERON_CH4_ESCAPE",
+    "character": "THERON",
+    "description": "The tunnel collapses around you, but you save your soldiers. The Hollow King remains\u2014but he can't follow. Not yet.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find another way to him",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The city is still in danger\u2014protect it",
+        "leads_to": "THERON_CH4_SECURE",
+        "effects": {
+          "charisma": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Wait for reinforcements\u2014this needs an army",
+        "leads_to": "THERON_CH4_RALLY",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_JOURNEY": {
+    "id": "THERON_CH5_JOURNEY",
+    "character": "THERON",
+    "description": "You journey to the Hollow King's lair\u2014an ancient temple at the edge of the Ashen Wastes. There, you find him: Marcus Valdris, the emperor's son, corrupted beyond recognition.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Challenge him to single combat",
+        "leads_to": "THERON_CH5_DUEL",
+        "effects": {
+          "combat": 3,
+          "strength": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Try to reach the man he was",
+        "leads_to": "THERON_CH5_TRUTH",
+        "effects": {
+          "charisma": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Use the environment\u2014fire, poison, anything",
+        "leads_to": "THERON_CH5_STRATEGY",
+        "effects": {
+          "intelligence": 2,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_DUEL": {
+    "id": "THERON_CH5_DUEL",
+    "character": "THERON",
+    "description": "Steel clashes against void-touched steel. Marcus fights with the skill of centuries\u2014but you fight for something worth dying for.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Strike for the heart\u2014end him",
+        "leads_to": "THERON_CH5_VICTORY",
+        "effects": {
+          "combat": 3,
+          "strength": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Defend and wait\u2014he's weakening",
+        "leads_to": "THERON_CH5_TACTICAL",
+        "effects": {
+          "combat": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The crown\u2014he wears it on his chest",
+        "leads_to": "THERON_CH5_CROWN",
+        "effects": {
+          "dexterity": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_VICTORY": {
+    "id": "THERON_CH5_VICTORY",
+    "character": "THERON",
+    "description": "Your blade finds its mark. Marcus falls, the crown shattering around him. The void energy dissipates, and for a moment, you see the man he used to be.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "The kingdom needs a hero\u2014you've finally become one",
+        "leads_to": "THERON_ENDING_LEGEND",
+        "effects": {
+          "charisma": 3,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The Watch needs leadership\u2014you've found your purpose",
+        "leads_to": "THERON_ENDING_STAY",
+        "effects": {
+          "charisma": 2,
+          "humanity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "It's done\u2014walk away from the knight's life",
+        "leads_to": "THERON_ENDING_LEAVE",
+        "effects": {
+          "humanity": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_TACTICAL": {
+    "id": "THERON_CH5_TACTICAL",
+    "character": "THERON",
+    "description": "You fight defensively, letting Marcus exhaust himself. His attacks grow wild, desperate. Every opening\u2014you see it, but you don't take it. Not yet.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Now\u2014strike with everything",
+        "leads_to": "THERON_CH5_VICTORY",
+        "effects": {
+          "combat": 3,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Wait\u2014he's offering something",
+        "leads_to": "THERON_CH5_TRUTH",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Sacrifice yourself\u2014end the void forever",
+        "leads_to": "THERON_ENDING_DEATH",
+        "effects": {
+          "humanity": 3,
+          "combat": -1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_CROWN": {
+    "id": "THERON_CH5_CROWN",
+    "character": "THERON",
+    "description": "You knock the crown from Marcus's grasp. Without it, his power fades\u2014the Hollow King screaming as he's forced back into the man he once was.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Destroy the crown\u2014nothing deserves this power",
+        "leads_to": "THERON_ENDING_LEGEND",
+        "effects": {
+          "void_magic": 2,
+          "humanity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Take the crown\u2014become the new guardian",
+        "leads_to": "THERON_ENDING_STAY",
+        "effects": {
+          "void_magic": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Leave it\u2014someone else can decide",
+        "leads_to": "THERON_ENDING_LEAVE",
+        "effects": {
+          "humanity": 2,
+          "dexterity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_TRUTH": {
+    "id": "THERON_CH5_TRUTH",
+    "character": "THERON",
+    "description": "'Marcus,' you say. 'The first emperor's son. They all thought you dead.' He laughs\u2014but there's pain in it. 'The Sundering took everything. My family, my kingdom, my soul. Only the crown remained.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Then let it end\u2014I'll help you find peace",
+        "leads_to": "THERON_CH5_MERCY",
+        "effects": {
+          "charisma": 3,
+          "humanity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Nothing can excuse what you've done",
+        "leads_to": "THERON_CH5_DUEL",
+        "effects": {
+          "combat": 2,
+          "strength": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Then destroy the crown\u2014you don't have to be this",
+        "leads_to": "THERON_CH5_CROWN",
+        "effects": {
+          "intelligence": 2,
+          "void_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_MERCY": {
+    "id": "THERON_CH5_MERCY",
+    "character": "THERON",
+    "description": "You offer mercy\u2014the one thing Marcus never expected. He stares at you, and for a moment, the Hollow King disappears. 'I... don't remember how,' he whispers.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Then let me show you\u2014redemption is possible",
+        "leads_to": "THERON_ENDING_STAY",
+        "effects": {
+          "charisma": 3,
+          "humanity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "End it now\u2014put him out of his misery",
+        "leads_to": "THERON_CH5_VICTORY",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The crown must be destroyed\u2014nothing else matters",
+        "leads_to": "THERON_ENDING_LEGEND",
+        "effects": {
+          "void_magic": 2,
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_STRATEGY": {
+    "id": "THERON_CH5_STRATEGY",
+    "character": "THERON",
+    "description": "You use everything at your disposal\u2014fire, terrain, even the temple's own magic against it. Marcus never fought someone who refused to play by his rules.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Finish him while he's weak",
+        "leads_to": "THERON_CH5_VICTORY",
+        "effects": {
+          "combat": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy the crown while he's distracted",
+        "leads_to": "THERON_ENDING_LEGEND",
+        "effects": {
+          "void_magic": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "He surrenders\u2014accept his defeat",
+        "leads_to": "THERON_CH5_TRUTH",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_HEAL": {
+    "id": "THERON_CH5_HEAL",
+    "character": "THERON",
+    "description": "You tend to the wounded, every soldier you can reach. The battle can wait\u2014this is what honor truly means.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "When they recover\u2014we fight together",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "charisma": 2,
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "This is enough\u2014this is your purpose",
+        "leads_to": "THERON_ENDING_STAY",
+        "effects": {
+          "humanity": 3,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The Hollow King\u2014you feel him approaching",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_QUEEN": {
+    "id": "THERON_CH5_QUEEN",
+    "character": "THERON",
+    "description": "The Queen looks at you with new respect. 'You've given everything for this kingdom, Theron Ashford. Perhaps... perhaps you've earned that which you sought.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Redemption isn't for me\u2014there's still a battle to win",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Then let me finish this\u2014for the kingdom",
+        "leads_to": "THERON_ENDING_LEGEND",
+        "effects": {
+          "charisma": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "I don't need titles\u2014I need to end the Hollow King",
+        "leads_to": "THERON_CH5_JOURNEY",
+        "effects": {
+          "intelligence": 1,
+          "strength": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_SACRIFICE": {
+    "id": "THERON_CH5_SACRIFICE",
+    "character": "THERON",
+    "description": "You channel everything into destroying the crown\u2014the source of all this evil. The explosion tears through reality, but so does the Hollow King's scream.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Let the sacrifice be meaningful\u2014ensure it ends",
+        "leads_to": "THERON_ENDING_DEATH",
+        "effects": {
+          "void_magic": 3,
+          "humanity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "There's another way\u2014find it",
+        "leads_to": "THERON_CH5_TRUTH",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Not yet\u2014the kingdom still needs you",
+        "leads_to": "THERON_ENDING_STAY",
+        "effects": {
+          "humanity": 2,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH5_CONFRONT": {
+    "id": "THERON_CH5_CONFRONT",
+    "character": "THERON",
+    "description": "The Hollow King materializes\u2014a being of shadow wearing Marcus's face. 'You cannot kill what is already dead,' it whispers. But you've never been one to listen to impossibility.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Then I'll make you alive just to kill you again",
+        "leads_to": "THERON_CH5_DUEL",
+        "effects": {
+          "combat": 3,
+          "strength": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Marcus\u2014deep down, you're still in there",
+        "leads_to": "THERON_CH5_TRUTH",
+        "effects": {
+          "charisma": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Surrender the crown\u2014or be destroyed",
+        "leads_to": "THERON_CH5_STRATEGY",
+        "effects": {
+          "intelligence": 2,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_ENDING_LEGEND": {
+    "id": "THERON_ENDING_LEGEND",
+    "character": "THERON",
+    "description": "Songs are sung of your heroism. The knight who ran became the knight who stayed\u2014and gave everything. Your name becomes legend.",
+    "type": "ending",
+    "ending": "Legend",
+    "choices": []
+  },
+  "THERON_ENDING_STAY": {
+    "id": "THERON_ENDING_STAY",
+    "character": "THERON",
+    "description": "You become the permanent Commander of the Watch, protecting the kingdom for the rest of your days. The knight who lost everything found a new purpose.",
+    "type": "ending",
+    "ending": "Stay",
+    "choices": []
+  },
+  "THERON_ENDING_LEAVE": {
+    "id": "THERON_ENDING_LEAVE",
+    "character": "THERON",
+    "description": "You walk away from the knight's life, leaving the kingdom in better hands. The Ashen Wastes call to you\u2014perhaps there's peace in the wild.",
+    "type": "ending",
+    "ending": "Leave",
+    "choices": []
+  },
+  "THERON_ENDING_DEATH": {
+    "id": "THERON_ENDING_DEATH",
+    "character": "THERON",
+    "description": "Your sacrifice destroys the crown and the Hollow King\u2014but not you. You live, forever marked by the void, guarding against the darkness's return.",
+    "type": "ending",
+    "ending": "Death",
+    "choices": []
+  },
+  "VEX_CH5_GUILD_HALL": {
+    "id": "VEX_CH5_GUILD_HALL",
+    "character": "VEX",
+    "description": "The Shadow Guild headquarters looms\u2014a fortress built into the cliffs of Theris. Inside, the Eye awaits\u2014the one who marked you for death.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Storm the gates\u2014show them what a dead woman can do",
+        "leads_to": "VEX_CH5_ASSAULT",
+        "effects": {
+          "combat": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Infiltrate quietly\u2014get the evidence first",
+        "leads_to": "VEX_CH5_INFILTRATE",
+        "effects": {
+          "stealth": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Demand an audience\u2014force them to listen",
+        "leads_to": "VEX_CH5_DEMAND",
+        "effects": {
+          "charisma": 2,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_ASSAULT": {
+    "id": "VEX_CH5_ASSAULT",
+    "character": "VEX",
+    "description": "You cut through the Guild guards like paper. They never expected you to come back\u2014much less come back as someone who had nothing left to lose.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find the Eye\u2014end this at the source",
+        "leads_to": "VEX_CH5_EYE",
+        "effects": {
+          "combat": 3,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy the evidence\u2014burn the secrets",
+        "leads_to": "VEX_CH5_BURN",
+        "effects": {
+          "stealth": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Free the other marked\u2014they could be allies",
+        "leads_to": "VEX_CH5_ALLIES",
+        "effects": {
+          "charisma": 2,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_INFILTRATE": {
+    "id": "VEX_CH5_INFILTRATE",
+    "character": "VEX",
+    "description": "You've made it inside. Now comes the hardest part: not getting caught while stealing everything that matters.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "The vault\u2014go straight for the prize",
+        "leads_to": "VEX_CH5_VAULT",
+        "effects": {
+          "stealth": 3,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The evidence\u2014destroy the Guild's power",
+        "leads_to": "VEX_CH5_BURN",
+        "effects": {
+          "stealth": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The Eye's chambers\u2014end this now",
+        "leads_to": "VEX_CH5_EYE",
+        "effects": {
+          "combat": 2,
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_EYE": {
+    "id": "VEX_CH5_EYE",
+    "character": "VEX",
+    "description": "The Eye stands before you\u2014not the monster you expected, but an old man. 'You were the best,' he says. 'That's why I had to kill you. Too good to control, too dangerous to keep.'",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Kill him\u2014nothing else matters",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": {
+          "combat": 3,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Take his place\u2014become the new Eye",
+        "leads_to": "VEX_CH5_TAKE",
+        "effects": {
+          "charisma": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Expose him\u2014let the Guild decide his fate",
+        "leads_to": "VEX_CH5_TRIAL",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_TAKE": {
+    "id": "VEX_CH5_TAKE",
+    "character": "VEX",
+    "description": "You kill the Eye and take his mask. The Guild kneels to their new master\u2014not because they want to, but because you're the only one strong enough to survive.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Reform the Guild\u2014turn it into something better",
+        "leads_to": "VEX_ENDING_REFORM",
+        "effects": {
+          "charisma": 3,
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Rule through fear\u2014never trust anyone again",
+        "leads_to": "VEX_ENDING_SHADOWKING",
+        "effects": {
+          "stealth": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Destroy it\u2014all of it",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": {
+          "combat": 2,
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_DEMAND": {
+    "id": "VEX_CH5_DEMAND",
+    "character": "VEX",
+    "description": "You walk into the Guild hall with weapons drawn. 'I'm here,' you announce. 'The one you marked for death. And I'm here to end this.' The Guild parts like water.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Challenge the Eye to single combat",
+        "leads_to": "VEX_CH5_EYE",
+        "effects": {
+          "combat": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Reveal what they did\u2014turn the Guild against him",
+        "leads_to": "VEX_CH5_TRIAL",
+        "effects": {
+          "charisma": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Walk away\u2014they're not worth it",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": {
+          "stealth": 2,
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_PROOF": {
+    "id": "VEX_CH5_PROOF",
+    "character": "VEX",
+    "description": "You find everything\u2014the crimes, the corruption, the proof that the Eye ordered your death for personal gain. The Guild will burn with this information.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Release it everywhere\u2014the truth will set you free",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": {
+          "intelligence": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use it as leverage\u2014become the new power",
+        "leads_to": "VEX_ENDING_RICH",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Destroy it all\u2014even truth can be dangerous",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": {
+          "stealth": 2,
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_VAULT": {
+    "id": "VEX_CH5_VAULT",
+    "character": "VEX",
+    "description": "The vault holds treasures beyond imagination\u2014and your crown piece, waiting. You take it all. You've earned this.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Leave\u2014the treasure is enough",
+        "leads_to": "VEX_ENDING_RICH",
+        "effects": {
+          "charisma": 2,
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use the power\u2014become something more",
+        "leads_to": "VEX_ENDING_SHADOWKING",
+        "effects": {
+          "void_magic": 2,
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Destroy the crown piece\u2014end its threat forever",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": {
+          "void_magic": 2,
+          "humanity": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_BURN": {
+    "id": "VEX_CH5_BURN",
+    "character": "VEX",
+    "description": "You set the Guild's secrets ablaze. Everything they've built\u2014every secret, every lie\u2014goes up in smoke. The Eye screams in fury.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "While he's distracted\u2014finish him",
+        "leads_to": "VEX_CH5_EYE",
+        "effects": {
+          "combat": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Escape into the chaos\u2014disappear forever",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": {
+          "stealth": 3,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The Guild is destroyed\u2014your revenge is complete",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": {
+          "combat": 2,
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_ALLIES": {
+    "id": "VEX_CH5_ALLIES",
+    "character": "VEX",
+    "description": "You free the other marked agents\u2014former friends, former enemies, all marked for death. Together, you might just be strong enough to tear the Guild down.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Attack together\u2014destroy the Eye",
+        "leads_to": "VEX_CH5_EYE",
+        "effects": {
+          "combat": 3,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use them as cover\u2014escape the city",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": {
+          "stealth": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The Guild can be reformed\u2014with new leadership",
+        "leads_to": "VEX_ENDING_REFORM",
+        "effects": {
+          "charisma": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_EAR": {
+    "id": "VEX_CH5_EAR",
+    "character": "VEX",
+    "description": "The Eye speaks to his generals about a weapon\u2014something hidden in the crown piece. 'When activated, it will give us control over the kingdom itself.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Steal the weapon before they can use it",
+        "leads_to": "VEX_CH5_VAULT",
+        "effects": {
+          "stealth": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Expose the plan\u2014the kingdoms will intervene",
+        "leads_to": "VEX_CH5_TRIAL",
+        "effects": {
+          "charisma": 3,
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Let them try\u2014you have a better plan",
+        "leads_to": "VEX_CH5_EYE",
+        "effects": {
+          "combat": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH5_TRIAL": {
+    "id": "VEX_CH5_TRIAL",
+    "character": "VEX",
+    "description": "You reveal everything to the Guild assembled. The Eye's crimes, his corruption, his madness. One by one, they turn against him.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "The Guild chooses you\u2014become the new Eye",
+        "leads_to": "VEX_ENDING_REFORM",
+        "effects": {
+          "charisma": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Execute justice personally",
+        "leads_to": "VEX_ENDING_LEGEND",
+        "effects": {
+          "combat": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Walk away\u2014let them sort it out",
+        "leads_to": "VEX_ENDING_WANDERER",
+        "effects": {
+          "stealth": 2,
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_ENDING_REFORM": {
+    "id": "VEX_ENDING_REFORM",
+    "character": "VEX",
+    "description": "You become the new Eye\u2014but you change everything. The Guild no longer steals; it protects. No longer kills; it serves. You transformed death into something new.",
+    "type": "ending",
+    "ending": "Reform",
+    "choices": []
+  },
+  "ELARA_CH5_NETWORK": {
+    "id": "ELARA_CH5_NETWORK",
+    "character": "ELARA",
+    "description": "Your information network spans five kingdoms. Every secret, every lie, every hidden truth flows through you. Now it's time to use it.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Expose the Cult's plan to the world",
+        "leads_to": "ELARA_CH5_EXPOSE",
+        "effects": {
+          "intelligence": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use the network to find the Hollow King",
+        "leads_to": "ELARA_CH5_HUNT",
+        "effects": {
+          "intelligence": 3,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Sell the information\u2014make a fortune",
+        "leads_to": "ELARA_CH5_SELL",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH5_EXPOSE": {
+    "id": "ELARA_CH5_EXPOSE",
+    "character": "ELARA",
+    "description": "You release everything\u2014the Cult's plans, the nobles they've bought, the Hollow King's identity. The kingdom erupts in scandal.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "The chaos creates opportunity\u2014seize power",
+        "leads_to": "ELARA_ENDING_EMPRESS",
+        "effects": {
+          "charisma": 3,
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Justice is served\u2014the corrupt fall",
+        "leads_to": "ELARA_ENDING_JUDGE",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Your name becomes legend",
+        "leads_to": "ELARA_ENDING_AVENGER",
+        "effects": {
+          "charisma": 3,
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH5_HUNT": {
+    "id": "ELARA_CH5_HUNT",
+    "character": "ELARA",
+    "description": "Your network finds him\u2014the Hollow King, hiding in the old palace. You go alone. This is personal.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Confront him with everything you know",
+        "leads_to": "ELARA_CH5_CONFRONT",
+        "effects": {
+          "intelligence": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Set a trap\u2014the perfect assassination",
+        "leads_to": "ELARA_CH5_TRAP",
+        "effects": {
+          "intelligence": 3,
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Bring an army\u2014finish this properly",
+        "leads_to": "ELARA_CH5_ARMY",
+        "effects": {
+          "combat": 2,
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH5_CONFRONT": {
+    "id": "ELARA_CH5_CONFRONT",
+    "character": "ELARA",
+    "description": "'You killed my parents,' you say. 'For what? Power? The crown?' He laughs. 'Your parents knew too much. Just like you do now.'",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Kill him\u2014end this personally",
+        "leads_to": "ELARA_ENDING_AVENGER",
+        "effects": {
+          "combat": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Make him suffer\u2014he deserves it",
+        "leads_to": "ELARA_CH5_TORTURE",
+        "effects": {
+          "intelligence": 2,
+          "humanity": -2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Turn him over to the authorities",
+        "leads_to": "ELARA_ENDING_JUDGE",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH5_SELL": {
+    "id": "ELARA_CH5_SELL",
+    "character": "ELARA",
+    "description": "You sell the information to the highest bidders\u2014kings, merchants, enemies. Everyone wants what you know. And you profit immensely.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Retire wealthy\u2014disappear into luxury",
+        "leads_to": "ELARA_ENDING_RICH",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Build an empire\u2014never stop growing",
+        "leads_to": "ELARA_ENDING_EMPRESS",
+        "effects": {
+          "intelligence": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Something bigger is coming\u2014prepare",
+        "leads_to": "ELARA_CH5_HUNT",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH5_TRAP": {
+    "id": "ELARA_CH5_TRAP",
+    "character": "ELARA",
+    "description": "You lay the perfect trap\u2014bait, escape routes, elimination. But the Hollow King knows you're coming. He's been waiting.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Execute anyway\u2014surprise can still work",
+        "leads_to": "ELARA_CH5_CONFRONT",
+        "effects": {
+          "combat": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Adapt\u2014make a new plan on the spot",
+        "leads_to": "ELARA_CH5_ADAPT",
+        "effects": {
+          "intelligence": 3,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Retreat\u2014live to fight another day",
+        "leads_to": "ELARA_ENDING_NEGOTIATE",
+        "effects": {
+          "stealth": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH5_ARMY": {
+    "id": "ELARA_CH5_ARMY",
+    "character": "ELARA",
+    "description": "You bring the army\u2014soldiers, mages, allies from every kingdom. The Hollow King faces an army he cannot defeat.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Victory is certain\u2014destroy him",
+        "leads_to": "ELARA_ENDING_JUSTICE",
+        "effects": {
+          "combat": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Capture him\u2014make an example",
+        "leads_to": "ELARA_ENDING_JUDGE",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Accept his surrender\u2014end the war",
+        "leads_to": "ELARA_ENDING_NEGOTIATE",
+        "effects": {
+          "charisma": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH5_TORTURE": {
+    "id": "ELARA_CH5_TORTURE",
+    "character": "ELARA",
+    "description": "You make him suffer\u2014every moment of pain for every moment your parents endured. It feels like justice. But is it?",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Finish it\u2014end his pain",
+        "leads_to": "ELARA_ENDING_AVENGER",
+        "effects": {
+          "combat": 1,
+          "humanity": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "You're no better than him\u2014stop",
+        "leads_to": "ELARA_ENDING_JUSTICE",
+        "effects": {
+          "humanity": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Leave him to rot\u2014worse than death",
+        "leads_to": "ELARA_ENDING_CONSUMED",
+        "effects": {
+          "humanity": -2,
+          "charisma": -1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH5_ADAPT": {
+    "id": "ELARA_CH5_ADAPT",
+    "character": "ELARA",
+    "description": "You change tactics in the moment\u2014using everything you've learned. The Hollow King underestimates you. Big mistake.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Strike now\u2014he's vulnerable",
+        "leads_to": "ELARA_CH5_CONFRONT",
+        "effects": {
+          "combat": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use his weakness\u2014the crown",
+        "leads_to": "ELARA_ENDING_NEGOTIATE",
+        "effects": {
+          "intelligence": 3,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Escape\u2014the intelligence is victory",
+        "leads_to": "ELARA_ENDING_AVENGER",
+        "effects": {
+          "stealth": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_ENDING_RICH": {
+    "id": "ELARA_ENDING_RICH",
+    "character": "ELARA",
+    "description": "You retire to a villa on the southern coast, wealthy beyond measure. The Vance Company lives on in your name\u2014and your money.",
+    "type": "ending",
+    "ending": "Rich",
+    "choices": []
+  },
+  "ASHA_CH5_GUARDIAN_CHALLENGE": {
+    "id": "ASHA_CH5_GUARDIAN_CHALLENGE",
+    "character": "ASHA",
+    "description": "You stand at the border\u2014the place where civilization ends and the Ashen Wastes begin. The Guardian's trial is simple: face the void and survive.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Walk into the wastes\u2014face what's coming",
+        "leads_to": "ASHA_CH5_WASTES",
+        "effects": {
+          "nature_magic": 2,
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Defend the border\u2014let the void come to you",
+        "leads_to": "ASHA_CH5_DEFEND",
+        "effects": {
+          "combat": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Seek the spirits\u2014they'll show the way",
+        "leads_to": "ASHA_CH5_SPIRITS",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH5_WASTES": {
+    "id": "ASHA_CH5_WASTES",
+    "character": "ASHA",
+    "description": "The Ashen Wastes are worse than you remember. Corrupted creatures emerge from the darkness\u2014things that were once animals, now twisted by void energy.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Fight through\u2014nothing stops a Warden",
+        "leads_to": "ASHA_CH5_DEEP",
+        "effects": {
+          "combat": 3,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use nature magic\u2014turn the waste against them",
+        "leads_to": "ASHA_CH5_NATURE",
+        "effects": {
+          "nature_magic": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Find the source\u2014what's causing this?",
+        "leads_to": "ASHA_CH5_SOURCE",
+        "effects": {
+          "intelligence": 2,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH5_DEFEND": {
+    "id": "ASHA_CH5_DEFEND",
+    "character": "ASHA",
+    "description": "You hold the line at the border. Wave after wave of void creatures crash against your magic, but more come. This is the Guardian's true test.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Call on the spirits\u2014ask for their aid",
+        "leads_to": "ASHA_CH5_SPIRITS",
+        "effects": {
+          "nature_magic": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Become one with the land\u2014transform",
+        "leads_to": "ASHA_ENDING_TRUE_SPIRIT",
+        "effects": {
+          "nature_magic": 4
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Hold until help arrives\u2014rally the clans",
+        "leads_to": "ASHA_ENDING_UNITER",
+        "effects": {
+          "charisma": 3,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH5_SPIRITS": {
+    "id": "ASHA_CH5_SPIRITS",
+    "character": "ASHA",
+    "description": "The ancient spirits of the wild answer your call. They tell you the truth: the void can never be destroyed\u2014only balanced.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Become the bridge\u2014balance the void and nature",
+        "leads_to": "ASHA_ENDING_BALANCE",
+        "effects": {
+          "nature_magic": 4,
+          "void_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The spirits know the way\u2014follow their guidance",
+        "leads_to": "ASHA_ENDING_TRUE_GUARDIAN",
+        "effects": {
+          "nature_magic": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Reject the path\u2014destroy all void",
+        "leads_to": "ASHA_CH5_DEEP",
+        "effects": {
+          "void_magic": 2,
+          "combat": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH5_DEEP": {
+    "id": "ASHA_CH5_DEEP",
+    "character": "ASHA",
+    "description": "At the heart of the wastes, you find the source: a tear in reality itself, the place where the Sundering never ended. The Void Beast stirs.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Seal it\u2014the Guardian's true duty",
+        "leads_to": "ASHA_ENDING_TRUE_GUARDIAN",
+        "effects": {
+          "nature_magic": 4,
+          "humanity": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Become the seal\u2014give everything",
+        "leads_to": "ASHA_ENDING_SACRIFICE",
+        "effects": {
+          "nature_magic": 5,
+          "humanity": -2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "The void is part of nature\u2014accept it",
+        "leads_to": "ASHA_ENDING_BALANCE",
+        "effects": {
+          "nature_magic": 3,
+          "void_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH5_NATURE": {
+    "id": "ASHA_CH5_NATURE",
+    "character": "ASHA",
+    "description": "You turn nature against the void\u2014trees grow to crush the corrupted, roots entangle the monsters, flowers bloom with healing light.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Push deeper\u2014end the source",
+        "leads_to": "ASHA_CH5_DEEP",
+        "effects": {
+          "nature_magic": 3,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "The waste is cleansed\u2014your duty is done",
+        "leads_to": "ASHA_ENDING_TRUE_GUARDIAN",
+        "effects": {
+          "nature_magic": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Something calls from within\u2014follow it",
+        "leads_to": "ASHA_CH5_SOURCE",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH5_SOURCE": {
+    "id": "ASHA_CH5_SOURCE",
+    "character": "ASHA",
+    "description": "You find the source\u2014not the Beast, but a person. Another Warden, corrupted by the void. They chose this. They want you to choose it too.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Save them\u2014they can be redeemed",
+        "leads_to": "ASHA_ENDING_UNITER",
+        "effects": {
+          "charisma": 3,
+          "nature_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "End their suffering\u2014mercy, not curse",
+        "leads_to": "ASHA_CH5_DEEP",
+        "effects": {
+          "combat": 2,
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Join them\u2014the void is powerful",
+        "leads_to": "ASHA_ENDING_BALANCE",
+        "effects": {
+          "void_magic": 2,
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_ENDING_BALANCE": {
+    "id": "ASHA_ENDING_BALANCE",
+    "character": "ASHA",
+    "description": "You become something new\u2014neither fully void nor fully nature, but the balance between. The Guardian of the Border becomes the Guardian of Balance.",
+    "type": "ending",
+    "ending": "Balance",
+    "choices": []
+  },
+  "KIRA_CH4_SIDE_QUEST": {
+    "id": "KIRA_CH4_SIDE_QUEST",
+    "character": "KIRA",
+    "description": "A merchant asks you to retrieve stolen goods from bandits. Simple work, but the payment is good.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the job",
+        "leads_to": "KIRA_CH4_BANDITS",
+        "effects": {
+          "gold": 50,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Decline\u2014you have bigger problems",
+        "leads_to": "KIRA_CH4_MAIN",
+        "effects": {
+          "reputation": -1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "KIRA_CH4_BANDITS": {
+    "id": "KIRA_CH4_BANDITS",
+    "character": "KIRA",
+    "description": "The bandit camp is small\u2014you handle it in minutes. The merchant pays generously.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Return to the city",
+        "leads_to": "KIRA_CH4_CITY",
+        "effects": {
+          "gold": 50,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_MINOR_1": {
+    "id": "THERON_CH4_MINOR_1",
+    "character": "THERON",
+    "description": "A farmer begs for help\u2014wolves are killing his livestock.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Hunt the wolves",
+        "leads_to": "THERON_CH4_WOLVES",
+        "effects": {
+          "combat": 2,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Ignore it\u2014urgent matters await",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_WOLVES": {
+    "id": "THERON_CH4_WOLVES",
+    "character": "THERON",
+    "description": "The wolves are corrupted\u2014twisted by dark magic. One of the beastkin must have done this.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Kill the alpha",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Try to communicate\u2014find the controller",
+        "leads_to": "THERON_CH4_CONTROLLER",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_CONTROLLER": {
+    "id": "THERON_CH4_CONTROLLER",
+    "character": "THERON",
+    "description": "A mage is controlling the wolves for experiments. He runs when he sees you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Chase him down",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "combat": 1,
+          "dexterity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Let him go\u2014problem for later",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_MINOR_2": {
+    "id": "THERON_CH4_MINOR_2",
+    "character": "THERON",
+    "description": "You find an abandoned shrine. The locals say it's cursed.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Investigate",
+        "leads_to": "THERON_CH4_SHRINE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Leave it alone",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_SHRINE": {
+    "id": "THERON_CH4_SHRINE",
+    "character": "THERON",
+    "description": "The curse is fading\u2014nothing dangerous remains. You find an old artifact.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take the artifact",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "intelligence": 1,
+          "artifact": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy it",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_MINOR_3": {
+    "id": "THERON_CH4_MINOR_3",
+    "character": "THERON",
+    "description": "A child got lost in the woods. The parents are desperate.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Search for the child",
+        "leads_to": "THERON_CH4_CHILD",
+        "effects": {
+          "reputation": 2,
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Recommend a professional tracker",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "THERON_CH4_CHILD": {
+    "id": "THERON_CH4_CHILD",
+    "character": "THERON",
+    "description": "You find the child near a ravine\u2014scared but unharmed. The parents reward you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the reward",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "gold": 30,
+          "reputation": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Refuse\u2014help is reward enough",
+        "leads_to": "THERON_CH4_MAIN",
+        "effects": {
+          "reputation": 3,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_INTERLUDE": {
+    "id": "VEX_CH3_INTERLUDE",
+    "character": "VEX",
+    "description": "Between jobs, you visit an old contact in a tavern. They have information.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Buy them a drink\u2014earn trust",
+        "leads_to": "VEX_CH3_INFO",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Threaten\u2014faster results",
+        "leads_to": "VEX_CH3_FORCE",
+        "effects": {
+          "stealth": 1,
+          "reputation": -1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_INFO": {
+    "id": "VEX_CH3_INFO",
+    "character": "VEX",
+    "description": "The contact tells you about a job\u2014high pay, target is a corrupt noble.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take the job",
+        "leads_to": "VEX_CH3_NOBLE",
+        "effects": {
+          "gold": 100
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Pass\u2014too risky",
+        "leads_to": "VEX_CH3_WAIT",
+        "effects": {},
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_FORCE": {
+    "id": "VEX_CH3_FORCE",
+    "character": "VEX",
+    "description": "The contact talks\u2014a noble is hiring assassins for political gain.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Investigate the noble",
+        "leads_to": "VEX_CH3_NOBLE",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Leave town\u2014too dangerous",
+        "leads_to": "VEX_CH3_WAIT",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_NOBLE": {
+    "id": "VEX_CH3_NOBLE",
+    "character": "VEX",
+    "description": "The noble lives in a fortified mansion. Guards patrol constantly.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Stake out\u2014find patterns",
+        "leads_to": "VEX_CH3_STAKE",
+        "effects": {
+          "intelligence": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Bribe a servant",
+        "leads_to": "VEX_CH3_BRIBE",
+        "effects": {
+          "charisma": 2,
+          "gold": -20
+        },
+        "requires": null
+      },
+      {
+        "letter": "C",
+        "text": "Storm the front door",
+        "leads_to": "VEX_CH3_ASSAULT",
+        "effects": {
+          "combat": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_STAKE": {
+    "id": "VEX_CH3_STAKE",
+    "character": "VEX",
+    "description": "You find the perfect moment\u2014a changing of the guard. Minutes of vulnerability.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Strike now",
+        "leads_to": "VEX_CH3_SUCCESS",
+        "effects": {
+          "stealth": 3,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Wait\u2014observe more",
+        "leads_to": "VEX_CH3_BETTER",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_BRIBE": {
+    "id": "VEX_CH3_BRIBE",
+    "character": "VEX",
+    "description": "The servant gives you a key and floor plans. Easy access.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Sneak in tonight",
+        "leads_to": "VEX_CH3_SUCCESS",
+        "effects": {
+          "stealth": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_ASSAULT": {
+    "id": "VEX_CH3_ASSAULT",
+    "character": "VEX",
+    "description": "You fight through the guards. It's messy but effective.",
+    "type": "combat",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Finish the noble",
+        "leads_to": "VEX_CH3_SUCCESS",
+        "effects": {
+          "combat": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Escape\u2014the noise attracted attention",
+        "leads_to": "VEX_CH3_ESCAPE",
+        "effects": {
+          "stealth": 2,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_SUCCESS": {
+    "id": "VEX_CH3_SUCCESS",
+    "character": "VEX",
+    "description": "The job is done. You collect your payment and disappear into the shadows.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue the hunt",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "gold": 100,
+          "reputation": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_ESCAPE": {
+    "id": "VEX_CH3_ESCAPE",
+    "character": "VEX",
+    "description": "You escape, but now the city watches for you. Time to leave.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Lay low elsewhere",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_BETTER": {
+    "id": "VEX_CH3_BETTER",
+    "character": "VEX",
+    "description": "Better opportunity\u2014an easier target. Different job, same client.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take it",
+        "leads_to": "VEX_CH3_SUCCESS",
+        "effects": {
+          "charisma": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_WAIT": {
+    "id": "VEX_CH3_WAIT",
+    "character": "VEX",
+    "description": "You wait for a better opportunity. Something else will come.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue waiting",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_EXTRA_1": {
+    "id": "VEX_CH3_EXTRA_1",
+    "character": "VEX",
+    "description": "A fence offers you stolen goods at a discount.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Buy useful items",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "gold": -50,
+          "equipment": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Report the fence to authorities",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_EXTRA_2": {
+    "id": "VEX_CH3_EXTRA_2",
+    "character": "VEX",
+    "description": "You find a rival thief unconscious. Their haul is available.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take everything",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "gold": 50,
+          "reputation": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Leave them be",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH3_EXTRA_3": {
+    "id": "VEX_CH3_EXTRA_3",
+    "character": "VEX",
+    "description": "A guild member approaches with a proposition\u2014team up.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Decline\u2014work alone",
+        "leads_to": "VEX_CH4_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_INTERLUDE": {
+    "id": "ELARA_CH3_INTERLUDE",
+    "character": "ELARA",
+    "description": "A traveling merchant has gossip from the eastern kingdoms.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Pay for information",
+        "leads_to": "ELARA_CH3_NEWS",
+        "effects": {
+          "gold": 20,
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Trade your own information",
+        "leads_to": "ELARA_CH3_TRADE",
+        "effects": {
+          "charisma": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_NEWS": {
+    "id": "ELARA_CH3_NEWS",
+    "character": "ELARA",
+    "description": "The merchant tells you about a conspiracy\u2014a noble family planning a coup.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Investigate further",
+        "leads_to": "ELARA_CH3_CONSPIRACY",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Sell the information",
+        "leads_to": "ELARA_CH3_SELL",
+        "effects": {
+          "gold": 100
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_TRADE": {
+    "id": "ELARA_CH3_TRADE",
+    "character": "ELARA",
+    "description": "You exchange information\u2014an interesting deal. You learn about a hidden treasury.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Invest in the lead",
+        "leads_to": "ELARA_CH3_TREASURY",
+        "effects": {
+          "gold": -50,
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Keep it for later",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_CONSPIRACY": {
+    "id": "ELARA_CH3_CONSPIRACY",
+    "character": "ELARA",
+    "description": "The conspiracy is real\u2014noble families plotting against the crown.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Expose them",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "reputation": 3,
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use it for leverage",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "charisma": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_SELL": {
+    "id": "ELARA_CH3_SELL",
+    "character": "ELARA",
+    "description": "You sell the conspiracy to interested parties\u2014kings, merchants, spies.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Keep the money",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "gold": 100
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_TREASURY": {
+    "id": "ELARA_CH3_TREASURY",
+    "character": "ELARA",
+    "description": "The treasury exists\u2014a hidden vault from an old dynasty.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find a way in",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Sell the location",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "gold": 200
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_EXTRA_1": {
+    "id": "ELARA_CH3_EXTRA_1",
+    "character": "ELARA",
+    "description": "A competing information broker challenges you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Outmaneuver them",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Form an alliance",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_EXTRA_2": {
+    "id": "ELARA_CH3_EXTRA_2",
+    "character": "ELARA",
+    "description": "You discover a coded message\u2014need to crack it.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Solve it yourself",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Hire a codebreaker",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "gold": -30,
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_EXTRA_3": {
+    "id": "ELARA_CH3_EXTRA_3",
+    "character": "ELARA",
+    "description": "A noble wants to hire you as their spy master.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept\u2014steady income",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "gold": 100,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Decline\u2014independence is better",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "stealth": 1,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_EXTRA_4": {
+    "id": "ELARA_CH3_EXTRA_4",
+    "character": "ELARA",
+    "description": "Your network picks up chatter about the Hollow King.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Follow the trail",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Document for later",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_EXTRA_5": {
+    "id": "ELARA_CH3_EXTRA_5",
+    "character": "ELARA",
+    "description": "A client asks you to forge documents.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Do it\u2014good money",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "gold": 50,
+          "reputation": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Refuse\u2014too dangerous",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH3_EXTRA_6": {
+    "id": "ELARA_CH3_EXTRA_6",
+    "character": "ELARA",
+    "description": "You find evidence of a traitor in your network.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Expose them",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Turn them\u2014double agent",
+        "leads_to": "ELARA_CH4_MAIN",
+        "effects": {
+          "intelligence": 3,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_INTERLUDE": {
+    "id": "ASHA_CH3_INTERLUDE",
+    "character": "ASHA",
+    "description": "The forest whispers of something coming\u2014something ancient.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Investigate the source",
+        "leads_to": "ASHA_CH3_ANCIENT",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Prepare defenses",
+        "leads_to": "ASHA_CH3_DEFENSE",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_ANCIENT": {
+    "id": "ASHA_CH3_ANCIENT",
+    "character": "ASHA",
+    "description": "You find an ancient spirit\u2014older than the forest itself. It wants to help.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept its aid",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "nature_magic": 3,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Decline\u2014trust no ancient power",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_DEFENSE": {
+    "id": "ASHA_CH3_DEFENSE",
+    "character": "ASHA",
+    "description": "You strengthen the forest's wards\u2014barriers against the void.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue preparations",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_EXTRA_1": {
+    "id": "ASHA_CH3_EXTRA_1",
+    "character": "ASHA",
+    "description": "A clan asks for help with a sick elder.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Heal them with nature magic",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "reputation": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Find a healer",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_EXTRA_2": {
+    "id": "ASHA_CH3_EXTRA_2",
+    "character": "ASHA",
+    "description": "A corrupted tree blocks the path\u2014dangerous to travelers.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Purify the tree",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Cut it down",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_EXTRA_3": {
+    "id": "ASHA_CH3_EXTRA_3",
+    "character": "ASHA",
+    "description": "A young Warden asks for training.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Teach them",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Send them to the spirits",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_EXTRA_4": {
+    "id": "ASHA_CH3_EXTRA_4",
+    "character": "ASHA",
+    "description": "The border is quiet\u2014but your instincts say it's wrong.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Increase patrols",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "survival": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Investigate personally",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "stealth": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_EXTRA_5": {
+    "id": "ASHA_CH3_EXTRA_5",
+    "character": "ASHA",
+    "description": "A void creature escaped your previous capture.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Hunt it down",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "combat": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Let it go\u2014it will return",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_EXTRA_6": {
+    "id": "ASHA_CH3_EXTRA_6",
+    "character": "ASHA",
+    "description": "A traveler offers rare seeds from distant lands.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Plant them in the forest",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Trade them",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "charisma": 1,
+          "gold": 30
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH3_EXTRA_7": {
+    "id": "ASHA_CH3_EXTRA_7",
+    "character": "ASHA",
+    "description": "The forest grows ill\u2014you must find the cause.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Search for pollution source",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Pray to the spirits",
+        "leads_to": "ASHA_CH4_MAIN",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH2_INTERLUDE": {
+    "id": "VEX_CH2_INTERLUDE",
+    "character": "VEX",
+    "description": "A new thief in town wants to prove themselves\u2014offers to work for you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take them on as apprentice",
+        "leads_to": "VEX_CH2_APPRENTICE",
+        "effects": {
+          "charisma": 2,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use them as bait",
+        "leads_to": "VEX_CH2_BAIT",
+        "effects": {
+          "intelligence": 1,
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH2_APPRENTICE": {
+    "id": "VEX_CH2_APPRENTICE",
+    "character": "VEX",
+    "description": "The apprentice learns fast\u2014but they're a liability.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Teach them properly",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Send them away\u2014too risky",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH2_BAIT": {
+    "id": "VEX_CH2_BAIT",
+    "character": "VEX",
+    "description": "The apprentice distracts guards while you strike. It works.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Share the loot",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "gold": 50,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH2_EXTRA_1": {
+    "id": "VEX_CH2_EXTRA_1",
+    "character": "VEX",
+    "description": "A mark offers extra money for quick work.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Do it fast",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "gold": 30,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Take time for quality",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH2_EXTRA_2": {
+    "id": "VEX_CH2_EXTRA_2",
+    "character": "VEX",
+    "description": "You discover a safehouse\u2014perfect for hiding.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Claim it",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH2_EXTRA_3": {
+    "id": "VEX_CH2_EXTRA_3",
+    "character": "VEX",
+    "description": "A rival guild challenges your territory.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Fight back",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "combat": 2,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Negotiate",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH2_EXTRA_4": {
+    "id": "VEX_CH2_EXTRA_4",
+    "character": "VEX",
+    "description": "A trap catches you\u2014someone set you up.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Escape by force",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Think your way out",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH2_EXTRA_5": {
+    "id": "VEX_CH2_EXTRA_5",
+    "character": "VEX",
+    "description": "The city guard increases patrols. Harder to work.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Work the shadows",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Bribe a guard",
+        "leads_to": "VEX_CH3_MAIN",
+        "effects": {
+          "charisma": 2,
+          "gold": -20
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_EXTRA_1": {
+    "id": "VEX_CH1_EXTRA_1",
+    "character": "VEX",
+    "description": "Your first job\u2014pickpocket a merchant. Simple.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Do it clean",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "stealth": 1,
+          "gold": 10
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Make a scene\u2014distraction",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_EXTRA_2": {
+    "id": "VEX_CH1_EXTRA_2",
+    "character": "VEX",
+    "description": "A street kid offers information for food.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Buy the information",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "intelligence": 1,
+          "gold": -5
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Share food\u2014earn loyalty",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_EXTRA_3": {
+    "id": "VEX_CH1_EXTRA_3",
+    "character": "VEX",
+    "description": "You find an unlocked window\u2014easy entry.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take what you can",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "stealth": 2,
+          "gold": 20
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_EXTRA_4": {
+    "id": "VEX_CH1_EXTRA_4",
+    "character": "VEX",
+    "description": "A fence refuses to buy your goods.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Threaten them",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "charisma": 1,
+          "reputation": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Find another fence",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_EXTRA_5": {
+    "id": "VEX_CH1_EXTRA_5",
+    "character": "VEX",
+    "description": "You witness a crime\u2014a noble assaulting a servant.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Intervene",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "reputation": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Ignore it\u2014survive first",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_EXTRA_6": {
+    "id": "VEX_CH1_EXTRA_6",
+    "character": "VEX",
+    "description": "The Guild tests you\u2014steal from a target without being seen.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Pass the test",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "stealth": 2,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Fail intentionally",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_EXTRA_7": {
+    "id": "VEX_CH1_EXTRA_7",
+    "character": "VEX",
+    "description": "A bounty is posted on your head\u2014someone wants you dead.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Eliminate the bounty hunter",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Hide until it passes",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_EXTRA_8": {
+    "id": "VEX_CH1_EXTRA_8",
+    "character": "VEX",
+    "description": "An old contact offers a big job\u2014risky but rewarding.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take the risk",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "gold": 100,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Play it safe",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_EXTRA_9": {
+    "id": "VEX_CH1_EXTRA_9",
+    "character": "VEX",
+    "description": "You find a hidden map\u2014treasure location.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Investigate",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "gold": 30
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Sell the map",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "gold": 50
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH1_EXTRA_10": {
+    "id": "VEX_CH1_EXTRA_10",
+    "character": "VEX",
+    "description": "A guard catches you\u2014time to run.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Fight your way out",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Outrun them",
+        "leads_to": "VEX_CH2_MAIN",
+        "effects": {
+          "dexterity": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_INTERLUDE": {
+    "id": "ELARA_CH2_INTERLUDE",
+    "character": "ELARA",
+    "description": "A new client\u2014unknown, but paying well.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take the job",
+        "leads_to": "ELARA_CH2_JOB",
+        "effects": {
+          "gold": 50
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Investigate first",
+        "leads_to": "ELARA_CH2_CHECK",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_JOB": {
+    "id": "ELARA_CH2_JOB",
+    "character": "ELARA",
+    "description": "The job is simple\u2014deliver a message. But to who?",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Deliver as instructed",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "reputation": 1,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Read the message first",
+        "leads_to": "ELARA_CH2_READ",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_CHECK": {
+    "id": "ELARA_CH2_CHECK",
+    "character": "ELARA",
+    "description": "The client is a foreign spy\u2014they want kingdom secrets.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take the job anyway",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "gold": 100,
+          "reputation": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Expose them",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "reputation": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_READ": {
+    "id": "ELARA_CH2_READ",
+    "character": "ELARA",
+    "description": "The message contains secrets\u2014valuable to the right buyer.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Sell it",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "gold": 150
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Deliver to original recipient",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "charisma": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_EXTRA_1": {
+    "id": "ELARA_CH2_EXTRA_1",
+    "character": "ELARA",
+    "description": "Your information network picks up a rumor.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Verify the rumor",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Spread it",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_EXTRA_2": {
+    "id": "ELARA_CH2_EXTRA_2",
+    "character": "ELARA",
+    "description": "A rival information broker attacks your network.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Counter-attack",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Defend and retreat",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_EXTRA_3": {
+    "id": "ELARA_CH2_EXTRA_3",
+    "character": "ELARA",
+    "description": "A wealthy merchant wants to hire your entire network.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept\u2014good money",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "gold": 200,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Decline\u2014stay independent",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "charisma": 1,
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_EXTRA_4": {
+    "id": "ELARA_CH2_EXTRA_4",
+    "character": "ELARA",
+    "description": "You discover a hidden message in a painting.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Decode it",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Sell the painting",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "gold": 30
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH2_EXTRA_5": {
+    "id": "ELARA_CH2_EXTRA_5",
+    "character": "ELARA",
+    "description": "The crown requests your services personally.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept\u2014honor and danger",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "reputation": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Refuse\u2014too political",
+        "leads_to": "ELARA_CH3_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_EXTRA_1": {
+    "id": "ELARA_CH1_EXTRA_1",
+    "character": "ELARA",
+    "description": "Your first sale\u2014gossip about a merchant.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Complete the deal",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "gold": 10,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_EXTRA_2": {
+    "id": "ELARA_CH1_EXTRA_2",
+    "character": "ELARA",
+    "description": "A street vendor has useful rumors.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Buy the rumors",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "gold": 5,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_EXTRA_3": {
+    "id": "ELARA_CH1_EXTRA_3",
+    "character": "ELARA",
+    "description": "You overhear a secret meeting.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Listen in",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_EXTRA_4": {
+    "id": "ELARA_CH1_EXTRA_4",
+    "character": "ELARA",
+    "description": "A noble wants to know about their rival.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Investigate",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "gold": 30
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Refuse\u2014too dangerous",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_EXTRA_5": {
+    "id": "ELARA_CH1_EXTRA_5",
+    "character": "ELARA",
+    "description": "Your network starts growing\u2014people want to work for you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Hire them",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Work alone",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_EXTRA_6": {
+    "id": "ELARA_CH1_EXTRA_6",
+    "character": "ELARA",
+    "description": "You find a coded letter\u2014need to crack it.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Solve the code",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_EXTRA_7": {
+    "id": "ELARA_CH1_EXTRA_7",
+    "character": "ELARA",
+    "description": "A merchant offers exclusive trade secrets.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Buy them",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "gold": 20,
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_EXTRA_8": {
+    "id": "ELARA_CH1_EXTRA_8",
+    "character": "ELARA",
+    "description": "You discover someone's secret identity.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Blackmail them",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "gold": 50,
+          "reputation": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Keep it as insurance",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_EXTRA_9": {
+    "id": "ELARA_CH1_EXTRA_9",
+    "character": "ELARA",
+    "description": "A traveling bard has news from distant lands.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Buy the news",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "gold": 10,
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH1_EXTRA_10": {
+    "id": "ELARA_CH1_EXTRA_10",
+    "character": "ELARA",
+    "description": "Your first client is satisfied\u2014recommends you to others.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Build on it",
+        "leads_to": "ELARA_CH2_MAIN",
+        "effects": {
+          "reputation": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_INTERLUDE": {
+    "id": "ASHA_CH2_INTERLUDE",
+    "character": "ASHA",
+    "description": "The spirits whisper of a coming storm\u2014not weather.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Prepare the clan",
+        "leads_to": "ASHA_CH2_PREP",
+        "effects": {
+          "charisma": 2,
+          "survival": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Investigate the omen",
+        "leads_to": "ASHA_CH2_OMEN",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_PREP": {
+    "id": "ASHA_CH2_PREP",
+    "character": "ASHA",
+    "description": "The clan prepares for the coming darkness.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue training",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "survival": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_OMEN": {
+    "id": "ASHA_CH2_OMEN",
+    "character": "ASHA",
+    "description": "The omen points to the border\u2014there is something wrong.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Go to the border",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_EXTRA_1": {
+    "id": "ASHA_CH2_EXTRA_1",
+    "character": "ASHA",
+    "description": "A sickness spreads among the clan elders.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Use nature magic to heal",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "reputation": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Find the cause first",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_EXTRA_2": {
+    "id": "ASHA_CH2_EXTRA_2",
+    "character": "ASHA",
+    "description": "A young shaman asks for guidance\u2014confused about their gifts.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Teach them",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Send them to the forest",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_EXTRA_3": {
+    "id": "ASHA_CH2_EXTRA_3",
+    "character": "ASHA",
+    "description": "The border lands are dying\u2014something poisons the earth.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find and stop the source",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Purify the land",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_EXTRA_4": {
+    "id": "ASHA_CH2_EXTRA_4",
+    "character": "ASHA",
+    "description": "A rival clan challenges your authority.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Prove yourself in combat",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "combat": 2,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Negotiate peace",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH2_EXTRA_5": {
+    "id": "ASHA_CH2_EXTRA_5",
+    "character": "ASHA",
+    "description": "An ancient artifact is uncovered\u2014tainted with void energy.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Purify it",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "nature_magic": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Destroy it",
+        "leads_to": "ASHA_CH3_MAIN",
+        "effects": {
+          "combat": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_EXTRA_1": {
+    "id": "ASHA_CH1_EXTRA_1",
+    "character": "ASHA",
+    "description": "Your first trial\u2014track a corrupted beast.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Complete the hunt",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "combat": 1,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_EXTRA_2": {
+    "id": "ASHA_CH1_EXTRA_2",
+    "character": "ASHA",
+    "description": "The spirits speak to you in dreams.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Listen carefully",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_EXTRA_3": {
+    "id": "ASHA_CH1_EXTRA_3",
+    "character": "ASHA",
+    "description": "A villager asks for protection from the dark.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Guard them",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "reputation": 2,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_EXTRA_4": {
+    "id": "ASHA_CH1_EXTRA_4",
+    "character": "ASHA",
+    "description": "You find a wounded wolf\u2014corrupted but not gone.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Try to save it",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "End its suffering",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_EXTRA_5": {
+    "id": "ASHA_CH1_EXTRA_5",
+    "character": "ASHA",
+    "description": "The Guardian assigns you a test\u2014protect a sacred grove.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Complete the test",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_EXTRA_6": {
+    "id": "ASHA_CH1_EXTRA_6",
+    "character": "ASHA",
+    "description": "You learn to speak with trees\u2014old magic.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Practice the gift",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_EXTRA_7": {
+    "id": "ASHA_CH1_EXTRA_7",
+    "character": "ASHA",
+    "description": "A void creature attacks your village.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Drive it back",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "combat": 2,
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_EXTRA_8": {
+    "id": "ASHA_CH1_EXTRA_8",
+    "character": "ASHA",
+    "description": "The forest shows you a vision of the future.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Study it",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_EXTRA_9": {
+    "id": "ASHA_CH1_EXTRA_9",
+    "character": "ASHA",
+    "description": "You discover a hidden spring\u2014pure nature energy.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Meditate there",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH1_EXTRA_10": {
+    "id": "ASHA_CH1_EXTRA_10",
+    "character": "ASHA",
+    "description": "An elder teaches you the old ways\u2014before the Guardians.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Learn the history",
+        "leads_to": "ASHA_CH2_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_ORIGIN": {
+    "id": "VEX_CH0_ORIGIN",
+    "character": "VEX",
+    "description": "You grew up in the slums\u2014stealing to survive. The Guild found you before starvation did.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept their training",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "stealth": 1,
+          "dexterity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_STREETS": {
+    "id": "VEX_CH0_STREETS",
+    "character": "VEX",
+    "description": "The streets taught you everything\u2014how to hide, how to strike, how to disappear.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue surviving",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_MENTOR": {
+    "id": "VEX_CH0_MENTOR",
+    "character": "VEX",
+    "description": "An old thief becomes your mentor. They see something in you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Learn from them",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Work alone",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "dexterity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_FIRST_JOB": {
+    "id": "VEX_CH0_FIRST_JOB",
+    "character": "VEX",
+    "description": "Your first real job\u2014steal a noble's signet ring. Easy target, good pay.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Complete it cleanly",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "stealth": 2,
+          "gold": 20
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Make it messy",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_HONOR": {
+    "id": "VEX_CH0_HONOR",
+    "character": "VEX",
+    "description": "You save a child from a bad situation\u2014they'll remember your kindness.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Help them",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "charisma": 2,
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_RIVAL": {
+    "id": "VEX_CH0_RIVAL",
+    "character": "VEX",
+    "description": "Another thief competes for the same jobs. They want you gone.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Outcompete them",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "intelligence": 1,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Work together",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_TRAP": {
+    "id": "VEX_CH0_TRAP",
+    "character": "VEX",
+    "description": "A job goes wrong\u2014you're trapped in a burning building.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Escape through the roof",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "dexterity": 2,
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_REVENGE": {
+    "id": "VEX_CH0_REVENGE",
+    "character": "VEX",
+    "description": "Someone wronged you\u2014time to make them pay.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Take justice into your own hands",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "combat": 1,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Plan carefully",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_FAME": {
+    "id": "VEX_CH0_FAME",
+    "character": "VEX",
+    "description": "Your reputation grows\u2014people know the name Vex.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Embrace the fame",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "charisma": 1,
+          "reputation": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stay hidden",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_SECRET": {
+    "id": "VEX_CH0_SECRET",
+    "character": "VEX",
+    "description": "You discover a secret about the Guild\u2014something big.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Investigate further",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Keep it secret",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_LOSS": {
+    "id": "VEX_CH0_LOSS",
+    "character": "VEX",
+    "description": "You lose everything in a bad deal\u2014start over from nothing.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Rebuild stronger",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "intelligence": 1,
+          "humanity": -1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_ALLIES": {
+    "id": "VEX_CH0_ALLIES",
+    "character": "VEX",
+    "description": "You meet others like you\u2014outsiders, thieves, the forgotten.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Form a crew",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stay solo",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_SKILLS": {
+    "id": "VEX_CH0_SKILLS",
+    "character": "VEX",
+    "description": "You develop a signature technique\u2014something unique to your style.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Perfect it",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "dexterity": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_TRUST": {
+    "id": "VEX_CH0_TRUST",
+    "character": "VEX",
+    "description": "Someone trusts you with their life\u2014a dangerous situation.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Prove worthy",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "charisma": 2,
+          "humanity": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Protect yourself first",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "VEX_CH0_CHOICE": {
+    "id": "VEX_CH0_CHOICE",
+    "character": "VEX",
+    "description": "A crossroads\u2014you can take the easy path or the right path.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Easy path",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "gold": 50,
+          "humanity": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Right path",
+        "leads_to": "VEX_CH1_MAIN",
+        "effects": {
+          "reputation": 2,
+          "humanity": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_FOUNDATION": {
+    "id": "ELARA_CH0_FOUNDATION",
+    "character": "ELARA",
+    "description": "You start building your network\u2014a few loyal sources in key places.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue building",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 1,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_FIRST_SECRET": {
+    "id": "ELARA_CH0_FIRST_SECRET",
+    "character": "ELARA",
+    "description": "Your first big discovery\u2014a merchant's hidden debt.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Use it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "gold": 20
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_TALENT": {
+    "id": "ELARA_CH0_TALENT",
+    "character": "ELARA",
+    "description": "You discover you have a gift for finding patterns other miss.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Develop it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_ENEMY": {
+    "id": "ELARA_CH0_ENEMY",
+    "character": "ELARA",
+    "description": "Someone discovers what you do\u2014wants you stopped.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Outmaneuver them",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Make peace",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_MENTOR2": {
+    "id": "ELARA_CH0_MENTOR2",
+    "character": "ELARA",
+    "description": "An old information broker offers to train you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Learn from them",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_FIRST_NETWORK": {
+    "id": "ELARA_CH0_FIRST_NETWORK",
+    "character": "ELARA",
+    "description": "Your network grows\u2014ten sources now, twenty by month end.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Expand further",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_RIVAL2": {
+    "id": "ELARA_CH0_RIVAL2",
+    "character": "ELARA",
+    "description": "A competing broker spreads lies about you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Counter the lies",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_WEALTH": {
+    "id": "ELARA_CH0_WEALTH",
+    "character": "ELARA",
+    "description": "Your first major sale\u2014secret worth a fortune.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Make the deal",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "gold": 100,
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_TRUST2": {
+    "id": "ELARA_CH0_TRUST2",
+    "character": "ELARA",
+    "description": "A client trusts you with something dangerous.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Protect it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "reputation": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_DANGER": {
+    "id": "ELARA_CH0_DANGER",
+    "character": "ELARA",
+    "description": "You find information someone would kill for.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Sell to the highest bidder",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "gold": 200,
+          "reputation": -1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use it carefully",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_BEGINNING": {
+    "id": "ASHA_CH0_BEGINNING",
+    "character": "ASHA",
+    "description": "The forest chooses you\u2014you feel its voice for the first time.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the bond",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "nature_magic": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_NATURE_CALL": {
+    "id": "ASHA_CH0_NATURE_CALL",
+    "character": "ASHA",
+    "description": "You hear the trees crying\u2014something hurts the forest.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find the wound",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "intelligence": 1,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_GUARDIAN_OLD": {
+    "id": "ASHA_CH0_GUARDIAN_OLD",
+    "character": "ASHA",
+    "description": "You meet an old Guardian\u2014they've protected the border for centuries.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Learn from them",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_VOID_FIRST": {
+    "id": "ASHA_CH0_VOID_FIRST",
+    "character": "ASHA",
+    "description": "You see void energy for the first time\u2014corrupting, wrong.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Learn to fight it",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "nature_magic": 1,
+          "combat": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_CLAN_BORN": {
+    "id": "ASHA_CH0_CLAN_BORN",
+    "character": "ASHA",
+    "description": "Your clan raises you\u2014taught the old ways before you could walk.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Embrace your heritage",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_SPIRITS_TALK": {
+    "id": "ASHA_CH0_SPIRITS_TALK",
+    "character": "ASHA",
+    "description": "The forest spirits speak to you first time.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Listen",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_BORDER_WALK": {
+    "id": "ASHA_CH0_BORDER_WALK",
+    "character": "ASHA",
+    "description": "You walk the border\u2014the line between light and dark.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Feel the boundary",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "survival": 1,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_VISION": {
+    "id": "ASHA_CH0_VISION",
+    "character": "ASHA",
+    "description": "A vision shows you the future\u2014the border falls.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Prepare for it",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_FIRST_BEAST": {
+    "id": "ASHA_CH0_FIRST_BEAST",
+    "character": "ASHA",
+    "description": "Your first hunt\u2014a corrupted beast threatening the village.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Kill it",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "combat": 2,
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_TRIAL": {
+    "id": "ASHA_CH0_TRIAL",
+    "character": "ASHA",
+    "description": "The Guardian tests you\u2014can you feel the forest's pain?",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Pass the test",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_TEAM": {
+    "id": "ASHA_CH0_TEAM",
+    "character": "ASHA",
+    "description": "You meet other Wardens\u2014your future allies.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Form bonds",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_SECRET_WAY": {
+    "id": "ASHA_CH0_SECRET_WAY",
+    "character": "ASHA",
+    "description": "You discover a secret path through the forest\u2014known only to Wardens.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Learn the paths",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "survival": 2,
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_GIFT": {
+    "id": "ASHA_CH0_GIFT",
+    "character": "ASHA",
+    "description": "The forest gives you a gift\u2014a leaf that glows with life energy.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept it",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_MEMORY": {
+    "id": "ELARA_CH0_MEMORY",
+    "character": "ELARA",
+    "description": "You remember something from childhood\u2014a secret your parents kept.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Investigate",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_LEAK": {
+    "id": "ELARA_CH0_LEAK",
+    "character": "ELARA",
+    "description": "A source in your network leaks information.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find the leak",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "stealth": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Cut them off",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_PARTNER": {
+    "id": "ELARA_CH0_PARTNER",
+    "character": "ELARA",
+    "description": "You consider taking on a partner\u2014share the risk.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find a partner",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "charisma": 2
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Stay solo",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_LARGE_CLIENT": {
+    "id": "ELARA_CH0_LARGE_CLIENT",
+    "character": "ELARA",
+    "description": "A foreign government wants your services.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "gold": 200,
+          "reputation": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Decline\u2014too political",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_SECRET_MAP": {
+    "id": "ELARA_CH0_SECRET_MAP",
+    "character": "ELARA",
+    "description": "You find a map to something valuable\u2014but it's encoded.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Decode it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_NETWORK_SECRET": {
+    "id": "ELARA_CH0_NETWORK_SECRET",
+    "character": "ELARA",
+    "description": "Your network discovers something about itself\u2014a hidden agenda.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Expose it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "reputation": 2,
+          "charisma": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Use it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_ALLIANCE": {
+    "id": "ELARA_CH0_ALLIANCE",
+    "character": "ELARA",
+    "description": "A rival offers an alliance\u2014divide the market.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "charisma": 2,
+          "gold": 50
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Refuse",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_LEGEND": {
+    "id": "ELARA_CH0_LEGEND",
+    "character": "ELARA",
+    "description": "You discover a legend\u2014a hidden treasure of information.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Search for it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_PRICE": {
+    "id": "ELARA_CH0_PRICE",
+    "character": "ELARA",
+    "description": "You find out the price of your parents' death\u2014someone knows.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Hunt them",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "combat": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Wait for the right moment",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "stealth": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_EXPERTISE": {
+    "id": "ELARA_CH0_EXPERTISE",
+    "character": "ELARA",
+    "description": "You become known for one specific type of information.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Specialize further",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_FAME2": {
+    "id": "ELARA_CH0_FAME2",
+    "character": "ELARA",
+    "description": "Your name becomes known in certain circles.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Embrace it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "charisma": 2,
+          "reputation": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_DANGEROUS_SECRET": {
+    "id": "ELARA_CH0_DANGEROUS_SECRET",
+    "character": "ELARA",
+    "description": "You discover something that could change the kingdom.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Release it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "reputation": 3,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Keep it secret",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_POWER": {
+    "id": "ELARA_CH0_POWER",
+    "character": "ELARA",
+    "description": "You realize information is power\u2014you can control events.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Begin manipulating",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_VENDETTA": {
+    "id": "ELARA_CH0_VENDETTA",
+    "character": "ELARA",
+    "description": "Someone in power wants you dead\u2014hunt them back.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Expose them",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Eliminate them",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "combat": 2,
+          "stealth": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_LEARNING": {
+    "id": "ELARA_CH0_LEARNING",
+    "character": "ELARA",
+    "description": "You study the old masters of information gathering.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Learn their ways",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_BETRAYAL": {
+    "id": "ELARA_CH0_BETRAYAL",
+    "character": "ELARA",
+    "description": "A close ally betrays you\u2014but you saw it coming.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Turn the tables",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_ORGANIZATION": {
+    "id": "ELARA_CH0_ORGANIZATION",
+    "character": "ELARA",
+    "description": "You formalize your operations\u2014become an organization.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Build it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_INFLUENCE": {
+    "id": "ELARA_CH0_INFLUENCE",
+    "character": "ELARA",
+    "description": "You now influence events without being seen.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Continue growing",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ELARA_CH0_FINAL_SECRET": {
+    "id": "ELARA_CH0_FINAL_SECRET",
+    "character": "ELARA",
+    "description": "The ultimate secret\u2014the one they killed your parents for.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Find it",
+        "leads_to": "ELARA_CH1_MAIN",
+        "effects": {
+          "intelligence": 3
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_LESSON": {
+    "id": "ASHA_CH0_LESSON",
+    "character": "ASHA",
+    "description": "An elder teaches you the true nature of the void.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Learn the truth",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_DEEP_FOREST": {
+    "id": "ASHA_CH0_DEEP_FOREST",
+    "character": "ASHA",
+    "description": "You venture into the deep forest\u2014where no human goes.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Explore",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "survival": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_FIRST_SPIRIT": {
+    "id": "ASHA_CH0_FIRST_SPIRIT",
+    "character": "ASHA",
+    "description": "You first speak to a tree spirit\u2014it's ancient.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Listen to its wisdom",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_ANGER": {
+    "id": "ASHA_CH0_ANGER",
+    "character": "ASHA",
+    "description": "The void takes someone you love\u2014rage fuels you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Hunt the corruption",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "combat": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_WISDOM": {
+    "id": "ASHA_CH0_WISDOM",
+    "character": "ASHA",
+    "description": "You learn to read the wind\u2014the land speaks.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Master the skill",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_FIGHT": {
+    "id": "ASHA_CH0_FIGHT",
+    "character": "ASHA",
+    "description": "You fight your first void beast\u2014barely survive.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Learn from it",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "combat": 2,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_LAND": {
+    "id": "ASHA_CH0_LAND",
+    "character": "ASHA",
+    "description": "The land itself accepts you\u2014it knows you belong.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept the bond",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "nature_magic": 2,
+          "charisma": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_SECRET_GUARDIAN": {
+    "id": "ASHA_CH0_SECRET_GUARDIAN",
+    "character": "ASHA",
+    "description": "There are secrets the Guardian keeps\u2014even from you.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Demand answers",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "charisma": 2,
+          "intelligence": 1
+        },
+        "requires": null
+      },
+      {
+        "letter": "B",
+        "text": "Discover them yourself",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_PATROL": {
+    "id": "ASHA_CH0_PATROL",
+    "character": "ASHA",
+    "description": "Your first patrol along the border\u2014nothing happens.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Stay vigilant",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "survival": 1,
+          "intelligence": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_PREDICTION": {
+    "id": "ASHA_CH0_PREDICTION",
+    "character": "ASHA",
+    "description": "You predict an attack before it happens\u2014impossible.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Prepare anyway",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2,
+          "survival": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_BATTLE": {
+    "id": "ASHA_CH0_BATTLE",
+    "character": "ASHA",
+    "description": "A massive void incursion\u2014one you won't forget.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Hold the line",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "combat": 2,
+          "nature_magic": 1
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_HEAL": {
+    "id": "ASHA_CH0_HEAL",
+    "character": "ASHA",
+    "description": "You learn to heal corrupted land\u2014slowly, carefully.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Practice the art",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "nature_magic": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_STORY": {
+    "id": "ASHA_CH0_STORY",
+    "character": "ASHA",
+    "description": "The old stories speak of a prophecy\u2014you're part of it.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Learn the prophecy",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "intelligence": 2
+        },
+        "requires": null
+      }
+    ]
+  },
+  "ASHA_CH0_FUTURE": {
+    "id": "ASHA_CH0_FUTURE",
+    "character": "ASHA",
+    "description": "The forest shows you the future\u2014your role in what's coming.",
+    "type": "story",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept it",
+        "leads_to": "ASHA_CH1_MAIN",
+        "effects": {
+          "charisma": 1,
+          "intelligence": 2
+        },
         "requires": null
       }
     ]
