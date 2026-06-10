@@ -2,17 +2,22 @@
 
 A dark fantasy choice-based terminal RPG with 5 playable characters, turn-based combat, equipment systems, and branching narratives.
 
-**Current build:** 714 scenes, 2136 choices, 81 endings — all reachable, fully playable.
+**Current build:** 714 scenes, 2136 choices, 81 endings — all reachable, fully playable.  
+**Version:** v2.0 — Major combat & content overhaul.
 
 ## Features
 
 - **5 Playable Characters**: Kira, Theron, Vex, Elara, and Asha — each with unique storylines
 - **81 Unique Endings**: Branching narratives with death endings, victory endings, and walkaway endings
 - **5-Chapter Structure**: Each character progresses through 5 chapters with phase scenes (Prepare, Reflect, Search, Rest)
-- **Turn-Based Combat**: Class-specific moves, status effects, equipment bonuses
-- **Equipment System**: Weapons, armor, accessories with stat bonuses
+- **Turn-Based Combat**: Class-specific moves, multi-enemy battles (1-3 enemies), AOE attacks
+- **Enemy AI**: Special moves with cooldowns, heal-when-low behavior, tactical decision-making
+- **Status Effects**: Poison, Bleed, Stun, Regeneration, Barrier, Mark, Terror, Shield, Freeze, Drain
+- **Equipment System**: Weapons, armor, accessories with stat bonuses (including +max HP)
 - **Consumable Items**: Healing potions, mana crystals, defensive items
-- **Status Effects**: Poison, Bleed, Stun, Regeneration, Barrier
+- **Gold System**: Earn gold from enemy drops, spend on bribes and story choices
+- **Checkpoint System**: Auto-save before combat — retry or accept death
+- **Surprise Rounds**: Enemies act first in 3 designated encounters
 - **Zero Dead Ends**: Every story path leads to a meaningful conclusion
 
 ## Characters
@@ -56,10 +61,15 @@ python3 main.py
 
 ### Combat
 - Choose moves (numbered 1-6) or basic actions (A/B/C/D)
+- Fight 1-3 enemies per encounter — AOE moves hit all alive foes
 - Equipment provides stat bonuses in combat
 - Status effects can be applied by enemy attacks
 - Defend (B) reduces incoming damage by 30%
+- Defense stat reduces incoming damage; Luck expands crit range
 - Use items (C) in combat for healing or buffs
+- Checkpoint auto-save triggers before combat starts
+- Gold drops on victory — spend it in story choices
+- Some encounters start with a surprise round (enemies go first)
 
 ### Equipment
 Loot drops from enemies (30% chance). Equip items to gain stat bonuses:
@@ -89,7 +99,16 @@ python3 scripts/replay_tracer.py      # Deep replay verification per character
 
 ## Version History
 
-### v1.6 (June 2026)
+### v2.0 (June 2026) — Major Combat & Content Overhaul
+- Multi-enemy combat: fight 1-3 enemies per encounter with AOE attacks
+- Enemy AI: 1-2 special moves per enemy type, heal-when-low, cooldown-based selection
+- Gold system: earn drops from enemies, spend on bribes and story choices
+- Checkpoint system: auto-save before combat, retry or accept defeat
+- Surprise rounds: 3 encounters where enemies act first on round 1
+- Enabled 5 previously dead status effects: Mark, Terror, Shield, Freeze, Drain
+- Fixed 3 dead stats: Defense reduces damage, Luck expands crit range, +Health gear increases max HP
+- Shield temp HP absorbs damage; Defend stacks with defense stat
+- Fixed 3 combat bugs (stun tracked on wrong target, defend was inert, elemental weakness crash)
 - Full quality audit across all 5 characters
 - Fixed 63 phase scene navigation issues (chapter skipping)
 - Created 11 new VEX Chapter 1 scenes with divergent choice paths
