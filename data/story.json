@@ -1043,7 +1043,7 @@
       {
         "letter": "A",
         "text": "Head to Crownhaven immediately",
-        "leads_to": "KIRA_CH2_CROWNHAVEN",
+        "leads_to": "KIRA_CH2_MAIN",
         "effects": {
           "void_magic": 1
         },
@@ -2886,7 +2886,7 @@
   "THERON_ENDING_COMMANDER": {
     "id": "THERON_ENDING_COMMANDER",
     "character": "THERON",
-    "description": "You claim power. It's what you've always been, perhaps\u2014the monster in the shadows, waiting to be unleashed.\n\nWith the void at your command, you become something more than a knight. You become a ruler. The kingdom kneelsto you\u2014not because they want to, but because they have no choice.\n\nThe Cult is scattered. The Circle is broken. The court is your tool. And you sit upon the throne, looking down at a world that fears you.\n\nIs this redemption? No. It's something else. Something darker.\n\nBut you rule with a firm hand. No chaos. No Cults. No dangerous magic. The kingdom is safe\u2014so safe it chills.\n\nAnd sometimes, late at night, when you're alone in the throne room, you feel the void moving. It wants more. It always wants more.\n\nPerhaps one day, you'll lose yourself entirely. Become the very thing you fought. But not today.\n\nToday, you rule. And that's enough.",
+    "description": "You claim power. It's what you've always been, perhaps\u2014the monster in the shadows, waiting to be unleashed.\n\nWith the void at your command, you become something more than a knight. You become a ruler. The kingdom kneels to you\u2014not because they want to, but because they have no choice.\n\nThe Cult is scattered. The Circle is broken. The court is your tool. And you sit upon the throne, looking down at a world that fears you.\n\nIs this redemption? No. It's something else. Something darker.\n\nBut you rule with a firm hand. No chaos. No Cults. No dangerous magic. The kingdom is safe\u2014so safe it chills.\n\nAnd sometimes, late at night, when you're alone in the throne room, you feel the void moving. It wants more. It always wants more.\n\nPerhaps one day, you'll lose yourself entirely. Become the very thing you fought. But not today.\n\nToday, you rule. And that's enough.",
     "ending": "COMMANDER",
     "choices": []
   },
@@ -3850,7 +3850,7 @@
   "VEX_ENDING_SHADOWKING": {
     "id": "VEX_ENDING_SHADOWKING",
     "character": "VEX",
-    "description": "You sit upon the Shadowmaster's throne as the last of the resistance is crushed. The Guild survives\u2014stronger now, unified under your rule. You are the Shadow King, ruler of the city's underworld, master of shadows.\n\nIt wasn't the heroic path. You made deals with darkness and became it. But the Guild no longer preys on the innocent\u2014at least, not like before. You've imposed order on chaos, and the city breathes easier.\n\nIn your pocket, you carry the Obsidian Ledger. Your name is at the top now, written in ink that can never be erased. Some call you a monster. Others, a necessary evil. You call yourself... successful.\n\nThe shadows serve you now. And they will serve you forever.",
+    "description": "The throne is cold. You sit in the Shadowmaster's chair\u2014no, your chair now\u2014and watch the Guild sprawl beneath you like a living map of vice and desperation. The acolytes bow. The enforcers wait for your word. The city's underworld has a new heartbeat, and it pulses in your chest.\n\nYou didn't climb to this seat through merit. You climbed through blood, through betrayal, through the bones of everyone who underestimated you. The Shadowmaster kneels in chains before you, and you feel nothing. Not triumph. Not mercy. Just the hollow satisfaction of a promise kept.\n\n\"The Guild is yours,\" he says, and his voice cracks on the last word. \"What will you do with it?\"\n\nYou look at your hands. They're still stained. They'll always be stained. But now, when you move, the city moves with you. Every deal, every death, every whisper in the dark\u2014it all crosses your desk first.\n\nYou are the Shadow King. The rats have a new master. And in Dustwall, the rats run everything.\n\nYou lean back, and the throne creaks beneath you like a living thing. You smile. There's no warmth in it.",
     "choices": [],
     "type": "story",
     "ending": "SHADOWKING"
@@ -3858,7 +3858,7 @@
   "VEX_ENDING_LEGEND": {
     "id": "VEX_ENDING_LEGEND",
     "character": "VEX",
-    "description": "The Guild burns. Every stronghold, every vault, every secret meeting place\u2014you've burned them all. The Obsidian Ledger is read aloud in the city square, and the names of the guilty are delivered to the courts. For the first time in a century, the Guild is broken.\n\nYou stand in the ashes of the Temple of Shadows, surrounded by cheering crowds who've come to see the end of an era. They call you hero. They sing songs of your bravery. Children will grow up in a city free from the Guild's terror, and they'll never know the nightmares you faced to give them that freedom.\n\nYour sister Lyra finds you in the aftermath. \"You did it,\" she whispers.\n\n\"We did it,\" you correct her.\n\nBut you know the truth. The shadows will always call to you. The question is whether you'll listen.",
+    "description": "No one knows your name. That's how you want it.\n\nThey tell stories in Dustwall's taverns\u2014a shadow that moves between rooftops, a ghost who steals from the Guild and leaves their gold on the windowsills of the poor. Some say you're a woman wronged by the underworld. Others say you're a spirit of vengeance given flesh. A few whisper that you never existed at all, that the stories are just desperate hope given shape.\n\nYou hear them sometimes, sitting in the dark corners of dive bars with your hood pulled low. You drink cheap ale and listen to your own legend grow wings. Each telling adds something new: a scar you don't have, a feat you never performed, a mercy you never showed.\n\nThe truth is simpler. You're just a thief who got tired of taking from the weak. You're just a killer who learned when to sheathe the blade. You're no hero\u2014heroes die young or drunk on their own myth. But you're something the city needs: a reminder that the dark has its own rules.\n\nYears from now, when you're long gone or dead, they'll still tell the stories. The Shadow That Walked. The Knife in the Dark. The legend of a girl who came from nothing and became everything.\n\nAnd not one of them will know your face.",
     "choices": [],
     "type": "story",
     "ending": "LEGEND"
@@ -4410,30 +4410,17 @@
       {
         "letter": "A",
         "text": "Accept her training",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "intelligence": 2,
-          "stealth": 1
-        },
-        "requires": null
+        "leads_to": "VEX_CH1_MENTOR_TRAINING"
       },
       {
         "letter": "B",
-        "text": "Decline - learn from the streets instead",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "dexterity": 2
-        },
-        "requires": null
+        "text": "Decline \u2014 learn from the streets instead",
+        "leads_to": "VEX_CH1_MENTOR_STREETS"
       },
       {
         "letter": "C",
         "text": "Ask for a trial period",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "charisma": 1
-        },
-        "requires": null
+        "leads_to": "VEX_CH1_SISTER"
       }
     ],
     "type": "story"
@@ -4445,30 +4432,18 @@
     "choices": [
       {
         "letter": "A",
-        "text": "Take only the payment",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "stealth": 2
-        },
-        "requires": null
+        "text": "Take only the payment and leave clean",
+        "leads_to": "VEX_CH1_JOB_CLEAN"
       },
       {
         "letter": "B",
         "text": "Take everything valuable",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "dexterity": 2
-        },
-        "requires": null
+        "leads_to": "VEX_CH1_JOB_LOOT"
       },
       {
         "letter": "C",
-        "text": "Take the journal - insurance",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "intelligence": 2
-        },
-        "requires": null
+        "text": "Take the journal \u2014 insurance for later",
+        "leads_to": "VEX_CH1_JOB_JOURNAL"
       }
     ],
     "type": "story"
@@ -4481,29 +4456,17 @@
       {
         "letter": "A",
         "text": "Accept the challenge",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "combat": 2
-        },
-        "requires": null
+        "leads_to": "VEX_CH1_RIVALS_BRAWL"
       },
       {
         "letter": "B",
         "text": "Bribe your way out",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "charisma": 2
-        },
-        "requires": null
+        "leads_to": "VEX_CH1_SISTER"
       },
       {
         "letter": "C",
         "text": "Find evidence against Scab",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "intelligence": 2
-        },
-        "requires": null
+        "leads_to": "VEX_CH1_RIVALS_DIRT"
       }
     ],
     "type": "story"
@@ -4682,30 +4645,18 @@
     "choices": [
       {
         "letter": "A",
-        "text": "Expose the corruption",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "intelligence": 2
-        },
-        "requires": null
+        "text": "Expose the corruption publicly",
+        "leads_to": "VEX_CH1_CORRUPT_EXPOSED"
       },
       {
         "letter": "B",
-        "text": "Use it for leverage",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "charisma": 2
-        },
-        "requires": null
+        "text": "Use it for leverage against the Council",
+        "leads_to": "VEX_CH1_CORRUPT_LEVERAGE"
       },
       {
         "letter": "C",
         "text": "Ignore it for now",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "intelligence": 1
-        },
-        "requires": null
+        "leads_to": "VEX_CH1_SISTER"
       }
     ],
     "type": "story"
@@ -4717,30 +4668,18 @@
     "choices": [
       {
         "letter": "A",
-        "text": "Set a trap",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "intelligence": 2
-        },
-        "requires": null
+        "text": "Set a trap with bait the rat can't resist",
+        "leads_to": "VEX_CH1_BETRAYAL_TRAP"
       },
       {
         "letter": "B",
-        "text": "Investigate quietly",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "stealth": 2
-        },
-        "requires": null
+        "text": "Investigate quietly and follow the money",
+        "leads_to": "VEX_CH1_BETRAYAL_SNOOP"
       },
       {
         "letter": "C",
-        "text": "Confront directly",
-        "leads_to": "VEX_CH1_SISTER",
-        "effects": {
-          "combat": 1
-        },
-        "requires": null
+        "text": "Confront your suspicions directly",
+        "leads_to": "VEX_CH1_SISTER"
       }
     ],
     "type": "story"
@@ -4748,7 +4687,7 @@
   "VEX_ENDING_KING": {
     "id": "VEX_ENDING_KING",
     "character": "VEX",
-    "description": "You become what you fought. The Shadow King\u2014ruler of the shadows, master of the city's underworld. The Guild doesn't control you now. You control the Guild.\n\nYour sister Lyra stands beside you as you sit upon the throne. 'Is this what you wanted?' she asks.\n\n'Is this what I needed,' you reply.\n\nThe shadows answer to you now. And they will forever.",
+    "description": "The Guildhall falls silent when you enter. That's new. That's yours.\n\nYou don't walk so much as own the space now. Every step echoes off the stone floor, and every pair of eyes follows you\u2014watching, calculating, learning. Let them. You learned the same way, watching the old masters from the shadows until you knew their every weakness.\n\nThe underworld is a kingdom of whispers and knives, and you've sharpened yourself on both. The crime lords who once dismissed you as gutter trash now send emissaries with tribute. The Guild enforcers who hunted you through Dustwall's alleys now wait for your commands. The weight of a city's sin sits on your shoulders, and you carry it like a crown.\n\n\"Orders, boss?\" someone asks. The title tastes strange. You earned it in blood and silence, in jobs no one else would take, in betrayals you saw coming before the knife left its sheath.\n\nYou look over the city from your window. Dustwall sprawls below\u2014smoke and lanterns, deals and deaths, all of it yours now. The King of Shadows rules from a throne of stolen coin and broken oaths.\n\nPower is loneliness with better furniture. But loneliness, you've learned, is just another weapon you know how to wield.",
     "choices": [],
     "type": "story",
     "ending": "KING"
@@ -4756,7 +4695,7 @@
   "VEX_ENDING_RICH": {
     "id": "VEX_ENDING_RICH",
     "character": "VEX",
-    "description": "You disappear with a fortune. The ledger bought you safety, and safety bought you a new life. Far from the city, far from the shadows.\n\nA coastal town, a small inn, a quiet existence. The sea doesn't judge. The waves don't remember your sins.\n\nAt night, you stare at the stars and wonder if you're truly free. But you are alive. Rich. Free. Is that not enough?",
+    "description": "The villa sits on a hill overlooking the bay\u2014white marble, imported glass, a garden that costs more to maintain than most people earn in a lifetime. You bought it with Guild gold, laundered through three shell companies and a disgraced merchant's gambling debts.\n\nYou tell yourself you've earned this. Every scar, every sleepless night, every friend you left behind or buried. The wealth is proof of survival, the only scoreboard that matters in a world where the alternative is a shallow grave in Potter's Field.\n\nYour days are soft now. Silk sheets, fine wine, a wardrobe that costs more than your childhood home. You hire servants who don't ask questions and guards who know better than to betray you. You attend the opera and pretend you belong among the city's elite, even though you still check every exit the moment you enter a room.\n\nThe nightmares don't stop. The Guild's faces float behind your eyelids when you try to sleep\u2014the ones you bled for, the ones you bled. You wake reaching for a knife that isn't there in a bedroom that feels too big to be real.\n\nBut the coin is real. The house is real. The safety\u2014the fragile, expensive safety\u2014is real. You're rich. You're alive. You're alone.\n\nYou pour yourself a drink and watch the sunset over water you'll never have to steal again.",
     "choices": [],
     "type": "story",
     "ending": "RICH"
@@ -4764,7 +4703,7 @@
   "VEX_ENDING_BETRAYED": {
     "id": "VEX_ENDING_BETRAYED",
     "character": "VEX",
-    "description": "They come in the night. The ones you trusted. The ones you helped. They sell you out for the bounty on your head. The last thing you see is the blade, the smile of your betrayer.\n\nThe shadows swallow you whole. The city moves on without you. Your name becomes a warning, a story to frighten children. 'Don't betray the wrong person,' they say.\n\nBut you don't hear any of it. You're already in the dark.",
+    "description": "The blade slides between your ribs like it was always meant to be there.\n\nYou stagger, more surprised than hurt at first. The world tilts, the alley spinning around you in wet, lamplit circles. You've been stabbed before. This feels different. This feels final.\n\nYou look up. The face you trusted\u2014the hand that held yours in the dark, the voice that promised loyalty through every close call\u2014wears a smile you've never seen. Cold. Professional. The smile of someone who just closed a deal.\n\n\"Nothing personal,\" they say, and it's the worst lie you've ever heard. \"The Guild made a better offer.\"\n\nThe blood is warm on your hands. You try to speak, but the words come out wet. You slide down the brick wall, the rough surface scraping through your coat, and you think about all the warnings you ignored. All the moments when something felt wrong and you chose to trust anyway. The thief's greatest mistake: believing someone else's rules applied.\n\nThe last thing you see is the blade, still wet with your life. The last thing you hear is footsteps walking away\u2014measured, unhurried, already forgetting you.\n\nThe shadows swallow what's left. Dustwall will find your body in the morning, and someone will pick your pockets before the Watch arrives. The city doesn't mourn. It just moves on.\n\nYou were good. You were fast. You were clever. But in the end, you were just another mark.",
     "choices": [],
     "type": "story",
     "ending": "BETRAYED"
@@ -4960,7 +4899,7 @@
   "ELARA_CH1_STRIKE": {
     "id": "ELARA_CH1_STRIKE",
     "character": "ELARA",
-    "description": "Night. Castellan's study. He's working late, as usual\u2014a\u8d2a\u5a6a man never rests.\n\nYou slip through the servant's entrance. The guards don't notice you; they never do. Your father's study is ahead, warm light spilling under the door. You can hear him muttering about shipments, about profits, about the Cult's latest demands.\n\nThen you hear your name.\n\n'The Vance girl is still out there,' someone says. Castellan. 'Find her. Finish what we started.'\n\nYour hand finds your blade. Five years of patience\u71c3\u70e7 in a single heartbeat.\n\nBut you hesitate. Killing him won't answer your question: why did they die? What did they find?\n\nYou pull back from the door. Not yet. You need more information.\n\nFor now.",
+    "description": "Night. Castellan's study. He's working late, as usual\u2014a greedy man never rests.\n\nYou slip through the servant's entrance. The guards don't notice you; they never do. Your father's study is ahead, warm light spilling under the door. You can hear him muttering about shipments, about profits, about the Cult's latest demands.\n\nThen you hear your name.\n\n'The Vance girl is still out there,' someone says. Castellan. 'Find her. Finish what we started.'\n\nYour hand finds your blade. Five years of patience burns in a single heartbeat.\n\nBut you hesitate. Killing him won't answer your question: why did they die? What did they find?\n\nYou pull back from the door. Not yet. You need more information.\n\nFor now.",
     "choices": [
       {
         "letter": "A",
@@ -5062,7 +5001,7 @@
   "ELARA_CH2_CIRCLE": {
     "id": "ELARA_CH2_CIRCLE",
     "character": "ELARA",
-    "description": "The Circle trains you in ways you never imagined. Magic\u2014or what passes for it in your blood. The void responds to your touch, dark and hungry.\n\n'The Vance family carries old blood,' the Archmage says. 'Your ancestor served Aethon. That's why the crown called to your parents. That's why it calls to you.'\n\nYou learn to pull shadows from the corners, to move without sound, to kill without\u75d5\u8ff9. Your combat grows sharper. Your mind grows darker.\n\nIn three months, you're ready. The Circle has gathered intelligence: Castellan plans to sell the crown piece to the Cult's leader, Vespera. The transaction happens in one week.\n\nYou have one chance. Fail, and the Cult gets what they want. Succeed, and you get your answers.\n\nEverything builds to this.",
+    "description": "The Circle trains you in ways you never imagined. Magic\u2014or what passes for it in your blood. The void responds to your touch, dark and hungry.\n\n'The Vance family carries old blood,' the Archmage says. 'Your ancestor served Aethon. That's why the crown called to your parents. That's why it calls to you.'\n\nYou learn to pull shadows from the corners, to move without sound, to kill without a trace. Your combat grows sharper. Your mind grows darker.\n\nIn three months, you're ready. The Circle has gathered intelligence: Castellan plans to sell the crown piece to the Cult's leader, Vespera. The transaction happens in one week.\n\nYou have one chance. Fail, and the Cult gets what they want. Succeed, and you get your answers.\n\nEverything builds to this.",
     "choices": [
       {
         "letter": "A",
@@ -5806,6 +5745,7 @@
   "ELARA_ENDING_JUDGE": {
     "id": "ELARA_ENDING_JUDGE",
     "character": "ELARA",
+    "type": "ending",
     "description": "You become the judge\u2014not of the throne, but of the realm itself. Your court sessions are legendary. Nobles tremble at your summons. Corrupt officials flee at your shadow. The people call you the Unyielding, the Just, the last honest voice in a corrupt world. Your verdict is final. Your justice is absolute. And somewhere in the void of the crown piece you destroyed, your parents smile.",
     "ending": "JUDGE",
     "choices": []
@@ -5813,6 +5753,7 @@
   "ELARA_ENDING_EMPRESS": {
     "id": "ELARA_ENDING_EMPRESS",
     "character": "ELARA",
+    "type": "ending",
     "description": "The crown is heavy, but your will is heavier. You expand beyond the kingdom\u2014treaties signed in blood, rivals crushed, an empire rising from the ashes of the old world. They call you Empress not because you took the title, but because no one dares challenge it. Your parents wanted to destroy the crown. You decided otherwise. The world bends to your vision of order.",
     "ending": "EMPRESS",
     "choices": []
@@ -5820,6 +5761,7 @@
   "ELARA_ENDING_AVENGER": {
     "id": "ELARA_ENDING_AVENGER",
     "character": "ELARA",
+    "type": "ending",
     "description": "Vespera falls. Then Castellan. Then every Cultist who ever touched your family. You become the whispered legend in dark corners\u2014the Avenger, the ghost who takes what she wants. Your revenge is complete, every debt paid in blood. But the emptiness remains. You wanted to feel whole again. Instead, you feel nothing at all. The hunt is over. What now?",
     "ending": "AVENGER",
     "choices": []
@@ -5827,6 +5769,7 @@
   "ELARA_ENDING_CONSUMED": {
     "id": "ELARA_ENDING_CONSUMED",
     "character": "ELARA",
+    "type": "ending",
     "description": "The crown claims you. Your humanity dissolves into power, ancient and vast and hungry. You could rule forever\u2014but forever is a very long time. The person you were fades with each heartbeat, replaced by something older, colder, infinitely more patient. You're still Elara. You're still you. But the difference no longer matters.",
     "ending": "CONSUMED",
     "choices": []
@@ -8628,13 +8571,13 @@
     "id": "ASHA_CH1_CH2_TRANSITION",
     "character": "ASHA",
     "description": "The first chapter of your story ends not with victory, but with purpose. The border is broken, your village is ash, and the Hollow King's convergence approaches. But you are not alone\u2014and you are not defeated.\n\nYou have learned the threat: the Cult, the Hollow King, the Void Convergence. You have found allies or gathered knowledge. And you carry within you the nature magic that stood as the border's last guardian.\n\nThe road ahead is dark. But somewhere, in the depths of the Ashen Wastes, the old temple waits. And at the heart of it all, the Hollow King stirs.\n\nThe second chapter begins where the border ends\u2014where nature meets void, and one druid must stand against the darkness.\n\n[END OF CHAPTER 1]",
-    "type": "ending",
+    "type": "transition",
     "leads_to": null,
     "choices": [
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH4_ALT",
+        "leads_to": "ASHA_CH2_TRANSITION",
         "effects": {
           "intelligence": 1
         },
@@ -8642,8 +8585,8 @@
       },
       {
         "letter": "B",
-        "text": "Search for another path",
-        "leads_to": "ASHA_CH4_SEARCH",
+        "text": "Search for answers",
+        "leads_to": "ASHA_CH2_SEARCH",
         "effects": {
           "intelligence": 1
         },
@@ -8652,7 +8595,7 @@
       {
         "letter": "C",
         "text": "Rest and prepare",
-        "leads_to": "ASHA_CH4_REST",
+        "leads_to": "ASHA_CH2_REST",
         "effects": {
           "survival": 1
         },
@@ -8711,9 +8654,8 @@
   "ASHA_CH4_ENDING_SELECTION": {
     "id": "ASHA_CH4_ENDING_SELECTION",
     "character": "ASHA",
-    "description": "The Hollow King falls, his form dissolving into nothing. The void army crumbles. The Ashen Wastes stop their expansion. The north is saved. But what comes next? What will you do with your victory?",
-    "type": "story",
-    "choices": []
+    "description": "The Hollow King falls, his form dissolving into nothing. The void army crumbles. The Ashen Wastes stop their expansion. The north is saved.\n\nYou stand at the edge of the crater where the temple once stood, your druid staff planted in the ash. Around you, the land begins to stir\u2014the first green shoots pushing through dead earth. The spirits return, their whispers carrying on a wind that smells of rain and renewal.\n\nThere is no grand celebration. No songs sung in your honor. Just the slow, patient work of rebuilding what was broken. You tend to the wounded, restore the corrupted groves, and teach those who will listen that the border between void and life must always be guarded.\n\nYears later, they call you the Wood-Heart. Travelers tell stories of the quiet druid who emerged from the Ashen Wastes when the darkness fell, who stood alone against the Hollow King, and who, when victory was won, simply walked back into the forest to continue the watch.\n\nThis is your ending\u2014not as a conqueror, not as a sacrifice, but as a survivor who chose to stay.",
+    "type": "ending"
   },
   "ASHA_ENDING_TRUE_GUARDIAN": {
     "id": "ASHA_ENDING_TRUE_GUARDIAN",
@@ -8838,7 +8780,7 @@
   "KIRA_CH4_SIDE_QUEST": {
     "id": "KIRA_CH4_SIDE_QUEST",
     "character": "KIRA",
-    "description": "A merchant asks you to retrieve stolen goods from bandits. Simple work, but the payment is good.",
+    "description": "A merchant named Aldric flags you down near the crossroads. His goods were stolen by bandits operating out of an old watchtower to the east. The pay is good, and the work is simple\u2014but every detour carries its own cost when the fate of the realm hangs in the balance.",
     "type": "story",
     "choices": [
       {
@@ -11066,7 +11008,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore alternative path",
+        "text": "Investigate a Cult ritual in the hills",
         "leads_to": "THERON_CH1_CULT_ENCOUNTER",
         "effects": {
           "survival": 1
@@ -11075,7 +11017,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternative path",
+        "text": "Navigate a street ambush",
         "leads_to": "THERON_CH1_STREET_AMBUSH",
         "effects": {
           "survival": 1
@@ -11084,7 +11026,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore alternative path",
+        "text": "Cross the contested border",
         "leads_to": "THERON_CH1_BORDER_SKIRMISH",
         "effects": {
           "survival": 1
@@ -11093,7 +11035,7 @@
       },
       {
         "letter": "G",
-        "text": "Explore alternative path",
+        "text": "Evade the Watch patrol",
         "leads_to": "THERON_CH1_WATCH_PATROL",
         "effects": {
           "survival": 1
@@ -11102,7 +11044,7 @@
       },
       {
         "letter": "H",
-        "text": "Explore alternative path",
+        "text": "Survive a night assault",
         "leads_to": "THERON_CH1_NIGHT_ASSAULT",
         "effects": {
           "survival": 1
@@ -11111,7 +11053,7 @@
       },
       {
         "letter": "I",
-        "text": "Explore alternative path",
+        "text": "Handle a tavern fight",
         "leads_to": "THERON_CH1_TAVERN_FIGHT",
         "effects": {
           "survival": 1
@@ -11120,7 +11062,7 @@
       },
       {
         "letter": "J",
-        "text": "Explore alternative path",
+        "text": "Outwit the Cult hunters",
         "leads_to": "THERON_CH1_CULT_HUNTERS",
         "effects": {
           "survival": 1
@@ -11255,7 +11197,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore alternate path",
+        "text": "Help a farmer with wolves",
         "leads_to": "THERON_CH4_MINOR_1",
         "effects": {
           "intelligence": 1
@@ -11264,7 +11206,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternate path",
+        "text": "Track corrupted wolves",
         "leads_to": "THERON_CH4_WOLVES",
         "effects": {
           "intelligence": 1
@@ -11273,7 +11215,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore alternate path",
+        "text": "Investigate a mysterious mage",
         "leads_to": "THERON_CH4_CONTROLLER",
         "effects": {
           "intelligence": 1
@@ -11282,7 +11224,7 @@
       },
       {
         "letter": "G",
-        "text": "Explore alternate path",
+        "text": "Move toward the temple",
         "leads_to": "THERON_CH4_TRANSITION",
         "effects": {
           "intelligence": 1
@@ -11291,7 +11233,7 @@
       },
       {
         "letter": "H",
-        "text": "Explore alternate path",
+        "text": "Reflect on your journey",
         "leads_to": "THERON_CH4_REFLECT",
         "effects": {
           "intelligence": 1
@@ -11300,7 +11242,7 @@
       },
       {
         "letter": "I",
-        "text": "Explore new path",
+        "text": "Help the farmer again",
         "leads_to": "THERON_CH4_MINOR_1",
         "effects": {
           "intelligence": 1
@@ -11309,7 +11251,7 @@
       },
       {
         "letter": "J",
-        "text": "Explore new path",
+        "text": "Track more corrupted wolves",
         "leads_to": "THERON_CH4_WOLVES",
         "effects": {
           "intelligence": 1
@@ -11318,7 +11260,7 @@
       },
       {
         "letter": "K",
-        "text": "Explore new path",
+        "text": "Investigate the mage further",
         "leads_to": "THERON_CH4_CONTROLLER",
         "effects": {
           "intelligence": 1
@@ -11327,7 +11269,7 @@
       },
       {
         "letter": "L",
-        "text": "Explore alternative path",
+        "text": "Rest and recover",
         "leads_to": "THERON_CH4_REST",
         "effects": {
           "survival": 1
@@ -11336,7 +11278,7 @@
       },
       {
         "letter": "M",
-        "text": "Explore alternative path",
+        "text": "Search for more information",
         "leads_to": "THERON_CH4_SEARCH",
         "effects": {
           "survival": 1
@@ -11383,7 +11325,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore alternative path",
+        "text": "Search for more answers",
         "leads_to": "THERON_CH5_SEARCH",
         "effects": {
           "survival": 1
@@ -11392,7 +11334,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternative path",
+        "text": "Take time to rest",
         "leads_to": "THERON_CH5_REST",
         "effects": {
           "survival": 1
@@ -11407,6 +11349,15 @@
           "survival": 1
         },
         "requires": null
+      },
+      {
+        "letter": "G",
+        "text": "Lay down your sword \u2014 find peace",
+        "leads_to": "THERON_ENDING",
+        "effects": {
+          "survival": 1
+        },
+        "requires": null
       }
     ]
   },
@@ -11414,7 +11365,7 @@
     "id": "VEX_CH1_MAIN",
     "character": "VEX",
     "type": "story",
-    "description": "Chapter 1 continues for VEX.",
+    "description": "Dustwall's streets are a maze of wet cobblestones and broken lanterns, where every alley hides a shakedown and every smile costs you something. The Guild's presence presses in from all sides\u2014informants in the crowd, enforcers on the rooftops, the whole district a chessboard where you're just another piece they're waiting to sacrifice. The smog hangs low, smelling of fish oil and desperation, and somewhere in the maze of tenements and taverns, your next move waits. The underworld doesn't sleep, and neither can you.",
     "choices": [
       {
         "letter": "A",
@@ -11539,7 +11490,7 @@
     "id": "VEX_CH2_MAIN",
     "character": "VEX",
     "type": "story",
-    "description": "Chapter 2 continues for VEX.",
+    "description": "The Guild's inner sanctum hums with whispered conspiracies and shifting loyalties. You've earned a seat at the table\u2014or at least a place in the shadows beside it\u2014and every glance, every silence, every offered drink carries a calculus of advantage. The old masters circle each other like wolves in a shrinking territory, and the power plays have teeth. You read the room the way you read a lock: find the tension points, feel for the mechanism, wait for the right moment to turn.",
     "choices": [
       {
         "letter": "A",
@@ -11619,7 +11570,7 @@
     "id": "VEX_CH3_MAIN",
     "character": "VEX",
     "type": "story",
-    "description": "Chapter 3 continues for VEX.",
+    "description": "The stakes have teeth now, and they're closing in. Word of your sister's fate reaches you through fragmented whispers\u2014she's alive, she's in danger, she's been pulled into the same current that swept you under years ago. Every job carries heavier weight, every alliance a sharper edge. The Guild's machinery grinds on, but you've started to see the cracks in its design. The question isn't whether you can survive anymore. It's what\u2014and who\u2014you're willing to sacrifice to win.",
     "choices": [
       {
         "letter": "A",
@@ -11744,7 +11695,7 @@
     "id": "VEX_CH4_MAIN",
     "character": "VEX",
     "type": "story",
-    "description": "Chapter 4 continues for VEX.",
+    "description": "Endgame. The pieces are on the board and the clock is running out. Alliances you built are fracturing; enemies you thought were buried are rising again. The Guild's true shape reveals itself in fragments\u2014a conspiracy here, a blood debt there\u2014and you're running out of shadow to hide in. Every conversation could be a trap, every ally a future betrayer. The end approaches not with a fanfare but with the quiet click of a lock you can't pick. One way or another, this chapter closes for good.",
     "choices": [
       {
         "letter": "A",
@@ -11865,7 +11816,7 @@
       },
       {
         "letter": "N",
-        "text": "Explore alternative path",
+        "text": "Reform the Guild from within",
         "leads_to": "VEX_CH4_REFORM",
         "effects": {
           "survival": 1
@@ -11874,7 +11825,7 @@
       },
       {
         "letter": "O",
-        "text": "Explore alternative path",
+        "text": "Fight through the guards",
         "leads_to": "VEX_CH4_COMBAT",
         "effects": {
           "survival": 1
@@ -11883,7 +11834,7 @@
       },
       {
         "letter": "P",
-        "text": "Explore alternative path",
+        "text": "Accept the escape offer",
         "leads_to": "VEX_CH4_FLEE",
         "effects": {
           "survival": 1
@@ -11892,7 +11843,7 @@
       },
       {
         "letter": "Q",
-        "text": "Explore alternative path",
+        "text": "Counter the Shadowmaster plans",
         "leads_to": "VEX_CH4_COUNTER",
         "effects": {
           "survival": 1
@@ -11901,7 +11852,7 @@
       },
       {
         "letter": "R",
-        "text": "Explore alternative path",
+        "text": "Train a young thief",
         "leads_to": "VEX_CH4_MENTOR",
         "effects": {
           "survival": 1
@@ -11910,7 +11861,7 @@
       },
       {
         "letter": "S",
-        "text": "Explore alternative path",
+        "text": "Investigate the betrayal",
         "leads_to": "VEX_CH4_BETRAYAL",
         "effects": {
           "survival": 1
@@ -11923,7 +11874,7 @@
     "id": "VEX_CH5_MAIN",
     "character": "VEX",
     "type": "story",
-    "description": "Chapter 5 continues for VEX.",
+    "description": "Everything converges. The threads you've pulled\u2014revenge, family, power, truth\u2014all lead here, to this moment, this choice. Dustwall holds its breath, the city's pulse thrumming beneath your feet like a second heartbeat. The Guild's fate, your sister's life, your own survival: they all hang on a decision you can't unmake. The shadows have been your shelter and your cage, but the final door stands open. What you become on the other side is yours to choose.",
     "choices": [
       {
         "letter": "A",
@@ -11954,7 +11905,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore the VEX path",
+        "text": "Test your allies loyalty",
         "leads_to": "VEX_CH4_LOYALTY",
         "effects": {
           "intelligence": 1
@@ -11963,7 +11914,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore the VEX path",
+        "text": "Seek information on the streets",
         "leads_to": "VEX_CH1_EXTRA_2",
         "effects": {
           "intelligence": 1
@@ -11972,7 +11923,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore the VEX path",
+        "text": "Consider the final offer",
         "leads_to": "VEX_CH4_FINAL_OFFER",
         "effects": {
           "intelligence": 1
@@ -11981,7 +11932,7 @@
       },
       {
         "letter": "G",
-        "text": "Take alternate route",
+        "text": "Take on an extra job",
         "leads_to": "VEX_CH1_EXTRA_1",
         "effects": {
           "intelligence": 1
@@ -11990,7 +11941,7 @@
       },
       {
         "letter": "H",
-        "text": "Take alternate route",
+        "text": "Ambush the smugglers",
         "leads_to": "VEX_CH1_SMUGGLER_BATTLE",
         "effects": {
           "intelligence": 1
@@ -11999,7 +11950,7 @@
       },
       {
         "letter": "I",
-        "text": "Take alternate route",
+        "text": "Raid the Founder Vault",
         "leads_to": "VEX_CH4_VAULT",
         "effects": {
           "intelligence": 1
@@ -12043,7 +11994,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore alternative path",
+        "text": "Gather information from street kids",
         "leads_to": "ELARA_CH1_EXTRA_2",
         "effects": {
           "survival": 1
@@ -12052,7 +12003,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternative path",
+        "text": "Refuse to deal with a shady fence",
         "leads_to": "ELARA_CH1_EXTRA_4",
         "effects": {
           "survival": 1
@@ -12061,7 +12012,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore alternative path",
+        "text": "Accept an old contact job",
         "leads_to": "ELARA_CH1_EXTRA_8",
         "effects": {
           "survival": 1
@@ -12070,7 +12021,7 @@
       },
       {
         "letter": "G",
-        "text": "Explore alternative path",
+        "text": "Investigate a hidden treasure map",
         "leads_to": "ELARA_CH1_EXTRA_9",
         "effects": {
           "survival": 1
@@ -12079,7 +12030,7 @@
       },
       {
         "letter": "H",
-        "text": "Explore alternative path",
+        "text": "Infiltrate the Cult ceremony",
         "leads_to": "ELARA_CH1_CULT_INFILTRATE",
         "effects": {
           "survival": 1
@@ -12088,7 +12039,7 @@
       },
       {
         "letter": "I",
-        "text": "Explore alternative path",
+        "text": "Evade a bounty hunter",
         "leads_to": "ELARA_CH1_EXTRA_7",
         "effects": {
           "survival": 1
@@ -12097,7 +12048,7 @@
       },
       {
         "letter": "J",
-        "text": "Explore alternative path",
+        "text": "Witness a noble assault",
         "leads_to": "ELARA_CH1_EXTRA_5",
         "effects": {
           "survival": 1
@@ -12106,7 +12057,7 @@
       },
       {
         "letter": "K",
-        "text": "Explore alternative path",
+        "text": "Complete a pickpocket job",
         "leads_to": "ELARA_CH1_EXTRA_1",
         "effects": {
           "survival": 1
@@ -12264,7 +12215,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore the ELARA path",
+        "text": "Pass the Guild initiation test",
         "leads_to": "ELARA_CH1_EXTRA_6",
         "effects": {
           "intelligence": 1
@@ -12273,7 +12224,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore the ELARA path",
+        "text": "Quiet interlude before the end",
         "leads_to": "ELARA_CH3_INTERLUDE",
         "effects": {
           "intelligence": 1
@@ -12282,7 +12233,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore the ELARA path",
+        "text": "Find a third option",
         "leads_to": "ELARA_CH1_EXTRA_3",
         "effects": {
           "intelligence": 1
@@ -12291,7 +12242,7 @@
       },
       {
         "letter": "G",
-        "text": "Take alternate route",
+        "text": "Evade a guard pursuit",
         "leads_to": "ELARA_CH1_EXTRA_10",
         "effects": {
           "intelligence": 1
@@ -12300,7 +12251,7 @@
       },
       {
         "letter": "H",
-        "text": "Take alternate route",
+        "text": "Survive an assassin encounter",
         "leads_to": "ELARA_CH1_ASSASSIN_ENCOUNTER",
         "effects": {
           "intelligence": 1
@@ -12309,7 +12260,7 @@
       },
       {
         "letter": "I",
-        "text": "Take alternate route",
+        "text": "Settle the merchant war",
         "leads_to": "ELARA_CH1_MERCHANT_WAR",
         "effects": {
           "intelligence": 1
@@ -12322,7 +12273,7 @@
     "id": "ASHA_CH1_MAIN",
     "character": "ASHA",
     "type": "story",
-    "description": "Chapter 1 continues for ASHA.",
+    "description": "Your village lies in ashes behind you. You are a druid-ranger of the deep groves, trained to read the language of roots and stars, but nothing prepared you for this. The void-touched raiders came at dawn, and you awoke to smoke and screams. Now you walk through the world alone for the first time, a satchel of herbs on your shoulder and a bow in your hand. The forest shivers around you \u2014 it knows something ancient is stirring. You need to find your footing, to understand what was unleashed, and whether you have the strength to stand against it.",
     "choices": [
       {
         "letter": "A",
@@ -12353,7 +12304,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore alternative path",
+        "text": "Discover a hidden spring",
         "leads_to": "ASHA_CH1_EXTRA_9",
         "effects": {
           "survival": 1
@@ -12362,7 +12313,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternative path",
+        "text": "Track and hunt a corrupted beast",
         "leads_to": "ASHA_CH1_EXTRA_1",
         "effects": {
           "survival": 1
@@ -12371,7 +12322,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore alternative path",
+        "text": "Complete the Guardian test",
         "leads_to": "ASHA_CH1_EXTRA_5",
         "effects": {
           "survival": 1
@@ -12380,7 +12331,7 @@
       },
       {
         "letter": "G",
-        "text": "Explore alternative path",
+        "text": "Protect a villager in need",
         "leads_to": "ASHA_CH1_EXTRA_3",
         "effects": {
           "survival": 1
@@ -12389,7 +12340,7 @@
       },
       {
         "letter": "H",
-        "text": "Explore alternative path",
+        "text": "Save a wounded wolf",
         "leads_to": "ASHA_CH1_EXTRA_4",
         "effects": {
           "survival": 1
@@ -12398,7 +12349,7 @@
       },
       {
         "letter": "I",
-        "text": "Explore alternative path",
+        "text": "Follow a forest vision",
         "leads_to": "ASHA_CH1_EXTRA_8",
         "effects": {
           "survival": 1
@@ -12407,7 +12358,7 @@
       },
       {
         "letter": "J",
-        "text": "Explore alternative path",
+        "text": "Learn the spirits language",
         "leads_to": "ASHA_CH1_EXTRA_6",
         "effects": {
           "survival": 1
@@ -12420,7 +12371,7 @@
     "id": "ASHA_CH2_MAIN",
     "character": "ASHA",
     "type": "story",
-    "description": "Chapter 2 continues for ASHA.",
+    "description": "The world is larger than you ever imagined. Beyond the familiar treeline lie marshes that hum with forgotten magic, ruins where the spirits speak in riddles, and villages clinging to survival at the edge of the growing corruption. You meet others who carry the burden of this war \u2014 survivors, mystics, soldiers who have seen the void twist living things into nightmares. Ancient power stirs beneath the earth, and you feel it resonate with something deep in your own blood. Every step forward is a choice between what you were and what you are becoming.",
     "choices": [
       {
         "letter": "A",
@@ -12455,7 +12406,7 @@
     "id": "ASHA_CH3_MAIN",
     "character": "ASHA",
     "type": "story",
-    "description": "Chapter 3 continues for ASHA.",
+    "description": "The corruption spreads like a sickness through the land. Forests you once wandered as a child now writhe with void-touched creatures, their bark weeping black sap. Villages fall silent one by one. The spirits grow agitated, their voices sharp with warning. You can feel the balance tipping \u2014 nature and void, light and dark, life and decay. The paths before you diverge into hard choices: do you fight with fury, heal with patience, or seek a third way that no one has walked before? The time for indecision is over.",
     "choices": [
       {
         "letter": "A",
@@ -12531,7 +12482,7 @@
       },
       {
         "letter": "I",
-        "text": "Explore side path",
+        "text": "Rally the forest spirits",
         "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "survival": 1
@@ -12540,7 +12491,7 @@
       },
       {
         "letter": "J",
-        "text": "Explore side path",
+        "text": "Scout the Cult army",
         "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "survival": 1
@@ -12549,7 +12500,7 @@
       },
       {
         "letter": "K",
-        "text": "Explore side path",
+        "text": "Meditate for guidance",
         "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "survival": 1
@@ -12558,7 +12509,7 @@
       },
       {
         "letter": "L",
-        "text": "Explore side path",
+        "text": "Train with the Wardens",
         "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "survival": 1
@@ -12567,7 +12518,7 @@
       },
       {
         "letter": "M",
-        "text": "Explore side path",
+        "text": "Search ancient ruins",
         "leads_to": "ASHA_CH4_TRANSITION",
         "effects": {
           "survival": 1
@@ -12580,7 +12531,7 @@
     "id": "ASHA_CH4_MAIN",
     "character": "ASHA",
     "type": "story",
-    "description": "Chapter 4 continues for ASHA.",
+    "description": "Endgame approaches, and the air itself feels thin with anticipation. The spirit trials await you \u2014 ancient judgments passed down by the first guardians, tests that will measure not your strength but your soul. Each trial peels back a layer of who you are: your fear, your hope, your grief, your love. What emerges will determine the kind of guardian you become. Will you embrace nature's wild fury, its quiet healing, or something stranger \u2014 a harmony that holds both the light and the void in a single breath? Choose carefully. Legacy is not built in grand gestures, but in the moments that define them.",
     "choices": [
       {
         "letter": "A",
@@ -12611,7 +12562,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore alternative path",
+        "text": "Make camp and plan your approach",
         "leads_to": "ASHA_CH4_NIGHT_CAMP",
         "effects": {
           "survival": 1
@@ -12620,7 +12571,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternative path",
+        "text": "Help a friend in dire need",
         "leads_to": "ASHA_CH4_FRIEND_IN_NEED",
         "effects": {
           "survival": 1
@@ -12629,7 +12580,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore alternative path",
+        "text": "Consult the stargazer",
         "leads_to": "ASHA_CH4_STARGAZER",
         "effects": {
           "survival": 1
@@ -12638,7 +12589,7 @@
       },
       {
         "letter": "G",
-        "text": "Explore alternative path",
+        "text": "Pause time to study",
         "leads_to": "ASHA_CH4_TIME_STOP",
         "effects": {
           "survival": 1
@@ -12647,7 +12598,7 @@
       },
       {
         "letter": "H",
-        "text": "Explore alternative path",
+        "text": "Summon spirit helpers",
         "leads_to": "ASHA_CH4_SUMMON_HELP",
         "effects": {
           "survival": 1
@@ -12656,7 +12607,7 @@
       },
       {
         "letter": "I",
-        "text": "Explore alternative path",
+        "text": "Climb the mountain pass",
         "leads_to": "ASHA_CH4_MOUNTAIN_CLIMB",
         "effects": {
           "survival": 1
@@ -12665,7 +12616,7 @@
       },
       {
         "letter": "J",
-        "text": "Explore alternative path",
+        "text": "Walk through memory lane",
         "leads_to": "ASHA_CH4_MEMORY_LANE",
         "effects": {
           "survival": 1
@@ -12674,7 +12625,7 @@
       },
       {
         "letter": "K",
-        "text": "Explore alternative path",
+        "text": "Scout the Hollow forces",
         "leads_to": "ASHA_CH4_HOLLOW_SCOUT",
         "effects": {
           "survival": 1
@@ -12683,7 +12634,7 @@
       },
       {
         "letter": "L",
-        "text": "Explore alternative path",
+        "text": "Prepare for aerial battle",
         "leads_to": "ASHA_CH4_SKY_BATTLE",
         "effects": {
           "survival": 1
@@ -12692,7 +12643,7 @@
       },
       {
         "letter": "M",
-        "text": "Explore alternative path",
+        "text": "Prepare defenses for siege",
         "leads_to": "ASHA_CH4_SIEGE_PREP",
         "effects": {
           "survival": 1
@@ -12701,7 +12652,7 @@
       },
       {
         "letter": "N",
-        "text": "Explore alternative path",
+        "text": "Walk the void edge",
         "leads_to": "ASHA_CH4_VOID_EDGE",
         "effects": {
           "survival": 1
@@ -12710,7 +12661,7 @@
       },
       {
         "letter": "O",
-        "text": "Explore alternative path",
+        "text": "Honor old traditions",
         "leads_to": "ASHA_CH4_TRADITION",
         "effects": {
           "survival": 1
@@ -12723,7 +12674,7 @@
     "id": "ASHA_CH5_MAIN",
     "character": "ASHA",
     "type": "story",
-    "description": "Chapter 5 continues for ASHA.",
+    "description": "The final stand is upon you. The Hollow King's forces gather at the threshold of the old world, and the balance hangs by a thread so thin you can feel it vibrating in your chest. Every choice you have made \u2014 every creature saved or abandoned, every spirit honored or ignored \u2014 has led to this moment. The forest fights beside you, roots and thorns and howling winds, but the void is patient and ancient. You stand at the edge of becoming something more than you were. The question is not whether you will win. The question is what you will become in the winning.",
     "choices": [
       {
         "letter": "A",
@@ -12763,7 +12714,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore the ASHA path",
+        "text": "Cross the river crossing",
         "leads_to": "ASHA_CH4_RIVER_CROSSING",
         "effects": {
           "intelligence": 1
@@ -12772,7 +12723,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore the ASHA path",
+        "text": "Face the final moment",
         "leads_to": "ASHA_CH5_FINAL_MOMENT",
         "effects": {
           "intelligence": 1
@@ -12781,7 +12732,7 @@
       },
       {
         "letter": "G",
-        "text": "Explore the ASHA path",
+        "text": "Learn from the elder",
         "leads_to": "ASHA_CH1_EXTRA_10",
         "effects": {
           "intelligence": 1
@@ -12790,7 +12741,7 @@
       },
       {
         "letter": "H",
-        "text": "Take alternate route",
+        "text": "Drive back void creatures",
         "leads_to": "ASHA_CH1_EXTRA_7",
         "effects": {
           "intelligence": 1
@@ -12799,7 +12750,7 @@
       },
       {
         "letter": "I",
-        "text": "Take alternate route",
+        "text": "Listen to the forest spirits",
         "leads_to": "ASHA_CH1_EXTRA_2",
         "effects": {
           "intelligence": 1
@@ -12808,7 +12759,7 @@
       },
       {
         "letter": "J",
-        "text": "Take alternate route",
+        "text": "Prepare for the pre-battle",
         "leads_to": "ASHA_CH5_PRE_BATTLE",
         "effects": {
           "intelligence": 1
@@ -12817,7 +12768,7 @@
       },
       {
         "letter": "K",
-        "text": "Explore alternative path",
+        "text": "Search for final answers",
         "leads_to": "ASHA_CH5_SEARCH",
         "effects": {
           "survival": 1
@@ -12826,7 +12777,7 @@
       },
       {
         "letter": "L",
-        "text": "Explore alternative path",
+        "text": "Rally the team together",
         "leads_to": "ASHA_CH5_TEAM_FINAL",
         "effects": {
           "survival": 1
@@ -12870,7 +12821,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore alternative path",
+        "text": "Shadow the Watch patrol",
         "leads_to": "KIRA_CH1_SHADOW_WATCH",
         "effects": {
           "survival": 1
@@ -12879,7 +12830,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternative path",
+        "text": "Ambush the Cult bandits",
         "leads_to": "KIRA_CH1_BANDIT_AMBUSH",
         "effects": {
           "survival": 1
@@ -12888,7 +12839,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore alternative path",
+        "text": "Face the Circle trial",
         "leads_to": "KIRA_CH1_CIRCLE_TRIAL",
         "effects": {
           "survival": 1
@@ -12897,7 +12848,7 @@
       },
       {
         "letter": "G",
-        "text": "Explore alternative path",
+        "text": "Explore the deep wasteland",
         "leads_to": "KIRA_CH1_DEEP_WASTELAND",
         "effects": {
           "survival": 1
@@ -12906,7 +12857,7 @@
       },
       {
         "letter": "H",
-        "text": "Explore alternative path",
+        "text": "Sense a void-touched child",
         "leads_to": "KIRA_CH1_VOID_CHILD",
         "effects": {
           "survival": 1
@@ -12915,7 +12866,7 @@
       },
       {
         "letter": "I",
-        "text": "Explore alternative path",
+        "text": "Search for answers",
         "leads_to": "KIRA_CH1_SEARCH",
         "effects": {
           "survival": 1
@@ -12924,7 +12875,7 @@
       },
       {
         "letter": "J",
-        "text": "Explore alternative path",
+        "text": "Question a secret Cultist",
         "leads_to": "KIRA_CH1_SECRET_CULTIST",
         "effects": {
           "survival": 1
@@ -12933,7 +12884,7 @@
       },
       {
         "letter": "K",
-        "text": "Explore alternative path",
+        "text": "Confront the border guard",
         "leads_to": "KIRA_CH1_GUARD_POST",
         "effects": {
           "survival": 1
@@ -12942,7 +12893,7 @@
       },
       {
         "letter": "L",
-        "text": "Explore alternative path",
+        "text": "Stand firm in the wasteland",
         "leads_to": "KIRA_CH1_WASTELAND_STAND",
         "effects": {
           "survival": 1
@@ -12951,7 +12902,7 @@
       },
       {
         "letter": "M",
-        "text": "Explore alternative path",
+        "text": "Face the Watch trial",
         "leads_to": "KIRA_CH1_WATCH_TRIAL",
         "effects": {
           "survival": 1
@@ -13043,7 +12994,7 @@
     "id": "KIRA_CH4_MAIN",
     "character": "KIRA",
     "type": "story",
-    "description": "The final battle approaches. The crown piece calls to you.",
+    "description": "The weight of the journey settles on your shoulders as you approach the final stretch. The crown piece pulses with a rhythm that matches your heartbeat, and you feel the Hollow King's presence growing stronger with every step. The final battle approaches\u2014and with it, the choices that will define everything.",
     "choices": [
       {
         "letter": "A",
@@ -13074,7 +13025,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore alternate path",
+        "text": "Help a merchant with a side quest",
         "leads_to": "KIRA_CH4_SIDE_QUEST",
         "effects": {
           "intelligence": 1
@@ -13083,7 +13034,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternate path",
+        "text": "Clear out the bandit camp",
         "leads_to": "KIRA_CH4_BANDITS",
         "effects": {
           "intelligence": 1
@@ -13092,7 +13043,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore alternate path",
+        "text": "Journey toward the capital",
         "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "intelligence": 1
@@ -13101,7 +13052,7 @@
       },
       {
         "letter": "G",
-        "text": "Explore alternate path",
+        "text": "Reflect on your path",
         "leads_to": "KIRA_CH4_REFLECT",
         "effects": {
           "intelligence": 1
@@ -13110,7 +13061,7 @@
       },
       {
         "letter": "H",
-        "text": "Explore alternate path",
+        "text": "Prepare for what lies ahead",
         "leads_to": "KIRA_CH4_PREPARE",
         "effects": {
           "intelligence": 1
@@ -13119,7 +13070,7 @@
       },
       {
         "letter": "I",
-        "text": "Explore new path",
+        "text": "Side quest: merchant again",
         "leads_to": "KIRA_CH4_SIDE_QUEST",
         "effects": {
           "intelligence": 1
@@ -13128,7 +13079,7 @@
       },
       {
         "letter": "J",
-        "text": "Explore new path",
+        "text": "Clear more bandits",
         "leads_to": "KIRA_CH4_BANDITS",
         "effects": {
           "intelligence": 1
@@ -13137,7 +13088,7 @@
       },
       {
         "letter": "K",
-        "text": "Explore new path",
+        "text": "Continue toward the capital",
         "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "intelligence": 1
@@ -13150,7 +13101,7 @@
     "id": "KIRA_CH5_MAIN",
     "character": "KIRA",
     "type": "story",
-    "description": "The final chapter. Your choice will define the realm.",
+    "description": "The final chapter unfolds before you. The crown is within reach, the Hollow King waits, and every choice you have ever made has led to this single moment. The realm's fate rests in your hands. Your choice will define everything.",
     "choices": [
       {
         "letter": "A",
@@ -13176,6 +13127,15 @@
         "leads_to": "KIRA_ENDING_TRUTH",
         "effects": {
           "intelligence": 3
+        },
+        "requires": null
+      },
+      {
+        "letter": "D",
+        "text": "Walk away \u2014 choose a quiet life",
+        "leads_to": "KIRA_ENDING",
+        "effects": {
+          "humanity": 3
         },
         "requires": null
       }
@@ -13330,7 +13290,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "KIRA_CH3_TRANSITION",
+        "leads_to": "KIRA_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13365,7 +13325,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "KIRA_CH4_TRANSITION",
+        "leads_to": "KIRA_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13400,7 +13360,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "KIRA_CH4_TRANSITION",
+        "leads_to": "KIRA_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13430,12 +13390,12 @@
     "id": "KIRA_CH4_REFLECT",
     "character": "KIRA",
     "type": "story",
-    "description": "Chapter 4 continues - reflect phase.",
+    "description": "You pause, looking back at the road behind you. So much has changed since the cottage burned. Your mother's face, your father's lessons, the weight of the Nightwind name\u2014it all converges on this moment. You reflect on who you were and who you must become.",
     "choices": [
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "KIRA_CH5_TRANSITION",
+        "leads_to": "KIRA_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13474,12 +13434,12 @@
     "id": "KIRA_CH4_PREPARE",
     "character": "KIRA",
     "type": "story",
-    "description": "Chapter 4 continues - prepare phase.",
+    "description": "You take stock of everything you've gathered: spells learned, weapons sharpened, allies made, knowledge earned. The coming confrontation will demand every resource at your disposal. You ready yourself as best you can.",
     "choices": [
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "KIRA_CH5_TRANSITION",
+        "leads_to": "KIRA_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13509,12 +13469,12 @@
     "id": "KIRA_CH5_REFLECT",
     "character": "KIRA",
     "type": "story",
-    "description": "Chapter 5 continues - reflect phase.",
+    "description": "In the quiet before the storm, you think of your mother. Of your father. Of the cottage that burned and the girl who ran from it. You think of every choice that brought you here, and you wonder if you would make them all again. The answer, you find, is yes.",
     "choices": [
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "KIRA_ENDING",
+        "leads_to": "KIRA_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13544,12 +13504,12 @@
     "id": "KIRA_CH5_PREPARE",
     "character": "KIRA",
     "type": "story",
-    "description": "Chapter 5 continues - prepare phase.",
+    "description": "You gather your strength, your magic, your resolve. The final confrontation looms, and there is no room for hesitation. Every spell must be perfected, every doubt silenced. You prepare to meet your destiny.",
     "choices": [
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "KIRA_ENDING",
+        "leads_to": "KIRA_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13689,7 +13649,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH3_TRANSITION",
+        "leads_to": "THERON_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13724,7 +13684,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH3_TRANSITION",
+        "leads_to": "THERON_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13759,7 +13719,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH3_TRANSITION",
+        "leads_to": "THERON_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13794,7 +13754,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH3_TRANSITION",
+        "leads_to": "THERON_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13829,7 +13789,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH4_TRANSITION",
+        "leads_to": "THERON_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13864,7 +13824,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH4_TRANSITION",
+        "leads_to": "THERON_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13899,7 +13859,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH4_TRANSITION",
+        "leads_to": "THERON_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13934,7 +13894,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH4_TRANSITION",
+        "leads_to": "THERON_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -13969,7 +13929,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH5_TRANSITION",
+        "leads_to": "THERON_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14004,7 +13964,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH5_TRANSITION",
+        "leads_to": "THERON_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14039,7 +13999,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH5_TRANSITION",
+        "leads_to": "THERON_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14074,7 +14034,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_CH5_TRANSITION",
+        "leads_to": "THERON_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14109,7 +14069,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_ENDING",
+        "leads_to": "THERON_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14144,7 +14104,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_ENDING",
+        "leads_to": "THERON_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14179,7 +14139,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_ENDING",
+        "leads_to": "THERON_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14214,7 +14174,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "THERON_ENDING",
+        "leads_to": "THERON_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14345,7 +14305,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore alternative path",
+        "text": "Rooftop escape from the Guild",
         "leads_to": "VEX_CH1_ROOFTOP_ESCAPE",
         "effects": {
           "survival": 1
@@ -14354,7 +14314,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternative path",
+        "text": "Pickpocket job gone wrong",
         "leads_to": "VEX_CH1_PICKPOCKET_GONE_WRONG",
         "effects": {
           "survival": 1
@@ -14363,7 +14323,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore alternative path",
+        "text": "Evade the Watch patrol",
         "leads_to": "VEX_CH1_EXTRA_6",
         "effects": {
           "survival": 1
@@ -14372,7 +14332,7 @@
       },
       {
         "letter": "G",
-        "text": "Explore alternative path",
+        "text": "Seek the Spider mentor",
         "leads_to": "VEX_CH1_EXTRA_7",
         "effects": {
           "survival": 1
@@ -14381,7 +14341,7 @@
       },
       {
         "letter": "H",
-        "text": "Explore alternative path",
+        "text": "Make your final escape",
         "leads_to": "VEX_CH1_STREET_RIVALS",
         "effects": {
           "survival": 1
@@ -14390,7 +14350,7 @@
       },
       {
         "letter": "I",
-        "text": "Explore alternative path",
+        "text": "Ambush the smugglers",
         "leads_to": "VEX_CH1_WATCH_CHASE",
         "effects": {
           "survival": 1
@@ -14399,7 +14359,7 @@
       },
       {
         "letter": "J",
-        "text": "Explore alternative path",
+        "text": "Confront street rivals",
         "leads_to": "VEX_CH1_FINAL_ESCAPE",
         "effects": {
           "survival": 1
@@ -14408,7 +14368,7 @@
       },
       {
         "letter": "K",
-        "text": "Explore alternative path",
+        "text": "Guard patrol diversion",
         "leads_to": "VEX_CH1_EXTRA_4",
         "effects": {
           "survival": 1
@@ -14417,7 +14377,7 @@
       },
       {
         "letter": "L",
-        "text": "Explore alternative path",
+        "text": "Betrayal setup investigation",
         "leads_to": "VEX_CH1_FIRST_JOB",
         "effects": {
           "survival": 1
@@ -14426,7 +14386,7 @@
       },
       {
         "letter": "M",
-        "text": "Explore alternative path",
+        "text": "Gang encounter in Dustwall",
         "leads_to": "VEX_CH1_EXTRA_8",
         "effects": {
           "survival": 1
@@ -14435,7 +14395,7 @@
       },
       {
         "letter": "N",
-        "text": "Explore alternative path",
+        "text": "Follow the corruption lead",
         "leads_to": "VEX_CH1_GUARD_PATROL",
         "effects": {
           "survival": 1
@@ -14444,7 +14404,7 @@
       },
       {
         "letter": "O",
-        "text": "Explore alternative path",
+        "text": "First job for the Guild",
         "leads_to": "VEX_CH1_EXTRA_10",
         "effects": {
           "survival": 1
@@ -14453,7 +14413,7 @@
       },
       {
         "letter": "P",
-        "text": "Explore alternative path",
+        "text": "Prison break planning",
         "leads_to": "VEX_CH1_EXTRA_9",
         "effects": {
           "survival": 1
@@ -14462,7 +14422,7 @@
       },
       {
         "letter": "Q",
-        "text": "Explore alternative path",
+        "text": "Watch chase through alleys",
         "leads_to": "VEX_CH1_MENTOR",
         "effects": {
           "survival": 1
@@ -14515,7 +14475,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH3_TRANSITION",
+        "leads_to": "VEX_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14550,7 +14510,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH3_TRANSITION",
+        "leads_to": "VEX_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14585,7 +14545,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH3_TRANSITION",
+        "leads_to": "VEX_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14629,7 +14589,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH3_TRANSITION",
+        "leads_to": "VEX_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14664,7 +14624,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH4_TRANSITION",
+        "leads_to": "VEX_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14699,7 +14659,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH4_TRANSITION",
+        "leads_to": "VEX_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14734,7 +14694,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH4_TRANSITION",
+        "leads_to": "VEX_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14769,7 +14729,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH4_TRANSITION",
+        "leads_to": "VEX_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14804,7 +14764,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH5_TRANSITION",
+        "leads_to": "VEX_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14839,7 +14799,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH4_DUEL",
+        "leads_to": "VEX_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14874,7 +14834,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH5_REVENGE_FINAL",
+        "leads_to": "VEX_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14909,7 +14869,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH4_AVENGER_PATH",
+        "leads_to": "VEX_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -14988,7 +14948,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH5_FINALE",
+        "leads_to": "VEX_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15023,7 +14983,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "VEX_CH5_ESCAPE",
+        "leads_to": "VEX_CH5_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15049,7 +15009,7 @@
       },
       {
         "letter": "D",
-        "text": "Explore alternative path",
+        "text": "Consider the escape route",
         "leads_to": "VEX_CH5_CONSOLIDATE",
         "effects": {
           "survival": 1
@@ -15058,7 +15018,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternative path",
+        "text": "Build a network of allies",
         "leads_to": "VEX_CH5_EXPANSION",
         "effects": {
           "survival": 1
@@ -15067,7 +15027,7 @@
       },
       {
         "letter": "F",
-        "text": "Explore alternative path",
+        "text": "Expand your influence",
         "leads_to": "VEX_CH5_RETURN",
         "effects": {
           "survival": 1
@@ -15076,7 +15036,7 @@
       },
       {
         "letter": "G",
-        "text": "Explore alternative path",
+        "text": "Return to old haunts",
         "leads_to": "VEX_CH5_BETRAYAL_END",
         "effects": {
           "survival": 1
@@ -15085,7 +15045,7 @@
       },
       {
         "letter": "H",
-        "text": "Explore alternative path",
+        "text": "Reflect on past betrayals",
         "leads_to": "VEX_CH5_MEMORIAL",
         "effects": {
           "survival": 1
@@ -15252,7 +15212,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH3_TRANSITION",
+        "leads_to": "ELARA_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15287,7 +15247,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH3_TRANSITION",
+        "leads_to": "ELARA_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15322,7 +15282,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH3_TRANSITION",
+        "leads_to": "ELARA_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15357,7 +15317,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH3_TRANSITION",
+        "leads_to": "ELARA_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15392,7 +15352,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH4_TRANSITION",
+        "leads_to": "ELARA_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15427,7 +15387,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH4_TRANSITION",
+        "leads_to": "ELARA_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15462,7 +15422,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH4_TRANSITION",
+        "leads_to": "ELARA_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15497,7 +15457,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH4_TRANSITION",
+        "leads_to": "ELARA_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15532,7 +15492,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH5_TRANSITION",
+        "leads_to": "ELARA_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15567,7 +15527,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH5_TRANSITION",
+        "leads_to": "ELARA_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15602,7 +15562,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH5_TRANSITION",
+        "leads_to": "ELARA_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15637,7 +15597,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ELARA_CH5_TRANSITION",
+        "leads_to": "ELARA_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -15988,7 +15948,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH3_TRANSITION",
+        "leads_to": "ASHA_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16023,7 +15983,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH3_TRANSITION",
+        "leads_to": "ASHA_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16058,7 +16018,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH3_TRANSITION",
+        "leads_to": "ASHA_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16093,7 +16053,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH3_TRANSITION",
+        "leads_to": "ASHA_CH2_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16128,7 +16088,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH4_TRANSITION",
+        "leads_to": "ASHA_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16163,7 +16123,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH4_TRANSITION",
+        "leads_to": "ASHA_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16198,7 +16158,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH4_TRANSITION",
+        "leads_to": "ASHA_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16233,7 +16193,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH4_TRANSITION",
+        "leads_to": "ASHA_CH3_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16268,7 +16228,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH5_TRANSITION",
+        "leads_to": "ASHA_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16303,7 +16263,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH5_TRANSITION",
+        "leads_to": "ASHA_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16338,7 +16298,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH5_TRANSITION",
+        "leads_to": "ASHA_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16372,7 +16332,7 @@
         "requires": null
       },
       {
-        "letter": "D",
+        "letter": "E",
         "text": "Look for hidden paths",
         "leads_to": "ASHA_CH4_SECRET_PASSAGE",
         "effects": {
@@ -16391,7 +16351,7 @@
       {
         "letter": "A",
         "text": "Continue forward",
-        "leads_to": "ASHA_CH5_TRANSITION",
+        "leads_to": "ASHA_CH4_MAIN",
         "effects": {
           "intelligence": 1
         },
@@ -16425,7 +16385,7 @@
         "requires": null
       },
       {
-        "letter": "D",
+        "letter": "E",
         "text": "Take time to heal completely",
         "leads_to": "ASHA_CH4_WOUNDS_HEAL",
         "effects": {
@@ -17262,9 +17222,10 @@
   "ASHA_ENDING": {
     "id": "ASHA_ENDING",
     "character": "ASHA",
-    "type": "story",
-    "description": "Your journey reaches its conclusion.",
-    "choices": []
+    "type": "ending",
+    "description": "You stand at the edge of the temple ruins as the last stones settle. The Hollow King's power has been severed, the void flow cut, and the great trembling subsides into silence. Smoke rises in thin pillars against a sky turning pink with dawn.\n\nYou do not chase what remains of the Hollow King's forces. You do not seek vengeance for your village or glory for yourself. Instead, you feel something you have not felt in years: stillness.\n\nThe forest calls to you, not with urgency, but with patience. The old groves where you first learned the language of the spirits, the streams where you mended a wolf's broken leg, the quiet glades where the boundary between nature and void grows thin and contemplative. You remember your druid training \u2014 not as a weapon, but as a way of being.\n\nYou turn away from the temple. Your footsteps carry you into the treeline, where moss softens every sound and the canopy filters the light into gold. You find a hollow oak, its roots cradling a spring. This will be your home.\n\nDays pass. You plant seeds. You speak to the spirits not of battle, but of growth. You learn the names of every bird that nests in the valley. At night, you sit by the spring and let the void \u2014 the void that once terrified you \u2014 exist alongside the light, neither conquering nor conquered.\n\nThis is not surrender. This is the wisdom you were always seeking. The balance you sought was never a weapon to wield. It was simply a life to live.",
+    "choices": [],
+    "ending": "Journey End"
   },
   "KIRA_CH1_ALT": {
     "id": "KIRA_CH1_ALT",
@@ -17480,7 +17441,7 @@
     "id": "KIRA_CH4_ALT",
     "character": "KIRA",
     "type": "story",
-    "description": "An alternative path presents itself in Chapter 4.",
+    "description": "A fork appears in your path\u2014not on any map, but in the threads of fate. You sense an alternate approach, a way to change the course of your journey. The decision hangs before you, and only you can choose which direction to take.",
     "choices": [
       {
         "letter": "A",
@@ -17559,7 +17520,7 @@
     "id": "KIRA_CH5_ALT",
     "character": "KIRA",
     "type": "story",
-    "description": "An alternative path presents itself in Chapter 5.",
+    "description": "The path splinters before you in the final hour. A new possibility emerges\u2014one you had not considered, a third way between the choices that seemed inevitable. The decision is yours alone.",
     "choices": [
       {
         "letter": "A",
@@ -17638,7 +17599,7 @@
     "id": "KIRA_CH4_HIDE",
     "character": "KIRA",
     "type": "story",
-    "description": "You find a place to hide the crown piece.",
+    "description": "You find a cleft in the earth beneath an ancient oak, far from any road or settlement. The crown piece goes into the darkness, wrapped in cloth soaked in protective herbs. You mark the tree with a small symbol only you would recognize, and pray no one finds it.",
     "choices": [
       {
         "letter": "A",
@@ -17673,7 +17634,7 @@
     "id": "KIRA_ENDING",
     "character": "KIRA",
     "type": "ending",
-    "description": "Your journey concludes here.",
+    "description": "You stand in the ruins of the Temple, the seventh piece of the crown cold in your palm. The Hollow King's whispers coil around your mind\u2014promises of power, of revenge, of everything you've lost.\n\nYou close your hand. And let go.\n\nThe crown piece clatters to the stone floor. You turn your back on the void, on the legacy of the Nightwinds, on the throne that was never meant to be yours.\n\nOutside, the world is grey and quiet. The Cult has scattered. Your mother is somewhere, alive. You don't know where, but you know she'd want this\u2014for you to live.\n\nYou walk. Not toward anything. Just away. The void still calls, sometimes. In the quiet hours, you feel it tugging at the edges of your consciousness, hungry and patient. But you've learned to live with hunger.\n\nYears pass. You find work in a village far from Crownhaven. You plant a garden. You learn to sleep through the night. And when you dream, the void is silent.\n\nYour journey concludes not with a bang, but with a choice repeated every morning: to keep walking. To keep living. To be free.",
     "choices": []
   },
   "THERON_CH1_ALT": {
@@ -18004,7 +17965,7 @@
     "id": "THERON_ENDING",
     "character": "THERON",
     "type": "ending",
-    "description": "Your journey concludes here.",
+    "description": "The sword falls from your hand. It lands point-first in the dry earth, then tips over with a sound that echoes through the ruined courtyard \u2014 iron against stone, final and irreverent.\n\nYou have carried this blade your entire life. Through battles without number, through betrayals, through the slow corruption of the void that has eaten at your bones and whispered in your dreams. You have been a killer, a knight, a broken thing held together by duty and rage.\n\nNo longer.\n\nThe void stirs inside you, confused. It has known only hunger, only purpose. But you are done feeding it. You sit down on a broken wall, the stone warm from the afternoon sun, and you let the silence wash over you. There is no grand revelation. No final enemy to strike down. Just the sound of wind moving through the shattered palace, carrying dust and the distant calls of birds.\n\nYou think of Seraphina. Of Vespera. Of all the names and faces you have failed and been failed by. They feel distant now, like stories told about someone else.\n\nSomeone will find the crown pieces. Someone will fight the next war. But that someone will not be you.\n\nYou loosen your gauntlets and let them fall. One by one, the pieces of your armor join the sword in the dust. By evening, you are just a man in simple clothes, walking east, toward the sea, toward nothing in particular.\n\nPeace does not arrive like a victory. It arrives like a slow tide, rising while you are not watching.",
     "choices": []
   },
   "ELARA_CH1_ALT": {
@@ -18291,8 +18252,9 @@
     "id": "ELARA_ENDING",
     "character": "ELARA",
     "type": "ending",
-    "description": "Your journey concludes here.",
-    "choices": []
+    "description": "You let the blade fall.\n\nIt clatters against the stone floor of the Hollow King's sanctum, and the sound is louder than it should be\u2014a bell tolling for something that almost died today. Your hand is still extended, fingers open, the ghost of the hilt still warm against your palm. You chose to let go.\n\nThe Hollow King watches you from his chains. His eyes are the same color as your father's were\u2014that pale grey that catches the light like winter water. You came here to kill him, to carve your parents' names into his heart, to make him pay for every night you spent awake and burning. The revenge was planned, measured, rehearsed. You knew exactly how his blood would look on your hands.\n\nBut you saw something in his face when you raised the blade. Not fear. Recognition. He knew you were the Vances' daughter. He knew what he'd done. And he didn't beg. He just looked at you, the way a man looks at the sunrise on his last morning\u2014accepting the inevitable.\n\nKilling him wouldn't bring them back. It wouldn't fill the five-year hollow in your chest. It would just make you another name on a list of people who chose destruction because they forgot how to choose anything else.\n\nYou turn. The door is where you left it. The world outside is grey and wet and ordinary\u2014a carriage rattling past, a vendor calling his wares, the sound of a city that doesn't know or care what almost happened here. You step into it, and the rain hits your face, and you breathe.\n\nYour parents are dead. They've always been dead. The only question was whether you'd join them in spirit\u2014a ghost of vengeance haunting a city that would never mourn you. You have your answer now. You walk away not because you've forgiven, but because you've chosen to live.",
+    "choices": [],
+    "type": "ending"
   },
   "KIRA_CH2_GUILD_HALL": {
     "id": "KIRA_CH2_GUILD_HALL",
@@ -18438,7 +18400,7 @@
     "id": "KIRA_CH4_DESTROY",
     "character": "KIRA",
     "type": "story",
-    "description": "You decide to destroy the crown piece. It must not be used.",
+    "description": "You make your decision with the finality of a closing tomb. The crown piece must not exist. Its very presence is a corruption, a wound in the world that will only fester. You begin searching for a way to unmake what the first Nightwind created.",
     "choices": [
       {
         "letter": "A",
@@ -19938,7 +19900,7 @@
   "VEX_ENDING_FREEDOM": {
     "id": "VEX_ENDING_FREEDOM",
     "character": "VEX",
-    "description": "The chains finally break. Not the Guild's chains\u2014life's chains. You leave the city behind, walking into the sunrise without looking back. The shadows held you for years, but the sun calls louder. Somewhere, someplace new waits\u2014a life without theft, without fear, without the endless chase. You smile for the first time in years.",
+    "description": "Dawn breaks over the mountain pass, and for the first time in years, you don't check the shadows.\n\nYou left Dustwall three weeks ago. The Guild's territory ended on the second day, and with every mile you've felt something unclench in your chest\u2014a fist you didn't know you'd been making. The city's hold on you was never iron. It was habit, worn smooth as a touchstone, familiar as your own heartbeat. But habits can be broken.\n\nYour bag is light: a change of clothes, a few coins, a knife you keep more for comfort than necessity. No stolen goods. No blood money. Nothing that ties you to the life you left behind. You walk the roads as a stranger, nameless and free, and every new horizon feels like a gift you don't deserve but intend to keep.\n\nThe Guild will find someone else to run their errands. The underworld will spin without you\u2014it spun long before you were born and will spin long after. You were never the center of anything except your own survival, and now survival means a different thing: a room with a window, honest work that leaves your hands dirty but your conscience clean, a life measured in sunrises instead of scores.\n\nIt's not a grand fate. It's not a legend. But as the road stretches ahead, empty and golden in the morning light, you realize that's the point. Freedom isn't power. It's the luxury of not needing any.",
     "choices": [],
     "type": "story",
     "ending": "FREEDOM"
@@ -19946,7 +19908,7 @@
   "VEX_ENDING_AVENGER": {
     "id": "VEX_ENDING_AVENGER",
     "character": "VEX",
-    "description": "Every enemy who ever hunted you lies defeated. The Shadowmaster is dead. The Guild is shattered. The city is safer. But at what cost? You stand alone in the ashes, a legend soaked in blood. They call you hero. They call you monster. They call you Vex\u2014and that says everything.",
+    "description": "The Guildhall burns behind you.\n\nYou walk through the ashes because there's nowhere else to go. The fire eats everything\u2014records, treasures, bodies\u2014and the heat against your back is the only warmth you've felt in years. The revenge you wanted so badly is complete. Every name on your list is crossed off. Every debt is paid.\n\nYou don't feel victorious. You feel hollow, scraped clean, like the fire burned something out of you that you can never get back.\n\nThe last one fell with your blade in his throat and your name on his lips\u2014not a curse, but a question. \"Why?\" He genuinely didn't understand. That's the thing about people who destroy others' lives: they never think their own comeuppance is justified.\n\nYou wanted to tell him. You wanted him to know every name, every face, every life he'd shattered to build his empire. But the words wouldn't come, and the light left his eyes, and you were alone with the flames and the silence.\n\nYour hands are shaking. You press them flat against a soot-stained wall to steady them, and the stone is hot enough to burn, and you don't pull away. The pain is real. The pain is honest. The pain is the only thing that feels earned.\n\nYou close your eyes. The faces of everyone you lost flicker behind your lids\u2014the ones you avenged, the ones you failed, the ones who died on the way to this moment. They're quiet now. Maybe that's peace. Maybe that's just exhaustion.\n\nDustwall will have a new master by morning. But it won't be you. You were never in this for the throne.\n\nYou were in it for the fire.",
     "choices": [],
     "type": "story",
     "ending": "AVENGER"
@@ -19954,7 +19916,7 @@
   "VEX_ENDING_FAMILY": {
     "id": "VEX_ENDING_FAMILY",
     "character": "VEX",
-    "description": "The shadows retreat. Family gains. Lyra stands beside you\u2014not as a partner in crime, but as a partner in life. Together, you build something legitimate\u2014an empire of honest work. The city gains jobs; you gain peace. Not the way you imagined, but better than you dared hope.",
+    "description": "Lyra's apartment is small. Two rooms above a baker's shop, the walls thin, the floor sloped, the smell of fresh bread seeping through every crack. It's the most beautiful place you've ever been.\n\nYou sit on a worn couch that's older than you are, a cup of tea cooling in your hands, and you watch your sister move through the tiny kitchen. She hums while she works\u2014off-key, unaware, happy. She made tea without asking if you wanted it because she already knew the answer. That's what family does.\n\nThe Guild wanted you to be a weapon. The streets wanted you to be a ghost. The city wanted you to be nothing. But Lyra looks at you like you're something. Not the Shadow King. Not a legend. Not a tool. Just her sister, home at last.\n\n\"You staying?\" she asks. The question is casual, but her hands are still. She doesn't turn around. She's afraid of the answer.\n\nYou think about the power you could have had. The throne. The legend. The fortune. All of it out there, waiting for someone ruthless enough to take it. But none of it tastes as warm as this tea, as this moment, as the chance to be ordinary in the company of someone who shares your blood.\n\n\"Yeah,\" you say. \"I'm staying.\"\n\nShe turns. Her smile is wet and real and everything you never knew you needed.\n\nThe shadows will always be there. But you've found something brighter.",
     "choices": [],
     "type": "story",
     "ending": "FAMILY"
@@ -19962,7 +19924,7 @@
   "VEX_ENDING_TRUTH": {
     "id": "VEX_ENDING_TRUTH",
     "character": "VEX",
-    "description": "The truth burns brighter than any blade. All the secrets, all the lies, all the shadows\u2014they come into the light. The city changes, forced to confront what it ignored for generations. You become something new: not a thief, not a king, but a whistleblower. And in the end, truth is the most dangerous weapon of all.",
+    "description": "The archive stretches into darkness, shelf after shelf of records going back centuries. You found the hidden vault beneath the Guild's oldest stronghold\u2014not through combat or stealth, but through patience. Through following threads that everyone else dismissed as coincidence.\n\nThe lantern flickers as you pull out ledgers, letters, sealed testimonies. The Guild's true history unfolds in your hands: how it was founded by a broken noble family, how it absorbed the city's criminal networks by design, how it manufactured crises to justify its own existence. Your parents weren't casualties of the underworld. They were silenced for knowing too much.\n\nYour family's name appears in a letter dated forty years ago\u2014your grandmother's handwriting, elegant and furious, demanding answers from a Guild master long since dead. The cycle of silence and violence runs through your blood. You didn't choose this life. It chose you, the way the Guild chooses everyone it consumes.\n\nYou copy everything. Every name, every date, every transaction that connects the Guild to the city's noble houses. The truth is a weapon more dangerous than any blade you've ever carried, because it can't be dodged or parried. It can only be revealed.\n\nYou seal the copies and address them to the Crown, to the city chroniclers, to every news sheet in Dustwall. Let them try to bury this. Let them try to silence a truth that's already in a hundred hands.\n\nKnowledge doesn't set you free. You knew that already. But knowledge gives you leverage. And leverage\u2014in this city, in this life\u2014is the only power that matters.",
     "choices": [],
     "type": "story",
     "ending": "TRUTH"
@@ -24488,7 +24450,7 @@
     "id": "KIRA_CH4_REALITY_CHECK",
     "character": "KIRA",
     "type": "story",
-    "description": "You face the harsh reality.",
+    "description": "In a moment of brutal clarity, you see yourself as you truly are\u2014not a hero, not a savior, but a fleeing girl carrying a darkness she barely understands. The weight of your family's legacy presses down, and you must decide: will you break, or will you become something more?",
     "choices": [
       {
         "letter": "A",
@@ -24523,7 +24485,7 @@
     "id": "KIRA_CH4_POWER",
     "character": "KIRA",
     "type": "story",
-    "description": "You give in to the void.",
+    "description": "The void surges through you, and you let it. Every barrier you've built, every restraint your mother taught you\u2014you release them all. Power floods into every corner of your being, and for the first time, you feel what it means to be truly untethered.",
     "choices": [
       {
         "letter": "A",
@@ -24567,7 +24529,7 @@
     "id": "KIRA_CH4_BALANCE",
     "character": "KIRA",
     "type": "story",
-    "description": "You find middle path.",
+    "description": "Between the consuming void and the fragile light, you find a slender thread of harmony. The crown piece pulses in your hand, not with hunger but with potential. You realize the middle path is not cowardice\u2014it is the hardest road of all.",
     "choices": [
       {
         "letter": "A",
@@ -24602,7 +24564,7 @@
     "id": "KIRA_CH4_SUPPRESS",
     "character": "KIRA",
     "type": "story",
-    "description": "You contain the void.",
+    "description": "You clench your will like a fist and force the void back. It resists, writhing against your control, but you are the master here\u2014not the darkness. Layer by layer, you contain the hunger, sealing it behind walls of discipline and restraint.",
     "choices": [
       {
         "letter": "A",
@@ -24646,7 +24608,7 @@
     "id": "KIRA_CH4_GATHER",
     "character": "KIRA",
     "type": "story",
-    "description": "Gather energy.",
+    "description": "You open yourself to the void and draw. Power floods into you\u2014cold, vast, hungry. The crown piece resonates, feeding you energy until your veins hum with the darkness. You will need this strength for what comes next.",
     "choices": [
       {
         "letter": "A",
@@ -24681,7 +24643,7 @@
     "id": "KIRA_CH4_TEST",
     "character": "KIRA",
     "type": "story",
-    "description": "Test limits.",
+    "description": "You push against the boundaries of your power, seeking the edge of what you can endure. The void responds, testing you in turn, probing for weakness. Every failure teaches you something. Every success expands your reach.",
     "choices": [
       {
         "letter": "A",
@@ -24716,7 +24678,7 @@
     "id": "KIRA_CH4_TECHNIQUES",
     "character": "KIRA",
     "type": "story",
-    "description": "Learn techniques.",
+    "description": "You pore over your mother's books, searching for techniques that can shape void magic without being consumed by it. Ancient diagrams and marginal notes reveal methods long forgotten\u2014ways to weave the darkness into forms of precision and purpose.",
     "choices": [
       {
         "letter": "A",
@@ -24751,7 +24713,7 @@
     "id": "KIRA_CH4_CIRCLE",
     "character": "KIRA",
     "type": "story",
-    "description": "Circle helps.",
+    "description": "The Circle of Mages welcomes you with wary respect. Their halls echo with centuries of accumulated knowledge, and their leader\u2014an ancient woman named Magistra Venn\u2014studies you with keen, knowing eyes. They offer alliance, but their price is trust, and trust has never come easily to a Nightwind.",
     "choices": [
       {
         "letter": "A",
@@ -24791,7 +24753,7 @@
       },
       {
         "letter": "E",
-        "text": "Explore alternative path",
+        "text": "Search for hidden chambers",
         "leads_to": "KIRA_CH4_HIDE",
         "effects": {
           "survival": 1
@@ -24804,7 +24766,7 @@
     "id": "KIRA_CH4_DESTROY_SOURCE",
     "character": "KIRA",
     "type": "story",
-    "description": "Destroy void source.",
+    "description": "To destroy the crown piece, you must strike at its origin\u2014the void itself. You feel for the source, that dark pulsing heart beneath the world, and prepare to sever the connection that sustains the crown's power.",
     "choices": [
       {
         "letter": "A",
@@ -24839,7 +24801,7 @@
     "id": "KIRA_CH4_MEDITATE",
     "character": "KIRA",
     "type": "story",
-    "description": "Meditate on harmony.",
+    "description": "You sit in the stillness and let the void speak. It is not words you hear but sensations\u2014ancient memories, echoes of the first Nightwind, the quiet song of creation and destruction intertwined. You find the harmony within the chaos, and for a moment, you understand.",
     "choices": [
       {
         "letter": "A",
@@ -24874,7 +24836,7 @@
     "id": "KIRA_CH4_TRAIN",
     "character": "KIRA",
     "type": "story",
-    "description": "Train to master.",
+    "description": "You drill until your body aches and your magic flickers with exhaustion. Sword forms, incantations, evasion, channeling\u2014you run through every discipline you know. The coming fight will not forgive weakness, and you intend to be ready.",
     "choices": [
       {
         "letter": "A",
@@ -24909,7 +24871,7 @@
     "id": "KIRA_CH4_WISDOM",
     "character": "KIRA",
     "type": "story",
-    "description": "Ancient wisdom.",
+    "description": "Ancient texts speak of the first void-wielders, who did not fear the darkness but sought to understand it. You find their teachings buried in the margins of your mother's books\u2014philosophies of balance, of acceptance, of the void not as enemy but as teacher.",
     "choices": [
       {
         "letter": "A",
@@ -24944,7 +24906,7 @@
     "id": "KIRA_CH5_CONFRONT",
     "character": "KIRA",
     "type": "story",
-    "description": "Confront Hollow King.",
+    "description": "You stand before the Hollow King, and the world falls away. He is vast and ancient, a wound in reality given will and malice. But you are here, and you are not the same girl who fled a burning cottage. The confrontation you were born for has begun.",
     "choices": [
       {
         "letter": "A",
@@ -24979,7 +24941,7 @@
     "id": "KIRA_CH5_CROWN",
     "character": "KIRA",
     "type": "story",
-    "description": "Crown responds.",
+    "description": "The crown responds to your presence. Its pieces vibrate in harmony, calling to each other across the void. You feel the hunger of every Nightwind who wore it before you, and the power of all seven pieces awaits your command\u2014or your destruction.",
     "choices": [
       {
         "letter": "A",
@@ -25014,7 +24976,7 @@
     "id": "KIRA_CH5_STORE",
     "character": "KIRA",
     "type": "story",
-    "description": "Store energy.",
+    "description": "You find a place where the veil between worlds is thin\u2014a sacred grove, untouched by the Cult's corruption. You channel the excess energy into the earth, storing it for a purpose you cannot yet name. The ground hums with contained power.",
     "choices": [
       {
         "letter": "A",
@@ -25049,7 +25011,7 @@
     "id": "KIRA_CH5_ALLIES",
     "character": "KIRA",
     "type": "story",
-    "description": "Share with allies.",
+    "description": "You gather those who would stand with you\u2014not as pawns, but as partners. Each brings their own strength: knowledge, courage, faith in what you could become. Together, you might be more than the sum of your parts.",
     "choices": [
       {
         "letter": "A",
@@ -25084,7 +25046,7 @@
     "id": "KIRA_CH5_BATTLE",
     "character": "KIRA",
     "type": "story",
-    "description": "Fight hordes.",
+    "description": "The Hollow King's forces pour from the void\u2014shadows given form, nightmares made flesh. You cut through them, wave after wave, your blade singing in the darkness. Each fallen enemy brings you closer to the heart.",
     "choices": [
       {
         "letter": "A",
@@ -25119,7 +25081,7 @@
     "id": "KIRA_CH5_LIMIT",
     "character": "KIRA",
     "type": "story",
-    "description": "Push limits.",
+    "description": "You reach for the edge of your power\u2014and then push beyond. The void screams as you tear through barriers that were never meant to be crossed. There is no ceiling to your potential, only the horizon of what you dare to become.",
     "choices": [
       {
         "letter": "A",
@@ -25154,7 +25116,7 @@
     "id": "KIRA_CH5_CHALLENGE",
     "character": "KIRA",
     "type": "story",
-    "description": "Challenge enemy.",
+    "description": "You step forward and issue your challenge. Not to the Cult, not to the King's servants\u2014but to the Hollow King himself. Let him come. Let him face a Nightwind who is no longer afraid.",
     "choices": [
       {
         "letter": "A",
@@ -25189,91 +25151,234 @@
     "id": "KIRA_ENDING_GUARDIAN",
     "character": "KIRA",
     "type": "ending",
-    "description": "Guardian of the magical realm.",
+    "description": "The void opens beneath the Temple, and you fall into a world of shimmering light and impossible geometry. The magical realm\u2014the source from which all sorcery flows.\n\nYou were never meant to find it. No mortal has walked here since the first mages sealed the way.\n\nThe realm is wounded. Creatures of pure magic drift through broken landscapes, their forms flickering. The corruption that seeped from the crown has reached even here.\n\nYou raise your hand, and the void answers. But here, in the heart of all magic, the void is not darkness\u2014it is potential. Raw, unshaped, waiting.\n\nYou spend years learning to speak the language of creation. The magical beings come to know you. They call you the Gatekeeper, the one who stands between their world and the mortal one.\n\nWhen the last rift closes, when the realm is whole again, they ask you to stay.\n\nYou look back toward the mortal world, toward your mother, toward everything you left behind. And then forward, at a realm that needs a guardian who understands both light and shadow.\n\nYou stay. Not as a prisoner. As a protector.",
     "choices": []
   },
   "KIRA_ENDING_PROTECTOR": {
     "id": "KIRA_ENDING_PROTECTOR",
     "character": "KIRA",
     "type": "ending",
-    "description": "Eternal protector of void power.",
+    "description": "You claim the crown, but not for yourself. You claim it to seal the void forever.\n\nThe ritual takes everything from you. Your mortality. Your future. The chance to grow old, to watch your mother age, to find love or peace or rest.\n\nYou become the eternal guardian, bound to the void's heart for as long as it exists.\n\nThe Temple becomes your prison and your purpose. You sit at its center, the crown reformed around your head, your eyes open and unblinking. You feel every tremor of the void, every shadow that tries to escape, every nightmare that seeks to become real.\n\nYour mother visits at first. She sits across from you, holding your hand, and you feel her warmth through the cold that has settled into your bones. She tells you stories, reads to you, reminds you of who you were before.\n\nEventually, she stops coming. Eventually, everyone stops coming. The world forgets the guardian in the Temple.\n\nBut you remember. You remember your purpose. You remember your family. You remember the girl who ran from a burning cottage, who chose to carry the weight so others wouldn't have to.\n\nAnd you hold. Eternally. So the world can sleep.",
     "choices": []
   },
   "KIRA_ENDING_ORDER": {
     "id": "KIRA_ENDING_ORDER",
     "character": "KIRA",
     "type": "ending",
-    "description": "Found an order of void-wielders.",
+    "description": "The crown is broken, but the void remains. And you know that void-touched mages will keep being born, keep suffering, keep being hunted.\n\nSo you build something new.\n\nThe Order of the Night Sky, you call it. A sanctuary for those who carry the void. A place where they can learn control, find purpose, discover that their curse can be a gift.\n\nYou recruit the first members yourself: former Cult initiates who were led astray, rogue mages with no other home, scholars who have studied the void in secret for decades. You forge them into something unified.\n\nThe Order's charter is simple: protect the realm from the void's excesses, shelter those touched by it, and ensure the Hollow King never rises again.\n\nYour mother is your first advisor, her mortal wisdom balancing your magical power. Together, you build a new legacy for the Nightwind name.\n\nThe Circle of Mages objects at first. They fear the void, fear what you might become. But you prove them wrong, year after year. The Order's mages save villages, heal corrupted lands, and protect the realm.\n\nWhen you die, old and fulfilled, the Order continues. The void finally has guardians who understand it.\n\nAnd your name lives on, not as a tragedy, but as a beginning.",
     "choices": []
   },
   "KIRA_ENDING_DEFENDER": {
     "id": "KIRA_ENDING_DEFENDER",
     "character": "KIRA",
     "type": "ending",
-    "description": "Defend the realm.",
+    "description": "The crown settles on your brow, and you feel the weight of every life in the realm.\n\nThe Hollow King falls, unmade by your hand. The Cult scatters, their purpose broken. But you know the void's hunger never truly dies\u2014it only waits.\n\nSo you become its warden. Its keeper. Its defender.\n\nYou build your fortress not of stone, but of will. Around the borders of Crownhaven, you weave barriers of void and light, invisible to mortal eyes but impassable to the darkness that seeks to enter.\n\nWhen the first incursion comes\u2014a fragment of the Hollow King's will, clawing back from the void\u2014you are there. Your blade cuts through shadow. Your magic binds what would break free.\n\nYour mother stands beside you, mortal and fierce, a reminder of what you protect.\n\nYears become decades. The realm knows peace because you guard its nightmares. Children grow up never knowing the terror that once lurked at the edges of the world.\n\nAnd when the final threat comes, you will be there. You will always be there. That is the burden of the defender.",
     "choices": []
   },
   "KIRA_ENDING_MENTOR": {
     "id": "KIRA_ENDING_MENTOR",
     "character": "KIRA",
     "type": "ending",
-    "description": "Train the next generation.",
+    "description": "After the crown falls, you find you cannot leave. The Temple has become something sacred, a place where the barriers between worlds are thin.\n\nYoung mages begin to arrive. Lost ones, mostly\u2014children touched by the void, outcasts from the Circle, runaways with nowhere else to go. They come to the Temple ruins, and you find you cannot turn them away.\n\nYou teach them what your mother taught you: void magic is not a curse. It is a burden, yes. A responsibility. But also a gift.\n\nYour first student is a girl named Sera, who arrived at the Temple with the void eating her from within. You spend a year teaching her control, patience, acceptance. When she opens her eyes on the last day, the void is no longer consuming her. It is flowing through her, calm and purposeful.\n\nAfter Sera, there are others. Dozens. Hundreds. You build a school from the rubble of the Temple, calling it the Nightwind Academy.\n\nYour mother visits often, helping where she can. She tells stories of the old days, of your father, of the family legacy. The students listen, rapt.\n\nAnd you? You find peace in their faces. In every young mage who learns to hold the void without being consumed. Your legacy will not be the crown.\n\nIt will be them.",
     "choices": []
   },
   "KIRA_ENDING_BALANCE": {
     "id": "KIRA_ENDING_BALANCE",
     "character": "KIRA",
     "type": "ending",
-    "description": "Perfect balance.",
+    "description": "You hold the seventh piece not as a weapon, but as a scale. The void surges through you, dark and cold\u2014and you meet it with warmth, with light, with everything you've fought to protect.\n\nThe space between annihilation and creation is thin. You walk it anyway.\n\nThe crown reforms around you, but different now\u2014not a tyrant's diadem but a ring of silver and shadow, light and dark intertwined. The Hollow King screams as the balance shifts, as the void no longer hungers but rests.\n\nYour mother watches from the edge of the ruined Temple, tears streaming down her face. She sees not the child she lost, but something new. Something whole.\n\nYou raise your hand, and the void answers\u2014gentle. Not as a servant, but as a partner.\n\nThe world rights itself. The corruption recedes. And Kira Nightwind, the girl who was never meant to survive, becomes the fulcrum upon which all magic turns.\n\nBalance, you learn, is not stillness. It is the constant dance between what was and what could be. You dance forever.",
     "choices": []
   },
   "KIRA_ENDING_HEALER": {
     "id": "KIRA_ENDING_HEALER",
     "character": "KIRA",
     "type": "ending",
-    "description": "Heal the wounded world.",
+    "description": "You take the crown not for power, but for purpose.\n\nThe seventh piece hums in your hand, and you feel the world's wounds through it: the dead lands where the void bled through, the corrupted villages, the mages driven mad by the Hollow King's influence, the scars on the land itself.\n\nYou begin with the Temple. You kneel, press your palms to the stone, and let the void flow through you\u2014not to destroy, but to cleanse. The corruption leaches out of the earth, black and thick, and you absorb it. You transmute it. You release it as clean light.\n\nDays become weeks. You travel the realm, finding every wound, every scar, every place the void has touched. Your mother travels with you, recording your work, chronicling the unprecedented magic you perform.\n\nVoid magic was always a weapon. You make it a salve.\n\nThe fallen lands bloom again. The corrupted forests grow green. Mages who were lost to madness find clarity.\n\nWhen you finish, when the last wound is healed, you stand at the edge of the world and look back. The realm is whole. Scarred, yes. But alive.\n\nYou smile\u2014the first real smile in years.",
     "choices": []
   },
   "KIRA_ENDING_BRIDGE": {
     "id": "KIRA_ENDING_BRIDGE",
     "character": "KIRA",
     "type": "ending",
-    "description": "Bridge between realms.",
+    "description": "When the crown accepts you, you feel every dimension at once. The mortal world, the void, the realm of spirits, the places between\u2014they all exist inside you now, a web of connection only you can see.\n\nYou become the Bridge. Not trapped, as the Lost are. Not consumed, as the Hollow King wished. You stand at the threshold of all worlds, arms open, anchoring reality itself.\n\nFrom the mortal world, they see you as a pillar of light and shadow, stretching from earth to sky. Mages feel you as a tremor in the fabric of magic. The common folk tell stories of the Sentinel who guards the boundaries between what is and what could be.\n\nYour mother visits you in dreams. She brings news of the world: the Cult is gone, the crown is broken, the Nightwind name is no longer a curse.\n\nAnd you? You watch. You wait. When something threatens the barriers between realms\u2014a rogue spirit, a tear in reality, the echo of an old god\u2014you are there.\n\nBridges hold. That is their purpose. And you hold.",
     "choices": []
   },
   "KIRA_ENDING_WARRIOR": {
     "id": "KIRA_ENDING_WARRIOR",
     "character": "KIRA",
     "type": "ending",
-    "description": "Greatest warrior.",
+    "description": "You do not parley with the Hollow King. You do not bargain, do not negotiate. You meet him in the void with a blade in your hand and fire in your heart.\n\nThe battle is the longest and shortest of your life. Seconds and eternities blur. You trade blows with a being of pure nothingness, your void magic clashing against his, your will against his ancient malice.\n\nHe has fought gods. He has consumed kingdoms. But he has never fought a Nightwind who has nothing left to lose.\n\nYou drive him back. Step by step, blow by blow. When your blade shatters, you forge a new one from void-stuff. When your magic fails, you fight with your hands. When your body gives out, you fight with your spirit.\n\nThe final strike sunders the Hollow King's core. He dissolves into the void, howling, his pieces scattering across dimensions.\n\nYou emerge from the Temple, battered and bleeding, the crown in your hand. You are not the same person who entered. You are harder. Sharper. A weapon forged in impossible fire.\n\nThe legends say you never lost another fight. They say you became the greatest warrior the realm had ever known.\n\nThey are not wrong.",
     "choices": []
   },
   "KIRA_ENDING_HERO": {
     "id": "KIRA_ENDING_HERO",
     "character": "KIRA",
     "type": "ending",
-    "description": "Remembered as hero.",
+    "description": "You face the Hollow King in the heart of the void, and you do not flinch.\n\nThe battle is not fought with swords or spells. It is fought with memory, with will, with the unbreakable truth of who you are. The Hollow King throws everything at you\u2014your family's death, your years of hiding, your fear of the dark. You absorb it all. And you stand.\n\nWhen the King falls, the void trembles. When the crown breaks, the world cheers.\n\nThey write songs about you. The bards of Crownhaven compose epics of the Nightwind girl who defied the void. Children play at being you in the streets, wielding sticks as staffs, pretending to command shadows.\n\nYour mother lives to see it. She sits in the front row at the celebrations, grey-haired and proud, watching her daughter become legend.\n\nAnd you? You accept the honors. You give speeches. You visit the villages and heal the wounded. But at night, when the crowds are gone, you sit alone with the memory of what it cost.\n\nYou are a hero. The realm will never forget your name.\n\nBut sometimes, late at night, you wonder if the girl who ran from the burning cottage would recognize the woman she became.",
     "choices": []
   },
   "KIRA_ENDING_PURIFIER": {
     "id": "KIRA_ENDING_PURIFIER",
     "character": "KIRA",
     "type": "ending",
-    "description": "Purify world of corruption.",
+    "description": "You reach into the void and pull. Not power. Not vengeance. You pull the corruption itself\u2014every trace of the Hollow King's touch, every stain the crown left on the world.\n\nIt fights back. The void does not release its hold easily. You feel the corruption tearing through you, trying to make you its new vessel.\n\nBut you have been carrying the void since childhood. You know how to hold darkness without becoming it.\n\nYou absorb it all. Every corrupted soul. Every poisoned patch of earth. Every shade of the Hollow King that lingers in the cracks of reality. You become the crucible through which the world's filth must pass.\n\nYour body can't contain it all. You know that. You accept that.\n\nWhen the last of the corruption flows into you, you walk to the edge of the world, to the place where reality ends and the void begins. You step off.\n\nThe corruption leaves you as you fall, dissolving back into the nothing it came from. And somewhere, in the clean world above, your mother feels a release\u2014a lightness she hasn't known in years.\n\nThe world is pure again. You made it so.",
     "choices": []
   },
   "KIRA_ENDING_GODLIKE": {
     "id": "KIRA_ENDING_GODLIKE",
     "character": "KIRA",
     "type": "ending",
-    "description": "Ascend to godlike power.",
+    "description": "The crown shatters in your grip. Not from weakness\u2014from excess.\n\nPower pours into you, more than any vessel was meant to hold. Your body dissolves like morning mist, and you become something else entirely.\n\nYou rise above the Temple, above Crownhaven, above the clouds. The world spreads beneath you like a map, every thread of fate visible. You see the Hollow King's origin, the void's birth, the first Nightwind who made the crown. You see everything.\n\nThe Cultists below kneel, not in worship but in terror. They created a monster. They released a god.\n\nYou are no longer Kira. Not truly. But you remember her\u2014her love for her mother, her fear of the dark, her desperate hope that she could be more than what fate made her.\n\nYou reach down, not with hands but with will, and you touch the world. You heal the corruption. You seal the void. You free every soul the crown ever trapped.\n\nThen you look up, at the stars, at the spaces between, at the infinite dark. And you step forward, into a realm where no mortal has ever walked.\n\nThey say that sometimes, when the world needs it most, you look back.",
     "choices": []
   },
   "KIRA_ENDING_MASTER": {
     "id": "KIRA_ENDING_MASTER",
     "character": "KIRA",
     "type": "ending",
-    "description": "Master of all magic.",
+    "description": "The crown shatters, and with it, every barrier between schools of magic.\n\nYou feel them all at once: elemental fire, water, earth, air; the subtle magics of illusion and enchantment; the forbidden arts of necromancy and blood; the radiant light of divine sorcery. And beneath them all, the void\u2014not separate, but the foundation upon which everything rests.\n\nYou understand now. The void is not the opposite of magic. It is the source. The silence from which all sound emerges. The darkness that gives light its meaning.\n\nYou reach out, and every thread of magic answers. Flames dance at your fingertips. Water rises in shimmering curtains. Light bends around you like a cloak.\n\nThe Circle of Mages kneels. They have spent centuries hoarding knowledge, fighting over schools, declaring some arts forbidden. You show them that all magic is one.\n\nYou teach what you've learned: that control is not about power, but understanding. That mastery is not domination, but harmony.\n\nYears pass. A new generation of mages rises, trained in the unified arts. They call you the First Master, the one who saw the whole when everyone else saw fragments.\n\nAnd you\u2014you are still learning. There is always more.",
     "choices": []
+  },
+  "VEX_CH1_BETRAYAL_TRAP": {
+    "id": "VEX_CH1_BETRAYAL_TRAP",
+    "character": "VEX",
+    "description": "Your trap works. You leave a forged ledger in an unguarded satchel and wait in the rafters above. Hours later, a nervous messenger boy from Miravel's crew takes the bait, stuffing the ledger into his coat. You corner him in an alley\u2014he breaks instantly, spilling everything. The rat is Old Terrow, your own fence, selling your movements to the Crimson Fleet for coin.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Confront Old Terrow",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_BETRAYAL_SNOOP": {
+    "id": "VEX_CH1_BETRAYAL_SNOOP",
+    "character": "VEX",
+    "description": "You move like smoke through the Dustwall, following the trail of whispers and half-glimpsed meetings. Three days of patient stalking lead you to a clandestine exchange at the Broken Lantern inn\u2014Old Terrow, your trusted fence, passing a sealed note to a Crimson Fleet agent. The proof is clear, damning, and complete.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Confront Old Terrow",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_CORRUPT_EXPOSED": {
+    "id": "VEX_CH1_CORRUPT_EXPOSED",
+    "character": "VEX",
+    "description": "You leak the incriminating letters to Lysa, a freelance scribe who runs a gossip sheet in the Dustwall. Within a day, the Merchant Council is in chaos\u2014public meetings, frantic denials, a public burning of documents. The Guild master summons you, furious yet grudgingly impressed. You've made a name for yourself, for better or worse.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Savor the chaos and move on",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_CORRUPT_LEVERAGE": {
+    "id": "VEX_CH1_CORRUPT_LEVERAGE",
+    "character": "VEX",
+    "description": "You slip into Councilor Aldus Vexley's private study through a third-story window. When you lay the letters on his mahogany desk, his composure cracks. He pours himself a drink with shaking hands and agrees to your terms: inside information on Guild operations in exchange for your silence. You now own a piece of the Council.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Accept his deal",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_JOB_CLEAN": {
+    "id": "VEX_CH1_JOB_CLEAN",
+    "character": "VEX",
+    "description": "You take only the marked payment pouch from the merchant's safe and slip out the window, leaving everything else untouched. The guards do their patrol sweep and find nothing amiss. At the Guild hall, the job master counts your take without a word and nods once. Professional. Clean. Reliable. That reputation is worth more than silver.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Report back to the Guild",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_JOB_LOOT": {
+    "id": "VEX_CH1_JOB_LOOT",
+    "character": "VEX",
+    "description": "The silver candlesticks are too tempting. Then the pearl-handled letter opener. Then the loose coins in the merchant's desk drawer. Your bag grows heavy and your exit slows\u2014a mistake. A floorboard creaks beneath a guard's boot in the hallway. You crash through the window, shattering glass across the cobblestones, alarms ringing behind you as you vanish into the night.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Lay low and wait",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_JOB_JOURNAL": {
+    "id": "VEX_CH1_JOB_JOURNAL",
+    "character": "VEX",
+    "description": "Among the merchant's papers you find a leather-bound journal filled with coded entries. You pocket it along with the payment. Later, poring over it by candlelight, you decode enough to realize it contains records of illegal shipments, bribes to city officials, and the name of a Guild insider skimming from the top. This journal is a weapon.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Pocket the journal and go",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_MENTOR_TRAINING": {
+    "id": "VEX_CH1_MENTOR_TRAINING",
+    "character": "VEX",
+    "description": "The Spider is relentless. She drills you on rooftop balance until your calves burn, makes you pick the pockets of moving targets in crowded markets, and forces you to shadow a single mark through the Dustwall for hours without being spotted. Slowly, painfully, you transform. Where you once stumbled, you now flow. Where you once hesitated, you now strike.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Thank the Spider and return to your search",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_MENTOR_STREETS": {
+    "id": "VEX_CH1_MENTOR_STREETS",
+    "character": "VEX",
+    "description": "You walk away from the Spider and learn the same lessons through blood and failure. A Watch patrol catches you picking the wrong pocket\u2014you spend a night in a cage. A gang of tougher thieves jumps you in an alley and takes your score. You sleep hungry more often than not. But every scar teaches you what a master's words never could.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Keep pushing forward",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_RIVALS_BRAWL": {
+    "id": "VEX_CH1_RIVALS_BRAWL",
+    "character": "VEX",
+    "description": "Scab is a head taller and swings like a dockworker, all muscle and rage. But you're faster, and you know these alleys. You use the terrain\u2014a loose cobble to stagger her, a clothesline to tangle her arms, a broken crate to trip her charge. When she goes down, you pin her arm behind her back and the crowd goes silent. The Dustwall has a new name to respect.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Claim your respect on the streets",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
+  },
+  "VEX_CH1_RIVALS_DIRT": {
+    "id": "VEX_CH1_RIVALS_DIRT",
+    "character": "VEX",
+    "description": "You dig into Scab's operation and find gold: she's been skimming tribute meant for the Guild, pocketing a percentage from every job her crew runs. One anonymous note to her lieutenants with the proof, and her gang fractures overnight. Scab retreats to hold her crew together, and the Dustwall's streets suddenly feel a lot safer.",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Let the streets tear each other apart",
+        "leads_to": "VEX_CH1_SISTER"
+      }
+    ],
+    "type": "story"
   }
 }
