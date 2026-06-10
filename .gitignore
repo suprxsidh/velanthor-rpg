@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.bak
+*.current
+test_*
+trace_*
+find_*
+kira_*
+analyze_*_paths.py
+count_scenes.py
+add_kira.py
+test_save
+wiki/.DS_Store

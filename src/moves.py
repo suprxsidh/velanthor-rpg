@@ -18,6 +18,7 @@ class Move:
     element: str = ""  # fire, ice, lightning, void, nature
     status_effect: str = ""  # burn, freeze, bleed, mark, poison
     status_turns: int = 0
+    aoe: bool = False  # area of effect flag
 
 
 # Combo Chain - defines valid move combinations
@@ -188,7 +189,8 @@ KNIGHT_MOVES = {
         stat_used="combat",
         description="Spin and cut through multiple enemies.",
         status_effect="bleed",
-        status_turns=2
+        status_turns=2,
+        aoe=True
     ),
     "iron_will": Move(
         name="Iron Will",
@@ -239,7 +241,8 @@ SHADOW_MOVES = {
         stat_used="dexterity",
         description="Throw multiple daggers in rapid succession.",
         status_effect="bleed",
-        status_turns=2
+        status_turns=2,
+        aoe=True
     ),
     "shadow_step": Move(
         name="Shadow Step",
@@ -431,9 +434,8 @@ def get_available_combos(char_class: str, previous_move: str) -> list:
 
 def apply_elemental_weakness(base_damage: int, attack_element: str, enemy_weak: str, enemy_strong: str) -> int:
     """Apply elemental weakness/strength modifiers to damage."""
-    if attack_element.lower() == enemy_weak.lower():
+    if enemy_weak and attack_element.lower() == enemy_weak.lower():
         return int(base_damage * 1.5)
-    elif attack_element.lower() == enemy_strong.lower():
+    elif enemy_strong and attack_element.lower() == enemy_strong.lower():
         return int(base_damage * 0.5)
     return base_damage
-    return None

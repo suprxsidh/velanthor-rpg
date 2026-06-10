@@ -3,8 +3,8 @@ Velanthor RPG - Enemy Bestiary
 All enemies organized by tier with stats and weaknesses.
 """
 
-from dataclasses import dataclass
-from typing import Optional
+from dataclasses import dataclass, field
+from typing import Optional, List
 
 
 @dataclass
@@ -20,6 +20,8 @@ class Enemy:
     weak_against: str = ""
     strong_against: str = ""
     description: str = ""
+    moves: List[dict] = field(default_factory=list)
+    gold_drop: int = 0
 
 
 # Tier 1 - Basic enemies (starting areas)
@@ -34,7 +36,9 @@ TIER_1 = {
         cha=2,
         weak_against="stealth",
         strong_against="charisma",
-        description="A desperate outlaw preying on travelers."
+        description="A desperate outlaw preying on travelers.",
+        moves=[{"name": "Dirty Strike", "damage": 10, "accuracy_dc": 12, "effect": None, "heal": 0, "cooldown": 2}],
+        gold_drop=5
     ),
     "street_thug": Enemy(
         name="Street Thug",
@@ -46,7 +50,9 @@ TIER_1 = {
         cha=2,
         weak_against="strength",
         strong_against="void_magic",
-        description="A rough fighter from the criminal underworld."
+        description="A rough fighter from the criminal underworld.",
+        moves=[{"name": "Low Blow", "damage": 12, "accuracy_dc": 14, "effect": "stun", "heal": 0, "cooldown": 3}],
+        gold_drop=5
     ),
     "void_rat": Enemy(
         name="Void Rat",
@@ -58,7 +64,9 @@ TIER_1 = {
         cha=1,
         weak_against="void_magic",
         strong_against="strength",
-        description="A corrupted creature tainted by void energy."
+        description="A corrupted creature tainted by void energy.",
+        moves=[{"name": "Toxic Bite", "damage": 8, "accuracy_dc": 10, "effect": "poison", "heal": 0, "cooldown": 2}],
+        gold_drop=5
     ),
 }
 
@@ -75,7 +83,9 @@ TIER_2 = {
         cha=3,
         weak_against="void_magic",
         strong_against="charisma",
-        description="A follower of forbidden void cults."
+        description="A follower of forbidden void cults.",
+        moves=[{"name": "Dark Prayer", "damage": 0, "accuracy_dc": 0, "effect": None, "heal": 10, "cooldown": 3}],
+        gold_drop=8
     ),
     "hollow_guard": Enemy(
         name="Hollow Guard",
@@ -99,7 +109,9 @@ TIER_2 = {
         cha=3,
         weak_against="dexterity",
         strong_against="charisma",
-        description="A professional fighter hired by corrupt officials."
+        description="A professional fighter hired by corrupt officials.",
+        moves=[{"name": "Crossbow Shot", "damage": 12, "accuracy_dc": 8, "effect": None, "heal": 0, "cooldown": 2}],
+        gold_drop=8
     ),
     "royal_guard": Enemy(
         name="Royal Guard",
@@ -123,7 +135,9 @@ TIER_2 = {
         cha=2,
         weak_against="stealth",
         strong_against="strength",
-        description="A city guard or jailer."
+        description="A city guard or jailer.",
+        moves=[{"name": "Shield Push", "damage": 8, "accuracy_dc": 10, "effect": "stun", "heal": 0, "cooldown": 2}],
+        gold_drop=8
     ),
 }
 
@@ -140,7 +154,9 @@ TIER_3 = {
         cha=3,
         weak_against="void_magic",
         strong_against="strength",
-        description="An armored warrior corrupted by the Hollow."
+        description="An armored warrior corrupted by the Hollow.",
+        moves=[{"name": "Dark Cleave", "damage": 15, "accuracy_dc": 12, "effect": "bleed", "heal": 0, "cooldown": 2}],
+        gold_drop=15
     ),
     "cult_leader": Enemy(
         name="Cult Leader",
@@ -152,7 +168,8 @@ TIER_3 = {
         cha=5,
         weak_against="void_magic",
         strong_against="charisma",
-        description="The dark priest leading the cult faction."
+        description="The dark priest leading the cult faction.",
+        moves=[{"name": "Void Bolt", "damage": 12, "accuracy_dc": 10, "effect": "terror", "heal": 0, "cooldown": 2}, {"name": "Dark Benediction", "damage": 0, "accuracy_dc": 0, "effect": None, "heal": 15, "cooldown": 3}]
     ),
     "guild_enforcer": Enemy(
         name="Guild Enforcer",
@@ -164,7 +181,9 @@ TIER_3 = {
         cha=4,
         weak_against="stealth",
         strong_against="strength",
-        description="A muscle-bound enforcer for the thieves guild."
+        description="A muscle-bound enforcer for the thieves guild.",
+        moves=[{"name": "Blackjack", "damage": 10, "accuracy_dc": 12, "effect": "stun", "heal": 0, "cooldown": 2}],
+        gold_drop=12
     ),
 }
 
@@ -181,7 +200,9 @@ TIER_4 = {
         cha=6,
         weak_against="void_magic",
         strong_against="charisma",
-        description="The enigmatic leader of the Shadow Guild."
+        description="The enigmatic leader of the Shadow Guild.",
+        moves=[{"name": "Shadow Lance", "damage": 16, "accuracy_dc": 12, "effect": "mark", "heal": 0, "cooldown": 2}],
+        gold_drop=25
     ),
     "shadowmaster": Enemy(
         name="Shadowmaster",
@@ -193,7 +214,8 @@ TIER_4 = {
         cha=5,
         weak_against="void_magic",
         strong_against="stealth",
-        description="A master of shadows who commands darkness itself."
+        description="A master of shadows who commands darkness itself.",
+        gold_drop=25
     ),
 }
 
@@ -210,7 +232,9 @@ TIER_5 = {
         cha=7,
         weak_against="void_magic",
         strong_against="charisma",
-        description="The corrupted ruler who seeks to plunge the world into void."
+        description="The corrupted ruler who seeks to plunge the world into void.",
+        moves=[{"name": "Void Nova", "damage": 20, "accuracy_dc": 14, "effect": "terror", "heal": 0, "cooldown": 3}, {"name": "Dark Restoration", "damage": 0, "accuracy_dc": 0, "effect": None, "heal": 25, "cooldown": 4}],
+        gold_drop=25
     ),
 }
 
@@ -227,7 +251,9 @@ WARDEN_ENEMIES = {
         cha=2,
         weak_against="nature_magic",
         strong_against="strength",
-        description="A corrupted wolf tainted by void energy from the Wastes."
+        description="A corrupted wolf tainted by void energy from the Wastes.",
+        moves=[{"name": "Feral Bite", "damage": 9, "accuracy_dc": 10, "effect": "bleed", "heal": 0, "cooldown": 2}],
+        gold_drop=5
     ),
     "corrupted_treant": Enemy(
         name="Corrupted Treant",
@@ -239,7 +265,9 @@ WARDEN_ENEMIES = {
         cha=3,
         weak_against="fire",
         strong_against="void_magic",
-        description="A once-noble tree spirit twisted by void corruption."
+        description="A once-noble tree spirit twisted by void corruption.",
+        moves=[{"name": "Bramble Whip", "damage": 10, "accuracy_dc": 10, "effect": "freeze", "heal": 0, "cooldown": 2}],
+        gold_drop=12
     ),
     "void_serpent": Enemy(
         name="Void Serpent",
@@ -275,7 +303,8 @@ WARDEN_ENEMIES = {
         cha=1,
         weak_against="fire",
         strong_against="void_magic",
-        description="A giant scorpion from the Ashen Wastes with a venomous stinger."
+        description="A giant scorpion from the Ashen Wastes with a venomous stinger.",
+        moves=[{"name": "Venom Sting", "damage": 12, "accuracy_dc": 12, "effect": "poison", "heal": 0, "cooldown": 2}]
     ),
     "hollow_sentinel": Enemy(
         name="Hollow Sentinel",

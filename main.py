@@ -71,7 +71,7 @@ CHARACTER_DATA = {
 
 # Battle scene to enemy mapping
 BATTLE_ENEMY_MAP = {
-    'KIRA_CH1_BANDITS': 'Bandit',
+    'KIRA_CH1_BANDITS': ['Bandit', 'Bandit'],
     'KIRA_CH1_WATCH_TRIAL': 'Watch Mercenary',
     'KIRA_CH1_CIRCLE_TRIAL': 'Circle Initiate',
     'KIRA_CH1_WASTELAND_BATTLE': 'Void Creature',
@@ -95,7 +95,7 @@ BATTLE_ENEMY_MAP = {
     'KIRA_CH3_ALTAR_GUARDIANS': 'Void Golem',
     'KIRA_CH3_TEMPLE_ENTRANCE': 'Cultist Sentinel',
     'KIRA_CH2_PALACE_ENTER': 'Royal Guard',
-    'THERON_CH1_AMBUSH': 'bandit',
+    'THERON_CH1_AMBUSH': ['bandit', 'bandit'],
     'THERON_CH1_JOURNEY': 'bandit',
     'THERON_CH2_COMPANION': 'watch_mercenary',
     'THERON_CH2_BATTLE': 'cultist',
@@ -124,7 +124,7 @@ BATTLE_ENEMY_MAP = {
     'THERON_CH3_VESPERA_DUEL': 'vespera',
     'THERON_CH3_FINAL_STAND': 'the_hollow_king',
     'THERON_CH3_BEAST_BATTLE': 'the_hollow_king',
-    'VEX_CH1_DOCKS': 'guild_enforcer',
+    'VEX_CH1_DOCKS': ['guild_enforcer', 'street_thug'],
     'VEX_CH1_AMBUSH': 'Guild Enforcer',
     'VEX_CH2_SURRENDER': 'Guard',
     'VEX_CH2_FIGHT': 'Guild Enforcer',
@@ -149,7 +149,7 @@ BATTLE_ENEMY_MAP = {
     'VEX_CH3_BETRAYAL': 'corvus',
     'VEX_CH3_FINAL_THIEF': 'royal_guard',
     'VEX_CH3_SHADOW_FIGHT': 'vance_hunter',
-    'ELARA_CH1_STRIKE': 'Watch Mercenary',
+    'ELARA_CH1_STRIKE': ['Watch Mercenary', 'Cultist'],
     'ELARA_CH2_MEETING': 'Cultist',
     'ELARA_CH2_ATTACK': 'Watch Mercenary',
     # New Elara Chapter 1 Battle Scenes
@@ -173,7 +173,7 @@ BATTLE_ENEMY_MAP = {
     'ELARA_CH3_VICTORY_BATTLE': 'Vespera',
     # Asha (Warden) Chapter 1 Battle Scenes
     'ASHA_CH1_WOLF_ATTACK': 'Ashen Wolf',
-    'ASHA_CH1_CULT_PURSUIT': 'Cultist',
+    'ASHA_CH1_CULT_PURSUIT': ['Cultist', 'Cultist'],
     'ASHA_CH1_CORRUPTED_TREANT': 'Corrupted Treant',
     'ASHA_CH1_WASTES_BORDER': 'Wastes Scorpion',
     'ASHA_CH1_ESCAPE': 'Hollow Guard',
@@ -197,6 +197,13 @@ BATTLE_ENEMY_MAP = {
 STEALTH_BYPASS_SCENES = {
     'VEX_CH1_AMBUSH': {'dc': 12, 'stat': 'stealth', 'skip_scene': 'VEX_CH1_SISTER'},
     'VEX_CH2_FIGHT': {'dc': 14, 'stat': 'stealth', 'skip_scene': None},
+}
+
+# Surprise encounters (enemies strike first)
+SURPRISE_ENCOUNTERS = {
+    'THERON_CH1_AMBUSH',
+    'VEX_CH1_DOCKS',
+    'ASHA_CH1_WOLF_ATTACK',
 }
 
 # Influence-based alternatives for merchant class
@@ -236,8 +243,11 @@ def is_battle_scene(scene_id):
 
 
 def get_enemy_for_scene(scene_id):
-    """Get enemy for a battle scene."""
-    return BATTLE_ENEMY_MAP.get(scene_id)
+    """Get enemy for a battle scene. Returns a list of enemy names."""
+    result = BATTLE_ENEMY_MAP.get(scene_id)
+    if isinstance(result, str):
+        return [result]
+    return result if result else []
 
 
 def load_story_scenes():
@@ -248,6 +258,38 @@ def load_story_scenes():
     except FileNotFoundError:
         print(f"{RED}Story data not found. Run story_parser.py first.{RESET}")
         return {}
+
+
+def save_combat_checkpoint(scene_id, engine):
+    checkpoint = {
+        'scene_id': scene_id,
+        'health': engine.health,
+        'mana': engine.mana,
+        'inventory': engine.inventory[:],
+        'equipment': {slot: item.name if item else None for slot, item in engine.equipped.items()},
+        'gold': getattr(engine, 'gold', 0),
+    }
+    with open('combat_checkpoint.json', 'w') as f:
+        json.dump(checkpoint, f, indent=2)
+
+
+def load_combat_checkpoint(engine):
+    if not os.path.exists('combat_checkpoint.json'):
+        return None
+    with open('combat_checkpoint.json', 'r') as f:
+        checkpoint = json.load(f)
+    engine.health = checkpoint['health']
+    engine.mana = checkpoint['mana']
+    engine.inventory = checkpoint['inventory'][:]
+    engine.gold = checkpoint.get('gold', 0)
+    from src.engine import EQUIPMENT_DATABASE
+    for slot, item_name in checkpoint['equipment'].items():
+        if item_name:
+            for key, item in EQUIPMENT_DATABASE.items():
+                if item.name == item_name:
+                    engine.equip_item(key)
+                    break
+    return checkpoint['scene_id']
 
 
 def create_character(choice, engine):
@@ -432,6 +474,10 @@ def main():
     while True:
         scene_id = engine.current_scene
         
+        # Clean up checkpoint on non-combat scene transitions
+        if os.path.exists('combat_checkpoint.json') and not is_battle_scene(scene_id):
+            os.remove('combat_checkpoint.json')
+        
         if not scene_id:
             print(f"\n{BOLD}{CYAN}THE END{RESET}")
             break
@@ -505,17 +551,22 @@ def main():
                 else:
                     print(f"{YELLOW}Choosing combat.{RESET}")
             
-            enemy_name = get_enemy_for_scene(scene_id)
-            if enemy_name:
-                enemy = get_enemy_by_name(enemy_name)
-                if enemy:
-                    print(f"\n{RED}⚔ COMBAT ENCOUNTER: {enemy.name} ⚔{RESET}")
-                    victory = engine.combat_encounter(enemy, char_class)
+            enemy_names = get_enemy_for_scene(scene_id)
+            if enemy_names:
+                enemies = []
+                for en_name in enemy_names:
+                    enemy = get_enemy_by_name(en_name)
+                    if enemy:
+                        enemies.append(enemy)
+                if enemies:
+                    victory = engine.combat_encounter(enemies, char_class, surprise=(scene_id in SURPRISE_ENCOUNTERS))
                     if not victory:
                         print(f"\n{RED}You have fallen in battle...{RESET}")
                         engine.current_scene = None
                         break
-                    print(f"\n{GREEN}VICTORY! You defeated {enemy.name}!{RESET}")
+                    print(f"\n{GREEN}VICTORY!{RESET}")
+                    if os.path.exists('combat_checkpoint.json'):
+                        os.remove('combat_checkpoint.json')
         
         # Display scene
         result = display_scene(scene_data, engine)

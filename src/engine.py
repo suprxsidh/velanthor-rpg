@@ -290,10 +290,16 @@ class GameEngine:
         self.humanity = 10
         self.health = 100
         self.mana = 50
-        self.gold = 10
+        self.gold = 0
+        self.gold_earned = 0
         self.relationships = {}
         self.story_data = {}
     
+    @property
+    def max_hp(self) -> int:
+        """Max HP including equipment health bonuses."""
+        return 100 + self.get_effective_stats().get("health", 0)
+
     def get_equipment_bonuses(self) -> Dict[str, int]:
         """Calculate total bonuses from equipped items."""
         total = {}
@@ -385,7 +391,7 @@ class GameEngine:
         for effect_key, effect_value in item.effect.items():
             if effect_key == "health":
                 old_hp = self.health
-                self.health = min(100, self.health + effect_value)
+                self.health = min(self.max_hp, self.health + effect_value)
                 healed = self.health - old_hp
                 print(f"{GREEN}Restored {healed} HP!{RESET}")
             elif effect_key == "mana":
@@ -434,11 +440,16 @@ class GameEngine:
                 return
         
         effect_names = {
+            "mark": "Mark",
+            "terror": "Terror",
+            "shield": "Shield",
+            "freeze": "Freeze",
+            "bleed": "Bleed",
             "poison": "Poison",
-            "bleed": "Bleed", 
-            "stun": "Stunned",
+            "stun": "Stun",
             "regen": "Regeneration",
             "barrier": "Barrier",
+            "drain": "Drain",
             "void_corruption": "Void Corruption"
         }
         
@@ -471,14 +482,24 @@ class GameEngine:
                 damage_from_status += effect.amount
                 print(f"{YELLOW}Bleed deals {effect.amount} damage{RESET}")
             elif effect.effect_type == "regen":
-                self.health = min(100, self.health + effect.amount)
+                self.health = min(self.max_hp, self.health + effect.amount)
                 print(f"{GREEN}Regeneration restores {effect.amount} HP{RESET}")
             elif effect.effect_type == "barrier":
                 print(f"{CYAN}Barrier absorbs 50% of damage{RESET}")
-            elif effect.effect_type == "stun":
-                if not is_enemy_turn:
-                    print(f"{YELLOW}✦ You are stunned and skip your turn!{RESET}")
-                    return True  # Return True to indicate player is stunned
+            elif effect.effect_type == "mark":
+                print(f"{YELLOW}✦ Marked — next attack deals +50% damage{RESET}")
+            elif effect.effect_type == "terror":
+                print(f"{YELLOW}✦ Terror — you tremble, -2 to all accuracy rolls{RESET}")
+            elif effect.effect_type == "shield":
+                self.temp_hp = self.temp_hp + effect.amount if hasattr(self, 'temp_hp') else effect.amount
+                print(f"{CYAN}✦ Shield grants +{effect.amount} temporary HP{RESET}")
+            elif effect.effect_type == "freeze":
+                print(f"{CYAN}✦ Frozen — dexterity reduced{RESET}")
+            elif effect.effect_type == "drain":
+                damage_from_status += effect.amount
+                heal_amount = effect.amount // 2
+                self.health = min(100, self.health + heal_amount)
+                print(f"{MAGENTA}✦ Drain deals {effect.amount} damage and heals {heal_amount} HP{RESET}")
         
         if damage_from_status > 0:
             self.health -= damage_from_status
@@ -528,7 +549,7 @@ class GameEngine:
         print(f"\n{BOLD}STATS:{RESET}")
         print(f"  STR: {self.stats['strength']} | DEX: {self.stats['dexterity']} | "
               f"INT: {self.stats['intelligence']} | CHA: {self.stats['charisma']}")
-        print(f"  HP: {GREEN}{self.health}{RESET}/100 | Mana: {CYAN}{self.mana}{RESET}/50 | "
+        print(f"  HP: {GREEN}{self.health}{RESET}/{self.max_hp} | Mana: {CYAN}{self.mana}{RESET}/50 | "
               f"Gold: {YELLOW}{self.gold}{RESET} | Humanity: {self.humanity}")
     
     def show_inventory(self):
@@ -603,273 +624,326 @@ class GameEngine:
         
         return True, None
     
-    def combat_encounter(self, enemy, char_class):
-        """
-        Turn-based combat encounter with move system, status effects, equipment bonuses, and combo system.
-        
-        Args:
-            enemy: Enemy object from bestiary
-            char_class: Character class string ("void_mage", "knight", "shadow", "merchant", "warden")
-        """
-        # Import combo functions
+    def combat_encounter(self, enemies, char_class, surprise=False):
         from src.moves import get_combo_bonus, get_available_combos, apply_elemental_weakness
-        
-        # Clear any leftover status effects from previous combat
+
         self.status_effects = []
-        
-        enemy_name = enemy.name
-        enemy_hp = enemy.hp
-        enemy_damage = enemy.damage
-        
-        # Get effective stats with equipment bonuses
+        self.temp_hp = 0
+        self.marked_damage_bonus = False
+
         effective_stats = self.get_effective_stats()
-        
-        # Get moves for character class
+        equip_health_bonus = effective_stats.get("health", 0)
+        true_max_hp = 100 + equip_health_bonus
+
         class_moves = get_moves_for_class(char_class)
-        
-        # Track previous move for combos
         previous_move_key = None
-        
+        self.is_defending = False
+
+        enemy_hp_list = [en.hp for en in enemies]
+        enemy_stunned_list = [0 for _ in enemies]
+        num_enemies = len(enemies)
+        combat_round = 0
+
         print(f"\n{RED}╔{'═'*56}╗{RESET}")
-        print(f"{RED}║ {'⚔ COMBAT ENCOUNTER: ' + enemy_name.upper():^44} ║{RESET}")
+        print(f"{RED}║ {'⚔ COMBAT: ' + str(num_enemies) + ' enemies ⚔':^44} ║{RESET}")
         print(f"{RED}╚{'═'*56}╝{RESET}")
-        print(f"\n  {YELLOW}Enemy Stats:{RESET} HP: {RED}{enemy_hp}{RESET} | ATK: {enemy_damage} | DEF: {enemy.str}")
-        print(f"  {CYAN}Weak against:{RESET} {GREEN}{enemy.weak_against if enemy.weak_against else 'None'}{RESET}")
-        print(f"  {MAGENTA}Strong against:{RESET} {RED}{enemy.strong_against if enemy.strong_against else 'None'}{RESET}")
-        
-        # Show status effects at start
+        for i, en in enumerate(enemies):
+            print(f"\n  {YELLOW}Enemy {i+1}:{RESET} {en.name} (HP: {RED}{en.hp}{RESET} | ATK: {en.damage} | DEF: {en.str})")
+            print(f"    Weak: {GREEN}{en.weak_against if en.weak_against else 'None'}{RESET} | Strong: {RED}{en.strong_against if en.strong_against else 'None'}{RESET}")
+
         self.show_status_effects()
-        
-        while self.health > 0 and enemy_hp > 0:
-            # Clear line for turn display
-            print(f"\n{BOLD}{CYAN}━━━ YOUR TURN ━━━{RESET}")
-            
-            # Process status effects at start of turn (player turn)
-            is_stunned = self.process_status_effects(is_enemy_turn=False)
-            
-            # Show stats with equipment bonuses
-            print(f"\n  {GREEN}HP: {self.health}/100{RESET} | {CYAN}Mana: {self.mana}/50{RESET}")
-            self.show_status_effects()
-            
-            if is_stunned:
-                print(f"\n{YELLOW}You are stunned and cannot act!{RESET}")
+
+        while self.health > 0 and any(ehp > 0 for ehp in enemy_hp_list):
+            combat_round += 1
+            alive_indices = [i for i, ehp in enumerate(enemy_hp_list) if ehp > 0]
+            is_surprise_round = surprise and combat_round == 1
+
+            if is_surprise_round:
+                print(f"\n{RED}⚡ SURPRISE! Enemies strike first!{RESET}")
             else:
-                print(f"\n{BOLD}CHOOSE YOUR ACTION:{RESET}")
-                
-                # Display class moves with mana costs
-                move_num = 1
-                for move_key, move in class_moves.items():
-                    mana_text = f"{CYAN}{move.mana_cost} mana{RESET}" if move.mana_cost > 0 else "Free"
-                    dmg_text = f"{RED}{move.damage} dmg{RESET}" if move.damage > 0 else "-"
-                    print(f"  {YELLOW}[{move_num}]{RESET} {move.name:20} | {mana_text:12} | {dmg_text:8} | DC {move.accuracy_dc}")
-                    move_num += 1
-                
-                # Basic options + items
-                print(f"\n  {YELLOW}[A]{RESET} Basic Attack (STR + combat)")
-                print(f"  {YELLOW}[B]{RESET} Defend (-30% dmg taken)")
-                print(f"  {YELLOW}[C]{RESET} Use Item")
-                print(f"  {YELLOW}[D]{RESET} Flee")
-                
-                choice = input("\nAction: ").strip().upper()
-                
-                player_damage = 0
-                player_hit = False
-                
-                # Process player action
-                if choice.isdigit():
-                    # Move selection
-                    move_index = int(choice) - 1
-                    move_keys = list(class_moves.keys())
-                    
-                    if 0 <= move_index < len(move_keys):
-                        selected_move_key = move_keys[move_index]
-                        selected_move = class_moves[selected_move_key]
-                        
-                        # Check mana
-                        if self.mana >= selected_move.mana_cost:
-                            self.mana -= selected_move.mana_cost
-                            
-                            # Roll accuracy with effective stats
-                            stat_value = effective_stats.get(selected_move.stat_used, 0)
-                            roll = random.randint(1, 20) + stat_value
-                            player_hit = roll >= selected_move.accuracy_dc
-                            
-                            if player_hit:
-                                player_damage = selected_move.damage
-                                combo_bonus = 0
-                                combo_effect = ""
-                                
-                                # Check for combo from previous move
-                                if previous_move_key:
-                                    combo_dmg, combo_eff, combo_desc = get_combo_bonus(char_class, previous_move_key, selected_move_key)
-                                    if combo_dmg > 0:
-                                        combo_bonus = combo_dmg
-                                        combo_effect = combo_eff
-                                        player_damage += combo_bonus
-                                        print(f"\n{GREEN}🔥 COMBO! {combo_desc}{RESET}")
-                                        print(f"   (+{combo_bonus} bonus damage)")
-                                
-                                # Apply equipment bonus to damage
-                                if selected_move.stat_used in effective_stats:
-                                    player_damage += effective_stats[selected_move.stat_used] // 2
-                                
-                                # Apply elemental weakness/strength
-                                if selected_move.element:
-                                    player_damage = apply_elemental_weakness(
-                                        player_damage, 
-                                        selected_move.element,
-                                        enemy.weak_against,
-                                        enemy.strong_against
-                                    )
-                                    if player_damage > selected_move.damage + combo_bonus:
-                                        print(f"   {MAGENTA}✨ Elemental weakness exploited!{RESET}")
-                                
-                                # Critical hit on natural 20
-                                if roll == 20:
-                                    player_damage *= 2
-                                    print(f"\n{GREEN}⚡ CRITICAL HIT!{RESET}")
-                                
-                                # Check for status effect from move
-                                if selected_move.status_effect:
-                                    self.add_status_effect(
-                                        selected_move.status_effect,
-                                        STATUS_EFFECTS.get(selected_move.status_effect, {}).get("damage", 0),
-                                        selected_move.status_turns,
-                                        f"+{selected_move.status_effect}"
-                                    )
-                                    print(f"   {CYAN}✦ Applied {selected_move.status_effect}{RESET}")
-                                
-                                # Apply combo effect
-                                if combo_effect == "drain":
-                                    heal = combo_bonus
-                                    self.health = min(100, self.health + heal)
-                                    print(f"   {GREEN}♥ Drained {heal} HP{RESET}")
-                                
-                                enemy_hp -= player_damage
-                                print(f"\n{GREEN}✓ {selected_move.name} hits for {RED}{player_damage}{GREEN} damage!{RESET}")
-                                print(f"   (Rolled {roll}, needed {selected_move.accuracy_dc})")
-                            else:
-                                print(f"\n{RED}✗ {selected_move.name} misses!{RESET}")
-                                print(f"   (Rolled {roll}, needed {selected_move.accuracy_dc})")
-                            
-                            # Update previous move for next turn's combo
-                            previous_move_key = selected_move_key
-                            
-                            # Show available combos for next turn
-                            if previous_move_key:
-                                available = get_available_combos(char_class, previous_move_key)
-                                if available:
-                                    print(f"\n   {YELLOW}▸ Combo available:{RESET}")
-                                    for c in available:
-                                        print(f"     [{move_keys.index(c['move_key'])+1}] {c['move_name']} (+{c['bonus_damage']} dmg)")
-                        else:
-                            print(f"\n{RED}Not enough mana! Need {selected_move.mana_cost}, have {self.mana}{RESET}")
-                    else:
-                        print(f"\n{RED}Invalid move number.{RESET}")
-                
-                elif choice == "A":
-                    # Basic Attack with equipment bonuses
-                    hit, roll = self.roll_dice("strength", 8)
-                    if hit:
-                        base_damage = random.randint(5, 10)
-                        combat_bonus = effective_stats.get("combat", 0)
-                        player_damage = base_damage + combat_bonus
-                        enemy_hp -= player_damage
-                        print(f"\n{GREEN}✓ Basic Attack hits for {RED}{player_damage}{GREEN} damage!{RESET}")
-                    else:
-                        print(f"\n{RED}✗ Basic Attack misses!{RESET}")
-                
-                elif choice == "B":
-                    # Defend - reduce next damage
-                    print(f"\n{CYAN}✓ You take a defensive stance! (-30% incoming damage){RESET}")
-                    # Mark that we're defending (will be processed in enemy turn)
-                    defending = True
-                
-                elif choice == "C":
-                    # Use Item
-                    if not self.items:
-                        print(f"\n{RED}You have no items!{RESET}")
-                        continue
-                    print(f"\n{YELLOW}Available items:{RESET}")
-                    for i, (item_name, count) in enumerate(self.items.items(), 1):
-                        if item_name in ITEM_DATABASE:
-                            item = ITEM_DATABASE[item_name]
-                            print(f"  {YELLOW}[{i}]{RESET} {item.name} x{count}")
-                    
-                    item_choice = input("\nUse which item? ").strip()
-                    if item_choice.isdigit():
-                        item_idx = int(item_choice) - 1
-                        item_names = list(self.items.keys())
-                        if 0 <= item_idx < len(item_names):
-                            self.use_item(item_names[item_idx], in_combat=True)
-                
-                elif choice == "D":
-                    # Flee with equipment bonus
-                    flee_bonus = effective_stats.get("dexterity", 0)
-                    hit, roll = self.roll_dice("dexterity", 12)
-                    if hit or (roll + flee_bonus >= 15):
-                        print(f"\n{GREEN}✓ Escaped from combat!{RESET}")
-                        return True
-                    else:
-                        print(f"\n{RED}✗ Failed to escape!{RESET}")
-                        self.health -= enemy_damage
-                        print(f"   {enemy_name} hits for {RED}{enemy_damage}{RESET} damage while you flee.")
-                    defending = False
-                
+                print(f"\n{BOLD}{CYAN}━━━ YOUR TURN ━━━{RESET}")
+            is_stunned = self.process_status_effects(is_enemy_turn=False)
+
+            print(f"\n  {GREEN}HP: {self.health}/{true_max_hp}{RESET} | {CYAN}Mana: {self.mana}/50{RESET}")
+            print(f"\n  {YELLOW}Enemies:{RESET}")
+            for i in alive_indices:
+                stun_t = f" {YELLOW}[STUNNED]{RESET}" if enemy_stunned_list[i] > 0 else ""
+                print(f"    Enemy {i+1}: {enemies[i].name} (HP: {RED}{enemy_hp_list[i]}{RESET}){stun_t}")
+
+            self.show_status_effects()
+
+            if not is_surprise_round:
+                if is_stunned:
+                    print(f"\n{YELLOW}You are stunned and cannot act!{RESET}")
                 else:
-                    print(f"\n{RED}Invalid action. Choose a move number, A, B, C, or D.{RESET}")
-                    continue
-            
-            # Enemy turn (if still alive)
-            if enemy_hp > 0 and self.health > 0:
+                    print(f"\n{BOLD}CHOOSE YOUR ACTION:{RESET}")
+                    move_num = 1
+                    for move_key, move in class_moves.items():
+                        mana_text = f"{CYAN}{move.mana_cost} mana{RESET}" if move.mana_cost > 0 else "Free"
+                        dmg_text = f"{RED}{move.damage} dmg{RESET}" if move.damage > 0 else "-"
+                        aoe_tag = f" {YELLOW}[AOE]{RESET}" if move.aoe else ""
+                        print(f"  {YELLOW}[{move_num}]{RESET} {move.name:20} | {mana_text:12} | {dmg_text:8} | DC {move.accuracy_dc}{aoe_tag}")
+                        move_num += 1
+
+                    print(f"\n  {YELLOW}[A]{RESET} Basic Attack (STR + combat)")
+                    print(f"  {YELLOW}[B]{RESET} Defend (-30% dmg taken)")
+                    print(f"  {YELLOW}[C]{RESET} Use Item")
+                    print(f"  {YELLOW}[D]{RESET} Flee")
+
+                    choice = input("\nAction: ").strip().upper()
+                    player_damage = 0
+                    player_hit = False
+
+                    if choice.isdigit():
+                        move_index = int(choice) - 1
+                        move_keys = list(class_moves.keys())
+
+                        if 0 <= move_index < len(move_keys):
+                            selected_move_key = move_keys[move_index]
+                            selected_move = class_moves[selected_move_key]
+
+                            if self.mana >= selected_move.mana_cost:
+                                self.mana -= selected_move.mana_cost
+
+                                stat_value = effective_stats.get(selected_move.stat_used, 0)
+                                if any(e.effect_type == "freeze" for e in self.status_effects) and selected_move.stat_used == "dexterity":
+                                    stat_value -= 2
+                                roll = random.randint(1, 20) + stat_value
+                                effective_dc = selected_move.accuracy_dc + (2 if any(e.effect_type == "terror" for e in self.status_effects) else 0)
+                                player_hit = roll >= effective_dc
+
+                                target_indices = alive_indices[:]
+                                is_aoe = selected_move.aoe
+
+                                if not is_aoe and num_enemies > 1:
+                                    print(f"\n{YELLOW}Select target:{RESET}")
+                                    t_letters = []
+                                    for i in alive_indices:
+                                        letter = chr(65 + len(t_letters))
+                                        st = " [STUNNED]" if enemy_stunned_list[i] > 0 else ""
+                                        print(f"  {YELLOW}[{letter}]{RESET} {enemies[i].name} (HP: {RED}{enemy_hp_list[i]}{RESET}){st}")
+                                        t_letters.append(i)
+                                    tc = input("\nTarget: ").strip().upper()
+                                    ti = ord(tc) - 65 if tc and 'A' <= tc <= 'Z' else -1
+                                    if 0 <= ti < len(t_letters):
+                                        target_indices = [t_letters[ti]]
+                                    else:
+                                        print(f"{RED}Invalid target.{RESET}")
+                                        continue
+
+                                if player_hit:
+                                    player_damage = selected_move.damage
+                                    combo_bonus = 0
+                                    combo_effect = ""
+
+                                    if previous_move_key:
+                                        combo_dmg, combo_eff, combo_desc = get_combo_bonus(char_class, previous_move_key, selected_move_key)
+                                        if combo_dmg > 0:
+                                            combo_bonus = combo_dmg
+                                            combo_effect = combo_eff
+                                            player_damage += combo_bonus
+                                            print(f"\n{GREEN}🔥 COMBO! {combo_desc}{RESET}")
+                                            print(f"   (+{combo_bonus} bonus damage)")
+
+                                    if selected_move.stat_used in effective_stats:
+                                        player_damage += effective_stats[selected_move.stat_used] // 2
+
+                                    crit_threshold = 20
+                                    luck_value = effective_stats.get("luck", 0)
+                                    if luck_value > 0:
+                                        crit_threshold = max(18, 20 - luck_value // 3)
+                                    is_crit = roll >= crit_threshold
+                                    if is_crit:
+                                        player_damage *= 2
+                                        print(f"\n{GREEN}⚡ CRITICAL HIT! (rolled {roll}, needed {crit_threshold}){RESET}")
+
+                                    if self.marked_damage_bonus:
+                                        player_damage = int(player_damage * 1.5)
+                                        self.marked_damage_bonus = False
+                                        print(f"   {YELLOW}✦ Mark bonus! +50% damage!{RESET}")
+
+                                    for ti in target_indices:
+                                        tgt = enemies[ti]
+                                        dmg = player_damage
+
+                                        if selected_move.element:
+                                            dmg = apply_elemental_weakness(dmg, selected_move.element, tgt.weak_against, tgt.strong_against)
+                                            if dmg > player_damage:
+                                                print(f"   {MAGENTA}✨ Elemental weakness exploited on {tgt.name}!{RESET}")
+
+                                        enemy_hp_list[ti] -= dmg
+                                        aoe_lbl = " [AOE]" if is_aoe else ""
+                                        print(f"\n{GREEN}✓ {selected_move.name} hits {tgt.name} for {RED}{dmg}{GREEN} damage!{aoe_lbl}{RESET}")
+
+                                        if selected_move.status_effect:
+                                            if selected_move.status_effect == "stun":
+                                                enemy_stunned_list[ti] = selected_move.status_turns
+                                                print(f"   {CYAN}✦ {tgt.name} stunned for {selected_move.status_turns} turn(s)!{RESET}")
+                                            elif selected_move.status_effect == "mark":
+                                                self.marked_damage_bonus = True
+                                                print(f"   {YELLOW}✦ {tgt.name} Marked — next attack deals +50% damage{RESET}")
+                                            else:
+                                                self.add_status_effect(
+                                                    selected_move.status_effect,
+                                                    STATUS_EFFECTS.get(selected_move.status_effect, {}).get("damage", 0),
+                                                    selected_move.status_turns,
+                                                    f"+{selected_move.status_effect}"
+                                                )
+
+                                    if combo_effect == "drain":
+                                        heal = combo_bonus
+                                        self.health = min(true_max_hp, self.health + heal)
+                                        print(f"   {GREEN}♥ Drained {heal} HP{RESET}")
+
+                                    if not is_aoe:
+                                        print(f"   (Rolled {roll}, needed {selected_move.accuracy_dc})")
+                                else:
+                                    print(f"\n{RED}✗ {selected_move.name} misses!{RESET}")
+                                    print(f"   (Rolled {roll}, needed {selected_move.accuracy_dc})")
+
+                                previous_move_key = selected_move_key
+
+                                if previous_move_key:
+                                    available = get_available_combos(char_class, previous_move_key)
+                                    if available:
+                                        print(f"\n   {YELLOW}▸ Combo available:{RESET}")
+                                        for c in available:
+                                            print(f"     [{move_keys.index(c['move_key'])+1}] {c['move_name']} (+{c['bonus_damage']} dmg)")
+                            else:
+                                print(f"\n{RED}Not enough mana! Need {selected_move.mana_cost}, have {self.mana}{RESET}")
+                        else:
+                            print(f"\n{RED}Invalid move number.{RESET}")
+
+                    elif choice == "A":
+                        target_indices = alive_indices[:]
+                        if num_enemies > 1:
+                            print(f"\n{YELLOW}Select target:{RESET}")
+                            t_letters = []
+                            for i in alive_indices:
+                                letter = chr(65 + len(t_letters))
+                                st = " [STUNNED]" if enemy_stunned_list[i] > 0 else ""
+                                print(f"  {YELLOW}[{letter}]{RESET} {enemies[i].name} (HP: {RED}{enemy_hp_list[i]}{RESET}){st}")
+                                t_letters.append(i)
+                            tc = input("\nTarget: ").strip().upper()
+                            ti = ord(tc) - 65 if tc and 'A' <= tc <= 'Z' else -1
+                            if 0 <= ti < len(t_letters):
+                                target_indices = [t_letters[ti]]
+                            else:
+                                print(f"{RED}Invalid target.{RESET}")
+                                continue
+
+                        hit, roll = self.roll_dice("strength", 8)
+                        if hit:
+                            base_damage = random.randint(5, 10)
+                            combat_bonus = effective_stats.get("combat", 0)
+                            player_damage = base_damage + combat_bonus
+                            for ti in target_indices:
+                                enemy_hp_list[ti] -= player_damage
+                                print(f"\n{GREEN}✓ Basic Attack hits {enemies[ti].name} for {RED}{player_damage}{GREEN} damage!{RESET}")
+                        else:
+                            print(f"\n{RED}✗ Basic Attack misses!{RESET}")
+
+                    elif choice == "B":
+                        print(f"\n{CYAN}✓ You take a defensive stance! (-30% incoming damage){RESET}")
+                        self.is_defending = True
+
+                    elif choice == "C":
+                        if not self.items:
+                            print(f"\n{RED}You have no items!{RESET}")
+                            continue
+                        print(f"\n{YELLOW}Available items:{RESET}")
+                        for i, (item_name, count) in enumerate(self.items.items(), 1):
+                            if item_name in ITEM_DATABASE:
+                                item = ITEM_DATABASE[item_name]
+                                print(f"  {YELLOW}[{i}]{RESET} {item.name} x{count}")
+                        item_choice = input("\nUse which item? ").strip()
+                        if item_choice.isdigit():
+                            item_idx = int(item_choice) - 1
+                            item_names = list(self.items.keys())
+                            if 0 <= item_idx < len(item_names):
+                                self.use_item(item_names[item_idx], in_combat=True)
+
+                    elif choice == "D":
+                        flee_bonus = effective_stats.get("dexterity", 0)
+                        if any(e.effect_type == "freeze" for e in self.status_effects):
+                            flee_bonus -= 2
+                        hit, roll = self.roll_dice("dexterity", 12)
+                        if hit or (roll + flee_bonus >= 15):
+                            print(f"\n{GREEN}✓ Escaped from combat!{RESET}")
+                            return True
+                        else:
+                            alive_alive = [i for i, ehp in enumerate(enemy_hp_list) if ehp > 0]
+                            if alive_alive:
+                                ai = random.choice(alive_alive)
+                                print(f"\n{RED}✗ Failed to escape!{RESET}")
+                                self.health -= enemies[ai].damage
+                                print(f"   {enemies[ai].name} hits for {RED}{enemies[ai].damage}{RESET} damage while you flee.")
+
+                    else:
+                        print(f"\n{RED}Invalid action. Choose a move number, A, B, C, or D.{RESET}")
+                        continue
+
+            alive_indices = [i for i, ehp in enumerate(enemy_hp_list) if ehp > 0]
+            if alive_indices and self.health > 0:
                 print(f"\n{BOLD}{RED}━━━ ENEMY TURN ━━━{RESET}")
-                
-                # Process status effects at start of enemy turn
                 self.process_status_effects(is_enemy_turn=True)
-                
+
                 if self.health <= 0:
                     break
-                
-                # Check if player was defending
-                defending = False
-                
-                # Apply barrier if active
+
                 has_barrier = any(e.effect_type == "barrier" for e in self.status_effects)
-                
-                # Enemy attacks
-                enemy_roll = random.randint(1, 20) + enemy.str
-                if enemy_roll >= 8:
-                    enemy_dmg = enemy_damage + random.randint(-2, 2)
-                    enemy_dmg = max(1, enemy_dmg)
-                    
-                    # Apply defense reduction if defending
-                    if 'defending' in locals() and defending:
-                        enemy_dmg = int(enemy_dmg * 0.7)
-                        print(f"   (Defended: {enemy_damage} → {enemy_dmg})")
-                    
-                    # Apply barrier reduction
-                    if has_barrier:
-                        original_dmg = enemy_dmg
-                        enemy_dmg = int(enemy_dmg * 0.5)
-                        print(f"   (Barrier: {original_dmg} → {enemy_dmg})")
-                    
-                    self.health -= enemy_dmg
-                    print(f"   {RED}{enemy_name} attacks for {enemy_dmg} damage!{RESET}")
-                else:
-                    print(f"   {GREEN}{enemy_name} attacks but misses.{RESET}")
-        
-        # Combat ended
+
+                for i in alive_indices:
+                    en = enemies[i]
+
+                    if enemy_stunned_list[i] > 0:
+                        print(f"   {YELLOW}{en.name} is stunned and can't act!{RESET}")
+                        enemy_stunned_list[i] -= 1
+                        continue
+
+                    enemy_roll = random.randint(1, 20) + en.str
+                    if enemy_roll >= 8:
+                        enemy_dmg = en.damage + random.randint(-2, 2)
+                        enemy_dmg = max(1, enemy_dmg)
+
+                        defense_value = effective_stats.get("defense", 0)
+                        if defense_value > 0:
+                            reduction = min(defense_value, enemy_dmg - 1)
+                            enemy_dmg -= reduction
+                            if reduction > 0:
+                                print(f"   {CYAN}(Defense: -{reduction} damage){RESET}")
+
+                        if self.is_defending:
+                            enemy_dmg = int(enemy_dmg * 0.7)
+                            print(f"   ({en.name} attacks defended: {en.damage} → {enemy_dmg})")
+
+                        if has_barrier:
+                            original_dmg = enemy_dmg
+                            enemy_dmg = int(enemy_dmg * 0.5)
+                            print(f"   (Barrier: {original_dmg} → {enemy_dmg})")
+
+                        if hasattr(self, 'temp_hp') and self.temp_hp > 0:
+                            absorbed = min(self.temp_hp, enemy_dmg)
+                            self.temp_hp -= absorbed
+                            enemy_dmg -= absorbed
+                            print(f"   {CYAN}Shield absorbs {absorbed} damage!{RESET}")
+
+                        self.health -= enemy_dmg
+                        print(f"   {RED}{en.name} attacks for {enemy_dmg} damage!{RESET}")
+                    else:
+                        print(f"   {GREEN}{en.name} attacks but misses.{RESET}")
+
+                self.is_defending = False
+
         if self.health <= 0:
+            self.temp_hp = 0
             print(f"\n{RED}💀 You have fallen in combat.{RESET}")
             return False
-        
-        # Clear status effects after combat
+
         self.status_effects = []
-        
-        # Post-battle regeneration (percentage of max)
+        self.temp_hp = 0
+
         hp_restore = max(5, int(100 * 0.15))
-        
-        # Determine max mana based on class
         max_mana = 50
         if effective_stats.get('void_magic', 0) > 5:
             max_mana = 50
@@ -881,27 +955,31 @@ class GameEngine:
             max_mana = 40
         else:
             max_mana = 45
-            
+
         mana_restore = max(5, int(max_mana * 0.20))
-        
-        self.health = min(100, self.health + hp_restore)
+        self.health = min(true_max_hp, self.health + hp_restore)
         self.mana = min(max_mana, self.mana + mana_restore)
         print(f"\n{CYAN}Rest & Recover:{RESET} +{GREEN}{hp_restore} HP{RESET}, +{CYAN}{mana_restore} Mana{RESET}")
-        
+
+        total_gold = sum(getattr(en, 'gold_drop', 0) for en in enemies)
+        if total_gold > 0:
+            self.gold += total_gold
+            self.gold_earned = total_gold
+            print(f"\n{YELLOW}★ Gold: Found {total_gold} gold coins! (Total: {self.gold}){RESET}")
+
         print(f"\n{GREEN}╔{'═'*54}╗{RESET}")
-        print(f"{GREEN}║ {'⚔ VICTORY! ' + enemy_name.upper() + ' defeated!':^44} ║{RESET}")
+        print(f"{GREEN}║ {'⚔ VICTORY! All enemies defeated!':^44} ║{RESET}")
         print(f"{GREEN}╚{'═'*54}╝{RESET}")
-        
-        # Random loot drop chance
-        if random.random() < 0.3:  # 30% chance
+
+        if random.random() < 0.3:
             loot_options = list(EQUIPMENT_DATABASE.keys())
             loot = random.choice(loot_options)
             if loot not in self.inventory:
                 self.inventory.append(loot)
                 print(f"\n{YELLOW}★ Loot: Found {EQUIPMENT_DATABASE[loot].name}!{RESET}")
-        
+
         return True
-    
+
     def combat_encounter_simple(self, enemy_name, enemy_hp, enemy_damage):
         """Legacy simple combat encounter (backward compatibility)."""
         print(f"\n{RED}⚔ COMBAT: {enemy_name} ⚔{RESET}")
