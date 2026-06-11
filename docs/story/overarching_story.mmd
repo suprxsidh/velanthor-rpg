@@ -1,0 +1,144 @@
+# Velanthor: The Crown of the Dead God
+# Overarching Story Diagram — Cross-Character Connections
+# Each swimlane shows a character's 5-chapter arc with key story beats.
+# Dashed lines show where stories intersect.
+
+```mermaid
+graph TD
+    %% Styling
+    classDef chapter fill:#1a237e,color:#fff,stroke:#fff
+    classDef ending fill:#b71c1c,color:#fff,stroke:#fff
+    classDef beat fill:#1b5e20,color:#fff,stroke:#fff
+    classDef intersect fill:#4a148c,color:#fff,stroke:#fff,stroke-dasharray: 5 5
+
+    %% ─── KIRA ───
+    subgraph KIRA["KIRA — Void Mage"]
+        K_CH1[Chapter 1<br/>Thornwick Village]:::chapter
+        K_CH2[Chapter 2<br/>Crownhaven]:::chapter
+        K_CH3[Chapter 3<br/>The Temple]:::chapter
+        K_CH4[Chapter 4<br/>The Void]:::chapter
+        K_CH5[Chapter 5<br/>Final Choice]:::chapter
+        K_END["24 Endings<br/>(Free, Empire, Truth,<br/>Sacrifice, Victor, etc.)"]:::ending
+
+        K_B1["Flees Thornwick raid"]:::beat
+        K_B2["Seeks the Crown"]:::beat
+        K_B3["Confronts cult"]:::beat
+        K_B4["Chooses void or humanity"]:::beat
+
+        K_CH1 --> K_B1 --> K_CH2 --> K_B2 --> K_CH3 --> K_B3 --> K_CH4 --> K_B4 --> K_CH5 --> K_END
+    end
+
+    %% ─── THERON ───
+    subgraph THERON["THERON — Fallen Knight"]
+        T_CH1[Chapter 1<br/>Tavern / Border]:::chapter
+        T_CH2[Chapter 2<br/>The Temple]:::chapter
+        T_CH3[Chapter 3<br/>Vespera's Duel]:::chapter
+        T_CH4[Chapter 4<br/>Redemption]:::chapter
+        T_CH5[Chapter 5<br/>Judgment]:::chapter
+        T_END["17 Endings<br/>(Redeemed, King, Hollow,<br/>Betrayed, Survivor, etc.)"]:::ending
+
+        T_B1["Takes the mission"]:::beat
+        T_B2["Hunts the cult"]:::beat
+        T_B3["Duel with Vespera"]:::beat
+        T_B4["Redeems or falls"]:::beat
+
+        T_CH1 --> T_B1 --> T_CH2 --> T_B2 --> T_CH3 --> T_B3 --> T_CH4 --> T_B4 --> T_CH5 --> T_END
+    end
+
+    %% ─── VEX ───
+    subgraph VEX["VEX — Shadow (Thief)"]
+        V_CH1[Chapter 1<br/>Docks / Underworld]:::chapter
+        V_CH2[Chapter 2<br/>Guild Hall]:::chapter
+        V_CH3[Chapter 3<br/>Shadow War]:::chapter
+        V_CH4[Chapter 4<br/>Sister Hunt]:::chapter
+        V_CH5[Chapter 5<br/>Crown or Freedom]:::chapter
+        V_END["11 Endings<br/>(Shadow King, Wanderer,<br/>Family, Truth, etc.)"]:::ending
+
+        V_B1["Seeks her sister"]:::beat
+        V_B2["Infiltrates guild"]:::beat
+        V_B3["Steals crown piece"]:::beat
+        V_B4["Chooses family or power"]:::beat
+
+        V_CH1 --> V_B1 --> V_CH2 --> V_B2 --> V_CH3 --> V_B3 --> V_CH4 --> V_B4 --> V_CH5 --> V_END
+    end
+
+    %% ─── ELARA ───
+    subgraph ELARA["ELARA — Merchant Heiress"]
+        E_CH1[Chapter 1<br/>Estate / Grief]:::chapter
+        E_CH2[Chapter 2<br/>Network / Infiltrate]:::chapter
+        E_CH3[Chapter 3<br/>Vengeance]:::chapter
+        E_CH4[Chapter 4<br/>Empire Building]:::chapter
+        E_CH5[Chapter 5<br/>Legacy]:::chapter
+        E_END["12 Endings<br/>(Judge, Empress, Avenger,<br/>Justice, Legacy, etc.)"]:::ending
+
+        E_B1["Parents murdered"]:::beat
+        E_B2["Builds merchant army"]:::beat
+        E_B3["Confronts conspirators"]:::beat
+        E_B4["Power or justice"]:::beat
+
+        E_CH1 --> E_B1 --> E_CH2 --> E_B2 --> E_CH3 --> E_B3 --> E_CH4 --> E_B4 --> E_CH5 --> E_END
+    end
+
+    %% ─── ASHA ───
+    subgraph ASHA["ASHA — Warden (Druid)"]
+        A_CH1[Chapter 1<br/>Village / Forest]:::chapter
+        A_CH2[Chapter 2<br/>Northreach]:::chapter
+        A_CH3[Chapter 3<br/>Corrupted Wilds]:::chapter
+        A_CH4[Chapter 4<br/>Guardian Trials]:::chapter
+        A_CH5[Chapter 5<br/>Balance or War]:::chapter
+        A_END["17 Endings<br/>(Guardian, Spirit, Sacrifice,<br/>Uniter, Balance, etc.)"]:::ending
+
+        A_B1["Village destroyed"]:::beat
+        A_B2["Seeks the corruption"]:::beat
+        A_B3["Allies with spirits"]:::beat
+        A_B4["Protects or avenges"]:::beat
+
+        A_CH1 --> A_B1 --> A_CH2 --> A_B2 --> A_CH3 --> A_B3 --> A_CH4 --> A_B4 --> A_CH5 --> A_END
+    end
+
+    %% ─── CROSS-CHARACTER CONNECTIONS ───
+
+    %% The Cult of the Hollow connects all
+    CULT[("☠️ Cult of the Hollow<br/>Central Antagonist")]:::intersect
+    CROWN[("👑 Crown of the Dead God<br/>7 pieces across the world")]:::intersect
+    VESPERA[("🗡️ Vespera<br/>Shadow Guild Leader")]:::intersect
+
+    K_B2 -.->|"searches for"| CROWN
+    T_B2 -.->|"hunts"| CULT
+    V_B2 -.->|"steals from"| CROWN
+    E_B3 -.->|"exposes"| CULT
+    A_B2 -.->|"fights corruption"| CULT
+
+    K_CH3 -.->|"duel"| VESPERA
+    T_CH3 -.->|"duel"| VESPERA
+    E_CH3 -.->|"confront"| VESPERA
+    A_CH3 -.->|"confront"| VESPERA
+
+    K_CH2 -.->|"Crownhaven"| T_CH2
+    V_CH2 -.->|"underworld"| E_CH1
+    A_CH1 -.->|"border lands"| T_CH1
+
+    %% Ending spectrum
+    SPECTRUM[("🎯 81 Endings Total<br/>Victory: ~30 · Death: ~20 · Walkaway: ~20 · Power: ~11")]:::ending
+    K_END -.-> SPECTRUM
+    T_END -.-> SPECTRUM
+    V_END -.-> SPECTRUM
+    E_END -.-> SPECTRUM
+    A_END -.-> SPECTRUM
+```
+
+## Quick Reference
+
+| Character | Class | Scenes | Endings | Starting Scene |
+|-----------|-------|--------|---------|----------------|
+| **Kira Nightwind** | Void Mage | 139 | 24 | KIRA_CH1_THORNWICK |
+| **Theron Ashford** | Fallen Knight | 152 | 17 | THERON_CH1_TAVERN |
+| **Vex Shadowstep** | Shadow | 151 | 11 | VEX_CH1_DOCKS |
+| **Elara Vance** | Merchant Heiress | 115 | 12 | ELARA_CH1_ESTATE |
+| **Asha Ironheart** | Warden | 157 | 17 | ASHA_CH1_VILLAGE |
+
+**Total:** 714 scenes, 2136 choices, 81 endings — all reachable, 0 dead ends.
+
+**Combat:** 17 encounters across 5 characters, 1-3 enemies each, gold drops, enemy AI, AOE moves, checkpoint retry system.
+
+**Version:** v2.0 — Major combat & content overhaul.
