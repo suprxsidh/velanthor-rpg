@@ -37,27 +37,27 @@ COMBO_CHAINS = {
     "void_mage": [
         ComboChain("void_burst", "shadow_bolt", 5, "mark", "Void cascade - leaves enemy marked"),
         ComboChain("shadow_bolt", "soul_drain", 8, "drain", "Shadow absorption - drains health"),
-        ComboChain("void_burst", "dark_pact", 12, "wound", "Dark evolution -加深伤口"),
+        ComboChain("void_burst", "dark_pact", 12, "wound", "Dark evolution - the wound deepens with every heartbeat"),
     ],
     "knight": [
         ComboChain("shield_bash", "cleaving_strike", 6, "stun", "Shield break - leaves vulnerable"),
         ComboChain("cleaving_strike", "blade_storm", 10, "bleed", "Storm blade - causes bleeding"),
-        ComboChain("defensive_stance", "reckless_blow", 8, "focus", "Defensive fury -精准打击"),
+        ComboChain("defensive_stance", "reckless_blow", 8, "focus", "Defensive fury - a measured strike from perfect footing"),
     ],
     "shadow": [
-        ComboChain("backstab", "poison_blade", 7, "poison", "Deadly combination -毒液渗透"),
-        ComboChain("fan_of_knives", "assassinate", 15, "mark", "Shadow execution -标记目标"),
-        ComboChain("smoke_bomb", "backstab", 5, "crit", "Stealth strike -背刺加成"),
+        ComboChain("backstab", "poison_blade", 7, "poison", "Deadly combination - venom seeps into the open cut"),
+        ComboChain("fan_of_knives", "assassinate", 15, "mark", "Shadow execution - the mark glows where the knife will land"),
+        ComboChain("smoke_bomb", "backstab", 5, "crit", "Stealth strike - they never saw the second blade"),
     ],
     "merchant": [
-        ComboChain("coin_toss", "intimidate", 4, "terror", "Psychological warfare -恐惧"),
-        ComboChain("intimidate", "business_ending", 10, "shatter", "Business destruction -心理崩溃"),
-        ComboChain("sweet_talk", "favor_call", 5, "charm", "Social manipulation -获得加成"),
+        ComboChain("coin_toss", "intimidate", 4, "terror", "Psychological warfare - fear does half the work"),
+        ComboChain("intimidate", "business_ending", 10, "shatter", "Business destruction - their composure shatters like glass"),
+        ComboChain("sweet_talk", "favor_call", 5, "charm", "Social manipulation - they want to help you now"),
     ],
     "warden": [
-        ComboChain("root_entangle", "beast_call", 8, "immobilize", "Nature's trap -困住敌人"),
-        ComboChain("beast_call", "natures_wrath", 12, "wound", "Beast fury -野性攻击"),
-        ComboChain("healing_grove", "thorn_shield", 5, "regen", "Nature's blessing -自然回复"),
+        ComboChain("root_entangle", "beast_call", 8, "immobilize", "Nature's trap - roots close like a fist"),
+        ComboChain("beast_call", "natures_wrath", 12, "wound", "Beast fury - claws follow where the call leads"),
+        ComboChain("healing_grove", "thorn_shield", 5, "regen", "Nature's blessing - green light knits the flesh"),
     ],
 }
 
