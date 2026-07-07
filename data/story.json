@@ -218,7 +218,7 @@
   "KIRA_CH1_WATCH": {
     "id": "KIRA_CH1_WATCH",
     "character": "KIRA",
-    "description": "The Watch is everything the kingdoms pretend not to know—a wall of steel and sacrifice against the dying world.\n\nTheir commander is a scarred woman named Voss. She looks at you with knowing eyes.\n\n'A Nightwind,' she says. 'We wondered when you'd show.'\n\nShe knows your family. Your legacy. The burden you carry.\n\n'The Cult is moving,' she continues. 'All seven pieces of Aethon's crown. They're going to reunite them at the Temple of the Void. And when they do...'\n\nShe doesn't finish. She doesn't have to.",
+    "description": "The Watch is everything the kingdoms pretend not to know about: a wall of steel and sacrifice holding the line, smelling of wet wool and pitch smoke before you're even through the gate. Their commander is a scarred woman named Voss, and she reads you the way you read strangers, sizing up angles before deciding you're not a threat. 'A Nightwind,' she says. 'We wondered when you'd show.' She knows your family, your legacy, the weight you've hauled since Millbrook burned. 'The Cult is moving. All seven pieces. They mean to reunite them at the Temple of the Void, and when they do—' She lets it die there. She doesn't need to finish it.",
     "choices": [
       {
         "letter": "A",
@@ -252,7 +252,7 @@
   "KIRA_CH1_WASTELAND": {
     "id": "KIRA_CH1_WASTELAND",
     "character": "KIRA",
-    "description": "You walk through the wasteland for three days. The ash never stops falling. The sky is permanently grey, as if the sun itself died with the Void Kingdom.\n\nOn the second night, you find the skeleton of a giant—something from the old world. Its bones are black as coal, and when you touch them, you feel the void pulse.\n\nThere's power here. Ancient, terrible power.\n\nAnd something else: a piece of the crown, embedded in the skeleton's chest. It calls to you like a voice from a nightmare.\n\nThe first piece. Just... sitting there. Waiting.",
+    "description": "Three days through the wasteland and the ash never stops falling, fine and grey, tasting of rust when it lands on your tongue. The sky has stayed the same dead color the whole way, as if the sun died with the Void Kingdom and nobody told the clouds. On the second night you find a giant's skeleton, bones black as coal. Touch one and the void pulses back like a second heartbeat under your palm. Seated in the ribcage, a piece of the crown, calling to you the way your own name would. The first piece. Just waiting. You didn't expect it to be this easy, which is exactly why you don't trust it.",
     "choices": [
       {
         "letter": "A",
@@ -321,7 +321,7 @@
   "KIRA_CH1_TRUTH": {
     "id": "KIRA_CH1_TRUTH",
     "character": "KIRA",
-    "description": "The Archmage tells you everything.\n\nThe crown was Aethon's power—seven pieces, each containing a fragment of the first silence. When united, they could unmake reality itself.\n\nYour parents were guardians—chosen to protect the pieces. When the Cult came for them, they hid one piece in you. Literally, within your soul.\n\n'That's why they can find you,' the Archmage says. 'The piece calls to its brothers. And the Cult hears its voice.'\n\nYou have a piece of the crown inside you. And it's been calling the Cult since the day you were born.",
+    "description": "You sit across from the Archmage and you make yourself still, the way you learned to be still when the Cult searched Millbrook house by house. He tells you everything, and the room smells of hot wax and old paper, candle smoke thinning as he talks like the flames themselves are listening. The crown was Aethon's power, he says. Seven pieces, each holding a fragment of the first silence. United, they could unmake reality itself. Your parents were guardians, chosen to protect one piece. When the Cult came, they hid it the only place the Cult couldn't search: inside you. In your soul. 'That's why they can find you,' he says. 'The piece calls to its brothers. The Cult hears its voice.' You have carried a piece of the crown since before you could walk. It has been screaming your location into the dark for seventeen years, and you never once heard it.",
     "choices": [
       {
         "letter": "A",
@@ -525,7 +525,7 @@
   "KIRA_CH2_CROWNHAVEN": {
     "id": "KIRA_CH2_CROWNHAVEN",
     "character": "KIRA",
-    "description": "Crownhaven rises before you—a city of a million souls, built on the bones of the old world. The old imperial palace looms over everything, its catacombs a maze of forgotten secrets.\n\nYou have one goal: find the crown piece hidden in the palace. Your parents died protecting its location. Now you must retrieve what they gave their lives to protect.\n\nThe palace is guarded, but you know a way in—through the servants' passages your mother drew in her spellbook.\n\nBelow, in the darkness, something waits.",
+    "description": "Crownhaven rises out of the fog ahead of you, a city of a million souls built on the bones of the old world, wet stone slick under your boots and tallow smoke hanging low over the rooftops. Somewhere a bell tower rings the hour a beat late, then another answers it even later, like the whole city has forgotten how to keep time since the world started dying. The old imperial palace looms over everything, its catacombs a maze of secrets nobody living remembers burying. You have one goal: the crown piece hidden somewhere inside those walls. Your parents died protecting its location, and now you're the one meant to finish what that cost them. The palace is guarded, but you know a way past the guards, drawn in your mother's own hand in the spellbook she left behind. Below, in the dark under the city, something is already waiting for you to arrive.",
     "choices": [
       {
         "letter": "A",
@@ -559,7 +559,7 @@
   "KIRA_CH2_CATACOMBS": {
     "id": "KIRA_CH2_CATACOMBS",
     "character": "KIRA",
-    "description": "The catacombs descend for miles beneath the city. The walls are covered in void script—warnings, prophecies, names of the dead.\n\nYou read them as you walk. Your great-grandmother. Your grandfather. All the Nightwinds who came before.\n\nAt the deepest level, you find the chamber: seven pedestals, six empty, one holding a fragment of the crown.\n\nBut a Hollow Knight guards it. Black armor, empty eyes, a sword that drinks light.\n\n'Kira Nightwind,' it speaks with a voice like grinding stones. 'The Master expects you.'",
+    "description": "The catacombs drop for miles under the city, the air going colder, thick with wet limestone and something underneath it you don't want to name. Void script covers the walls: warnings, prophecies, names of the dead. You read them as you pass, unable to stop. Your great-grandmother. Your grandfather. Every Nightwind who walked this corridor and didn't walk back out. At the bottom, the chamber: seven pedestals, six empty, one holding a fragment of the crown. A Hollow Knight guards it, eyes like burned-out lanterns, a sword that swallows light. 'Kira Nightwind,' it grinds out. 'The Master expects you.' You count the exits anyway. Old habit. Might be the only reason you're still breathing.",
     "choices": [
       {
         "letter": "A",
@@ -593,7 +593,7 @@
   "KIRA_CH2_BATTLE": {
     "id": "KIRA_CH2_BATTLE",
     "character": "KIRA",
-    "description": "The Hollow Knight is faster than any human. Its sword moves like thought—strike, parry, counter.\n\nBut you're faster.\n\nThe void answers your call. Shadows tear from the walls, wrapping around the Knight's limbs. You pour everything into the magic—eight years of hiding, eight years of fear, eight years of rage.\n\nThe Knight screams—a sound like tearing metal—and dissolves into darkness.\n\nYou stand alone in the chamber, breathing hard. The crown piece pulses with a faint warmth.\n\nYour mother left you a message, etched in void light: 'Forgive me. Find the truth. And when you're ready—destroy it all.'",
+    "description": "The Hollow Knight moves faster than anything human should, its sword arriving in your mind before it arrives at your body: strike, parry, counter, no gap between thought and steel. You're faster. The void answers when you call it this time, no hesitation, shadow tearing off the chamber walls to wrap the Knight's limbs like rope. You pour eight years into it, eight years of hiding under floorboards, eight years of being afraid of your own hands, eight years of rage you never had anywhere safe to put. Frost climbs your knuckles as the power drains through you, the old scars on your fingertips gone bone-white and aching. The Knight screams, a sound like a wagon axle tearing loose, and comes apart into darkness. You're alone in the chamber, breathing like you ran here, and the crown piece on the floor pulses with a warmth that doesn't belong to anything you understand. Etched into the stone beside it, in void light already fading, your mother's hand: Forgive me. Find the truth. And when you're ready, destroy it all.",
     "choices": [
       {
         "letter": "A",
@@ -627,7 +627,7 @@
   "KIRA_CH2_NEGOTIATE": {
     "id": "KIRA_CH2_NEGOTIATE",
     "character": "KIRA",
-    "description": "'The Master wants you alive,' the Hollow Knight says. 'The others... less so.'\n\nYou keep your voice steady. 'Who is your Master? What does he want?'\n\n'The Hollow King. He wants the crown. And he wants you—specifically. Your bloodline created the seal. Your bloodline can break it.'\n\nThe Hollow Knight steps aside. Not defeated—allowing.\n\n'Take the piece, Kira Nightwind. Bring it to the Temple. And meet your mother.'\n\nSomething cold settles in your stomach. Your mother is alive. But at what cost?",
+    "description": "'The Master wants you alive,' the Hollow Knight says, voice grinding like stone dragged over stone. 'The others, less so.' You keep your voice level, the way you train yourself to when the alternative is letting them see your pulse. 'Who is your Master? What does he want?' 'The Hollow King. He wants the crown. And he wants you specifically. Your bloodline made the seal. Your bloodline can break it.' It steps aside. Not defeated. Permitting. 'Take the piece, Kira Nightwind. Bring it to the Temple. Meet your mother there.' Something goes cold in your stomach that has nothing to do with the void. Your mother is alive. The only question left is what that costs you.",
     "choices": [
       {
         "letter": "A",
@@ -661,7 +661,7 @@
   "KIRA_CH2_BYPASS": {
     "id": "KIRA_CH2_BYPASS",
     "character": "KIRA",
-    "description": "You become shadow—pure, formless darkness. The Knight passes through you, sensing nothing.\n\nIn the chamber, you see the crown piece without obstacles. It's smaller than you imagined—a ring of black metal that seems to absorb light.\n\nYou reach for it—and visions explode through your mind.\n\nAethon the Undying, screaming as the Void Beast tears his soul apart. His last act—shattering the crown, sending the pieces across time. Seven fragments, seven guardians, seven sacrifices.\n\nAnd then you see her: your mother, trapped in a cage of void light, screaming your name.\n\nThe vision releases you. The crown piece is in your hand. And the Hollow Knight is turning.",
+    "description": "You let go and become shadow, cold enough that the air goes silent before you move. The Knight passes through the space where you were and senses nothing. The crown piece waits unobstructed, black metal that drinks torchlight. You reach for it and the visions take you whether you're ready or not. Aethon the Undying, screaming as the Void Beast tears his soul apart. His last act, shattering the crown across time: seven fragments, seven guardians, seven sacrifices spent before you were born. Then her, your mother, caged in void light, screaming a name it takes a second to place as your own. The vision drops you. The piece is in your hand, fingers numb, and behind you the Hollow Knight turns.",
     "choices": [
       {
         "letter": "A",
@@ -695,7 +695,7 @@
   "KIRA_CH2_CROWN": {
     "id": "KIRA_CH2_CROWN",
     "character": "KIRA",
-    "description": "The crown piece is warm in your hand. Almost alive. It whispers secrets of the void—the language of nothing itself.\n\nYou feel the other pieces, scattered across the kingdoms. Six more fragments, each calling to this one. The Cult has five. The Circle has one. And now you hold the seventh.\n\nIn your mind, you see the map: the Temple of the Void, deep in the Ashen Wastes. The final convergence. The reunification.\n\nYour mother will be there. The Hollow King will be there. And the fate of the world will be decided.\n\nThree paths forward. Which will you take?",
+    "description": "The crown piece sits warm in your palm, warmer than metal has any right to be, almost breathing. It whispers in the grammar of the void, which isn't words so much as absence shaped like words. Through it you can feel the other six, scattered across the kingdoms like a wound you can suddenly map. The Cult holds five. The Circle holds one. You are holding the seventh, and your fingertips have already started going numb around the edges where the frost always starts. In your mind a map unfolds on its own: the Temple of the Void, buried deep in the Ashen Wastes, where every path you could walk from here eventually leads. The final convergence. The reunification. Your mother will be there. The Hollow King will be there. Whatever the world becomes after this gets decided in that room, not out here. Three roads stretch out in front of you, and none of them lead back to the girl who ran from the fire in Millbrook.",
     "choices": [
       {
         "letter": "A",
@@ -744,7 +744,7 @@
       },
       {
         "letter": "F",
-        "text": "Take the path to TRUTH",
+        "text": "Follow the truth to its end",
         "leads_to": "KIRA_CH3_TRANSITION",
         "effects": {
           "charisma": 1
@@ -792,7 +792,7 @@
   "KIRA_CH2_ESCAPE": {
     "id": "KIRA_CH2_ESCAPE",
     "character": "KIRA",
-    "description": "You run through the catacombs, the crown piece burning in your pocket. Behind you, the Hollow Knight's screams echo off the stone.\n\nYou emerge into the night air, gasping. Crownhaven spreads before you—a million lights, a million lives, none knowing what's coming.\n\nThe piece pulses: six more fragments, drawing closer. The Cult knows you have this one. They'll send everything.\n\nIn your mind, you see your mother's face—not as she is now, trapped in the void, but as she was: laughing, teaching you magic, holding you when you were afraid.\n\nYou won't let her down.",
+    "description": "You run, the crown piece burning cold against your hip, the Hollow Knight's screams still bouncing off stone behind you. You break into night air gasping, and Crownhaven spreads out below: a million lights, not one of them aware of what's coming. The piece pulses, counting off six more fragments drawing closer. The Cult knows you have this one now. They'll send everything. Your mother's face surfaces, not the way she is now, caged in the void, but the way she was: laughing, guiding your hand through a spell, holding you when the dark outside the cottage window was only ever just dark. You're not letting her down twice.",
     "choices": [
       {
         "letter": "A",
@@ -1149,7 +1149,7 @@
   "KIRA_CH2_LEAVE": {
     "id": "KIRA_CH2_LEAVE",
     "character": "KIRA",
-    "description": "You leave Tom with the Circle—they'll protect him, train him. You have a mother's last wish to fulfill. The road ahead is yours alone. But the weight of leaving him behind will follow you.",
+    "description": "You leave Tom with the Circle, telling yourself their walls and their wards will hold better than anything you could offer him on the road. They'll protect him. Train him, maybe, into something safer than what you became. You have a mother's last wish to carry and a road that's yours alone to walk now, but the weight of his face as you turned to go isn't the kind of thing that stays behind just because you did.",
     "choices": [
       {
         "letter": "A",
@@ -1183,7 +1183,7 @@
   "KIRA_CH2_COMPANION": {
     "id": "KIRA_CH2_COMPANION",
     "character": "KIRA",
-    "description": "The boy Tom follows you—your student, your responsibility. He has the void in him too. In the chaos ahead, you'll need someone you can trust. But can you protect him and save your mother at the same time?",
+    "description": "The boy is standing closer than a stranger would stand, and it takes a full breath to place him under the grime and the growth spurt: Tom, the orphan from outside Millbrook, the one you pulled from a burning cellar with the void still smoking off your hands. He's found you again, or never let you go. The void lives in him too, and you'd know that cold under his skin blind. He's your student now, your responsibility in a way nothing has been since your parents. Ahead: a Temple, a mother who may not be entirely your mother, and a boy who trusts you the way you used to trust people before you learned better.",
     "choices": [
       {
         "letter": "A",
@@ -1251,7 +1251,7 @@
   "KIRA_CH1_WATCH_TRIAL": {
     "id": "KIRA_CH1_WATCH_TRIAL",
     "character": "KIRA",
-    "description": "Commander Voss watches you for a long moment, then nods to the Watch training grounds. Three mercenaries stand ready—veterans who've survived the Waste for years. They see you as a test. A trial to prove your worth.\n\nYour void magic crackles at your fingertips, eager to be unleashed. The Watch has fought the Hollow Knights before; they know darkness when they see it.\n\nThe first mercenary charges. The second flanks left. The third hangs back, gauging your strength.\n\nShow them what a Nightwind can do.",
+    "description": "Voss watches you a long moment, then tips her chin at the training yard. Three mercenaries wait, mud-caked veterans who've outlived the Waste for years by not being careless. To them you're a question that needs answering before they'll trust you with their backs. Void crackles at your fingertips, restless, and the cold of it needles under nails already scarred white from the last time you drew this deep. The Watch has fought Hollow Knights before. They know darkness when they see it walk toward them wearing a girl's face. The first mercenary charges. The second cuts left. The third holds back, reading you. Give them something worth reading.",
     "choices": [
       {
         "letter": "A",
@@ -1325,7 +1325,7 @@
   "KIRA_CH1_WASTELAND_BATTLE": {
     "id": "KIRA_CH1_WASTELAND_BATTLE",
     "character": "KIRA",
-    "description": "The void creatures emerge from the ash—half-formed nightmares with too many eyes and not enough flesh. They're drawn to the crown piece in your possession, or perhaps to the void power in your blood.\n\nThree of them lurch toward you, their movements wrong, unnatural. More rise from the grey dust behind them. Six. Ten. The numbers keep growing.\n\nThe void pulses in your chest, demanding release. Your mother's voice echoes in your memory: control the darkness, or the darkness controls you.\n\nThe first creature lunges.",
+    "description": "They come up out of the ash like the ground is giving birth to them: half-formed things with too many eyes and not enough flesh, drawn to the crown piece in your pocket or to whatever the void has made of your blood. Three lurch toward you first, joints bending wrong. Behind them, more rise. Six. Ten. The count keeps climbing and you stop bothering to keep it. The void answers before you ask, a cold pull settling behind your sternum, hungry already. Your mother's voice surfaces from somewhere you buried it: control the darkness, or the darkness controls you. The first creature closes the distance. You've run out of time to decide which one you're going to be tonight.",
     "choices": [
       {
         "letter": "A",
@@ -1471,7 +1471,7 @@
   "KIRA_CH1_WASTELAND_STAND": {
     "id": "KIRA_CH1_WASTELAND_STAND",
     "character": "KIRA",
-    "description": "The wasteland creatures come in waves—not random attacks, but organized hunger. Something is driving them. Something is watching through their eyes.\n\nYou plant your feet in the ash and raise your hands. The void answers—shadows erupting from the ground in pillars of absolute darkness. The creatures fall. But more come.\n\nYour void power drains. The creatures keep coming. And in the distance, you see the silhouette of a Hollow Knight, commanding the horde.\n\nThis is a test. Someone wants to know how strong the last Nightwind really is.",
+    "description": "The creatures don't attack like animals. They come in waves, in order, like something is counting them out. You plant your feet in the ash and raise your hands, and the void answers in pillars of dark that swallow sound before they hit. The creatures drop. More climb over the fallen ones. Your fingertips have gone white at the tips, the old frostbite scars aching under fresh cold. Out past the wave-line, a Hollow Knight watches, unmoving, directing without a gesture you can see. This isn't a battle. It's a test, and someone wants to know exactly how strong the last Nightwind is.",
     "choices": [
       {
         "letter": "A",
@@ -6429,7 +6429,7 @@
   "KIRA_CH1_WATCH_MEMBER": {
     "id": "KIRA_CH1_WATCH_MEMBER",
     "character": "KIRA",
-    "description": "Commander Voss welcomes you into the Watch with open arms. 'A Nightwind fighting alongside us. The Cult won't know what hit them.' You train with the Watch, learning to fight alongside others. For the first time in years, you have people you can trust. But you also have responsibilities—and enemies who will come for you.",
+    "description": "Commander Voss takes you in without ceremony, just a nod and a bunk assignment, which is more welcome than you expected. 'A Nightwind fighting alongside us. The Cult won't know what hit them.' You drill with the Watch in a yard that smells of oiled leather and horse sweat, learning to fight beside people instead of around them. For the first time since the fire you have names you can say out loud without flinching. You also have a roster now, and a roster means a list of people the Cult can use against you if they ever learn it.",
     "choices": [
       {
         "letter": "A",
@@ -6532,7 +6532,7 @@
   "KIRA_CH2_CIRCLE": {
     "id": "KIRA_CH2_CIRCLE",
     "character": "KIRA",
-    "description": "You seek out the Circle of Mages in Crownhaven. They greet you with respect—their ancient enemy has finally been challenged. But their help comes with strings, and their agenda is older than kingdoms.",
+    "description": "You find the Circle of Mages tucked into a corner of Crownhaven that smells of tallow smoke and old chalk dust, robes brushed clean of the road you just walked through. They greet you like a rumor finally made solid, their oldest enemy standing in the doorway asking for help. Their courtesy is real. So is the price tag hiding under it, and their agenda has been aging quietly since before either kingdom on this map had a name.",
     "choices": [
       {
         "letter": "A",
@@ -6702,7 +6702,7 @@
   "KIRA_CH2_HUNT": {
     "id": "KIRA_CH2_HUNT",
     "character": "KIRA",
-    "description": "With three crown pieces, you can sense the others. The Cult has six—they're close to the Temple. You feel them drawing together. The Convergence is coming. But first, you hunt.",
+    "description": "Three pieces in your possession now, and you can feel the rest of them the way you'd feel a draft under a locked door. The Cult holds six, close to the Temple, drawing tight around something you can't yet see the shape of. The Convergence is coming whether you're ready or not. Your fingertips still ache from the last time you called on the void, a cold that never fully thaws anymore. First, though, you hunt.",
     "choices": [
       {
         "letter": "A",
@@ -6770,7 +6770,7 @@
   "KIRA_CH2_PALACE_ENTER": {
     "id": "KIRA_CH2_PALACE_ENTER",
     "character": "KIRA",
-    "description": "You approach the palace in noble garb—borrowed clothes, fake confidence. The guards bow and let you pass. Inside, the palace is a maze of nobles and servants, none noticing the shadow in their midst.",
+    "description": "You walk in wearing borrowed silk and faker confidence, chin up, pace unhurried, the way nobles walk when they've never once had to run from anything. The guards bow you through without a second look. Inside, the palace is a maze of powdered nobles and hurrying servants, wet stone underfoot going to marble, tallow smoke giving way to beeswax candles that don't gutter no matter how close you let the void get to your skin. Nobody here notices the shadow moving through their midst, which is exactly the point.",
     "choices": [
       {
         "letter": "A",
@@ -6838,7 +6838,7 @@
   "KIRA_CH2_MESSAGE": {
     "id": "KIRA_CH2_MESSAGE",
     "character": "KIRA",
-    "description": "Your mother's words burn into your memory: 'Forgive me. Find the truth. And when you're ready—destroy it all.' She's giving you permission. But to do what? Destroy the crown? Destroy yourself? Or something worse?",
+    "description": "Your mother's words are already burned into memory before you've finished reading them twice: Forgive me. Find the truth. And when you're ready, destroy it all. The void light spelling them out has already started to fade, taking the warmth in your hand with it. She's handing you permission, but for what exactly, she never says. Destroy the crown. Destroy yourself. Or something she couldn't bring herself to write down even here, in a message meant only for you.",
     "choices": [
       {
         "letter": "A",
@@ -6872,7 +6872,7 @@
   "KIRA_CH2_DESTROY": {
     "id": "KIRA_CH2_DESTROY",
     "character": "KIRA",
-    "description": "You reach for the void within the crown piece—trying to unmake it. But the piece fights back, showing you visions: your mother's hope, your father's sacrifice, Aethon's desperation. Destroying it would destroy everything they died for.",
+    "description": "You reach into the crown piece for the void at its center, meaning to unmake it before it can unmake anything else. It fights back, not with force but with memory: your mother's hope pressed flat into the metal, your father's sacrifice, Aethon's last desperate act before the Beast took him. Destroying this destroys the only proof any of that cost meant something. Your fingertips have already gone white, the old scars screaming under fresh frost, and you have to decide fast whether that's a price you're willing to pay twice.",
     "choices": [
       {
         "letter": "A",
@@ -6885,7 +6885,7 @@
       },
       {
         "letter": "B",
-        "text": "Keep it—change your destiny",
+        "text": "Pocket it and rewrite what comes next",
         "leads_to": "KIRA_CH2_CROWN",
         "effects": {
           "void_magic": 2
@@ -6906,7 +6906,7 @@
   "KIRA_CH2_MOTHER": {
     "id": "KIRA_CH2_MOTHER",
     "character": "KIRA",
-    "description": "Your mother's voice from the void: 'I'm proud of you, Kira. Now let me show you the truth.' She reaches through your mind, showing you where she is—the Temple. Where she'll be sacrificed to free the Beast. Time is running out.",
+    "description": "The voice comes up out of the crown piece the way it used to come up the cottage stairs when you were small, unmistakable even worn thin by whatever the void has done to it in the years between. 'I'm proud of you, Kira.' You'd almost forgotten the exact shape of it, the specific way she landed on your name, and hearing it now costs you more than the cold spreading through your fingertips as the piece drains warmth straight out of your hand. 'Now let me show you the truth.' She reaches into your mind without asking permission, the way only a mother could, and the Temple opens up behind your eyes: her, chained in a place built to unmake her, held there to feed the Beast when the hour finally comes. She is not a memory anymore. She is not entirely a ghost either. She is something in between, real enough to bargain with and running out of time to be saved. Whatever you do next, you're doing it with her voice still echoing where the cold hasn't quite reached yet.",
     "choices": [
       {
         "letter": "A",
@@ -8041,7 +8041,7 @@
   "KIRA_CH1_VOID_CHILD": {
     "id": "KIRA_CH1_VOID_CHILD",
     "character": "KIRA",
-    "description": "You sense another void-sensitive child in a nearby village. The Cult would kill them—or worse, recruit them. You have minutes to decide.",
+    "description": "You feel it before you understand it: another void-sensitive child, close, in a village whose chimney smoke you can already smell on the wind, sharp and bitter under the ash. The Cult would kill a child like that, or worse, keep them, dress them in too-clean robes and teach them to smile the way the Cult smiles. You have minutes, maybe less, and no map of this village worth trusting. Someone like you, once, had minutes and no one came. You've never decided if that's a reason to run toward this or away from it.",
     "choices": [
       {
         "letter": "A",
@@ -12915,7 +12915,7 @@
     "id": "KIRA_CH2_MAIN",
     "character": "KIRA",
     "type": "story",
-    "description": "In the capital, you sense the void's presence growing stronger.",
+    "description": "In the capital the void feels louder than it should, a low pressure behind your sternum that doesn't ease no matter how far you walk from the palace gates. Wet stone underfoot, tallow smoke in every doorway, a bell somewhere ringing a beat later than it should and another catching up late behind it. You've learned not to trust a city that sounds like it's forgotten its own rhythm, and Crownhaven wears that forgetting like it's proud of it.",
     "choices": [
       {
         "letter": "A",
@@ -17301,7 +17301,7 @@
     "id": "KIRA_CH2_ALT",
     "character": "KIRA",
     "type": "story",
-    "description": "An alternative path presents itself in Chapter 2.",
+    "description": "A second road opens ahead of the one you were already walking, marked by nothing but a broken signpost and the smell of rain on old timber. You could take it on instinct, the way you've taken every other turn since Millbrook, trusting the pull in your gut over the map in your head. Or you could hold the course you already chose. Neither one announces itself as the right answer, and you've stopped expecting that they would.",
     "choices": [
       {
         "letter": "A",
@@ -17336,7 +17336,7 @@
     "id": "KIRA_CH2_END",
     "character": "KIRA",
     "type": "transition",
-    "description": "Chapter 2 reaches its conclusion.",
+    "description": "Crownhaven's bells ring behind you, still a beat out of time, and the road ahead narrows into something you can no longer pretend is simple. The taste of tallow smoke clings to your coat even out here past the walls, mixed with the cold that never fully left your fingertips since the catacombs. Whatever you decide next, you're carrying it forward: a piece of the crown settled into your blood like it always belonged there, your mother's voice still echoing where the frost hasn't quite reached. There's no version of walking away from this that doesn't mean walking toward the Temple eventually.",
     "choices": [
       {
         "letter": "A",
@@ -18259,7 +18259,7 @@
     "id": "KIRA_CH2_GUILD_HALL",
     "character": "KIRA",
     "type": "story",
-    "description": "You visit the local mage guild for information.",
+    "description": "The mage guild hall smells of scorched parchment and cheap tallow candles, the kind that gutter if you so much as think about the void near them. You keep your hood up and your questions short, the way you've learned to ask things without letting anyone ask anything back. Every face here is a stranger, which means every face here is a maybe, and you've long since stopped being able to afford the luxury of assuming otherwise.",
     "choices": [
       {
         "letter": "A",
@@ -18364,7 +18364,7 @@
     "id": "KIRA_CH2_MAGE_TOWER",
     "character": "KIRA",
     "type": "story",
-    "description": "The mage tower rises before you, filled with ancient knowledge.",
+    "description": "The mage tower climbs out of Crownhaven's fog ahead of you, stone gone slick and dark with centuries of rain, the air near its base carrying that faint iron taste that means old magic soaked into the walls a long time ago. Bells somewhere behind you toll a beat out of rhythm, the way every clock in this city seems to. Whatever knowledge is stacked up inside, some of it is bound to be about people like you, which is exactly why you're not walking in there without a plan and an exit already picked.",
     "choices": [
       {
         "letter": "A",
