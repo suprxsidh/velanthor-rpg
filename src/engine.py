@@ -626,6 +626,7 @@ class GameEngine:
     
     def combat_encounter(self, enemies, char_class, surprise=False):
         from src.moves import get_combo_bonus, get_available_combos, apply_elemental_weakness
+        from src.combat_text import hp_bar, damage_line, enemy_tell, low_hp_warning, beat
 
         self.status_effects = []
         self.temp_hp = 0
@@ -641,8 +642,40 @@ class GameEngine:
 
         enemy_hp_list = [en.hp for en in enemies]
         enemy_stunned_list = [0 for _ in enemies]
+        enemy_cooldowns = [dict() for _ in enemies]   # move name -> rounds until ready
+        enemy_charging = [None for _ in enemies]      # special move winding up
+        hp_warnings = set()
         num_enemies = len(enemies)
         combat_round = 0
+
+        def deal_player_damage(raw_dmg, source_name, move_name):
+            """Apply defense/defend/barrier/shield reductions, then damage the player."""
+            dmg = max(1, raw_dmg)
+            defense_value = effective_stats.get("defense", 0)
+            if defense_value > 0:
+                reduction = min(defense_value, dmg - 1)
+                dmg -= reduction
+                if reduction > 0:
+                    print(f"   {CYAN}(Defense: -{reduction} damage){RESET}")
+            if self.is_defending:
+                dmg = int(dmg * 0.7)
+                print(f"   (You brace behind your guard: {raw_dmg} → {dmg})")
+            if any(e.effect_type == "barrier" for e in self.status_effects):
+                original = dmg
+                dmg = int(dmg * 0.5)
+                print(f"   (Barrier: {original} → {dmg})")
+            if hasattr(self, 'temp_hp') and self.temp_hp > 0:
+                absorbed = min(self.temp_hp, dmg)
+                self.temp_hp -= absorbed
+                dmg -= absorbed
+                print(f"   {CYAN}Shield absorbs {absorbed} damage!{RESET}")
+            self.health -= dmg
+            print(f"   {RED}{damage_line(source_name, move_name, dmg, self.health, true_max_hp)}{RESET}")
+            w = low_hp_warning(self.health, true_max_hp, hp_warnings)
+            if w:
+                beat()
+                print(f"   {RED}{w}{RESET}")
+            return dmg
 
         print(f"\n{RED}╔{'═'*56}╗{RESET}")
         print(f"{RED}║ {'⚔ COMBAT: ' + str(num_enemies) + ' enemies ⚔':^44} ║{RESET}")
@@ -664,13 +697,12 @@ class GameEngine:
                 print(f"\n{BOLD}{CYAN}━━━ YOUR TURN ━━━{RESET}")
             is_stunned = self.process_status_effects(is_enemy_turn=False)
 
-            print(f"\n  {GREEN}HP: {self.health}/{true_max_hp}{RESET} | {CYAN}Mana: {self.mana}/50{RESET}")
-            print(f"\n  {YELLOW}Enemies:{RESET}")
+            effect_tags = f"  {YELLOW}[{', '.join(e.effect_type for e in self.status_effects)}]{RESET}" if self.status_effects else ""
+            print(f"\n  {GREEN}You{RESET}  {hp_bar(self.health, true_max_hp)} {self.health}/{true_max_hp}  {CYAN}MP {self.mana}{RESET}{effect_tags}")
             for i in alive_indices:
                 stun_t = f" {YELLOW}[STUNNED]{RESET}" if enemy_stunned_list[i] > 0 else ""
-                print(f"    Enemy {i+1}: {enemies[i].name} (HP: {RED}{enemy_hp_list[i]}{RESET}){stun_t}")
-
-            self.show_status_effects()
+                charge_t = f" {RED}[WINDING UP]{RESET}" if enemy_charging[i] else ""
+                print(f"  {enemies[i].name:<14} {hp_bar(enemy_hp_list[i], enemies[i].hp)} {enemy_hp_list[i]}/{enemies[i].hp}{stun_t}{charge_t}")
 
             if not is_surprise_round:
                 if is_stunned:
@@ -773,7 +805,10 @@ class GameEngine:
 
                                         enemy_hp_list[ti] -= dmg
                                         aoe_lbl = " [AOE]" if is_aoe else ""
-                                        print(f"\n{GREEN}✓ {selected_move.name} hits {tgt.name} for {RED}{dmg}{GREEN} damage!{aoe_lbl}{RESET}")
+                                        beat(0.25)
+                                        print(f"\n{GREEN}✓ {damage_line(tgt.name, selected_move.name, dmg, enemy_hp_list[ti], tgt.hp, target=tgt.name)}{aoe_lbl}{RESET}")
+                                        if enemy_hp_list[ti] <= 0:
+                                            enemy_charging[ti] = None
 
                                         if selected_move.status_effect:
                                             if selected_move.status_effect == "stun":
@@ -839,7 +874,10 @@ class GameEngine:
                             player_damage = base_damage + combat_bonus
                             for ti in target_indices:
                                 enemy_hp_list[ti] -= player_damage
-                                print(f"\n{GREEN}✓ Basic Attack hits {enemies[ti].name} for {RED}{player_damage}{GREEN} damage!{RESET}")
+                                beat(0.25)
+                                print(f"\n{GREEN}✓ {damage_line(enemies[ti].name, 'Basic Attack', player_damage, enemy_hp_list[ti], enemies[ti].hp, target=enemies[ti].name)}{RESET}")
+                                if enemy_hp_list[ti] <= 0:
+                                    enemy_charging[ti] = None
                         else:
                             print(f"\n{RED}✗ Basic Attack misses!{RESET}")
 
@@ -891,45 +929,70 @@ class GameEngine:
                 if self.health <= 0:
                     break
 
-                has_barrier = any(e.effect_type == "barrier" for e in self.status_effects)
-
                 for i in alive_indices:
                     en = enemies[i]
 
                     if enemy_stunned_list[i] > 0:
                         print(f"   {YELLOW}{en.name} is stunned and can't act!{RESET}")
                         enemy_stunned_list[i] -= 1
+                        if enemy_charging[i]:
+                            print(f"   {GREEN}The stun breaks {en.name}'s concentration — the windup is lost.{RESET}")
+                            enemy_charging[i] = None
+                        continue
+
+                    # tick this enemy's cooldowns
+                    for mv in list(enemy_cooldowns[i]):
+                        enemy_cooldowns[i][mv] -= 1
+                        if enemy_cooldowns[i][mv] <= 0:
+                            del enemy_cooldowns[i][mv]
+
+                    # resolve a telegraphed special
+                    if enemy_charging[i] is not None:
+                        sp = enemy_charging[i]
+                        enemy_charging[i] = None
+                        enemy_cooldowns[i][sp["name"]] = sp["cooldown"]
+                        beat(0.6)
+                        if sp.get("heal", 0) > 0:
+                            healed = min(en.hp - enemy_hp_list[i], sp["heal"])
+                            enemy_hp_list[i] += healed
+                            print(f"   {MAGENTA}✦ {en.name} completes {sp['name']} — recovers {healed} HP.{RESET}")
+                        else:
+                            sp_roll = random.randint(1, 20) + en.str
+                            if sp_roll >= sp.get("accuracy_dc", 8):
+                                print(f"   {MAGENTA}✦ {sp['name']}!{RESET}")
+                                deal_player_damage(sp["damage"] + random.randint(-2, 2), en.name, sp["name"])
+                                if sp.get("effect") in ("poison", "bleed"):
+                                    eff = STATUS_EFFECTS.get(sp["effect"], {})
+                                    self.add_status_effect(sp["effect"], eff.get("damage", 3), eff.get("turns", 2), f"+{sp['effect']}")
+                                    print(f"   {YELLOW}✦ You are {'poisoned' if sp['effect'] == 'poison' else 'bleeding'}.{RESET}")
+                                elif sp.get("effect") in ("stun", "terror", "mark"):
+                                    eff = STATUS_EFFECTS.get("terror", {})
+                                    self.add_status_effect("terror", 0, eff.get("turns", 2), "+rattled")
+                                    print(f"   {YELLOW}✦ The blow leaves you rattled — accuracy suffers.{RESET}")
+                            else:
+                                print(f"   {GREEN}{sp['name']} — you read it coming and slip aside. It wastes the effort.{RESET}")
+                        if self.health <= 0:
+                            break
+                        continue
+
+                    # consider winding up a special (heals only when hurt)
+                    ready = [
+                        m for m in getattr(en, "moves", [])
+                        if m["name"] not in enemy_cooldowns[i]
+                        and (m.get("heal", 0) == 0 or enemy_hp_list[i] < en.hp * 0.5)
+                    ]
+                    if ready and random.random() < 0.45:
+                        sp = random.choice(ready)
+                        enemy_charging[i] = sp
+                        tell = sp.get("tell") or "gathers itself for something worse"
+                        print(f"   {YELLOW}{enemy_tell(en.name, tell)}{RESET}")
+                        beat(0.6)
                         continue
 
                     enemy_roll = random.randint(1, 20) + en.str
                     if enemy_roll >= 8:
                         enemy_dmg = en.damage + random.randint(-2, 2)
-                        enemy_dmg = max(1, enemy_dmg)
-
-                        defense_value = effective_stats.get("defense", 0)
-                        if defense_value > 0:
-                            reduction = min(defense_value, enemy_dmg - 1)
-                            enemy_dmg -= reduction
-                            if reduction > 0:
-                                print(f"   {CYAN}(Defense: -{reduction} damage){RESET}")
-
-                        if self.is_defending:
-                            enemy_dmg = int(enemy_dmg * 0.7)
-                            print(f"   ({en.name} attacks defended: {en.damage} → {enemy_dmg})")
-
-                        if has_barrier:
-                            original_dmg = enemy_dmg
-                            enemy_dmg = int(enemy_dmg * 0.5)
-                            print(f"   (Barrier: {original_dmg} → {enemy_dmg})")
-
-                        if hasattr(self, 'temp_hp') and self.temp_hp > 0:
-                            absorbed = min(self.temp_hp, enemy_dmg)
-                            self.temp_hp -= absorbed
-                            enemy_dmg -= absorbed
-                            print(f"   {CYAN}Shield absorbs {absorbed} damage!{RESET}")
-
-                        self.health -= enemy_dmg
-                        print(f"   {RED}{en.name} attacks for {enemy_dmg} damage!{RESET}")
+                        deal_player_damage(enemy_dmg, en.name, "attack")
                     else:
                         print(f"   {GREEN}{en.name} attacks but misses.{RESET}")
 
