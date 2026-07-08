@@ -826,7 +826,7 @@
   "KIRA_CH3_TEMPLE": {
     "id": "KIRA_CH3_TEMPLE",
     "character": "KIRA",
-    "description": "The Temple of the Void stands at the heart of the Ashen Wastes—a tower of black stone that hurts to look at. Reality bends around it, as if the world itself doesn't want to exist here.\n\nSix Cultists stand around a dais. Each holds a crown piece. Each wears a mask of silver.\n\nAnd in the center, suspended in a cage of pure void light: your mother.\n\n'Kira.' Her voice is barely a whisper. 'You shouldn't have come.'\n\nThe seventh piece in your hand begins to glow. The six in the Cultists' possession flare in response.\n\nThe Hollow King is here. And he's been waiting for you.",
+    "description": "The Temple of the Void rises out of the Ashen Wastes like something the land grew instead of something anyone built: a tower of black stone your eyes slide off if you look at it too directly, reality bending at its edges the way heat bends air over a fire. It smells of scorched dust and something colder underneath, something with no smell a body should recognize.\n\nSix Cultists ring the dais, each holding a crown piece, each wearing a silver mask that catches no light at all. And at the center, suspended in a cage woven from pure void light, hangs your mother.\n\n'Kira.' Her voice makes it across the distance as barely more than breath. 'You shouldn't have come.'\n\nThe seventh piece warms in your grip and starts to glow, a low answering pulse. The six in the Cultists' hands flare back in response, six points of cold light closing a circuit you didn't ask to complete. Somewhere in the wrongness of this place, you feel him. The Hollow King. He's been waiting for you since before you knew his name, and the frost climbing your fingers tells you he already knows you're here.",
     "choices": [
       {
         "letter": "A",
@@ -860,11 +860,11 @@
   "KIRA_CH3_CHARGE": {
     "id": "KIRA_CH3_CHARGE",
     "character": "KIRA",
-    "description": "You throw yourself at the Cultists, the void blazing from your hands. They fall—shadows torn apart by shadows.\n\nBut there are more. Always more.\n\nThe Hollow King manifests: a formless thing of darkness and hunger. It wraps around you, squeezing the air from your lungs.\n\n'Your bloodline made me,' it hisses. 'Your great-great-grandfather bound me here. Now you'll undo it.'\n\nYour mother screams. The crown pieces fly toward you—seven fragments becoming one.\n\nAnd you understand: this is the choice. Become the Undying, or die trying.",
+    "description": "You go in low and fast, void blazing off both hands in ribbons that eat the torchlight whole. The first three Cultists fall before they finish turning, shadow torn apart by a deeper shadow. There are more behind them. There are always more.\n\nThen the air changes. The Hollow King manifests out of the space between the fallen, formless, hungry, and it wraps around your ribs and squeezes the breath out of your lungs like it's testing how much you can lose before you stop being useful.\n\n'Your bloodline made me,' it hisses, close enough that you feel it more than hear it. 'Your great-great-grandfather bound me here. Now you'll undo it.'\n\nYour mother screams somewhere behind the dark. The crown pieces tear loose from six Cultist hands and spiral toward you, seven fragments straining to become one, your hand already lifting to meet them before you've decided to let it.\n\nYou understand the shape of the choice now, plain as a blade: become the Undying, or die finding out what happens if you refuse. Frost has climbed past your wrist and you can't feel your fingers anymore.",
     "choices": [
       {
         "letter": "A",
-        "text": "Claim the crown—become a god",
+        "text": "Claim the crown for yourself",
         "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "void_magic": 5
@@ -894,7 +894,7 @@
   "KIRA_CH3_TALK": {
     "id": "KIRA_CH3_TALK",
     "character": "KIRA",
-    "description": "You reach through the void connection, finding your mother's mind.\n\nShe's been here for eight years—trapped, tortured, turned slowly to shadow. But she's still fighting.\n\n'The crown is a trap,' she whispers. 'Aethon didn't seal the Beast—he became it. The crown is its prison, and whoever wears it becomes the jailer.'\n\nThe Hollow King screams as he feels your intrusion. Your mother's last act of will tears a hole in his concentration.\n\n'Now,' she gasps. 'While he's weak—finish it.'\n\nThe seven pieces fly toward you. But which choice will you make?",
+    "description": "You push through the void connection the crown piece offers, past static and cold and your own pulse arriving a beat late, until you find something that answers back: your mother's mind, still there, still hers.\n\nEight years in this place have worn her down to something half shadow, tortured past what you let yourself imagine on the road here, but she's still fighting, and that alone nearly undoes you more than anything else has tonight.\n\n'The crown is a trap,' she whispers, the words thin and effortful. 'Aethon didn't seal the Beast. He became it. The crown is its prison, and whoever wears it becomes the jailer.'\n\nThe Hollow King screams somewhere above you both, feeling the intrusion for what it is. Your mother's last act of will tears a visible hole through his concentration, a crack you feel more than see.\n\n'Now,' she gasps, voice fraying. 'While he's weak. Finish it.'\n\nThe seven pieces lift and turn toward you, waiting on a decision you have maybe three heartbeats to make. Frost has crawled past your wrist while you weren't watching your own hand.",
     "choices": [
       {
         "letter": "A",
@@ -928,11 +928,11 @@
   "KIRA_CH3_BARGAIN": {
     "id": "KIRA_CH3_BARGAIN",
     "character": "KIRA",
-    "description": "'Take me,' you say. 'Let her go. I'm the last Nightwind. I'm what you want.'\n\nThe Hollow King pauses. Your mother screams—no, no, no—\n\n'Kira, don't—'\n\n'Very well.' The darkness wraps around you. It feels like drowning in ice. 'Your mother will live. But you'll spend eternity in the void with me.'\n\nYour mother falls free as you're pulled into the darkness. The last thing you see is her face—tears streaming, reaching for you.\n\nAnd then there's only the void. And the hunger.",
+    "description": "'Take me,' you say, before you can talk yourself out of it. 'Let her go. I'm the last Nightwind. I'm what you actually want.'\n\nThe Hollow King goes still, a stillness with weight to it, like the room itself is holding its breath. Your mother's scream tears through the cage of void light. No, no, no, she says, and you make yourself not look at her, because if you look at her you won't be able to finish this.\n\n'Kira, don't.'\n\n'Very well.' The darkness peels off the walls and wraps around you instead, and it feels exactly like drowning in ice, cold going in through your skin and settling somewhere past it. 'Your mother will live. You will spend eternity in the void with me.'\n\nIt isn't your magic it takes, or your name. It's simpler than that and worse: the version of you that still got to choose. Your mother falls free of the cage as the dark pulls you down into it, and the last thing you see is her face, streaked and reaching, mouthing your name like it might still work as a rope.\n\nThen there's only the void, and the hunger, and the frost has gone past your wrist.",
     "choices": [
       {
         "letter": "A",
-        "text": "Embrace the darkness",
+        "text": "Surrender to the void",
         "leads_to": "KIRA_CH4_TRANSITION",
         "effects": {
           "humanity": -5
@@ -1038,7 +1038,7 @@
   "KIRA_CH2_PREPARE": {
     "id": "KIRA_CH2_PREPARE",
     "character": "KIRA",
-    "description": "You gather information about the Cult and Vespera before moving. The Circle provides what they know: the Cult has six crown pieces, Vespera leads them, and the final piece is in the palace. Time is running out.",
+    "description": "You spread the Circle's reports across a table still tacky with spilled tallow, and force yourself to read every line twice before you move. Six crown pieces accounted for, all in Vespera's keeping. The seventh sits somewhere inside palace walls you haven't mapped yet. You trace the routes with a fingertip, the frostbite scar at your knuckle catching on the parchment's edge, a small cold reminder of what the void expects in return. You count what you can use instead of what you feel: six pieces, one enemy, one clock running down to nothing. Crownhaven doesn't wait for anyone to be ready.",
     "choices": [
       {
         "letter": "A",
@@ -1072,7 +1072,7 @@
   "KIRA_CH3_ALLIES": {
     "id": "KIRA_CH3_ALLIES",
     "character": "KIRA",
-    "description": "You gather allies—former enemies, unlikely friends. The Circle offers mages. The Watch offers soldiers. Even some former Cultists want redemption. Together, you might have a chance.",
+    "description": "Word travels faster than you expected once you stop trying to do this alone. The Circle sends mages you've spent a year distrusting. The City Watch sends soldiers who'd have arrested you on sight a month ago. Stranger still, two former Cultists show up asking for nothing but a chance to undo something, their too-clean robes traded for plain wool that still smells faintly of incense they can't wash out. You count heads instead of history, because history is a luxury you can't afford tonight. It isn't an army. It might, if nothing goes wrong, be enough.",
     "choices": [
       {
         "letter": "A",
@@ -1106,7 +1106,7 @@
   "KIRA_CH3_STUDY": {
     "id": "KIRA_CH3_STUDY",
     "character": "KIRA",
-    "description": "You study the crown piece more—the void's nature, its weaknesses. Aethon became the Undying to seal the Beast. Can you do the same? Or is there another way? The answers lie in the ancient texts.",
+    "description": "You lay the crown piece flat on the table and study it the way you'd study an enemy's blade, looking for the seam where it's weakest. The old texts agree on one detail that changes everything: Aethon didn't seal the Beast from the outside. He became the thing that held it, gave up the man to keep the monster contained. You trace the fragment's edge with your scarred hand and feel the cold answer back, a question with only bad options attached. Maybe there's another way that doesn't cost what his did. The texts don't offer one. You keep reading anyway, because not knowing is worse than knowing and hating it.",
     "choices": [
       {
         "letter": "A",
@@ -1217,7 +1217,7 @@
   "KIRA_CH3_ALONE": {
     "id": "KIRA_CH3_ALONE",
     "character": "KIRA",
-    "description": "You face the Temple alone—allies would only slow you down or be used against you. The void in you grows stronger as you approach. The Beast waits. The Hollow King waits. Your mother waits. This ends now.",
+    "description": "You leave the others behind at the tree line, because allies are just more people the Hollow King can use against you, and you've run out of patience for being leverage. The void inside you gets louder with every step toward the Temple, a hum behind your ribs that isn't quite sound, arriving a half-beat after you expect it. The Beast is waiting in there. So is the Hollow King. So is your mother, however much of her is left to wait for anything. Your scarred fingers have gone numb past the second knuckle, and you flex them once, testing what still answers. Whatever happens past those doors, it happens tonight.",
     "choices": [
       {
         "letter": "A",
@@ -6566,7 +6566,7 @@
   "KIRA_CH2_STUDY": {
     "id": "KIRA_CH2_STUDY",
     "character": "KIRA",
-    "description": "You study the symbol from the merchant—tracing its history through old texts. The Circle of Mages has protected the realm for centuries, but their methods are as dark as their enemies. You're walking into a web of ancient lies.",
+    "description": "You spend the better part of a day hunched over texts that smell of mildew and older ink, tracing the merchant's crescent symbol back through three centuries of half-erased marginalia. The Circle of Mages has guarded this realm since before Crownhaven had walls, the histories agree on that much. What they don't agree on is how. Every account hedges around the same ugly shape: methods as dark as anything the Cult has done, buried under better paperwork. Your scarred fingers keep tapping the page, impatient with you for reading instead of acting. Whatever you walk into at the Circle's door, it won't be simple, and it won't be clean.",
     "choices": [
       {
         "letter": "A",
@@ -6600,7 +6600,7 @@
   "KIRA_CH2_VESPERA": {
     "id": "KIRA_CH2_VESPERA",
     "character": "KIRA",
-    "description": "Vespera was once a priestess of light—until something broke her. The Circle tells you her story: how she lost everything to the Cult, how she was saved by the void, how she now leads them. She knows your parents. She knew you would come.",
+    "description": "The Circle tells it like a cautionary tale, which is exactly what it is. Vespera served the light once, a priestess with a real name before the Cult took everything that name meant to her. The void found her in the wreckage and offered the one thing left on the table: power, in exchange for becoming exactly the kind of thing she used to burn at the stake. She knew your parents. She has, according to the mage telling you this in a voice gone carefully flat, been expecting you since before you knew you were coming. You file that away next to everything else you're not ready to feel, and ask about her methods instead of who she used to be.",
     "choices": [
       {
         "letter": "A",
@@ -6634,7 +6634,7 @@
   "KIRA_CH2_SURVIVE": {
     "id": "KIRA_CH2_SURVIVE",
     "character": "KIRA",
-    "description": "Your mother would want you to live. That's why she made the deal. You push down your grief, your rage, and focus on survival. The crown can wait. The Cult can wait. You cannot.",
+    "description": "Your mother didn't bargain away eight years of her life so you could throw yours away out of spite. You know that, even with grief sitting in your chest like a stone that never warms up. You push the rage down where you can use it later and make yourself breathe the way she taught you: in through the nose, count four, out slow. The crown can wait one more day. The Cult can wait. Vespera can wait. What can't wait is you staying alive long enough to matter, because a dead Nightwind avenges no one. You file that thought next to the exits, in case you need it again before morning.",
     "choices": [
       {
         "letter": "A",
@@ -6668,7 +6668,7 @@
   "KIRA_CH2_VENGEANCE": {
     "id": "KIRA_CH2_VENGEANCE",
     "character": "KIRA",
-    "description": "The Hollow King has your mother. The Cult killed your parents. Vespera hunts you. The entire world has wronged you—and you will make it right. The void swells inside you, feeding on your rage.",
+    "description": "The accounting is simple enough to recite in your sleep: the Hollow King holds your mother, the Cult burned your parents' lives down to a memory, and Vespera has spent months hunting you across two kingdoms like you're the one who did something wrong. The void notices the list too. It always does. It swells behind your sternum, cold and patient, feeding on the rage the way a fire feeds on dry wood, and for once you don't fight it back down. Your knuckles ache where the frost never fully thaws anymore. You've stopped counting that as a warning and started counting it as a resource.",
     "choices": [
       {
         "letter": "A",
@@ -6736,7 +6736,7 @@
   "KIRA_CH2_SACRIFICE": {
     "id": "KIRA_CH2_SACRIFICE",
     "character": "KIRA",
-    "description": "You could destroy this crown piece—end the cycle forever. But the power whispers to you: use it. Become the Undying. Make them all pay. The choice burns in your soul.",
+    "description": "The crown piece sits heavy in your palm, warmer than metal should be, like it's borrowing heat from you to stay alive. You could crush it here and end the cycle before it ends you. Instead it murmurs, low and patient as static: use me, become the Undying, make every one of them pay, for your parents, for your mother, for the eight years you didn't get. Frost creeps along your fingers where the scar tissue never healed right, spreading past the first knuckle now, proof of every time you've listened before. You have maybe three seconds to decide what kind of monster you're willing to become.",
     "choices": [
       {
         "letter": "A",
@@ -6804,7 +6804,7 @@
   "KIRA_CH2_SCOUT": {
     "id": "KIRA_CH2_SCOUT",
     "character": "KIRA",
-    "description": "You spend days watching the palace—the guards, the patterns, the passages. Your mother's notes prove invaluable. There: a servant's entrance, rarely used. A route to the catacombs. And shadows everywhere.",
+    "description": "You spend three nights flat against cold rooftop stone, cataloguing the palace the way your mother taught you before any of this started: guard rotations, torch intervals, the half-second lag when a shift changes and nobody's quite watching. Her old notes, water-stained but legible, mark a servant's entrance the current guards forgot to close, and a passage below that drops straight into the catacombs. The city smells of wet stone and someone's dinner fire, ordinary in a way that makes the palace's blank windows worse. Shadows pool in every gap the torches don't reach. You've learned to trust them more than you trust people.",
     "choices": [
       {
         "letter": "A",
@@ -6940,7 +6940,7 @@
   "KIRA_CH2_WEAPON": {
     "id": "KIRA_CH2_WEAPON",
     "character": "KIRA",
-    "description": "You draw on the crown piece's power—the void speaks through you. Shadows bend to your will. The world dims around you as power floods your veins. You could destroy armies. You could kill gods. But at what cost to your soul?",
+    "description": "You let the crown piece open, just a fraction, and the void answers like it's been waiting by the door. Shadows along the wall bend toward you instead of the candle. The room dims a shade, as if the light itself is stepping back to give you room. Power floods your veins, cold instead of warm, and for one long second you understand exactly how you could level an army with it, maybe worse. Your fingertips have gone white past the second knuckle now, further than they've ever gone, and the taste of iron sits on the back of your tongue like a promise. You close your hand before you find out what the third knuckle costs.",
     "choices": [
       {
         "letter": "A",
@@ -6974,7 +6974,7 @@
   "KIRA_CH3_CIRCLE": {
     "id": "KIRA_CH3_CIRCLE",
     "character": "KIRA",
-    "description": "You seek the Circle's help in the final hour. They'll lend their power—but in exchange for your service forever. The Archmage offers you a choice: become their weapon, or face the Beast alone.",
+    "description": "You go to the Circle in the last hour you can afford to spend traveling, and they receive you under the same silver crescent that's marked every one of their letters since they first found you. The offer is exactly as clean as it sounds and exactly as costly: their power, lent freely tonight, in exchange for your service to them for the rest of however long you live. The Archmage doesn't dress it up. Become their weapon, permanently, or walk out and face the Beast with whatever you've already got. You've trusted this crescent enough to walk through their door. That doesn't mean you trust what's waiting past it. Allies, you're learning, always have a price tag somewhere.",
     "choices": [
       {
         "letter": "A",
@@ -8816,7 +8816,7 @@
   "KIRA_CH4_BANDITS": {
     "id": "KIRA_CH4_BANDITS",
     "character": "KIRA",
-    "description": "The bandit camp is small—you handle it in minutes. The merchant pays generously.",
+    "description": "The bandit camp turns out to be smaller than the merchant's panic suggested, four men who've clearly never fought anything that fights back with intent. You clear it in minutes, void barely necessary, just knife-work and the kind of confidence that comes from surviving worse than this every week since Crownhaven. The smell of their cookfire still hangs over the camp when you're done, oddly domestic for a place that just saw four men go down. The merchant pays generously and doesn't ask what the frost creeping past your knuckles means. You've stopped expecting anyone to ask.",
     "type": "combat",
     "choices": [
       {
@@ -12950,7 +12950,7 @@
     "id": "KIRA_CH3_MAIN",
     "character": "KIRA",
     "type": "story",
-    "description": "The ancient temple awaits. Your destiny calls.",
+    "description": "The temple sits ahead of you the way a held breath sits in a chest, patient, pressurized, waiting to be let out. You've spent every step since Crownhaven telling yourself this is just the next obstacle, one more door between you and your mother. Standing here now, close enough to feel the wrongness of the place on your skin like static, that story feels thinner than it did a mile back. You could go in now. You could stall one more hour gathering strength or information you tell yourself you need. Either way, the temple isn't going anywhere, and neither, tonight, are you.",
     "choices": [
       {
         "letter": "A",
@@ -13285,7 +13285,7 @@
     "id": "KIRA_CH2_REFLECT",
     "character": "KIRA",
     "type": "story",
-    "description": "Chapter 2 continues - reflect phase.",
+    "description": "You stop moving for exactly as long as it takes to breathe twice, no longer. Crownhaven's bells ring somewhere below, a beat behind themselves the way they always do here, and the sound catches on old habits: count the exits, count the strangers, decide who's a threat before you decide who's a person. Your mother's fate has stopped being a rumor and started being a map with too many roads on it, none of them clean. You could keep walking the path you're on, cut somewhere new, or go back to what you already know is broken. Grief doesn't care which you pick. It just wants you moving.",
     "choices": [
       {
         "letter": "A",
@@ -13320,7 +13320,7 @@
     "id": "KIRA_CH3_REFLECT",
     "character": "KIRA",
     "type": "story",
-    "description": "Chapter 3 continues - reflect phase.",
+    "description": "You let yourself sit with it for exactly as long as your body demands before it starts screaming for movement again. Everything since the Temple has happened too fast to actually feel, and now, in the gap between one crisis and the next, it catches up all at once: your mother's voice, the cold that hasn't left your hands, the shape of what you agreed to become. You could keep walking forward into whatever's next. You could try a different road entirely. You could turn back toward everything you already survived once. Grief and momentum are pulling in opposite directions, and you don't have the luxury of picking neither.",
     "choices": [
       {
         "letter": "A",
@@ -13355,7 +13355,7 @@
     "id": "KIRA_CH3_PREPARE",
     "character": "KIRA",
     "type": "story",
-    "description": "Chapter 3 continues - prepare phase.",
+    "description": "You take the last quiet minute you're likely to get and use it checking what you actually have left: a knife you trust more than most people, a crown fragment that hums faintly against your palm like it knows what's coming, and a body that's been running on adrenaline and stubbornness for three days straight. The frost along your fingers hasn't retreated since you last drew on the void, and some part of you notes that clinically, the way you'd note a wound that needs watching. You could push forward now, peel off toward something else entirely, or fall back to ground you've already covered. None of those choices feel like preparation. They just feel like picking your next mistake.",
     "choices": [
       {
         "letter": "A",
@@ -17371,7 +17371,7 @@
     "id": "KIRA_CH3_ALT",
     "character": "KIRA",
     "type": "story",
-    "description": "An alternative path presents itself in Chapter 3.",
+    "description": "A second route opens up that wasn't on any map you scouted, just a gap between two buildings that smells of rain on old timber and somebody's abandoned cookfire. You could take it and see where it lets out, or hold the path you already know the risks of. Neither option tells you anything about what's waiting at the end, which is exactly the kind of uncertainty that used to keep you awake before you learned to sleep anyway. You weigh unfamiliar ground against familiar danger, the way you've weighed everything since Crownhaven, and pick the one you can live with being wrong about.",
     "choices": [
       {
         "letter": "A",
@@ -17406,7 +17406,7 @@
     "id": "KIRA_CH3_END",
     "character": "KIRA",
     "type": "transition",
-    "description": "Chapter 3 reaches its conclusion.",
+    "description": "Chapter three ends with power sitting in you like something you swallowed whole and haven't finished digesting. You catch your own reflection in a dark window and don't immediately recognize what looks back: frost climbing your knuckles further than it ever has, eyes that hold the dark a beat too long before letting it go. Whatever you paid to get here, and you did pay, it wasn't refundable and it isn't coming back to you in the shape you gave it up. You're stronger than you were this morning. You're also less entirely yourself than you were this morning, and there's no version of tonight where you get to have both without the trade.",
     "choices": [
       {
         "letter": "A",
@@ -17441,7 +17441,7 @@
     "id": "KIRA_CH4_ALT",
     "character": "KIRA",
     "type": "story",
-    "description": "A fork appears in your path—not on any map, but in the threads of fate. You sense an alternate approach, a way to change the course of your journey. The decision hangs before you, and only you can choose which direction to take.",
+    "description": "A fork opens up that isn't marked on any map you've ever trusted, the kind of choice that lives in the space between decisions rather than on any road. You feel it more than see it, a pressure change like a door opening somewhere behind you. You could take the unfamiliar branch and find out what it costs, hold to the path you already understand the risks of, or start weighing what balance would even look like for someone who's traded away this much of herself already. Nobody else gets a vote in this one. That's either the most freedom you've had in months or the loneliest decision you've faced yet, and you honestly can't tell which.",
     "choices": [
       {
         "letter": "A",
@@ -24528,7 +24528,7 @@
     "id": "KIRA_CH4_BALANCE",
     "character": "KIRA",
     "type": "story",
-    "description": "Between the consuming void and the fragile light, you find a slender thread of harmony. The crown piece pulses in your hand, not with hunger but with potential. You realize the middle path is not cowardice—it is the hardest road of all.",
+    "description": "Somewhere between the void that wants to consume you whole and a light too fragile to hold on its own, you find something narrower: a thread of actual balance, thin enough to lose if you stop paying attention for even a breath. The crown fragment pulses against your palm differently than it has before, less hunger now, more like it's waiting to see what you'll do with it. You've spent months assuming the middle path was the coward's option, the one you take when you can't commit to either extreme. Standing here, feeling both pulls at once and refusing to fall into either, you understand it's the opposite. This is the hardest road available to you, and you're the only one walking it.",
     "choices": [
       {
         "letter": "A",
@@ -24712,7 +24712,7 @@
     "id": "KIRA_CH4_CIRCLE",
     "character": "KIRA",
     "type": "story",
-    "description": "The Circle of Mages welcomes you with wary respect. Their halls echo with centuries of accumulated knowledge, and their leader—an ancient woman named Magistra Venn—studies you with keen, knowing eyes. They offer alliance, but their price is trust, and trust has never come easily to a Nightwind.",
+    "description": "The Circle receives you with the wariness reserved for someone useful and dangerous in equal measure. Their halls smell of old paper and colder stone, centuries of knowledge pressing down from shelves that vanish past torchlight into dark you can't map. Magistra Venn meets you beneath the same silver crescent that's marked every Circle letter you've received, an old woman whose eyes read you like a report she's already half finished writing. Alliance is on the table, she tells you. So is a price: trust, which has never come easily to a Nightwind, not even from people offering to help. You watch her hands instead of her words. Hands tell you more than promises do.",
     "choices": [
       {
         "letter": "A",
