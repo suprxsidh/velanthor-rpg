@@ -3,7 +3,18 @@
 A dark fantasy choice-based terminal RPG with 5 playable characters, turn-based combat, equipment systems, and branching narratives.
 
 **Current build:** 714 scenes, 2136 choices, 81 endings — all reachable, fully playable.  
-**Version:** v2.0 — Major combat & content overhaul.
+**Version:** v2.2 — Kira storyline deepened end-to-end; combat presentation overhaul.
+
+## What's new in v2.2
+
+- **Kira's storyline rewritten end-to-end** (139 scenes, all 24 endings) against a style bible
+  and beat map (`docs/story/`): consistent voice, sensory grounding, seeded payoff threads
+  (her mother's voice, the silver crescent, frostbite scars that spread as she draws on the void).
+- **Combat feels dangerous now**: enemies telegraph special moves one turn ahead (`[WINDING UP]`
+  — stun them to break it), damage comes as contextual prose instead of bare numbers, HP bars,
+  one-time low-HP warnings, paced output (set `VELANTHOR_FAST=1` to disable delays).
+- **Enemy specials actually fire**: bestiary special moves (cooldowns, heal-when-low) are now
+  wired into the combat loop.
 
 ## Features
 
