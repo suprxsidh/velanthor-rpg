@@ -8780,7 +8780,7 @@
   "KIRA_CH4_SIDE_QUEST": {
     "id": "KIRA_CH4_SIDE_QUEST",
     "character": "KIRA",
-    "description": "A merchant named Aldric flags you down near the crossroads. His goods were stolen by bandits operating out of an old watchtower to the east. The pay is good, and the work is simple—but every detour carries its own cost when the fate of the realm hangs in the balance.",
+    "description": "A merchant flags you down at the crossroads before you've decided which road to take, waving both arms like you might otherwise walk past him. Aldric, he says, extending a hand you don't shake, and the story comes out fast: bandits out of the old watchtower to the east took his goods, and he can't afford to lose them or the season. The coin he offers is fair, and the watchtower barely counts as a detour. You weigh it anyway, the way you weigh everything now, because the realm's fate hanging in the balance makes even simple jobs feel like borrowed time. A cart wheel creaks behind Aldric's shoulder, tired and patient. You decide whether his problem is worth becoming yours.",
     "type": "story",
     "choices": [
       {
@@ -12994,7 +12994,7 @@
     "id": "KIRA_CH4_MAIN",
     "character": "KIRA",
     "type": "story",
-    "description": "The weight of the journey settles on your shoulders as you approach the final stretch. The crown piece pulses with a rhythm that matches your heartbeat, and you feel the Hollow King's presence growing stronger with every step. The final battle approaches—and with it, the choices that will define everything.",
+    "description": "The road narrows the closer you get, and so does everything else. The crown piece has stopped being a separate weight in your pocket. It pulses close enough to your own heartbeat that you've started checking your wrist to be sure which one you're feeling. Somewhere ahead, past hills that used to look ordinary, the Hollow King's presence sits on the horizon like weather you can feel in your teeth before you see the clouds. Frost has started finding your collar in the mornings even when the air is mild, proof that whatever draws closer is drawing on you too. You've run every version of the coming days through your head until the fear wore smooth, closer to a plan now than a feeling. There are still choices ahead: what to learn, what to gather, who to help, which roads to walk and which to leave for someone else's story. None of them will matter as much as the one waiting at the end. You know that already. You keep moving anyway, because stopping has never once been the answer, not for a Nightwind, not for you.",
     "choices": [
       {
         "letter": "A",
@@ -13101,7 +13101,7 @@
     "id": "KIRA_CH5_MAIN",
     "character": "KIRA",
     "type": "story",
-    "description": "The final chapter unfolds before you. The crown is within reach, the Hollow King waits, and every choice you have ever made has led to this single moment. The realm's fate rests in your hands. Your choice will define everything.",
+    "description": "Every road you have walked since the cottage burned narrows down to this exact stretch of ground. The crown sits within reach, close enough that its pull feels less like a decision and more like weather you're standing inside of. The Hollow King is waiting somewhere past that reach, patient in the specific way old, vast things are patient, certain you'll come to him eventually because every other choice you made already did. Your mother's voice surfaces uninvited in the quiet before you move, half-remembered, saying something about strength that you were too young to fully understand at the time and are only now starting to. Frost has stopped being something that only happens when you draw on the void. It lives in you now, low-grade and constant, a cost you stopped itemizing chapters ago. Every choice that brought you here, the bargains, the deaths, the things you let yourself become and the things you refused to, arrives at this one narrow door with you. Whatever you decide next will not undo any of it. It will just decide what all of it was for.",
     "choices": [
       {
         "letter": "A",
@@ -13390,7 +13390,7 @@
     "id": "KIRA_CH4_REFLECT",
     "character": "KIRA",
     "type": "story",
-    "description": "You pause, looking back at the road behind you. So much has changed since the cottage burned. Your mother's face, your father's lessons, the weight of the Nightwind name—it all converges on this moment. You reflect on who you were and who you must become.",
+    "description": "You stop at the crest of the hill and let yourself look back, which you almost never do. So much has changed since the night the cottage burned that the girl who ran from it feels like someone else's story, told secondhand. Your mother's face comes back first, half-remembered, going softer at the edges no matter how hard you try to hold it still. Your father's lessons come back too, useless now but stubborn about staying anyway. The Nightwind name sits heavier here than it did on the road. Wind moves through the grass with a sound that arrives a half-second late, the way sound near you sometimes does now. You are not who you were. You haven't decided who that leaves you as.",
     "choices": [
       {
         "letter": "A",
@@ -13434,7 +13434,7 @@
     "id": "KIRA_CH4_PREPARE",
     "character": "KIRA",
     "type": "story",
-    "description": "You take stock of everything you've gathered: spells learned, weapons sharpened, allies made, knowledge earned. The coming confrontation will demand every resource at your disposal. You ready yourself as best you can.",
+    "description": "You lay it out in your head like a merchant counting inventory before a long haul: spells you can cast without flinching, the edge you put back on your blade two towns ago, the handful of people who'd still come if you called, the scraps of knowledge that might matter more than any of it. None of it feels like enough, and you've learned not to trust that feeling either way. Your hands are cold doing the counting, colder than the room accounts for, a small tax for thinking too hard about the void lately. Whatever's coming won't wait for you to feel ready. You ready yourself anyway, because that's the only part of this you actually control.",
     "choices": [
       {
         "letter": "A",
@@ -13504,7 +13504,7 @@
     "id": "KIRA_CH5_PREPARE",
     "character": "KIRA",
     "type": "story",
-    "description": "You gather your strength, your magic, your resolve. The final confrontation looms, and there is no room for hesitation. Every spell must be perfected, every doubt silenced. You prepare to meet your destiny.",
+    "description": "You run through everything one last time: the spells, the strength you've built the hard way, whatever resolve is left after everything the road has spent. There's no room left for hesitation this close to the end, no version of doubt that helps rather than costs. You run the incantations under your breath until they come out clean, until your hands stop needing to think about the shapes they make. Cold sits behind your sternum the whole time, familiar now the way an old injury is familiar. You've prepared for smaller fights your whole life and never once felt ready for any of them either. You go anyway.",
     "choices": [
       {
         "letter": "A",
@@ -17485,7 +17485,7 @@
     "id": "KIRA_CH4_END",
     "character": "KIRA",
     "type": "transition",
-    "description": "Chapter 4 reaches its conclusion.",
+    "description": "This stretch of road ends the way most of them do lately: without ceremony, mid-breath, before you've fully processed what just happened. Whatever the last hours cost you, the path ahead does not pause to let you catch up, and neither does the cold weight in your chest that has taken up permanent residence there. You could push straight on toward whatever waits past this point. You could stop, for once, and actually look at what the road behind you took. Somewhere past the treeline a bell rings an hour that matches no clock you own, out of time the way everything in this country has been since you left home. You decide, quietly, which kind of person you are going to be about it.",
     "choices": [
       {
         "letter": "A",
@@ -17520,7 +17520,7 @@
     "id": "KIRA_CH5_ALT",
     "character": "KIRA",
     "type": "story",
-    "description": "The path splinters before you in the final hour. A new possibility emerges—one you had not considered, a third way between the choices that seemed inevitable. The decision is yours alone.",
+    "description": "The road splits somewhere you were certain it wouldn't, this late, this close to the end. You'd already made peace with the shape the last stretch would take, and now there's a third option in the fork that nobody, not the Circle, not your mother's old letters, not even the void itself, bothered to warn you about. It's exactly the kind of complication you've learned to distrust on principle, the too-convenient door that opens right when you need an exit. Cold settles into your fingers while you stand there deciding, though whether that's the void reacting to your hesitation or just the evening air, you honestly can't tell anymore. Nobody is going to make this choice for you. Nobody ever has.",
     "choices": [
       {
         "letter": "A",
@@ -17564,7 +17564,7 @@
     "id": "KIRA_CH4_CITY",
     "character": "KIRA",
     "type": "story",
-    "description": "The city of Crownhaven awaits. So much has changed.",
+    "description": "Crownhaven rises out of the fog exactly where you left it: wet stone, tallow smoke, bells that never quite ring together. You remember this skyline from before the crown found you, before the bargain that cost you a piece of yourself you still haven't named. The city hasn't changed. You have. Gulls scream over the harbor, and under it a market wakes up, indifferent to what you're carrying inside your coat. You count the watch towers first, old habit, before you notice anything else about home. Whatever's waiting inside those walls won't care that you used to live a smaller life.",
     "choices": [
       {
         "letter": "A",
@@ -17599,7 +17599,7 @@
     "id": "KIRA_CH4_HIDE",
     "character": "KIRA",
     "type": "story",
-    "description": "You find a cleft in the earth beneath an ancient oak, far from any road or settlement. The crown piece goes into the darkness, wrapped in cloth soaked in protective herbs. You mark the tree with a small symbol only you would recognize, and pray no one finds it.",
+    "description": "You find a cleft under an ancient oak far enough from any road that even the birds sound suspicious of it. The crown piece goes down wrapped in cloth soaked in herbs your mother once used against rot and worse things, and the ground swallows the cold coming off it, almost gratefully. You carve a small mark into the bark, nothing anyone but you would read as more than weather damage. Your fingers ache doing it, the old ache that lives past your wrist now and never fully leaves. You tell yourself this is temporary, that you'll come back for it, and almost believe yourself. Whatever finds this oak first had better be patient.",
     "choices": [
       {
         "letter": "A",
@@ -18399,7 +18399,7 @@
     "id": "KIRA_CH4_DESTROY",
     "character": "KIRA",
     "type": "story",
-    "description": "You make your decision with the finality of a closing tomb. The crown piece must not exist. Its very presence is a corruption, a wound in the world that will only fester. You begin searching for a way to unmake what the first Nightwind created.",
+    "description": "You make the decision the way you make most decisions now: fast, final, and alone. The crown piece cannot exist. Every hour you carry it is another hour it festers, a wound in the world that will not close on its own no matter how carefully you wrap it in cloth and silence. Holding it long enough makes your palm ache with a cold that has nothing to do with the weather, proof enough of what it is. You start turning over the old stories your mother told you, half-remembered ways to unmake what the first Nightwind built centuries before you were born. Somewhere under the calm, a small, ugly part of you does not want it destroyed at all. You ignore that part. It has been wrong before.",
     "choices": [
       {
         "letter": "A",
@@ -24449,11 +24449,11 @@
     "id": "KIRA_CH4_REALITY_CHECK",
     "character": "KIRA",
     "type": "story",
-    "description": "In a moment of brutal clarity, you see yourself as you truly are—not a hero, not a savior, but a fleeing girl carrying a darkness she barely understands. The weight of your family's legacy presses down, and you must decide: will you break, or will you become something more?",
+    "description": "You stop walking long enough to actually look at your hands, which you've been avoiding for longer than you want to admit. The frostbite scarring that started at your fingertips after the first crown piece has crept past your wrist now, pale marbled lines climbing toward your elbow like frost finding cracks in a window, permanent, not healing between uses the way you'd told yourself it would. This is what carrying the void actually costs, written on your skin in a language that doesn't lie, even when you do. You are not a hero, whatever the Circle wanted to believe about the last Nightwind's daughter. You're a girl who ran from a burning cottage carrying a darkness she still doesn't fully understand, and the weight of every name before yours presses down harder here than it ever has. A bell in Crownhaven counts an hour you've stopped tracking. You flex your scarred hand once, testing how far the numbness has spread today, and make yourself choose before the choosing gets made for you. Break, or become something you can still recognize afterward.",
     "choices": [
       {
         "letter": "A",
-        "text": "Embrace power",
+        "text": "Stop holding the door shut",
         "leads_to": "KIRA_CH4_POWER",
         "effects": {
           "void_magic": 2
@@ -24471,7 +24471,7 @@
       },
       {
         "letter": "C",
-        "text": "Find balance",
+        "text": "Hold the line between them",
         "leads_to": "KIRA_CH4_BALANCE",
         "effects": {
           "charisma": 1
@@ -24484,7 +24484,7 @@
     "id": "KIRA_CH4_POWER",
     "character": "KIRA",
     "type": "story",
-    "description": "The void surges through you, and you let it. Every barrier you've built, every restraint your mother taught you—you release them all. Power floods into every corner of your being, and for the first time, you feel what it means to be truly untethered.",
+    "description": "You stop holding the door shut. That is the only way to describe what happens next, because it is not a summoning, not a spell, just the absence of every wall your mother spent years building into you, gone in a single decision. The void comes through all of it at once, cold pouring down your arms and pooling behind your sternum, and for the length of a breath you cannot tell where the pull ends and you begin. Frost climbs your sleeves past the elbow and keeps climbing, further than it has ever gone before, and you let it, because stopping now would mean admitting you are still afraid of your own hands. Somewhere distant a candle gutters out that you were not even standing near. This is what untethered actually feels like: not freedom exactly, more like standing at the top of a very long drop and discovering you like the view. You do not know yet what you have traded for it. You suspect you will find out at the worst possible moment, the way you always do.",
     "choices": [
       {
         "letter": "A",
@@ -24563,7 +24563,7 @@
     "id": "KIRA_CH4_SUPPRESS",
     "character": "KIRA",
     "type": "story",
-    "description": "You clench your will like a fist and force the void back. It resists, writhing against your control, but you are the master here—not the darkness. Layer by layer, you contain the hunger, sealing it behind walls of discipline and restraint.",
+    "description": "You clench down on it the way you'd clench a fist around something trying to bite its way free, and hold. The void does not go quietly. It writhes against the restraint like something with its own opinion about being contained, cold spiking behind your sternum hard enough that your next breath comes out as visible fog even here, indoors, in a room with a fire lit. You win anyway, because you have to, layering discipline over hunger the way your mother once layered wards over doorways, one seal at a time until the thing inside goes still and sullen instead of loud. It costs you something you don't fully clock until afterward: the reflex to reach for anyone, even the Circle, even Tom, even yourself on a bad night, has gone quiet along with everything else you just sealed away. Control feels like the safest word for what you just did. It is not the same thing as safe. You flex your scarred fingers, testing that the numbness hasn't spread further while you weren't watching, and tell yourself the silence in your chest is discipline and not the first draft of something lonelier.",
     "choices": [
       {
         "letter": "A",
@@ -24607,7 +24607,7 @@
     "id": "KIRA_CH4_GATHER",
     "character": "KIRA",
     "type": "story",
-    "description": "You open yourself to the void and draw. Power floods into you—cold, vast, hungry. The crown piece resonates, feeding you energy until your veins hum with the darkness. You will need this strength for what comes next.",
+    "description": "You open the door in yourself you usually keep shut and let the void in. It answers the way it always does: cold first, vast a half-second later, hunger arriving last and staying longest. The crown piece answers too, resonating against your palm like an old friend, feeding you more than you asked for. Your veins hum with something that isn't quite blood anymore, and frost blooms across your coat's buckle where your hand rests too long. You will need whatever this buys you. That stopped being a comforting thought and became simply a fact, the way weather is a fact. You let the power settle and try not to think about how easily it finds room.",
     "choices": [
       {
         "letter": "A",
@@ -24642,7 +24642,7 @@
     "id": "KIRA_CH4_TEST",
     "character": "KIRA",
     "type": "story",
-    "description": "You push against the boundaries of your power, seeking the edge of what you can endure. The void responds, testing you in turn, probing for weakness. Every failure teaches you something. Every success expands your reach.",
+    "description": "You push, deliberately this time, past the point where stopping would be sensible. The void pushes back exactly as expected, probing for the seams in you the same patient way you've learned to probe for seams in it. Frost climbs the backs of your hands each time you hold the pressure a beat too long, retreating a little each time you let go, never quite as far as it started. Every failure teaches you where the edge actually is instead of where you assumed it was. Every small success moves that edge further out, which should feel like winning and mostly feels like debt with better interest rates. You keep pushing anyway. Knowing your own limits has kept you alive more than any spell has.",
     "choices": [
       {
         "letter": "A",
@@ -24677,7 +24677,7 @@
     "id": "KIRA_CH4_TECHNIQUES",
     "character": "KIRA",
     "type": "story",
-    "description": "You pore over your mother's books, searching for techniques that can shape void magic without being consumed by it. Ancient diagrams and marginal notes reveal methods long forgotten—ways to weave the darkness into forms of precision and purpose.",
+    "description": "You go back to your mother's books when you run out of better ideas, spreading them across whatever surface is flat enough to hold them. Most of the diagrams mean nothing on first pass, just ink gone brown with age and her handwriting crowding the margins. But some of it resolves the longer you sit with it: old methods for shaping void magic into something with an edge instead of just a maw, ways to weave the cold into precision rather than survival. Your breath fogs over the pages despite the room being warm, proof you're not just reading anymore. You've spent months treating the void like a wound to manage. These pages suggest someone, once, treated it like a tool instead.",
     "choices": [
       {
         "letter": "A",
@@ -24765,7 +24765,7 @@
     "id": "KIRA_CH4_DESTROY_SOURCE",
     "character": "KIRA",
     "type": "story",
-    "description": "To destroy the crown piece, you must strike at its origin—the void itself. You feel for the source, that dark pulsing heart beneath the world, and prepare to sever the connection that sustains the crown's power.",
+    "description": "To kill the crown piece for good, you have to go further than the piece itself, down to the void it feeds from. You close your eyes and reach, past your own pulse, past the cold already living behind your sternum, until you find it: a heartbeat beneath the world, slow and vast and patient in a way nothing human ever is. Frost creeps along the inside of your sleeve the longer you hold the reaching-open, one more debt added to a hand that has stopped fully thawing. You have felt this pulse before, in smaller doses, every time you drew on the void to survive something you shouldn't have. This time you are not drawing power from it. You are looking for the seam to cut.",
     "choices": [
       {
         "letter": "A",
@@ -24800,7 +24800,7 @@
     "id": "KIRA_CH4_MEDITATE",
     "character": "KIRA",
     "type": "story",
-    "description": "You sit in the stillness and let the void speak. It is not words you hear but sensations—ancient memories, echoes of the first Nightwind, the quiet song of creation and destruction intertwined. You find the harmony within the chaos, and for a moment, you understand.",
+    "description": "You sit until your knees ache and let the void do the talking for once instead of the taking. It doesn't use words. It gives you sensation: old memory that isn't yours, an echo of the first Nightwind standing somewhere you've never been, a low song underneath everything that sounds like creation and destruction sung in the same breath. Frost feathers the inside of your sleeves the longer you sit still, proof that stillness isn't the same thing as safety here. For one unguarded stretch you stop bracing against the cold and let it explain itself. You don't fully understand what you hear. You understand enough to know the fear was never a reason to stop listening.",
     "choices": [
       {
         "letter": "A",
@@ -24835,7 +24835,7 @@
     "id": "KIRA_CH4_TRAIN",
     "character": "KIRA",
     "type": "story",
-    "description": "You drill until your body aches and your magic flickers with exhaustion. Sword forms, incantations, evasion, channeling—you run through every discipline you know. The coming fight will not forgive weakness, and you intend to be ready.",
+    "description": "You drill past the point of usefulness and into the point of proving something to yourself. Sword forms first, then incantations, then evasion run until your knees protest in a language you understand better than most spellwork, and finally the channeling, which costs the most and teaches the least. Your magic flickers thin with exhaustion by the end, guttering like a candle in a draft instead of its usual clean pull. Sweat goes cold on your neck faster than it should, one more small tax the void charges for being nearby. The fight ahead won't care how tired you are or how hard you tried. You've never gotten credit for effort, only results, and today you make sure the results are waiting.",
     "choices": [
       {
         "letter": "A",
@@ -24870,7 +24870,7 @@
     "id": "KIRA_CH4_WISDOM",
     "character": "KIRA",
     "type": "story",
-    "description": "Ancient texts speak of the first void-wielders, who did not fear the darkness but sought to understand it. You find their teachings buried in the margins of your mother's books—philosophies of balance, of acceptance, of the void not as enemy but as teacher.",
+    "description": "The old texts don't talk about the void the way everyone around you does, like something to survive or defeat. They talk about it like a difficult teacher: demanding, unkind sometimes, but not your enemy unless you decide to treat it as one. You find whole philosophies of this buried in your mother's margins, notes she never mentioned while she was alive, careful arguments for balance written in a hand that shakes slightly on some words. The page goes cold under your fingers, more like the void recognizing itself discussed. You've spent this war either fighting the thing inside you or being consumed by it. Nobody suggested there might be a third option. You keep reading anyway.",
     "choices": [
       {
         "letter": "A",
@@ -24905,7 +24905,7 @@
     "id": "KIRA_CH5_CONFRONT",
     "character": "KIRA",
     "type": "story",
-    "description": "You stand before the Hollow King, and the world falls away. He is vast and ancient, a wound in reality given will and malice. But you are here, and you are not the same girl who fled a burning cottage. The confrontation you were born for has begun.",
+    "description": "You stand in front of him and the war, the months, all the noise that led here falls away until it's just the two of you and whatever this place is beneath its floor and walls. He is old in a way that has nothing to do with years, a wound in reality that grew a will of its own. The air around him arrives late to your ears, sound lagging half a beat the way it does near the deepest void, and your breath fogs white though nothing here should be this cold. You are not the girl who ran from a burning cottage anymore. You've been walking toward this moment since before you knew that's what you were doing. Whatever happens next won't surprise you as much as it clearly expects to.",
     "choices": [
       {
         "letter": "A",
@@ -24940,7 +24940,7 @@
     "id": "KIRA_CH5_CROWN",
     "character": "KIRA",
     "type": "story",
-    "description": "The crown responds to your presence. Its pieces vibrate in harmony, calling to each other across the void. You feel the hunger of every Nightwind who wore it before you, and the power of all seven pieces awaits your command—or your destruction.",
+    "description": "The crown answers before you've decided what to ask of it, every piece humming at once like instruments finally in the same room after years apart. You feel every Nightwind who wore this thing before you in that hum, a long line of hunger stretching back further than your mother's stories ever went. Frost creeps across your knuckles just from standing this close, old proof of an old debt called in early. Seven pieces, whole for the first time in longer than anyone alive remembers, waiting to see whether you'll claim them or end them. You already knew this moment would feel like recognition rather than discovery. You just didn't expect the hunger to feel quite so much like your own.",
     "choices": [
       {
         "letter": "A",
@@ -25010,7 +25010,7 @@
     "id": "KIRA_CH5_ALLIES",
     "character": "KIRA",
     "type": "story",
-    "description": "You gather those who would stand with you—not as pawns, but as partners. Each brings their own strength: knowledge, courage, faith in what you could become. Together, you might be more than the sum of your parts.",
+    "description": "You call in the people who would actually come, and you're quietly surprised how many that turns out to be. Not pawns, you remind yourself, watching them gather one by one. Partners, if you're honest about what you're asking of them. Each brings something you don't have enough of on your own: knowledge you never had time to learn, courage that doesn't flinch when yours does, a stubborn faith in whatever you're about to become. Someone's lit a fire against the evening chill, and you catch yourself standing closer to the group than you usually allow, close enough to feel the warmth instead of just seeing it. You've avoided testing what you're together a long time. You're almost ready to.",
     "choices": [
       {
         "letter": "A",
@@ -25045,7 +25045,7 @@
     "id": "KIRA_CH5_BATTLE",
     "character": "KIRA",
     "type": "story",
-    "description": "The Hollow King's forces pour from the void—shadows given form, nightmares made flesh. You cut through them, wave after wave, your blade singing in the darkness. Each fallen enemy brings you closer to the heart.",
+    "description": "The Hollow King's forces come out of the void the way water comes through a cracked dam, shadow with just enough form to bite. You cut through the first wave without much thought, muscle memory doing what months of drilling built. The air tastes like iron before you've landed a single hit. Cold needles up your sword arm every time you channel through the blade instead of around it, a debt you'll feel tomorrow if there is one. Each shadow that falls buys you three feet closer to whatever waits at the center, the way you always count exits mid-fight. You don't know yet what you'll be when you reach the heart of it. You know exactly what you are right now.",
     "choices": [
       {
         "letter": "A",
@@ -25080,7 +25080,7 @@
     "id": "KIRA_CH5_LIMIT",
     "character": "KIRA",
     "type": "story",
-    "description": "You reach for the edge of your power—and then push beyond. The void screams as you tear through barriers that were never meant to be crossed. There is no ceiling to your potential, only the horizon of what you dare to become.",
+    "description": "You find the edge of what you're supposed to do and keep going anyway, past the point every instinct built into you screams to stop. The void doesn't resist so much as scream back, a sound that arrives in your bones before it reaches your ears. Your scarred hand goes fully numb past the wrist for the first time, not painful anymore, just absent, a door closing somewhere you can't reach to close it yourself. There's no ceiling up here, you realize, only however far you're willing to walk the horizon before you stop recognizing the person walking it. That should frighten you more than it does. You've run out of easy limits to respect.",
     "choices": [
       {
         "letter": "A",
@@ -25115,7 +25115,7 @@
     "id": "KIRA_CH5_CHALLENGE",
     "character": "KIRA",
     "type": "story",
-    "description": "You step forward and issue your challenge. Not to the Cult, not to the King's servants—but to the Hollow King himself. Let him come. Let him face a Nightwind who is no longer afraid.",
+    "description": "You step past the Cult's remaining faithful and the King's lesser servants, because none of them are the point anymore. The challenge you speak isn't loud, doesn't need to be, just clear enough that whatever is listening through the walls of the world knows who it's addressed to. Let him come himself this time, not another borrowed shadow wearing his intent like a mask. Your voice comes out steadier than expected, though your hands stay cold enough that you keep them loosely fisted. You've spent this war being afraid of a name before you ever met the thing wearing it. That fear stops being the loudest thing in the room. A Nightwind is asking the Hollow King to actually show up.",
     "choices": [
       {
         "letter": "A",
