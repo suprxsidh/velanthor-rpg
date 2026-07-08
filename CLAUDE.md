@@ -32,6 +32,10 @@ python3 qa/verify_endings.py   # KIRA must stay 24/24 reachable
 
 ## Working notes
 
+- **NEXT SESSION START HERE:** `docs/superpowers/plans/2026-07-08-v3-character-expansion.md`
+  — full-cast prose deepening + reachability repair + gameplay level-ups. Phase 0
+  (ending reachability tracer/fixes) comes before any prose work. One character per
+  session, ask user before each phase (~1M tokens/character, measured).
 - v2.2 (2026-07-08): Kira deepened end-to-end, combat presentation overhaul.
   Spec: `docs/superpowers/specs/2026-07-07-kira-deepening-combat-feel-design.md`.
 - Root `test_*`/`kira_*`/`find_*` scripts are gitignored dev litter from past sessions.
